@@ -17,6 +17,10 @@ CAT = json.load(open(os.path.join(ROOT, 'catalog.json')))
 SCENES = CAT['scenes']
 VERSION = CAT.get('version', '')
 WORKING = str(CAT.get('working_scene', ''))
+ARCHIVE = {}
+_ap = os.path.join(ROOT, 'archive.json')
+if os.path.exists(_ap):
+    ARCHIVE = json.load(open(_ap))
 
 
 def _readthrough():
@@ -198,6 +202,15 @@ h2{font-size:19px;margin:38px 0 14px;padding-bottom:7px;border-bottom:1px solid 
 .log{max-width:880px}
 .log .it{border-top:1px solid var(--rule);padding:13px 0}
 .log .d{font:11px ui-monospace,monospace;color:var(--dim)}
+.arc{margin:10px 0 34px}
+.arcg{font:600 11px ui-monospace,monospace;letter-spacing:.13em;text-transform:uppercase;
+ color:var(--brass);margin:26px 0 6px;padding-bottom:5px;border-bottom:1px solid var(--rule)}
+.arcr{display:flex;gap:14px;align-items:baseline;padding:7px 2px;
+ border-bottom:1px solid rgba(140,130,110,.16)}
+.arcr a{flex:1;color:var(--body);text-decoration:none;font-size:14px}
+.arcr a:hover{color:var(--brass);text-decoration:underline}
+.arcr .d{font:600 10px ui-monospace,monospace;color:var(--dim);white-space:nowrap}
+.arcr .z{font:600 10px ui-monospace,monospace;color:var(--dim);white-space:nowrap;width:56px;text-align:right}
 .rates{margin:18px 0 34px;border-top:1px solid var(--rule)}
 .rt{display:flex;gap:18px;align-items:flex-start;padding:15px 0;
  border-bottom:1px solid var(--rule)}
@@ -424,6 +437,8 @@ def bar(here, r):
          ('<a class=rt href="%s%s" target=_blank rel=noopener '
           'title="the whole film, four panels to a page">READ THROUGH &darr;</a>'
           % (r, READTHROUGH)) if READTHROUGH else '',
+         ('<a href="%sarchive.html"%s>ARCHIVE</a>'
+          % (r, ' class=on' if here == 'archive' else '')) if ARCHIVE.get('items') else '',
          '<span class=sp></span>']
     for n in sorted(SCENES, key=int):
         o.append('<a href="%sBB_C_%s/index.html"%s>SC%s</a>'
@@ -829,6 +844,25 @@ for e in docs:
              '<p><a href="%s" download>Download</a></p></div></div>'
              % (thumb, os.path.basename(e['file']), human(size_of(e['file'])),
                 e.get('date', ''), e.get('note', 'note pending'), e['file']))
+if ARCHIVE.get('items'):
+    a = ['<h1>Archive</h1>',
+         '<p class=lede>Every PDF this production has ever made, %d of them. Nothing is deleted here, '
+         'so superseded versions are kept and still open: an old cut is often the fastest way to see '
+         'what changed. Files open from the film repository, they are not copied into this one.</p>'
+         % len(ARCHIVE['items']),
+         '<div class=arc>']
+    last = None
+    for it in ARCHIVE['items']:
+        if it['group'] != last:
+            a.append('<div class=arcg>%s</div>' % it['group'])
+            last = it['group']
+        a.append('<div class=arcr><a href="%s" target=_blank rel=noopener>%s</a>'
+                 '<span class=d>%s</span><span class=z>%s MB</span></div>'
+                 % (it['url'], it['name'], it.get('date', ''), it['mb']))
+    a.append('</div>')
+    open(os.path.join(ROOT, 'archive.html'), 'w').write(
+        page('Archive', ''.join(a), here='archive', depth=0))
+
 open(os.path.join(ROOT, 'documentation.html'), 'w').write(
     page('Documentation', ''.join(b), here='doc', depth=0))
 
