@@ -26,9 +26,16 @@
     {
       "file": "DOCS/4-BRAIN_BRAKE_READ_THROUGH_v4.pdf",
       "kind": "document",
+      "status": "superseded",
+      "date": "2026-08-28",
+      "note": "The whole film as it stands, four panels to a page, with every line and every frame number. The live action frames now show the real footage from the shoot beside the drawn version, with the clip and the timecode on each. At the back there are two pages of clean footage frames, one per shot, for pulling into tests. This is not a proposal, it is the current version of the document. Superseded by v8. It is not deleted and the link still works, but v8 is the one to read."
+    },
+    {
+      "file": "DOCS/8-BRAIN_BRAKE_READ_THROUGH_v8.pdf",
+      "kind": "document",
       "status": "reference",
       "date": "2026-08-28",
-      "note": "The whole film as it stands, four panels to a page, with every line and every frame number. The live action frames now show the real footage from the shoot beside the drawn version, with the clip and the timecode on each. At the back there are two pages of clean footage frames, one per shot, for pulling into tests. This is not a proposal, it is the current version of the document."
+      "note": "The whole film as it stands, four panels to a page, fifty panels, with every line and every frame number. Live action frames show the real footage from the shoot beside the drawn version with the clip and the timecode on each. The number jumped from v4 straight to v8 so that the document and the artwork generation now carry the same number: what you are reading is V8. This is not a proposal, it is the current version of the document."
     }
   ]
 }
