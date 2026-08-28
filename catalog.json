@@ -179,6 +179,42 @@
       "status": "reference",
       "date": "2026-08-28",
       "note": "The goal was always there and could not be seen. The runner is not weak, he is misinformed: he thinks he has ten kilometres left. Motivation is information. Scene 1."
+    },
+    {
+      "kind": "rate",
+      "fps": "2–3",
+      "pct": "10",
+      "title": "Stuck",
+      "status": "reference",
+      "date": "2026-08-28",
+      "note": "The dying man. Barely moving, visibly stuttering, heavy posterisation. This is the brake fully on, and it is where scene 1 opens. If it looks broken, it is working."
+    },
+    {
+      "kind": "rate",
+      "fps": "5–7",
+      "pct": "26",
+      "title": "The default",
+      "status": "reference",
+      "date": "2026-08-28",
+      "note": "Everything else in the film. Something is not turning over cleanly. This is the rate the audience learns as normal, which is what makes the other three mean anything."
+    },
+    {
+      "kind": "rate",
+      "fps": "8–10",
+      "pct": "40",
+      "title": "Released",
+      "status": "reference",
+      "date": "2026-08-28",
+      "note": "He runs. Still stepped, but roughly three times the stuck rate. Nothing is explained and nothing is smooth, yet the eye feels him come loose. Same technique, higher rate, and the change alone carries the release."
+    },
+    {
+      "kind": "rate",
+      "fps": "25",
+      "pct": "100",
+      "title": "Alive",
+      "status": "reference",
+      "date": "2026-08-28",
+      "note": "The muscle activation, and nothing else, ever. Fully smooth. It happens three times in the film and it is the same sequence copy pasted each time: the runner seeing the finish line, Manan on the bicycle, and Coach Brain naming the limit."
     }
   ]
 }

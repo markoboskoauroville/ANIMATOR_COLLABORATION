@@ -196,6 +196,20 @@ h2{font-size:19px;margin:38px 0 14px;padding-bottom:7px;border-bottom:1px solid 
 .log{max-width:880px}
 .log .it{border-top:1px solid var(--rule);padding:13px 0}
 .log .d{font:11px ui-monospace,monospace;color:var(--dim)}
+.rates{margin:18px 0 34px;border-top:1px solid var(--rule)}
+.rt{display:flex;gap:18px;align-items:flex-start;padding:15px 0;
+ border-bottom:1px solid var(--rule)}
+.rt .fps{flex:0 0 118px;font:700 25px ui-monospace,monospace;color:var(--brass);
+ line-height:1;letter-spacing:-.02em}
+.rt .fps small{display:block;font:600 10px ui-monospace,monospace;letter-spacing:.14em;
+ color:var(--dim);margin-top:6px}
+.rt .bar{flex:0 0 92px;height:11px;margin-top:6px;background:#211f19;border-radius:2px;
+ overflow:hidden}
+.rt .bar i{display:block;height:100%;background:var(--brass)}
+.rt h4{margin:0 0 5px;font:600 12px ui-monospace,monospace;letter-spacing:.12em;
+ text-transform:uppercase;color:var(--body)}
+.rt p{margin:0;font-size:14px;line-height:1.55;color:var(--body)}
+@media(max-width:700px){.rt .bar{display:none}.rt .fps{flex:0 0 92px;font-size:21px}}
 .sym{display:flex;flex-wrap:wrap;gap:26px;margin:18px 0 10px}
 .sym .s{width:calc(50% - 13px);display:flex;gap:16px;align-items:flex-start}
 .sym .s img{width:150px;flex:0 0 150px;border:1px solid var(--rule);display:block}
@@ -436,6 +450,11 @@ def tag(st):
 def frames_of(scene):
     return [e for e in ENTRIES if e.get('kind') == 'frame'
             and e.get('frame', '').split('.')[0] == str(scene)]
+
+
+def rates_of():
+    return [e for e in ENTRIES if e.get('kind') == 'rate'
+            and e.get('status') != 'superseded']
 
 
 def symbols_of():
@@ -768,6 +787,22 @@ for e in sorted(ENTRIES, key=lambda x: x.get('date', ''), reverse=True):
                 tag(e.get('status', 'proposal')), e.get('date', ''),
                 e.get('note', 'note pending')))
 b.append('</div>')
+ra = rates_of()
+if ra:
+    b.append('<h2>The frame rate is the second language</h2>')
+    b.append('<p class=lede>Nothing in this film runs smooth except one thing. The animation is '
+             'stepped, and <b>how heavily it is stepped is what the shot is saying</b>. The rate '
+             'rises as the brake comes off, and the audience feels it in the body without being '
+             'told. Never smooth between tiers inside a shot: the tiers are steps and the cut is '
+             'where they change.</p>')
+    b.append('<div class=rates>')
+    for e in ra:
+        b.append('<div class=rt><div class=fps>%s<small>frames / sec</small></div>'
+                 '<div class=bar><i style="width:%s%%"></i></div>'
+                 '<div><h4>%s</h4><p>%s</p></div></div>'
+                 % (e.get('fps', ''), e.get('pct', '10'), e.get('title', ''), e.get('note', '')))
+    b.append('</div>')
+
 sy = symbols_of()
 if sy:
     b.append('<h2>Glossary of symbols</h2>')

@@ -119,6 +119,20 @@ h2{font-size:19px;margin:38px 0 14px;padding-bottom:7px;border-bottom:1px solid 
 .log{max-width:880px}
 .log .it{border-top:1px solid var(--rule);padding:13px 0}
 .log .d{font:11px ui-monospace,monospace;color:var(--dim)}
+.rates{margin:18px 0 34px;border-top:1px solid var(--rule)}
+.rt{display:flex;gap:18px;align-items:flex-start;padding:15px 0;
+ border-bottom:1px solid var(--rule)}
+.rt .fps{flex:0 0 118px;font:700 25px ui-monospace,monospace;color:var(--brass);
+ line-height:1;letter-spacing:-.02em}
+.rt .fps small{display:block;font:600 10px ui-monospace,monospace;letter-spacing:.14em;
+ color:var(--dim);margin-top:6px}
+.rt .bar{flex:0 0 92px;height:11px;margin-top:6px;background:#211f19;border-radius:2px;
+ overflow:hidden}
+.rt .bar i{display:block;height:100%;background:var(--brass)}
+.rt h4{margin:0 0 5px;font:600 12px ui-monospace,monospace;letter-spacing:.12em;
+ text-transform:uppercase;color:var(--body)}
+.rt p{margin:0;font-size:14px;line-height:1.55;color:var(--body)}
+@media(max-width:700px){.rt .bar{display:none}.rt .fps{flex:0 0 92px;font-size:21px}}
 .sym{display:flex;flex-wrap:wrap;gap:26px;margin:18px 0 10px}
 .sym .s{width:calc(50% - 13px);display:flex;gap:16px;align-items:flex-start}
 .sym .s img{width:150px;flex:0 0 150px;border:1px solid var(--rule);display:block}
