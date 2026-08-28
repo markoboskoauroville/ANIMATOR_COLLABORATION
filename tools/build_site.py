@@ -189,6 +189,10 @@ h2{font-size:19px;margin:38px 0 14px;padding-bottom:7px;border-bottom:1px solid 
 .log{max-width:880px}
 .log .it{border-top:1px solid var(--rule);padding:13px 0}
 .log .d{font:11px ui-monospace,monospace;color:var(--dim)}
+.ex .cell{width:33.333%}
+.exi{width:100%;display:block;border:1px solid var(--rule)}
+.exi.trans{background:repeating-conic-gradient(#ddd 0 25%,#fff 0 50%) 50%/16px 16px}
+@media(max-width:700px){.ex .cell{width:100%}}
 .rule1{background:var(--slate);color:#e6dcc4;border-left:3px solid var(--brass);
  padding:13px 18px;margin:16px 0 10px;max-width:880px;font-size:14.5px}
 .rule1 b{color:#e0b45f;letter-spacing:.04em}
@@ -410,6 +414,41 @@ def frames_of(scene):
             and e.get('frame', '').split('.')[0] == str(scene)]
 
 
+def examples_of(scene=None):
+    out = [e for e in ENTRIES if e.get('kind') == 'example'
+           and e.get('status') != 'superseded']
+    if scene is None:
+        return [e for e in out if not e.get('scene')]
+    return [e for e in out if str(e.get('scene', '')) == str(scene)]
+
+
+# the three parts of a layered delivery, in the order they are looked at
+PARTS = [('plate', 'PLATE', 'the drawing with the moving thing taken out of it'),
+         ('layer', 'LAYER', 'the moving thing alone, transparent everywhere else'),
+         ('composite', 'COMPOSITE', 'the two stacked, which is what it must look like')]
+
+
+def example_block(e, prefix=''):
+    """plate, layer, composite, side by side. One source, so the landing page and a
+    scene page can never drift apart."""
+    o = ['<h2>%s</h2>' % e.get('title', 'Layers')]
+    if e.get('note'):
+        o.append('<p class=lede>%s</p>' % e['note'])
+    o.append('<div class="row ex">')
+    for key, label, blurb in PARTS:
+        f = e.get(key)
+        if not f:
+            continue
+        cls = 'exi trans' if key == 'layer' else 'exi'
+        o.append('<div class=cell><a href="%s%s"><img class="%s" src="%s%s" alt=""></a>'
+                 '<div class=meta><span class=fid>%s</span>'
+                 '<p class=note>%s</p>'
+                 '<p><a href="%s%s" download>Download</a></p></div></div>'
+                 % (prefix, f, cls, prefix, f, label, blurb, prefix, f))
+    o.append('</div>')
+    return ''.join(o)
+
+
 def keyframes_of(shot):
     """Every key frame inside one shot, in catalog order."""
     return [e for e in ENTRIES if e.get('kind') == 'keyframe'
@@ -541,6 +580,8 @@ for n in sorted(SCENES, key=int):
                     e.get('note', 'note pending'), picks(lbl)))
     for e in overlays_of(n):
         b.append(overlay_block(e, '../'))
+    for e in examples_of(n):
+        b.append(example_block(e, '../'))
     sh_ids = shots_of(n)
     b.append('<h2>Shots</h2>')
     if not sh_ids:
@@ -679,6 +720,8 @@ b = ['<h1>THE BRAIN BRAKE</h1>',
      '<h2>Scenes</h2><ul class=scenes>']
 for e in overlays_of():
     b.insert(2, overlay_block(e, ''))
+for e in examples_of():
+    b.append(example_block(e, ''))
 for n in sorted(SCENES, key=int):
     c = len(frames_of(n))
     b.append('<li><a href="BB_C_%s/index.html"><span class=n>SC%s</span>'
@@ -686,7 +729,10 @@ for n in sorted(SCENES, key=int):
              % (n, n, SCENES[n], '%d frames' % c if c else 'nothing yet'))
 b.append('</ul><h2>What changed</h2><div class=log>')
 for e in sorted(ENTRIES, key=lambda x: x.get('date', ''), reverse=True):
-    who = e.get('frame') or os.path.basename(e['file'])
+    # an entry does not always have a single 'file': an example has a plate, a
+    # layer and a composite. Do not assume the shape of an entry here.
+    who = (e.get('frame') or e.get('shot') or e.get('title')
+           or (os.path.basename(e['file']) if e.get('file') else e.get('kind', '?')))
     b.append('<div class=it><span class=fid>%s</span>%s%s<div class=d>%s</div>'
              '<p class=note>%s</p></div>'
              % (who, ('<span class=ver>%s</span>' % ver(e)) if ver(e) else '',

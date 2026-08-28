@@ -150,3 +150,25 @@ page and its shot pages carry the rule strip saying so, and no other page does. 
 the rule moves with it.
 
 There are no shots catalogued yet. The structure is live and empty and waiting.
+
+## 28.08.2026  plate, layer, composite
+
+Anything that moves on its own now arrives as **three files, never one picture**:
+
+    PLATE      the drawing with the moving thing taken out of it
+    LAYER      the moving thing alone, transparent everywhere else
+    COMPOSITE  the two stacked, so there is never a question about where it sits
+
+The pattern is shown on the scene 1 page under **How a layer arrives**, worked through with the frame
+because the frame is the one that is already finished. The layer sits on a checkerboard so the
+transparency is visible, and all three can be downloaded.
+
+The sweat droplets on shot 1.1 arrive in exactly this shape: a plate with dry skin, the droplets on
+their own transparency, and a composite.
+
+Driven by `catalog.json` like everything else: an entry with `"kind": "example"` and `plate`, `layer`
+and `composite` files. A `"scene"` key pins it to a scene page, no key leaves it on the landing page.
+
+**One bug fixed on the way.** The What changed log assumed every catalogue entry has exactly one
+`file`. An example has three, so the landing page stopped building the moment the first one was
+added. It no longer assumes the shape of an entry.

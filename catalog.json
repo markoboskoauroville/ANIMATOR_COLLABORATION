@@ -54,6 +54,17 @@
       "status": "reference",
       "date": "2026-08-28",
       "note": "The whole film as it stands, four panels to a page, fifty panels, with every line and every frame number. Live action frames show the real footage from the shoot beside the drawn version with the clip and the timecode on each. The number jumped from v4 straight to v8 so that the document and the artwork generation now carry the same number: what you are reading is V8. This is not a proposal, it is the current version of the document."
+    },
+    {
+      "kind": "example",
+      "scene": "1",
+      "title": "How a layer arrives",
+      "status": "reference",
+      "date": "2026-08-28",
+      "note": "Anything that moves on its own comes to you as three files, never as one picture. This is the pattern, shown with the frame because the frame is already done. The sweat droplets on shot 1.1 arrive the same way: a plate with dry skin, the droplets alone on transparency, and a composite so there is never a question about where they sit. If you need a different split than the one you are given, tick need a breakdown on the key frame and say what you want separated.",
+      "plate": "examples/frame-plate.jpg",
+      "layer": "examples/frame-layer.png",
+      "composite": "examples/frame-composite.jpg"
     }
   ]
 }
