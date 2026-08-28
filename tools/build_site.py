@@ -231,6 +231,14 @@ h2{font-size:19px;margin:38px 0 14px;padding-bottom:7px;border-bottom:1px solid 
 .crumb{font:600 11px ui-monospace,monospace;letter-spacing:.12em;color:var(--dim);
  text-transform:uppercase;margin:0 0 4px}
 .crumb a{color:var(--brass);text-decoration:none}
+.seq{display:flex;flex-wrap:wrap;gap:10px;margin:14px 0 30px;align-items:flex-start}
+.seq a{width:calc(20% - 8px);text-decoration:none;color:inherit;display:block}
+.seq img{width:100%;display:block;border:1px solid var(--rule);background:var(--card)}
+.seq .cap{font:600 9.5px ui-monospace,monospace;letter-spacing:.06em;color:var(--dim);
+ padding:5px 1px 0;display:flex;justify-content:space-between;gap:6px}
+.seq .cap b{color:var(--brass);font-weight:600}
+.seq .brk{width:100%;height:0}
+@media(max-width:760px){.seq a{width:calc(50% - 5px)}}
 .shot .cell a.open{display:block;text-decoration:none;color:inherit}
 .shot .cell img{border:1px solid var(--rule)}
 .kf{font:600 10px ui-monospace,monospace;letter-spacing:.08em;color:var(--dim);
@@ -663,9 +671,9 @@ for n in sorted(SCENES, key=int):
              'unless you ask for it to be split into background and foreground, because most '
              'frames do not need it and splitting one takes real time. Tick the ones you want '
              'and press the button at the bottom. Marko gets an email and does them.</div>')
-    for e in sh:
+    for _i, e in enumerate(sh):
         lbl = ('%s %s' % (e.get('title', 'character sheet'), ver(e))).strip()
-        b.append('<h2>Character sheet</h2>'
+        b.append(('<h2>Character sheet%s</h2>' % ('s' if len(sh) > 1 else '') if _i == 0 else '')
                  '<div class=sheet><a href="../%s"><img src="../%s" alt=""></a>'
                  '<div class=meta><span class=fid>%s</span>%s%s'
                  '<p class=note>%s</p>%s</div></div>'
@@ -678,6 +686,31 @@ for n in sorted(SCENES, key=int):
     for e in examples_of(n):
         b.append(example_block(e, '../'))
     sh_ids = shots_of(n)
+
+    # the whole scene as one strip, in order, so it can be read as a storyboard
+    # rather than opened shot by shot
+    seq = []
+    for sid in sh_ids:
+        for e in keyframes_of(sid):
+            if e.get('status') != 'superseded':
+                seq.append((sid, e))
+    if seq:
+        b.append('<h2>The whole scene, in order</h2>')
+        b.append('<p class=lede>%d key frames across %d shots, read left to right. '
+                 'Click any one to open the shot it belongs to.</p>'
+                 % (len(seq), len(sh_ids)))
+        b.append('<div class=seq>')
+        last = None
+        for sid, e in seq:
+            if last is not None and sid != last:
+                b.append('<div class=brk></div>')      # new shot starts a new row
+            last = sid
+            b.append('<a href="%s"><img src="../%s" alt="">'
+                     '<div class=cap><b>%s</b><span>%s</span></div></a>'
+                     % (shot_page(sid), e['file'], sid,
+                        os.path.basename(e['file']).replace('.png', '').replace('.jpg', '')))
+        b.append('</div>')
+
     b.append('<h2>Shots</h2>')
     if not sh_ids:
         b.append('<p class=lede>Nothing here yet.</p>')

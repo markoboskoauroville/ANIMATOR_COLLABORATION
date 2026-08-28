@@ -154,6 +154,14 @@ h2{font-size:19px;margin:38px 0 14px;padding-bottom:7px;border-bottom:1px solid 
 .crumb{font:600 11px ui-monospace,monospace;letter-spacing:.12em;color:var(--dim);
  text-transform:uppercase;margin:0 0 4px}
 .crumb a{color:var(--brass);text-decoration:none}
+.seq{display:flex;flex-wrap:wrap;gap:10px;margin:14px 0 30px;align-items:flex-start}
+.seq a{width:calc(20% - 8px);text-decoration:none;color:inherit;display:block}
+.seq img{width:100%;display:block;border:1px solid var(--rule);background:var(--card)}
+.seq .cap{font:600 9.5px ui-monospace,monospace;letter-spacing:.06em;color:var(--dim);
+ padding:5px 1px 0;display:flex;justify-content:space-between;gap:6px}
+.seq .cap b{color:var(--brass);font-weight:600}
+.seq .brk{width:100%;height:0}
+@media(max-width:760px){.seq a{width:calc(50% - 5px)}}
 .shot .cell a.open{display:block;text-decoration:none;color:inherit}
 .shot .cell img{border:1px solid var(--rule)}
 .kf{font:600 10px ui-monospace,monospace;letter-spacing:.08em;color:var(--dim);
