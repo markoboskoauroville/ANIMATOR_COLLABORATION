@@ -64,6 +64,8 @@ a{color:var(--brass)}
 .bar a.home{color:#fff;letter-spacing:.14em;margin-right:8px}
 .bar a.on{color:#e0b45f;border-bottom:2px solid #e0b45f}
 .bar .sp{flex:1}
+.bar a.drive{color:#e0b45f;margin-left:8px;white-space:nowrap}
+.bar a.drive:hover{color:#fff}
 .wrap{max-width:1500px;margin:0 auto;padding:30px 22px 70px}
 h1{font-size:30px;letter-spacing:-.01em;margin:8px 0 6px}
 h2{font-size:19px;margin:38px 0 14px;padding-bottom:7px;border-bottom:1px solid var(--rule)}
@@ -120,13 +122,20 @@ if(document.cookie.indexOf('bbc=1')>-1){window.addEventListener('DOMContentLoade
 </script>""".replace('PASSPHRASE', PASS)
 
 
+DRIVE = 'https://drive.google.com/drive/folders/1INASz6hT4OUQo4UrpT62rMJaF24Amnuu'
+
+
 def bar(here, r):
+    """An invisible table. Home and documentation left, the scenes in the middle,
+    and the last cell is always Google Drive, hard right."""
     o = ['<div class=bar><a class=home href="%sindex.html">BRAIN BRAKE</a>' % r,
          '<a href="%sdocumentation.html"%s>DOCUMENTATION</a>'
          % (r, ' class=on' if here == 'doc' else ''), '<span class=sp></span>']
     for n in sorted(SCENES, key=int):
         o.append('<a href="%sBB_C_%s/index.html"%s>SC%s</a>'
                  % (r, n, ' class=on' if here == n else '', n))
+    o.append('<span class=sp></span>')
+    o.append('<a class=drive href="%s" target=_blank rel=noopener>GOOGLE DRIVE &nearr;</a>' % DRIVE)
     o.append('</div>')
     return ''.join(o)
 
@@ -230,7 +239,7 @@ b = ['<h1>THE BRAIN BRAKE</h1>',
      'The frame is yours to add as its own layer, so it can move, animate or come off.<br>'
      'Everything is <b>2731 x 1536</b>, true 16:9. Key light is <b>camera right</b>, always.<br>'
      'Nothing here is in the film until Marko says so. The status under each picture says where it '
-     'stands.</div>',
+     'stands.<br>Video files are on <b>Google Drive</b>, top right of every page.</div>',
      '<h2>Scenes</h2><ul class=scenes>']
 for n in sorted(SCENES, key=int):
     c = len(frames_of(n))
