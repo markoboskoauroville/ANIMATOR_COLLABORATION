@@ -158,8 +158,6 @@ h2{font-size:19px;margin:38px 0 14px;padding-bottom:7px;border-bottom:1px solid 
 .prev h3{margin:0;padding:9px 14px;background:#1b1a15;border-bottom:1px solid #2b2921;
  font:600 11px ui-monospace,monospace;letter-spacing:.09em;color:#8d8574;
  display:flex;align-items:center;gap:8px}
-.prev h3 .dots{display:flex;gap:6px;margin-right:6px}
-.prev h3 i{width:10px;height:10px;border-radius:50%;display:block}
 .prev pre{margin:0;padding:18px 16px;white-space:pre-wrap;word-break:break-word;
  font:13px/1.65 ui-monospace,SFMono-Regular,Menlo,monospace;color:#d9d1bd;
  max-height:46vh;overflow:auto}
@@ -270,8 +268,7 @@ DRIVE = 'https://drive.google.com/drive/folders/1INASz6hT4OUQo4UrpT62rMJaF24Amnu
 
 TRAY = """
 <div class=prev id=prev>
-  <h3><span class=dots><i style="background:#e0655a"></i><i style="background:#e0b45f"></i><i style="background:#6fa86a"></i></span>
-  email composer &nbsp;·&nbsp; %s</h3>
+  <h3>email composer &nbsp;·&nbsp; %s</h3>
   <pre id=pv></pre>
   <div class=acts>
     <a class=who id=who href="#" title="open this in your mail app">
@@ -290,6 +287,7 @@ TRAY = """
 </div>
 <script>
 var NL=String.fromCharCode(10);
+window.__seen=false;
 function boxes(k){return [].slice.call(document.querySelectorAll('.pk:checked'))
   .filter(function(x){return x.dataset.k===k;});}
 function said(f){var t=document.querySelector('.say[data-f="'+f+'"]');
@@ -321,7 +319,10 @@ function upd(){
   if(missing.length) parts.push('<span style="color:#e08a6f">say what to change on '
     +missing.map(function(x){return x.dataset.f;}).join(', ')+'</span>');
   document.getElementById('sum').innerHTML=parts.join(' &nbsp;·&nbsp; ');
-  document.getElementById('tray').className='tray'+((b.length+m.length)?' on':'');
+  // the tray exists to get you to the composer. Once the composer is on screen it is
+  // a button to somewhere you already are, sitting on top of the buttons you want.
+  document.getElementById('tray').className =
+    'tray' + (((b.length + m.length) && !window.__seen) ? ' on' : '');
 
   var any=(b.length+m.length)>0;
   var subj=[];
@@ -342,6 +343,15 @@ function upd(){
 
   var g1=document.getElementById('go');
   if(g1){ g1.href='#prev'; g1.style.opacity=1; g1.style.pointerEvents='auto'; }
+  if(!window.__io && window.IntersectionObserver){
+    var pn=document.getElementById('prev');
+    if(pn){
+      window.__io=new IntersectionObserver(function(es){
+        window.__seen=es[0].isIntersecting; upd();
+      },{threshold:0.12});
+      window.__io.observe(pn);
+    }
+  }
   var w=document.getElementById('who');
   if(w){
     if(missing.length){ w.className='who off'; w.href='#'; }

@@ -81,8 +81,6 @@ h2{font-size:19px;margin:38px 0 14px;padding-bottom:7px;border-bottom:1px solid 
 .prev h3{margin:0;padding:9px 14px;background:#1b1a15;border-bottom:1px solid #2b2921;
  font:600 11px ui-monospace,monospace;letter-spacing:.09em;color:#8d8574;
  display:flex;align-items:center;gap:8px}
-.prev h3 .dots{display:flex;gap:6px;margin-right:6px}
-.prev h3 i{width:10px;height:10px;border-radius:50%;display:block}
 .prev pre{margin:0;padding:18px 16px;white-space:pre-wrap;word-break:break-word;
  font:13px/1.65 ui-monospace,SFMono-Regular,Menlo,monospace;color:#d9d1bd;
  max-height:46vh;overflow:auto}
@@ -185,8 +183,7 @@ function seen(){ if(document.cookie.indexOf('bbc=1')>-1) return true;
 if(seen()){window.addEventListener('DOMContentLoaded',o);}
 </script><div id=app style="display:none"><div class=bar><a class=home href="../index.html">BRAIN BRAKE</a><span class=vb>V8 DRAFT</span><a href="../documentation.html">DOCUMENTATION</a><a class=rt href="../DOCS/8-BRAIN_BRAKE_READ_THROUGH_v8.pdf" target=_blank rel=noopener title="the whole film, four panels to a page">READ THROUGH &darr;</a><span class=sp></span><a href="../BB_C_1/index.html">SC1</a><a href="../BB_C_2/index.html">SC2</a><a href="../BB_C_3/index.html">SC3</a><a href="../BB_C_4/index.html" class=on>SC4</a><a href="../BB_C_5/index.html">SC5</a><a href="../BB_C_6/index.html">SC6</a><a href="../BB_C_7/index.html">SC7</a><a href="../BB_C_8/index.html">SC8</a><span class=sp></span><a class=drive href="https://drive.google.com/drive/folders/1INASz6hT4OUQo4UrpT62rMJaF24Amnuu" target=_blank rel=noopener>GDRIVE &nearr;</a><button class=th id=th onclick="tt()" title="light or dark">&#9681;</button></div><div class=wrap><h1>Scene 4 &nbsp;<span style="color:#8a8170;font-weight:400">The gatekeeper</span></h1><div class=ask><b>Breakdowns are made on request.</b> A frame is delivered flat unless you ask for it to be split into background and foreground, because most frames do not need it and splitting one takes real time. Tick the ones you want and press the button at the bottom. Marko gets an email and does them.</div><h2>Shots</h2><p class=lede>Nothing here yet.</p>
 <div class=prev id=prev>
-  <h3><span class=dots><i style="background:#e0655a"></i><i style="background:#e0b45f"></i><i style="background:#6fa86a"></i></span>
-  email composer &nbsp;·&nbsp; scene 4</h3>
+  <h3>email composer &nbsp;·&nbsp; scene 4</h3>
   <pre id=pv></pre>
   <div class=acts>
     <a class=who id=who href="#" title="open this in your mail app">
@@ -205,6 +202,7 @@ if(seen()){window.addEventListener('DOMContentLoaded',o);}
 </div>
 <script>
 var NL=String.fromCharCode(10);
+window.__seen=false;
 function boxes(k){return [].slice.call(document.querySelectorAll('.pk:checked'))
   .filter(function(x){return x.dataset.k===k;});}
 function said(f){var t=document.querySelector('.say[data-f="'+f+'"]');
@@ -236,7 +234,10 @@ function upd(){
   if(missing.length) parts.push('<span style="color:#e08a6f">say what to change on '
     +missing.map(function(x){return x.dataset.f;}).join(', ')+'</span>');
   document.getElementById('sum').innerHTML=parts.join(' &nbsp;·&nbsp; ');
-  document.getElementById('tray').className='tray'+((b.length+m.length)?' on':'');
+  // the tray exists to get you to the composer. Once the composer is on screen it is
+  // a button to somewhere you already are, sitting on top of the buttons you want.
+  document.getElementById('tray').className =
+    'tray' + (((b.length + m.length) && !window.__seen) ? ' on' : '');
 
   var any=(b.length+m.length)>0;
   var subj=[];
@@ -257,6 +258,15 @@ function upd(){
 
   var g1=document.getElementById('go');
   if(g1){ g1.href='#prev'; g1.style.opacity=1; g1.style.pointerEvents='auto'; }
+  if(!window.__io && window.IntersectionObserver){
+    var pn=document.getElementById('prev');
+    if(pn){
+      window.__io=new IntersectionObserver(function(es){
+        window.__seen=es[0].isIntersecting; upd();
+      },{threshold:0.12});
+      window.__io.observe(pn);
+    }
+  }
   var w=document.getElementById('who');
   if(w){
     if(missing.length){ w.className='who off'; w.href='#'; }
