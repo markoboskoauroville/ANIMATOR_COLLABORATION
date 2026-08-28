@@ -17,6 +17,7 @@ CAT = json.load(open(os.path.join(ROOT, 'catalog.json')))
 SCENES = CAT['scenes']
 ENTRIES = CAT['entries']
 PASS = 'kristijan'
+EMAIL = 'EMAIL_PLACEHOLDER'
 
 STATUS = {
     'accepted':     '#3d6b4a',
@@ -96,6 +97,24 @@ h2{font-size:19px;margin:38px 0 14px;padding-bottom:7px;border-bottom:1px solid 
 .note{font-size:13px;line-height:1.5;color:var(--body);margin:5px 0 0}
 .bd{display:inline-block;margin-top:7px;font:600 11px ui-monospace,monospace;
  letter-spacing:.06em;text-transform:uppercase}
+.pick{display:flex;align-items:center;gap:7px;margin-top:8px;cursor:pointer;
+ font:600 10px ui-monospace,monospace;letter-spacing:.07em;color:var(--dim);
+ text-transform:uppercase;user-select:none}
+.pick input{width:auto;margin:0;accent-color:var(--brass)}
+.tray{position:fixed;left:0;right:0;bottom:0;z-index:60;background:var(--slate);
+ color:#e6dcc4;display:none;align-items:center;gap:16px;padding:13px 22px;
+ font:12px ui-monospace,monospace;letter-spacing:.05em;
+ box-shadow:0 -2px 14px rgba(0,0,0,.25)}
+.tray.on{display:flex}
+.tray b{color:#e0b45f}
+.tray .sp{flex:1}
+.tray a,.tray button{font:600 11px ui-monospace,monospace;letter-spacing:.08em;
+ text-transform:uppercase;padding:9px 15px;border:0;border-radius:2px;cursor:pointer;
+ text-decoration:none}
+.tray .go{background:var(--brass);color:#17150f}
+.tray .cp{background:none;color:#c9bfa4;border:1px solid #3a352b}
+.ask{background:var(--box);border-left:3px solid var(--brass);padding:13px 18px;
+ margin:18px 0 24px;max-width:880px;font-size:14px;color:var(--body)}
 .log{max-width:880px}
 .log .it{border-top:1px solid var(--rule);padding:13px 0}
 .log .d{font:11px ui-monospace,monospace;color:var(--dim)}
@@ -146,6 +165,33 @@ if(seen()){window.addEventListener('DOMContentLoaded',o);}
 
 
 DRIVE = 'https://drive.google.com/drive/folders/1INASz6hT4OUQo4UrpT62rMJaF24Amnuu'
+
+
+TRAY = """
+<div class=tray id=tray>
+  <span><b id=cnt>0</b> selected &nbsp;<span id=lst style="color:#8d8574"></span></span>
+  <span class=sp></span>
+  <button class=cp onclick="cp()">copy the list</button>
+  <a class=go id=go href="#">request breakdown</a>
+</div>
+<script>
+function sel(){return [].slice.call(document.querySelectorAll('.pk:checked'))
+  .map(function(x){return x.dataset.f;});}
+function upd(){
+  var s=sel(), t=document.getElementById('tray');
+  document.getElementById('cnt').textContent=s.length;
+  document.getElementById('lst').textContent=s.join(', ');
+  t.className='tray'+(s.length?' on':'');
+  var body='Please break these down into background and foreground:%%0D%%0A%%0D%%0A'
+    +s.join('%%0D%%0A')+'%%0D%%0A%%0D%%0Ascene %s%%0D%%0A'+encodeURIComponent(location.href);
+  document.getElementById('go').href='mailto:EMAILADDR?subject='
+    +encodeURIComponent('Breakdown request: '+s.join(', '))+'&body='+body;
+}
+function cp(){var t='Breakdown request: '+sel().join(', ');
+  navigator.clipboard.writeText(t).then(function(){
+    var b=document.querySelector('.tray .cp');b.textContent='copied';
+    setTimeout(function(){b.textContent='copy the list';},1400);});}
+</script>"""
 
 
 def bar(here, r):
@@ -209,19 +255,28 @@ for n in sorted(SCENES, key=int):
     else:
         b.append('<p class=lede>%d %s. Click a picture to open it at full size.</p>'
                  % (len(fs), 'frame' if len(fs) == 1 else 'frames'))
+        b.append('<div class=ask><b>Breakdowns are made on request.</b> A frame is delivered flat '
+                 'unless you ask for it to be split into background and foreground, because most '
+                 'frames do not need it and splitting one takes real time. Tick the ones you want '
+                 'and press the button at the bottom. Marko gets an email and does them.</div>')
         for i in range(0, len(fs), 5):
             b.append('<div class=row>')
             for e in fs[i:i + 5]:
                 lay = layers_of(e)
                 bd = ('<a class=bd href="%s_breakdown.html">Breakdown &rarr;</a>'
                       % os.path.splitext(os.path.basename(e['file']))[0]) if lay else ''
+                fid = e.get('frame', '')
                 b.append('<div class=cell><a href="../%s"><img src="../%s" alt=""></a>'
                          '<div class=meta><span class=fid>%s</span>%s'
-                         '<p class=note>%s</p>%s</div></div>'
-                         % (e['file'], e['file'], e.get('frame', ''),
+                         '<p class=note>%s</p>%s'
+                         '<label class=pick><input type=checkbox class=pk '
+                         'data-f="%s" onchange="upd()"> need a breakdown</label>'
+                         '</div></div>'
+                         % (e['file'], e['file'], fid,
                             tag(e.get('status', 'proposal')),
-                            e.get('note', 'note pending'), bd))
+                            e.get('note', 'note pending'), bd, fid))
             b.append('</div>')
+    b.append((TRAY % n).replace("EMAILADDR", EMAIL))
     open(os.path.join(ROOT, 'BB_C_%s' % n, 'index.html'), 'w').write(
         page('Scene %s' % n, ''.join(b), here=n, depth=1))
 

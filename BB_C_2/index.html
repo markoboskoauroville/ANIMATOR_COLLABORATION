@@ -44,6 +44,24 @@ h2{font-size:19px;margin:38px 0 14px;padding-bottom:7px;border-bottom:1px solid 
 .note{font-size:13px;line-height:1.5;color:var(--body);margin:5px 0 0}
 .bd{display:inline-block;margin-top:7px;font:600 11px ui-monospace,monospace;
  letter-spacing:.06em;text-transform:uppercase}
+.pick{display:flex;align-items:center;gap:7px;margin-top:8px;cursor:pointer;
+ font:600 10px ui-monospace,monospace;letter-spacing:.07em;color:var(--dim);
+ text-transform:uppercase;user-select:none}
+.pick input{width:auto;margin:0;accent-color:var(--brass)}
+.tray{position:fixed;left:0;right:0;bottom:0;z-index:60;background:var(--slate);
+ color:#e6dcc4;display:none;align-items:center;gap:16px;padding:13px 22px;
+ font:12px ui-monospace,monospace;letter-spacing:.05em;
+ box-shadow:0 -2px 14px rgba(0,0,0,.25)}
+.tray.on{display:flex}
+.tray b{color:#e0b45f}
+.tray .sp{flex:1}
+.tray a,.tray button{font:600 11px ui-monospace,monospace;letter-spacing:.08em;
+ text-transform:uppercase;padding:9px 15px;border:0;border-radius:2px;cursor:pointer;
+ text-decoration:none}
+.tray .go{background:var(--brass);color:#17150f}
+.tray .cp{background:none;color:#c9bfa4;border:1px solid #3a352b}
+.ask{background:var(--box);border-left:3px solid var(--brass);padding:13px 18px;
+ margin:18px 0 24px;max-width:880px;font-size:14px;color:var(--body)}
 .log{max-width:880px}
 .log .it{border-top:1px solid var(--rule);padding:13px 0}
 .log .d{font:11px ui-monospace,monospace;color:var(--dim)}
@@ -88,4 +106,28 @@ function seen(){ if(document.cookie.indexOf('bbc=1')>-1) return true;
    document.cookie='bbc=1;path=/;max-age=31536000;samesite=lax'; return true;} }catch(x){}
  return false;}
 if(seen()){window.addEventListener('DOMContentLoaded',o);}
-</script><div id=app style="display:none"><div class=bar><a class=home href="../index.html">BRAIN BRAKE</a><a href="../documentation.html">DOCUMENTATION</a><span class=sp></span><a href="../BB_C_1/index.html">SC1</a><a href="../BB_C_2/index.html" class=on>SC2</a><a href="../BB_C_3/index.html">SC3</a><a href="../BB_C_4/index.html">SC4</a><a href="../BB_C_5/index.html">SC5</a><a href="../BB_C_6/index.html">SC6</a><a href="../BB_C_7/index.html">SC7</a><a href="../BB_C_8/index.html">SC8</a><span class=sp></span><button class=th id=th onclick="tt()" title="light or dark">&#9681;</button><a class=drive href="https://drive.google.com/drive/folders/1INASz6hT4OUQo4UrpT62rMJaF24Amnuu" target=_blank rel=noopener>GDRIVE &nearr;</a></div><div class=wrap><h1>Scene 2 &nbsp;<span style="color:#8a8170;font-weight:400">The old theory</span></h1><p class=lede>Nothing here yet.</p></div></div></body></html>
+</script><div id=app style="display:none"><div class=bar><a class=home href="../index.html">BRAIN BRAKE</a><a href="../documentation.html">DOCUMENTATION</a><span class=sp></span><a href="../BB_C_1/index.html">SC1</a><a href="../BB_C_2/index.html" class=on>SC2</a><a href="../BB_C_3/index.html">SC3</a><a href="../BB_C_4/index.html">SC4</a><a href="../BB_C_5/index.html">SC5</a><a href="../BB_C_6/index.html">SC6</a><a href="../BB_C_7/index.html">SC7</a><a href="../BB_C_8/index.html">SC8</a><span class=sp></span><button class=th id=th onclick="tt()" title="light or dark">&#9681;</button><a class=drive href="https://drive.google.com/drive/folders/1INASz6hT4OUQo4UrpT62rMJaF24Amnuu" target=_blank rel=noopener>GDRIVE &nearr;</a></div><div class=wrap><h1>Scene 2 &nbsp;<span style="color:#8a8170;font-weight:400">The old theory</span></h1><p class=lede>Nothing here yet.</p>
+<div class=tray id=tray>
+  <span><b id=cnt>0</b> selected &nbsp;<span id=lst style="color:#8d8574"></span></span>
+  <span class=sp></span>
+  <button class=cp onclick="cp()">copy the list</button>
+  <a class=go id=go href="#">request breakdown</a>
+</div>
+<script>
+function sel(){return [].slice.call(document.querySelectorAll('.pk:checked'))
+  .map(function(x){return x.dataset.f;});}
+function upd(){
+  var s=sel(), t=document.getElementById('tray');
+  document.getElementById('cnt').textContent=s.length;
+  document.getElementById('lst').textContent=s.join(', ');
+  t.className='tray'+(s.length?' on':'');
+  var body='Please break these down into background and foreground:%0D%0A%0D%0A'
+    +s.join('%0D%0A')+'%0D%0A%0D%0Ascene 2%0D%0A'+encodeURIComponent(location.href);
+  document.getElementById('go').href='mailto:EMAIL_PLACEHOLDER?subject='
+    +encodeURIComponent('Breakdown request: '+s.join(', '))+'&body='+body;
+}
+function cp(){var t='Breakdown request: '+sel().join(', ');
+  navigator.clipboard.writeText(t).then(function(){
+    var b=document.querySelector('.tray .cp');b.textContent='copied';
+    setTimeout(function(){b.textContent='copy the list';},1400);});}
+</script></div></div></body></html>
