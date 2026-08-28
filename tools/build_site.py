@@ -667,6 +667,32 @@ for n in sorted(SCENES, key=int):
     b = ['<h1>Scene %s &nbsp;<span style="color:#8a8170;font-weight:400">%s</span></h1>'
          % (n, SCENES[n])]
     b.append(rule_strip(n))
+
+    # THE FIRST THING ON THE PAGE. The scene as one strip, in order. Everything
+    # else on this page is reference for it, so it comes after.
+    sh_ids = shots_of(n)
+    seq = []
+    for sid in sh_ids:
+        for e in keyframes_of(sid):
+            if e.get('status') != 'superseded':
+                seq.append((sid, e))
+    if seq:
+        b.append('<h2>The whole scene, in order</h2>')
+        b.append('<p class=lede>%d key frames across %d shots, read left to right. '
+                 'Click any one to open the shot it belongs to. Everything below this is '
+                 'reference for these.</p>' % (len(seq), len(sh_ids)))
+        b.append('<div class=seq>')
+        last = None
+        for sid, e in seq:
+            if last is not None and sid != last:
+                b.append('<div class=brk></div>')
+            last = sid
+            b.append('<a href="%s"><img src="../%s" alt="">'
+                     '<div class=cap><b>%s</b><span>%s</span></div></a>'
+                     % (shot_page(sid), e['file'], sid,
+                        os.path.basename(e['file']).replace('.png', '').replace('.jpg', '')))
+        b.append('</div>')
+
     b.append('<div class=ask><b>Breakdowns are made on request.</b> A frame is delivered flat '
              'unless you ask for it to be split into background and foreground, because most '
              'frames do not need it and splitting one takes real time. Tick the ones you want '
@@ -686,32 +712,6 @@ for n in sorted(SCENES, key=int):
         b.append(overlay_block(e, '../'))
     for e in examples_of(n):
         b.append(example_block(e, '../'))
-    sh_ids = shots_of(n)
-
-    # the whole scene as one strip, in order, so it can be read as a storyboard
-    # rather than opened shot by shot
-    seq = []
-    for sid in sh_ids:
-        for e in keyframes_of(sid):
-            if e.get('status') != 'superseded':
-                seq.append((sid, e))
-    if seq:
-        b.append('<h2>The whole scene, in order</h2>')
-        b.append('<p class=lede>%d key frames across %d shots, read left to right. '
-                 'Click any one to open the shot it belongs to.</p>'
-                 % (len(seq), len(sh_ids)))
-        b.append('<div class=seq>')
-        last = None
-        for sid, e in seq:
-            if last is not None and sid != last:
-                b.append('<div class=brk></div>')      # new shot starts a new row
-            last = sid
-            b.append('<a href="%s"><img src="../%s" alt="">'
-                     '<div class=cap><b>%s</b><span>%s</span></div></a>'
-                     % (shot_page(sid), e['file'], sid,
-                        os.path.basename(e['file']).replace('.png', '').replace('.jpg', '')))
-        b.append('</div>')
-
     b.append('<h2>Shots</h2>')
     if not sh_ids:
         b.append('<p class=lede>Nothing here yet.</p>')
