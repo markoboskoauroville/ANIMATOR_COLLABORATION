@@ -248,6 +248,14 @@
       "status": "accepted",
       "date": "2026-08-28",
       "note": "KEY FRAME 2 of 4 of the muscle activation. The fire spreads. A dozen ignition points along the same fibres, the fibres beneath them gone pale, the darkness pushed out to the corners. Same diagonal and same hand as key frame 1 on purpose: it has to read as recruitment spreading through one muscle, not as a cut to somewhere new. Measured escalation from key frame 1: mean luminance 152 to 185, bright pixels 16 percent to 33 percent. The light roughly doubles at each of the four beats."
+    },
+    {
+      "kind": "keyframe",
+      "shot": "1.2c",
+      "file": "BB_C_1/1-2c-3-v1.png",
+      "status": "proposal",
+      "date": "2026-08-28",
+      "note": "KEY FRAME 3 of 4 of the muscle activation. THE REVEAL. We pull back and what filled the frame turns out to have been one muscle in a leg. Every muscle now alight along its whole length. This is where the audience finally learns the scale they have been looking at, and where the field turns from the darkest frame in the film to the brightest. Measured across the three beats so far: mean luminance 152, 185, 235, bright pixels 16, 33, 71 percent. The leg is at rest rather than braced, which reads as charged and not yet released."
     }
   ]
 }
