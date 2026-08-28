@@ -60,9 +60,9 @@
     {
       "file": "DOCS/8-BRAIN_BRAKE_READ_THROUGH_v8.pdf",
       "kind": "document",
-      "status": "reference",
+      "status": "superseded",
       "date": "2026-08-28",
-      "note": "The whole film as it stands, four panels to a page, fifty panels, with every line and every frame number. Live action frames show the real footage from the shoot beside the drawn version with the clip and the timecode on each. The number jumped from v4 straight to v8 so that the document and the artwork generation now carry the same number: what you are reading is V8. This is not a proposal, it is the current version of the document."
+      "note": "The whole film as it stands, four panels to a page, fifty panels, with every line and every frame number. Live action frames show the real footage from the shoot beside the drawn version with the clip and the timecode on each. Superseded by v9, which carries the rebuilt scene 1."
     },
     {
       "kind": "example",
@@ -355,6 +355,13 @@
       "status": "proposal",
       "date": "2026-08-28",
       "note": "KEY FRAME 3 of 3, AND HALF OF THE FILM'S BOOKEND. Torso collapsed over his knees, head hanging, arms dead, back leg dragging. THIS IS THE SAME FRAME AS SHOT 1.3 PHASE 1: same man, same size, same position, same direction, built from that frame so nothing could move. Only the body is different. Cut them together at the two ends of the scene and it is one shot twice with a different man inside it. Frame rate here is the slowest in the film, two to three a second."
+    },
+    {
+      "file": "DOCS/9-BRAIN_BRAKE_READ_THROUGH_v9.pdf",
+      "kind": "document",
+      "status": "reference",
+      "date": "2026-08-28",
+      "note": "The whole film as it stands, four panels to a page. SCENE 1 IS REBUILT: 15 panels instead of 5, opening on the empty avenue and the labouring feet, through the collapse, the face lifting, what he sees, the four beats of the muscle activation, the sprint, and Manan walking in. The film is 60 panels, up from 50. Everything after scene 1 is unchanged but renumbered, so any timecode taken from an earlier read through is now wrong."
     }
   ]
 }

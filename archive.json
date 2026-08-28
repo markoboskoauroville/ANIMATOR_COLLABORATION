@@ -5,7 +5,7 @@
       "name": "PRINT_PACK.pdf",
       "repo": "ANIMATOR_COLLABORATION",
       "url": "https://raw.githubusercontent.com/markoboskoauroville/ANIMATOR_COLLABORATION/main/PRINT_PACK.pdf",
-      "mb": 66.7,
+      "mb": 93.7,
       "date": "2026-08-28",
       "group": "Print packs",
       "order": 0
@@ -61,6 +61,15 @@
       "url": "https://raw.githubusercontent.com/markoboskoauroville/ANIMATOR_COLLABORATION/main/DOCS/8-BRAIN_BRAKE_READ_THROUGH_v8.pdf",
       "mb": 75.2,
       "date": "2026-08-28",
+      "group": "Read through",
+      "order": 1
+    },
+    {
+      "name": "9-BRAIN_BRAKE_READ_THROUGH_v9.pdf",
+      "repo": "ANIMATOR_COLLABORATION",
+      "url": "https://raw.githubusercontent.com/markoboskoauroville/ANIMATOR_COLLABORATION/main/DOCS/9-BRAIN_BRAKE_READ_THROUGH_v9.pdf",
+      "mb": 12.5,
+      "date": "",
       "group": "Read through",
       "order": 1
     },
@@ -285,7 +294,7 @@
       "repo": "BRAIN_BRAKE",
       "url": "https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE/main/assets/pdf/1%20-%20script%20v1%20-%20Manan%20original%20%28pitch%29.pdf",
       "mb": 3.4,
-      "date": "",
+      "date": "2026-08-11",
       "group": "Scripts",
       "order": 3
     },
