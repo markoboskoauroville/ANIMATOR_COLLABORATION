@@ -67,6 +67,20 @@ h2{font-size:19px;margin:38px 0 14px;padding-bottom:7px;border-bottom:1px solid 
 .tray a,.tray button{font:600 11px ui-monospace,monospace;letter-spacing:.08em;
  text-transform:uppercase;padding:9px 15px;border:0;border-radius:2px;cursor:pointer;
  text-decoration:none}
+.prev{border:1px solid var(--rule);background:var(--box);margin:34px 0 90px;display:none}
+.prev.on{display:block}
+.prev h3{margin:0;padding:11px 16px;border-bottom:1px solid var(--rule);
+ font:600 11px ui-monospace,monospace;letter-spacing:.09em;text-transform:uppercase;
+ color:var(--brass)}
+.prev pre{margin:0;padding:16px;white-space:pre-wrap;word-break:break-word;
+ font:13px/1.6 ui-monospace,SFMono-Regular,Menlo,monospace;color:var(--ink);
+ max-height:46vh;overflow:auto}
+.prev .acts{display:flex;gap:10px;padding:12px 16px;border-top:1px solid var(--rule)}
+.prev .acts button,.prev .acts a{font:600 11px ui-monospace,monospace;letter-spacing:.08em;
+ text-transform:uppercase;padding:9px 15px;border-radius:2px;cursor:pointer;
+ text-decoration:none;border:1px solid var(--rule);background:none;color:var(--ink)}
+.prev .acts .go{background:var(--brass);color:#17150f;border-color:var(--brass)}
+.prev .acts .go.off{opacity:.4;pointer-events:none}
 .tray .go{background:var(--brass);color:#17150f}
 .tray .cp{background:none;color:#c9bfa4;border:1px solid #3a352b}
 .ask{background:var(--box);border-left:3px solid var(--brass);padding:13px 18px;
@@ -116,6 +130,15 @@ function seen(){ if(document.cookie.indexOf('bbc=1')>-1) return true;
  return false;}
 if(seen()){window.addEventListener('DOMContentLoaded',o);}
 </script><div id=app style="display:none"><div class=bar><a class=home href="../index.html">BRAIN BRAKE</a><a href="../documentation.html">DOCUMENTATION</a><span class=sp></span><a href="../BB_C_1/index.html">SC1</a><a href="../BB_C_2/index.html">SC2</a><a href="../BB_C_3/index.html">SC3</a><a href="../BB_C_4/index.html">SC4</a><a href="../BB_C_5/index.html">SC5</a><a href="../BB_C_6/index.html" class=on>SC6</a><a href="../BB_C_7/index.html">SC7</a><a href="../BB_C_8/index.html">SC8</a><span class=sp></span><a class=drive href="https://drive.google.com/drive/folders/1INASz6hT4OUQo4UrpT62rMJaF24Amnuu" target=_blank rel=noopener>GDRIVE &nearr;</a><button class=th id=th onclick="tt()" title="light or dark">&#9681;</button></div><div class=wrap><h1>Scene 6 &nbsp;<span style="color:#8a8170;font-weight:400">The release</span></h1><p class=lede>Nothing here yet.</p>
+<div class=prev id=prev>
+  <h3>the message, as it will be sent</h3>
+  <pre id=pv></pre>
+  <div class=acts>
+    <button onclick="cp()" id=cpb>copy the message</button>
+    <button onclick="cpa()">copy the address</button>
+    <a class=go id=go2 href="#">open in mail</a>
+  </div>
+</div>
 <div class=tray id=tray>
   <span id=sum></span>
   <span class=sp></span>
@@ -157,20 +180,37 @@ function upd(){
   document.getElementById('sum').innerHTML=parts.join(' &nbsp;·&nbsp; ');
   document.getElementById('tray').className='tray'+((b.length+m.length)?' on':'');
 
-  var go=document.getElementById('go');
-  if(missing.length){
-    go.style.opacity=.4; go.style.pointerEvents='none'; go.href='#';
-  } else {
-    go.style.opacity=1; go.style.pointerEvents='auto';
-    var subj=[];
-    if(b.length) subj.push('breakdown '+b.map(function(x){return x.dataset.f;}).join(', '));
-    if(m.length) subj.push('modification '+m.map(function(x){return x.dataset.f;}).join(', '));
-    go.href='mailto:EMAIL_PLACEHOLDER?subject='
-      +encodeURIComponent('Scene 6 request: '+subj.join('; '))
-      +'&body='+encodeURIComponent(text()+NL+NL+location.href);
+  var any=(b.length+m.length)>0;
+  var subj=[];
+  if(b.length) subj.push('breakdown '+b.map(function(x){return x.dataset.f;}).join(', '));
+  if(m.length) subj.push('modification '+m.map(function(x){return x.dataset.f;}).join(', '));
+  var subject='Scene 6 request: '+subj.join('; ');
+  var href='mailto:EMAIL_PLACEHOLDER?subject='+encodeURIComponent(subject)
+    +'&body='+encodeURIComponent(text()+NL+NL+location.href);
+
+  // the preview at the foot of the page, live as he ticks
+  var pv=document.getElementById('pv'), pr=document.getElementById('prev');
+  pr.className='prev'+(any?' on':'');
+  if(any){
+    pv.textContent='To:      EMAIL_PLACEHOLDER'+NL+'Subject: '+subject+NL+NL
+      +text()+NL+NL+location.href;
   }
+
+  [document.getElementById('go'), document.getElementById('go2')].forEach(function(g){
+    if(!g) return;
+    if(missing.length){ g.className=(g.id==='go2'?'go off':'go'); g.style.opacity=.4;
+      g.style.pointerEvents='none'; g.href='#'; }
+    else { g.className=(g.id==='go2'?'go':'go'); g.style.opacity=1;
+      g.style.pointerEvents='auto'; g.href=href; }
+  });
 }
-function cp(){navigator.clipboard.writeText(text()).then(function(){
-  var x=document.querySelector('.tray .cp');x.textContent='copied';
-  setTimeout(function(){x.textContent='copy the list';},1400);});}
+function cpa(){navigator.clipboard.writeText('EMAIL_PLACEHOLDER');}
+function cp(){
+  var t=document.getElementById('pv').textContent;
+  navigator.clipboard.writeText(t).then(function(){
+    ['cpb'].forEach(function(id){var x=document.getElementById(id);
+      if(x){x.textContent='copied';setTimeout(function(){x.textContent='copy the message';},1400);}});
+    var y=document.querySelector('.tray .cp');
+    if(y){y.textContent='copied';setTimeout(function(){y.textContent='copy the list';},1400);}
+  });}
 </script></div></div></body></html>

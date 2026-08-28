@@ -67,6 +67,20 @@ h2{font-size:19px;margin:38px 0 14px;padding-bottom:7px;border-bottom:1px solid 
 .tray a,.tray button{font:600 11px ui-monospace,monospace;letter-spacing:.08em;
  text-transform:uppercase;padding:9px 15px;border:0;border-radius:2px;cursor:pointer;
  text-decoration:none}
+.prev{border:1px solid var(--rule);background:var(--box);margin:34px 0 90px;display:none}
+.prev.on{display:block}
+.prev h3{margin:0;padding:11px 16px;border-bottom:1px solid var(--rule);
+ font:600 11px ui-monospace,monospace;letter-spacing:.09em;text-transform:uppercase;
+ color:var(--brass)}
+.prev pre{margin:0;padding:16px;white-space:pre-wrap;word-break:break-word;
+ font:13px/1.6 ui-monospace,SFMono-Regular,Menlo,monospace;color:var(--ink);
+ max-height:46vh;overflow:auto}
+.prev .acts{display:flex;gap:10px;padding:12px 16px;border-top:1px solid var(--rule)}
+.prev .acts button,.prev .acts a{font:600 11px ui-monospace,monospace;letter-spacing:.08em;
+ text-transform:uppercase;padding:9px 15px;border-radius:2px;cursor:pointer;
+ text-decoration:none;border:1px solid var(--rule);background:none;color:var(--ink)}
+.prev .acts .go{background:var(--brass);color:#17150f;border-color:var(--brass)}
+.prev .acts .go.off{opacity:.4;pointer-events:none}
 .tray .go{background:var(--brass);color:#17150f}
 .tray .cp{background:none;color:#c9bfa4;border:1px solid #3a352b}
 .ask{background:var(--box);border-left:3px solid var(--brass);padding:13px 18px;

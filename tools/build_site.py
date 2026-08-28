@@ -120,6 +120,20 @@ h2{font-size:19px;margin:38px 0 14px;padding-bottom:7px;border-bottom:1px solid 
 .tray a,.tray button{font:600 11px ui-monospace,monospace;letter-spacing:.08em;
  text-transform:uppercase;padding:9px 15px;border:0;border-radius:2px;cursor:pointer;
  text-decoration:none}
+.prev{border:1px solid var(--rule);background:var(--box);margin:34px 0 90px;display:none}
+.prev.on{display:block}
+.prev h3{margin:0;padding:11px 16px;border-bottom:1px solid var(--rule);
+ font:600 11px ui-monospace,monospace;letter-spacing:.09em;text-transform:uppercase;
+ color:var(--brass)}
+.prev pre{margin:0;padding:16px;white-space:pre-wrap;word-break:break-word;
+ font:13px/1.6 ui-monospace,SFMono-Regular,Menlo,monospace;color:var(--ink);
+ max-height:46vh;overflow:auto}
+.prev .acts{display:flex;gap:10px;padding:12px 16px;border-top:1px solid var(--rule)}
+.prev .acts button,.prev .acts a{font:600 11px ui-monospace,monospace;letter-spacing:.08em;
+ text-transform:uppercase;padding:9px 15px;border-radius:2px;cursor:pointer;
+ text-decoration:none;border:1px solid var(--rule);background:none;color:var(--ink)}
+.prev .acts .go{background:var(--brass);color:#17150f;border-color:var(--brass)}
+.prev .acts .go.off{opacity:.4;pointer-events:none}
 .tray .go{background:var(--brass);color:#17150f}
 .tray .cp{background:none;color:#c9bfa4;border:1px solid #3a352b}
 .ask{background:var(--box);border-left:3px solid var(--brass);padding:13px 18px;
@@ -177,6 +191,15 @@ DRIVE = 'https://drive.google.com/drive/folders/1INASz6hT4OUQo4UrpT62rMJaF24Amnu
 
 
 TRAY = """
+<div class=prev id=prev>
+  <h3>the message, as it will be sent</h3>
+  <pre id=pv></pre>
+  <div class=acts>
+    <button onclick="cp()" id=cpb>copy the message</button>
+    <button onclick="cpa()">copy the address</button>
+    <a class=go id=go2 href="#">open in mail</a>
+  </div>
+</div>
 <div class=tray id=tray>
   <span id=sum></span>
   <span class=sp></span>
@@ -218,22 +241,39 @@ function upd(){
   document.getElementById('sum').innerHTML=parts.join(' &nbsp;·&nbsp; ');
   document.getElementById('tray').className='tray'+((b.length+m.length)?' on':'');
 
-  var go=document.getElementById('go');
-  if(missing.length){
-    go.style.opacity=.4; go.style.pointerEvents='none'; go.href='#';
-  } else {
-    go.style.opacity=1; go.style.pointerEvents='auto';
-    var subj=[];
-    if(b.length) subj.push('breakdown '+b.map(function(x){return x.dataset.f;}).join(', '));
-    if(m.length) subj.push('modification '+m.map(function(x){return x.dataset.f;}).join(', '));
-    go.href='mailto:EMAILADDR?subject='
-      +encodeURIComponent('Scene %s request: '+subj.join('; '))
-      +'&body='+encodeURIComponent(text()+NL+NL+location.href);
+  var any=(b.length+m.length)>0;
+  var subj=[];
+  if(b.length) subj.push('breakdown '+b.map(function(x){return x.dataset.f;}).join(', '));
+  if(m.length) subj.push('modification '+m.map(function(x){return x.dataset.f;}).join(', '));
+  var subject='Scene %s request: '+subj.join('; ');
+  var href='mailto:EMAILADDR?subject='+encodeURIComponent(subject)
+    +'&body='+encodeURIComponent(text()+NL+NL+location.href);
+
+  // the preview at the foot of the page, live as he ticks
+  var pv=document.getElementById('pv'), pr=document.getElementById('prev');
+  pr.className='prev'+(any?' on':'');
+  if(any){
+    pv.textContent='To:      EMAILADDR'+NL+'Subject: '+subject+NL+NL
+      +text()+NL+NL+location.href;
   }
+
+  [document.getElementById('go'), document.getElementById('go2')].forEach(function(g){
+    if(!g) return;
+    if(missing.length){ g.className=(g.id==='go2'?'go off':'go'); g.style.opacity=.4;
+      g.style.pointerEvents='none'; g.href='#'; }
+    else { g.className=(g.id==='go2'?'go':'go'); g.style.opacity=1;
+      g.style.pointerEvents='auto'; g.href=href; }
+  });
 }
-function cp(){navigator.clipboard.writeText(text()).then(function(){
-  var x=document.querySelector('.tray .cp');x.textContent='copied';
-  setTimeout(function(){x.textContent='copy the list';},1400);});}
+function cpa(){navigator.clipboard.writeText('EMAILADDR');}
+function cp(){
+  var t=document.getElementById('pv').textContent;
+  navigator.clipboard.writeText(t).then(function(){
+    ['cpb'].forEach(function(id){var x=document.getElementById(id);
+      if(x){x.textContent='copied';setTimeout(function(){x.textContent='copy the message';},1400);}});
+    var y=document.querySelector('.tray .cp');
+    if(y){y.textContent='copied';setTimeout(function(){y.textContent='copy the list';},1400);}
+  });}
 </script>"""
 
 
