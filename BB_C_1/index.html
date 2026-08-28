@@ -80,8 +80,16 @@ h2{font-size:19px;margin:38px 0 14px;padding-bottom:7px;border-bottom:1px solid 
  max-height:46vh;overflow:auto}
 .prev pre b{color:#e0b45f;font-weight:600}
 .prev pre .cur{background:#e0b45f;color:#0e0d0a}
-.prev .acts{display:flex;gap:10px;padding:12px 16px;border-top:1px solid #2b2921;
- background:#141310;flex-wrap:wrap}
+.prev .acts{display:flex;gap:10px;align-items:center;padding:12px 16px;
+ border-top:1px solid #2b2921;background:#141310;flex-wrap:wrap}
+.prev .who{display:flex;align-items:center;gap:11px;text-decoration:none;
+ padding:5px 12px 5px 5px;border:1px solid #3a352b;border-radius:999px;margin-right:4px}
+.prev .who:hover{border-color:var(--brass);background:#1b1a15}
+.prev .who img{width:38px;height:38px;border-radius:50%;display:block}
+.prev .who .n{font:600 12px ui-monospace,monospace;color:#e6dcc4;letter-spacing:.03em}
+.prev .who .e{font:11px ui-monospace,monospace;color:#8d8574}
+.prev .who.off{opacity:.35;pointer-events:none}
+.prev .sep{flex:1}
 .prev .acts button,.prev .acts a{font:600 11px ui-monospace,monospace;letter-spacing:.08em;
  text-transform:uppercase;padding:9px 15px;border-radius:3px;cursor:pointer;
  text-decoration:none;border:1px solid #3a352b;background:none;color:#c9bfa4}
@@ -143,9 +151,13 @@ if(seen()){window.addEventListener('DOMContentLoaded',o);}
   email composer &nbsp;·&nbsp; scene 1</h3>
   <pre id=pv></pre>
   <div class=acts>
+    <a class=who id=who href="#" title="open this in your mail app">
+      <img src="../marko.png" alt="">
+      <span><span class=n>Marko</span><br><span class=e>marko.bosko@auroville.community</span></span>
+    </a>
+    <span class=sep></span>
     <button onclick="cp()" id=cpb>copy the whole message</button>
     <button onclick="cpa()" id=cab>copy just the address</button>
-    <a class=go id=go2 href="#">push to email composer</a>
   </div>
 </div>
 <div class=tray id=tray>
@@ -207,10 +219,10 @@ function upd(){
 
   var g1=document.getElementById('go');
   if(g1){ g1.href='#prev'; g1.style.opacity=1; g1.style.pointerEvents='auto'; }
-  var g2=document.getElementById('go2');
-  if(g2){
-    if(missing.length){ g2.className='go off'; g2.href='#'; }
-    else { g2.className='go'; g2.href=href; }
+  var w=document.getElementById('who');
+  if(w){
+    if(missing.length){ w.className='who off'; w.href='#'; }
+    else { w.className='who'; w.href=href; }
   }
 }
 function cpa(){navigator.clipboard.writeText('marko.bosko@auroville.community').then(function(){
