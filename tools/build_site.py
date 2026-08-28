@@ -673,8 +673,9 @@ for n in sorted(SCENES, key=int):
              'and press the button at the bottom. Marko gets an email and does them.</div>')
     for _i, e in enumerate(sh):
         lbl = ('%s %s' % (e.get('title', 'character sheet'), ver(e))).strip()
-        b.append(('<h2>Character sheet%s</h2>' % ('s' if len(sh) > 1 else '') if _i == 0 else '')
-                 '<div class=sheet><a href="../%s"><img src="../%s" alt=""></a>'
+        if _i == 0:
+            b.append('<h2>Character sheet%s</h2>' % ('s' if len(sh) > 1 else ''))
+        b.append('<div class=sheet><a href="../%s"><img src="../%s" alt=""></a>'
                  '<div class=meta><span class=fid>%s</span>%s%s'
                  '<p class=note>%s</p>%s</div></div>'
                  % (e['file'], e['file'], e.get('title', 'character sheet'),
