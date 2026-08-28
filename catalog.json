@@ -33,10 +33,28 @@
       "frame": "1.1",
       "file": "BB_C_1/1-1-v3.png",
       "kind": "frame",
-      "status": "proposal",
+      "status": "superseded",
       "date": "2026-08-28",
       "supersedes": "1-1-v2.png",
-      "note": "The eyes are now right. He looks straight ahead into the far distance, down the road at what is left of the race, rather than off to the side. Still wrong: he has come fully upright and square to camera, and the shot needs him bent forward from the waist as in the original, head lower than his shoulders, still folded over from running. A v4 is coming with the posture restored. Do not build on v3 yet."
+      "note": "The eyes were fixed here, straight ahead into the far distance rather than off to the side. But he came fully upright and square to camera, so the running posture was lost. Superseded by v4."
+    },
+    {
+      "frame": "1.1",
+      "file": "BB_C_1/1-1-v4.png",
+      "kind": "frame",
+      "status": "superseded",
+      "date": "2026-08-28",
+      "supersedes": "1-1-v3.png",
+      "note": "The lean is back. He is tipped toward us, shoulders rounded, head lower than the shoulders, still folded over from running, and the eyes look level into the distance. The face and the sweat are right. Two things kept it from being final: the paper is empty behind him, so he floats with nothing to be exhausted in front of, and the whole picture has drifted a little pale against the rest of scene 1. Superseded by v5."
+    },
+    {
+      "frame": "1.1",
+      "file": "BB_C_1/1-1-v5.png",
+      "kind": "frame",
+      "status": "proposal",
+      "date": "2026-08-28",
+      "supersedes": "1-1-v4.png",
+      "note": "The road is in it now, converging away behind him with a flat horizon, which is exactly what the shot is about: he is looking at what is left of the race. The lean, the eyes and the face all hold. One thing to know before you build on it: the hand drawn panel border is back, and the artwork must run edge to edge with no border, because the frame is yours to add as its own layer. Everything else about this version is right, so the border is the only fix."
     }
   ]
 }
