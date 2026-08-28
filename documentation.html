@@ -51,6 +51,12 @@ h2{font-size:19px;margin:38px 0 14px;padding-bottom:7px;border-bottom:1px solid 
  font:600 10px ui-monospace,monospace;letter-spacing:.07em;color:var(--dim);
  text-transform:uppercase;user-select:none}
 .pick input{width:auto;margin:0;accent-color:var(--brass)}
+.say{display:none;width:100%;margin:7px 0 2px;padding:8px 9px;
+ background:var(--card);color:var(--ink);border:1px solid var(--rule);border-radius:2px;
+ font:13px/1.45 inherit;resize:vertical}
+.say:focus{outline:0;border-color:var(--brass)}
+.say.on{display:block}
+.say.miss{border-color:#a8402f}
 .tray{position:fixed;left:0;right:0;bottom:0;z-index:60;background:var(--slate);
  color:#e6dcc4;display:none;align-items:center;gap:16px;padding:13px 22px;
  font:12px ui-monospace,monospace;letter-spacing:.05em;

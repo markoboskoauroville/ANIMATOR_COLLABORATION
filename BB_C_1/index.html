@@ -51,6 +51,12 @@ h2{font-size:19px;margin:38px 0 14px;padding-bottom:7px;border-bottom:1px solid 
  font:600 10px ui-monospace,monospace;letter-spacing:.07em;color:var(--dim);
  text-transform:uppercase;user-select:none}
 .pick input{width:auto;margin:0;accent-color:var(--brass)}
+.say{display:none;width:100%;margin:7px 0 2px;padding:8px 9px;
+ background:var(--card);color:var(--ink);border:1px solid var(--rule);border-radius:2px;
+ font:13px/1.45 inherit;resize:vertical}
+.say:focus{outline:0;border-color:var(--brass)}
+.say.on{display:block}
+.say.miss{border-color:#a8402f}
 .tray{position:fixed;left:0;right:0;bottom:0;z-index:60;background:var(--slate);
  color:#e6dcc4;display:none;align-items:center;gap:16px;padding:13px 22px;
  font:12px ui-monospace,monospace;letter-spacing:.05em;
@@ -109,7 +115,7 @@ function seen(){ if(document.cookie.indexOf('bbc=1')>-1) return true;
    document.cookie='bbc=1;path=/;max-age=31536000;samesite=lax'; return true;} }catch(x){}
  return false;}
 if(seen()){window.addEventListener('DOMContentLoaded',o);}
-</script><div id=app style="display:none"><div class=bar><a class=home href="../index.html">BRAIN BRAKE</a><a href="../documentation.html">DOCUMENTATION</a><span class=sp></span><a href="../BB_C_1/index.html" class=on>SC1</a><a href="../BB_C_2/index.html">SC2</a><a href="../BB_C_3/index.html">SC3</a><a href="../BB_C_4/index.html">SC4</a><a href="../BB_C_5/index.html">SC5</a><a href="../BB_C_6/index.html">SC6</a><a href="../BB_C_7/index.html">SC7</a><a href="../BB_C_8/index.html">SC8</a><span class=sp></span><a class=drive href="https://drive.google.com/drive/folders/1INASz6hT4OUQo4UrpT62rMJaF24Amnuu" target=_blank rel=noopener>GDRIVE &nearr;</a><button class=th id=th onclick="tt()" title="light or dark">&#9681;</button></div><div class=wrap><h1>Scene 1 &nbsp;<span style="color:#8a8170;font-weight:400">The mystery</span></h1><p class=lede>2 frames. Click a picture to open it at full size.</p><div class=ask><b>Breakdowns are made on request.</b> A frame is delivered flat unless you ask for it to be split into background and foreground, because most frames do not need it and splitting one takes real time. Tick the ones you want and press the button at the bottom. Marko gets an email and does them.</div><div class=row><div class=cell><a href="../BB_C_1/1-1-v2.png"><img src="../BB_C_1/1-1-v2.png" alt=""></a><div class=meta><span class=fid>1.1</span><span class=ver>v2</span><span class=tag style="background:#8a8170">superseded</span><p class=note>The opening frame. The panel border was removed here and the artwork now runs to all four edges, because the frame is yours to add as its own layer. The head was also recomposed so the hair is no longer clipped. Superseded by v3 because his eyes looked off to the side.</p><label class=pick><input type=checkbox class=pk data-k="breakdown" data-f="1.1 v2" onchange="upd()"> need a breakdown</label><label class=pick><input type=checkbox class=pk data-k="modification" data-f="1.1 v2" onchange="upd()"> need a modification</label></div></div><div class=cell><a href="../BB_C_1/1-1-v3.png"><img src="../BB_C_1/1-1-v3.png" alt=""></a><div class=meta><span class=fid>1.1</span><span class=ver>v3</span><span class=tag style="background:#9C7A31">proposal</span><p class=note>The eyes are now right. He looks straight ahead into the far distance, down the road at what is left of the race, rather than off to the side. Still wrong: he has come fully upright and square to camera, and the shot needs him bent forward from the waist as in the original, head lower than his shoulders, still folded over from running. A v4 is coming with the posture restored. Do not build on v3 yet.</p><label class=pick><input type=checkbox class=pk data-k="breakdown" data-f="1.1 v3" onchange="upd()"> need a breakdown</label><label class=pick><input type=checkbox class=pk data-k="modification" data-f="1.1 v3" onchange="upd()"> need a modification</label></div></div></div>
+</script><div id=app style="display:none"><div class=bar><a class=home href="../index.html">BRAIN BRAKE</a><a href="../documentation.html">DOCUMENTATION</a><span class=sp></span><a href="../BB_C_1/index.html" class=on>SC1</a><a href="../BB_C_2/index.html">SC2</a><a href="../BB_C_3/index.html">SC3</a><a href="../BB_C_4/index.html">SC4</a><a href="../BB_C_5/index.html">SC5</a><a href="../BB_C_6/index.html">SC6</a><a href="../BB_C_7/index.html">SC7</a><a href="../BB_C_8/index.html">SC8</a><span class=sp></span><a class=drive href="https://drive.google.com/drive/folders/1INASz6hT4OUQo4UrpT62rMJaF24Amnuu" target=_blank rel=noopener>GDRIVE &nearr;</a><button class=th id=th onclick="tt()" title="light or dark">&#9681;</button></div><div class=wrap><h1>Scene 1 &nbsp;<span style="color:#8a8170;font-weight:400">The mystery</span></h1><p class=lede>2 frames. Click a picture to open it at full size.</p><div class=ask><b>Breakdowns are made on request.</b> A frame is delivered flat unless you ask for it to be split into background and foreground, because most frames do not need it and splitting one takes real time. Tick the ones you want and press the button at the bottom. Marko gets an email and does them.</div><div class=row><div class=cell><a href="../BB_C_1/1-1-v2.png"><img src="../BB_C_1/1-1-v2.png" alt=""></a><div class=meta><span class=fid>1.1</span><span class=ver>v2</span><span class=tag style="background:#8a8170">superseded</span><p class=note>The opening frame. The panel border was removed here and the artwork now runs to all four edges, because the frame is yours to add as its own layer. The head was also recomposed so the hair is no longer clipped. Superseded by v3 because his eyes looked off to the side.</p><label class=pick><input type=checkbox class=pk data-k="breakdown" data-f="1.1 v2" onchange="upd()"> need a breakdown</label><label class=pick><input type=checkbox class=pk data-k="modification" data-f="1.1 v2" onchange="upd()"> need a modification</label><textarea class=say data-f="1.1 v2" oninput="upd()" rows=3 placeholder="what needs to change?"></textarea></div></div><div class=cell><a href="../BB_C_1/1-1-v3.png"><img src="../BB_C_1/1-1-v3.png" alt=""></a><div class=meta><span class=fid>1.1</span><span class=ver>v3</span><span class=tag style="background:#9C7A31">proposal</span><p class=note>The eyes are now right. He looks straight ahead into the far distance, down the road at what is left of the race, rather than off to the side. Still wrong: he has come fully upright and square to camera, and the shot needs him bent forward from the waist as in the original, head lower than his shoulders, still folded over from running. A v4 is coming with the posture restored. Do not build on v3 yet.</p><label class=pick><input type=checkbox class=pk data-k="breakdown" data-f="1.1 v3" onchange="upd()"> need a breakdown</label><label class=pick><input type=checkbox class=pk data-k="modification" data-f="1.1 v3" onchange="upd()"> need a modification</label><textarea class=say data-f="1.1 v3" oninput="upd()" rows=3 placeholder="what needs to change?"></textarea></div></div></div>
 <div class=tray id=tray>
   <span id=sum></span>
   <span class=sp></span>
@@ -117,31 +123,52 @@ if(seen()){window.addEventListener('DOMContentLoaded',o);}
   <a class=go id=go href="#">send the request</a>
 </div>
 <script>
-function pick(k){return [].slice.call(document.querySelectorAll('.pk:checked'))
-  .filter(function(x){return x.dataset.k===k;})
-  .map(function(x){return x.dataset.f;});}
+var NL=String.fromCharCode(10);
+function boxes(k){return [].slice.call(document.querySelectorAll('.pk:checked'))
+  .filter(function(x){return x.dataset.k===k;});}
+function said(f){var t=document.querySelector('.say[data-f="'+f+'"]');
+  return t?t.value.trim():'';}
 function text(){
-  var b=pick('breakdown'), m=pick('modification'), out=[];
-  if(b.length) out.push('BREAKDOWN into background and foreground:'+String.fromCharCode(10)+
-    '  '+b.join(String.fromCharCode(10)+'  '));
-  if(m.length) out.push('MODIFICATION, changes needed:'+String.fromCharCode(10)+
-    '  '+m.join(String.fromCharCode(10)+'  '));
-  return out.join(String.fromCharCode(10)+String.fromCharCode(10));
+  var b=boxes('breakdown').map(function(x){return x.dataset.f;});
+  var m=boxes('modification').map(function(x){return x.dataset.f;});
+  var out=[];
+  if(b.length) out.push('BREAKDOWN into background and foreground:'+NL+'  '+b.join(NL+'  '));
+  if(m.length){
+    var lines=m.map(function(f){return '  '+f+NL+'    '+(said(f)||'(nothing written)');});
+    out.push('MODIFICATION:'+NL+lines.join(NL+NL));
+  }
+  return out.join(NL+NL);
 }
 function upd(){
-  var b=pick('breakdown'), m=pick('modification');
-  var t=document.getElementById('tray'), n=b.length+m.length;
+  // show a box only for a ticked frame
+  [].slice.call(document.querySelectorAll('.pk[data-k=modification]')).forEach(function(c){
+    var t=document.querySelector('.say[data-f="'+c.dataset.f+'"]');
+    if(!t) return;
+    t.className='say'+(c.checked?' on':'');
+    if(!c.checked) t.value='';
+  });
+  var b=boxes('breakdown'), m=boxes('modification');
+  var missing=m.filter(function(x){return !said(x.dataset.f);});
   var parts=[];
   if(b.length) parts.push('<b>'+b.length+'</b> breakdown');
   if(m.length) parts.push('<b>'+m.length+'</b> modification');
+  if(missing.length) parts.push('<span style="color:#e08a6f">say what to change on '
+    +missing.map(function(x){return x.dataset.f;}).join(', ')+'</span>');
   document.getElementById('sum').innerHTML=parts.join(' &nbsp;·&nbsp; ');
-  t.className='tray'+(n?' on':'');
-  var subj=[]; if(b.length) subj.push('breakdown '+b.join(', '));
-  if(m.length) subj.push('modification '+m.join(', '));
-  document.getElementById('go').href='mailto:EMAIL_PLACEHOLDER?subject='
-    +encodeURIComponent('Scene 1 request: '+subj.join('; '))
-    +'&body='+encodeURIComponent(text()+String.fromCharCode(10)+String.fromCharCode(10)
-    +location.href);
+  document.getElementById('tray').className='tray'+((b.length+m.length)?' on':'');
+
+  var go=document.getElementById('go');
+  if(missing.length){
+    go.style.opacity=.4; go.style.pointerEvents='none'; go.href='#';
+  } else {
+    go.style.opacity=1; go.style.pointerEvents='auto';
+    var subj=[];
+    if(b.length) subj.push('breakdown '+b.map(function(x){return x.dataset.f;}).join(', '));
+    if(m.length) subj.push('modification '+m.map(function(x){return x.dataset.f;}).join(', '));
+    go.href='mailto:EMAIL_PLACEHOLDER?subject='
+      +encodeURIComponent('Scene 1 request: '+subj.join('; '))
+      +'&body='+encodeURIComponent(text()+NL+NL+location.href);
+  }
 }
 function cp(){navigator.clipboard.writeText(text()).then(function(){
   var x=document.querySelector('.tray .cp');x.textContent='copied';

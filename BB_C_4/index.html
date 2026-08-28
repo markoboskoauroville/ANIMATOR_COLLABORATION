@@ -51,6 +51,12 @@ h2{font-size:19px;margin:38px 0 14px;padding-bottom:7px;border-bottom:1px solid 
  font:600 10px ui-monospace,monospace;letter-spacing:.07em;color:var(--dim);
  text-transform:uppercase;user-select:none}
 .pick input{width:auto;margin:0;accent-color:var(--brass)}
+.say{display:none;width:100%;margin:7px 0 2px;padding:8px 9px;
+ background:var(--card);color:var(--ink);border:1px solid var(--rule);border-radius:2px;
+ font:13px/1.45 inherit;resize:vertical}
+.say:focus{outline:0;border-color:var(--brass)}
+.say.on{display:block}
+.say.miss{border-color:#a8402f}
 .tray{position:fixed;left:0;right:0;bottom:0;z-index:60;background:var(--slate);
  color:#e6dcc4;display:none;align-items:center;gap:16px;padding:13px 22px;
  font:12px ui-monospace,monospace;letter-spacing:.05em;
@@ -117,31 +123,52 @@ if(seen()){window.addEventListener('DOMContentLoaded',o);}
   <a class=go id=go href="#">send the request</a>
 </div>
 <script>
-function pick(k){return [].slice.call(document.querySelectorAll('.pk:checked'))
-  .filter(function(x){return x.dataset.k===k;})
-  .map(function(x){return x.dataset.f;});}
+var NL=String.fromCharCode(10);
+function boxes(k){return [].slice.call(document.querySelectorAll('.pk:checked'))
+  .filter(function(x){return x.dataset.k===k;});}
+function said(f){var t=document.querySelector('.say[data-f="'+f+'"]');
+  return t?t.value.trim():'';}
 function text(){
-  var b=pick('breakdown'), m=pick('modification'), out=[];
-  if(b.length) out.push('BREAKDOWN into background and foreground:'+String.fromCharCode(10)+
-    '  '+b.join(String.fromCharCode(10)+'  '));
-  if(m.length) out.push('MODIFICATION, changes needed:'+String.fromCharCode(10)+
-    '  '+m.join(String.fromCharCode(10)+'  '));
-  return out.join(String.fromCharCode(10)+String.fromCharCode(10));
+  var b=boxes('breakdown').map(function(x){return x.dataset.f;});
+  var m=boxes('modification').map(function(x){return x.dataset.f;});
+  var out=[];
+  if(b.length) out.push('BREAKDOWN into background and foreground:'+NL+'  '+b.join(NL+'  '));
+  if(m.length){
+    var lines=m.map(function(f){return '  '+f+NL+'    '+(said(f)||'(nothing written)');});
+    out.push('MODIFICATION:'+NL+lines.join(NL+NL));
+  }
+  return out.join(NL+NL);
 }
 function upd(){
-  var b=pick('breakdown'), m=pick('modification');
-  var t=document.getElementById('tray'), n=b.length+m.length;
+  // show a box only for a ticked frame
+  [].slice.call(document.querySelectorAll('.pk[data-k=modification]')).forEach(function(c){
+    var t=document.querySelector('.say[data-f="'+c.dataset.f+'"]');
+    if(!t) return;
+    t.className='say'+(c.checked?' on':'');
+    if(!c.checked) t.value='';
+  });
+  var b=boxes('breakdown'), m=boxes('modification');
+  var missing=m.filter(function(x){return !said(x.dataset.f);});
   var parts=[];
   if(b.length) parts.push('<b>'+b.length+'</b> breakdown');
   if(m.length) parts.push('<b>'+m.length+'</b> modification');
+  if(missing.length) parts.push('<span style="color:#e08a6f">say what to change on '
+    +missing.map(function(x){return x.dataset.f;}).join(', ')+'</span>');
   document.getElementById('sum').innerHTML=parts.join(' &nbsp;·&nbsp; ');
-  t.className='tray'+(n?' on':'');
-  var subj=[]; if(b.length) subj.push('breakdown '+b.join(', '));
-  if(m.length) subj.push('modification '+m.join(', '));
-  document.getElementById('go').href='mailto:EMAIL_PLACEHOLDER?subject='
-    +encodeURIComponent('Scene 4 request: '+subj.join('; '))
-    +'&body='+encodeURIComponent(text()+String.fromCharCode(10)+String.fromCharCode(10)
-    +location.href);
+  document.getElementById('tray').className='tray'+((b.length+m.length)?' on':'');
+
+  var go=document.getElementById('go');
+  if(missing.length){
+    go.style.opacity=.4; go.style.pointerEvents='none'; go.href='#';
+  } else {
+    go.style.opacity=1; go.style.pointerEvents='auto';
+    var subj=[];
+    if(b.length) subj.push('breakdown '+b.map(function(x){return x.dataset.f;}).join(', '));
+    if(m.length) subj.push('modification '+m.map(function(x){return x.dataset.f;}).join(', '));
+    go.href='mailto:EMAIL_PLACEHOLDER?subject='
+      +encodeURIComponent('Scene 4 request: '+subj.join('; '))
+      +'&body='+encodeURIComponent(text()+NL+NL+location.href);
+  }
 }
 function cp(){navigator.clipboard.writeText(text()).then(function(){
   var x=document.querySelector('.tray .cp');x.textContent='copied';
