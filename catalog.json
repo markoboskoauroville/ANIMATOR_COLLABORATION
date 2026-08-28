@@ -271,7 +271,31 @@
       "file": "BB_C_1/1-3-A-v1.png",
       "status": "proposal",
       "date": "2026-08-28",
-      "note": "PHASE 1 of 3 of the run. The same pose, size and position as the last muscle frame, with skin and clothing on: this is the far end of a dissolve, not a cut. The internal state becoming the external one. From here the strobe has dropped and the animation runs at 8 to 10 frames a second, roughly three times the rate of the opening."
+      "note": "PHASE 1 of the run. Same pose, size and position as the last muscle frame, with skin and clothing on: the far end of a DISSOLVE, not a cut. Mean pixel difference between the two is 9.7 of 255. From here the strobe has dropped and the animation runs at 8 to 10 frames a second."
+    },
+    {
+      "kind": "keyframe",
+      "shot": "1.3",
+      "file": "BB_C_1/1-3-B-v5.png",
+      "status": "proposal",
+      "date": "2026-08-28",
+      "note": "PHASE 2 of the run. Two more attempts at a fully airborne mid-stride were abandoned after four rejects, all of which came back with three legs. Kristijan can interpolate the mid-stride from these two ends, which is what an animator does anyway. If a drawn airborne beat is wanted, reference/RUNNER_STRIDE_AIRBORNE-v2.jpg is the correct pose in the right hand."
+    },
+    {
+      "kind": "keyframe",
+      "shot": "1.4",
+      "file": "BB_C_1/1-4-A-v1.png",
+      "status": "proposal",
+      "date": "2026-08-28",
+      "note": "MANAN ENTERS. The runner freezes mid-run at full ink and holds. Manan walks in as live footage and the drawn world stops for him. This is the film's first crossing of its two worlds: anything real is a photograph, anything thought is a pencil drawing, and here they stand in one frame."
+    },
+    {
+      "kind": "keyframe",
+      "shot": "1.4",
+      "file": "BB_C_1/1-4-B-v1.png",
+      "status": "proposal",
+      "date": "2026-08-28",
+      "note": "THE SAME PLATE, PALED, for the cross fade. The runner drops back to a ghost so Manan can be read over him and talk. NOT A NEW DRAWING: derived from 1-4-A by lifting every mark toward the paper, so it is registered with it to the pixel and the two can be cross faded frame accurately. Ink falls from 6.76 percent to 0.99 percent. Costs nothing to regenerate at any other strength, so ask if you want it heavier or lighter."
     }
   ]
 }
