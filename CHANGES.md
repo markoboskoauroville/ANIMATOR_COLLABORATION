@@ -82,3 +82,17 @@ These three lines were written by hand on 28.8.2026, after the fact. The watch f
 none of them. The files were left exactly as they arrived rather than being cropped in place,
 because all three had already been pushed and a published file is never overwritten. They will be
 reissued at the correct width under new numbers.
+
+## 28.08.2026  scene 1 cleared to a clean slate
+
+Scene 1 is being rebuilt from scratch, so every version of frame 1.1 came **off the site**:
+`1-1-v2.png`, `1-1-v3.png`, `1-1-v4.png`, `1-1-v5.png`, `1-1-v6.png`. They are removed from
+`catalog.json` only. **The files are still in the repository and every link to them still works**,
+because a file that has left the machine is never deleted and never overwritten. The lines above stay
+too. What changed is only what the animator is asked to look at.
+
+- `CHARACTER_SHEET_RUNNER-v1.jpg` — the marathon runner, four views, front / three quarter / profile /
+  rear. Added as the first thing on the scene 1 page, above the frames. **reference**
+
+The scene page now carries a **Character sheet** section above a **Frames** section, and the two tick
+boxes, need a breakdown and need a modification, are on every picture on the site including sheets.

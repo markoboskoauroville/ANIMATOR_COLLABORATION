@@ -14,13 +14,13 @@
   },
   "entries": [
     {
-      "frame": "1.1",
-      "file": "BB_C_1/1-1-v2.png",
-      "status": "superseded",
+      "frame": "1",
+      "file": "BB_C_1/CHARACTER_SHEET_RUNNER-v1.jpg",
+      "kind": "sheet",
+      "title": "The marathon runner",
+      "status": "reference",
       "date": "2026-08-28",
-      "supersedes": "1-1-v1.png",
-      "note": "The opening frame. The panel border was removed here and the artwork now runs to all four edges, because the frame is yours to add as its own layer. The head was also recomposed so the hair is no longer clipped. Superseded by v3 because his eyes looked off to the side.",
-      "kind": "frame"
+      "note": "The runner, four views: front, three quarter, profile and rear. Lean, about forty five, singlet and shorts, bib 27, worn racing shoes. This is who he is, and every frame of scene 1 is built from him. One thing to know: the sheet has no face at portrait size, so it holds the body and not the head. A face sheet is being made separately and will appear here beside this one."
     },
     {
       "file": "DOCS/4-BRAIN_BRAKE_READ_THROUGH_v4.pdf",
@@ -28,42 +28,6 @@
       "status": "reference",
       "date": "2026-08-28",
       "note": "The whole film as it stands, four panels to a page, with every line and every frame number. The live action frames now show the real footage from the shoot beside the drawn version, with the clip and the timecode on each. At the back there are two pages of clean footage frames, one per shot, for pulling into tests. This is not a proposal, it is the current version of the document."
-    },
-    {
-      "frame": "1.1",
-      "file": "BB_C_1/1-1-v3.png",
-      "kind": "frame",
-      "status": "superseded",
-      "date": "2026-08-28",
-      "supersedes": "1-1-v2.png",
-      "note": "The eyes were fixed here, straight ahead into the far distance rather than off to the side. But he came fully upright and square to camera, so the running posture was lost. Superseded by v4."
-    },
-    {
-      "frame": "1.1",
-      "file": "BB_C_1/1-1-v4.png",
-      "kind": "frame",
-      "status": "superseded",
-      "date": "2026-08-28",
-      "supersedes": "1-1-v3.png",
-      "note": "The lean is back. He is tipped toward us, shoulders rounded, head lower than the shoulders, still folded over from running, and the eyes look level into the distance. The face and the sweat are right. Two things kept it from being final: the paper is empty behind him, so he floats with nothing to be exhausted in front of, and the whole picture has drifted a little pale against the rest of scene 1. Superseded by v5."
-    },
-    {
-      "frame": "1.1",
-      "file": "BB_C_1/1-1-v5.png",
-      "kind": "frame",
-      "status": "superseded",
-      "date": "2026-08-28",
-      "supersedes": "1-1-v4.png",
-      "note": "The road is in it now, converging away behind him with a flat horizon, which is exactly what the shot is about: he is looking at what is left of the race. The lean, the eyes and the face all hold. The one fault was that the hand drawn panel border came back, and the artwork must run edge to edge with no border, because the frame is yours to add as its own layer. Superseded by v6, which removed it. Keep this one open while you work: the performance here, heavy lidded and level into the distance, is still the one to match."
-    },
-    {
-      "frame": "1.1",
-      "file": "BB_C_1/1-1-v6.png",
-      "kind": "frame",
-      "status": "proposal",
-      "date": "2026-08-28",
-      "supersedes": "1-1-v5.png",
-      "note": "The border is gone and the artwork runs to all four edges. That was the only thing asked for, and it is done. But this is not v5 with the border taken off, it is a new drawing. The head has turned, the framing has pushed in, and the road now runs to a single vanishing point instead of a flat horizon. The road is arguably better. The face is not. Through v3, v4 and v5 he was spent: heavy lidded, mouth slack, looking level into the distance at what is left of the race. Here he is wide eyed and startled and looking straight at us, which is a different man in a different moment. Do not build on this face. What is needed is a v7 that keeps this border and this road and puts the v5 performance back. One more thing: this file is 2752 x 1536, so it is 21 pixels wider than the 2731 everything ships at. So are v4 and v5. Do not resize them yourself, they will be reissued."
     }
   ]
 }

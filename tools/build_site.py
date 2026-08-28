@@ -157,6 +157,9 @@ h2{font-size:19px;margin:38px 0 14px;padding-bottom:7px;border-bottom:1px solid 
 .log{max-width:880px}
 .log .it{border-top:1px solid var(--rule);padding:13px 0}
 .log .d{font:11px ui-monospace,monospace;color:var(--dim)}
+.sheet{max-width:1040px;margin:0 0 26px}
+.sheet img{width:100%;display:block;border:1px solid var(--rule);background:var(--card)}
+.sheet .meta{padding:9px 2px 0}
 .doc{display:flex;gap:20px;border-top:1px solid var(--rule);padding:20px 0;max-width:1000px}
 .doc img{width:230px;border:1px solid var(--rule);background:var(--card);flex:none}
 .lay{display:flex;gap:18px;align-items:flex-start;border-top:1px solid var(--rule);padding:16px 0}
@@ -354,6 +357,24 @@ def frames_of(scene):
             and e.get('frame', '').split('.')[0] == str(scene)]
 
 
+def sheets_of(scene):
+    """Character sheets. They sit at the top of a scene page, big, above the frames,
+    because they are who everybody in the scene is."""
+    return [e for e in ENTRIES if e.get('kind') == 'sheet'
+            and e.get('frame', '').split('.')[0] == str(scene)]
+
+
+def picks(label):
+    """The two tick boxes and the box he types in. Every picture on the site gets
+    them, a sheet exactly as much as a frame."""
+    return ('<label class=pick><input type=checkbox class=pk data-k="breakdown" '
+            'data-f="%s" onchange="upd()"> need a breakdown</label>'
+            '<label class=pick><input type=checkbox class=pk data-k="modification" '
+            'data-f="%s" onchange="upd()"> need a modification</label>'
+            '<textarea class=say data-f="%s" oninput="upd()" rows=3 '
+            'placeholder="what needs to change?"></textarea>' % (label, label, label))
+
+
 def layers_of(e):
     base = os.path.splitext(os.path.basename(e['file']))[0]
     d = os.path.dirname(e['file'])
@@ -367,17 +388,29 @@ def layers_of(e):
 
 for n in sorted(SCENES, key=int):
     fs = frames_of(n)
+    sh = sheets_of(n)
     b = ['<h1>Scene %s &nbsp;<span style="color:#8a8170;font-weight:400">%s</span></h1>'
          % (n, SCENES[n])]
+    b.append('<div class=ask><b>Breakdowns are made on request.</b> A frame is delivered flat '
+             'unless you ask for it to be split into background and foreground, because most '
+             'frames do not need it and splitting one takes real time. Tick the ones you want '
+             'and press the button at the bottom. Marko gets an email and does them.</div>')
+    for e in sh:
+        lbl = ('%s %s' % (e.get('title', 'character sheet'), ver(e))).strip()
+        b.append('<h2>Character sheet</h2>'
+                 '<div class=sheet><a href="../%s"><img src="../%s" alt=""></a>'
+                 '<div class=meta><span class=fid>%s</span>%s%s'
+                 '<p class=note>%s</p>%s</div></div>'
+                 % (e['file'], e['file'], e.get('title', 'character sheet'),
+                    ('<span class=ver>%s</span>' % ver(e)) if ver(e) else '',
+                    tag(e.get('status', 'reference')),
+                    e.get('note', 'note pending'), picks(lbl)))
+    b.append('<h2>Frames</h2>')
     if not fs:
         b.append('<p class=lede>Nothing here yet.</p>')
     else:
         b.append('<p class=lede>%d %s. Click a picture to open it at full size.</p>'
                  % (len(fs), 'frame' if len(fs) == 1 else 'frames'))
-        b.append('<div class=ask><b>Breakdowns are made on request.</b> A frame is delivered flat '
-                 'unless you ask for it to be split into background and foreground, because most '
-                 'frames do not need it and splitting one takes real time. Tick the ones you want '
-                 'and press the button at the bottom. Marko gets an email and does them.</div>')
         for i in range(0, len(fs), 5):
             b.append('<div class=row>')
             for e in fs[i:i + 5]:
@@ -387,23 +420,13 @@ for n in sorted(SCENES, key=int):
                 fid = e.get('frame', '')
                 b.append('<div class=cell><a href="../%s"><img src="../%s" alt=""></a>'
                          '<div class=meta><span class=fid>%s</span>%s%s'
-                         '<p class=note>%s</p>%s'
-                         '<label class=pick><input type=checkbox class=pk '
-                         'data-k="breakdown" data-f="%s" onchange="upd()">'
-                         ' need a breakdown</label>'
-                         '<label class=pick><input type=checkbox class=pk '
-                         'data-k="modification" data-f="%s" onchange="upd()">'
-                         ' need a modification</label>'
-                         '<textarea class=say data-f="%s" oninput="upd()" rows=3 '
-                         'placeholder="what needs to change?"></textarea>'
+                         '<p class=note>%s</p>%s%s'
                          '</div></div>'
                          % (e['file'], e['file'], fid,
                             ('<span class=ver>%s</span>' % ver(e)) if ver(e) else '',
                             tag(e.get('status', 'proposal')),
                             e.get('note', 'note pending'), bd,
-                            ('%s %s' % (fid, ver(e))).strip(),
-                            ('%s %s' % (fid, ver(e))).strip(),
-                            ('%s %s' % (fid, ver(e))).strip()))
+                            picks(('%s %s' % (fid, ver(e))).strip())))
             b.append('</div>')
     b.append((TRAY % (n, n)).replace("EMAILADDR", EMAIL))
     open(os.path.join(ROOT, 'BB_C_%s' % n, 'index.html'), 'w').write(
