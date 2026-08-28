@@ -25,6 +25,15 @@
       "scene": "1"
     },
     {
+      "frame": "1",
+      "file": "BB_C_1/CHARACTER_SHEET_RUNNER_FACE-v2.png",
+      "kind": "sheet",
+      "title": "The marathon runner, face",
+      "status": "reference",
+      "date": "2026-08-28",
+      "note": "THIS IS THE MAN. Three studies of his head: front, three quarter, profile. Until today the only description of his face in the whole production was nine generic words, so every frame invented him again and he was a different person in each one. This sheet is the lock. The three things that carry him and must survive into every frame are the flattened bridge of the nose, the wide set deep eyes under a straight brow, and the narrow jaw under wide cheekbones. Individual views are cut out in reference/ for building frames from, because a sheet handed to a frame brings its grid with it."
+    },
+    {
       "file": "FRAME_BORDER-v1.png",
       "kind": "overlay",
       "title": "The frame",
@@ -36,10 +45,10 @@
       "frame": "1",
       "file": "BB_C_1/CHARACTER_SHEET_RUNNER-v1.jpg",
       "kind": "sheet",
-      "title": "The marathon runner",
+      "title": "The marathon runner, body",
       "status": "reference",
       "date": "2026-08-28",
-      "note": "The runner, four views: front, three quarter, profile and rear. Lean, about forty five, singlet and shorts, bib 27, worn racing shoes. This is who he is, and every frame of scene 1 is built from him. One thing to know: the sheet has no face at portrait size, so it holds the body and not the head. A face sheet is being made separately and will appear here beside this one."
+      "note": "The runner's body, four views: front, three quarter, profile, rear. Lean, about forty five, singlet and shorts, bib 27, worn racing shoes. The face sheet below is the one that holds his identity; this one holds his build and his costume."
     },
     {
       "file": "DOCS/4-BRAIN_BRAKE_READ_THROUGH_v4.pdf",
