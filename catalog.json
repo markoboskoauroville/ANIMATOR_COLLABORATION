@@ -314,6 +314,22 @@
       "status": "accepted",
       "date": "2026-08-28",
       "note": "HE TURNS TO US. Pushed in. Manan holds the glass and the runner is now a pale sketch beside his head, the same man drawn small and faint. He speaks to camera over it. The contrast drops as we push in, so the drawn world recedes exactly as the real one takes over."
+    },
+    {
+      "kind": "keyframe",
+      "shot": "1.5",
+      "file": "BB_C_1/1-4-C-v2.png",
+      "status": "proposal",
+      "date": "2026-08-28",
+      "note": "THE SAME SHOT WITH THE REAL MANAN. Built from the keyed footage rather than generated: the black backdrop was keyed here by flooding from the frame edge, so his dark hair and black shoes survive intact, then graded warm and lifted toward the cream so he sits in the drawn world instead of on top of it. The generated frame beside it is still the reference for composition. Choose between them."
+    },
+    {
+      "kind": "keyframe",
+      "shot": "1.6",
+      "file": "BB_C_1/1-4-D-v3.png",
+      "status": "proposal",
+      "date": "2026-08-28",
+      "note": "THE SAME SHOT WITH THE REAL MANAN. The runner behind him is not a new drawing, it is the previous shot zoomed in and faded back, so the push-in is continuous and the contrast falls as we move closer. Real keyed footage, graded to the paper. Choose between this and the generated one beside it."
     }
   ]
 }
