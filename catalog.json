@@ -231,6 +231,15 @@
       "status": "proposal",
       "date": "2026-08-28",
       "note": "KEY FRAME 3 of 3. He has seen it. The whole face relaxes: brow smooth, eyes resting easy on something far ahead and out of frame, the corners of the mouth just lifted. Relief arriving, not shock. End the shot here and cut. The audience asks why he changed, and shot 1.2b answers. He is looking OUT of frame on purpose: if he looked at us the cut would not work."
+    },
+    {
+      "kind": "keyframe",
+      "shot": "1.2c",
+      "file": "BB_C_1/1-2c-1-v1.png",
+      "representative": true,
+      "status": "accepted",
+      "date": "2026-08-28",
+      "note": "KEY FRAME 1 of 4 of THE MUSCLE ACTIVATION. Deep inside a muscle, closer than any eye could get. One single fibre ignites and throws a hard star of light across the dark field; every other fibre is still unlit. THE DARKEST FRAME IN THE FILM, mean luminance 152 against about 240 everywhere else, and that darkness is what makes the light mean something. THIS SEQUENCE RUNS AT 25 FRAMES A SECOND, fully smooth, against 2 to 7 everywhere else. IT IS USED THREE TIMES IN THE FILM, the same files each time: here when the runner sees the finish line, again when Manan tries the bicycle, and again when Coach Brain names the limit. Never remake it for the other two, or the recognition dies."
     }
   ]
 }
