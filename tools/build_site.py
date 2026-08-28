@@ -22,11 +22,14 @@ def _readthrough():
     """The read through link in the bar comes from catalog.json, never from a filename
     typed into a page. When v9 lands and v8 is marked superseded, the bar follows on its
     own and nobody has to remember to change it."""
-    live = [e for e in CAT['entries']
-            if e.get('kind') == 'document'
-            and 'READ_THROUGH' in e.get('file', '')
-            and e.get('status') != 'superseded']
-    return live[-1]['file'] if live else ''
+    rts = [e for e in CAT['entries']
+           if e.get('kind') == 'document' and 'READ_THROUGH' in e.get('file', '')]
+    if not rts:
+        return ''
+    live = [e for e in rts if e.get('status') != 'superseded']
+    # the link is always there. If every read through has been marked superseded,
+    # fall back to the newest one rather than dropping the link out of the bar.
+    return (live or rts)[-1]['file']
 
 
 READTHROUGH = _readthrough()
