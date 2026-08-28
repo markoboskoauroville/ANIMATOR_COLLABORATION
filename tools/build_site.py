@@ -15,6 +15,7 @@ import json, os, glob
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 CAT = json.load(open(os.path.join(ROOT, 'catalog.json')))
 SCENES = CAT['scenes']
+VERSION = CAT.get('version', '')
 ENTRIES = CAT['entries']
 PASS = 'kristijan'
 EMAIL = 'marko.bosko@auroville.community'
@@ -67,6 +68,12 @@ a{color:var(--brass)}
 .bar a:hover{color:#fff}
 .bar a.home{color:#fff;letter-spacing:.14em;margin-right:8px}
 .bar a.on{color:#e0b45f;border-bottom:2px solid #e0b45f}
+.bar .vb{color:#e0b45f;border:1px solid #4a4436;border-radius:2px;padding:3px 7px;
+ font:600 11px/1 ui-monospace,monospace;letter-spacing:.1em;margin-right:6px}
+.vdraft{max-width:880px;margin:14px 0 0;padding:11px 16px;background:var(--box);
+ border-left:3px solid var(--brass);font:600 13px ui-monospace,monospace;
+ letter-spacing:.04em;color:var(--body)}
+.vdraft b{color:var(--brass);letter-spacing:.1em}
 .bar .sp{flex:1}
 .bar a.drive{color:var(--brass);margin-left:14px;white-space:nowrap}
 .bar .th{background:none;border:0;cursor:pointer;color:#c9bfa4;padding:4px 0 4px 16px;
@@ -306,6 +313,7 @@ def bar(here, r):
     """An invisible table. Home and documentation left, the scenes in the middle,
     and the last cell is always Google Drive, hard right."""
     o = ['<div class=bar><a class=home href="%sindex.html">BRAIN BRAKE</a>' % r,
+         ('<span class=vb>%s</span>' % VERSION) if VERSION else '',
          '<a href="%sdocumentation.html"%s>DOCUMENTATION</a>'
          % (r, ' class=on' if here == 'doc' else ''), '<span class=sp></span>']
     for n in sorted(SCENES, key=int):
@@ -470,6 +478,9 @@ open(os.path.join(ROOT, 'documentation.html'), 'w').write(
     page('Documentation', ''.join(b), here='doc', depth=0))
 
 b = ['<h1>THE BRAIN BRAKE</h1>',
+     ('<p class=vdraft><b>%s.</b> Scene 1 is being rebuilt from scratch and everything on this site '
+      'is part of that draft. V7 artwork is superseded and is not on these pages. Nothing here is in '
+      'the film until Marko says so.</p>' % VERSION) if VERSION else '',
      '<p class=lede>A two minute film for the Breakthrough Junior Challenge. A fourteen year old '
      'asks why a runner with nothing left can still find one more sprint. Everything here is for '
      'the animation.</p>',
