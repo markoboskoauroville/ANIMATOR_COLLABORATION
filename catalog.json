@@ -74,6 +74,47 @@
       "plate": "examples/frame-plate.jpg",
       "layer": "examples/frame-layer.png",
       "composite": "examples/frame-composite.jpg"
+    },
+    {
+      "kind": "keyframe",
+      "shot": "1.1",
+      "file": "BB_C_1/1-1-v11.png",
+      "representative": true,
+      "status": "proposal",
+      "date": "2026-08-28",
+      "note": "KEY FRAME 1 of 3. He is finished and he believes he still has ten kilometres to run, which is why the exhaustion is total. Head down, eyes on the ground, mouth open. The emotion changes inside this one shot without a cut, so these three are the start, middle and end of a single continuous move: hold this, then lift through v12, then land on v13."
+    },
+    {
+      "kind": "keyframe",
+      "shot": "1.1",
+      "file": "BB_C_1/1-1-v12.png",
+      "status": "proposal",
+      "date": "2026-08-28",
+      "note": "KEY FRAME 2 of 3. The head lifting, the eyes coming up off the ground. This is the middle of the move and the audience does not yet know why he is rising."
+    },
+    {
+      "kind": "keyframe",
+      "shot": "1.1",
+      "file": "BB_C_1/1-1-v13.png",
+      "status": "proposal",
+      "date": "2026-08-28",
+      "note": "KEY FRAME 3 of 3. He has seen it. Lids up, brow up, mouth closed and set, shoulders squared, the exhaustion gone out of the face. End the shot here and cut. The audience asks why he changed, and shot 1.2b answers."
+    },
+    {
+      "kind": "keyframe",
+      "shot": "1.2b",
+      "file": "BB_C_1/1-2b-v1.png",
+      "status": "proposal",
+      "date": "2026-08-28",
+      "note": "What he sees. His subjective view down the avenue, the finish banner caught small in the gap between the trunks. This is the answer to the question the previous shot planted, and it is what explains the trees: he could not have seen it before, so his exhaustion was honest."
+    },
+    {
+      "kind": "keyframe",
+      "shot": "1.3",
+      "file": "BB_C_1/1-3-v1.png",
+      "status": "proposal",
+      "date": "2026-08-28",
+      "note": "He runs like a man who has just started the race, not a tired man finding something left. THIS IS WHERE THE STROBE DROPS. The film is stepped everywhere else; here it goes to full frame rate. It is one of only two moments in the whole film that do, the other being Manan on the bicycle, and it only works because everything around it is stepped."
     }
   ]
 }
