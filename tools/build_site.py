@@ -51,7 +51,10 @@ def dims(rel):
 
 
 CSS = """
-:root{--paper:#f2ebda;--ink:#221f19;--dim:#8a8170;--rule:#cdbfa4;--brass:#9C7A31;--box:#e6dcc4;--slate:#20241f}
+:root{--paper:#f2ebda;--ink:#221f19;--dim:#8a8170;--rule:#cdbfa4;--brass:#9C7A31;--box:#e6dcc4;--slate:#20241f;--body:#4a453b;--card:#fff}
+html[data-t=dark]{--paper:#17150f;--ink:#ece4d2;--dim:#8d8574;--rule:#3a352b;--brass:#c9a35a;--box:#221f18;--slate:#0d0c09;--body:#c2bba9;--card:#0d0c09}
+html{background:var(--paper)}
+img{transition:none}
 *{box-sizing:border-box}
 body{margin:0;background:var(--paper);color:var(--ink);
  font:16px/1.6 -apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif}
@@ -64,12 +67,15 @@ a{color:var(--brass)}
 .bar a.home{color:#fff;letter-spacing:.14em;margin-right:8px}
 .bar a.on{color:#e0b45f;border-bottom:2px solid #e0b45f}
 .bar .sp{flex:1}
-.bar a.drive{color:#e0b45f;margin-left:8px;white-space:nowrap}
+.bar a.drive{color:var(--brass);margin-left:14px;white-space:nowrap}
+.bar .th{background:none;border:0;cursor:pointer;color:#c9bfa4;padding:4px 0;
+ font:600 12px/1 ui-monospace,monospace;letter-spacing:.08em}
+.bar .th:hover{color:#fff}
 .bar a.drive:hover{color:#fff}
 .wrap{max-width:1500px;margin:0 auto;padding:30px 22px 70px}
 h1{font-size:30px;letter-spacing:-.01em;margin:8px 0 6px}
 h2{font-size:19px;margin:38px 0 14px;padding-bottom:7px;border-bottom:1px solid var(--rule)}
-.lede{max-width:760px;color:#4a453b}
+.lede{max-width:760px;color:var(--body)}
 .rules{background:var(--box);border-left:3px solid var(--brass);padding:14px 18px;margin:22px 0;
  max-width:880px;font-size:14.5px}
 .scenes{list-style:none;padding:0;margin:24px 0;max-width:880px}
@@ -87,14 +93,14 @@ h2{font-size:19px;margin:38px 0 14px;padding-bottom:7px;border-bottom:1px solid 
 .fid{font:600 12px ui-monospace,monospace;color:var(--brass)}
 .tag{font:600 10px ui-monospace,monospace;letter-spacing:.08em;color:#fff;
  padding:2px 7px;border-radius:2px;margin-left:6px;text-transform:uppercase}
-.note{font-size:13px;line-height:1.5;color:#4a453b;margin:5px 0 0}
+.note{font-size:13px;line-height:1.5;color:var(--body);margin:5px 0 0}
 .bd{display:inline-block;margin-top:7px;font:600 11px ui-monospace,monospace;
  letter-spacing:.06em;text-transform:uppercase}
 .log{max-width:880px}
 .log .it{border-top:1px solid var(--rule);padding:13px 0}
 .log .d{font:11px ui-monospace,monospace;color:var(--dim)}
 .doc{display:flex;gap:20px;border-top:1px solid var(--rule);padding:20px 0;max-width:1000px}
-.doc img{width:230px;border:1px solid var(--rule);background:#fff;flex:none}
+.doc img{width:230px;border:1px solid var(--rule);background:var(--card);flex:none}
 .lay{display:flex;gap:18px;align-items:flex-start;border-top:1px solid var(--rule);padding:16px 0}
 .lay img{width:260px;border:1px solid var(--rule);
  background:repeating-conic-gradient(#ddd 0 25%,#fff 0 50%) 50%/18px 18px}
@@ -104,7 +110,7 @@ h2{font-size:19px;margin:38px 0 14px;padding-bottom:7px;border-bottom:1px solid 
  display:flex;align-items:center;justify-content:center}
 .gate form{text-align:center}
 .gate input{font:16px ui-monospace,monospace;padding:10px 14px;border:1px solid var(--rule);
- background:#fff;width:230px}
+ background:var(--card);color:var(--ink);width:230px}
 .gate p{font:12px ui-monospace,monospace;color:var(--dim);letter-spacing:.1em}
 .gate .rem{display:flex;align-items:center;justify-content:center;gap:8px;
  margin-top:16px;font:12px ui-monospace,monospace;color:var(--dim);
@@ -152,6 +158,7 @@ def bar(here, r):
         o.append('<a href="%sBB_C_%s/index.html"%s>SC%s</a>'
                  % (r, n, ' class=on' if here == n else '', n))
     o.append('<span class=sp></span>')
+    o.append('<button class=th id=th onclick="tt()" title="light or dark">&#9681;</button>')
     o.append('<a class=drive href="%s" target=_blank rel=noopener>GDRIVE &nearr;</a>' % DRIVE)
     o.append('</div>')
     return ''.join(o)
@@ -161,7 +168,14 @@ def page(title, body, here=None, depth=0):
     r = '../' * depth
     return ('<!doctype html><html lang=en><head><meta charset=utf-8>'
             '<meta name=viewport content="width=device-width,initial-scale=1">'
-            '<title>%s</title><style>%s</style></head><body>%s'
+            '<title>%s</title>'
+            '<script>(function(){try{var t=localStorage.getItem("bbt");'
+            'if(!t)t=matchMedia("(prefers-color-scheme:dark)").matches?"dark":"light";'
+            'document.documentElement.dataset.t=t;}catch(e){}})();'
+            'function tt(){var d=document.documentElement,'
+            'n=d.dataset.t==="dark"?"light":"dark";d.dataset.t=n;'
+            'try{localStorage.setItem("bbt",n);}catch(e){}}</script>'
+            '<style>%s</style></head><body>%s'
             '<div id=app style="display:none">%s<div class=wrap>%s</div></div></body></html>'
             % (title, CSS, GATE, bar(here, r), body))
 
