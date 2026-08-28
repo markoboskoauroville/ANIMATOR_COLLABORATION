@@ -70,3 +70,15 @@ lines stay, because nothing is deleted from this log.
 ## 28.08.2026  scene 1
 
 - `1-1-v3.png` — frame 1-1, 2752x1536 cropped to 2731x1536. **proposal**
+
+## 28.08.2026  scene 1
+
+- `1-1-v4.png` — frame 1-1, arrived 2752x1536 and was **not** cropped to 2731x1536. **proposal**
+- `1-1-v5.png` — frame 1-1, arrived 2752x1536 and was **not** cropped to 2731x1536. **proposal**
+- `1-1-v6.png` — frame 1-1, arrived 2752x1536 and was **not** cropped to 2731x1536. **proposal**
+
+These three lines were written by hand on 28.8.2026, after the fact. The watch folder logged
+`1-1-v2.png` and `1-1-v3.png` and cropped both, then logged nothing for v4, v5 and v6 and cropped
+none of them. The files were left exactly as they arrived rather than being cropped in place,
+because all three had already been pushed and a published file is never overwritten. They will be
+reissued at the correct width under new numbers.
