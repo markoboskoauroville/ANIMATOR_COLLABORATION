@@ -152,9 +152,18 @@ h2{font-size:19px;margin:38px 0 14px;padding-bottom:7px;border-bottom:1px solid 
 .tray a,.tray button{font:600 11px ui-monospace,monospace;letter-spacing:.08em;
  text-transform:uppercase;padding:9px 15px;border:0;border-radius:2px;cursor:pointer;
  text-decoration:none}
-.prev{border-radius:7px;overflow:hidden;background:#0e0d0a;margin:34px 0 96px;display:none;
+.prev{display:none}
+.prev.on{position:fixed;inset:0;z-index:100;display:flex;flex-direction:column;
+ background:#0e0d0a;margin:0;border-radius:0;overflow:hidden}
+.prev.on h3{position:sticky;top:0;flex:0 0 auto}
+.prev.on pre{flex:1 1 auto;overflow:auto}
+.prev.on .acts{flex:0 0 auto;flex-wrap:wrap}
+.prev h3 .gap{flex:1}
+.prev h3 .x{font:600 12px ui-monospace,monospace;letter-spacing:.1em;cursor:pointer;
+ background:var(--brass);color:#17150f;border:0;border-radius:4px;padding:8px 15px}
+.prev h3 .x:hover{background:#f0c876}
+.prev_legacy{border-radius:7px;overflow:hidden;background:#0e0d0a;margin:34px 0 96px;display:none;
  box-shadow:0 6px 26px rgba(0,0,0,.28)}
-.prev.on{display:block}
 .prev h3{margin:0;padding:9px 14px;background:#1b1a15;border-bottom:1px solid #2b2921;
  font:600 11px ui-monospace,monospace;letter-spacing:.09em;color:#8d8574;
  display:flex;align-items:center;gap:8px}
@@ -268,7 +277,7 @@ DRIVE = 'https://drive.google.com/drive/folders/1INASz6hT4OUQo4UrpT62rMJaF24Amnu
 
 TRAY = """
 <div class=prev id=prev>
-  <h3>email composer &nbsp;·&nbsp; %s</h3>
+  <h3>email composer &nbsp;·&nbsp; %s<span class=gap></span><button class=x id=x onclick="shut()" title="close">CLOSE &times;</button></h3>
   <pre id=pv></pre>
   <div class=acts>
     <a class=who id=who href="#" title="open this in your mail app">
@@ -287,7 +296,9 @@ TRAY = """
 </div>
 <script>
 var NL=String.fromCharCode(10);
-window.__seen=false;
+window.__open=false;
+function shut(){ window.__open=false; document.body.style.overflow=''; upd(); }
+function open_(){ window.__open=true; document.body.style.overflow='hidden'; upd(); }
 function boxes(k){return [].slice.call(document.querySelectorAll('.pk:checked'))
   .filter(function(x){return x.dataset.k===k;});}
 function said(f){var t=document.querySelector('.say[data-f="'+f+'"]');
@@ -321,8 +332,10 @@ function upd(){
   document.getElementById('sum').innerHTML=parts.join(' &nbsp;·&nbsp; ');
   // the tray exists to get you to the composer. Once the composer is on screen it is
   // a button to somewhere you already are, sitting on top of the buttons you want.
+  // the tray is the way in. The composer is a full screen sheet, so only one of
+  // the two is ever on screen.
   document.getElementById('tray').className =
-    'tray' + (((b.length + m.length) && !window.__seen) ? ' on' : '');
+    'tray' + (((b.length + m.length) && !window.__open) ? ' on' : '');
 
   var any=(b.length+m.length)>0;
   var subj=[];
@@ -334,7 +347,9 @@ function upd(){
 
   // the preview at the foot of the page, live as he ticks
   var pv=document.getElementById('pv'), pr=document.getElementById('prev');
-  pr.className='prev'+(any?' on':'');
+  if(!any && window.__open) window.__open=false;      // nothing ticked, nothing to send
+  if(!any) document.body.style.overflow='';
+  pr.className='prev'+((any && window.__open)?' on':'');
   if(any){
     var esc=function(t){return t.replace(/&/g,'&amp;').replace(/</g,'&lt;');};
     pv.innerHTML='<b>To:</b>      EMAILADDR'+NL+'<b>Subject:</b> '+esc(subject)+NL+NL
@@ -342,16 +357,8 @@ function upd(){
   }
 
   var g1=document.getElementById('go');
-  if(g1){ g1.href='#prev'; g1.style.opacity=1; g1.style.pointerEvents='auto'; }
-  if(!window.__io && window.IntersectionObserver){
-    var pn=document.getElementById('prev');
-    if(pn){
-      window.__io=new IntersectionObserver(function(es){
-        window.__seen=es[0].isIntersecting; upd();
-      },{threshold:0.12});
-      window.__io.observe(pn);
-    }
-  }
+  if(g1){ g1.href='#'; g1.onclick=function(ev){ ev.preventDefault(); open_(); };
+          g1.style.opacity=1; g1.style.pointerEvents='auto'; }
   var w=document.getElementById('who');
   if(w){
     if(missing.length){ w.className='who off'; w.href='#'; }
