@@ -92,6 +92,9 @@ h2{font-size:19px;margin:38px 0 14px;padding-bottom:7px;border-bottom:1px solid 
 .cell img{width:100%;display:block}
 .meta{padding:6px 8px 12px}
 .fid{font:600 12px ui-monospace,monospace;color:var(--brass)}
+.ver{font:600 10px ui-monospace,monospace;letter-spacing:.06em;color:var(--dim);
+ border:1px solid var(--rule);border-radius:2px;padding:1px 5px;margin-left:6px;
+ text-transform:uppercase}
 .tag{font:600 10px ui-monospace,monospace;letter-spacing:.08em;color:#fff;
  padding:2px 7px;border-radius:2px;margin-left:6px;text-transform:uppercase}
 .note{font-size:13px;line-height:1.5;color:var(--body);margin:5px 0 0}
@@ -231,6 +234,15 @@ def page(title, body, here=None, depth=0):
             % (title, r, r, r, r, CSS, GATE, bar(here, r), body))
 
 
+import re
+
+
+def ver(e):
+    """1-1-v3.png -> v3 . No version in the name -> nothing."""
+    m = re.search(r'[_-](v\d+)(?:[_.]|$)', os.path.basename(e.get('file', '')), re.I)
+    return m.group(1).lower() if m else ''
+
+
 def tag(st):
     return '<span class=tag style="background:%s">%s</span>' % (STATUS.get(st, '#8a8170'), st)
 
@@ -272,14 +284,16 @@ for n in sorted(SCENES, key=int):
                       % os.path.splitext(os.path.basename(e['file']))[0]) if lay else ''
                 fid = e.get('frame', '')
                 b.append('<div class=cell><a href="../%s"><img src="../%s" alt=""></a>'
-                         '<div class=meta><span class=fid>%s</span>%s'
+                         '<div class=meta><span class=fid>%s</span>%s%s'
                          '<p class=note>%s</p>%s'
                          '<label class=pick><input type=checkbox class=pk '
                          'data-f="%s" onchange="upd()"> need a breakdown</label>'
                          '</div></div>'
                          % (e['file'], e['file'], fid,
+                            ('<span class=ver>%s</span>' % ver(e)) if ver(e) else '',
                             tag(e.get('status', 'proposal')),
-                            e.get('note', 'note pending'), bd, fid))
+                            e.get('note', 'note pending'), bd,
+                            ('%s %s' % (fid, ver(e))).strip()))
             b.append('</div>')
     b.append((TRAY % n).replace("EMAILADDR", EMAIL))
     open(os.path.join(ROOT, 'BB_C_%s' % n, 'index.html'), 'w').write(
@@ -340,9 +354,10 @@ for n in sorted(SCENES, key=int):
 b.append('</ul><h2>What changed</h2><div class=log>')
 for e in sorted(ENTRIES, key=lambda x: x.get('date', ''), reverse=True):
     who = e.get('frame') or os.path.basename(e['file'])
-    b.append('<div class=it><span class=fid>%s</span>%s<div class=d>%s</div>'
+    b.append('<div class=it><span class=fid>%s</span>%s%s<div class=d>%s</div>'
              '<p class=note>%s</p></div>'
-             % (who, tag(e.get('status', 'proposal')), e.get('date', ''),
+             % (who, ('<span class=ver>%s</span>' % ver(e)) if ver(e) else '',
+                tag(e.get('status', 'proposal')), e.get('date', ''),
                 e.get('note', 'note pending')))
 b.append('</div>')
 open(os.path.join(ROOT, 'index.html'), 'w').write(page('The Brain Brake', ''.join(b), depth=0))
