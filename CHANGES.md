@@ -66,3 +66,7 @@ renamed and nothing was lost, only moved. This log continues.
 `3-2_v2_step51test.jpg` and `STEP51_no_frame_number.png` were dropped into the watch folder to prove
 it pushes here now instead of into `BRAIN_BRAKE`. Both files are **removed from the repository**. The
 lines stay, because nothing is deleted from this log.
+
+## 28.08.2026  scene 1
+
+- `1-1-v3.png` — frame 1-1, 2752x1536 cropped to 2731x1536. **proposal**
