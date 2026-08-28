@@ -15,6 +15,14 @@
   },
   "entries": [
     {
+      "file": "FRAME_BORDER-v1.png",
+      "kind": "overlay",
+      "title": "The frame",
+      "status": "reference",
+      "date": "2026-08-28",
+      "note": "The panel border, on its own transparent layer, 2731 x 1536, ready to lay over any frame. Every frame now ships edge to edge with no border drawn into it, and this is the border, so it can move, animate, breathe or come off entirely. It was not generated. It was cut out of an existing drawing, so it is the same hand and the same graphite as the artwork it goes over. The middle is completely empty: measured, not assumed, zero non transparent pixels anywhere inside the rectangle."
+    },
+    {
       "frame": "1",
       "file": "BB_C_1/CHARACTER_SHEET_RUNNER-v1.jpg",
       "kind": "sheet",

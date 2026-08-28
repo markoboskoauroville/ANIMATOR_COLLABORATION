@@ -188,6 +188,10 @@ h2{font-size:19px;margin:38px 0 14px;padding-bottom:7px;border-bottom:1px solid 
 .log{max-width:880px}
 .log .it{border-top:1px solid var(--rule);padding:13px 0}
 .log .d{font:11px ui-monospace,monospace;color:var(--dim)}
+.ovl{max-width:1040px;margin:16px 0 30px}
+.ovl img{width:100%;display:block;border:1px solid var(--rule);
+ background:repeating-conic-gradient(#ddd 0 25%,#fff 0 50%) 50%/22px 22px}
+.ovl .meta{padding:9px 2px 0}
 .sheet{max-width:1040px;margin:0 0 26px}
 .sheet img{width:100%;display:block;border:1px solid var(--rule);background:var(--card)}
 .sheet .meta{padding:9px 2px 0}
@@ -243,7 +247,7 @@ DRIVE = 'https://drive.google.com/drive/folders/1INASz6hT4OUQo4UrpT62rMJaF24Amnu
 TRAY = """
 <div class=prev id=prev>
   <h3><span class=dots><i style="background:#e0655a"></i><i style="background:#e0b45f"></i><i style="background:#6fa86a"></i></span>
-  email composer &nbsp;·&nbsp; scene %s</h3>
+  email composer &nbsp;·&nbsp; %s</h3>
   <pre id=pv></pre>
   <div class=acts>
     <a class=who id=who href="#" title="open this in your mail app">
@@ -299,7 +303,7 @@ function upd(){
   var subj=[];
   if(b.length) subj.push('breakdown '+b.map(function(x){return x.dataset.f;}).join(', '));
   if(m.length) subj.push('modification '+m.map(function(x){return x.dataset.f;}).join(', '));
-  var subject='Scene %s request: '+subj.join('; ');
+  var subject='%s request: '+subj.join('; ');
   var href='mailto:EMAILADDR?subject='+encodeURIComponent(subject)
     +'&body='+encodeURIComponent(text()+NL+NL+location.href);
 
@@ -393,6 +397,13 @@ def frames_of(scene):
             and e.get('frame', '').split('.')[0] == str(scene)]
 
 
+def overlays_of():
+    """Things that sit on top of every frame rather than belonging to one scene.
+    The panel border is the first: the artwork ships edge to edge and this is the
+    frame, as its own transparent layer."""
+    return [e for e in ENTRIES if e.get('kind') == 'overlay']
+
+
 def sheets_of(scene):
     """Character sheets. They sit at the top of a scene page, big, above the frames,
     because they are who everybody in the scene is."""
@@ -464,7 +475,7 @@ for n in sorted(SCENES, key=int):
                             e.get('note', 'note pending'), bd,
                             picks(('%s %s' % (fid, ver(e))).strip())))
             b.append('</div>')
-    b.append((TRAY % (n, n)).replace("EMAILADDR", EMAIL))
+    b.append((TRAY % ('scene %s' % n, 'Scene %s' % n)).replace("EMAILADDR", EMAIL))
     open(os.path.join(ROOT, 'BB_C_%s' % n, 'index.html'), 'w').write(
         page('Scene %s' % n, ''.join(b), here=n, depth=1))
 
@@ -520,6 +531,16 @@ b = ['<h1>THE BRAIN BRAKE</h1>',
      'Nothing here is in the film until Marko says so. The status under each picture says where it '
      'stands.<br>Video files are on <b>GDrive</b>, top right of every page.</div>',
      '<h2>Scenes</h2><ul class=scenes>']
+for e in overlays_of():
+    lbl = ('%s %s' % (e.get('title', 'the frame'), ver(e))).strip()
+    b.insert(2, '<h2>The frame</h2>'
+             '<div class=ovl><a href="%s"><img src="%s" alt=""></a>'
+             '<div class=meta><span class=fid>%s</span>%s%s'
+             '<p class=note>%s</p><p><a href="%s" download>Download the PNG</a></p>%s</div></div>'
+             % (e['file'], e['file'], os.path.basename(e['file']),
+                ('<span class=ver>%s</span>' % ver(e)) if ver(e) else '',
+                tag(e.get('status', 'reference')), e.get('note', 'note pending'),
+                e['file'], picks(lbl)))
 for n in sorted(SCENES, key=int):
     c = len(frames_of(n))
     b.append('<li><a href="BB_C_%s/index.html"><span class=n>SC%s</span>'
@@ -534,6 +555,8 @@ for e in sorted(ENTRIES, key=lambda x: x.get('date', ''), reverse=True):
                 tag(e.get('status', 'proposal')), e.get('date', ''),
                 e.get('note', 'note pending')))
 b.append('</div>')
+if overlays_of():
+    b.append((TRAY % ('the frame', 'The frame')).replace("EMAILADDR", EMAIL).replace('../marko.png', 'marko.png'))
 open(os.path.join(ROOT, 'index.html'), 'w').write(page('The Brain Brake', ''.join(b), depth=0))
 
 print('built: landing, documentation, %d scene pages' % len(SCENES))

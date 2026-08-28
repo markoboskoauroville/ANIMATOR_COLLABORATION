@@ -96,3 +96,19 @@ too. What changed is only what the animator is asked to look at.
 
 The scene page now carries a **Character sheet** section above a **Frames** section, and the two tick
 boxes, need a breakdown and need a modification, are on every picture on the site including sheets.
+
+## 28.08.2026  the frame becomes its own layer
+
+- `FRAME_BORDER-v1.png` — the panel border alone, transparent middle, 2731x1536 RGBA. **reference**
+
+It was **not generated and cost nothing.** It was cut out of `V7_7_1_apart.jpg`, which was chosen by
+measurement as the donor with a complete border on all four sides and the least ink inside it, 2.2%.
+The alpha comes from ink depth and is then kept only in a band along the rectangle, which is what
+guarantees the middle is empty rather than merely looking empty. Verified: zero non transparent
+pixels anywhere inside the rectangle, and all four sides between 27% and 30% coverage.
+
+Because it is cut from the film's own artwork it carries the same hand, the same wobble and the same
+graphite as everything it goes over, which a redrawn rectangle never would.
+
+It sits on the landing page under **The frame**, on a checkerboard so the transparency is visible,
+with a download link and the same two tick boxes as everything else.
