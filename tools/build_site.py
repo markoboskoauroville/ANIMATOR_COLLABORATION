@@ -430,19 +430,23 @@ function cp(){
 def bar(here, r):
     """An invisible table. Home and documentation left, the scenes in the middle,
     and the last cell is always Google Drive, hard right."""
-    o = ['<div class=bar><a class=home href="%sindex.html">BRAIN BRAKE</a>' % r,
-         ('<span class=vb>%s</span>' % VERSION) if VERSION else '',
-         '<a href="%sdocumentation.html"%s>DOCUMENTATION</a>'
-         % (r, ' class=on' if here == 'doc' else ''),
-         ('<a class=rt href="%s%s" target=_blank rel=noopener '
-          'title="the whole film, four panels to a page">READ THROUGH &darr;</a>'
-          % (r, READTHROUGH)) if READTHROUGH else '',
-         ('<a href="%sarchive.html"%s>ARH</a>'
-          % (r, ' class=on' if here == 'archive' else '')) if ARCHIVE.get('items') else '',
-         '<span class=sp></span>']
+    # HOME, then the scenes, then everything else. The scenes are what the animator
+    # comes here for, so they sit before the documents.
+    o = ['<div class=bar><a class=home href="%sindex.html">HOME</a>' % r]
     for n in sorted(SCENES, key=int):
         o.append('<a href="%sBB_C_%s/index.html"%s>SC%s</a>'
                  % (r, n, ' class=on' if here == n else '', n))
+    o.append('<span class=sp></span>')
+    o.append(('<span class=vb>%s</span>' % VERSION) if VERSION else '')
+    o.append('<a href="%sdocumentation.html"%s>DOCUMENTATION</a>'
+             % (r, ' class=on' if here == 'doc' else ''))
+    if READTHROUGH:
+        o.append('<a class=rt href="%s%s" target=_blank rel=noopener '
+                 'title="the whole film, four panels to a page">READ THROUGH &darr;</a>'
+                 % (r, READTHROUGH))
+    if ARCHIVE.get('items'):
+        o.append('<a href="%sarchive.html"%s>ARH</a>'
+                 % (r, ' class=on' if here == 'archive' else ''))
     o.append('<span class=sp></span>')
     o.append('<a class=drive href="%s" target=_blank rel=noopener>GDRIVE &nearr;</a>' % DRIVE)
     o.append('<button class=th id=th onclick="tt()" title="light or dark">&#9681;</button>')
@@ -692,10 +696,11 @@ for n in sorted(SCENES, key=int):
             if e.get('status') != 'superseded':
                 seq.append((sid, e))
     if seq:
-        b.append('<h2>The whole scene, in order</h2>')
-        b.append('<p class=lede>%d key frames across %d shots, read left to right. '
-                 'Click any one to open the shot it belongs to. Everything below this is '
-                 'reference for these.</p>' % (len(seq), len(sh_ids)))
+        b.append('<h2>Storyboard</h2>')
+        b.append('<p class=lede>The whole scene in order, %d frames across %d shots, read left to '
+                 'right like a silent film. This is the scene. Everything below it is the breakdown: '
+                 'the sheets, the frame and the shots opened one at a time. '
+                 'Click any frame to open the shot it belongs to.</p>' % (len(seq), len(sh_ids)))
         b.append('<div class=seq>')
         last = None
         for sid, e in seq:

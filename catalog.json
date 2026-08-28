@@ -285,17 +285,35 @@
       "kind": "keyframe",
       "shot": "1.4",
       "file": "BB_C_1/1-4-A-v1.png",
-      "status": "proposal",
+      "status": "superseded",
       "date": "2026-08-28",
-      "note": "MANAN ENTERS. The runner freezes mid-run at full ink and holds. Manan walks in as live footage and the drawn world stops for him. This is the film's first crossing of its two worlds: anything real is a photograph, anything thought is a pencil drawing, and here they stand in one frame."
+      "note": "Retired. Attempts to rebuild this frame from the real keyed footage did not match the original and were abandoned. The originals are shots 1.5 and 1.6."
     },
     {
       "kind": "keyframe",
       "shot": "1.4",
       "file": "BB_C_1/1-4-B-v1.png",
-      "status": "proposal",
+      "status": "superseded",
       "date": "2026-08-28",
-      "note": "THE SAME PLATE, PALED, for the cross fade. The runner drops back to a ghost so Manan can be read over him and talk. NOT A NEW DRAWING: derived from 1-4-A by lifting every mark toward the paper, so it is registered with it to the pixel and the two can be cross faded frame accurately. Ink falls from 6.76 percent to 0.99 percent. Costs nothing to regenerate at any other strength, so ask if you want it heavier or lighter."
+      "note": "Retired. Attempts to rebuild this frame from the real keyed footage did not match the original and were abandoned. The originals are shots 1.5 and 1.6."
+    },
+    {
+      "kind": "keyframe",
+      "shot": "1.5",
+      "file": "BB_C_1/1-5-v1.jpg",
+      "representative": true,
+      "status": "accepted",
+      "date": "2026-08-28",
+      "note": "MANAN WALKS IN. The runner is still going and the boy steps into the drawn world beside him, magnifying glass up. The film's first crossing of its two worlds: anything real is a photograph, anything thought is a pencil drawing, and here they stand in one frame. Both figures are on the same ground line and the runner is the smaller of the two, which is what makes the boy the subject and the runner the thing being examined."
+    },
+    {
+      "kind": "keyframe",
+      "shot": "1.6",
+      "file": "BB_C_1/1-6-v1.jpg",
+      "representative": true,
+      "status": "accepted",
+      "date": "2026-08-28",
+      "note": "HE TURNS TO US. Pushed in. Manan holds the glass and the runner is now a pale sketch beside his head, the same man drawn small and faint. He speaks to camera over it. The contrast drops as we push in, so the drawn world recedes exactly as the real one takes over."
     }
   ]
 }
