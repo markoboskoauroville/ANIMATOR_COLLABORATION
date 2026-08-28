@@ -256,6 +256,22 @@
       "status": "proposal",
       "date": "2026-08-28",
       "note": "KEY FRAME 3 of 4 of the muscle activation. THE REVEAL. We pull back and what filled the frame turns out to have been one muscle in a leg. Every muscle now alight along its whole length. This is where the audience finally learns the scale they have been looking at, and where the field turns from the darkest frame in the film to the brightest. Measured across the three beats so far: mean luminance 152, 185, 235, bright pixels 16, 33, 71 percent. The leg is at rest rather than braced, which reads as charged and not yet released."
+    },
+    {
+      "kind": "keyframe",
+      "shot": "1.2c",
+      "file": "BB_C_1/1-2c-4-v1.png",
+      "status": "accepted",
+      "date": "2026-08-28",
+      "note": "KEY FRAME 4 of 4 of the muscle activation. The whole body, flayed, every muscle alight, caught pushing off into the sprint. The end of the sequence and the peak of the light. DISSOLVE FROM HERE INTO 1-3-A: the two frames are registered on purpose so the skin fades on with nothing moving. Mean pixel difference between them is 9.7 of 255."
+    },
+    {
+      "kind": "keyframe",
+      "shot": "1.3",
+      "file": "BB_C_1/1-3-A-v1.png",
+      "status": "proposal",
+      "date": "2026-08-28",
+      "note": "PHASE 1 of 3 of the run. The same pose, size and position as the last muscle frame, with skin and clothing on: this is the far end of a dissolve, not a cut. The internal state becoming the external one. From here the strobe has dropped and the animation runs at 8 to 10 frames a second, roughly three times the rate of the opening."
     }
   ]
 }
