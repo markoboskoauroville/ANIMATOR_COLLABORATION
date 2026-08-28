@@ -19,17 +19,22 @@ VERSION = CAT.get('version', '')
 
 
 def _readthrough():
-    """The read through link in the bar comes from catalog.json, never from a filename
-    typed into a page. When v9 lands and v8 is marked superseded, the bar follows on its
-    own and nobody has to remember to change it."""
-    rts = [e for e in CAT['entries']
-           if e.get('kind') == 'document' and 'READ_THROUGH' in e.get('file', '')]
-    if not rts:
-        return ''
-    live = [e for e in rts if e.get('status') != 'superseded']
-    # the link is always there. If every read through has been marked superseded,
-    # fall back to the newest one rather than dropping the link out of the bar.
-    return (live or rts)[-1]['file']
+    """The read through link in the bar. Always the LATEST version.
+
+    The target comes from catalog.json, never from a filename typed into a page, and
+    it is chosen by the HIGHEST VERSION NUMBER in the filename, not by where the entry
+    happens to sit in the list and not by its status. Drop v9 in anywhere in the
+    catalog and the bar points at it, whether or not anybody remembered to mark v8
+    superseded. Numeric, so v12 beats v9 rather than losing to it on a string sort.
+    """
+    import re as _re
+    rts = []
+    for e in CAT['entries']:
+        if e.get('kind') != 'document' or 'READ_THROUGH' not in e.get('file', ''):
+            continue
+        m = _re.search(r'_v(\d+)', os.path.basename(e['file']))
+        rts.append((int(m.group(1)) if m else -1, e['file']))
+    return max(rts)[1] if rts else ''
 
 
 READTHROUGH = _readthrough()
