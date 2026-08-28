@@ -16,6 +16,7 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 CAT = json.load(open(os.path.join(ROOT, 'catalog.json')))
 SCENES = CAT['scenes']
 VERSION = CAT.get('version', '')
+WORKING = str(CAT.get('working_scene', ''))
 
 
 def _readthrough():
@@ -188,6 +189,18 @@ h2{font-size:19px;margin:38px 0 14px;padding-bottom:7px;border-bottom:1px solid 
 .log{max-width:880px}
 .log .it{border-top:1px solid var(--rule);padding:13px 0}
 .log .d{font:11px ui-monospace,monospace;color:var(--dim)}
+.rule1{background:var(--slate);color:#e6dcc4;border-left:3px solid var(--brass);
+ padding:13px 18px;margin:16px 0 10px;max-width:880px;font-size:14.5px}
+.rule1 b{color:#e0b45f;letter-spacing:.04em}
+.tip{font:600 13px ui-monospace,SFMono-Regular,Menlo,monospace;letter-spacing:.12em;
+ color:var(--brass);margin:0 0 26px;text-transform:uppercase}
+.crumb{font:600 11px ui-monospace,monospace;letter-spacing:.12em;color:var(--dim);
+ text-transform:uppercase;margin:0 0 4px}
+.crumb a{color:var(--brass);text-decoration:none}
+.shot .cell a.open{display:block;text-decoration:none;color:inherit}
+.shot .cell img{border:1px solid var(--rule)}
+.kf{font:600 10px ui-monospace,monospace;letter-spacing:.08em;color:var(--dim);
+ text-transform:uppercase;margin-left:6px}
 .ovl{max-width:1040px;margin:16px 0 30px}
 .ovl img{width:100%;display:block;border:1px solid var(--rule);
  background:repeating-conic-gradient(#ddd 0 25%,#fff 0 50%) 50%/22px 22px}
@@ -397,6 +410,53 @@ def frames_of(scene):
             and e.get('frame', '').split('.')[0] == str(scene)]
 
 
+def keyframes_of(shot):
+    """Every key frame inside one shot, in catalog order."""
+    return [e for e in ENTRIES if e.get('kind') == 'keyframe'
+            and str(e.get('shot', '')) == str(shot)]
+
+
+def shots_of(scene):
+    """The shot ids in a scene, in the order they first appear in the catalog."""
+    out = []
+    for e in ENTRIES:
+        if e.get('kind') != 'keyframe':
+            continue
+        sh = str(e.get('shot', ''))
+        if sh.split('.')[0] == str(scene) and sh not in out:
+            out.append(sh)
+    return out
+
+
+def representative(shot):
+    """The one key frame that stands for the shot on the scene page.
+
+    Marked with "representative": true in the catalog. Failing that the newest one
+    that is not retired, so a shot always has a face even when nobody has chosen.
+    """
+    ks = keyframes_of(shot)
+    if not ks:
+        return None
+    for e in ks:
+        if e.get('representative'):
+            return e
+    live = [e for e in ks if e.get('status') != 'superseded']
+    return (live or ks)[-1]
+
+
+def shot_page(shot):
+    return 'shot-%s.html' % str(shot).replace('.', '-')
+
+
+def rule_strip(scene):
+    """The one rule, at the top, on the scene we are actually working in."""
+    if not WORKING or str(scene) != WORKING:
+        return ''
+    return ('<div class=rule1><b>WE ARE WORKING ON SCENE %s.</b> '
+            'Everything happens on this page. Nothing is written on any other scene page.</div>'
+            '<p class=tip>scene -&gt; shot -&gt; key frame</p>' % WORKING)
+
+
 def overlays_of(scene=None):
     """Things that sit on top of a frame rather than being one. The panel border
     is the first: the artwork ships edge to edge and this is the frame, on its own
@@ -464,6 +524,7 @@ for n in sorted(SCENES, key=int):
     sh = sheets_of(n)
     b = ['<h1>Scene %s &nbsp;<span style="color:#8a8170;font-weight:400">%s</span></h1>'
          % (n, SCENES[n])]
+    b.append(rule_strip(n))
     b.append('<div class=ask><b>Breakdowns are made on request.</b> A frame is delivered flat '
              'unless you ask for it to be split into background and foreground, because most '
              'frames do not need it and splitting one takes real time. Tick the ones you want '
@@ -480,12 +541,36 @@ for n in sorted(SCENES, key=int):
                     e.get('note', 'note pending'), picks(lbl)))
     for e in overlays_of(n):
         b.append(overlay_block(e, '../'))
-    b.append('<h2>Frames</h2>')
-    if not fs:
+    sh_ids = shots_of(n)
+    b.append('<h2>Shots</h2>')
+    if not sh_ids:
         b.append('<p class=lede>Nothing here yet.</p>')
     else:
-        b.append('<p class=lede>%d %s. Click a picture to open it at full size.</p>'
-                 % (len(fs), 'frame' if len(fs) == 1 else 'frames'))
+        b.append('<p class=lede>%d %s. One picture stands for each shot. '
+                 'Click it to open the shot and see every key frame in it, and to ask for a '
+                 'breakdown or a change.</p>'
+                 % (len(sh_ids), 'shot' if len(sh_ids) == 1 else 'shots'))
+        for i in range(0, len(sh_ids), 5):
+            b.append('<div class="row shot">')
+            for sid in sh_ids[i:i + 5]:
+                rep = representative(sid)
+                ks = keyframes_of(sid)
+                b.append('<div class=cell><a class=open href="%s">'
+                         '<img src="../%s" alt="">'
+                         '<div class=meta><span class=fid>shot %s</span>'
+                         '<span class=kf>%d key frame%s</span>%s'
+                         '<p class=note>%s</p>'
+                         '<span class=bd>Open the shot &rarr;</span></div></a></div>'
+                         % (shot_page(sid), rep['file'], sid, len(ks),
+                            '' if len(ks) == 1 else 's',
+                            tag(rep.get('status', 'proposal')),
+                            rep.get('note', 'note pending')))
+            b.append('</div>')
+
+    if fs:
+        b.append('<h2>Loose frames</h2>')
+        b.append('<p class=lede>Catalogued before the scene, shot and key frame structure '
+                 'existed. Kept, not retired.</p>')
         for i in range(0, len(fs), 5):
             b.append('<div class=row>')
             for e in fs[i:i + 5]:
@@ -506,6 +591,39 @@ for n in sorted(SCENES, key=int):
     b.append((TRAY % ('scene %s' % n, 'Scene %s' % n)).replace("EMAILADDR", EMAIL))
     open(os.path.join(ROOT, 'BB_C_%s' % n, 'index.html'), 'w').write(
         page('Scene %s' % n, ''.join(b), here=n, depth=1))
+
+    for sid in shots_of(n):
+        ks = keyframes_of(sid)
+        rep = representative(sid)
+        k = ['<p class=crumb><a href="index.html">scene %s</a> -&gt; shot %s -&gt; key frame</p>' % (n, sid),
+             '<h1>Shot %s &nbsp;<span style="color:#8a8170;font-weight:400">%s</span></h1>'
+             % (sid, SCENES[n]),
+             rule_strip(n),
+             '<div class=ask><b>This is where you ask for things.</b> Tick a key frame for a '
+             'breakdown into background and foreground, or for a change, say what needs to change, '
+             'and press the button at the bottom. Marko gets an email.</div>',
+             '<p class=lede>%d key frame%s in this shot. The one marked <b>represents the shot</b> '
+             'on the scene page.</p>' % (len(ks), '' if len(ks) == 1 else 's')]
+        for i in range(0, len(ks), 5):
+            k.append('<div class=row>')
+            for e in ks[i:i + 5]:
+                lay = layers_of(e)
+                bd = ('<a class=bd href="%s_breakdown.html">Breakdown &rarr;</a>'
+                      % os.path.splitext(os.path.basename(e['file']))[0]) if lay else ''
+                lbl = ('%s %s' % (os.path.basename(e['file']), ver(e))).strip()
+                k.append('<div class=cell><a href="../%s"><img src="../%s" alt=""></a>'
+                         '<div class=meta><span class=fid>%s</span>%s%s%s'
+                         '<p class=note>%s</p>%s%s</div></div>'
+                         % (e['file'], e['file'], os.path.basename(e['file']),
+                            ('<span class=ver>%s</span>' % ver(e)) if ver(e) else '',
+                            '<span class=kf>represents the shot</span>' if e is rep else '',
+                            tag(e.get('status', 'proposal')),
+                            e.get('note', 'note pending'), bd, picks(lbl)))
+            k.append('</div>')
+        k.append('<p style="margin-top:30px"><a href="index.html">&larr; back to scene %s</a></p>' % n)
+        k.append((TRAY % ('shot %s' % sid, 'Shot %s' % sid)).replace("EMAILADDR", EMAIL))
+        open(os.path.join(ROOT, 'BB_C_%s' % n, shot_page(sid)), 'w').write(
+            page('Shot %s' % sid, ''.join(k), here=n, depth=1))
 
     for e in fs:
         lay = layers_of(e)

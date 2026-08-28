@@ -128,3 +128,25 @@ the centre of a real drawing until it hit the line, rather than by drawing a rec
 figures standing inside the donor frame were swallowed by filling the holes in that region.
 
 v1 is kept and its link still works.
+
+## 28.08.2026  scene, shot, key frame
+
+The site now has three levels instead of two, matching how the film is actually being made.
+
+    scene -> shot -> key frame
+
+A **scene page** shows one representative picture per shot. Clicking it opens a **shot page** holding
+every key frame in that shot, including the representative one, and that is where the breakdown and
+modification tick boxes now live. Asking for a change is a thing you do to a key frame, so it belongs
+next to the key frame and not next to a shot.
+
+`shot-1-1.html` and so on are generated from `catalog.json` like everything else. A key frame is an
+entry with `"kind": "keyframe"` and a `"shot"`, and one of them per shot carries
+`"representative": true`. If none does, the newest one that is not retired stands for the shot, so a
+shot always has a face.
+
+**The rule at the top.** `"working_scene"` in the catalog names the scene being worked on. That scene
+page and its shot pages carry the rule strip saying so, and no other page does. Move the number and
+the rule moves with it.
+
+There are no shots catalogued yet. The structure is live and empty and waiting.
