@@ -69,7 +69,7 @@ a{color:var(--brass)}
 .bar a.on{color:#e0b45f;border-bottom:2px solid #e0b45f}
 .bar .sp{flex:1}
 .bar a.drive{color:var(--brass);margin-left:14px;white-space:nowrap}
-.bar .th{background:none;border:0;cursor:pointer;color:#c9bfa4;padding:4px 0;
+.bar .th{background:none;border:0;cursor:pointer;color:#c9bfa4;padding:4px 0 4px 16px;
  font:600 12px/1 ui-monospace,monospace;letter-spacing:.08em}
 .bar .th:hover{color:#fff}
 .bar a.drive:hover{color:#fff}
@@ -204,8 +204,8 @@ def bar(here, r):
         o.append('<a href="%sBB_C_%s/index.html"%s>SC%s</a>'
                  % (r, n, ' class=on' if here == n else '', n))
     o.append('<span class=sp></span>')
-    o.append('<button class=th id=th onclick="tt()" title="light or dark">&#9681;</button>')
     o.append('<a class=drive href="%s" target=_blank rel=noopener>GDRIVE &nearr;</a>' % DRIVE)
+    o.append('<button class=th id=th onclick="tt()" title="light or dark">&#9681;</button>')
     o.append('</div>')
     return ''.join(o)
 
