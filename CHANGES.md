@@ -112,3 +112,19 @@ graphite as everything it goes over, which a redrawn rectangle never would.
 
 It sits on the landing page under **The frame**, on a checkerboard so the transparency is visible,
 with a download link and the same two tick boxes as everything else.
+
+## 28.08.2026  the frame, corrected
+
+- `FRAME_BORDER-v2.png` — the frame as a **matte**: solid paper margin and solid line, transparent
+  window in the middle. 2731x1536 RGBA. **reference**
+
+v1 was the wrong shape for the job. It was the line alone with everything around it transparent, so
+laid over a frame it drew a line and did nothing else. What is actually wanted is a matte that cuts
+its own window: the artwork shows through the middle and the margin and the border come from the
+overlay. Marko sent a picture of what it should look like and that settled it in one look.
+
+The window edge follows the hand drawn wobble exactly, because it was found by walking outward from
+the centre of a real drawing until it hit the line, rather than by drawing a rectangle. The two
+figures standing inside the donor frame were swallowed by filling the holes in that region.
+
+v1 is kept and its link still works.

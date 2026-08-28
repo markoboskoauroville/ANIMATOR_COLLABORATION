@@ -401,7 +401,10 @@ def overlays_of():
     """Things that sit on top of every frame rather than belonging to one scene.
     The panel border is the first: the artwork ships edge to edge and this is the
     frame, as its own transparent layer."""
-    return [e for e in ENTRIES if e.get('kind') == 'overlay']
+    # only the current one gets the section. Retired ones stay reachable in the
+    # What changed log below, with their note and their link, because nothing is deleted.
+    return [e for e in ENTRIES if e.get('kind') == 'overlay'
+            and e.get('status') != 'superseded']
 
 
 def sheets_of(scene):
