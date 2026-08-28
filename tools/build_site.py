@@ -535,16 +535,31 @@ def keyframes_of(shot):
             and str(e.get('shot', '')) == str(shot)]
 
 
-def shots_of(scene):
-    """The shot ids in a scene, in the order they first appear in the catalog."""
+def shot_key(sh):
+    """Sort 1.1 before 1.2b before 1.3, and 1.10 after 1.9.
+
+    Catalog order is not shot order: an entry rewritten later moves to the end of
+    the file, and the scene page would then list its shots out of sequence.
+    """
+    import re as _r
+    parts = str(sh).split('.')
     out = []
+    for p in parts:
+        m = _r.match(r'(\d*)([a-z]*)', p)
+        out.append((int(m.group(1)) if m.group(1) else 0, m.group(2)))
+    return out
+
+
+def shots_of(scene):
+    """The shot ids in a scene, in shot order."""
+    out = set()
     for e in ENTRIES:
         if e.get('kind') != 'keyframe':
             continue
         sh = str(e.get('shot', ''))
-        if sh.split('.')[0] == str(scene) and sh not in out:
-            out.append(sh)
-    return out
+        if sh.split('.')[0] == str(scene):
+            out.add(sh)
+    return sorted(out, key=shot_key)
 
 
 def representative(shot):

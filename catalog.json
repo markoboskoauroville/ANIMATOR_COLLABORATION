@@ -77,31 +77,6 @@
     },
     {
       "kind": "keyframe",
-      "shot": "1.1",
-      "file": "BB_C_1/1-1-v11.png",
-      "representative": true,
-      "status": "proposal",
-      "date": "2026-08-28",
-      "note": "KEY FRAME 1 of 3. He is finished and he believes he still has ten kilometres to run, which is why the exhaustion is total. Head down, eyes on the ground, mouth open. The emotion changes inside this one shot without a cut, so these three are the start, middle and end of a single continuous move: hold this, then lift through v12, then land on v13."
-    },
-    {
-      "kind": "keyframe",
-      "shot": "1.1",
-      "file": "BB_C_1/1-1-v12.png",
-      "status": "proposal",
-      "date": "2026-08-28",
-      "note": "KEY FRAME 2 of 3. The head lifting, the eyes coming up off the ground. This is the middle of the move and the audience does not yet know why he is rising."
-    },
-    {
-      "kind": "keyframe",
-      "shot": "1.1",
-      "file": "BB_C_1/1-1-v13.png",
-      "status": "proposal",
-      "date": "2026-08-28",
-      "note": "KEY FRAME 3 of 3. He has seen it. Lids up, brow up, mouth closed and set, shoulders squared, the exhaustion gone out of the face. End the shot here and cut. The audience asks why he changed, and shot 1.2b answers."
-    },
-    {
-      "kind": "keyframe",
       "shot": "1.2b",
       "file": "BB_C_1/1-2b-v1.png",
       "status": "proposal",
@@ -231,6 +206,31 @@
       "status": "reference",
       "date": "2026-08-28",
       "note": "The muscle activation, and nothing else, ever. Fully smooth. It happens three times in the film and it is the same sequence copy pasted each time: the runner seeing the finish line, Manan on the bicycle, and Coach Brain naming the limit."
+    },
+    {
+      "kind": "keyframe",
+      "shot": "1.1",
+      "file": "BB_C_1/1-1-v11.png",
+      "representative": true,
+      "status": "proposal",
+      "date": "2026-08-28",
+      "note": "KEY FRAME 1 of 3. He is finished, and he believes he still has ten kilometres to run, which is why the exhaustion is total. Head down, eyes on the ground, mouth open. THE CAMERA DOES NOT MOVE across these three: same head size, same position, same three quarter angle throughout. The emotion changes inside the shot without a cut, so this is the start of one continuous move, not three separate shots. Frame rate here is the slowest in the film, two to three a second, barely turning over."
+    },
+    {
+      "kind": "keyframe",
+      "shot": "1.1",
+      "file": "BB_C_1/1-1-v15.png",
+      "status": "proposal",
+      "date": "2026-08-28",
+      "note": "KEY FRAME 2 of 3. The neck straightening, the chin off the chest, the eyes coming up off the ground to the middle distance. Still breathing hard. This is the middle of the move and the audience does not yet know why he is rising."
+    },
+    {
+      "kind": "keyframe",
+      "shot": "1.1",
+      "file": "BB_C_1/1-1-v18.png",
+      "status": "proposal",
+      "date": "2026-08-28",
+      "note": "KEY FRAME 3 of 3. He has seen it. The whole face relaxes: brow smooth, eyes resting easy on something far ahead and out of frame, the corners of the mouth just lifted. Relief arriving, not shock. End the shot here and cut. The audience asks why he changed, and shot 1.2b answers. He is looking OUT of frame on purpose: if he looked at us the cut would not work."
     }
   ]
 }

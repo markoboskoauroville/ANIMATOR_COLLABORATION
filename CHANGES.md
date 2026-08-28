@@ -172,3 +172,27 @@ and `composite` files. A `"scene"` key pins it to a scene page, no key leaves it
 **One bug fixed on the way.** The What changed log assumed every catalogue entry has exactly one
 `file`. An example has three, so the landing page stopped building the moment the first one was
 added. It no longer assumes the shape of an entry.
+
+## 28.08.2026  shot 1.1 locked, and the attempts that did not make it
+
+**Shot 1.1 is `1-1-v11` → `1-1-v15` → `1-1-v18`.** Down and dying, lifting, sees it. One continuous
+move with no cut, and the camera does not move: all three measure the same ink bounds, x 15% to 64%,
+y 9% to 99%.
+
+**Five attempts were rejected on the way. The files are all still in the repository and every link
+still works.** They are off the shot page so nobody builds on a dead version, and they are listed
+here because a version that failed is worth as much as one that did not.
+
+- `1-1-v12.png` — framing drifted wider and more frontal than v11, and it grew sweat the others do
+  not have. Sweat is its own layer, so it has to be absent or consistent.
+- `1-1-v13.png` — wider and more frontal than the rest of the shot. Across a cutless rise that reads
+  as the camera pulling back rather than the man lifting.
+- `1-1-v14.png` — came back 2048 square. The aspect ratio had reset to 1:1 and cropped his shoulder
+  off. The performance was right, so v15 is the same prompt run again at 16:9.
+- `1-1-v16.png` — turned fully frontal and stared at camera. He has to be looking at something far
+  ahead and out of frame, because the next shot cuts to what he sees. Looking at us breaks the cut.
+- `1-1-v17.png` — angle and framing right, expression wrong. Wide eyes over an open mouth reads as
+  shock, not recognition. v18 relaxed the whole face and lifted the corners of the mouth instead.
+
+**The lesson in three of those five: the prompt caused it.** "Eyes wide open and fixed", "head fully
+up", "shoulders squared" all pull toward a frontal stare. What was wanted was relief arriving.
