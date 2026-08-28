@@ -1,185 +1,66 @@
-<!doctype html>
-<html lang="en">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Scene 6, The release</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Newsreader:opsz,wght@6..72,300;6..72,400;6..72,600&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
-<style>
-:root{
-  --paper:#EDE4D0; --ink:#1E1B16; --dim:#6E6555; --rule:#CDBF9F;
-  --slate:#20241F; --chalk:#E6E9E0; --brass:#9C7A31;
-  --disp:'Bricolage Grotesque',system-ui,sans-serif;
-  --body:'Newsreader',Georgia,serif;
-  --mono:'JetBrains Mono',ui-monospace,monospace;
-  --w:64rem;
-}
+<!doctype html><html lang=en><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><title>Scene 6</title><style>
+:root{--paper:#f2ebda;--ink:#221f19;--dim:#8a8170;--rule:#cdbfa4;--brass:#9C7A31;--box:#e6dcc4;--slate:#20241f}
 *{box-sizing:border-box}
 body{margin:0;background:var(--paper);color:var(--ink);
-  font-family:var(--body);font-size:1.12rem;line-height:1.65;font-weight:300;
-  -webkit-font-smoothing:antialiased}
-
-/* ---------- the gate ---------- */
-#gate{position:fixed;inset:0;z-index:100;background:var(--slate);
-  display:flex;align-items:center;justify-content:center;padding:24px}
-.gate-card{width:100%;max-width:380px;background:#171A16;
-  border:1px solid #333A31;padding:38px 32px 32px}
-.gate-eyebrow{font-family:var(--mono);font-size:10px;letter-spacing:.28em;
-  text-transform:uppercase;color:#8E9488;margin-bottom:18px}
-.gate-title{font-family:var(--disp);font-size:40px;font-weight:800;line-height:.95;
-  letter-spacing:.01em;text-transform:uppercase;color:var(--chalk)}
-.gate-sub{font-family:var(--mono);font-size:11px;color:#8E9488;margin-top:10px;
-  letter-spacing:.08em}
-.gate-form{margin-top:30px}
-label.fld{display:block;font-family:var(--mono);font-size:10px;letter-spacing:.2em;
-  text-transform:uppercase;color:#8E9488;margin-bottom:8px}
-input[type=password]{width:100%;background:var(--slate);border:1px solid #333A31;
-  color:var(--chalk);padding:13px 14px;font-family:var(--mono);font-size:15px;
-  letter-spacing:.12em}
-input[type=password]:focus{outline:2px solid var(--brass);outline-offset:1px;
-  border-color:var(--brass)}
-.remember{display:flex;align-items:center;gap:9px;margin-top:16px}
-.remember input{width:15px;height:15px;accent-color:var(--brass)}
-.remember label{font-family:var(--mono);font-size:11px;color:#8E9488;cursor:pointer}
-button.enter{width:100%;margin-top:22px;padding:13px;background:var(--brass);
-  border:0;color:#1A1509;cursor:pointer;font-family:var(--disp);font-size:17px;
-  font-weight:700;letter-spacing:.14em;text-transform:uppercase}
-button.enter:hover{background:#B08C3C}
-button.enter:focus-visible{outline:2px solid var(--chalk);outline-offset:2px}
-#gate-err{font-family:var(--mono);font-size:11px;color:#E08A6B;margin-top:14px;
-  min-height:16px}
-#app{display:none}
-
-/* ---------- the page ---------- */
-.bar{background:var(--slate);color:var(--chalk);padding:11px 0;
-  border-bottom:1px solid #000}
-.bar-in{max-width:var(--w);margin:0 auto;padding:0 1.4rem;display:flex;
-  align-items:baseline;gap:1rem;flex-wrap:wrap}
-.bar-mark{font-family:var(--disp);font-weight:800;font-size:19px;
-  letter-spacing:.05em;text-transform:uppercase}
-.bar-mark span{color:var(--brass)}
-.bar-meta{font-family:var(--mono);font-size:10.5px;color:#8E9488;
-  letter-spacing:.08em;margin-left:auto}
-.wrap{max-width:var(--w);margin:0 auto;padding:0 1.4rem}
-h1{font-family:var(--disp);font-weight:800;font-size:clamp(2rem,5vw,3.2rem);
-  line-height:1.02;letter-spacing:-.01em;margin:2.4rem 0 .5rem}
-h2{font-family:var(--disp);font-weight:700;font-size:1.5rem;letter-spacing:.01em;
-  margin:2.6rem 0 .8rem;padding-bottom:.4rem;border-bottom:1px solid var(--rule)}
-.kicker{font-family:var(--mono);font-size:11px;letter-spacing:.2em;
-  text-transform:uppercase;color:var(--dim);margin-top:2.2rem}
-.lede{font-size:1.28rem;line-height:1.6}
-p{margin:.85rem 0}
-a{color:#7A5E22}
-ul.rules{list-style:none;padding:0;margin:1rem 0}
-ul.rules li{padding:.55rem 0 .55rem 1.6rem;border-bottom:1px dotted var(--rule);
-  position:relative}
-ul.rules li:before{content:"";position:absolute;left:0;top:1.15rem;width:.7rem;
-  height:1px;background:var(--brass)}
-
-/* ---------- downloads ---------- */
-.zips{display:flex;gap:.7rem;flex-wrap:wrap;margin:1.2rem 0 0}
-.zip{display:block;text-decoration:none;color:var(--ink);border:1px solid var(--rule);
-  background:#F4EEE0;padding:.6rem .9rem}
-.zip:hover{border-color:var(--brass)}
-.zip b{font-family:var(--disp);font-weight:700;font-size:.98rem;display:block}
-.zip i{font-family:var(--mono);font-size:10px;color:var(--dim);font-style:normal}
-
-/* ---------- the contact sheet ---------- */
-.sheet{display:grid;grid-template-columns:repeat(auto-fill,minmax(19rem,1fr));
-  gap:1.6rem;margin:1.4rem 0 3rem}
-.card{border:1px solid var(--rule);background:#F4EEE0}
-.card img{display:block;width:100%;height:auto;border-bottom:1px solid var(--rule)}
-.card-in{padding:.75rem .9rem 1rem}
-.card-top{display:flex;align-items:center;gap:.6rem;flex-wrap:wrap}
-.fr{font-family:var(--mono);font-weight:600;font-size:.95rem}
-.tag{font-family:var(--mono);font-size:9.5px;letter-spacing:.14em;
-  text-transform:uppercase;color:#fff;padding:.16rem .5rem}
-.card-note{font-size:.99rem;line-height:1.55;margin:.55rem 0 0;color:#2E2A22}
-.card-sup{font-family:var(--mono);font-size:10px;color:var(--dim);margin-top:.5rem}
-.card-dl{font-family:var(--mono);font-size:10.5px;margin-top:.7rem;display:block}
-
-/* ---------- the log ---------- */
-.log{margin:1rem 0 3rem}
-.log-row{display:flex;gap:1rem;padding:.7rem 0;border-bottom:1px dotted var(--rule);
-  align-items:baseline;flex-wrap:wrap}
-.log-date{font-family:var(--mono);font-size:10.5px;color:var(--dim);
-  width:6rem;flex:none}
-.log-body{flex:1;min-width:14rem}
-.empty{color:var(--dim);font-style:italic}
-footer{border-top:1px solid var(--rule);margin-top:2rem;padding:1.4rem 0 3rem;
-  font-family:var(--mono);font-size:10.5px;color:var(--dim);letter-spacing:.06em}
-.scenes{display:grid;grid-template-columns:repeat(auto-fill,minmax(13rem,1fr));
-  gap:.7rem;margin:1.2rem 0 2rem}
-.scene-a{display:block;text-decoration:none;color:var(--ink);
-  border:1px solid var(--rule);background:#F4EEE0;padding:.8rem .9rem}
-.scene-a:hover{border-color:var(--brass)}
-.scene-a b{font-family:var(--disp);font-weight:700;display:block;font-size:1.05rem}
-.scene-a i{font-family:var(--mono);font-size:10px;color:var(--dim);font-style:normal}
-</style>
-</head>
-<body>
-
-<div id="gate">
-  <div class="gate-card">
-    <div class="gate-eyebrow">Animation collaboration</div>
-    <div class="gate-title">The Brain<br>Brake</div>
-    <div class="gate-sub">Breakthrough Junior Challenge 2026</div>
-    <form class="gate-form" id="gate-form">
-      <label class="fld" for="pw">Passphrase</label>
-      <input type="password" id="pw" autocomplete="current-password" autofocus>
-      <div class="remember">
-        <input type="checkbox" id="rem" checked>
-        <label for="rem">Remember me on this device</label>
-      </div>
-      <button type="submit" class="enter">Enter</button>
-      <div id="gate-err"></div>
-    </form>
-  </div>
-</div>
-
-<div id="app">
-<div class="bar"><div class="bar-in">
-  <div class="bar-mark">THE BRAIN <span>BRAKE</span></div>
-  <div class="bar-meta">Scene 6 &amp;middot; 28.08.2026</div>
-</div></div>
-<div class="wrap">
-<p class="kicker"><a href="../">All scenes</a></p>
-<h1>6. The release</h1>
-<p class="lede">Folder <code>BB_C_6</code>. Every frame below is a proposal until Marko says otherwise. The note says what changed and why.</p>
-<div class="zips"><a class="zip" href="../downloads/BRAIN_BRAKE_ALL.zip" download><b>Every scene</b><i>2.5 MB &middot; made 28.08.2026</i></a></div>
-<p class="empty">Nothing in this scene yet.</p></div>
-<footer>Built from catalog.json on 28.08.2026. Nothing on this page is typed by hand.</footer>
-</div>
-
+ font:16px/1.6 -apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif}
+a{color:var(--brass)}
+.bar{position:sticky;top:0;z-index:50;background:var(--slate);color:#e6dcc4;
+ display:flex;flex-wrap:wrap;align-items:center;gap:2px 18px;padding:11px 22px;
+ font:600 12px/1 ui-monospace,SFMono-Regular,Menlo,monospace;letter-spacing:.08em}
+.bar a{color:#c9bfa4;text-decoration:none;padding:4px 0}
+.bar a:hover{color:#fff}
+.bar a.home{color:#fff;letter-spacing:.14em;margin-right:8px}
+.bar a.on{color:#e0b45f;border-bottom:2px solid #e0b45f}
+.bar .sp{flex:1}
+.wrap{max-width:1500px;margin:0 auto;padding:30px 22px 70px}
+h1{font-size:30px;letter-spacing:-.01em;margin:8px 0 6px}
+h2{font-size:19px;margin:38px 0 14px;padding-bottom:7px;border-bottom:1px solid var(--rule)}
+.lede{max-width:760px;color:#4a453b}
+.rules{background:var(--box);border-left:3px solid var(--brass);padding:14px 18px;margin:22px 0;
+ max-width:880px;font-size:14.5px}
+.scenes{list-style:none;padding:0;margin:24px 0;max-width:880px}
+.scenes li{border-top:1px solid var(--rule)}
+.scenes a{display:flex;justify-content:space-between;align-items:baseline;gap:14px;
+ padding:14px 2px;text-decoration:none;color:var(--ink)}
+.scenes a:hover{color:var(--brass)}
+.scenes .n{font:600 12px ui-monospace,monospace;color:var(--brass);width:52px;flex:none}
+.scenes .t{font-size:19px;flex:1}
+.scenes .c{font:12px ui-monospace,monospace;color:var(--dim)}
+.row{display:flex;flex-wrap:wrap;margin:0 0 14px}
+.cell{width:20%;flex:none}
+.cell img{width:100%;display:block}
+.meta{padding:6px 8px 12px}
+.fid{font:600 12px ui-monospace,monospace;color:var(--brass)}
+.tag{font:600 10px ui-monospace,monospace;letter-spacing:.08em;color:#fff;
+ padding:2px 7px;border-radius:2px;margin-left:6px;text-transform:uppercase}
+.note{font-size:13px;line-height:1.5;color:#4a453b;margin:5px 0 0}
+.bd{display:inline-block;margin-top:7px;font:600 11px ui-monospace,monospace;
+ letter-spacing:.06em;text-transform:uppercase}
+.log{max-width:880px}
+.log .it{border-top:1px solid var(--rule);padding:13px 0}
+.log .d{font:11px ui-monospace,monospace;color:var(--dim)}
+.doc{display:flex;gap:20px;border-top:1px solid var(--rule);padding:20px 0;max-width:1000px}
+.doc img{width:230px;border:1px solid var(--rule);background:#fff;flex:none}
+.lay{display:flex;gap:18px;align-items:flex-start;border-top:1px solid var(--rule);padding:16px 0}
+.lay img{width:260px;border:1px solid var(--rule);
+ background:repeating-conic-gradient(#ddd 0 25%,#fff 0 50%) 50%/18px 18px}
+.lay .n{font:600 13px ui-monospace,monospace}
+.lay .s{font:11px ui-monospace,monospace;color:var(--dim);margin:3px 0 6px}
+.gate{position:fixed;inset:0;background:var(--paper);z-index:99;
+ display:flex;align-items:center;justify-content:center}
+.gate form{text-align:center}
+.gate input{font:16px ui-monospace,monospace;padding:10px 14px;border:1px solid var(--rule);
+ background:#fff;width:230px}
+.gate p{font:12px ui-monospace,monospace;color:var(--dim);letter-spacing:.1em}
+@media(max-width:1100px){.cell{width:33.333%}}
+@media(max-width:640px){.cell{width:50%}.wrap{padding:20px 14px 50px}}
+</style></head><body><div class=gate id=gate><form onsubmit="g(event)">
+<p>THE BRAIN BRAKE</p><input id=pw autofocus autocomplete=off><p id=ge></p></form></div>
 <script>
-(function(){
-  var PW='kristijan', C='bbc_auth';
-  function setCookie(k,v,days){
-    var d=new Date(); d.setTime(d.getTime()+days*864e5);
-    document.cookie=k+'='+encodeURIComponent(v)+';expires='+d.toUTCString()+';path=/;SameSite=Lax';
-  }
-  function getCookie(k){
-    var m=document.cookie.match('(^|; )'+k+'=([^;]*)');
-    return m?decodeURIComponent(m[2]):null;
-  }
-  var gate=document.getElementById('gate'), app=document.getElementById('app'),
-      form=document.getElementById('gate-form'), pw=document.getElementById('pw'),
-      rem=document.getElementById('rem'), err=document.getElementById('gate-err');
-  function open_(){ gate.style.display='none'; app.style.display='block'; }
-  form.addEventListener('submit',function(e){
-    e.preventDefault();
-    if(pw.value.trim().toLowerCase()===PW){
-      if(rem.checked) setCookie(C,'1',180);
-      open_();
-    }else{
-      err.textContent='Not that one. Try again.';
-      pw.value=''; pw.focus();
-    }
-  });
-  if(getCookie(C)==='1') open_();
-})();
-</script>
-</body>
-</html>
+function g(e){e.preventDefault();var v=document.getElementById('pw').value.trim().toLowerCase();
+if(v==='kristijan'){document.cookie='bbc=1;max-age=7776000;path=/';o();}
+else{document.getElementById('ge').textContent='NO';}}
+function o(){document.getElementById('gate').style.display='none';
+document.getElementById('app').style.display='block';}
+if(document.cookie.indexOf('bbc=1')>-1){window.addEventListener('DOMContentLoaded',o);}
+</script><div id=app style="display:none"><div class=bar><a class=home href="../index.html">BRAIN BRAKE</a><a href="../documentation.html">DOCUMENTATION</a><span class=sp></span><a href="../BB_C_1/index.html">SC1</a><a href="../BB_C_2/index.html">SC2</a><a href="../BB_C_3/index.html">SC3</a><a href="../BB_C_4/index.html">SC4</a><a href="../BB_C_5/index.html">SC5</a><a href="../BB_C_6/index.html" class=on>SC6</a><a href="../BB_C_7/index.html">SC7</a><a href="../BB_C_8/index.html">SC8</a></div><div class=wrap><h1>Scene 6 &nbsp;<span style="color:#8a8170;font-weight:400">The release</span></h1><p class=lede>Nothing here yet.</p></div></div></body></html>

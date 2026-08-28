@@ -16,10 +16,10 @@
     {
       "frame": "1.1",
       "file": "BB_C_1/1-1-v2.png",
-      "status": "proposal",
+      "status": "superseded",
       "date": "2026-08-28",
       "supersedes": "1-1-v1.png",
-      "note": "The opening frame. The runner at the moment he cannot go on. Two things were fixed. The drawn panel border is gone and the artwork now runs to all four edges, because the frame is yours to add as its own layer and it should not be baked into the picture. And the head is recomposed so the hair is no longer clipped by the top edge, which it was in v1. One thing is still wrong and a corrected version is coming: his eyes look straight down the lens at us. The shot needs him staring away down the road, at what is left of the race, because he is not appealing to the audience, he is looking at the thing he cannot finish.",
+      "note": "The opening frame. The panel border was removed here and the artwork now runs to all four edges, because the frame is yours to add as its own layer. The head was also recomposed so the hair is no longer clipped. Superseded by v3 because his eyes looked off to the side.",
       "kind": "frame"
     },
     {
@@ -28,6 +28,15 @@
       "status": "reference",
       "date": "2026-08-28",
       "note": "The whole film as it stands, four panels to a page, with every line and every frame number. The live action frames now show the real footage from the shoot beside the drawn version, with the clip and the timecode on each. At the back there are two pages of clean footage frames, one per shot, for pulling into tests. This is not a proposal, it is the current version of the document."
+    },
+    {
+      "frame": "1.1",
+      "file": "BB_C_1/1-1-v3.png",
+      "kind": "frame",
+      "status": "proposal",
+      "date": "2026-08-28",
+      "supersedes": "1-1-v2.png",
+      "note": "The eyes are now right. He looks straight ahead into the far distance, down the road at what is left of the race, rather than off to the side. Still wrong: he has come fully upright and square to camera, and the shot needs him bent forward from the waist as in the original, head lower than his shoulders, still folded over from running. A v4 is coming with the posture restored. Do not build on v3 yet."
     }
   ]
 }
