@@ -135,7 +135,7 @@ def bar(here, r):
         o.append('<a href="%sBB_C_%s/index.html"%s>SC%s</a>'
                  % (r, n, ' class=on' if here == n else '', n))
     o.append('<span class=sp></span>')
-    o.append('<a class=drive href="%s" target=_blank rel=noopener>GOOGLE DRIVE &nearr;</a>' % DRIVE)
+    o.append('<a class=drive href="%s" target=_blank rel=noopener>GDRIVE &nearr;</a>' % DRIVE)
     o.append('</div>')
     return ''.join(o)
 
@@ -239,7 +239,7 @@ b = ['<h1>THE BRAIN BRAKE</h1>',
      'The frame is yours to add as its own layer, so it can move, animate or come off.<br>'
      'Everything is <b>2731 x 1536</b>, true 16:9. Key light is <b>camera right</b>, always.<br>'
      'Nothing here is in the film until Marko says so. The status under each picture says where it '
-     'stands.<br>Video files are on <b>Google Drive</b>, top right of every page.</div>',
+     'stands.<br>Video files are on <b>GDrive</b>, top right of every page.</div>',
      '<h2>Scenes</h2><ul class=scenes>']
 for n in sorted(SCENES, key=int):
     c = len(frames_of(n))
