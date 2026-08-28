@@ -60,3 +60,9 @@ renamed and nothing was lost, only moved. This log continues.
 ## 28.08.2026  inbox
 
 - `STEP51_no_frame_number.png` — no frame number in the name, so it went to inbox, 800x600 cropped to 2731x1536. **proposal**
+
+## 28.08.2026  the two lines above were a test
+
+`3-2_v2_step51test.jpg` and `STEP51_no_frame_number.png` were dropped into the watch folder to prove
+it pushes here now instead of into `BRAIN_BRAKE`. Both files are **removed from the repository**. The
+lines stay, because nothing is deleted from this log.
