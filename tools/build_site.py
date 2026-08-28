@@ -397,14 +397,37 @@ def frames_of(scene):
             and e.get('frame', '').split('.')[0] == str(scene)]
 
 
-def overlays_of():
-    """Things that sit on top of every frame rather than belonging to one scene.
-    The panel border is the first: the artwork ships edge to edge and this is the
-    frame, as its own transparent layer."""
-    # only the current one gets the section. Retired ones stay reachable in the
-    # What changed log below, with their note and their link, because nothing is deleted.
-    return [e for e in ENTRIES if e.get('kind') == 'overlay'
-            and e.get('status') != 'superseded']
+def overlays_of(scene=None):
+    """Things that sit on top of a frame rather than being one. The panel border
+    is the first: the artwork ships edge to edge and this is the frame, on its own
+    layer.
+
+    With no scene, every current overlay, which is what the landing page wants.
+    With a scene, only the ones pinned to it by a `scene` key in the catalog, so
+    the frame can sit on the scene page the animator is actually working in.
+
+    Retired ones never get a section. They stay reachable in the What changed log
+    with their note and their link, because nothing is deleted.
+    """
+    out = [e for e in ENTRIES if e.get('kind') == 'overlay'
+           and e.get('status') != 'superseded']
+    if scene is None:
+        return out
+    return [e for e in out if str(e.get('scene', '')) == str(scene)]
+
+
+def overlay_block(e, prefix=''):
+    """One source for the frame block, so the landing page and the scene page can
+    never drift apart."""
+    lbl = ('%s %s' % (e.get('title', 'the frame'), ver(e))).strip()
+    return ('<h2>The frame</h2>'
+            '<div class=ovl><a href="%s%s"><img src="%s%s" alt=""></a>'
+            '<div class=meta><span class=fid>%s</span>%s%s'
+            '<p class=note>%s</p><p><a href="%s%s" download>Download the PNG</a></p>%s</div></div>'
+            % (prefix, e['file'], prefix, e['file'], os.path.basename(e['file']),
+               ('<span class=ver>%s</span>' % ver(e)) if ver(e) else '',
+               tag(e.get('status', 'reference')), e.get('note', 'note pending'),
+               prefix, e['file'], picks(lbl)))
 
 
 def sheets_of(scene):
@@ -455,6 +478,8 @@ for n in sorted(SCENES, key=int):
                     ('<span class=ver>%s</span>' % ver(e)) if ver(e) else '',
                     tag(e.get('status', 'reference')),
                     e.get('note', 'note pending'), picks(lbl)))
+    for e in overlays_of(n):
+        b.append(overlay_block(e, '../'))
     b.append('<h2>Frames</h2>')
     if not fs:
         b.append('<p class=lede>Nothing here yet.</p>')
@@ -535,15 +560,7 @@ b = ['<h1>THE BRAIN BRAKE</h1>',
      'stands.<br>Video files are on <b>GDrive</b>, top right of every page.</div>',
      '<h2>Scenes</h2><ul class=scenes>']
 for e in overlays_of():
-    lbl = ('%s %s' % (e.get('title', 'the frame'), ver(e))).strip()
-    b.insert(2, '<h2>The frame</h2>'
-             '<div class=ovl><a href="%s"><img src="%s" alt=""></a>'
-             '<div class=meta><span class=fid>%s</span>%s%s'
-             '<p class=note>%s</p><p><a href="%s" download>Download the PNG</a></p>%s</div></div>'
-             % (e['file'], e['file'], os.path.basename(e['file']),
-                ('<span class=ver>%s</span>' % ver(e)) if ver(e) else '',
-                tag(e.get('status', 'reference')), e.get('note', 'note pending'),
-                e['file'], picks(lbl)))
+    b.insert(2, overlay_block(e, ''))
 for n in sorted(SCENES, key=int):
     c = len(frames_of(n))
     b.append('<li><a href="BB_C_%s/index.html"><span class=n>SC%s</span>'
