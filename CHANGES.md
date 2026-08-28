@@ -52,3 +52,11 @@ Everything above happened in `BRAIN_BRAKE/animator/`. On 28.8.2026 the whole fol
 `ANIMATOR_COLLABORATION`, because `BRAIN_BRAKE` had reached about 1.4 GB and pushes were failing on
 size. The scene folders are now `BB_C_1` to `BB_C_8` instead of `scene_01` to `scene_08`. Nothing was
 renamed and nothing was lost, only moved. This log continues.
+
+## 28.08.2026  scene 3
+
+- `3-2_v2_step51test.jpg` — frame 3-2, 2752x1536 cropped to 2731x1536. **proposal**
+
+## 28.08.2026  inbox
+
+- `STEP51_no_frame_number.png` — no frame number in the name, so it went to inbox, 800x600 cropped to 2731x1536. **proposal**
