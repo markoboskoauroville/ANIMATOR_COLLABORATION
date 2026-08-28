@@ -479,8 +479,10 @@ open(os.path.join(ROOT, 'documentation.html'), 'w').write(
 
 b = ['<h1>THE BRAIN BRAKE</h1>',
      ('<p class=vdraft><b>%s.</b> Scene 1 is being rebuilt from scratch and everything on this site '
-      'is part of that draft. V7 artwork is superseded and is not on these pages. Nothing here is in '
-      'the film until Marko says so.</p>' % VERSION) if VERSION else '',
+      'is part of that draft. The V7 artwork is <b>not gone</b>: it is stored, it is still what the '
+      'film is cut from, and any of it can be pulled back and modified rather than drawn again. If an '
+      'older picture is better, we go back to it. Nothing here is in the film until Marko says so.</p>'
+      % VERSION) if VERSION else '',
      '<p class=lede>A two minute film for the Breakthrough Junior Challenge. A fourteen year old '
      'asks why a runner with nothing left can still find one more sprint. Everything here is for '
      'the animation.</p>',
