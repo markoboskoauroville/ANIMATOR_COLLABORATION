@@ -202,6 +202,12 @@ h2{font-size:19px;margin:38px 0 14px;padding-bottom:7px;border-bottom:1px solid 
 .log{max-width:880px}
 .log .it{border-top:1px solid var(--rule);padding:13px 0}
 .log .d{font:11px ui-monospace,monospace;color:var(--dim)}
+.it.hasimg{display:flex;gap:16px;align-items:flex-start}
+.it .ith{flex:0 0 132px;display:block}
+.it .ith img{width:132px;display:block;border:1px solid var(--rule);background:var(--card)}
+.it .itx{flex:1;min-width:0}
+@media(max-width:640px){.it.hasimg{display:block}.it .ith{margin-bottom:8px}
+ .it .ith img{width:100%;max-width:260px}}
 .arc{margin:10px 0 34px}
 .arcg{font:600 11px ui-monospace,monospace;letter-spacing:.13em;text-transform:uppercase;
  color:var(--brass);margin:26px 0 6px;padding-bottom:5px;border-bottom:1px solid var(--rule)}
@@ -901,9 +907,19 @@ for e in sorted(ENTRIES, key=lambda x: x.get('date', ''), reverse=True):
     # layer and a composite. Do not assume the shape of an entry here.
     who = (e.get('frame') or e.get('shot') or e.get('title')
            or (os.path.basename(e['file']) if e.get('file') else e.get('kind', '?')))
-    b.append('<div class=it><span class=fid>%s</span>%s%s<div class=d>%s</div>'
-             '<p class=note>%s</p></div>'
-             % (who, ('<span class=ver>%s</span>' % ver(e)) if ver(e) else '',
+    # show the picture, not only the words about it. A symbol row with no crop in
+    # it is asking the reader to imagine the thing the row exists to point at.
+    f, _ph = resolve(e) if e.get('file') or e.get('prefer') else ('', False)
+    if not f:
+        f = e.get('composite') or e.get('layer') or e.get('plate') or ''
+    thumb = ''
+    if f and os.path.splitext(f)[1].lower() in ('.png', '.jpg', '.jpeg', '.webp') \
+            and os.path.exists(os.path.join(ROOT, f)):
+        thumb = '<a class=ith href="%s"><img src="%s" alt=""></a>' % (f, f)
+    b.append('<div class="it%s">%s<div class=itx><span class=fid>%s</span>%s%s'
+             '<div class=d>%s</div><p class=note>%s</p></div></div>'
+             % (' hasimg' if thumb else '', thumb, who,
+                ('<span class=ver>%s</span>' % ver(e)) if ver(e) else '',
                 tag(e.get('status', 'proposal')), e.get('date', ''),
                 e.get('note', 'note pending')))
 b.append('</div>')

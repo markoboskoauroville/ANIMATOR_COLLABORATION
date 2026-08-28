@@ -121,6 +121,12 @@ h2{font-size:19px;margin:38px 0 14px;padding-bottom:7px;border-bottom:1px solid 
 .log{max-width:880px}
 .log .it{border-top:1px solid var(--rule);padding:13px 0}
 .log .d{font:11px ui-monospace,monospace;color:var(--dim)}
+.it.hasimg{display:flex;gap:16px;align-items:flex-start}
+.it .ith{flex:0 0 132px;display:block}
+.it .ith img{width:132px;display:block;border:1px solid var(--rule);background:var(--card)}
+.it .itx{flex:1;min-width:0}
+@media(max-width:640px){.it.hasimg{display:block}.it .ith{margin-bottom:8px}
+ .it .ith img{width:100%;max-width:260px}}
 .arc{margin:10px 0 34px}
 .arcg{font:600 11px ui-monospace,monospace;letter-spacing:.13em;text-transform:uppercase;
  color:var(--brass);margin:26px 0 6px;padding-bottom:5px;border-bottom:1px solid var(--rule)}
