@@ -187,6 +187,8 @@ h2{font-size:19px;margin:38px 0 14px;padding-bottom:7px;border-bottom:1px solid 
  text-decoration:none;border:1px solid #3a352b;background:none;color:#c9bfa4}
 .prev .acts button:hover,.prev .acts a:hover{color:#fff;border-color:#5a5344}
 .prev .acts .go{background:var(--brass);color:#17150f;border-color:var(--brass)}
+.prev .acts .clr{margin-left:auto;color:#c98a72;border-color:#4a382f}
+.prev .acts .clr:hover{color:#fff;background:#3a2620;border-color:#7a4c3c}
 .prev .acts .go:hover{color:#17150f}
 .prev .acts .go.off{opacity:.35;pointer-events:none}
 .tray .go{background:var(--brass);color:#17150f}
@@ -301,6 +303,7 @@ TRAY = """
     <span class=sep></span>
     <button onclick="cp()" id=cpb>copy the whole message</button>
     <button onclick="cpa()" id=cab>copy just the address</button>
+    <button onclick="clr()" id=clb class=clr>clean</button>
   </div>
 </div>
 <div class=tray id=tray>
@@ -312,6 +315,17 @@ TRAY = """
 var NL=String.fromCharCode(10);
 window.__open=false;
 function shut(){ window.__open=false; document.body.style.overflow=''; upd(); }
+function clr(){
+  // untick everything and empty every box, then close and go back to the top.
+  // No confirm: nothing here is destructive, the pictures are untouched, and a
+  // confirm dialog on a phone costs more than retyping a sentence.
+  [].slice.call(document.querySelectorAll('.pk')).forEach(function(c){ c.checked=false; });
+  [].slice.call(document.querySelectorAll('.say')).forEach(function(t){ t.value=''; });
+  window.__open=false;
+  document.body.style.overflow='';
+  upd();
+  window.scrollTo(0,0);
+}
 function open_(){ window.__open=true; document.body.style.overflow='hidden'; upd(); }
 function boxes(k){return [].slice.call(document.querySelectorAll('.pk:checked'))
   .filter(function(x){return x.dataset.k===k;});}
