@@ -452,6 +452,24 @@ def frames_of(scene):
             and e.get('frame', '').split('.')[0] == str(scene)]
 
 
+def resolve(e):
+    """A placeholder that replaces itself.
+
+    An entry may carry `prefer`, a list of globs. The first one that actually
+    exists on disk wins and `file` is the fallback. So the moment a real drawn
+    Ganesha lands in the repo under a matching name, the site swaps to it on the
+    next build and the placeholder wording disappears by itself. Nobody has to
+    remember, which is the only kind of reminder that works.
+
+    Returns (path, is_placeholder).
+    """
+    for pat in e.get('prefer', []):
+        hits = sorted(glob.glob(os.path.join(ROOT, pat)))
+        if hits:
+            return os.path.relpath(hits[-1], ROOT), False
+    return e['file'], bool(e.get('prefer'))
+
+
 def rates_of():
     return [e for e in ENTRIES if e.get('kind') == 'rate'
             and e.get('status') != 'superseded']
@@ -811,9 +829,14 @@ if sy:
              'back is doing work the second time too.</p>')
     b.append('<div class=sym>')
     for e in sy:
+        f, ph = resolve(e)
+        note = e.get('note', '')
+        if ph:
+            note += ('<br><span style="color:#c48a52">Placeholder. It swaps itself for the real '
+                     'drawing the moment one lands in the repository.</span>')
         b.append('<div class=s><a href="%s"><img src="%s" alt=""></a>'
                  '<div><h4>%s</h4><p>%s</p></div></div>'
-                 % (e['file'], e['file'], e.get('title', ''), e.get('note', '')))
+                 % (f, f, e.get('title', ''), note))
     b.append('</div>')
 
 if overlays_of():
