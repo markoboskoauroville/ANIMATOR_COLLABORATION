@@ -112,6 +112,13 @@ h2{font-size:19px;margin:38px 0 14px;padding-bottom:7px;border-bottom:1px solid 
 .log{max-width:880px}
 .log .it{border-top:1px solid var(--rule);padding:13px 0}
 .log .d{font:11px ui-monospace,monospace;color:var(--dim)}
+.sym{display:flex;flex-wrap:wrap;gap:26px;margin:18px 0 10px}
+.sym .s{width:calc(50% - 13px);display:flex;gap:16px;align-items:flex-start}
+.sym .s img{width:150px;flex:0 0 150px;border:1px solid var(--rule);display:block}
+.sym .s h4{margin:0 0 5px;font:600 12px ui-monospace,monospace;letter-spacing:.12em;
+ text-transform:uppercase;color:var(--brass)}
+.sym .s p{margin:0;font-size:14px;line-height:1.5;color:var(--body)}
+@media(max-width:760px){.sym .s{width:100%}}
 .ex .cell{width:33.333%}
 .exi{width:100%;display:block;border:1px solid var(--rule)}
 .exi.trans{background:repeating-conic-gradient(#ddd 0 25%,#fff 0 50%) 50%/16px 16px}

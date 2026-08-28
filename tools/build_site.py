@@ -189,6 +189,13 @@ h2{font-size:19px;margin:38px 0 14px;padding-bottom:7px;border-bottom:1px solid 
 .log{max-width:880px}
 .log .it{border-top:1px solid var(--rule);padding:13px 0}
 .log .d{font:11px ui-monospace,monospace;color:var(--dim)}
+.sym{display:flex;flex-wrap:wrap;gap:26px;margin:18px 0 10px}
+.sym .s{width:calc(50% - 13px);display:flex;gap:16px;align-items:flex-start}
+.sym .s img{width:150px;flex:0 0 150px;border:1px solid var(--rule);display:block}
+.sym .s h4{margin:0 0 5px;font:600 12px ui-monospace,monospace;letter-spacing:.12em;
+ text-transform:uppercase;color:var(--brass)}
+.sym .s p{margin:0;font-size:14px;line-height:1.5;color:var(--body)}
+@media(max-width:760px){.sym .s{width:100%}}
 .ex .cell{width:33.333%}
 .exi{width:100%;display:block;border:1px solid var(--rule)}
 .exi.trans{background:repeating-conic-gradient(#ddd 0 25%,#fff 0 50%) 50%/16px 16px}
@@ -412,6 +419,11 @@ def tag(st):
 def frames_of(scene):
     return [e for e in ENTRIES if e.get('kind') == 'frame'
             and e.get('frame', '').split('.')[0] == str(scene)]
+
+
+def symbols_of():
+    return [e for e in ENTRIES if e.get('kind') == 'symbol'
+            and e.get('status') != 'superseded']
 
 
 def examples_of(scene=None):
@@ -739,6 +751,19 @@ for e in sorted(ENTRIES, key=lambda x: x.get('date', ''), reverse=True):
                 tag(e.get('status', 'proposal')), e.get('date', ''),
                 e.get('note', 'note pending')))
 b.append('</div>')
+sy = symbols_of()
+if sy:
+    b.append('<h2>Glossary of symbols</h2>')
+    b.append('<p class=lede>The film says most of what it means through objects. These are the ones '
+             'that carry weight, what each one stands for, and where it appears. A symbol that comes '
+             'back is doing work the second time too.</p>')
+    b.append('<div class=sym>')
+    for e in sy:
+        b.append('<div class=s><a href="%s"><img src="%s" alt=""></a>'
+                 '<div><h4>%s</h4><p>%s</p></div></div>'
+                 % (e['file'], e['file'], e.get('title', ''), e.get('note', '')))
+    b.append('</div>')
+
 if overlays_of():
     b.append((TRAY % ('the frame', 'The frame')).replace("EMAILADDR", EMAIL).replace('../marko.png', 'marko.png'))
 open(os.path.join(ROOT, 'index.html'), 'w').write(page('The Brain Brake', ''.join(b), depth=0))
