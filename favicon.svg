@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <!-- the magnifying glass Manan carries. brass ring, pale lens, handle down and left -->
+  <g fill="none" stroke-linecap="round">
+    <line x1="24" y1="40" x2="9" y2="55" stroke="#7d5f22" stroke-width="11"/>
+    <line x1="24" y1="40" x2="9" y2="55" stroke="#c9a35a" stroke-width="5"/>
+    <circle cx="39" cy="25" r="18" fill="#faf4e4"/>
+    <circle cx="39" cy="25" r="18" stroke="#9C7A31" stroke-width="7"/>
+    <circle cx="39" cy="25" r="14.5" stroke="#e0c07a" stroke-width="1.6"/>
+    <path d="M31 17a11 11 0 0 1 7-4" stroke="#fff" stroke-width="3" opacity=".85"/>
+  </g>
+</svg>

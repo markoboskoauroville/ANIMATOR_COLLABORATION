@@ -215,6 +215,11 @@ def page(title, body, here=None, depth=0):
     return ('<!doctype html><html lang=en><head><meta charset=utf-8>'
             '<meta name=viewport content="width=device-width,initial-scale=1">'
             '<title>%s</title>'
+            '<link rel=icon href="%sfavicon.svg" type="image/svg+xml">'
+            '<link rel=icon href="%sfavicon-32.png" sizes="32x32">'
+            '<link rel=icon href="%sfavicon-16.png" sizes="16x16">'
+            '<link rel=apple-touch-icon href="%sapple-touch-icon.png">'
+            '<meta name=theme-color content="#20241f">'
             '<script>(function(){try{var t=localStorage.getItem("bbt");'
             'if(!t)t=matchMedia("(prefers-color-scheme:dark)").matches?"dark":"light";'
             'document.documentElement.dataset.t=t;}catch(e){}})();'
@@ -223,7 +228,7 @@ def page(title, body, here=None, depth=0):
             'try{localStorage.setItem("bbt",n);}catch(e){}}</script>'
             '<style>%s</style></head><body>%s'
             '<div id=app style="display:none">%s<div class=wrap>%s</div></div></body></html>'
-            % (title, CSS, GATE, bar(here, r), body))
+            % (title, r, r, r, r, CSS, GATE, bar(here, r), body))
 
 
 def tag(st):
