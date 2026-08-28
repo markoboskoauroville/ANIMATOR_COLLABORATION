@@ -172,28 +172,41 @@ DRIVE = 'https://drive.google.com/drive/folders/1INASz6hT4OUQo4UrpT62rMJaF24Amnu
 
 TRAY = """
 <div class=tray id=tray>
-  <span><b id=cnt>0</b> selected &nbsp;<span id=lst style="color:#8d8574"></span></span>
+  <span id=sum></span>
   <span class=sp></span>
   <button class=cp onclick="cp()">copy the list</button>
-  <a class=go id=go href="#">request breakdown</a>
+  <a class=go id=go href="#">send the request</a>
 </div>
 <script>
-function sel(){return [].slice.call(document.querySelectorAll('.pk:checked'))
+function pick(k){return [].slice.call(document.querySelectorAll('.pk:checked'))
+  .filter(function(x){return x.dataset.k===k;})
   .map(function(x){return x.dataset.f;});}
-function upd(){
-  var s=sel(), t=document.getElementById('tray');
-  document.getElementById('cnt').textContent=s.length;
-  document.getElementById('lst').textContent=s.join(', ');
-  t.className='tray'+(s.length?' on':'');
-  var body='Please break these down into background and foreground:%%0D%%0A%%0D%%0A'
-    +s.join('%%0D%%0A')+'%%0D%%0A%%0D%%0Ascene %s%%0D%%0A'+encodeURIComponent(location.href);
-  document.getElementById('go').href='mailto:EMAILADDR?subject='
-    +encodeURIComponent('Breakdown request: '+s.join(', '))+'&body='+body;
+function text(){
+  var b=pick('breakdown'), m=pick('modification'), out=[];
+  if(b.length) out.push('BREAKDOWN into background and foreground:'+String.fromCharCode(10)+
+    '  '+b.join(String.fromCharCode(10)+'  '));
+  if(m.length) out.push('MODIFICATION, changes needed:'+String.fromCharCode(10)+
+    '  '+m.join(String.fromCharCode(10)+'  '));
+  return out.join(String.fromCharCode(10)+String.fromCharCode(10));
 }
-function cp(){var t='Breakdown request: '+sel().join(', ');
-  navigator.clipboard.writeText(t).then(function(){
-    var b=document.querySelector('.tray .cp');b.textContent='copied';
-    setTimeout(function(){b.textContent='copy the list';},1400);});}
+function upd(){
+  var b=pick('breakdown'), m=pick('modification');
+  var t=document.getElementById('tray'), n=b.length+m.length;
+  var parts=[];
+  if(b.length) parts.push('<b>'+b.length+'</b> breakdown');
+  if(m.length) parts.push('<b>'+m.length+'</b> modification');
+  document.getElementById('sum').innerHTML=parts.join(' &nbsp;·&nbsp; ');
+  t.className='tray'+(n?' on':'');
+  var subj=[]; if(b.length) subj.push('breakdown '+b.join(', '));
+  if(m.length) subj.push('modification '+m.join(', '));
+  document.getElementById('go').href='mailto:EMAILADDR?subject='
+    +encodeURIComponent('Scene %s request: '+subj.join('; '))
+    +'&body='+encodeURIComponent(text()+String.fromCharCode(10)+String.fromCharCode(10)
+    +location.href);
+}
+function cp(){navigator.clipboard.writeText(text()).then(function(){
+  var x=document.querySelector('.tray .cp');x.textContent='copied';
+  setTimeout(function(){x.textContent='copy the list';},1400);});}
 </script>"""
 
 
@@ -287,12 +300,17 @@ for n in sorted(SCENES, key=int):
                          '<div class=meta><span class=fid>%s</span>%s%s'
                          '<p class=note>%s</p>%s'
                          '<label class=pick><input type=checkbox class=pk '
-                         'data-f="%s" onchange="upd()"> need a breakdown</label>'
+                         'data-k="breakdown" data-f="%s" onchange="upd()">'
+                         ' need a breakdown</label>'
+                         '<label class=pick><input type=checkbox class=pk '
+                         'data-k="modification" data-f="%s" onchange="upd()">'
+                         ' need a modification</label>'
                          '</div></div>'
                          % (e['file'], e['file'], fid,
                             ('<span class=ver>%s</span>' % ver(e)) if ver(e) else '',
                             tag(e.get('status', 'proposal')),
                             e.get('note', 'note pending'), bd,
+                            ('%s %s' % (fid, ver(e))).strip(),
                             ('%s %s' % (fid, ver(e))).strip()))
             b.append('</div>')
     b.append((TRAY % n).replace("EMAILADDR", EMAIL))

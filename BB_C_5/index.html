@@ -111,26 +111,39 @@ function seen(){ if(document.cookie.indexOf('bbc=1')>-1) return true;
 if(seen()){window.addEventListener('DOMContentLoaded',o);}
 </script><div id=app style="display:none"><div class=bar><a class=home href="../index.html">BRAIN BRAKE</a><a href="../documentation.html">DOCUMENTATION</a><span class=sp></span><a href="../BB_C_1/index.html">SC1</a><a href="../BB_C_2/index.html">SC2</a><a href="../BB_C_3/index.html">SC3</a><a href="../BB_C_4/index.html">SC4</a><a href="../BB_C_5/index.html" class=on>SC5</a><a href="../BB_C_6/index.html">SC6</a><a href="../BB_C_7/index.html">SC7</a><a href="../BB_C_8/index.html">SC8</a><span class=sp></span><a class=drive href="https://drive.google.com/drive/folders/1INASz6hT4OUQo4UrpT62rMJaF24Amnuu" target=_blank rel=noopener>GDRIVE &nearr;</a><button class=th id=th onclick="tt()" title="light or dark">&#9681;</button></div><div class=wrap><h1>Scene 5 &nbsp;<span style="color:#8a8170;font-weight:400">The experiment</span></h1><p class=lede>Nothing here yet.</p>
 <div class=tray id=tray>
-  <span><b id=cnt>0</b> selected &nbsp;<span id=lst style="color:#8d8574"></span></span>
+  <span id=sum></span>
   <span class=sp></span>
   <button class=cp onclick="cp()">copy the list</button>
-  <a class=go id=go href="#">request breakdown</a>
+  <a class=go id=go href="#">send the request</a>
 </div>
 <script>
-function sel(){return [].slice.call(document.querySelectorAll('.pk:checked'))
+function pick(k){return [].slice.call(document.querySelectorAll('.pk:checked'))
+  .filter(function(x){return x.dataset.k===k;})
   .map(function(x){return x.dataset.f;});}
-function upd(){
-  var s=sel(), t=document.getElementById('tray');
-  document.getElementById('cnt').textContent=s.length;
-  document.getElementById('lst').textContent=s.join(', ');
-  t.className='tray'+(s.length?' on':'');
-  var body='Please break these down into background and foreground:%0D%0A%0D%0A'
-    +s.join('%0D%0A')+'%0D%0A%0D%0Ascene 5%0D%0A'+encodeURIComponent(location.href);
-  document.getElementById('go').href='mailto:EMAIL_PLACEHOLDER?subject='
-    +encodeURIComponent('Breakdown request: '+s.join(', '))+'&body='+body;
+function text(){
+  var b=pick('breakdown'), m=pick('modification'), out=[];
+  if(b.length) out.push('BREAKDOWN into background and foreground:'+String.fromCharCode(10)+
+    '  '+b.join(String.fromCharCode(10)+'  '));
+  if(m.length) out.push('MODIFICATION, changes needed:'+String.fromCharCode(10)+
+    '  '+m.join(String.fromCharCode(10)+'  '));
+  return out.join(String.fromCharCode(10)+String.fromCharCode(10));
 }
-function cp(){var t='Breakdown request: '+sel().join(', ');
-  navigator.clipboard.writeText(t).then(function(){
-    var b=document.querySelector('.tray .cp');b.textContent='copied';
-    setTimeout(function(){b.textContent='copy the list';},1400);});}
+function upd(){
+  var b=pick('breakdown'), m=pick('modification');
+  var t=document.getElementById('tray'), n=b.length+m.length;
+  var parts=[];
+  if(b.length) parts.push('<b>'+b.length+'</b> breakdown');
+  if(m.length) parts.push('<b>'+m.length+'</b> modification');
+  document.getElementById('sum').innerHTML=parts.join(' &nbsp;·&nbsp; ');
+  t.className='tray'+(n?' on':'');
+  var subj=[]; if(b.length) subj.push('breakdown '+b.join(', '));
+  if(m.length) subj.push('modification '+m.join(', '));
+  document.getElementById('go').href='mailto:EMAIL_PLACEHOLDER?subject='
+    +encodeURIComponent('Scene 5 request: '+subj.join('; '))
+    +'&body='+encodeURIComponent(text()+String.fromCharCode(10)+String.fromCharCode(10)
+    +location.href);
+}
+function cp(){navigator.clipboard.writeText(text()).then(function(){
+  var x=document.querySelector('.tray .cp');x.textContent='copied';
+  setTimeout(function(){x.textContent='copy the list';},1400);});}
 </script></div></div></body></html>
