@@ -16,6 +16,20 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 CAT = json.load(open(os.path.join(ROOT, 'catalog.json')))
 SCENES = CAT['scenes']
 VERSION = CAT.get('version', '')
+
+
+def _readthrough():
+    """The read through link in the bar comes from catalog.json, never from a filename
+    typed into a page. When v9 lands and v8 is marked superseded, the bar follows on its
+    own and nobody has to remember to change it."""
+    live = [e for e in CAT['entries']
+            if e.get('kind') == 'document'
+            and 'READ_THROUGH' in e.get('file', '')
+            and e.get('status') != 'superseded']
+    return live[-1]['file'] if live else ''
+
+
+READTHROUGH = _readthrough()
 ENTRIES = CAT['entries']
 PASS = 'kristijan'
 EMAIL = 'marko.bosko@auroville.community'
@@ -76,6 +90,8 @@ a{color:var(--brass)}
 .vdraft b{color:var(--brass);letter-spacing:.1em}
 .bar .sp{flex:1}
 .bar a.drive{color:var(--brass);margin-left:14px;white-space:nowrap}
+.bar a.rt{color:var(--brass);margin-left:16px;white-space:nowrap}
+.bar a.rt:hover{color:#fff}
 .bar .th{background:none;border:0;cursor:pointer;color:#c9bfa4;padding:4px 0 4px 16px;
  font:600 12px/1 ui-monospace,monospace;letter-spacing:.08em}
 .bar .th:hover{color:#fff}
@@ -315,7 +331,11 @@ def bar(here, r):
     o = ['<div class=bar><a class=home href="%sindex.html">BRAIN BRAKE</a>' % r,
          ('<span class=vb>%s</span>' % VERSION) if VERSION else '',
          '<a href="%sdocumentation.html"%s>DOCUMENTATION</a>'
-         % (r, ' class=on' if here == 'doc' else ''), '<span class=sp></span>']
+         % (r, ' class=on' if here == 'doc' else ''),
+         ('<a class=rt href="%s%s" target=_blank rel=noopener '
+          'title="the whole film, four panels to a page">READ THROUGH &darr;</a>'
+          % (r, READTHROUGH)) if READTHROUGH else '',
+         '<span class=sp></span>']
     for n in sorted(SCENES, key=int):
         o.append('<a href="%sBB_C_%s/index.html"%s>SC%s</a>'
                  % (r, n, ' class=on' if here == n else '', n))
