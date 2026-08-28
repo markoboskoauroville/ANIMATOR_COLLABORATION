@@ -67,20 +67,28 @@ h2{font-size:19px;margin:38px 0 14px;padding-bottom:7px;border-bottom:1px solid 
 .tray a,.tray button{font:600 11px ui-monospace,monospace;letter-spacing:.08em;
  text-transform:uppercase;padding:9px 15px;border:0;border-radius:2px;cursor:pointer;
  text-decoration:none}
-.prev{border:1px solid var(--rule);background:var(--box);margin:34px 0 90px;display:none}
+.prev{border-radius:7px;overflow:hidden;background:#0e0d0a;margin:34px 0 96px;display:none;
+ box-shadow:0 6px 26px rgba(0,0,0,.28)}
 .prev.on{display:block}
-.prev h3{margin:0;padding:11px 16px;border-bottom:1px solid var(--rule);
- font:600 11px ui-monospace,monospace;letter-spacing:.09em;text-transform:uppercase;
- color:var(--brass)}
-.prev pre{margin:0;padding:16px;white-space:pre-wrap;word-break:break-word;
- font:13px/1.6 ui-monospace,SFMono-Regular,Menlo,monospace;color:var(--ink);
+.prev h3{margin:0;padding:9px 14px;background:#1b1a15;border-bottom:1px solid #2b2921;
+ font:600 11px ui-monospace,monospace;letter-spacing:.09em;color:#8d8574;
+ display:flex;align-items:center;gap:8px}
+.prev h3 .dots{display:flex;gap:6px;margin-right:6px}
+.prev h3 i{width:10px;height:10px;border-radius:50%;display:block}
+.prev pre{margin:0;padding:18px 16px;white-space:pre-wrap;word-break:break-word;
+ font:13px/1.65 ui-monospace,SFMono-Regular,Menlo,monospace;color:#d9d1bd;
  max-height:46vh;overflow:auto}
-.prev .acts{display:flex;gap:10px;padding:12px 16px;border-top:1px solid var(--rule)}
+.prev pre b{color:#e0b45f;font-weight:600}
+.prev pre .cur{background:#e0b45f;color:#0e0d0a}
+.prev .acts{display:flex;gap:10px;padding:12px 16px;border-top:1px solid #2b2921;
+ background:#141310;flex-wrap:wrap}
 .prev .acts button,.prev .acts a{font:600 11px ui-monospace,monospace;letter-spacing:.08em;
- text-transform:uppercase;padding:9px 15px;border-radius:2px;cursor:pointer;
- text-decoration:none;border:1px solid var(--rule);background:none;color:var(--ink)}
+ text-transform:uppercase;padding:9px 15px;border-radius:3px;cursor:pointer;
+ text-decoration:none;border:1px solid #3a352b;background:none;color:#c9bfa4}
+.prev .acts button:hover,.prev .acts a:hover{color:#fff;border-color:#5a5344}
 .prev .acts .go{background:var(--brass);color:#17150f;border-color:var(--brass)}
-.prev .acts .go.off{opacity:.4;pointer-events:none}
+.prev .acts .go:hover{color:#17150f}
+.prev .acts .go.off{opacity:.35;pointer-events:none}
 .tray .go{background:var(--brass);color:#17150f}
 .tray .cp{background:none;color:#c9bfa4;border:1px solid #3a352b}
 .ask{background:var(--box);border-left:3px solid var(--brass);padding:13px 18px;

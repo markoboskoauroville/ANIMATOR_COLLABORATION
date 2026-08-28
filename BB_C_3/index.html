@@ -67,20 +67,28 @@ h2{font-size:19px;margin:38px 0 14px;padding-bottom:7px;border-bottom:1px solid 
 .tray a,.tray button{font:600 11px ui-monospace,monospace;letter-spacing:.08em;
  text-transform:uppercase;padding:9px 15px;border:0;border-radius:2px;cursor:pointer;
  text-decoration:none}
-.prev{border:1px solid var(--rule);background:var(--box);margin:34px 0 90px;display:none}
+.prev{border-radius:7px;overflow:hidden;background:#0e0d0a;margin:34px 0 96px;display:none;
+ box-shadow:0 6px 26px rgba(0,0,0,.28)}
 .prev.on{display:block}
-.prev h3{margin:0;padding:11px 16px;border-bottom:1px solid var(--rule);
- font:600 11px ui-monospace,monospace;letter-spacing:.09em;text-transform:uppercase;
- color:var(--brass)}
-.prev pre{margin:0;padding:16px;white-space:pre-wrap;word-break:break-word;
- font:13px/1.6 ui-monospace,SFMono-Regular,Menlo,monospace;color:var(--ink);
+.prev h3{margin:0;padding:9px 14px;background:#1b1a15;border-bottom:1px solid #2b2921;
+ font:600 11px ui-monospace,monospace;letter-spacing:.09em;color:#8d8574;
+ display:flex;align-items:center;gap:8px}
+.prev h3 .dots{display:flex;gap:6px;margin-right:6px}
+.prev h3 i{width:10px;height:10px;border-radius:50%;display:block}
+.prev pre{margin:0;padding:18px 16px;white-space:pre-wrap;word-break:break-word;
+ font:13px/1.65 ui-monospace,SFMono-Regular,Menlo,monospace;color:#d9d1bd;
  max-height:46vh;overflow:auto}
-.prev .acts{display:flex;gap:10px;padding:12px 16px;border-top:1px solid var(--rule)}
+.prev pre b{color:#e0b45f;font-weight:600}
+.prev pre .cur{background:#e0b45f;color:#0e0d0a}
+.prev .acts{display:flex;gap:10px;padding:12px 16px;border-top:1px solid #2b2921;
+ background:#141310;flex-wrap:wrap}
 .prev .acts button,.prev .acts a{font:600 11px ui-monospace,monospace;letter-spacing:.08em;
- text-transform:uppercase;padding:9px 15px;border-radius:2px;cursor:pointer;
- text-decoration:none;border:1px solid var(--rule);background:none;color:var(--ink)}
+ text-transform:uppercase;padding:9px 15px;border-radius:3px;cursor:pointer;
+ text-decoration:none;border:1px solid #3a352b;background:none;color:#c9bfa4}
+.prev .acts button:hover,.prev .acts a:hover{color:#fff;border-color:#5a5344}
 .prev .acts .go{background:var(--brass);color:#17150f;border-color:var(--brass)}
-.prev .acts .go.off{opacity:.4;pointer-events:none}
+.prev .acts .go:hover{color:#17150f}
+.prev .acts .go.off{opacity:.35;pointer-events:none}
 .tray .go{background:var(--brass);color:#17150f}
 .tray .cp{background:none;color:#c9bfa4;border:1px solid #3a352b}
 .ask{background:var(--box);border-left:3px solid var(--brass);padding:13px 18px;
@@ -131,19 +139,19 @@ function seen(){ if(document.cookie.indexOf('bbc=1')>-1) return true;
 if(seen()){window.addEventListener('DOMContentLoaded',o);}
 </script><div id=app style="display:none"><div class=bar><a class=home href="../index.html">BRAIN BRAKE</a><a href="../documentation.html">DOCUMENTATION</a><span class=sp></span><a href="../BB_C_1/index.html">SC1</a><a href="../BB_C_2/index.html">SC2</a><a href="../BB_C_3/index.html" class=on>SC3</a><a href="../BB_C_4/index.html">SC4</a><a href="../BB_C_5/index.html">SC5</a><a href="../BB_C_6/index.html">SC6</a><a href="../BB_C_7/index.html">SC7</a><a href="../BB_C_8/index.html">SC8</a><span class=sp></span><a class=drive href="https://drive.google.com/drive/folders/1INASz6hT4OUQo4UrpT62rMJaF24Amnuu" target=_blank rel=noopener>GDRIVE &nearr;</a><button class=th id=th onclick="tt()" title="light or dark">&#9681;</button></div><div class=wrap><h1>Scene 3 &nbsp;<span style="color:#8a8170;font-weight:400">The full tank</span></h1><p class=lede>Nothing here yet.</p>
 <div class=prev id=prev>
-  <h3>the message, as it will be sent</h3>
+  <h3><span class=dots><i style="background:#e0655a"></i><i style="background:#e0b45f"></i><i style="background:#6fa86a"></i></span>
+  email composer &nbsp;·&nbsp; scene 3</h3>
   <pre id=pv></pre>
   <div class=acts>
-    <button onclick="cp()" id=cpb>copy the message</button>
-    <button onclick="cpa()">copy the address</button>
-    <a class=go id=go2 href="#">open in mail</a>
+    <button onclick="cp()" id=cpb>copy the whole message</button>
+    <button onclick="cpa()" id=cab>copy just the address</button>
+    <a class=go id=go2 href="#">push to email composer</a>
   </div>
 </div>
 <div class=tray id=tray>
   <span id=sum></span>
   <span class=sp></span>
-  <button class=cp onclick="cp()">copy the list</button>
-  <a class=go id=go href="#">send the request</a>
+  <a class=go id=go href="#">go to the composer</a>
 </div>
 <script>
 var NL=String.fromCharCode(10);
@@ -185,32 +193,34 @@ function upd(){
   if(b.length) subj.push('breakdown '+b.map(function(x){return x.dataset.f;}).join(', '));
   if(m.length) subj.push('modification '+m.map(function(x){return x.dataset.f;}).join(', '));
   var subject='Scene 3 request: '+subj.join('; ');
-  var href='mailto:EMAIL_PLACEHOLDER?subject='+encodeURIComponent(subject)
+  var href='mailto:marko.bosko@auroville.community?subject='+encodeURIComponent(subject)
     +'&body='+encodeURIComponent(text()+NL+NL+location.href);
 
   // the preview at the foot of the page, live as he ticks
   var pv=document.getElementById('pv'), pr=document.getElementById('prev');
   pr.className='prev'+(any?' on':'');
   if(any){
-    pv.textContent='To:      EMAIL_PLACEHOLDER'+NL+'Subject: '+subject+NL+NL
-      +text()+NL+NL+location.href;
+    var esc=function(t){return t.replace(/&/g,'&amp;').replace(/</g,'&lt;');};
+    pv.innerHTML='<b>To:</b>      marko.bosko@auroville.community'+NL+'<b>Subject:</b> '+esc(subject)+NL+NL
+      +esc(text())+NL+NL+esc(location.href)+'<span class=cur> </span>';
   }
 
-  [document.getElementById('go'), document.getElementById('go2')].forEach(function(g){
-    if(!g) return;
-    if(missing.length){ g.className=(g.id==='go2'?'go off':'go'); g.style.opacity=.4;
-      g.style.pointerEvents='none'; g.href='#'; }
-    else { g.className=(g.id==='go2'?'go':'go'); g.style.opacity=1;
-      g.style.pointerEvents='auto'; g.href=href; }
-  });
+  var g1=document.getElementById('go');
+  if(g1){ g1.href='#prev'; g1.style.opacity=1; g1.style.pointerEvents='auto'; }
+  var g2=document.getElementById('go2');
+  if(g2){
+    if(missing.length){ g2.className='go off'; g2.href='#'; }
+    else { g2.className='go'; g2.href=href; }
+  }
 }
-function cpa(){navigator.clipboard.writeText('EMAIL_PLACEHOLDER');}
+function cpa(){navigator.clipboard.writeText('marko.bosko@auroville.community').then(function(){
+  var x=document.getElementById('cab');x.textContent='copied';
+  setTimeout(function(){x.textContent='copy just the address';},1400);});}
 function cp(){
-  var t=document.getElementById('pv').textContent;
+  var t=document.getElementById('pv').innerText.replace(/ /g,' ').trimEnd();
   navigator.clipboard.writeText(t).then(function(){
     ['cpb'].forEach(function(id){var x=document.getElementById(id);
-      if(x){x.textContent='copied';setTimeout(function(){x.textContent='copy the message';},1400);}});
-    var y=document.querySelector('.tray .cp');
-    if(y){y.textContent='copied';setTimeout(function(){y.textContent='copy the list';},1400);}
+      if(x){x.textContent='copied';setTimeout(function(){
+        x.textContent='copy the whole message';},1400);}});
   });}
 </script></div></div></body></html>

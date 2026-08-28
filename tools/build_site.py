@@ -17,7 +17,7 @@ CAT = json.load(open(os.path.join(ROOT, 'catalog.json')))
 SCENES = CAT['scenes']
 ENTRIES = CAT['entries']
 PASS = 'kristijan'
-EMAIL = 'EMAIL_PLACEHOLDER'
+EMAIL = 'marko.bosko@auroville.community'
 
 STATUS = {
     'accepted':     '#3d6b4a',
@@ -120,20 +120,28 @@ h2{font-size:19px;margin:38px 0 14px;padding-bottom:7px;border-bottom:1px solid 
 .tray a,.tray button{font:600 11px ui-monospace,monospace;letter-spacing:.08em;
  text-transform:uppercase;padding:9px 15px;border:0;border-radius:2px;cursor:pointer;
  text-decoration:none}
-.prev{border:1px solid var(--rule);background:var(--box);margin:34px 0 90px;display:none}
+.prev{border-radius:7px;overflow:hidden;background:#0e0d0a;margin:34px 0 96px;display:none;
+ box-shadow:0 6px 26px rgba(0,0,0,.28)}
 .prev.on{display:block}
-.prev h3{margin:0;padding:11px 16px;border-bottom:1px solid var(--rule);
- font:600 11px ui-monospace,monospace;letter-spacing:.09em;text-transform:uppercase;
- color:var(--brass)}
-.prev pre{margin:0;padding:16px;white-space:pre-wrap;word-break:break-word;
- font:13px/1.6 ui-monospace,SFMono-Regular,Menlo,monospace;color:var(--ink);
+.prev h3{margin:0;padding:9px 14px;background:#1b1a15;border-bottom:1px solid #2b2921;
+ font:600 11px ui-monospace,monospace;letter-spacing:.09em;color:#8d8574;
+ display:flex;align-items:center;gap:8px}
+.prev h3 .dots{display:flex;gap:6px;margin-right:6px}
+.prev h3 i{width:10px;height:10px;border-radius:50%;display:block}
+.prev pre{margin:0;padding:18px 16px;white-space:pre-wrap;word-break:break-word;
+ font:13px/1.65 ui-monospace,SFMono-Regular,Menlo,monospace;color:#d9d1bd;
  max-height:46vh;overflow:auto}
-.prev .acts{display:flex;gap:10px;padding:12px 16px;border-top:1px solid var(--rule)}
+.prev pre b{color:#e0b45f;font-weight:600}
+.prev pre .cur{background:#e0b45f;color:#0e0d0a}
+.prev .acts{display:flex;gap:10px;padding:12px 16px;border-top:1px solid #2b2921;
+ background:#141310;flex-wrap:wrap}
 .prev .acts button,.prev .acts a{font:600 11px ui-monospace,monospace;letter-spacing:.08em;
- text-transform:uppercase;padding:9px 15px;border-radius:2px;cursor:pointer;
- text-decoration:none;border:1px solid var(--rule);background:none;color:var(--ink)}
+ text-transform:uppercase;padding:9px 15px;border-radius:3px;cursor:pointer;
+ text-decoration:none;border:1px solid #3a352b;background:none;color:#c9bfa4}
+.prev .acts button:hover,.prev .acts a:hover{color:#fff;border-color:#5a5344}
 .prev .acts .go{background:var(--brass);color:#17150f;border-color:var(--brass)}
-.prev .acts .go.off{opacity:.4;pointer-events:none}
+.prev .acts .go:hover{color:#17150f}
+.prev .acts .go.off{opacity:.35;pointer-events:none}
 .tray .go{background:var(--brass);color:#17150f}
 .tray .cp{background:none;color:#c9bfa4;border:1px solid #3a352b}
 .ask{background:var(--box);border-left:3px solid var(--brass);padding:13px 18px;
@@ -192,19 +200,19 @@ DRIVE = 'https://drive.google.com/drive/folders/1INASz6hT4OUQo4UrpT62rMJaF24Amnu
 
 TRAY = """
 <div class=prev id=prev>
-  <h3>the message, as it will be sent</h3>
+  <h3><span class=dots><i style="background:#e0655a"></i><i style="background:#e0b45f"></i><i style="background:#6fa86a"></i></span>
+  email composer &nbsp;·&nbsp; scene %s</h3>
   <pre id=pv></pre>
   <div class=acts>
-    <button onclick="cp()" id=cpb>copy the message</button>
-    <button onclick="cpa()">copy the address</button>
-    <a class=go id=go2 href="#">open in mail</a>
+    <button onclick="cp()" id=cpb>copy the whole message</button>
+    <button onclick="cpa()" id=cab>copy just the address</button>
+    <a class=go id=go2 href="#">push to email composer</a>
   </div>
 </div>
 <div class=tray id=tray>
   <span id=sum></span>
   <span class=sp></span>
-  <button class=cp onclick="cp()">copy the list</button>
-  <a class=go id=go href="#">send the request</a>
+  <a class=go id=go href="#">go to the composer</a>
 </div>
 <script>
 var NL=String.fromCharCode(10);
@@ -253,26 +261,28 @@ function upd(){
   var pv=document.getElementById('pv'), pr=document.getElementById('prev');
   pr.className='prev'+(any?' on':'');
   if(any){
-    pv.textContent='To:      EMAILADDR'+NL+'Subject: '+subject+NL+NL
-      +text()+NL+NL+location.href;
+    var esc=function(t){return t.replace(/&/g,'&amp;').replace(/</g,'&lt;');};
+    pv.innerHTML='<b>To:</b>      EMAILADDR'+NL+'<b>Subject:</b> '+esc(subject)+NL+NL
+      +esc(text())+NL+NL+esc(location.href)+'<span class=cur> </span>';
   }
 
-  [document.getElementById('go'), document.getElementById('go2')].forEach(function(g){
-    if(!g) return;
-    if(missing.length){ g.className=(g.id==='go2'?'go off':'go'); g.style.opacity=.4;
-      g.style.pointerEvents='none'; g.href='#'; }
-    else { g.className=(g.id==='go2'?'go':'go'); g.style.opacity=1;
-      g.style.pointerEvents='auto'; g.href=href; }
-  });
+  var g1=document.getElementById('go');
+  if(g1){ g1.href='#prev'; g1.style.opacity=1; g1.style.pointerEvents='auto'; }
+  var g2=document.getElementById('go2');
+  if(g2){
+    if(missing.length){ g2.className='go off'; g2.href='#'; }
+    else { g2.className='go'; g2.href=href; }
+  }
 }
-function cpa(){navigator.clipboard.writeText('EMAILADDR');}
+function cpa(){navigator.clipboard.writeText('EMAILADDR').then(function(){
+  var x=document.getElementById('cab');x.textContent='copied';
+  setTimeout(function(){x.textContent='copy just the address';},1400);});}
 function cp(){
-  var t=document.getElementById('pv').textContent;
+  var t=document.getElementById('pv').innerText.replace(/\u00a0/g,' ').trimEnd();
   navigator.clipboard.writeText(t).then(function(){
     ['cpb'].forEach(function(id){var x=document.getElementById(id);
-      if(x){x.textContent='copied';setTimeout(function(){x.textContent='copy the message';},1400);}});
-    var y=document.querySelector('.tray .cp');
-    if(y){y.textContent='copied';setTimeout(function(){y.textContent='copy the list';},1400);}
+      if(x){x.textContent='copied';setTimeout(function(){
+        x.textContent='copy the whole message';},1400);}});
   });}
 </script>"""
 
@@ -383,7 +393,7 @@ for n in sorted(SCENES, key=int):
                             ('%s %s' % (fid, ver(e))).strip(),
                             ('%s %s' % (fid, ver(e))).strip()))
             b.append('</div>')
-    b.append((TRAY % n).replace("EMAILADDR", EMAIL))
+    b.append((TRAY % (n, n)).replace("EMAILADDR", EMAIL))
     open(os.path.join(ROOT, 'BB_C_%s' % n, 'index.html'), 'w').write(
         page('Scene %s' % n, ''.join(b), here=n, depth=1))
 
