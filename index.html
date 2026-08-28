@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>The Brain Brake, animation</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Newsreader:opsz,wght@6..72,300;6..72,400;6..72,600&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#EDE4D0; --ink:#1E1B16; --dim:#6E6555; --rule:#CDBF9F;
+  --slate:#20241F; --chalk:#E6E9E0; --brass:#9C7A31;
+  --disp:'Bricolage Grotesque',system-ui,sans-serif;
+  --body:'Newsreader',Georgia,serif;
+  --mono:'JetBrains Mono',ui-monospace,monospace;
+  --w:64rem;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);
+  font-family:var(--body);font-size:1.12rem;line-height:1.65;font-weight:300;
+  -webkit-font-smoothing:antialiased}
+
+/* ---------- the gate ---------- */
+#gate{position:fixed;inset:0;z-index:100;background:var(--slate);
+  display:flex;align-items:center;justify-content:center;padding:24px}
+.gate-card{width:100%;max-width:380px;background:#171A16;
+  border:1px solid #333A31;padding:38px 32px 32px}
+.gate-eyebrow{font-family:var(--mono);font-size:10px;letter-spacing:.28em;
+  text-transform:uppercase;color:#8E9488;margin-bottom:18px}
+.gate-title{font-family:var(--disp);font-size:40px;font-weight:800;line-height:.95;
+  letter-spacing:.01em;text-transform:uppercase;color:var(--chalk)}
+.gate-sub{font-family:var(--mono);font-size:11px;color:#8E9488;margin-top:10px;
+  letter-spacing:.08em}
+.gate-form{margin-top:30px}
+label.fld{display:block;font-family:var(--mono);font-size:10px;letter-spacing:.2em;
+  text-transform:uppercase;color:#8E9488;margin-bottom:8px}
+input[type=password]{width:100%;background:var(--slate);border:1px solid #333A31;
+  color:var(--chalk);padding:13px 14px;font-family:var(--mono);font-size:15px;
+  letter-spacing:.12em}
+input[type=password]:focus{outline:2px solid var(--brass);outline-offset:1px;
+  border-color:var(--brass)}
+.remember{display:flex;align-items:center;gap:9px;margin-top:16px}
+.remember input{width:15px;height:15px;accent-color:var(--brass)}
+.remember label{font-family:var(--mono);font-size:11px;color:#8E9488;cursor:pointer}
+button.enter{width:100%;margin-top:22px;padding:13px;background:var(--brass);
+  border:0;color:#1A1509;cursor:pointer;font-family:var(--disp);font-size:17px;
+  font-weight:700;letter-spacing:.14em;text-transform:uppercase}
+button.enter:hover{background:#B08C3C}
+button.enter:focus-visible{outline:2px solid var(--chalk);outline-offset:2px}
+#gate-err{font-family:var(--mono);font-size:11px;color:#E08A6B;margin-top:14px;
+  min-height:16px}
+#app{display:none}
+
+/* ---------- the page ---------- */
+.bar{background:var(--slate);color:var(--chalk);padding:11px 0;
+  border-bottom:1px solid #000}
+.bar-in{max-width:var(--w);margin:0 auto;padding:0 1.4rem;display:flex;
+  align-items:baseline;gap:1rem;flex-wrap:wrap}
+.bar-mark{font-family:var(--disp);font-weight:800;font-size:19px;
+  letter-spacing:.05em;text-transform:uppercase}
+.bar-mark span{color:var(--brass)}
+.bar-meta{font-family:var(--mono);font-size:10.5px;color:#8E9488;
+  letter-spacing:.08em;margin-left:auto}
+.wrap{max-width:var(--w);margin:0 auto;padding:0 1.4rem}
+h1{font-family:var(--disp);font-weight:800;font-size:clamp(2rem,5vw,3.2rem);
+  line-height:1.02;letter-spacing:-.01em;margin:2.4rem 0 .5rem}
+h2{font-family:var(--disp);font-weight:700;font-size:1.5rem;letter-spacing:.01em;
+  margin:2.6rem 0 .8rem;padding-bottom:.4rem;border-bottom:1px solid var(--rule)}
+.kicker{font-family:var(--mono);font-size:11px;letter-spacing:.2em;
+  text-transform:uppercase;color:var(--dim);margin-top:2.2rem}
+.lede{font-size:1.28rem;line-height:1.6}
+p{margin:.85rem 0}
+a{color:#7A5E22}
+ul.rules{list-style:none;padding:0;margin:1rem 0}
+ul.rules li{padding:.55rem 0 .55rem 1.6rem;border-bottom:1px dotted var(--rule);
+  position:relative}
+ul.rules li:before{content:"";position:absolute;left:0;top:1.15rem;width:.7rem;
+  height:1px;background:var(--brass)}
+
+/* ---------- downloads ---------- */
+.zips{display:flex;gap:.7rem;flex-wrap:wrap;margin:1.2rem 0 0}
+.zip{display:block;text-decoration:none;color:var(--ink);border:1px solid var(--rule);
+  background:#F4EEE0;padding:.6rem .9rem}
+.zip:hover{border-color:var(--brass)}
+.zip b{font-family:var(--disp);font-weight:700;font-size:.98rem;display:block}
+.zip i{font-family:var(--mono);font-size:10px;color:var(--dim);font-style:normal}
+
+/* ---------- the contact sheet ---------- */
+.sheet{display:grid;grid-template-columns:repeat(auto-fill,minmax(19rem,1fr));
+  gap:1.6rem;margin:1.4rem 0 3rem}
+.card{border:1px solid var(--rule);background:#F4EEE0}
+.card img{display:block;width:100%;height:auto;border-bottom:1px solid var(--rule)}
+.card-in{padding:.75rem .9rem 1rem}
+.card-top{display:flex;align-items:center;gap:.6rem;flex-wrap:wrap}
+.fr{font-family:var(--mono);font-weight:600;font-size:.95rem}
+.tag{font-family:var(--mono);font-size:9.5px;letter-spacing:.14em;
+  text-transform:uppercase;color:#fff;padding:.16rem .5rem}
+.card-note{font-size:.99rem;line-height:1.55;margin:.55rem 0 0;color:#2E2A22}
+.card-sup{font-family:var(--mono);font-size:10px;color:var(--dim);margin-top:.5rem}
+.card-dl{font-family:var(--mono);font-size:10.5px;margin-top:.7rem;display:block}
+
+/* ---------- the log ---------- */
+.log{margin:1rem 0 3rem}
+.log-row{display:flex;gap:1rem;padding:.7rem 0;border-bottom:1px dotted var(--rule);
+  align-items:baseline;flex-wrap:wrap}
+.log-date{font-family:var(--mono);font-size:10.5px;color:var(--dim);
+  width:6rem;flex:none}
+.log-body{flex:1;min-width:14rem}
+.empty{color:var(--dim);font-style:italic}
+footer{border-top:1px solid var(--rule);margin-top:2rem;padding:1.4rem 0 3rem;
+  font-family:var(--mono);font-size:10.5px;color:var(--dim);letter-spacing:.06em}
+.scenes{display:grid;grid-template-columns:repeat(auto-fill,minmax(13rem,1fr));
+  gap:.7rem;margin:1.2rem 0 2rem}
+.scene-a{display:block;text-decoration:none;color:var(--ink);
+  border:1px solid var(--rule);background:#F4EEE0;padding:.8rem .9rem}
+.scene-a:hover{border-color:var(--brass)}
+.scene-a b{font-family:var(--disp);font-weight:700;display:block;font-size:1.05rem}
+.scene-a i{font-family:var(--mono);font-size:10px;color:var(--dim);font-style:normal}
+</style>
+</head>
+<body>
+
+<div id="gate">
+  <div class="gate-card">
+    <div class="gate-eyebrow">Animation collaboration</div>
+    <div class="gate-title">The Brain<br>Brake</div>
+    <div class="gate-sub">Breakthrough Junior Challenge 2026</div>
+    <form class="gate-form" id="gate-form">
+      <label class="fld" for="pw">Passphrase</label>
+      <input type="password" id="pw" autocomplete="current-password" autofocus>
+      <div class="remember">
+        <input type="checkbox" id="rem" checked>
+        <label for="rem">Remember me on this device</label>
+      </div>
+      <button type="submit" class="enter">Enter</button>
+      <div id="gate-err"></div>
+    </form>
+  </div>
+</div>
+
+<div id="app">
+<div class="bar"><div class="bar-in">
+  <div class="bar-mark">THE BRAIN <span>BRAKE</span></div>
+  <div class="bar-meta">1 frames &amp;middot; 28.08.2026</div>
+</div></div>
+<div class="wrap">
+<h1>The frames, scene by scene</h1>
+<p class="lede">Everything made for the animation of <b>The Brain Brake</b> is here. Look at a scene, read why each frame is the way it is, and take the files you need. Nothing here is in the film yet. It is a proposal until Marko says otherwise.</p>
+<div class="kicker">The film</div>
+<p>A man is running a very long race and stops, spent. Then, near the end, he runs fast again. A boy called Manan wants to know where that came from. For a hundred years the answer was the muscles giving out. It is not. A part of the brain holds a reserve back and decides when to release it. Two minutes, eight scenes, fifty frames, one drawn world.</p>
+<div class="kicker">Take everything</div>
+<div class="zips"><a class="zip" href="downloads/BRAIN_BRAKE_ALL.zip" download><b>Every scene, one zip</b><i>2.5 MB &middot; made 28.08.2026</i></a></div>
+<h2>The scenes</h2><div class="scenes">
+<a class="scene-a" href="BB_C_1/"><b>1. The mystery</b><i>BB_C_1 &middot; 1 frame</i></a>
+<a class="scene-a" href="BB_C_2/"><b>2. The old theory</b><i>BB_C_2 &middot; nothing yet</i></a>
+<a class="scene-a" href="BB_C_3/"><b>3. The full tank</b><i>BB_C_3 &middot; nothing yet</i></a>
+<a class="scene-a" href="BB_C_4/"><b>4. The gatekeeper</b><i>BB_C_4 &middot; nothing yet</i></a>
+<a class="scene-a" href="BB_C_5/"><b>5. The experiment</b><i>BB_C_5 &middot; nothing yet</i></a>
+<a class="scene-a" href="BB_C_6/"><b>6. The release</b><i>BB_C_6 &middot; nothing yet</i></a>
+<a class="scene-a" href="BB_C_7/"><b>7. The verdict</b><i>BB_C_7 &middot; nothing yet</i></a>
+<a class="scene-a" href="BB_C_8/"><b>8. The invitation</b><i>BB_C_8 &middot; nothing yet</i></a>
+</div>
+<h2>The working rules</h2><ul class="rules">
+<li><b>Artwork is edge to edge, with no panel border.</b> The frame is not drawn into the picture. You add it yourself as its own layer, so it can change or come off without touching the art underneath.</li>
+<li><b>2731 x 1536</b>, true 16:9. Nano Banana returns 2752 wide and it gets cropped.</li>
+<li><b>Never crop an overlay.</b> A picture over another picture is scaled and moved, never cut.</li>
+<li><b>Characters come from the locked references</b>, from their single figure sheet with the costume line, never from the frame they appear in.</li>
+<li><b>Key light is camera right.</b></li>
+<li><b>Naming.</b> Frame number with a hyphen. <code>_v2</code> and up for a variation of an existing frame. A letter for a new frame between two, so <code>1-3a</code> sits between 1.3 and 1.4 and nothing has to be renumbered.</li>
+</ul>
+<h2>What changed, newest first</h2>
+<div class="log">
+<div class="log-row"><div class="log-date">2026-08-28</div><div class="log-body"><div class="card-top"><span class="fr">1.1</span><span class="tag" style="background:#9C7A31">Proposal</span><a href="BB_C_1/">scene 1</a></div><p class="card-note">The opening frame. The runner at the moment he cannot go on. Two things were fixed. The drawn panel border is gone and the artwork now runs to all four edges, because the frame is yours to add as its own layer and it should not be baked into the picture. And the head is recomposed so the hair is no longer clipped by the top edge, which it was in v1. One thing is still wrong and a corrected version is coming: his eyes look straight down the lens at us. The shot needs him staring away down the road, at what is left of the race, because he is not appealing to the audience, he is looking at the thing he cannot finish.</p></div></div>
+</div></div>
+<footer>Built from catalog.json on 28.08.2026. Nothing on this page is typed by hand.</footer>
+</div>
+
+<script>
+(function(){
+  var PW='kristijan', C='bbc_auth';
+  function setCookie(k,v,days){
+    var d=new Date(); d.setTime(d.getTime()+days*864e5);
+    document.cookie=k+'='+encodeURIComponent(v)+';expires='+d.toUTCString()+';path=/;SameSite=Lax';
+  }
+  function getCookie(k){
+    var m=document.cookie.match('(^|; )'+k+'=([^;]*)');
+    return m?decodeURIComponent(m[2]):null;
+  }
+  var gate=document.getElementById('gate'), app=document.getElementById('app'),
+      form=document.getElementById('gate-form'), pw=document.getElementById('pw'),
+      rem=document.getElementById('rem'), err=document.getElementById('gate-err');
+  function open_(){ gate.style.display='none'; app.style.display='block'; }
+  form.addEventListener('submit',function(e){
+    e.preventDefault();
+    if(pw.value.trim().toLowerCase()===PW){
+      if(rem.checked) setCookie(C,'1',180);
+      open_();
+    }else{
+      err.textContent='Not that one. Try again.';
+      pw.value=''; pw.focus();
+    }
+  });
+  if(getCookie(C)==='1') open_();
+})();
+</script>
+</body>
+</html>

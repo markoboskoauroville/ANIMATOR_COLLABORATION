@@ -1,0 +1,33 @@
+{
+  "film": "THE BRAIN BRAKE",
+  "subtitle": "Breakthrough Junior Challenge 2026",
+  "updated": "2026-08-28",
+  "scenes": {
+    "1": "The mystery",
+    "2": "The old theory",
+    "3": "The full tank",
+    "4": "The gatekeeper",
+    "5": "The experiment",
+    "6": "The release",
+    "7": "The verdict",
+    "8": "The invitation"
+  },
+  "entries": [
+    {
+      "frame": "1.1",
+      "file": "BB_C_1/1-1-v2.png",
+      "status": "proposal",
+      "date": "2026-08-28",
+      "supersedes": "1-1-v1.png",
+      "note": "The opening frame. The runner at the moment he cannot go on. Two things were fixed. The drawn panel border is gone and the artwork now runs to all four edges, because the frame is yours to add as its own layer and it should not be baked into the picture. And the head is recomposed so the hair is no longer clipped by the top edge, which it was in v1. One thing is still wrong and a corrected version is coming: his eyes look straight down the lens at us. The shot needs him staring away down the road, at what is left of the race, because he is not appealing to the audience, he is looking at the thing he cannot finish.",
+      "kind": "frame"
+    },
+    {
+      "file": "DOCS/4-BRAIN_BRAKE_READ_THROUGH_v4.pdf",
+      "kind": "document",
+      "status": "reference",
+      "date": "2026-08-28",
+      "note": "The whole film as it stands, four panels to a page, with every line and every frame number. The live action frames now show the real footage from the shoot beside the drawn version, with the clip and the timecode on each. At the back there are two pages of clean footage frames, one per shot, for pulling into tests. This is not a proposal, it is the current version of the document."
+    }
+  ]
+}
