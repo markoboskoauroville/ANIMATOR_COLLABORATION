@@ -437,7 +437,7 @@ def bar(here, r):
          ('<a class=rt href="%s%s" target=_blank rel=noopener '
           'title="the whole film, four panels to a page">READ THROUGH &darr;</a>'
           % (r, READTHROUGH)) if READTHROUGH else '',
-         ('<a href="%sarchive.html"%s>ARCHIVE</a>'
+         ('<a href="%sarchive.html"%s>ARH</a>'
           % (r, ' class=on' if here == 'archive' else '')) if ARCHIVE.get('items') else '',
          '<span class=sp></span>']
     for n in sorted(SCENES, key=int):
