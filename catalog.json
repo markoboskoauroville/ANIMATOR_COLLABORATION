@@ -513,6 +513,24 @@
       "status": "reference",
       "date": "2026-08-28",
       "note": "Four views of the chair: front, three quarter, side, rear. Same joints, same stretchers, same castors in all four, and the side view carries the rake of the back, which is what you need to turn it. This is the chair he swings round in when Manan asks what happened, so it has to hold through a rotation. Clean on bare paper with no floor."
+    },
+    {
+      "frame": "6",
+      "file": "reference/OBJECT_SHEET_WALL-v2.png",
+      "kind": "sheet",
+      "title": "The control room wall",
+      "status": "reference",
+      "date": "2026-08-28",
+      "note": "Four studies of the clay wall: flat, an outside corner, the top edge where it meets the plain ceiling and the grooves stop, and the grooves drawn large. THE CORNER AND THE CEILING PANELS ARE THE POINT. Without them anyone drawing a new angle has to guess whether the grooves wrap or stop, and guessing that is exactly how the first control room came back as a cave. Smoothed grey clay, no straight edges, grooves barely raised with long calm stretches between them."
+    },
+    {
+      "frame": "6",
+      "file": "reference/OBJECT_SHEET_WALL-v1.png",
+      "kind": "sheet",
+      "title": "The control room wall, first attempt",
+      "status": "superseded",
+      "date": "2026-08-28",
+      "note": "Rejected. It redrew the whole room with four panels laid over it: floor, chair, door and desk base all still there. The room was the only reference, so the room is what came back. A study sheet needs a study sheet as its first reference."
     }
   ]
 }
