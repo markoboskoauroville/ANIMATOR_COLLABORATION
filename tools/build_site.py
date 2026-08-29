@@ -500,8 +500,12 @@ def page(title, body, here=None, depth=0):
             'n=d.dataset.t==="dark"?"light":"dark";d.dataset.t=n;'
             'try{localStorage.setItem("bbt",n);}catch(e){}}</script>'
             '<style>%s</style></head><body>%s'
-            '<div id=app style="display:none">%s<div class=wrap>%s</div></div></body></html>'
-            % (title, r, r, r, r, CSS, GATE if GATED else '', bar(here, r), body))
+            # HIDDEN ONLY WHEN THERE IS A GATE TO UNHIDE IT. On 28.8.2026 the gate was
+            # switched off and this div stayed display:none, so every page went blank
+            # in the middle of production. Nothing else on the site ever un-hides it.
+            '<div id=app style="display:%s">%s<div class=wrap>%s</div></div></body></html>'
+            % (title, r, r, r, r, CSS, GATE if GATED else '',
+               'none' if GATED else 'block', bar(here, r), body))
 
 
 import re
