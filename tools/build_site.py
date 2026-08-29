@@ -45,6 +45,11 @@ def _readthrough():
 READTHROUGH = _readthrough()
 ENTRIES = CAT['entries']
 PASS = 'kristijan'
+
+# 28.8.2026, Baba's ask: the site is open for a few days. Set this back to True to
+# put the gate back. The passphrase and the whole gate stay in the code, they are
+# simply not inserted into the pages, so turning it back on is one word.
+GATED = False
 EMAIL = 'marko.bosko@auroville.community'
 
 STATUS = {
@@ -478,7 +483,7 @@ def page(title, body, here=None, depth=0):
             'try{localStorage.setItem("bbt",n);}catch(e){}}</script>'
             '<style>%s</style></head><body>%s'
             '<div id=app style="display:none">%s<div class=wrap>%s</div></div></body></html>'
-            % (title, r, r, r, r, CSS, GATE, bar(here, r), body))
+            % (title, r, r, r, r, CSS, GATE if GATED else '', bar(here, r), body))
 
 
 import re

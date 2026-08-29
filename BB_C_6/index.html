@@ -207,29 +207,7 @@ h2{font-size:19px;margin:38px 0 14px;padding-bottom:7px;border-bottom:1px solid 
 .gate .rem input{margin:0;width:auto;padding:0;border:0;background:none;accent-color:var(--brass)}
 @media(max-width:1100px){.cell{width:33.333%}}
 @media(max-width:640px){.cell{width:50%}.wrap{padding:20px 14px 50px}}
-</style></head><body><div class=gate id=gate><form onsubmit="g(event)">
-<p>THE BRAIN BRAKE</p>
-<input id=pw autofocus autocomplete=off>
-<label class=rem><input type=checkbox id=rem checked> keep me signed in on this device</label>
-<p id=ge></p></form></div>
-<script>
-function g(e){e.preventDefault();
- var v=document.getElementById('pw').value.trim().toLowerCase();
- if(v==='kristijan'){
-   var keep=document.getElementById('rem').checked;
-   document.cookie='bbc=1;path=/;samesite=lax'+(keep?';max-age=31536000':'');
-   try{keep?localStorage.setItem('bbc','1'):localStorage.removeItem('bbc');}catch(x){}
-   o();
- } else {document.getElementById('ge').textContent='NO';
-   document.getElementById('pw').value='';document.getElementById('pw').focus();}}
-function o(){document.getElementById('gate').style.display='none';
- document.getElementById('app').style.display='block';}
-function seen(){ if(document.cookie.indexOf('bbc=1')>-1) return true;
- try{ if(localStorage.getItem('bbc')==='1'){
-   document.cookie='bbc=1;path=/;max-age=31536000;samesite=lax'; return true;} }catch(x){}
- return false;}
-if(seen()){window.addEventListener('DOMContentLoaded',o);}
-</script><div id=app style="display:none"><div class=bar><a class=home href="../index.html">HOME</a><a href="../BB_C_1/index.html">SC1</a><a href="../BB_C_2/index.html">SC2</a><a href="../BB_C_3/index.html">SC3</a><a href="../BB_C_4/index.html">SC4</a><a href="../BB_C_5/index.html">SC5</a><a href="../BB_C_6/index.html" class=on>SC6</a><a href="../BB_C_7/index.html">SC7</a><a href="../BB_C_8/index.html">SC8</a><span class=sp></span><span class=vb>V8 DRAFT</span><a href="../documentation.html">DOCUMENTATION</a><a class=rt href="../DOCS/9-BRAIN_BRAKE_READ_THROUGH_v9.pdf" target=_blank rel=noopener title="the whole film, four panels to a page">READ THROUGH &darr;</a><a href="../archive.html">ARH</a><span class=sp></span><a class=drive href="https://drive.google.com/drive/folders/1INASz6hT4OUQo4UrpT62rMJaF24Amnuu" target=_blank rel=noopener>GDRIVE &nearr;</a><button class=th id=th onclick="tt()" title="light or dark">&#9681;</button></div><div class=wrap><h1>Scene 6 &nbsp;<span style="color:#8a8170;font-weight:400">The release</span></h1><div class=ask><b>Breakdowns are made on request.</b> A frame is delivered flat unless you ask for it to be split into background and foreground, because most frames do not need it and splitting one takes real time. Tick the ones you want and press the button at the bottom. Marko gets an email and does them.</div><h2>Shots</h2><p class=lede>Nothing here yet.</p>
+</style></head><body><div id=app style="display:none"><div class=bar><a class=home href="../index.html">HOME</a><a href="../BB_C_1/index.html">SC1</a><a href="../BB_C_2/index.html">SC2</a><a href="../BB_C_3/index.html">SC3</a><a href="../BB_C_4/index.html">SC4</a><a href="../BB_C_5/index.html">SC5</a><a href="../BB_C_6/index.html" class=on>SC6</a><a href="../BB_C_7/index.html">SC7</a><a href="../BB_C_8/index.html">SC8</a><span class=sp></span><span class=vb>V8 DRAFT</span><a href="../documentation.html">DOCUMENTATION</a><a class=rt href="../DOCS/9-BRAIN_BRAKE_READ_THROUGH_v9.pdf" target=_blank rel=noopener title="the whole film, four panels to a page">READ THROUGH &darr;</a><a href="../archive.html">ARH</a><span class=sp></span><a class=drive href="https://drive.google.com/drive/folders/1INASz6hT4OUQo4UrpT62rMJaF24Amnuu" target=_blank rel=noopener>GDRIVE &nearr;</a><button class=th id=th onclick="tt()" title="light or dark">&#9681;</button></div><div class=wrap><h1>Scene 6 &nbsp;<span style="color:#8a8170;font-weight:400">The release</span></h1><div class=ask><b>Breakdowns are made on request.</b> A frame is delivered flat unless you ask for it to be split into background and foreground, because most frames do not need it and splitting one takes real time. Tick the ones you want and press the button at the bottom. Marko gets an email and does them.</div><h2>Shots</h2><p class=lede>Nothing here yet.</p>
 <div class=prev id=prev>
   <h3>email composer &nbsp;·&nbsp; scene 6<span class=gap></span><button class=x id=x onclick="shut()" title="close">CLOSE &times;</button></h3>
   <pre id=pv></pre>
