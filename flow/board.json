@@ -28,7 +28,10 @@
     "flow/02-bike-out/V7_5_1_bike.jpg",
     "flow/02-bike-out/V7_5_1_lab_cyclist.jpg",
     "flow/02-bike-out/V7_5_3_beat_it.jpg",
-    "flow/02-bike-out/5_5_LIVE.jpg"
+    "flow/02-bike-out/5_5_LIVE.jpg",
+    "flow/02-bike-out/SHOT_PANA6178_00_00_14_15.jpg",
+    "flow/02-bike-out/SHOT_PANA6178_00_00_18_18.jpg",
+    "flow/02-bike-out/SHOT_PANA6184_00_00_22_00.jpg"
   ],
   "03-bike-in": [
     "flow/03-bike-in/V7_5_6_racing.jpg",
@@ -36,18 +39,28 @@
     "flow/03-bike-in/V7_5_4_idea_lands.jpg",
     "flow/03-bike-in/5_6_LIVE.jpg",
     "flow/03-bike-in/5_4_LIVE.jpg",
-    "flow/03-bike-in/5_3_LIVE.jpg"
+    "flow/03-bike-in/5_3_LIVE.jpg",
+    "flow/03-bike-in/SHOT_PANA6223_00_00_14_00.jpg",
+    "flow/03-bike-in/SHOT_PANA6227_00_00_06_00.jpg",
+    "flow/03-bike-in/SHOT_PANA6229_00_00_06_00.jpg"
   ],
   "04-the-wall": [
     "flow/04-the-wall/V7_5_7_the_wall.jpg",
     "flow/04-the-wall/5_7_LIVE.jpg",
-    "flow/04-the-wall/V7_5_3_beat_it.jpg"
+    "flow/04-the-wall/V7_5_3_beat_it.jpg",
+    "flow/04-the-wall/SHOT_PANA6234_00_00_00_20.jpg",
+    "flow/04-the-wall/SHOT_PANA6235_00_00_12_20.jpg",
+    "flow/04-the-wall/SHOT_PANA6241_00_00_11_05.jpg",
+    "flow/04-the-wall/SHOT_PANA6242_00_00_17_05.jpg"
   ],
   "05-eyes-closed": [
     "flow/05-eyes-closed/V7_5_8_eyes_closed.jpg",
     "flow/05-eyes-closed/V7_5_9_eyes_open.jpg",
     "flow/05-eyes-closed/V7_8_1_breathing.jpg",
-    "flow/05-eyes-closed/5_8_LIVE.jpg"
+    "flow/05-eyes-closed/5_8_LIVE.jpg",
+    "flow/05-eyes-closed/SHOT_PANA6230_00_00_01_20.jpg",
+    "flow/05-eyes-closed/SHOT_PANA6236_00_00_23_05.jpg",
+    "flow/05-eyes-closed/SHOT_PANA6243_00_00_16_19.jpg"
   ],
   "06-door": [
     "flow/06-door/V7_3_2_door.jpg",
@@ -76,7 +89,10 @@
     "flow/09-brain-room/V7_4_6b_not_sorry.jpg",
     "flow/09-brain-room/V7_6_1_check_green.jpg",
     "flow/09-brain-room/V7_6_2_lever_hand.jpg",
-    "flow/09-brain-room/4_2_LIVE.jpg"
+    "flow/09-brain-room/4_2_LIVE.jpg",
+    "flow/09-brain-room/SHOT_PANA6251_00_00_10_00.jpg",
+    "flow/09-brain-room/SHOT_PANA6317_00_00_09_00.jpg",
+    "flow/09-brain-room/SHOT_PANA6321_00_00_03_00.jpg"
   ],
   "10-old-theory": [
     "flow/10-old-theory/V7_2_1_blackboard.jpg",
@@ -106,6 +122,10 @@
     "flow/12-conclusion/V7_8_7_closing.jpg",
     "flow/12-conclusion/V7_BOOTH.jpg",
     "flow/12-conclusion/V7_ENDCARD.jpg",
-    "flow/12-conclusion/8_6_LIVE.jpg"
+    "flow/12-conclusion/8_6_LIVE.jpg",
+    "flow/12-conclusion/SHOT_PANA6280_00_00_04_00.jpg",
+    "flow/12-conclusion/SHOT_PANA6283_00_00_22_00.jpg",
+    "flow/12-conclusion/SHOT_PANA6339_00_00_07_13.jpg",
+    "flow/12-conclusion/SHOT_PANA6342_00_00_07_13.jpg"
   ]
 }
