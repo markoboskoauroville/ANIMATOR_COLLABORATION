@@ -1,6 +1,12 @@
 #!/usr/bin/env python3
 """Turn the whole animator site into one PDF laid out for paper.
 
+NOT COMMITTED. `PRINT_PACK.pdf` is in .gitignore. It is generated from catalog.json,
+so committing it stores tens of megabytes to reproduce something a single command
+rebuilds. On 28.8.2026 it reached 147 MB and GitHub rejected the push outright at
+its 100 MB hard limit, which blocked unrelated work until the commit was rewritten.
+Build it when you want it, hand it over, do not check it in.
+
     python3 tools/print_pack.py
 
 Reads catalog.json, the same single source the website is built from, so the paper
@@ -9,7 +15,7 @@ and the screen can never disagree. Nothing here is typed by hand.
 A4 landscape, because every frame in this film is 16:9 and a portrait page wastes
 half the sheet on a picture this shape.
 """
-import json, os, glob, textwrap
+import hashlib, json, os, glob, tempfile, textwrap
 from reportlab.lib.pagesizes import A4, landscape
 from reportlab.pdfgen import canvas as rlcanvas
 from reportlab.pdfbase import pdfmetrics
@@ -97,12 +103,43 @@ def heading(y, text, sub=''):
     return y - 24
 
 
+_SMALL = os.path.join(tempfile.gettempdir(), 'printpack_small')
+os.makedirs(_SMALL, exist_ok=True)
+
+
+def small(path, maxdim=1500, q=80):
+    """Downscale before embedding, and cache it.
+
+    A plate is printed about 250mm wide at most. Embedding a 2752px image there is
+    roughly 280 dpi, which is fine, but forty of them at full weight took the pack
+    to 147 MB and GitHub rejected the push outright at its 100 MB hard limit. The
+    read-through hit the same wall on 28.8.2026 and was fixed the same way.
+    """
+    try:
+        st = os.stat(path)
+    except OSError:
+        return path
+    key = hashlib.md5(('%s|%d|%d|%d' % (path, st.st_size, int(st.st_mtime), maxdim)
+                       ).encode()).hexdigest()[:16]
+    out = os.path.join(_SMALL, key + '.jpg')
+    if not os.path.exists(out):
+        try:
+            im = Image.open(path).convert('RGB')
+            if max(im.size) > maxdim:
+                im.thumbnail((maxdim, maxdim), Image.LANCZOS)
+            im.save(out, quality=q, optimize=True)
+        except Exception:
+            return path
+    return out
+
+
 def place(path, x, y, boxw, boxh):
     """Fit an image inside a box, keeping its shape, and draw a hairline round it."""
     p = os.path.join(ROOT, path)
     if not os.path.exists(p):
         return 0, 0
     iw, ih = Image.open(p).size
+    p = small(p)
     s = min(boxw / iw, boxh / ih)
     w, h = iw * s, ih * s
     c.drawImage(ImageReader(p), x, y - h, width=w, height=h,
