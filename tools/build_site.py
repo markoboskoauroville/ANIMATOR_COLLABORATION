@@ -213,6 +213,22 @@ h2{font-size:19px;margin:38px 0 14px;padding-bottom:7px;border-bottom:1px solid 
 .it .itx{flex:1;min-width:0}
 @media(max-width:640px){.it.hasimg{display:block}.it .ith{margin-bottom:8px}
  .it .ith img{width:100%;max-width:260px}}
+.flow{display:flex;flex-wrap:wrap;gap:20px;margin:22px 0 40px}
+.fp{width:calc(33.333% - 14px);position:relative}
+.fp a{display:block;text-decoration:none;color:inherit}
+.fp img{width:100%;display:block;border:1px solid var(--rule);background:var(--card)}
+.fp .num{position:absolute;top:-9px;left:-9px;width:30px;height:30px;border-radius:50%;
+ background:var(--brass);color:#17150f;font:700 13px ui-monospace,monospace;
+ display:flex;align-items:center;justify-content:center;z-index:2}
+.fp h3{margin:11px 0 5px;font:700 13px ui-monospace,monospace;letter-spacing:.09em;
+ text-transform:uppercase;color:var(--body)}
+.fp p{margin:0;font-size:13.5px;line-height:1.5;color:var(--dim)}
+.fp .ph{display:inline-block;margin-top:7px;font:600 9.5px ui-monospace,monospace;
+ letter-spacing:.11em;color:#c48a52;border:1px solid #4a382f;border-radius:2px;padding:2px 6px}
+.fp .lk{display:inline-block;margin-top:7px;font:600 9.5px ui-monospace,monospace;
+ letter-spacing:.11em;color:#17150f;background:var(--brass);border-radius:2px;padding:3px 7px}
+@media(max-width:900px){.fp{width:calc(50% - 10px)}}
+@media(max-width:600px){.fp{width:100%}}
 .arc{margin:10px 0 34px}
 .arcg{font:600 11px ui-monospace,monospace;letter-spacing:.13em;text-transform:uppercase;
  color:var(--brass);margin:26px 0 6px;padding-bottom:5px;border-bottom:1px solid var(--rule)}
@@ -449,6 +465,8 @@ def bar(here, r):
                  % (r, n, ' class=on' if here == n else '', n))
     o.append('<span class=sp></span>')
     o.append(('<span class=vb>%s</span>' % VERSION) if VERSION else '')
+    o.append('<a href="%sbreakdown.html"%s>BREAKDOWN</a>'
+             % (r, ' class=on' if here == 'breakdown' else ''))
     o.append('<a href="%sdocumentation.html"%s>DOCUMENTATION</a>'
              % (r, ' class=on' if here == 'doc' else ''))
     if READTHROUGH:
@@ -520,6 +538,11 @@ def resolve(e):
         if hits:
             return os.path.relpath(hits[-1], ROOT), False
     return e['file'], bool(e.get('prefer'))
+
+
+def flow_of():
+    return sorted([e for e in ENTRIES if e.get('kind') == 'flow'],
+                  key=lambda e: int(e.get('n', 0)))
 
 
 def rates_of():
@@ -964,6 +987,31 @@ if sy:
 
 if overlays_of():
     b.append((TRAY % ('the frame', 'The frame')).replace("EMAILADDR", EMAIL).replace('../marko.png', 'marko.png'))
-open(os.path.join(ROOT, 'index.html'), 'w').write(page('The Brain Brake', ''.join(b), depth=0))
+# everything above became the BREAKDOWN page. The homepage is now the flow.
+open(os.path.join(ROOT, 'breakdown.html'), 'w').write(
+    page('Breakdown', ''.join(b), here='breakdown', depth=0))
+
+fl = flow_of()
+h = ['<h1>THE BRAIN BRAKE</h1>',
+     ('<p class=vdraft><b>%s.</b> The film in twelve pictures, in order. '
+      'Only scene 1 is locked. Everything else is a placeholder standing in until the real '
+      'frame is drawn, and it says so under the picture.</p>' % VERSION) if VERSION else '',
+     '<p class=lede>A two minute film for the Breakthrough Junior Challenge. A fourteen year old '
+     'asks why a runner with nothing left can still find one more sprint.</p>',
+     '<div class=flow>']
+for e in fl:
+    inner = ('<img src="%s" alt=""><h3>%s</h3><p>%s</p>%s'
+             % (e['file'], e.get('title', ''), e.get('note', ''),
+                '<span class=lk>LOCKED &nbsp;OPEN SCENE %s &rarr;</span>' % e['scene']
+                if e.get('status') == 'LOCKED'
+                else '<span class=ph>PLACEHOLDER, NEW ONE COMING</span>'))
+    if e.get('scene'):
+        inner = '<a href="BB_C_%s/index.html">%s</a>' % (e['scene'], inner)
+    h.append('<div class=fp><span class=num>%s</span>%s</div>' % (e.get('n', ''), inner))
+h.append('</div>')
+h.append('<p class=lede>The sheets, the frame, the layer rules, the frame rate scale, the glossary '
+         'and the full change log are on the <a href="breakdown.html">breakdown</a> page.</p>')
+open(os.path.join(ROOT, 'index.html'), 'w').write(
+    page('The Brain Brake', ''.join(h), depth=0))
 
 print('built: landing, documentation, %d scene pages' % len(SCENES))

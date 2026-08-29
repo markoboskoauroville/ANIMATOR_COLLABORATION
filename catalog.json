@@ -1,7 +1,7 @@
 {
   "film": "THE BRAIN BRAKE",
   "subtitle": "Breakthrough Junior Challenge 2026",
-  "version": "V8 DRAFT",
+  "version": "V9 DRAFT",
   "working_scene": "1",
   "updated": "2026-08-28",
   "scenes": {
@@ -362,6 +362,103 @@
       "status": "reference",
       "date": "2026-08-28",
       "note": "The whole film as it stands, four panels to a page. SCENE 1 IS REBUILT: 15 panels instead of 5, opening on the empty avenue and the labouring feet, through the collapse, the face lifting, what he sees, the four beats of the muscle activation, the sprint, and Manan walking in. The film is 60 panels, up from 50. Everything after scene 1 is unchanged but renumbered, so any timecode taken from an earlier read through is now wrong."
+    },
+    {
+      "kind": "flow",
+      "n": "1",
+      "file": "flow/01-runner.jpg",
+      "title": "THE RUNNER",
+      "status": "LOCKED",
+      "note": "A man at the end of himself finds a finish line and runs like he just started. A real thing that happens, before any theory.",
+      "scene": "1"
+    },
+    {
+      "kind": "flow",
+      "n": "2",
+      "file": "flow/02-bike-out.jpg",
+      "title": "HE TRIES IT HIMSELF",
+      "status": "placeholder",
+      "note": "Manan on a real bicycle on a real road. Curious, not convinced."
+    },
+    {
+      "kind": "flow",
+      "n": "3",
+      "file": "flow/03-bike-in.jpg",
+      "title": "RACING HIMSELF",
+      "status": "placeholder",
+      "note": "Home, on the trainer, his own best ride playing back on the laptop. He is competing with a recording of himself."
+    },
+    {
+      "kind": "flow",
+      "n": "4",
+      "file": "flow/04-the-wall.jpg",
+      "title": "HE IS DONE",
+      "status": "placeholder",
+      "note": "Nothing left. He cannot go on."
+    },
+    {
+      "kind": "flow",
+      "n": "5",
+      "file": "flow/05-eyes-closed.jpg",
+      "title": "HE STOPS AND CLOSES HIS EYES",
+      "status": "placeholder",
+      "note": "Breath. Stillness. This is the way in."
+    },
+    {
+      "kind": "flow",
+      "n": "6",
+      "file": "flow/06-door.jpg",
+      "title": "A DOOR OF LIGHT",
+      "status": "placeholder",
+      "note": "Inside his head. Gold light pouring through the gap. THE FACTORY IS GONE, this is what the door became."
+    },
+    {
+      "kind": "flow",
+      "n": "7",
+      "file": "flow/07-white.jpg",
+      "title": "HE WALKS INTO IT",
+      "status": "placeholder",
+      "note": "White. Nothing else. He is inside the light."
+    },
+    {
+      "kind": "flow",
+      "n": "8",
+      "file": "flow/08-ganesha.jpg",
+      "title": "GANESHA",
+      "status": "placeholder",
+      "note": "He rises out of the white, grows, and is gone. Never explained, never mentioned. The remover of obstacles in a film about an obstacle that turns out to be a setting."
+    },
+    {
+      "kind": "flow",
+      "n": "9",
+      "file": "flow/09-brain-room.jpg",
+      "title": "COACH BRAIN",
+      "status": "placeholder",
+      "note": "The light fades and he is in the room. WHAT HAPPENED? I PULLED THE BRAKES ON YOU."
+    },
+    {
+      "kind": "flow",
+      "n": "10",
+      "file": "flow/10-old-theory.jpg",
+      "title": "THE OLD THEORY",
+      "status": "placeholder",
+      "note": "Manan explains what he read. Blackboard, white chalk, and the chalk draws itself as he speaks."
+    },
+    {
+      "kind": "flow",
+      "n": "11",
+      "file": "flow/11-new-theory.jpg",
+      "title": "THE NEW THEORY",
+      "status": "placeholder",
+      "note": "Coach Brain answers on a whiteboard in black marker. The inversion is the point: new surface, opposite colour. Then the key, and permission to use it."
+    },
+    {
+      "kind": "flow",
+      "n": "12",
+      "file": "flow/12-conclusion.jpg",
+      "title": "IT IS A SETTING",
+      "status": "placeholder",
+      "note": "Back on the bike, fresh, like the runner. Then the fourth wall opens and he says it: not a wall, a setting."
     }
   ]
 }
