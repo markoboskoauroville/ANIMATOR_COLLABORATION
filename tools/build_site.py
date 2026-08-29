@@ -213,7 +213,29 @@ h2{font-size:19px;margin:38px 0 14px;padding-bottom:7px;border-bottom:1px solid 
 .it .itx{flex:1;min-width:0}
 @media(max-width:640px){.it.hasimg{display:block}.it .ith{margin-bottom:8px}
  .it .ith img{width:100%;max-width:260px}}
-.flow{display:flex;flex-wrap:wrap;gap:20px;margin:22px 0 40px}
+.flow{margin:22px 0 40px}
+.fp{border-top:1px solid var(--rule);padding:22px 0 6px;position:relative}
+.fp .hd{display:flex;gap:14px;align-items:baseline;margin-bottom:4px}
+.fp .num{flex:0 0 30px;height:30px;border-radius:50%;background:var(--brass);
+ color:#17150f;font:700 13px ui-monospace,monospace;display:flex;
+ align-items:center;justify-content:center}
+.fp h3{margin:0;font:700 14px ui-monospace,monospace;letter-spacing:.09em;
+ text-transform:uppercase;color:var(--body)}
+.fp .why{margin:2px 0 12px 44px;font-size:14px;line-height:1.55;color:var(--dim);
+ max-width:900px}
+.board{display:flex;flex-wrap:wrap;gap:8px;margin-left:44px}
+.board a{display:block;width:calc(12.5% - 7px)}
+.board img{width:100%;display:block;border:1px solid var(--rule);background:var(--card)}
+.board a:hover img{border-color:var(--brass)}
+.fp .cnt{margin-left:44px;margin-top:9px;font:600 9.5px ui-monospace,monospace;
+ letter-spacing:.11em;color:var(--dim)}
+.fp .ph{display:inline-block;font:600 9.5px ui-monospace,monospace;letter-spacing:.11em;
+ color:#c48a52;border:1px solid #4a382f;border-radius:2px;padding:2px 6px;margin-left:8px}
+.fp .lk{display:inline-block;font:600 9.5px ui-monospace,monospace;letter-spacing:.11em;
+ color:#17150f;background:var(--brass);border-radius:2px;padding:3px 7px;
+ text-decoration:none;margin-left:8px}
+@media(max-width:1100px){.board a{width:calc(16.66% - 7px)}}
+@media(max-width:760px){.board a{width:calc(25% - 6px)}.fp .why,.board,.fp .cnt{margin-left:0}}
 .fp{width:calc(33.333% - 14px);position:relative}
 .fp a{display:block;text-decoration:none;color:inherit}
 .fp img{width:100%;display:block;border:1px solid var(--rule);background:var(--card)}
@@ -542,6 +564,12 @@ def resolve(e):
         if hits:
             return os.path.relpath(hits[-1], ROOT), False
     return e['file'], bool(e.get('prefer'))
+
+
+BOARD = {}
+_bp = os.path.join(ROOT, 'flow', 'board.json')
+if os.path.exists(_bp):
+    BOARD = json.load(open(_bp))
 
 
 def flow_of():
@@ -997,21 +1025,29 @@ open(os.path.join(ROOT, 'breakdown.html'), 'w').write(
 
 fl = flow_of()
 h = ['<h1>THE BRAIN BRAKE</h1>',
-     ('<p class=vdraft><b>%s.</b> The film in twelve pictures, in order. '
-      'Only scene 1 is locked. Everything else is a placeholder standing in until the real '
-      'frame is drawn, and it says so under the picture.</p>' % VERSION) if VERSION else '',
+     ('<p class=vdraft><b>%s.</b> The film in twelve phases, in order. Under each one is '
+      'everything we have that belongs to it, drawn and shot, kept and abandoned. It is a '
+      'brainstorming board, not a selection: nothing here is chosen yet. Only phase 1 is '
+      'locked.</p>' % VERSION) if VERSION else '',
      '<p class=lede>A two minute film for the Breakthrough Junior Challenge. A fourteen year old '
      'asks why a runner with nothing left can still find one more sprint.</p>',
      '<div class=flow>']
 for e in fl:
-    inner = ('<img src="%s" alt=""><h3>%s</h3><p>%s</p>%s'
-             % (e['file'], e.get('title', ''), e.get('note', ''),
-                '<span class=lk>LOCKED &nbsp;OPEN SCENE %s &rarr;</span>' % e['scene']
-                if e.get('status') == 'LOCKED'
-                else '<span class=ph>PLACEHOLDER, NEW ONE COMING</span>'))
-    if e.get('scene'):
-        inner = '<a href="BB_C_%s/index.html">%s</a>' % (e['scene'], inner)
-    h.append('<div class=fp><span class=num>%s</span>%s</div>' % (e.get('n', ''), inner))
+    key = os.path.splitext(os.path.basename(e['file']))[0]
+    pics = BOARD.get(key, [])
+    badge = ('<a class=lk href="BB_C_%s/index.html">LOCKED &nbsp;OPEN SCENE %s &rarr;</a>'
+             % (e['scene'], e['scene'])) if e.get('status') == 'LOCKED' \
+        else '<span class=ph>NOT DRAWN YET</span>'
+    h.append('<div class=fp><div class=hd><span class=num>%s</span><h3>%s</h3>%s</div>'
+             '<p class=why>%s</p>' % (e.get('n', ''), e.get('title', ''), badge, e.get('note', '')))
+    if pics:
+        h.append('<div class=board>')
+        for f in pics:
+            h.append('<a href="%s"><img src="%s" alt="" loading=lazy></a>' % (f, f))
+        h.append('</div>')
+        h.append('<div class=cnt>%d PICTURES ON THIS PHASE &nbsp;·&nbsp; '
+                 'EVERYTHING WE HAVE, DRAWN AND SHOT, GOOD AND ABANDONED</div>' % len(pics))
+    h.append('</div>')
 h.append('</div>')
 h.append('<p class=lede>The sheets, the frame, the layer rules, the frame rate scale, the glossary '
          'and the full change log are on the <a href="breakdown.html">breakdown</a> page.</p>')

@@ -1,0 +1,111 @@
+{
+  "01-runner": [
+    "flow/01-runner/1-0-A-v1.jpg",
+    "flow/01-runner/1-0-B-v1.jpg",
+    "flow/01-runner/1-0-C-v1.jpg",
+    "flow/01-runner/1-1-v11.jpg",
+    "flow/01-runner/1-1-v15.jpg",
+    "flow/01-runner/1-1-v18.jpg",
+    "flow/01-runner/1-2b-v1.jpg",
+    "flow/01-runner/1-2c-1-v1.jpg",
+    "flow/01-runner/1-2c-2-v1.jpg",
+    "flow/01-runner/1-2c-3-v1.jpg",
+    "flow/01-runner/1-2c-4-v1.jpg",
+    "flow/01-runner/1-3-A-v1.jpg",
+    "flow/01-runner/1-3-B-v5.jpg",
+    "flow/01-runner/1-5-v1.jpg",
+    "flow/01-runner/1-6-v1.jpg",
+    "flow/01-runner/CHARACTER_SHEET_RUNNER_FACE-v2.jpg",
+    "flow/01-runner/CHARACTER_SHEET_RUNNER-v1.jpg",
+    "flow/01-runner/V7_1_1_face.jpg",
+    "flow/01-runner/V7_1_1_runner.jpg",
+    "flow/01-runner/V7_1_2_going_down.jpg",
+    "flow/01-runner/V7_1_3_sprint.jpg",
+    "flow/01-runner/V5_1_5.jpg"
+  ],
+  "02-bike-out": [
+    "flow/02-bike-out/V7_5_5_road.jpg",
+    "flow/02-bike-out/V7_5_1_bike.jpg",
+    "flow/02-bike-out/V7_5_1_lab_cyclist.jpg",
+    "flow/02-bike-out/V7_5_3_beat_it.jpg",
+    "flow/02-bike-out/5_5_LIVE.jpg"
+  ],
+  "03-bike-in": [
+    "flow/03-bike-in/V7_5_6_racing.jpg",
+    "flow/03-bike-in/V7_5_1_bike.jpg",
+    "flow/03-bike-in/V7_5_4_idea_lands.jpg",
+    "flow/03-bike-in/5_6_LIVE.jpg",
+    "flow/03-bike-in/5_4_LIVE.jpg",
+    "flow/03-bike-in/5_3_LIVE.jpg"
+  ],
+  "04-the-wall": [
+    "flow/04-the-wall/V7_5_7_the_wall.jpg",
+    "flow/04-the-wall/5_7_LIVE.jpg",
+    "flow/04-the-wall/V7_5_3_beat_it.jpg"
+  ],
+  "05-eyes-closed": [
+    "flow/05-eyes-closed/V7_5_8_eyes_closed.jpg",
+    "flow/05-eyes-closed/V7_5_9_eyes_open.jpg",
+    "flow/05-eyes-closed/V7_8_1_breathing.jpg",
+    "flow/05-eyes-closed/5_8_LIVE.jpg"
+  ],
+  "06-door": [
+    "flow/06-door/V7_3_2_door.jpg",
+    "flow/06-door/V7_3_3_swings.jpg",
+    "flow/06-door/V7_3_1_factory_empty.jpg",
+    "flow/06-door/V7_3_4_tanks.jpg",
+    "flow/06-door/V7_3_6_turns.jpg",
+    "flow/06-door/3_2_LIVE.jpg",
+    "flow/06-door/3_3_LIVE.jpg"
+  ],
+  "07-white": [
+    "flow/07-white/V7_7_3_white.jpg",
+    "flow/07-white/V7_7_3_plate.jpg",
+    "flow/07-white/V7_BLANK_PAPER.jpg"
+  ],
+  "08-ganesha": [
+    "flow/08-ganesha/ganesha-v2.jpg",
+    "flow/08-ganesha/ganesha.jpg"
+  ],
+  "09-brain-room": [
+    "flow/09-brain-room/V7_4_1_found_me.jpg",
+    "flow/09-brain-room/V7_4_2_level.jpg",
+    "flow/09-brain-room/V7_4_3_sensors.jpg",
+    "flow/09-brain-room/V7_4_4_one_question.jpg",
+    "flow/09-brain-room/V7_4_6_arrives.jpg",
+    "flow/09-brain-room/V7_4_6b_not_sorry.jpg",
+    "flow/09-brain-room/V7_6_1_check_green.jpg",
+    "flow/09-brain-room/V7_6_2_lever_hand.jpg",
+    "flow/09-brain-room/4_2_LIVE.jpg"
+  ],
+  "10-old-theory": [
+    "flow/10-old-theory/V7_2_1_blackboard.jpg",
+    "flow/10-old-theory/V7_2_2_board_close.jpg",
+    "flow/10-old-theory/V7_2_1_plate.jpg",
+    "flow/10-old-theory/V7_2_3_lens.jpg",
+    "flow/10-old-theory/V7_2_4_case_worker.jpg",
+    "flow/10-old-theory/V7_2_6_case_closed.jpg",
+    "flow/10-old-theory/V7_2_6_over_shoulder.jpg",
+    "flow/10-old-theory/2_1_LIVE.jpg",
+    "flow/10-old-theory/2_3_LIVE.jpg"
+  ],
+  "11-new-theory": [
+    "flow/11-new-theory/V7_7_5_two_cards.jpg",
+    "flow/11-new-theory/V7_7_1_apart.jpg",
+    "flow/11-new-theory/V7_7_4_handshake.jpg",
+    "flow/11-new-theory/V7_8_3_hand_lever.jpg",
+    "flow/11-new-theory/V7_8_3_lever_drawn.jpg",
+    "flow/11-new-theory/V7_8_5_key.jpg",
+    "flow/11-new-theory/V7_6_4_one_fibre.jpg",
+    "flow/11-new-theory/V7_6_6_whole_leg.jpg",
+    "flow/11-new-theory/V7_6_8_pushing_off.jpg",
+    "flow/11-new-theory/V7_7_6_still_tested.jpg"
+  ],
+  "12-conclusion": [
+    "flow/12-conclusion/V7_8_6_eyes_open.jpg",
+    "flow/12-conclusion/V7_8_7_closing.jpg",
+    "flow/12-conclusion/V7_BOOTH.jpg",
+    "flow/12-conclusion/V7_ENDCARD.jpg",
+    "flow/12-conclusion/8_6_LIVE.jpg"
+  ]
+}
