@@ -1018,4 +1018,26 @@ h.append('<p class=lede>The sheets, the frame, the layer rules, the frame rate s
 open(os.path.join(ROOT, 'index.html'), 'w').write(
     page('The Brain Brake', ''.join(h), depth=0))
 
-print('built: landing, documentation, %d scene pages' % len(SCENES))
+# ---------------------------------------------------------------- the check
+# A build that produces invisible pages is worse than a build that fails, because
+# it looks like it worked. On 28.8.2026 the gate was switched off and every page
+# went blank in the middle of a production day. Never again: prove the pages are
+# visible before saying the build is done.
+import glob as _g
+_bad = []
+for _f in _g.glob(os.path.join(ROOT, '*.html')) + _g.glob(os.path.join(ROOT, 'BB_C_*', '*.html')):
+    _h = open(_f).read()
+    _vis = re.search(r'<div id=app style="display:(\w+)"', _h)
+    _has_gate = 'class=gate' in _h
+    if not _vis:
+        _bad.append((_f, 'no app wrapper'))
+    elif _vis.group(1) == 'none' and not _has_gate:
+        _bad.append((_f, 'hidden with no gate to open it'))
+    elif len(_h) < 2000:
+        _bad.append((_f, 'suspiciously small, %d bytes' % len(_h)))
+if _bad:
+    for _f, _why in _bad:
+        print('  BLANK PAGE: %s  %s' % (os.path.relpath(_f, ROOT), _why))
+    raise SystemExit('BUILD REFUSED: %d page(s) would render blank' % len(_bad))
+
+print('built: landing, documentation, %d scene pages, all visible' % len(SCENES))
