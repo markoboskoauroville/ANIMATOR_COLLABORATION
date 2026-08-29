@@ -504,6 +504,15 @@
       "status": "reference",
       "date": "2026-08-28",
       "note": "Four views of the control desk: front, three quarter empty, three quarter with the chair, and a detail of the panel. Same fittings in the same places in all four, so it can be redrawn from any angle. The chair appears here too and is on its own sheet as well. Ganesha is NOT on it: he is a hand's height against a desk this size and four attempts failed to hold him, so he gets composited from the plate in the glossary. The floor crept in at the bottom, which is a fault in a study sheet but not worth a rerun."
+    },
+    {
+      "frame": "6",
+      "file": "reference/OBJECT_SHEET_CHAIR-v1.png",
+      "kind": "sheet",
+      "title": "Coach Brain's chair",
+      "status": "reference",
+      "date": "2026-08-28",
+      "note": "Four views of the chair: front, three quarter, side, rear. Same joints, same stretchers, same castors in all four, and the side view carries the rake of the back, which is what you need to turn it. This is the chair he swings round in when Manan asks what happened, so it has to hold through a rotation. Clean on bare paper with no floor."
     }
   ]
 }
