@@ -495,6 +495,15 @@
       "status": "proposal",
       "date": "2026-08-28",
       "note": "THE CONTROL ROOM, the end of the corridor and the deepest room in the body. A plain rectangular room, flat ceiling, square corners, worn flagstones, and the corridor door standing open on the right with the light still coming through it. THE WALLS ARE SMOOTHED GREY CLAY with shallow winding grooves pressed into them, low and quiet, with long calm stretches between: brainish, not a brain. v1 tried full relief on walls and ceiling and came back a cave. The chair is empty on purpose, this is the room before Coach Brain turns around. GANESHA IS NOT IN THIS FRAME. He is a hand's height in a room sized shot and three attempts failed to hold him, so he lives on the object sheet instead and gets composited."
+    },
+    {
+      "frame": "6",
+      "file": "reference/OBJECT_SHEET_DESK-v1.png",
+      "kind": "sheet",
+      "title": "Coach Brain's console",
+      "status": "reference",
+      "date": "2026-08-28",
+      "note": "Four views of the control desk: front, three quarter empty, three quarter with the chair, and a detail of the panel. Same fittings in the same places in all four, so it can be redrawn from any angle. The chair appears here too and is on its own sheet as well. Ganesha is NOT on it: he is a hand's height against a desk this size and four attempts failed to hold him, so he gets composited from the plate in the glossary. The floor crept in at the bottom, which is a fault in a study sheet but not worth a rerun."
     }
   ]
 }
