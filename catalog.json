@@ -540,6 +540,54 @@
       "status": "proposal",
       "date": "2026-08-28",
       "note": "COACH BRAIN AT THE DESK. The same room as 6.3, unchanged, with the character from the old scene 4 sitting in the chair turned to face the room. Two references, one holding the room and one holding the character, and neither overrode the other. MANAN IS NOT IN THIS FRAME AND MUST NOT BE DRAWN. He is a photograph and everything here is a drawing; that is the film's central law. This is the PLATE he is keyed into, same as shots 1.5 and 1.6, and the clear floor on the right is where he stands. He is small in a big room on purpose: the body is larger than the thing running it."
+    },
+    {
+      "kind": "style",
+      "after": "10",
+      "title": "Style reference — RSA Animate, Cognitive Media",
+      "note": "THIS IS THE STYLE FOR BOTH THEORY SECTIONS. RSA Animate, drawn by Andrew Park at Cognitive Media. A hand draws the argument on the board while the voice explains it, in real time, and the drawing spreads sideways across the surface instead of being cut to when finished. That live scribing is exactly what we want: Manan's chalk drawing itself as he speaks, then Coach Brain answering on the whiteboard in black marker. Watch how the hand stays in frame, how pictures and words share one surface, and how the camera drifts across the board rather than cutting. These four were chosen for subject as well as style: the brain, motivation, belief changing outcome, and perception. The most viewed RSA Animates are about economics and education, which look right but say nothing to this film.",
+      "videos": [
+        {
+          "id": "dFs9WO2B8uI",
+          "title": "RSA ANIMATE — The Divided Brain"
+        },
+        {
+          "id": "u6XAPnuFjJc",
+          "title": "RSA ANIMATE — Drive: what motivates us"
+        },
+        {
+          "id": "u5um8QWWRvo",
+          "title": "RSA ANIMATE — Smile or Die"
+        },
+        {
+          "id": "A3oIiH7BLmg",
+          "title": "RSA ANIMATE — The Secret Powers of Time"
+        }
+      ]
+    },
+    {
+      "kind": "style",
+      "after": "11",
+      "title": "Style reference — RSA Animate, Cognitive Media",
+      "note": "THIS IS THE STYLE FOR BOTH THEORY SECTIONS. RSA Animate, drawn by Andrew Park at Cognitive Media. A hand draws the argument on the board while the voice explains it, in real time, and the drawing spreads sideways across the surface instead of being cut to when finished. That live scribing is exactly what we want: Manan's chalk drawing itself as he speaks, then Coach Brain answering on the whiteboard in black marker. Watch how the hand stays in frame, how pictures and words share one surface, and how the camera drifts across the board rather than cutting. These four were chosen for subject as well as style: the brain, motivation, belief changing outcome, and perception. The most viewed RSA Animates are about economics and education, which look right but say nothing to this film.",
+      "videos": [
+        {
+          "id": "dFs9WO2B8uI",
+          "title": "RSA ANIMATE — The Divided Brain"
+        },
+        {
+          "id": "u6XAPnuFjJc",
+          "title": "RSA ANIMATE — Drive: what motivates us"
+        },
+        {
+          "id": "u5um8QWWRvo",
+          "title": "RSA ANIMATE — Smile or Die"
+        },
+        {
+          "id": "A3oIiH7BLmg",
+          "title": "RSA ANIMATE — The Secret Powers of Time"
+        }
+      ]
     }
   ]
 }

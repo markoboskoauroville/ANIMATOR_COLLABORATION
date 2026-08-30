@@ -213,6 +213,17 @@ h2{font-size:19px;margin:38px 0 14px;padding-bottom:7px;border-bottom:1px solid 
 .it .itx{flex:1;min-width:0}
 @media(max-width:640px){.it.hasimg{display:block}.it .ith{margin-bottom:8px}
  .it .ith img{width:100%;max-width:260px}}
+.sref{margin:16px 0 8px 44px;padding:16px 18px;background:var(--box);
+ border-left:3px solid var(--brass);max-width:1000px}
+.sref h4{margin:0 0 4px;font:700 12px ui-monospace,monospace;letter-spacing:.11em;
+ text-transform:uppercase;color:var(--brass)}
+.sref p{margin:0 0 12px;font-size:13.5px;line-height:1.55;color:var(--body)}
+.vids{display:flex;flex-wrap:wrap;gap:12px}
+.vid{width:calc(50% - 6px)}
+.vid iframe{width:100%;aspect-ratio:16/9;border:1px solid var(--rule);display:block}
+.vid span{display:block;font:600 10px ui-monospace,monospace;letter-spacing:.06em;
+ color:var(--dim);padding-top:5px}
+@media(max-width:760px){.vid{width:100%}.sref{margin-left:0}}
 .flow{margin:22px 0 40px}
 .fp{border-top:1px solid var(--rule);padding:22px 0 6px;position:relative}
 .fp .hd{display:flex;gap:14px;align-items:baseline;margin-bottom:4px}
@@ -570,6 +581,10 @@ BOARD = {}
 _bp = os.path.join(ROOT, 'flow', 'board.json')
 if os.path.exists(_bp):
     BOARD = json.load(open(_bp))
+
+
+def style_for(n):
+    return [e for e in ENTRIES if e.get('kind') == 'style' and str(e.get('after', '')) == str(n)]
 
 
 def flow_of():
@@ -1047,6 +1062,15 @@ for e in fl:
         h.append('</div>')
         h.append('<div class=cnt>%d PICTURES ON THIS PHASE &nbsp;·&nbsp; '
                  'EVERYTHING WE HAVE, DRAWN AND SHOT, GOOD AND ABANDONED</div>' % len(pics))
+    for st in style_for(e.get('n', '')):
+        h.append('<div class=sref><h4>%s</h4><p>%s</p><div class=vids>'
+                 % (st.get('title', ''), st.get('note', '')))
+        for v in st.get('videos', []):
+            h.append('<div class=vid><iframe src="https://www.youtube-nocookie.com/embed/%s" '
+                     'title="%s" loading=lazy allowfullscreen '
+                     'referrerpolicy="strict-origin-when-cross-origin"></iframe>'
+                     '<span>%s</span></div>' % (v['id'], v['title'], v['title']))
+        h.append('</div></div>')
     h.append('</div>')
 h.append('</div>')
 h.append('<p class=lede>The sheets, the frame, the layer rules, the frame rate scale, the glossary '
