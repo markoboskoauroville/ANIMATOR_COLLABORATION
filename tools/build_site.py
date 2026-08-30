@@ -519,13 +519,12 @@ def bar(here, r):
                  % (r, n, ' class=on' if here == n else '', n))
     o.append('<span class=sp></span>')
     o.append(('<span class=vb>%s</span>' % VERSION) if VERSION else '')
+    o.append('<a href="%sbrainstorm.html"%s>BRAINSTORM</a>'
+             % (r, ' class=on' if here == 'brainstorm' else ''))
     o.append('<a href="%sbreakdown.html"%s>BREAKDOWN</a>'
              % (r, ' class=on' if here == 'breakdown' else ''))
     o.append('<a href="%sdocumentation.html"%s>DOCUMENTATION</a>'
              % (r, ' class=on' if here == 'doc' else ''))
-    o.append('<a class=rt href="%sreadthrough.html"%s '
-             'title="the whole film as a storyboard, always current">READ THROUGH</a>'
-             % (r, ' class=on' if here == 'rt' else ''))
     if ARCHIVE.get('items'):
         o.append('<a href="%sarchive.html"%s>ARH</a>'
                  % (r, ' class=on' if here == 'archive' else ''))
@@ -983,11 +982,12 @@ for e in _kf:
 
 _fl = flow_of()
 _done = sum(len(v) for v in _byscene.values())
-rt = ['<h1>Read through</h1>',
+rt = ['<h1>THE BRAIN BRAKE</h1>',
       '<p class=lede>The whole film as a storyboard, in order. <b>%d frames drawn so far.</b> '
       'Empty frames are phases that have not been drawn yet, and they are shown on purpose so the '
       'gaps are as visible as the work. This page is built from the catalogue, so it is current the '
-      'moment anything is filed.</p>' % _done,
+      'moment anything is filed. Everything we have collected for each phase, kept and abandoned, '
+      'is on <a href="brainstorm.html">brainstorm</a>.</p>' % _done,
       '<p class=lede><a class=rt href="#">Download the PDF &darr;</a> &nbsp;'
       '<span style="color:var(--dim);font-size:12px">PDF coming, this page is the live one</span></p>',
       '<div class=rtsheet>']
@@ -1016,8 +1016,8 @@ for e in _fl:
                       % ('FOOTAGE' if live else 'EMPTY', 'phase %s' % n))
     rt.append('</div>')
 rt.append('</div>')
-open(os.path.join(ROOT, 'readthrough.html'), 'w').write(
-    page('Read through', ''.join(rt), here='rt', depth=0))
+open(os.path.join(ROOT, 'index.html'), 'w').write(
+    page('The Brain Brake', ''.join(rt), here='home', depth=0))
 
 open(os.path.join(ROOT, 'documentation.html'), 'w').write(
     page('Documentation', ''.join(b), here='doc', depth=0))
@@ -1147,8 +1147,8 @@ for e in fl:
 h.append('</div>')
 h.append('<p class=lede>The sheets, the frame, the layer rules, the frame rate scale, the glossary '
          'and the full change log are on the <a href="breakdown.html">breakdown</a> page.</p>')
-open(os.path.join(ROOT, 'index.html'), 'w').write(
-    page('The Brain Brake', ''.join(h), depth=0))
+open(os.path.join(ROOT, 'brainstorm.html'), 'w').write(
+    page('Brainstorm', ''.join(h), here='brainstorm', depth=0))
 
 # ---------------------------------------------------------------- the check
 # A build that produces invisible pages is worse than a build that fails, because
