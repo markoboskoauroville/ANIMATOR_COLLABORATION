@@ -341,9 +341,9 @@
       "shot": "1.0",
       "file": "BB_C_1/1-0-A-v1.png",
       "representative": true,
-      "status": "proposal",
+      "status": "superseded",
       "date": "2026-08-28",
-      "note": "KEY FRAME 1 of 3. THE FILM OPENS HERE. He is tiny, folded over, alone in a corridor of trees with the road running away to nothing and no end in sight. Same avenue and same viewpoint as shot 1.2b, deliberately: this is the place before there is anything to see in it. The emptiness is what makes the finish line matter later."
+      "note": "Superseded by v2. Same avenue, but the figure was in the old crouched pose."
     },
     {
       "kind": "keyframe",
@@ -357,9 +357,9 @@
       "kind": "keyframe",
       "shot": "1.0",
       "file": "BB_C_1/1-0-C-v1.png",
-      "status": "proposal",
+      "status": "superseded",
       "date": "2026-08-28",
-      "note": "KEY FRAME 3 of 3, AND HALF OF THE FILM'S BOOKEND. Torso collapsed over his knees, head hanging, arms dead, back leg dragging. THIS IS THE SAME FRAME AS SHOT 1.3 PHASE 1: same man, same size, same position, same direction, built from that frame so nothing could move. Only the body is different. Cut them together at the two ends of the scene and it is one shot twice with a different man inside it. Frame rate here is the slowest in the film, two to three a second."
+      "note": "Superseded by v2. Rejected by Baba: a half lunge, half crawl that read as neither running nor collapsing. The V7 shot 1.2 pose is the right one and v2 uses it."
     },
     {
       "file": "DOCS/9-BRAIN_BRAKE_READ_THROUGH_v9.pdf",
@@ -848,6 +848,23 @@
       "status": "reference",
       "date": "2026-08-30",
       "note": "THIS IS COACH BRAIN. Four views: front, three quarter, side, rear. A brain for a head with no neck, wider than his body, two small eyes and a wide simple smile low on the front. Zipped tracksuit with a stripe down each sleeve and leg, mitten hands, white trainers, short and stocky, about desk height. Same proportions in all four so he can be turned. THE KEY ROUND HIS NECK IS GOLD AND IT IS THE ONLY COLOUR IN THE FILM. The chain stays pencil grey right up to the ring. He wears the thing he later hands to Manan, which is why the key frame lands: he has been carrying it the whole time. Colour measures 0.467 percent of the frame. He had no sheet until 30.8.2026 and was being drawn from four inconsistent frames, which is the same failure that cost days on the runner before his face sheet existed."
+    },
+    {
+      "kind": "keyframe",
+      "shot": "1.0",
+      "file": "BB_C_1/1-0-A-v2.png",
+      "representative": true,
+      "status": "proposal",
+      "date": "2026-08-30",
+      "note": "KEY FRAME 1 of 3. THE FILM OPENS HERE. He is tiny and alone in a corridor of trees, the road running away to nothing. Same avenue and viewpoint as shot 1.2b on purpose: this is the place before there is anything to see in it. The figure carries the collapse pose from V7 shot 1.2, so the wide and the close say the same thing."
+    },
+    {
+      "kind": "keyframe",
+      "shot": "1.0",
+      "file": "BB_C_1/1-0-C-v2.png",
+      "status": "proposal",
+      "date": "2026-08-30",
+      "note": "KEY FRAME 3 of 3, AND HALF OF THE FILM'S BOOKEND. His legs have gone from under him and he is falling backwards, one leg folded beneath him, arms dead at his sides, head tipped back. THE POSE COMES FROM V7 SHOT 1.2 at Baba's instruction, replacing an invented crouch that read as neither running nor collapsing. Cut against shot 1.3 phase 1 at the far end of the scene: same man, same frame, one destroyed and one fresh. Frame rate here is the slowest in the film, two to three a second."
     }
   ]
 }
