@@ -785,6 +785,60 @@
       "status": "reference",
       "date": "2026-08-30",
       "note": "BOARD BUILD STATE 5 of 5. Shows: + THE BODY STOPS. These are for the animatic: cut from one to the next in time with the voice so the chalk appears as Manan says the words. SUBTRACTED from the finished board rather than generated, so every state registers to the pixel. There are faint horizontal ghosts on the bare states where the chalk was; they do not read in motion at 5 to 7 frames a second and were left rather than chased."
+    },
+    {
+      "kind": "keyframe",
+      "shot": "11.0",
+      "file": "BB_C_11/build/11-0-BUILD-0.png",
+      "storyboard": "hide",
+      "status": "reference",
+      "date": "2026-08-30",
+      "note": "WHITEBOARD BUILD STATE 0 of 5. Shows: bare whiteboard. Cut from one to the next in time with Coach Brain speaking, so the marker appears as he says the words. Subtracted from the finished board so every state registers to the pixel, and the whiteboard erases perfectly clean because the surface is plain."
+    },
+    {
+      "kind": "keyframe",
+      "shot": "11.0",
+      "file": "BB_C_11/build/11-0-BUILD-1.png",
+      "storyboard": "hide",
+      "status": "reference",
+      "date": "2026-08-30",
+      "note": "WHITEBOARD BUILD STATE 1 of 5. Shows: the brain. Cut from one to the next in time with Coach Brain speaking, so the marker appears as he says the words. Subtracted from the finished board so every state registers to the pixel, and the whiteboard erases perfectly clean because the surface is plain."
+    },
+    {
+      "kind": "keyframe",
+      "shot": "11.0",
+      "file": "BB_C_11/build/11-0-BUILD-2.png",
+      "storyboard": "hide",
+      "status": "reference",
+      "date": "2026-08-30",
+      "note": "WHITEBOARD BUILD STATE 2 of 5. Shows: + FATIGUE IS IN THE BRAIN. Cut from one to the next in time with Coach Brain speaking, so the marker appears as he says the words. Subtracted from the finished board so every state registers to the pixel, and the whiteboard erases perfectly clean because the surface is plain."
+    },
+    {
+      "kind": "keyframe",
+      "shot": "11.0",
+      "file": "BB_C_11/build/11-0-BUILD-3.png",
+      "storyboard": "hide",
+      "status": "reference",
+      "date": "2026-08-30",
+      "note": "WHITEBOARD BUILD STATE 3 of 5. Shows: + IT DECIDES WHEN TO STOP. Cut from one to the next in time with Coach Brain speaking, so the marker appears as he says the words. Subtracted from the finished board so every state registers to the pixel, and the whiteboard erases perfectly clean because the surface is plain."
+    },
+    {
+      "kind": "keyframe",
+      "shot": "11.0",
+      "file": "BB_C_11/build/11-0-BUILD-4.png",
+      "storyboard": "hide",
+      "status": "reference",
+      "date": "2026-08-30",
+      "note": "WHITEBOARD BUILD STATE 4 of 5. Shows: + the gauge at FULL. Cut from one to the next in time with Coach Brain speaking, so the marker appears as he says the words. Subtracted from the finished board so every state registers to the pixel, and the whiteboard erases perfectly clean because the surface is plain."
+    },
+    {
+      "kind": "keyframe",
+      "shot": "11.0",
+      "file": "BB_C_11/build/11-0-BUILD-5.png",
+      "storyboard": "hide",
+      "status": "reference",
+      "date": "2026-08-30",
+      "note": "WHITEBOARD BUILD STATE 5 of 5. Shows: + THE FUEL IS STILL THERE. Cut from one to the next in time with Coach Brain speaking, so the marker appears as he says the words. Subtracted from the finished board so every state registers to the pixel, and the whiteboard erases perfectly clean because the surface is plain."
     }
   ]
 }
