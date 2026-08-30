@@ -974,7 +974,13 @@ if ARCHIVE.get('items'):
 # the point: it shows what is missing as clearly as what exists.
 SCENE_OF = {'1':'1','2':'2','3':'3','4':'4','5':'5','6':'6','7':'7','8':'8',
             '9':'6','10':'10','11':'11','12':'12'}
-_kf = [e for e in ENTRIES if e.get('kind') == 'keyframe' and e.get('status') != 'superseded']
+# The storyboard shows ONE version per shot where a shot has both a generated
+# placeholder and a real footage composite. Baba's rule, 30.8.2026: the generated
+# boy stands in on the front page because it reads finished at a glance, and the
+# real footage lives on the scene and breakdown pages where the work is done.
+_kf = [e for e in ENTRIES if e.get('kind') == 'keyframe'
+       and e.get('status') != 'superseded'
+       and not e.get('storyboard') == 'hide']
 _kf.sort(key=lambda e: shot_key(e.get('shot', '0')))
 _byscene = {}
 for e in _kf:
