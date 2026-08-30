@@ -667,15 +667,6 @@
     {
       "kind": "keyframe",
       "shot": "11.1",
-      "file": "BB_C_11/11-1-A-v2.png",
-      "representative": true,
-      "status": "proposal",
-      "date": "2026-08-30",
-      "note": "THE KEY. Two hands cropped at the wrists, the key hanging in the gap between them, offered and not yet taken. THE GAP IS THE SHOT: hold it one beat and it is the whole film, permission offered and not yet accepted. Guardini's strongest sign and the film already had it staged in V7_8_5_key. Cropped at the wrists so it stays a sign rather than a scene, which means it can sit anywhere in the cut without a room around it. The border that came back from the old reference was cropped out in the container, no coin spent: zero full width dark rows, zero full height columns."
-    },
-    {
-      "kind": "keyframe",
-      "shot": "11.1",
       "file": "BB_C_11/11-1-A-v1.png",
       "status": "superseded",
       "date": "2026-08-30",
@@ -697,6 +688,32 @@
       "status": "superseded",
       "date": "2026-08-30",
       "note": "Rejected at 17 percent ink. It kept the whole doorway and just widened the blank centre, because the threshold was the reference and the reference decides the form. THE FIX WAS TO START FROM AN ALMOST EMPTY FRAME instead: v2 was built from the Ganesha plate by removing the figure, and it worked first time. Emptying a full drawing does not work; subtracting one thing from an empty one does."
+    },
+    {
+      "kind": "keyframe",
+      "shot": "8.1",
+      "file": "BB_C_8/8-1-A-v1.png",
+      "representative": true,
+      "status": "proposal",
+      "date": "2026-08-30",
+      "note": "GANESHA AT FULL PRESENCE, the top of the arc. Ink 2.02 percent against 0.28 on 8.0, every line now present, and it grew the second pair of arms with the axe and noose, which is correct iconography and better than what was asked for. He is 46 percent of frame height, so the move is faint and small, then drawn and larger, then out. Kristijan scales rather than redraws."
+    },
+    {
+      "kind": "keyframe",
+      "shot": "11.1",
+      "file": "BB_C_11/11-1-A-v3.png",
+      "representative": true,
+      "status": "proposal",
+      "date": "2026-08-30",
+      "note": "THE KEY, AS A PLATE WITH A HOLE. Coach Brain's hand is drawn and holds the key. THE RIGHT HALF IS BARE PAPER ON PURPOSE: Manan's REAL hand goes there, keyed from the footage, entering from the right with the palm open under the key. NEVER DRAW MANAN, not even a hand. This is the only frame in the film where the drawn world and the photographed one are in physical contact, which makes it the strongest use of the film's founding law anywhere in it. Hold the gap one beat: permission offered and not yet taken."
+    },
+    {
+      "kind": "keyframe",
+      "shot": "11.1",
+      "file": "BB_C_11/11-1-A-v2.png",
+      "status": "superseded",
+      "date": "2026-08-30",
+      "note": "Both hands drawn. Correct as a drawing and wrong for this film: Manan is a photograph, so his hand cannot be drawn. Superseded by v3, which removes the receiving hand and leaves the hole."
     }
   ]
 }
