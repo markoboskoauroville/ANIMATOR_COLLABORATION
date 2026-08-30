@@ -839,6 +839,15 @@
       "status": "reference",
       "date": "2026-08-30",
       "note": "WHITEBOARD BUILD STATE 5 of 5. Shows: + THE FUEL IS STILL THERE. Cut from one to the next in time with Coach Brain speaking, so the marker appears as he says the words. Subtracted from the finished board so every state registers to the pixel, and the whiteboard erases perfectly clean because the surface is plain."
+    },
+    {
+      "frame": "6",
+      "file": "reference/CHARACTER_SHEET_COACH_BRAIN-v2.png",
+      "kind": "sheet",
+      "title": "Coach Brain",
+      "status": "reference",
+      "date": "2026-08-30",
+      "note": "THIS IS COACH BRAIN. Four views: front, three quarter, side, rear. A brain for a head with no neck, wider than his body, two small eyes and a wide simple smile low on the front. Zipped tracksuit with a stripe down each sleeve and leg, mitten hands, white trainers, short and stocky, about desk height. Same proportions in all four so he can be turned. THE KEY ROUND HIS NECK IS GOLD AND IT IS THE ONLY COLOUR IN THE FILM. The chain stays pencil grey right up to the ring. He wears the thing he later hands to Manan, which is why the key frame lands: he has been carrying it the whole time. Colour measures 0.467 percent of the frame. He had no sheet until 30.8.2026 and was being drawn from four inconsistent frames, which is the same failure that cost days on the runner before his face sheet existed."
     }
   ]
 }
