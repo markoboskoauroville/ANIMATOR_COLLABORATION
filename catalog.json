@@ -658,6 +658,23 @@
       "status": "superseded",
       "date": "2026-08-30",
       "note": "Rejected. The laptop was small and low in the corner and he was looking at the floor, so it read as a boy exercising rather than a boy racing himself. The photographic still was the first reference and its layout was copied. Also far too dark, mean luminance 133 against the film's 200 to 240."
+    },
+    {
+      "kind": "keyframe",
+      "shot": "11.1",
+      "file": "BB_C_11/11-1-A-v2.png",
+      "representative": true,
+      "status": "proposal",
+      "date": "2026-08-30",
+      "note": "THE KEY. Two hands cropped at the wrists, the key hanging in the gap between them, offered and not yet taken. THE GAP IS THE SHOT: hold it one beat and it is the whole film, permission offered and not yet accepted. Guardini's strongest sign and the film already had it staged in V7_8_5_key. Cropped at the wrists so it stays a sign rather than a scene, which means it can sit anywhere in the cut without a room around it. The border that came back from the old reference was cropped out in the container, no coin spent: zero full width dark rows, zero full height columns."
+    },
+    {
+      "kind": "keyframe",
+      "shot": "11.1",
+      "file": "BB_C_11/11-1-A-v1.png",
+      "status": "superseded",
+      "date": "2026-08-30",
+      "note": "Same drawing with a hand drawn panel border, inherited from the old V7 reference. Artwork ships edge to edge and the frame is its own layer, so the border was cropped out into v2."
     }
   ]
 }
