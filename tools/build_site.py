@@ -1072,7 +1072,9 @@ for e in fl:
             h.append('<div class=vid><iframe src="https://www.youtube-nocookie.com/embed/%s" '
                      'title="%s" loading=lazy allowfullscreen '
                      'referrerpolicy="strict-origin-when-cross-origin"></iframe>'
-                     '<span>%s</span></div>' % (v['id'], v['title'], v['title']))
+                     '<span>%s <a class=play href="https://www.youtube.com/watch?v=%s" '
+                     'target=_blank rel=noopener>PLAY &nearr;</a></span></div>'
+                     % (v['id'], v['title'], v['title'], v['id']))
         h.append('</div></div>')
     h.append('</div>')
 h.append('</div>')
