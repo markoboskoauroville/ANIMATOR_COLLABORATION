@@ -731,6 +731,60 @@
       "status": "superseded",
       "date": "2026-08-30",
       "note": "Rejected by Baba. The collapsed runner drawn in chalk at the lower right is out. The board as it stands in 10.0 is the board: the arm, the gauge at empty, and the three underlined lines. Nothing more is added to it."
+    },
+    {
+      "kind": "keyframe",
+      "shot": "10.0",
+      "file": "BB_C_10/build/10-0-BUILD-0.png",
+      "storyboard": "hide",
+      "status": "reference",
+      "date": "2026-08-30",
+      "note": "BOARD BUILD STATE 0 of 5. Shows: bare board. These are for the animatic: cut from one to the next in time with the voice so the chalk appears as Manan says the words. SUBTRACTED from the finished board rather than generated, so every state registers to the pixel. There are faint horizontal ghosts on the bare states where the chalk was; they do not read in motion at 5 to 7 frames a second and were left rather than chased."
+    },
+    {
+      "kind": "keyframe",
+      "shot": "10.0",
+      "file": "BB_C_10/build/10-0-BUILD-1.png",
+      "storyboard": "hide",
+      "status": "reference",
+      "date": "2026-08-30",
+      "note": "BOARD BUILD STATE 1 of 5. Shows: the arm. These are for the animatic: cut from one to the next in time with the voice so the chalk appears as Manan says the words. SUBTRACTED from the finished board rather than generated, so every state registers to the pixel. There are faint horizontal ghosts on the bare states where the chalk was; they do not read in motion at 5 to 7 frames a second and were left rather than chased."
+    },
+    {
+      "kind": "keyframe",
+      "shot": "10.0",
+      "file": "BB_C_10/build/10-0-BUILD-2.png",
+      "storyboard": "hide",
+      "status": "reference",
+      "date": "2026-08-30",
+      "note": "BOARD BUILD STATE 2 of 5. Shows: + FATIGUE IS IN THE MUSCLE. These are for the animatic: cut from one to the next in time with the voice so the chalk appears as Manan says the words. SUBTRACTED from the finished board rather than generated, so every state registers to the pixel. There are faint horizontal ghosts on the bare states where the chalk was; they do not read in motion at 5 to 7 frames a second and were left rather than chased."
+    },
+    {
+      "kind": "keyframe",
+      "shot": "10.0",
+      "file": "BB_C_10/build/10-0-BUILD-3.png",
+      "storyboard": "hide",
+      "status": "reference",
+      "date": "2026-08-30",
+      "note": "BOARD BUILD STATE 3 of 5. Shows: + THE FUEL RUNS OUT. These are for the animatic: cut from one to the next in time with the voice so the chalk appears as Manan says the words. SUBTRACTED from the finished board rather than generated, so every state registers to the pixel. There are faint horizontal ghosts on the bare states where the chalk was; they do not read in motion at 5 to 7 frames a second and were left rather than chased."
+    },
+    {
+      "kind": "keyframe",
+      "shot": "10.0",
+      "file": "BB_C_10/build/10-0-BUILD-4.png",
+      "storyboard": "hide",
+      "status": "reference",
+      "date": "2026-08-30",
+      "note": "BOARD BUILD STATE 4 of 5. Shows: + the gauge at EMPTY. These are for the animatic: cut from one to the next in time with the voice so the chalk appears as Manan says the words. SUBTRACTED from the finished board rather than generated, so every state registers to the pixel. There are faint horizontal ghosts on the bare states where the chalk was; they do not read in motion at 5 to 7 frames a second and were left rather than chased."
+    },
+    {
+      "kind": "keyframe",
+      "shot": "10.0",
+      "file": "BB_C_10/build/10-0-BUILD-5.png",
+      "storyboard": "hide",
+      "status": "reference",
+      "date": "2026-08-30",
+      "note": "BOARD BUILD STATE 5 of 5. Shows: + THE BODY STOPS. These are for the animatic: cut from one to the next in time with the voice so the chalk appears as Manan says the words. SUBTRACTED from the finished board rather than generated, so every state registers to the pixel. There are faint horizontal ghosts on the bare states where the chalk was; they do not read in motion at 5 to 7 frames a second and were left rather than chased."
     }
   ]
 }
