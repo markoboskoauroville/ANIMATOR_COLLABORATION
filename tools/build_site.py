@@ -265,6 +265,24 @@ h2{font-size:19px;margin:38px 0 14px;padding-bottom:7px;border-bottom:1px solid 
  letter-spacing:.11em;color:#17150f;background:var(--brass);border-radius:2px;padding:3px 7px}
 @media(max-width:900px){.fp{width:calc(50% - 10px)}}
 @media(max-width:600px){.fp{width:100%}}
+.rtsheet{max-width:1180px;margin:0 auto}
+.rtph{margin:34px 0 6px;padding-bottom:6px;border-bottom:1px solid var(--rule);
+ display:flex;gap:12px;align-items:baseline}
+.rtph .n{width:26px;height:26px;border-radius:50%;background:var(--brass);color:#17150f;
+ font:700 12px ui-monospace,monospace;display:flex;align-items:center;justify-content:center;flex:0 0 26px}
+.rtph h3{margin:0;font:700 13px ui-monospace,monospace;letter-spacing:.1em;
+ text-transform:uppercase;color:var(--body)}
+.rtph .st{margin-left:auto;font:600 9.5px ui-monospace,monospace;letter-spacing:.1em;color:var(--dim)}
+.rtrow{display:flex;flex-wrap:wrap;gap:12px;margin:12px 0 4px}
+.rtc{width:calc(25% - 9px)}
+.rtc .box{width:100%;aspect-ratio:16/9;border:1px solid var(--rule);background:var(--card);
+ display:flex;align-items:center;justify-content:center;overflow:hidden}
+.rtc .box img{width:100%;height:100%;object-fit:cover;display:block}
+.rtc .box.empty{background:#0b0a08;border-style:dashed}
+.rtc .box.empty span{font:600 9px ui-monospace,monospace;letter-spacing:.12em;color:#4a4438}
+.rtc .cap{font:600 9.5px ui-monospace,monospace;letter-spacing:.05em;color:var(--dim);padding-top:5px}
+.rtc .line{font-size:12.5px;line-height:1.45;color:var(--body);padding-top:3px}
+@media(max-width:900px){.rtc{width:calc(50% - 6px)}}
 .arc{margin:10px 0 34px}
 .arcg{font:600 11px ui-monospace,monospace;letter-spacing:.13em;text-transform:uppercase;
  color:var(--brass);margin:26px 0 6px;padding-bottom:5px;border-bottom:1px solid var(--rule)}
@@ -505,10 +523,9 @@ def bar(here, r):
              % (r, ' class=on' if here == 'breakdown' else ''))
     o.append('<a href="%sdocumentation.html"%s>DOCUMENTATION</a>'
              % (r, ' class=on' if here == 'doc' else ''))
-    if READTHROUGH:
-        o.append('<a class=rt href="%s%s" target=_blank rel=noopener '
-                 'title="the whole film, four panels to a page">READ THROUGH &darr;</a>'
-                 % (r, READTHROUGH))
+    o.append('<a class=rt href="%sreadthrough.html"%s '
+             'title="the whole film as a storyboard, always current">READ THROUGH</a>'
+             % (r, ' class=on' if here == 'rt' else ''))
     if ARCHIVE.get('items'):
         o.append('<a href="%sarchive.html"%s>ARH</a>'
                  % (r, ' class=on' if here == 'archive' else ''))
@@ -951,6 +968,56 @@ if ARCHIVE.get('items'):
     a.append('</div>')
     open(os.path.join(ROOT, 'archive.html'), 'w').write(
         page('Archive', ''.join(a), here='archive', depth=0))
+
+# ---------------------------------------------------------------- read through
+# The whole film as a storyboard, built from catalog.json, so it is current the
+# moment anything is filed. Phases with nothing drawn show empty frames, which is
+# the point: it shows what is missing as clearly as what exists.
+SCENE_OF = {'1':'1','2':'2','3':'3','4':'4','5':'5','6':'6','7':'7','8':'8',
+            '9':'6','10':'10','11':'11','12':'12'}
+_kf = [e for e in ENTRIES if e.get('kind') == 'keyframe' and e.get('status') != 'superseded']
+_kf.sort(key=lambda e: shot_key(e.get('shot', '0')))
+_byscene = {}
+for e in _kf:
+    _byscene.setdefault(str(e['shot']).split('.')[0], []).append(e)
+
+_fl = flow_of()
+_done = sum(len(v) for v in _byscene.values())
+rt = ['<h1>Read through</h1>',
+      '<p class=lede>The whole film as a storyboard, in order. <b>%d frames drawn so far.</b> '
+      'Empty frames are phases that have not been drawn yet, and they are shown on purpose so the '
+      'gaps are as visible as the work. This page is built from the catalogue, so it is current the '
+      'moment anything is filed.</p>' % _done,
+      '<p class=lede><a class=rt href="#">Download the PDF &darr;</a> &nbsp;'
+      '<span style="color:var(--dim);font-size:12px">PDF coming, this page is the live one</span></p>',
+      '<div class=rtsheet>']
+for e in _fl:
+    n = str(e.get('n', ''))
+    sc = SCENE_OF.get(n)
+    frames = _byscene.get(sc, []) if sc else []
+    live = n in ('2', '4', '5')
+    if n == '9':
+        frames = [f for f in frames if str(f['shot']) in ('6.3', '6.4')]
+    if n == '6':
+        frames = [f for f in frames if str(f['shot']) not in ('6.3', '6.4')]
+    st = ('%d drawn' % len(frames)) if frames else ('LIVE ACTION' if live else 'NOT DRAWN YET')
+    rt.append('<div class=rtph><span class=n>%s</span><h3>%s</h3><span class=st>%s</span></div>'
+              % (n, e.get('title', ''), st))
+    rt.append('<div class=rtrow>')
+    if frames:
+        for f in frames:
+            rt.append('<div class=rtc><div class=box><img src="%s" alt="" loading=lazy></div>'
+                      '<div class=cap>%s</div></div>'
+                      % (f['file'], os.path.basename(f['file']).rsplit('.', 1)[0]))
+    else:
+        for i in range(4):
+            rt.append('<div class=rtc><div class="box empty"><span>%s</span></div>'
+                      '<div class=cap>%s</div></div>'
+                      % ('FOOTAGE' if live else 'EMPTY', 'phase %s' % n))
+    rt.append('</div>')
+rt.append('</div>')
+open(os.path.join(ROOT, 'readthrough.html'), 'w').write(
+    page('Read through', ''.join(rt), here='rt', depth=0))
 
 open(os.path.join(ROOT, 'documentation.html'), 'w').write(
     page('Documentation', ''.join(b), here='doc', depth=0))
