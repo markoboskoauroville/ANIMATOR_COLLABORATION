@@ -606,6 +606,23 @@
       "status": "proposal",
       "date": "2026-08-28",
       "note": "GANESHA. Seated, calm, palm raised, forming out of the paper rather than sitting on it. Ink coverage is 0.28 percent against 5 to 7 on a full frame, so he is barely there on purpose. THIS IS THE MIDDLE OF THE MOVE, not the end: he scales up out of nothing, through this, and is gone. If he arrives fully drawn there is nothing left to animate. Nothing else in the frame, no lamps, no lotus, no throne, so nothing competes and nothing explains him. Never lit specially, never cut to, never mentioned."
+    },
+    {
+      "kind": "keyframe",
+      "shot": "10.0",
+      "file": "BB_C_10/10-0-A-v2.png",
+      "representative": true,
+      "status": "proposal",
+      "date": "2026-08-30",
+      "note": "THE OLD THEORY. Manan's board, and only his. The arm, the fuel gauge at EMPTY, and three lines each underlined: FATIGUE IS IN THE MUSCLE, THE FUEL RUNS OUT, THE BODY STOPS. This is the 1923 answer he arrives with, having read it in a book. BLACKBOARD AND WHITE CHALK ON PURPOSE: Coach Brain answers on a whiteboard in black marker, and the reversal of surface and mark is what the audience feels before they follow the argument. The chalk draws itself as he speaks, RSA Animate style, so the board is never revealed finished."
+    },
+    {
+      "kind": "keyframe",
+      "shot": "10.0",
+      "file": "BB_C_10/10-0-A-v0-split.png",
+      "status": "superseded",
+      "date": "2026-08-30",
+      "note": "Rejected. It drew both theories on one split board, which was a design superseded hours earlier by the inversion. Two causes: the reference was the control room, whose symmetrical console and screen bank pull toward a two panel layout, and the prompt said 'nothing on the right', a negation, which adds the thing."
     }
   ]
 }
