@@ -221,8 +221,11 @@ h2{font-size:19px;margin:38px 0 14px;padding-bottom:7px;border-bottom:1px solid 
 .vids{display:flex;flex-wrap:wrap;gap:12px}
 .vid{width:calc(50% - 6px)}
 .vid iframe{width:100%;aspect-ratio:16/9;border:1px solid var(--rule);display:block}
-.vid span{display:block;font:600 10px ui-monospace,monospace;letter-spacing:.06em;
+.vid span{display:flex;justify-content:space-between;align-items:baseline;gap:10px;
+ font:600 10px ui-monospace,monospace;letter-spacing:.06em;
  color:var(--dim);padding-top:5px}
+.vid .play{color:var(--brass);text-decoration:none;white-space:nowrap;letter-spacing:.11em}
+.vid .play:hover{color:#fff;text-decoration:underline}
 @media(max-width:760px){.vid{width:100%}.sref{margin-left:0}}
 .flow{margin:22px 0 40px}
 .fp{border-top:1px solid var(--rule);padding:22px 0 6px;position:relative}
