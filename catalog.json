@@ -619,7 +619,7 @@
       "representative": true,
       "status": "proposal",
       "date": "2026-08-30",
-      "note": "THE OLD THEORY. Manan's board, and only his. The arm, the fuel gauge at EMPTY, and three lines each underlined: FATIGUE IS IN THE MUSCLE, THE FUEL RUNS OUT, THE BODY STOPS. This is the 1923 answer he arrives with, having read it in a book. BLACKBOARD AND WHITE CHALK ON PURPOSE: Coach Brain answers on a whiteboard in black marker, and the reversal of surface and mark is what the audience feels before they follow the argument. The chalk draws itself as he speaks, RSA Animate style, so the board is never revealed finished."
+      "note": "THE OLD THEORY. Manan's board, and only his. The arm, the fuel gauge at EMPTY, and three lines each underlined: FATIGUE IS IN THE MUSCLE, THE FUEL RUNS OUT, THE BODY STOPS. This is the 1923 answer he arrives with, having read it in a book. BLACKBOARD AND WHITE CHALK ON PURPOSE: Coach Brain answers on a whiteboard in black marker, and the reversal of surface and mark is what the audience feels before they follow the argument. The chalk draws itself as he speaks, RSA Animate style, so the board is never revealed finished. THIS IS THE FINISHED BOARD. An attempt to fill the lower right with a collapsed runner was rejected, so the empty stretch stays empty and the chalk simply stops there."
     },
     {
       "kind": "keyframe",
@@ -723,6 +723,14 @@
       "status": "proposal",
       "date": "2026-08-30",
       "note": "MANAN'S SIDE OF THE ROOM, AND IT IS A PLATE. Same control room as 6.3 from a new angle: console away on the left, screens above it, the closed riveted door on the right. THE WHOLE RIGHT HALF IS OPEN FLAGSTONE WITH NOTHING ON IT, because that is where Manan is keyed in from the grey backdrop footage, walking in through that door. He is never drawn. The chair is gone because Coach Brain is not in this shot yet: Manan arrives, asks what happened, and the answer comes after."
+    },
+    {
+      "kind": "keyframe",
+      "shot": "10.1",
+      "file": "BB_C_10/10-1-A-v1.png",
+      "status": "superseded",
+      "date": "2026-08-30",
+      "note": "Rejected by Baba. The collapsed runner drawn in chalk at the lower right is out. The board as it stands in 10.0 is the board: the arm, the gauge at empty, and the three underlined lines. Nothing more is added to it."
     }
   ]
 }
