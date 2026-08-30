@@ -714,6 +714,15 @@
       "status": "superseded",
       "date": "2026-08-30",
       "note": "Both hands drawn. Correct as a drawing and wrong for this film: Manan is a photograph, so his hand cannot be drawn. Superseded by v3, which removes the receiving hand and leaves the hole."
+    },
+    {
+      "kind": "keyframe",
+      "shot": "9.0",
+      "file": "BB_C_9/9-0-A-v1.png",
+      "representative": true,
+      "status": "proposal",
+      "date": "2026-08-30",
+      "note": "MANAN'S SIDE OF THE ROOM, AND IT IS A PLATE. Same control room as 6.3 from a new angle: console away on the left, screens above it, the closed riveted door on the right. THE WHOLE RIGHT HALF IS OPEN FLAGSTONE WITH NOTHING ON IT, because that is where Manan is keyed in from the grey backdrop footage, walking in through that door. He is never drawn. The chair is gone because Coach Brain is not in this shot yet: Manan arrives, asks what happened, and the answer comes after."
     }
   ]
 }
