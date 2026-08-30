@@ -632,6 +632,32 @@
       "status": "proposal",
       "date": "2026-08-30",
       "note": "THE NEW THEORY. Coach Brain's answer, and THE INVERSION IS THE POINT: same layout, same three lines, same gauge as shot 10, with every value reversed. Blackboard and white chalk becomes whiteboard and black marker. Measured, mean luminance 135 against 226. THE GAUGE CARRIES THE ARGUMENT: the same instrument in both frames with the needle moved from EMPTY to FULL says the fuel was always there without a word being spoken. Cut one to the other and the audience understands before they have read the sentences. The lower right is left empty in both, because the marker is still going while he talks."
+    },
+    {
+      "kind": "keyframe",
+      "shot": "12.0",
+      "file": "BB_C_12/12-0-A-v1.png",
+      "representative": true,
+      "status": "proposal",
+      "date": "2026-08-30",
+      "note": "THE ENDCARD, and the film's closing rhyme. The finish banner from shot 1.2b, which was tiny between the trees and unreadable, is now the whole frame with the sentence on it: THE LIMIT IS A SETTING, NOT A WALL. The object that opened the film closes it. 4 percent ink, everything else bare paper."
+    },
+    {
+      "kind": "keyframe",
+      "shot": "3.0",
+      "file": "BB_C_3/3-0-A-v2.png",
+      "representative": true,
+      "status": "proposal",
+      "date": "2026-08-30",
+      "note": "PHASE 3, AND IT IS A COMPOSITE PLATE, NOT A FINISHED PICTURE. THE LAPTOP SCREEN IS A HOLE: it is drawn as bare unmarked paper and Kristijan puts the earlier ride footage into it. Do not animate it as drawn. Him and the screen are both legible in one frame, which is the whole point of the phase: he is racing a recording of himself, and no still we have says that. Same three quarter framing as the runner seeing the finish line, so the two rhyme."
+    },
+    {
+      "kind": "keyframe",
+      "shot": "3.0",
+      "file": "BB_C_3/3-0-A-v1.png",
+      "status": "superseded",
+      "date": "2026-08-30",
+      "note": "Rejected. The laptop was small and low in the corner and he was looking at the floor, so it read as a boy exercising rather than a boy racing himself. The photographic still was the first reference and its layout was copied. Also far too dark, mean luminance 133 against the film's 200 to 240."
     }
   ]
 }
