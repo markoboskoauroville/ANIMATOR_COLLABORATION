@@ -430,9 +430,9 @@
       "shot": "6.1",
       "file": "BB_C_6/6-1-A-v1.png",
       "representative": true,
-      "status": "proposal",
+      "status": "superseded",
       "date": "2026-08-28",
-      "note": "THE PUMP HALL, the heart. One enormous piston caught mid stroke, pipes leaving it in both directions, pressure gauges along the left wall. THE WALLS ARE THE ORGAN: domed muscular chambers in relief with fibrous cords stretched across the hollows between them. It reads as moulding an engineer built, never as an anatomy plate, which is the whole test of this idea.",
+      "note": "Superseded by 8-1-A-v2. Riveted iron piston and machined gauges, built before the house exterior existed.",
       "slug": "INT. THE BODY — THE PUMP HALL",
       "what": "One enormous piston mid-stroke, pipes leaving in both directions, gauges along the left wall.",
       "why": "THE WALLS ARE THE ORGAN: domed muscular chambers in relief with fibrous cords across the hollows. Architecture an engineer built, never an anatomy plate, and that is the whole test of the idea."
@@ -1156,6 +1156,16 @@
       "slug": "INT. THE BODY — THE CORRIDOR",
       "what": "A vaulted corridor where nothing is straight. Walls swelling at the base, bone columns narrow at their middles, soft irregular stone underfoot, and at the far end one door standing open with light washing everything to bare paper.",
       "why": "REBUILT 31.8.2026 in the language of the house. The first version was brick and riveted iron, a factory interior behind a living facade, and the two contradicted each other. Shaped more like a throat than a hallway. The plaques carry Coach Brain's own sensor list, so walking past them sets up a line he has not said yet."
+    },
+    {
+      "kind": "keyframe",
+      "shot": "8.1",
+      "file": "BB_C_8/8-1-A-v2.png",
+      "status": "proposal",
+      "date": "2026-08-31",
+      "slug": "INT. THE BODY — THE PUMP HALL",
+      "what": "A vaulted hall with one great smooth vessel standing in it, swelling at the base and narrow at the waist, with rounded tubes leaving it in both directions.",
+      "why": "REBUILT 31.8.2026 in the language of the house. THE WALLS ARE UNCHANGED and were never the problem: domed muscular chambers with fibrous cords stretched across the hollows. Only the built things changed, and the instruction that did the work was no rivet, bolt, flange or straight edge anywhere. TWO THINGS DID NOT LAND: the pressure gauges vanished into the wall relief, and the floor kept rectangular flagstones instead of soft irregular stone. Accepted at two seconds on screen; the gauges belong with Coach Brain anyway."
     }
   ],
   "event": "Breakthrough Junior Challenge 2026"
