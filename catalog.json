@@ -5,6 +5,7 @@
   "working_scene": "1",
   "updated": "2026-08-28",
   "scenes": {
+    "0": "Title",
     "1": "The mystery",
     "2": "The old theory",
     "3": "The full tank",
@@ -15,7 +16,8 @@
     "8": "The invitation",
     "10": "The old theory on the board",
     "11": "The new theory and the key",
-    "12": "It is a setting"
+    "12": "It is a setting",
+    "13": "The key"
   },
   "entries": [
     {
@@ -726,9 +728,9 @@
       "status": "proposal",
       "date": "2026-08-30",
       "note": "THE ENDCARD, and the film's closing rhyme. The finish banner from shot 1.2b, which was tiny between the trees and unreadable, is now the whole frame with the sentence on it: THE LIMIT IS A SETTING, NOT A WALL. The object that opened the film closes it. 4 percent ink, everything else bare paper.",
-      "slug": "EXT. CREAM VOID — THE BANNER",
-      "what": "The finish banner close and straight on, the sentence written across it.",
-      "why": "The closing rhyme. The banner he could not see, tiny between the trees in the opening, is now the whole frame and it carries the last line."
+      "slug": "EXT. CREAM VOID — THE FLY THROUGH",
+      "what": "The banner with the sentence on it, seen close and straight on. The camera flies at it and passes through into white.",
+      "why": "NO LONGER THE ENDCARD. Changed 31.8.2026. Manan says the line while we are flying, the move is the same as Ganesha rising, and we go through into white. The key follows it, then white again, then black. The sentence is stated, then permission is handed over, then nothing."
     },
     {
       "kind": "keyframe",
@@ -792,15 +794,15 @@
     },
     {
       "kind": "keyframe",
-      "shot": "11.1",
-      "file": "BB_C_11/11-1-A-v3.png",
+      "shot": "13.0",
+      "file": "BB_C_13/11-1-A-v3.png",
       "representative": true,
       "status": "proposal",
       "date": "2026-08-30",
       "note": "THE KEY, AS A PLATE WITH A HOLE. Coach Brain's hand is drawn and holds the key. THE RIGHT HALF IS BARE PAPER ON PURPOSE: Manan's REAL hand goes there, keyed from the footage, entering from the right with the palm open under the key. NEVER DRAW MANAN, not even a hand. This is the only frame in the film where the drawn world and the photographed one are in physical contact, which makes it the strongest use of the film's founding law anywhere in it. Hold the gap one beat: permission offered and not yet taken.",
       "slug": "INSERT — TWO HANDS",
       "what": "A drawn hand offers a key. The right half of the frame is bare paper.",
-      "why": "THE ONLY PLACE THE TWO WORLDS TOUCH. Coach Brain’s hand is drawn, Manan’s is a photograph keyed in from the right. Hold the gap one beat: permission offered and not yet taken. The key is the only colour in the film."
+      "why": "THE ONLY PLACE THE TWO WORLDS TOUCH. Coach Brain’s hand is drawn, Manan’s is a photograph keyed in from the right. Hold the gap one beat: permission offered and not yet taken. The key is the only colour in the film. MOVED 31.8.2026: this now comes AFTER the fly through, out of the white. He takes the key, we go back to white, and fade to black. It is the last image in the film."
     },
     {
       "kind": "keyframe",
@@ -969,6 +971,18 @@
       "slug": "EXT. ROAD — DAY — FULL FIGURE",
       "what": "His legs have gone from under him. Falling backwards, one leg folded beneath, arms dead at his sides, head tipped back.",
       "why": "HALF OF THE FILM’S BOOKEND. Cut this against 1-3-A at the far end of the scene: identical frame, identical man, one destroyed and one fresh. Everything between them is the reason."
+    },
+    {
+      "kind": "keyframe",
+      "shot": "0.0",
+      "file": "BB_C_0/0-0-TITLE-v1.png",
+      "representative": true,
+      "status": "proposal",
+      "date": "2026-08-31",
+      "slug": "TITLE CARD",
+      "what": "THE BRAIN BRAKE, and under it THE CENTRAL GOVERNOR THEORY, hand drawn in pencil on bare cream paper. Nothing else in the frame.",
+      "why": "The first thing in the film, in both the competition version and the longer one. Drawn in the film's own hand rather than set in a typeface, so the title belongs to the picture instead of sitting on top of it. Ink is 1.62 percent: almost the whole frame is paper.",
+      "note": "Title card. Front of both versions."
     }
   ]
 }

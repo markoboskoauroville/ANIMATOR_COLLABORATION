@@ -999,8 +999,8 @@ if ARCHIVE.get('items'):
 # The whole film as a storyboard, built from catalog.json, so it is current the
 # moment anything is filed. Phases with nothing drawn show empty frames, which is
 # the point: it shows what is missing as clearly as what exists.
-SCENE_OF = {'1':'1','2':'2','3':'3','4':'4','5':'5','6':'6','7':'7','8':'8',
-            '9':'6','10':'10','11':'11','12':'12'}
+SCENE_OF = {'0':'0','1':'1','2':'2','3':'3','4':'4','5':'5','6':'6','7':'7','8':'8',
+            '9':'6','10':'10','11':'11','12':'12','13':'13'}
 # The storyboard shows ONE version per shot where a shot has both a generated
 # placeholder and a real footage composite. Baba's rule, 30.8.2026: the generated
 # boy stands in on the front page because it reads finished at a glance, and the
