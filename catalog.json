@@ -1376,6 +1376,20 @@
           "note": "The take with a real alpha channel, ready to composite. Use this, not the mockup above."
         }
       ]
+    },
+    {
+      "kind": "keyframe",
+      "shot": "19.2",
+      "file": "BB_C_19/19-2-A-v1.png",
+      "representative": true,
+      "status": "proposal",
+      "date": "2026-08-31",
+      "slug": "INT. CONTROL ROOM — WIDE, THE TWO OF THEM",
+      "what": "The room from further back and to the left. Coach Brain at the desk on the LEFT, turned right round to face out into the room, one hand lifted mid gesture. The right half is open floor with the door beyond it.",
+      "why": "THE WIDE, AND THE FIRST OF THE THREE SETUPS. It fixes the screen direction for everything that follows: COACH BRAIN IS ON THE LEFT AND LOOKS RIGHT, MANAN IS ON THE RIGHT AND LOOKS LEFT. Both singles must obey that or the two of them will appear to be looking away from each other. IT IS A PLATE. The clear floor on the right is where Manan is keyed in; he is a photograph and is never drawn. Coach Brain is already turned toward that space with his hand moving, so the moment the composite happens they read as talking.",
+      "speaker": "COACH BRAIN",
+      "line": "You found me. Took you long enough.",
+      "linestate": "to record"
     }
   ],
   "event": "Breakthrough Junior Challenge 2026"
