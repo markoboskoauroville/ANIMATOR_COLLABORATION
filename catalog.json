@@ -466,18 +466,18 @@
       "file": "reference/OBJECT_SHEET_DESK-v1.png",
       "kind": "sheet",
       "title": "Coach Brain's console",
-      "status": "reference",
+      "status": "superseded",
       "date": "2026-08-28",
-      "note": "Four views of the control desk: front, three quarter empty, three quarter with the chair, and a detail of the panel. Same fittings in the same places in all four, so it can be redrawn from any angle. The chair appears here too and is on its own sheet as well. Ganesha is NOT on it: he is a hand's height against a desk this size and four attempts failed to hold him, so he gets composited from the plate in the glossary. The floor crept in at the bottom, which is a fault in a study sheet but not worth a rerun."
+      "note": "Superseded 31.8.2026. Shows the riveted iron console. The desk is now grown stone, see 11-0-A-v3, and this sheet would send an animator the wrong way."
     },
     {
       "frame": "6",
       "file": "reference/OBJECT_SHEET_CHAIR-v1.png",
       "kind": "sheet",
       "title": "Coach Brain's chair",
-      "status": "reference",
+      "status": "superseded",
       "date": "2026-08-28",
-      "note": "Four views of the chair: front, three quarter, side, rear. Same joints, same stretchers, same castors in all four, and the side view carries the rake of the back, which is what you need to turn it. This is the chair he swings round in when Manan asks what happened, so it has to hold through a rotation. Clean on bare paper with no floor."
+      "note": "Superseded 31.8.2026. Shows the wooden panelled chair. The chair is now a smooth shell on a single stem."
     },
     {
       "frame": "6",
@@ -502,9 +502,9 @@
       "shot": "6.4",
       "file": "BB_C_6/6-4-A-v1.png",
       "representative": true,
-      "status": "proposal",
+      "status": "superseded",
       "date": "2026-08-28",
-      "note": "COACH BRAIN AT THE DESK. The same room as 6.3, unchanged, with the character from the old scene 4 sitting in the chair turned to face the room. Two references, one holding the room and one holding the character, and neither overrode the other. MANAN IS NOT IN THIS FRAME AND MUST NOT BE DRAWN. He is a photograph and everything here is a drawing; that is the film's central law. This is the PLATE he is keyed into, same as shots 1.5 and 1.6, and the clear floor on the right is where he stands. He is small in a big room on purpose: the body is larger than the thing running it.",
+      "note": "Superseded by 11-0-A-v3. Riveted iron desk and a square screen frame, built before the house exterior existed.",
       "slug": "INT. CONTROL ROOM — COACH BRAIN AT THE DESK",
       "what": "The same room with the character seated in the chair, turned to face the room, one hand raised.",
       "why": "He is small in a big room on purpose: the body is larger than the thing running it. MANAN IS NOT DRAWN HERE. This is the plate he is keyed into."
@@ -1176,6 +1176,17 @@
       "slug": "INT. THE BODY — THE BELLOWS",
       "what": "A vaulted hall with a vast bellows of soft pleated skin between two pale plates, held by slender bowed columns, a rounded tube leaving its top.",
       "why": "REBUILT 31.8.2026 in the language of the house. The branching walls carry the frame: arches dividing into smaller arches down to fist-sized clusters, a lung as architecture. THE LEFT WALL STILL READS AS A PLAIN COLONNADE and only the right branches properly. Two runs on it, accepted: at two seconds the room reads as organic and the bellows is right."
+    },
+    {
+      "kind": "keyframe",
+      "shot": "11.0",
+      "file": "BB_C_11/11-0-A-v3.png",
+      "representative": true,
+      "status": "proposal",
+      "date": "2026-08-31",
+      "slug": "INT. THE BODY — THE CONTROL ROOM",
+      "what": "Coach Brain seated at a long desk that grows out of the floor on a swelling base, its dials sunk into shallow hollows, the screens in an irregular cluster of rounded openings in the wall, the door arched and soft panelled.",
+      "why": "REBUILT 31.8.2026 in the language of the house, and it is the deepest room in the body. The clay walls with their shallow winding grooves are unchanged and were always right. THE SCREENS AS CELLS are the detail that matters: the last piece of machinery becomes part of the body. The floor kept rectangular slabs despite being asked three times across three frames; it barely reads and was left."
     }
   ],
   "event": "Breakthrough Junior Challenge 2026"
