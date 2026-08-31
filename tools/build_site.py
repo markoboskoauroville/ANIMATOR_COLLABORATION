@@ -667,6 +667,17 @@ def frames_of(scene):
             and e.get('frame', '').split('.')[0] == str(scene)]
 
 
+# the two big read throughs live on Drive now: at 75 MB each they took the
+# published site over the GitHub Pages 1 GB limit and the build failed with no
+# message at all. Anything that large is a Drive artefact, not a site file.
+MOVED_TO_DRIVE = {
+    'DOCS/4-BRAIN_BRAKE_READ_THROUGH_v4.pdf':
+        'https://drive.google.com/file/d/1cXUQxWPi71RbyXmFIgJZdfqjcqpGyQAp/view',
+    'DOCS/8-BRAIN_BRAKE_READ_THROUGH_v8.pdf':
+        'https://drive.google.com/file/d/1zsm3VOXz2dshiZol2oA3KB0W3eWEo4Yr/view',
+}
+
+
 def small(path, size='mid'):
     # a transparent png keeps its alpha: it gets a small png, never a jpg
     if path.lower().endswith('.png') and os.path.exists(
