@@ -1049,9 +1049,9 @@
     {
       "kind": "flow",
       "n": "7",
-      "file": "flow/07-white.jpg",
+      "file": "flow/07-the-front-door.jpg",
       "title": "HE OPENS THE DOOR",
-      "status": "placeholder",
+      "status": "drawn",
       "scene": "17",
       "note": "He opens the front door and light floods out of it."
     },
@@ -1208,6 +1208,17 @@
       "slug": "INT. THE BODY — THE THRESHOLD",
       "what": "The doorway very close, filling the frame. Grown stone, arched and wider at the bottom, edges rounded over. Soft irregular slabs run up to a low rounded lip of a sill, and beyond it the paper is blank.",
       "why": "REBUILT 31.8.2026 in the language of the house. THE SILL IS STILL ONE DARK LINE and that is the whole point: drawn floor behind it, nothing beyond, which is what lets the next frame be bare paper without reading as a cut to nothing. Measured, the middle of the frame is 100 percent unmarked paper. The flanking doors dropped out and the walls sweep in instead, which is better: fewer objects competing with the opening and the curve pulls the eye through."
+    },
+    {
+      "kind": "keyframe",
+      "shot": "17.0",
+      "file": "BB_C_17/17-0-A-v2.png",
+      "representative": true,
+      "status": "proposal",
+      "date": "2026-08-31",
+      "slug": "EXT. THE HOUSE — THE FRONT DOOR OPENS",
+      "what": "The doorway close and filling the frame. Two smooth stone leaves swung back almost flat against the opening, and light pouring out of the gap as bare unmarked paper, spilling forward onto the paving.",
+      "why": "THE FIRST OF TWO DOORS HE OPENS. The second is the skull door into the brain, opened the same way, so the second reads as a rhyme rather than a repeat. The leaves are the same stone as the wall with no rivet, hinge or straight edge, so they read as parts of the building that moved rather than joinery fitted into it. Blank centre measured 61.5 percent against 31 in the first version. MANAN IS KEYED INTO THE DOORWAY, never drawn."
     }
   ],
   "event": "Breakthrough Junior Challenge 2026"
