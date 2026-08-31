@@ -572,7 +572,7 @@
     },
     {
       "kind": "keyframe",
-      "shot": "9.0",
+      "shot": "9.1",
       "file": "BB_C_9/9-0-GANESHA-v1.png",
       "representative": true,
       "status": "proposal",
@@ -678,18 +678,6 @@
     {
       "kind": "keyframe",
       "shot": "7.1",
-      "file": "BB_C_7/7-1-A-v2.png",
-      "representative": true,
-      "status": "proposal",
-      "date": "2026-08-30",
-      "note": "INSIDE THE LIGHT. Bare paper edge to edge, 0.03 percent ink, the middle 100 percent blank, with the faintest broken strokes clinging to the four corners and dying within a hand's width. NOTHING IS DRAWN TO STAND FOR LIGHT: no glow, no rays, no vignette. The light is the paper, which is what scene 1 spent its whole length teaching. It reads as a drawing that has stopped rather than a blank file, and it hands straight to phase 8, same emptiness and same corners, with Ganesha forming in the middle of it.",
-      "slug": "INT. THE LIGHT",
-      "what": "Bare paper, edge to edge, with the faintest broken strokes clinging to the four corners.",
-      "why": "Nothing is drawn to stand for light. The light IS the paper, which is what scene 1 spent its whole length teaching the eye."
-    },
-    {
-      "kind": "keyframe",
-      "shot": "7.1",
       "file": "BB_C_7/7-1-A-v1.png",
       "status": "superseded",
       "date": "2026-08-30",
@@ -697,7 +685,7 @@
     },
     {
       "kind": "keyframe",
-      "shot": "9.1",
+      "shot": "9.2",
       "file": "BB_C_9/9-1-GANESHA-v1.png",
       "representative": true,
       "status": "proposal",
@@ -1211,7 +1199,7 @@
       "scenes": [
         "9"
       ],
-      "note": "He rises out of the light, grows, and is gone. Never explained, never mentioned. The remover of obstacles, at the threshold of a film about an obstacle that turns out to be a setting."
+      "note": "He closes his eyes and goes into the light. While he is travelling through it Ganesha rises, grows, and is gone, and the white closes around him exactly as it opened. Never explained, never mentioned. Then the light fades down."
     },
     {
       "kind": "flow",
@@ -1220,12 +1208,12 @@
       "title": "THE HOUSE OF THE BODY",
       "status": "placeholder",
       "scenes": [
-        "16",
         "17",
+        "16",
         "8",
         "7"
       ],
-      "note": "He stands in front of a building and the building is his body. He opens the front door, light floods out, and he goes through it: the corridor of named doors, the rooms behind them, and the threshold at the far end. Organic architecture in the manner of Gaudi throughout, never a factory."
+      "note": "The light fades and he is standing in front of the door, and the door is giving off light too. He opens it and goes in, and only then do we see the building he is inside: the corridor of named doors, the rooms behind them, the threshold at the far end. Organic architecture in the manner of Gaudi throughout."
     },
     {
       "kind": "flow",
@@ -1283,6 +1271,37 @@
         "14"
       ],
       "note": "Seven classical cards, in the longer version only."
+    },
+    {
+      "kind": "keyframe",
+      "shot": "9.0",
+      "file": "BB_C_9/9-0-WHITE-v1.png",
+      "status": "proposal",
+      "date": "2026-08-31",
+      "slug": "INT. THE LIGHT — BEFORE",
+      "what": "Bare paper, edge to edge, with the faintest broken strokes clinging to the four corners.",
+      "why": "HE CLOSES HIS EYES AND GOES INTO THE LIGHT. This is the travel, not a transition: he is moving through it when Ganesha appears. Nothing is drawn to stand for light, the light is the paper."
+    },
+    {
+      "kind": "keyframe",
+      "shot": "9.3",
+      "file": "BB_C_9/9-3-WHITE-v1.png",
+      "status": "proposal",
+      "date": "2026-08-31",
+      "slug": "INT. THE LIGHT — AFTER",
+      "what": "The same bare paper. Ganesha has gone.",
+      "why": "THE SAME FRAME AS 9.0 ON PURPOSE, so the white closes around him exactly as it opened. He arrives out of nothing and leaves into nothing. From here the light fades down and he is standing in front of the door."
+    },
+    {
+      "kind": "keyframe",
+      "shot": "16.1",
+      "file": "BB_C_16/16-1-A-v1.png",
+      "representative": true,
+      "status": "proposal",
+      "date": "2026-08-31",
+      "slug": "EXT. THE HOUSE — THE DOOR OPEN",
+      "what": "The whole building with the front door open and light pouring out of it as bare unmarked paper, spilling forward onto the paving.",
+      "why": "THE FRAME THE ARRIVAL IS BUILT ON. Push into the doorway to start, pull back to full frame, and the building is revealed as the answer to where he went. Manan is keyed into the doorway and taken out of the composite part way through the pull, so he disappears inside without ever being drawn. MEASURED: the doorway differs from the closed door version by 48.6 of 255 but the rest of the facade by 16.0, so the two do not register exactly. Do not cross dissolve between them for the ending. Hold on THIS frame and animate the doors closing over it."
     }
   ],
   "event": "Breakthrough Junior Challenge 2026"
