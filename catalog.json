@@ -1568,5 +1568,35 @@
       "why": "PLACEHOLDER. This is a reference frame from the document Venkatesh shot from, standing in until the real footage is exported. It shows the intended framing and nothing more. The phase was shot and the material exists; it is not on this machine yet."
     }
   ],
-  "event": "Breakthrough Junior Challenge 2026"
+  "event": "Breakthrough Junior Challenge 2026",
+  "site_version": 1,
+  "footage": [
+    {
+      "name": "Key catch",
+      "phase": "11",
+      "phase_title": "THE KEY",
+      "url": "https://drive.google.com/drive/folders/1YGb_z7OCrLSUX7JagNpynXbu1fAK2wNu",
+      "codec": "ProRes 4444 with alpha",
+      "what": "Manan's hand entering from below, the key landing in his open palm, and his fist closing on it. Shot against black so it keys clean.",
+      "use": "The last three beats of the film. Coach Brain's hand is drawn and never appears in the same frame, so nothing has to match."
+    },
+    {
+      "name": "In front of the door",
+      "phase": "7",
+      "phase_title": "THE HOUSE OF THE BODY",
+      "url": "https://drive.google.com/drive/folders/1ph36NxPciUB5Y4s_IiowDotmjk2ciFZ4",
+      "codec": "ProRes 4444 with alpha",
+      "what": "Manan from behind, standing, hand raised to the door. Shot against black.",
+      "use": "Keyed into the doorway of the house. He is removed part way through the pull back, so he disappears inside without being animated."
+    },
+    {
+      "name": "Everything else",
+      "phase": "",
+      "phase_title": "THE EXCHANGE FOLDER",
+      "url": "https://drive.google.com/drive/folders/1D9KrIlSqFJneqUxm9giZ2kn2KQS8mqYu",
+      "codec": "mixed",
+      "what": "Animatic packs, recording scripts, read through PDFs, and anything large that does not belong in the repository.",
+      "use": "If something is missing from the site, look here before asking."
+    }
+  ]
 }

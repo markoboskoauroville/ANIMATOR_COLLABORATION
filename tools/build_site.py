@@ -17,6 +17,7 @@ CAT = json.load(open(os.path.join(ROOT, 'catalog.json')))
 SCENES = CAT['scenes']
 VERSION = CAT.get('version', '')
 FILM = CAT.get('film', 'THE BRAIN BRAKE')
+SITEV = CAT.get('site_version', 0)
 SUBTITLE = CAT.get('subtitle', '')
 EVENT = CAT.get('event', '')
 WORKING = str(CAT.get('working_scene', ''))
@@ -311,6 +312,8 @@ h2{font-size:19px;margin:38px 0 14px;padding-bottom:7px;border-bottom:1px solid 
 .seqstrip .cut{width:16px;display:flex;align-items:center;justify-content:center;
  font:700 12px ui-monospace,monospace;color:var(--brass)}
 @media(max-width:820px){.seqstrip .f{width:calc(33.33% - 8px)}.seqstrip .cut{display:none}}
+.sitev{font:700 10px ui-monospace,monospace;letter-spacing:.14em;color:#17150f;
+ background:var(--brass);border-radius:3px;padding:3px 8px;margin-left:10px}
 .mast{margin:0 0 26px}
 .mast img{width:100%;max-width:760px;display:block;border:1px solid var(--rule);
  background:var(--card);margin:0 auto}
@@ -603,6 +606,8 @@ def bar(here, r):
                  % (r, n, ' class=on' if here == n else '', n))
     o.append('<span class=sp></span>')
     o.append(('<span class=vb>%s</span>' % VERSION) if VERSION else '')
+    o.append('<a href="%sfootage.html"%s>FOOTAGE</a>'
+             % (r, ' class=on' if here == 'footage' else ''))
     o.append('<a href="%sbrainstorm.html"%s>BRAINSTORM</a>'
              % (r, ' class=on' if here == 'brainstorm' else ''))
     o.append('<a href="%sbreakdown.html"%s>BREAKDOWN</a>'
@@ -614,6 +619,7 @@ def bar(here, r):
                  % (r, ' class=on' if here == 'archive' else ''))
     o.append('<span class=sp></span>')
     o.append('<a class=drive href="%s" target=_blank rel=noopener>GDRIVE &nearr;</a>' % DRIVE)
+    o.append('<span class=sitev title="site version">v%d</span>' % SITEV)
     o.append('<button class=th id=th onclick="tt()" title="light or dark">&#9681;</button>')
     o.append('</div>')
     return ''.join(o)
@@ -1311,6 +1317,25 @@ for e in _fl:
                       % ('FOOTAGE' if live else 'EMPTY'))
         rt.append('</div>')
 rt.append('</div>')
+# ---------------------------------------------------------------- footage
+# One page listing every export, what is in it and which phase it belongs to.
+# The site has many levels now and this is the way out of the forest.
+_fo = ['<h1>FOOTAGE</h1>',
+       '<p class=lede>Every piece of live material, where it lives and what it is for. '
+       'Everything here is ProRes 4444 with an alpha channel unless it says otherwise, and it all '
+       'lives on Google Drive rather than in this repository. Download from Drive and composite '
+       'from that, never from the stills on this site: those are previews.</p>']
+for _f in (CAT.get('footage') or []):
+    _fo.append('<div class=srcbox><div class=t><b>%s</b>'
+               '<a class=dl href="%s" target=_blank rel=noopener>OPEN ON DRIVE &nearr;</a></div>'
+               '<p><b>%s</b>%s</p><p>%s</p><p style="color:var(--dim)">%s</p></div>'
+               % (_f['name'], _f['url'],
+                  ('Phase %s, %s. ' % (_f['phase'], _f['phase_title'])) if _f.get('phase')
+                  else (_f.get('phase_title', '') + '. '),
+                  _f.get('codec', ''), _f.get('what', ''), _f.get('use', '')))
+open(os.path.join(ROOT, 'footage.html'), 'w').write(
+    page('Footage', ''.join(_fo), here='footage', depth=0))
+
 open(os.path.join(ROOT, 'index.html'), 'w').write(
     page('%s, %s' % (FILM.title(), SUBTITLE), ''.join(rt), here='home', depth=0))
 
