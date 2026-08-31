@@ -3,7 +3,10 @@
 
     python3 tools/animatic_pack.py
 
-Writes ANIMATIC/, which is NOT committed. The frames already live in this
+Writes ANIMATIC/, which is NOT committed. EXPORT/ is not committed either:
+the zip built from it reached 202 MB on 31.8.2026 and GitHub rejected the push
+outright at its 100 MB hard limit, blocking unrelated work until the commit was
+unwound. Anything large goes to the Exchange folder on Drive, never to git. The frames already live in this
 repository once; copying them in would add nearly 200 MB to reproduce something
 one command rebuilds. Same reason PRINT_PACK.pdf is ignored.
 

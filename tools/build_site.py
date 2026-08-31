@@ -266,6 +266,27 @@ h2{font-size:19px;margin:38px 0 14px;padding-bottom:7px;border-bottom:1px solid 
 @media(max-width:900px){.fp{width:calc(50% - 10px)}}
 @media(max-width:600px){.fp{width:100%}}
 .rtsheet{max-width:1180px;margin:0 auto}
+.tiny{display:flex;flex-wrap:wrap;gap:9px;margin:12px 0 4px}
+.tiny a{width:calc(16.666% - 8px);display:block;text-decoration:none;color:inherit}
+.tiny img{width:100%;display:block;border:1px solid var(--rule);background:var(--card)}
+.tiny a:hover img{border-color:var(--brass)}
+.tiny .c{font:600 8.5px ui-monospace,monospace;letter-spacing:.04em;color:var(--dim);padding-top:4px}
+@media(max-width:900px){.tiny a{width:calc(25% - 7px)}}
+@media(max-width:600px){.tiny a{width:calc(33.333% - 6px)}}
+.cardhead{display:flex;justify-content:space-between;align-items:baseline;gap:16px;
+ padding-bottom:8px;border-bottom:1px solid var(--rule);margin-bottom:16px}
+.cardhead .code{font:700 15px ui-monospace,monospace;letter-spacing:.1em;color:var(--brass)}
+.dl{font:600 10px ui-monospace,monospace;letter-spacing:.12em;color:#17150f;
+ background:var(--brass);border-radius:3px;padding:8px 15px;text-decoration:none;white-space:nowrap}
+.dl:hover{background:#f0c876}
+.cardimg{width:100%;display:block;border:1px solid var(--rule);background:var(--card)}
+.slug{font:700 12px ui-monospace,monospace;letter-spacing:.11em;color:var(--body);margin:20px 0 10px}
+.lay{display:flex;flex-wrap:wrap;gap:14px;margin:14px 0}
+.lay .l{width:calc(33.333% - 10px)}
+.lay .l img{width:100%;display:block;border:1px solid var(--rule)}
+.lay .l .n{display:flex;justify-content:space-between;align-items:baseline;gap:8px;padding-top:6px}
+.lay .l .n span{font:600 9px ui-monospace,monospace;letter-spacing:.1em;color:var(--dim)}
+@media(max-width:700px){.lay .l{width:100%}}
 .rtph{margin:34px 0 6px;padding-bottom:6px;border-bottom:1px solid var(--rule);
  display:flex;gap:12px;align-items:baseline}
 .rtph .n{width:26px;height:26px;border-radius:50%;background:var(--brass);color:#17150f;
@@ -988,7 +1009,7 @@ for e in _kf:
 
 _fl = flow_of()
 _done = sum(len(v) for v in _byscene.values())
-rt = ['<h1>THE BRAIN BRAKE</h1>',
+rt = ['<h1>THE BRAIN BRAKE ANIMATIC</h1>',
       '<p class=lede>The whole film as a storyboard, in order. <b>%d frames drawn so far.</b> '
       'Empty frames are phases that have not been drawn yet, and they are shown on purpose so the '
       'gaps are as visible as the work. This page is built from the catalogue, so it is current the '
@@ -1009,21 +1030,71 @@ for e in _fl:
     st = ('%d drawn' % len(frames)) if frames else ('LIVE ACTION' if live else 'NOT DRAWN YET')
     rt.append('<div class=rtph><span class=n>%s</span><h3>%s</h3><span class=st>%s</span></div>'
               % (n, e.get('title', ''), st))
-    rt.append('<div class=rtrow>')
     if frames:
+        rt.append('<div class=tiny>')
         for f in frames:
-            rt.append('<div class=rtc><div class=box><img src="%s" alt="" loading=lazy></div>'
-                      '<div class=cap>%s</div></div>'
-                      % (f['file'], os.path.basename(f['file']).rsplit('.', 1)[0]))
+            b = os.path.basename(f['file']).rsplit('.', 1)[0].replace(' ', '_')
+            rt.append('<a href="card/%s.html"><img src="tiny/%s.jpg" alt="" loading=lazy>'
+                      '<div class=c>%s</div></a>' % (b, b, b))
+        rt.append('</div>')
     else:
-        for i in range(4):
-            rt.append('<div class=rtc><div class="box empty"><span>%s</span></div>'
-                      '<div class=cap>%s</div></div>'
-                      % ('FOOTAGE' if live else 'EMPTY', 'phase %s' % n))
-    rt.append('</div>')
+        rt.append('<div class=tiny>')
+        for i in range(6):
+            rt.append('<a><div class="box empty" style="aspect-ratio:16/9;border:1px dashed '
+                      'var(--rule);background:#0b0a08"></div><div class=c>%s</div></a>'
+                      % ('FOOTAGE' if live else 'EMPTY'))
+        rt.append('</div>')
 rt.append('</div>')
 open(os.path.join(ROOT, 'index.html'), 'w').write(
-    page('The Brain Brake', ''.join(rt), here='home', depth=0))
+    page('The Brain Brake Animatic', ''.join(rt), here='home', depth=0))
+
+# ------------------------------------------------------------- the card pages
+# One page per frame. A medium image, never the full one, the code on the left
+# and a download on the right, the layers if there are any, and what the frame
+# is doing. The full file is only ever reached by pressing download.
+os.makedirs(os.path.join(ROOT, 'card'), exist_ok=True)
+_order = [e for e in _kf]
+for _i, e in enumerate(_order):
+    b = os.path.basename(e['file']).rsplit('.', 1)[0].replace(' ', '_')
+    mb = os.path.getsize(os.path.join(ROOT, e['file'])) / 1048576.0
+    cd = ['<div class=cardhead><span class=code>%s</span>'
+          '<a class=dl href="../%s" download>DOWNLOAD FULL SIZE &nbsp;%.1f MB</a></div>'
+          % (b.upper(), e['file'], mb)]
+    cd.append('<img class=cardimg src="../mid/%s.jpg" alt="">' % b)
+    if e.get('slug'):
+        cd.append('<div class=slug>%s</div>' % e['slug'])
+    if e.get('what'):
+        cd.append('<p class=note>%s</p>' % e['what'])
+    if e.get('why'):
+        cd.append('<p class=note>%s</p>' % e['why'])
+    cd.append('<p class=note style="color:var(--dim)">%s</p>' % e.get('note', ''))
+
+    lay = e.get('layers') or []
+    if lay:
+        cd.append('<h2>The layers</h2>')
+        cd.append('<p class=lede>Each one downloads on its own. This is what goes on top of what.</p>')
+        cd.append('<div class=lay>')
+        for L in lay:
+            lb = os.path.basename(L['file']).rsplit('.', 1)[0].replace(' ', '_')
+            lmb = os.path.getsize(os.path.join(ROOT, L['file'])) / 1048576.0
+            cd.append('<div class=l><img src="../mid/%s.jpg" alt="">'
+                      '<div class=n><span>%s</span>'
+                      '<a class=dl href="../%s" download>DOWNLOAD %.1f MB</a></div></div>'
+                      % (lb, L.get('name', lb).upper(), L['file'], lmb))
+        cd.append('</div>')
+
+    nav = []
+    if _i > 0:
+        pb = os.path.basename(_order[_i-1]['file']).rsplit('.', 1)[0].replace(' ', '_')
+        nav.append('<a href="%s.html">&larr; %s</a>' % (pb, pb))
+    nav.append('<a href="../index.html">all frames</a>')
+    if _i < len(_order) - 1:
+        nb = os.path.basename(_order[_i+1]['file']).rsplit('.', 1)[0].replace(' ', '_')
+        nav.append('<a href="%s.html">%s &rarr;</a>' % (nb, nb))
+    cd.append('<p class=lede style="margin-top:26px">%s</p>' % ' &nbsp;&middot;&nbsp; '.join(nav))
+    open(os.path.join(ROOT, 'card', b + '.html'), 'w').write(
+        page(b, ''.join(cd), here='home', depth=1))
+print('  %d card pages' % len(_order))
 
 open(os.path.join(ROOT, 'documentation.html'), 'w').write(
     page('Documentation', ''.join(b), here='doc', depth=0))
