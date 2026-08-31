@@ -426,7 +426,7 @@ TRAY = """
   <pre id=pv></pre>
   <div class=acts>
     <a class=who id=who href="#" title="open this in your mail app">
-      <img src="../marko.png" alt="">
+      <img src="../mid/marko.png" alt="" loading=lazy>
       <span><span class=n>Marko</span><br><span class=e>EMAILADDR</span></span>
     </a>
     <span class=sep></span>
@@ -605,6 +605,27 @@ def frames_of(scene):
             and e.get('frame', '').split('.')[0] == str(scene)]
 
 
+def small(path, size='mid'):
+    # a transparent png keeps its alpha: it gets a small png, never a jpg
+    if path.lower().endswith('.png') and os.path.exists(
+            os.path.join(ROOT, 'mid', os.path.basename(path))):
+        cand = os.path.join('mid', os.path.basename(path))
+        return cand if os.path.exists(os.path.join(ROOT, cand)) else path
+    """Never put a full resolution file in an <img>.
+
+    422 MB of originals sit in this repository. The same set is 8 MB as mid and
+    0.7 MB as tiny, so a page that reaches for the original is hundreds of times
+    heavier than it needs to be, on a phone, on Indian mobile data. The full file
+    is reached ONLY by pressing download.
+
+    Falls back to the original if no small version was generated, so a new image
+    still shows rather than breaking.
+    """
+    base = os.path.basename(path).rsplit('.', 1)[0].replace(' ', '_')
+    cand = os.path.join(size, base + '.jpg')
+    return cand if os.path.exists(os.path.join(ROOT, cand)) else path
+
+
 def resolve(e):
     """A placeholder that replaces itself.
 
@@ -769,10 +790,10 @@ def overlay_block(e, prefix=''):
     never drift apart."""
     lbl = ('%s %s' % (e.get('title', 'the frame'), ver(e))).strip()
     return ('<h2>The frame</h2>'
-            '<div class=ovl><a href="%s%s"><img src="%s%s" alt=""></a>'
+            '<div class=ovl><a href="%s%s"><img src="%s%s" alt="" loading=lazy></a>'
             '<div class=meta><span class=fid>%s</span>%s%s'
             '<p class=note>%s</p><p><a href="%s%s" download>Download the PNG</a></p>%s</div></div>'
-            % (prefix, e['file'], prefix, e['file'], os.path.basename(e['file']),
+            % (prefix, e['file'], prefix, small(e['file']), os.path.basename(e['file']),
                ('<span class=ver>%s</span>' % ver(e)) if ver(e) else '',
                tag(e.get('status', 'reference')), e.get('note', 'note pending'),
                prefix, e['file'], picks(lbl)))
@@ -834,9 +855,9 @@ for n in sorted(SCENES, key=int):
             if last is not None and sid != last:
                 b.append('<div class=brk></div>')
             last = sid
-            b.append('<a href="%s"><img src="../%s" alt="">'
+            b.append('<a href="%s"><img src="../%s" alt="" loading=lazy>'
                      '<div class=cap><b>%s</b><span>%s</span></div></a>'
-                     % (shot_page(sid), e['file'], sid,
+                     % (shot_page(sid), small(e['file'], 'tiny'), sid,
                         os.path.basename(e['file']).replace('.png', '').replace('.jpg', '')))
         b.append('</div>')
 
@@ -851,7 +872,7 @@ for n in sorted(SCENES, key=int):
         b.append('<div class=sheet><a href="../%s"><img src="../%s" alt=""></a>'
                  '<div class=meta><span class=fid>%s</span>%s%s'
                  '<p class=note>%s</p>%s</div></div>'
-                 % (e['file'], e['file'], e.get('title', 'character sheet'),
+                 % (e['file'], small(e['file']), e.get('title', 'character sheet'),
                     ('<span class=ver>%s</span>' % ver(e)) if ver(e) else '',
                     tag(e.get('status', 'reference')),
                     e.get('note', 'note pending'), picks(lbl)))
@@ -878,7 +899,7 @@ for n in sorted(SCENES, key=int):
                          '<span class=kf>%d key frame%s</span>%s'
                          '<p class=note>%s</p>'
                          '<span class=bd>Open the shot &rarr;</span></div></a></div>'
-                         % (shot_page(sid), rep['file'], sid, len(ks),
+                         % (shot_page(sid), small(rep['file'], 'tiny'), sid, len(ks),
                             '' if len(ks) == 1 else 's',
                             tag(rep.get('status', 'proposal')),
                             rep.get('note', 'note pending')))
@@ -899,7 +920,7 @@ for n in sorted(SCENES, key=int):
                          '<div class=meta><span class=fid>%s</span>%s%s'
                          '<p class=note>%s</p>%s%s'
                          '</div></div>'
-                         % (e['file'], e['file'], fid,
+                         % (e['file'], small(e['file'], 'tiny'), fid,
                             ('<span class=ver>%s</span>' % ver(e)) if ver(e) else '',
                             tag(e.get('status', 'proposal')),
                             e.get('note', 'note pending'), bd,
@@ -931,7 +952,7 @@ for n in sorted(SCENES, key=int):
                 k.append('<div class=cell><a href="../%s"><img src="../%s" alt=""></a>'
                          '<div class=meta><span class=fid>%s</span>%s%s%s'
                          '<p class=note>%s</p>%s%s</div></div>'
-                         % (e['file'], e['file'], os.path.basename(e['file']),
+                         % (e['file'], small(e['file']), os.path.basename(e['file']),
                             ('<span class=ver>%s</span>' % ver(e)) if ver(e) else '',
                             '<span class=kf>represents the shot</span>' if e is rep else '',
                             tag(e.get('status', 'proposal')),
@@ -954,10 +975,10 @@ for n in sorted(SCENES, key=int):
                 '<b>Composite</b> is what it must look like when they are stacked.</div>']
         order = sorted(lay, key=lambda p: ('comp' not in p.lower(), 'bg' not in p.lower(), p))
         for p in order:
-            rows.append('<div class=lay><a href="../%s"><img src="../%s" alt=""></a><div>'
+            rows.append('<div class=lay><a href="../%s"><img src="../%s" alt="" loading=lazy></a><div>'
                         '<div class=n>%s</div><div class=s>%s &nbsp;·&nbsp; %s</div>'
                         '<a href="../%s" download>Download</a></div></div>'
-                        % (p, p, os.path.basename(p), dims(p), human(size_of(p)), p))
+                        % (p, small(p), os.path.basename(p), dims(p), human(size_of(p)), p))
         rows.append('<p style="margin-top:30px"><a href="index.html">&larr; back to scene %s</a></p>' % n)
         open(os.path.join(ROOT, 'BB_C_%s' % n, base + '_breakdown.html'), 'w').write(
             page('%s breakdown' % e.get('frame', base), ''.join(rows), here=n, depth=1))
@@ -1152,7 +1173,7 @@ for e in sorted(ENTRIES, key=lambda x: x.get('date', ''), reverse=True):
     thumb = ''
     if f and os.path.splitext(f)[1].lower() in ('.png', '.jpg', '.jpeg', '.webp') \
             and os.path.exists(os.path.join(ROOT, f)):
-        thumb = '<a class=ith href="%s"><img src="%s" alt=""></a>' % (f, f)
+        thumb = '<a class=ith href="%s"><img src="%s" alt=""></a>' % (f, small(f, 'tiny'))
     b.append('<div class="it%s">%s<div class=itx><span class=fid>%s</span>%s%s'
              '<div class=d>%s</div><p class=note>%s</p></div></div>'
              % (' hasimg' if thumb else '', thumb, who,
@@ -1191,7 +1212,7 @@ if sy:
                      'drawing the moment one lands in the repository.</span>')
         b.append('<div class=s><a href="%s"><img src="%s" alt=""></a>'
                  '<div><h4>%s</h4><p>%s</p></div></div>'
-                 % (f, f, e.get('title', ''), note))
+                 % (f, small(f), e.get('title', ''), note))
     b.append('</div>')
 
 if overlays_of():
@@ -1220,7 +1241,7 @@ for e in fl:
     if pics:
         h.append('<div class=board>')
         for f in pics:
-            h.append('<a href="%s"><img src="%s" alt="" loading=lazy></a>' % (f, f))
+            h.append('<a href="%s"><img src="%s" alt="" loading=lazy></a>' % (f, small(f, 'tiny')))
         h.append('</div>')
         h.append('<div class=cnt>%d PICTURES ON THIS PHASE &nbsp;·&nbsp; '
                  'EVERYTHING WE HAVE, DRAWN AND SHOT, GOOD AND ABANDONED</div>' % len(pics))
