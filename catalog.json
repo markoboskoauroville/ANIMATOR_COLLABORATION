@@ -1250,6 +1250,16 @@
       "slug": "INSERT — THE HAND BEGINS TO OPEN",
       "what": "The same hand, now wearing Coach Brain's tracksuit cuff with the stripe running off the left edge. The fingers have uncurled halfway and the gold key is clearly visible, still resting in the hand.",
       "why": "PHASE 2 OF 4. The cuff is how we know whose hand it is; the body stays out of frame. Caught in the middle of releasing, neither open nor closed."
+    },
+    {
+      "kind": "keyframe",
+      "shot": "15.3",
+      "file": "BB_C_15/15-3-A-v1.png",
+      "status": "proposal",
+      "date": "2026-08-31",
+      "slug": "INSERT — THE HAND TURNS OVER",
+      "what": "The wrist has rolled, the palm faces down, the fingers are open and empty. The gold key falls clear of the hand in bare paper with nothing beneath it.",
+      "why": "PHASE 3 OF 4. NOTHING WAITS BELOW. The key falls into empty air and Manan's hand comes in after it, so he is not given the key, he takes what was let go. The key renders fully solid gold here where earlier phases showed only glints between fingers; that is a deliberate step up in weight as it becomes the subject, not a continuity error."
     }
   ],
   "event": "Breakthrough Junior Challenge 2026"
