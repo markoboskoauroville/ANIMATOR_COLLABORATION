@@ -682,7 +682,14 @@
       "note": "THE OLD THEORY. Manan's board, and only his. The arm, the fuel gauge at EMPTY, and three lines each underlined: FATIGUE IS IN THE MUSCLE, THE FUEL RUNS OUT, THE BODY STOPS. This is the 1923 answer he arrives with, having read it in a book. BLACKBOARD AND WHITE CHALK ON PURPOSE: Coach Brain answers on a whiteboard in black marker, and the reversal of surface and mark is what the audience feels before they follow the argument. The chalk draws itself as he speaks, RSA Animate style, so the board is never revealed finished. THIS IS THE FINISHED BOARD. An attempt to fill the lower right with a collapsed runner was rejected, so the empty stretch stays empty and the chalk simply stops there.",
       "slug": "INT. CONTROL ROOM — THE BLACKBOARD",
       "what": "The arm, the gauge at EMPTY, three underlined lines of chalk.",
-      "why": "The 1923 answer Manan arrives with. Blackboard and white chalk on purpose: Coach Brain answers on a whiteboard in black marker, and the reversal is felt before the argument is followed."
+      "why": "The 1923 answer Manan arrives with. Blackboard and white chalk on purpose: Coach Brain answers on a whiteboard in black marker, and the reversal is felt before the argument is followed.",
+      "audio": [
+        {
+          "file": "reference/voice/SYNTESISED_MANAN_OLD_THEORY.wav",
+          "name": "Manan, the old theory",
+          "secs": 23.16
+        }
+      ]
     },
     {
       "kind": "keyframe",
@@ -702,7 +709,14 @@
       "note": "THE NEW THEORY. Coach Brain's answer, and THE INVERSION IS THE POINT: same layout, same three lines, same gauge as shot 10, with every value reversed. Blackboard and white chalk becomes whiteboard and black marker. Measured, mean luminance 135 against 226. THE GAUGE CARRIES THE ARGUMENT: the same instrument in both frames with the needle moved from EMPTY to FULL says the fuel was always there without a word being spoken. Cut one to the other and the audience understands before they have read the sentences. The lower right is left empty in both, because the marker is still going while he talks.",
       "slug": "INT. CONTROL ROOM — THE WHITEBOARD",
       "what": "The brain, the gauge at FULL, three lines in black marker.",
-      "why": "THE INVERSION. Same layout, same three lines, same instrument, every value reversed. The gauge needle moving from EMPTY to FULL says the fuel was always there without a word."
+      "why": "THE INVERSION. Same layout, same three lines, same instrument, every value reversed. The gauge needle moving from EMPTY to FULL says the fuel was always there without a word.",
+      "audio": [
+        {
+          "file": "reference/voice/SYNTESISED_BRAIN_NEW_THEORY.wav",
+          "name": "Coach Brain, the new theory",
+          "secs": 34.96
+        }
+      ]
     },
     {
       "kind": "keyframe",
