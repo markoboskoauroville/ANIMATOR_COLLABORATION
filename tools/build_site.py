@@ -1251,8 +1251,10 @@ if os.path.exists(os.path.join(ROOT, _titlecard)):
              '<img src="%s" alt="%s, %s"></a>'
              '<div class=sub>%s &nbsp;&middot;&nbsp; %s</div></div>'
              % (small(_titlecard), FILM, SUBTITLE, SUBTITLE, EVENT))
-_flight = ('<div class=flight><b>How the second half moves</b><p>%s</p></div>'
-           % CAT.get('flight_note', '')) if CAT.get('flight_note') else ''
+_flight = ('<div class=flight><b>How the first half arrives</b><p>%s</p></div>'
+           % CAT.get('rubbing_note', '')) if CAT.get('rubbing_note') else ''
+_flight += ('<div class=flight><b>How the second half moves</b><p>%s</p></div>'
+            % CAT.get('flight_note', '')) if CAT.get('flight_note') else ''
 rt = [_mast, '<h1>THE BRAIN BRAKE ANIMATIC</h1>', _flight,
       '<p class=lede>The whole film as a storyboard, in order. <b>%d frames drawn so far.</b> '
       'Empty frames are phases that have not been drawn yet, and they are shown on purpose so the '
