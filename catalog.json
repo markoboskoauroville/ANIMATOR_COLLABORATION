@@ -1302,6 +1302,16 @@
       "slug": "EXT. THE HOUSE — THE DOOR OPEN",
       "what": "The whole building with the front door open and light pouring out of it as bare unmarked paper, spilling forward onto the paving.",
       "why": "THE FRAME THE ARRIVAL IS BUILT ON. Push into the doorway to start, pull back to full frame, and the building is revealed as the answer to where he went. Manan is keyed into the doorway and taken out of the composite part way through the pull, so he disappears inside without ever being drawn. MEASURED: the doorway differs from the closed door version by 48.6 of 255 but the rest of the facade by 16.0, so the two do not register exactly. Do not cross dissolve between them for the ending. Hold on THIS frame and animate the doors closing over it."
+    },
+    {
+      "kind": "keyframe",
+      "shot": "15.8",
+      "file": "BB_C_15/live/KEY_CATCH_1_00_00_04_19.png",
+      "status": "proposal",
+      "date": "2026-08-31",
+      "slug": "EXT. — HE CLOSES ON IT",
+      "what": "His fist closed around the key, the gold just visible between the fingers.",
+      "why": "THE LAST IMAGE IN THE FILM. Shot against black so it keys cleanly, and composited here onto the film's own measured paper. This is the frame that did not exist when the ending was planned; it was shot afterwards and it removes the need to invent anything. KEY FROM THE ORIGINAL, NOT FROM THIS COMPOSITE: the hood at the right edge picks up a rough matte where the fabric shadow meets the black, and it wants a proper key rather than my luma one."
     }
   ],
   "event": "Breakthrough Junior Challenge 2026"
