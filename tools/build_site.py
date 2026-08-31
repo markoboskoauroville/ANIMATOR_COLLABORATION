@@ -1020,8 +1020,12 @@ if ARCHIVE.get('items'):
 # The whole film as a storyboard, built from catalog.json, so it is current the
 # moment anything is filed. Phases with nothing drawn show empty frames, which is
 # the point: it shows what is missing as clearly as what exists.
-SCENE_OF = {'0':'0','1':'1','2':'2','3':'3','4':'4','5':'5','6':'6','7':'7','8':'8',
-            '9':'6','10':'10','11':'11','12':'12','13':'13','14':'14'}
+# phase number -> the scene folder its frames live in. The two do not match any
+# more: the film was reordered on 31.8.2026 and the folders kept their names, so
+# this table is the only place the mapping lives.
+SCENE_OF = {'0':'0', '1':'1', '2':'2', '3':'3', '4':'4', '5':'5',
+            '6':'16', '7':'17', '8':'6', '9':'8', '10':'18', '11':'6',
+            '12':'10', '13':'11', '14':'12', '15':'13', '16':'14'}
 # The storyboard shows ONE version per shot where a shot has both a generated
 # placeholder and a real footage composite. Baba's rule, 30.8.2026: the generated
 # boy stands in on the front page because it reads finished at a glance, and the
@@ -1050,9 +1054,11 @@ for e in _fl:
     sc = SCENE_OF.get(n)
     frames = _byscene.get(sc, []) if sc else []
     live = n in ('2', '4', '5')
-    if n == '9':
+    # phases 8 and 11 both draw on scene 6, so its frames are split between them:
+    # the corridor and the rooms are the journey, the control room is Coach Brain.
+    if n == '11':
         frames = [f for f in frames if str(f['shot']) in ('6.3', '6.4')]
-    if n == '6':
+    if n == '8':
         frames = [f for f in frames if str(f['shot']) not in ('6.3', '6.4')]
     st = ('%d drawn' % len(frames)) if frames else ('LIVE ACTION' if live else 'NOT DRAWN YET')
     rt.append('<div class=rtph><span class=n>%s</span><h3>%s</h3><span class=st>%s</span></div>'
