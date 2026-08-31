@@ -651,10 +651,9 @@
       "kind": "keyframe",
       "shot": "3.0",
       "file": "BB_C_3/3-0-A-v2.png",
-      "representative": true,
-      "status": "proposal",
+      "status": "reference",
       "date": "2026-08-30",
-      "note": "PHASE 3, AND IT IS A COMPOSITE PLATE, NOT A FINISHED PICTURE. THE LAPTOP SCREEN IS A HOLE: it is drawn as bare unmarked paper and Kristijan puts the earlier ride footage into it. Do not animate it as drawn. Him and the screen are both legible in one frame, which is the whole point of the phase: he is racing a recording of himself, and no still we have says that. Same three quarter framing as the runner seeing the finish line, so the two rhyme.",
+      "note": "Kept as framing reference, not a shot. Phase 3 is live action as of 31.8.2026, so Manan is a photograph here. The idea this frame carries, him and the screen legible in one frame, still applies to how the footage is cut.",
       "slug": "INT. ROOM — DAY — MANAN ON THE TRAINER",
       "what": "A boy on an exercise bike leaning into a large laptop, its screen a blank rectangle of bare paper.",
       "why": "A COMPOSITE PLATE. THE SCREEN IS A HOLE: the earlier ride footage goes in it. He is racing a recording of himself and no still we have says that. Same framing as the runner seeing the finish line, so the two rhyme."
@@ -1426,6 +1425,36 @@
       "slug": "EXT. CREAM VOID — INTO THE BANNER",
       "what": "Close on the cloth. A few letters very large and cut off by the frame edges, the weave between them, the banner whole.",
       "why": "THE CLOTH DOES NOT TEAR OR PART. An earlier attempt split it down the middle and was rejected: we pass through by cutting to white, not by the fabric giving way, the same as every other crossing in the film. Graded onto the film's own paper and pencil in the container, no coin spent: it came back warm and photographic at 6.39 percent colour and is now 0.00."
+    },
+    {
+      "kind": "keyframe",
+      "shot": "3.5",
+      "file": "BB_C_3/live/SHOT_PANA6223_00_00_14_00_G.jpg",
+      "status": "proposal",
+      "date": "2026-08-31",
+      "slug": "EXT. — ON THE TRAINER, WIDE",
+      "what": "Him on the trainer at home with the laptop in the room.",
+      "why": "PHASE 3 IS LIVE ACTION. He is a photograph here as he is in phases 2, 4 and 5, so the whole bicycle sequence keeps him real. LOW RESOLUTION FOR NOW, 380 px: the 1920 px originals were destroyed by an in-place downscale and are being re-exported from the Resolve timeline, STEP 77."
+    },
+    {
+      "kind": "keyframe",
+      "shot": "3.6",
+      "file": "BB_C_3/live/SHOT_PANA6227_00_00_06_00_G.jpg",
+      "status": "proposal",
+      "date": "2026-08-31",
+      "slug": "EXT. — RACING",
+      "what": "Closer, working, eyes on the screen.",
+      "why": "The beat the phase exists for: he is competing with a recording of himself. LOW RESOLUTION FOR NOW, 380 px: the 1920 px originals were destroyed by an in-place downscale and are being re-exported from the Resolve timeline, STEP 77."
+    },
+    {
+      "kind": "keyframe",
+      "shot": "3.7",
+      "file": "BB_C_3/live/SHOT_PANA6229_00_00_06_00_G.jpg",
+      "status": "proposal",
+      "date": "2026-08-31",
+      "slug": "EXT. — PUSHING",
+      "what": "Leaning into it, further in.",
+      "why": "Carries into phase 4, where he stops. LOW RESOLUTION FOR NOW, 380 px: the 1920 px originals were destroyed by an in-place downscale and are being re-exported from the Resolve timeline, STEP 77."
     }
   ],
   "event": "Breakthrough Junior Challenge 2026"
