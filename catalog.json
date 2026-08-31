@@ -1345,6 +1345,28 @@
           "note": "The whole take with a real alpha channel, ready to composite. The still above is a mockup keyed by luma and it is not good enough to finish with: the hood picks up a rough matte where the fabric shadow meets the black. Pull the frames you need from this footage instead."
         }
       ]
+    },
+    {
+      "kind": "keyframe",
+      "shot": "16.2",
+      "file": "BB_C_16/live/16-1-MOCKUP-v1.png",
+      "status": "proposal",
+      "date": "2026-08-31",
+      "slug": "EXT. THE HOUSE — HE IS AT THE DOOR",
+      "what": "Manan standing in the lit doorway, seen from behind, hand raised to the door. He is 80 percent of the height of the opening.",
+      "why": "THE FRAME THE ARRIVAL PULL BACK STARTS ON. A mockup: he is keyed by luma from footage shot against black and graded onto the film's paper. IT SHOWS SCALE AND POSITION, NOT THE FINISH. Composite from the alpha footage. An earlier attempt measured the light spill instead of the arch and made him taller than the door; the opening is 463 px and he is 370.",
+      "source": [
+        {
+          "name": "In front of the door, moving",
+          "url": "https://youtu.be/4__oXqbMoAc",
+          "note": "The clip that loops in the arrival sequence on the front page, at full size. The loop there is a preview only: muted, no controls, meant to read as a still that moves."
+        },
+        {
+          "name": "The footage, with alpha",
+          "url": "https://drive.google.com/drive/folders/1YGb_z7OCrLSUX7JagNpynXbu1fAK2wNu",
+          "note": "The take with a real alpha channel, ready to composite. Use this, not the mockup above."
+        }
+      ]
     }
   ],
   "event": "Breakthrough Junior Challenge 2026"

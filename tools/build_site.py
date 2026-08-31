@@ -1137,6 +1137,47 @@ LASTSHOT = [
 ]
 
 
+ARRIVAL = [
+    ('BB_C_16/live/16-1-MOCKUP-v1.png', 'he is at the door'),
+    (('yt', '4__oXqbMoAc'), 'in front of the door'),
+    ('BB_C_16/16-1-A-v1.png', 'the door open'),
+    ('BB_C_16/16-0-A-v1.png', 'the door shut'),
+]
+
+
+def strip(items, lede, prefix=''):
+    out = ['<p class=lede>%s</p>' % lede, '<div class=seqstrip>']
+    for f, label in items:
+        if f is None:
+            out.append('<div class=cut>&rarr;</div>')
+            continue
+        if isinstance(f, tuple) and f[0] == 'yt':
+            vid = f[1]
+            out.append('<div class=f><div class=vid>'
+                       '<iframe src="https://www.youtube-nocookie.com/embed/%s'
+                       '?autoplay=1&mute=1&loop=1&playlist=%s&controls=0&modestbranding=1'
+                       '&playsinline=1&rel=0&disablekb=1" '
+                       'title="%s" frameborder=0 allow="autoplay" tabindex=-1></iframe>'
+                       '<span class=lbl>LOOP</span></div><div class=n>%s</div></div>'
+                       % (vid, vid, label, label.upper()))
+            continue
+        if not os.path.exists(os.path.join(ROOT, f)):
+            continue
+        out.append('<div class=f><a href="%s%s"><img src="%s%s" alt="" loading=lazy></a>'
+                   '<div class=n>%s</div></div>'
+                   % (prefix, f, prefix, small(f, 'tiny'), label.upper()))
+    out.append('</div>')
+    return ''.join(out)
+
+
+def arrival_strip(prefix=''):
+    return strip(ARRIVAL,
+                 'He arrives out of the white and the door is already giving off light. One '
+                 'continuous pull back from here: as the camera draws away he goes inside, and by '
+                 'the time we see the whole building the door is shut. He is keyed into the doorway '
+                 'and taken out of the composite part way through, so he is never drawn.', prefix)
+
+
 def lastshot_strip(prefix=''):
     out = ['<p class=lede>Coach Brain lets the key go, it falls through an empty frame, and we cut. '
            'His hand and Manan’s are never on screen together, so nothing is composited and the '
@@ -1202,6 +1243,8 @@ for e in _fl:
               % (n, e.get('title', ''), st))
     # the last shot is phase 15, so its sequence belongs here in the flow rather
     # than at the foot of the page
+    if n == '7':
+        rt.append(arrival_strip())
     if n == '11':
         rt.append(lastshot_strip())
     if n == '12':
