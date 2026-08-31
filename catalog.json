@@ -1039,9 +1039,9 @@
     {
       "kind": "flow",
       "n": "6",
-      "file": "flow/06-door.jpg",
+      "file": "flow/06-the-house.jpg",
       "title": "THE HOUSE",
-      "status": "placeholder",
+      "status": "drawn",
       "scene": "16",
       "note": "He is standing in front of a building, and the building is his body. Organic architecture in the manner of Gaudi, never a factory."
     },
@@ -1134,6 +1134,17 @@
       "status": "placeholder",
       "scene": "14",
       "note": "Seven classical cards, in the longer version only."
+    },
+    {
+      "kind": "keyframe",
+      "shot": "16.0",
+      "file": "BB_C_16/16-0-A-v1.png",
+      "representative": true,
+      "status": "proposal",
+      "date": "2026-08-31",
+      "slug": "EXT. THE HOUSE OF THE BODY — DAY",
+      "what": "The front of a building where nothing is straight. Bone columns bowed narrow at the middle, a roofline of melted stone, windows set deep under heavy brows, one broad low opening with a curved sill, and a single heavy door at ground level.",
+      "why": "THE BUILDING IS HIS BODY, and it reads as a face without being drawn as one: the windows are eyes, the balcony is a mouth. It replaced a factory, which said industry when the film needed living thing. The style is organic architecture in the manner of Gaudi, and it was got by describing the geometry rather than naming a building, which is the same law that made the organ walls work. MANAN IS KEYED INTO THE DOORWAY, never drawn."
     }
   ],
   "event": "Breakthrough Junior Challenge 2026"
