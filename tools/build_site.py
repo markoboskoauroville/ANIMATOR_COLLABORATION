@@ -1069,14 +1069,12 @@ _done = sum(len(v) for v in _byscene.values())
 # the last shot, laid out as the sequence it is: four drawn frames, a cut, and
 # three live ones. The two hands never share a frame, which is the whole point.
 LASTSHOT = [
-    ('BB_C_15/15-1-A-v1.png', 'closed'),
     ('BB_C_15/15-2-A-v1.png', 'opening'),
     ('BB_C_15/15-3-A-v1.png', 'turns over'),
     ('BB_C_15/15-4-A-v1.png', 'the key alone'),
     (None, 'CUT'),
     ('BB_C_15/live/PANA6276_11_47_46_08.png', 'his hand arrives'),
     ('BB_C_15/live/PANA6279_11_48_30_06.png', 'the key lands'),
-    ('BB_C_15/live/PANA6270_11_46_40_11.png', 'he closes'),
 ]
 
 
@@ -1085,7 +1083,7 @@ def lastshot_strip(prefix=''):
            '<p class=lede>Coach Brain lets the key go, it falls through an empty frame, and we cut. '
            'His hand and Manan’s are never on screen together, so nothing is composited and the '
            'lighting difference between the drawing and the footage does not matter. '
-           'The first four are drawn. The last three are real.</p>',
+           'The first three are drawn. The last two are real.</p>',
            '<div class=seqstrip>']
     for f, label in LASTSHOT:
         if f is None:
