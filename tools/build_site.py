@@ -1000,7 +1000,7 @@ if ARCHIVE.get('items'):
 # moment anything is filed. Phases with nothing drawn show empty frames, which is
 # the point: it shows what is missing as clearly as what exists.
 SCENE_OF = {'0':'0','1':'1','2':'2','3':'3','4':'4','5':'5','6':'6','7':'7','8':'8',
-            '9':'6','10':'10','11':'11','12':'12','13':'13'}
+            '9':'6','10':'10','11':'11','12':'12','13':'13','14':'14'}
 # The storyboard shows ONE version per shot where a shot has both a generated
 # placeholder and a real footage composite. Baba's rule, 30.8.2026: the generated
 # boy stands in on the front page because it reads finished at a glance, and the
@@ -1079,7 +1079,8 @@ for _i, e in enumerate(_order):
         amb = os.path.getsize(os.path.join(ROOT, a['file'])) / 1048576.0
         cd.append('<div class=aud><div class=t><b>%s</b>'
                   '<span>%.1f s &nbsp;&middot;&nbsp; '
-                  '<a class=dl href="../%s" download>DOWNLOAD %.1f MB</a></span></div>'
+                  '<a class=dl href="../%s" download title="download the wav">&darr; %.1f MB</a>'
+                  '</span></div>'
                   '<audio controls preload=none src="../%s"></audio></div>'
                   % (a.get('name', 'reference voice'), a.get('secs', 0), a['file'], amb, a['file']))
 

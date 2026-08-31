@@ -17,7 +17,8 @@
     "10": "The old theory on the board",
     "11": "The new theory and the key",
     "12": "It is a setting",
-    "13": "The key"
+    "13": "The key",
+    "14": "End credits"
   },
   "entries": [
     {
@@ -730,7 +731,14 @@
       "note": "THE ENDCARD, and the film's closing rhyme. The finish banner from shot 1.2b, which was tiny between the trees and unreadable, is now the whole frame with the sentence on it: THE LIMIT IS A SETTING, NOT A WALL. The object that opened the film closes it. 4 percent ink, everything else bare paper.",
       "slug": "EXT. CREAM VOID — THE FLY THROUGH",
       "what": "The banner with the sentence on it, seen close and straight on. The camera flies at it and passes through into white.",
-      "why": "NO LONGER THE ENDCARD. Changed 31.8.2026. Manan says the line while we are flying, the move is the same as Ganesha rising, and we go through into white. The key follows it, then white again, then black. The sentence is stated, then permission is handed over, then nothing."
+      "why": "NO LONGER THE ENDCARD. Changed 31.8.2026. Manan says the line while we are flying, the move is the same as Ganesha rising, and we go through into white. The key follows it, then white again, then black. The sentence is stated, then permission is handed over, then nothing.",
+      "audio": [
+        {
+          "file": "reference/voice/THE_LIMIT_IS_A_SETTING_NOT_A_WALL.wav",
+          "name": "Manan, spoken during the fly through",
+          "secs": 8.28
+        }
+      ]
     },
     {
       "kind": "keyframe",
@@ -1001,6 +1009,99 @@
       "status": "placeholder",
       "scene": "13",
       "note": "Out of the white, Coach Brain gives Manan the key and he takes it. Then back to white and fade to black. THE LAST IMAGE IN THE FILM."
+    },
+    {
+      "kind": "keyframe",
+      "shot": "14.1",
+      "file": "BB_C_14/14-1-CREDITS-v1.png",
+      "representative": true,
+      "status": "placeholder",
+      "date": "2026-08-31",
+      "slug": "END CREDITS — CARD 1 OF 7",
+      "what": "A classical credit card, one contribution to a card.",
+      "why": "PLACEHOLDER, TYPESET NOT DRAWN, so it cannot be mistaken for final. Only Aurovenkatesh as Cinematographer and Jagan and Pushparaj as crew are confirmed, by them, on 31.8.2026. Everything else is a guess waiting on Neha. When the names come back these are redrawn in the film's own hand through Image to Image. Credits appear in the longer version only: the competition cut has none because of the two minute limit.",
+      "note": "Placeholder credit card."
+    },
+    {
+      "kind": "keyframe",
+      "shot": "14.2",
+      "file": "BB_C_14/14-2-CREDITS-v1.png",
+      "representative": false,
+      "status": "placeholder",
+      "date": "2026-08-31",
+      "slug": "END CREDITS — CARD 2 OF 7",
+      "what": "A classical credit card, one contribution to a card.",
+      "why": "PLACEHOLDER, TYPESET NOT DRAWN, so it cannot be mistaken for final. Only Aurovenkatesh as Cinematographer and Jagan and Pushparaj as crew are confirmed, by them, on 31.8.2026. Everything else is a guess waiting on Neha. When the names come back these are redrawn in the film's own hand through Image to Image. Credits appear in the longer version only: the competition cut has none because of the two minute limit.",
+      "note": "Placeholder credit card."
+    },
+    {
+      "kind": "keyframe",
+      "shot": "14.3",
+      "file": "BB_C_14/14-3-CREDITS-v1.png",
+      "representative": false,
+      "status": "placeholder",
+      "date": "2026-08-31",
+      "slug": "END CREDITS — CARD 3 OF 7",
+      "what": "A classical credit card, one contribution to a card.",
+      "why": "PLACEHOLDER, TYPESET NOT DRAWN, so it cannot be mistaken for final. Only Aurovenkatesh as Cinematographer and Jagan and Pushparaj as crew are confirmed, by them, on 31.8.2026. Everything else is a guess waiting on Neha. When the names come back these are redrawn in the film's own hand through Image to Image. Credits appear in the longer version only: the competition cut has none because of the two minute limit.",
+      "note": "Placeholder credit card."
+    },
+    {
+      "kind": "keyframe",
+      "shot": "14.4",
+      "file": "BB_C_14/14-4-CREDITS-v1.png",
+      "representative": false,
+      "status": "placeholder",
+      "date": "2026-08-31",
+      "slug": "END CREDITS — CARD 4 OF 7",
+      "what": "A classical credit card, one contribution to a card.",
+      "why": "PLACEHOLDER, TYPESET NOT DRAWN, so it cannot be mistaken for final. Only Aurovenkatesh as Cinematographer and Jagan and Pushparaj as crew are confirmed, by them, on 31.8.2026. Everything else is a guess waiting on Neha. When the names come back these are redrawn in the film's own hand through Image to Image. Credits appear in the longer version only: the competition cut has none because of the two minute limit.",
+      "note": "Placeholder credit card."
+    },
+    {
+      "kind": "keyframe",
+      "shot": "14.5",
+      "file": "BB_C_14/14-5-CREDITS-v1.png",
+      "representative": false,
+      "status": "placeholder",
+      "date": "2026-08-31",
+      "slug": "END CREDITS — CARD 5 OF 7",
+      "what": "A classical credit card, one contribution to a card.",
+      "why": "PLACEHOLDER, TYPESET NOT DRAWN, so it cannot be mistaken for final. Only Aurovenkatesh as Cinematographer and Jagan and Pushparaj as crew are confirmed, by them, on 31.8.2026. Everything else is a guess waiting on Neha. When the names come back these are redrawn in the film's own hand through Image to Image. Credits appear in the longer version only: the competition cut has none because of the two minute limit.",
+      "note": "Placeholder credit card."
+    },
+    {
+      "kind": "keyframe",
+      "shot": "14.6",
+      "file": "BB_C_14/14-6-CREDITS-v1.png",
+      "representative": false,
+      "status": "placeholder",
+      "date": "2026-08-31",
+      "slug": "END CREDITS — CARD 6 OF 7",
+      "what": "A classical credit card, one contribution to a card.",
+      "why": "PLACEHOLDER, TYPESET NOT DRAWN, so it cannot be mistaken for final. Only Aurovenkatesh as Cinematographer and Jagan and Pushparaj as crew are confirmed, by them, on 31.8.2026. Everything else is a guess waiting on Neha. When the names come back these are redrawn in the film's own hand through Image to Image. Credits appear in the longer version only: the competition cut has none because of the two minute limit.",
+      "note": "Placeholder credit card."
+    },
+    {
+      "kind": "keyframe",
+      "shot": "14.7",
+      "file": "BB_C_14/14-7-CREDITS-v1.png",
+      "representative": false,
+      "status": "placeholder",
+      "date": "2026-08-31",
+      "slug": "END CREDITS — CARD 7 OF 7",
+      "what": "A classical credit card, one contribution to a card.",
+      "why": "PLACEHOLDER, TYPESET NOT DRAWN, so it cannot be mistaken for final. Only Aurovenkatesh as Cinematographer and Jagan and Pushparaj as crew are confirmed, by them, on 31.8.2026. Everything else is a guess waiting on Neha. When the names come back these are redrawn in the film's own hand through Image to Image. Credits appear in the longer version only: the competition cut has none because of the two minute limit.",
+      "note": "Placeholder credit card."
+    },
+    {
+      "kind": "flow",
+      "n": "14",
+      "file": "flow/14-credits.jpg",
+      "title": "END CREDITS",
+      "status": "placeholder",
+      "scene": "14",
+      "note": "Seven classical credit cards, in the longer version of the film only. Currently typeset placeholders: the names are still being confirmed and none may be invented."
     }
   ]
 }
