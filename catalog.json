@@ -1569,7 +1569,7 @@
     }
   ],
   "event": "Breakthrough Junior Challenge 2026",
-  "site_version": 1,
+  "site_version": 2,
   "footage": [
     {
       "name": "Key catch",
@@ -1597,6 +1597,15 @@
       "codec": "mixed",
       "what": "Animatic packs, recording scripts, read through PDFs, and anything large that does not belong in the repository.",
       "use": "If something is missing from the site, look here before asking."
+    },
+    {
+      "name": "The two loops, 4K H.264",
+      "phase": "",
+      "phase_title": "THE EXCHANGE FOLDER",
+      "url": "https://drive.google.com/drive/folders/1D9KrIlSqFJneqUxm9giZ2kn2KQS8mqYu",
+      "codec": "H.264 3840x2160",
+      "what": "Full size versions of the two clips that loop on the front page, as H264_4K_key-catch.mp4 and H264_4K_in-front-of-door.mp4.",
+      "use": "The site keeps only 480 px display loops at 19 and 31 KB. These are the full size renders. For compositing use the ProRes with alpha, not these."
     }
   ]
 }
