@@ -298,6 +298,12 @@ h2{font-size:19px;margin:38px 0 14px;padding-bottom:7px;border-bottom:1px solid 
 .seqstrip .f iframe,.seqstrip .f video{width:100%;aspect-ratio:16/9;border:1px solid var(--rule);display:block;
  background:var(--card);pointer-events:none}
 .seqstrip .f .vid{position:relative}
+.seqstrip .f .vid{cursor:zoom-in}
+.seqstrip .f .n{display:flex;justify-content:space-between;align-items:baseline;gap:6px}
+.seqstrip .f .pr{font:700 7.5px ui-monospace,monospace;letter-spacing:.09em;color:#17150f;
+ background:var(--brass);border-radius:2px;padding:2px 5px;text-decoration:none;
+ white-space:nowrap}
+.seqstrip .f .pr:hover{background:#f0c876}
 .seqstrip .f .vid .lbl{position:absolute;left:5px;bottom:5px;background:var(--brass);
  color:#17150f;font:700 7.5px ui-monospace,monospace;letter-spacing:.1em;padding:2px 5px;
  border-radius:2px}
@@ -1125,6 +1131,14 @@ Breakthrough Junior Challenge
 2026'''
 
 
+CLIP_SOURCE = {
+    'clips/key-catch-loop.mp4':
+        'https://drive.google.com/drive/folders/1YGb_z7OCrLSUX7JagNpynXbu1fAK2wNu',
+    'clips/in-front-of-door-loop.mp4':
+        'https://drive.google.com/drive/folders/1ph36NxPciUB5Y4s_IiowDotmjk2ciFZ4',
+}
+
+
 LASTSHOT = [
     ('BB_C_15/15-2-A-v1.png', 'opening'),
     ('BB_C_15/15-3-A-v1.png', 'turns over'),
@@ -1152,11 +1166,19 @@ def strip(items, lede, prefix=''):
             # a native loop. A YouTube embed lays a title card and a watermark
             # over the picture, which is unreadable at thumbnail size, so these
             # are served straight from the repository instead.
-            out.append('<div class=f><div class=vid>'
+            # tapping the loop opens it full screen. The ProRes with alpha is a
+            # separate link, because that is what gets composited, not this.
+            drive = CLIP_SOURCE.get(f[1], '')
+            dl = ('<a class=pr href="%s" target=_blank rel=noopener '
+                  'onclick="event.stopPropagation()">PRORES &nearr;</a>' % drive) if drive else ''
+            out.append('<div class=f><div class=vid onclick="var v=this.firstElementChild;'
+                       '(v.requestFullscreen||v.webkitEnterFullscreen||v.webkitRequestFullscreen)'
+                       '.call(v);v.controls=true;">'
                        '<video src="%s%s" autoplay muted loop playsinline preload=metadata '
-                       'disablepictureinpicture tabindex=-1></video>'
-                       '<span class=lbl>LOOP</span></div><div class=n>%s</div></div>'
-                       % (prefix, f[1], label.upper()))
+                       'disablepictureinpicture></video>'
+                       '<span class=lbl>LOOP</span></div>'
+                       '<div class=n>%s%s</div></div>'
+                       % (prefix, f[1], label.upper(), dl))
             continue
         if isinstance(f, tuple) and f[0] == 'yt':
             vid = f[1]
