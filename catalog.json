@@ -1076,9 +1076,9 @@
     {
       "kind": "flow",
       "n": "10",
-      "file": "flow/10-old-theory.jpg",
+      "file": "flow/10-the-skull-door.jpg",
       "title": "THE SKULL DOOR",
-      "status": "placeholder",
+      "status": "drawn",
       "scene": "18",
       "note": "Another door, made of bone, with a small name plate reading COACH BRAIN. He opens it the same way he opened the first."
     },
@@ -1219,6 +1219,17 @@
       "slug": "EXT. THE HOUSE — THE FRONT DOOR OPENS",
       "what": "The doorway close and filling the frame. Two smooth stone leaves swung back almost flat against the opening, and light pouring out of the gap as bare unmarked paper, spilling forward onto the paving.",
       "why": "THE FIRST OF TWO DOORS HE OPENS. The second is the skull door into the brain, opened the same way, so the second reads as a rhyme rather than a repeat. The leaves are the same stone as the wall with no rivet, hinge or straight edge, so they read as parts of the building that moved rather than joinery fitted into it. Blank centre measured 61.5 percent against 31 in the first version. MANAN IS KEYED INTO THE DOORWAY, never drawn."
+    },
+    {
+      "kind": "keyframe",
+      "shot": "18.0",
+      "file": "BB_C_18/18-0-A-v5.png",
+      "representative": true,
+      "status": "proposal",
+      "date": "2026-08-31",
+      "slug": "INT. THE BODY — THE SKULL DOOR",
+      "what": "A closed stone door at the end of a short passage. A softly domed top, one shallow oval push plate on the right at hand height, and an oval plaque at eye height reading COACH BRAIN.",
+      "why": "THE SECOND DOOR HE OPENS, and it rhymes with the front door rather than repeating it. A skull is suggested by the dome alone and never drawn: no teeth, no jaw, no sockets. Anyone who has walked the corridor will feel it, nobody is told. THE PLAQUE IS THE ONLY PLACE IN THE FILM THE CHARACTER IS NAMED IN WRITING, and it arrives before he does. The push plate sits where a hand falls and the plaque where an eye falls, because the building is strange but not inconvenient."
     }
   ],
   "event": "Breakthrough Junior Challenge 2026"
