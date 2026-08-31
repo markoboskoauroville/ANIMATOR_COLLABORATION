@@ -418,9 +418,9 @@
       "shot": "6.0",
       "file": "BB_C_6/6-0-A-v3.png",
       "representative": true,
-      "status": "proposal",
+      "status": "superseded",
       "date": "2026-08-28",
-      "note": "PHASE 6, THE HOUSE OF THE BODY. He walks a corridor inside himself, doors on both sides, each one something the brain is monitoring, and at the end a door standing open with light pouring out. The signs are Coach Brain's own sensor line, so when he says HEART RATE, BREATH, TEMPERATURE, WATER, DISTANCE later, the audience has already walked past those doors. He enters only three or four; the rest go by, and the doors he does not open are what say the body is bigger than what we see. THE LIGHT IS BARE PAPER, not a colour. v1 and v2 both came back gold and were desaturated onto the film's measured pencil and paper in the container, which cost nothing and got it exact.",
+      "note": "Superseded by 8-0-A-v4. Brick, rivets and iron doors, built before the house exterior existed. A factory interior behind a living facade.",
       "slug": "INT. THE BODY — CORRIDOR",
       "what": "A corridor of riveted doors, each with a name, and at the end one door standing open with light pouring out.",
       "why": "The doors are Coach Brain’s own sensor list. Walking past them sets up a line he has not said yet, so when he says it the audience recognises rather than learns. He enters three or four; the rest going by is what says the body is bigger than what we see."
@@ -1145,6 +1145,17 @@
       "slug": "EXT. THE HOUSE OF THE BODY — DAY",
       "what": "The front of a building where nothing is straight. Bone columns bowed narrow at the middle, a roofline of melted stone, windows set deep under heavy brows, one broad low opening with a curved sill, and a single heavy door at ground level.",
       "why": "THE BUILDING IS HIS BODY, and it reads as a face without being drawn as one: the windows are eyes, the balcony is a mouth. It replaced a factory, which said industry when the film needed living thing. The style is organic architecture in the manner of Gaudi, and it was got by describing the geometry rather than naming a building, which is the same law that made the organ walls work. MANAN IS KEYED INTO THE DOORWAY, never drawn."
+    },
+    {
+      "kind": "keyframe",
+      "shot": "8.0",
+      "file": "BB_C_8/8-0-A-v4.png",
+      "representative": true,
+      "status": "proposal",
+      "date": "2026-08-31",
+      "slug": "INT. THE BODY — THE CORRIDOR",
+      "what": "A vaulted corridor where nothing is straight. Walls swelling at the base, bone columns narrow at their middles, soft irregular stone underfoot, and at the far end one door standing open with light washing everything to bare paper.",
+      "why": "REBUILT 31.8.2026 in the language of the house. The first version was brick and riveted iron, a factory interior behind a living facade, and the two contradicted each other. Shaped more like a throat than a hallway. The plaques carry Coach Brain's own sensor list, so walking past them sets up a line he has not said yet."
     }
   ],
   "event": "Breakthrough Junior Challenge 2026"
