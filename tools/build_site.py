@@ -1060,9 +1060,12 @@ if ARCHIVE.get('items'):
 # phase number -> the scene folder its frames live in. The two do not match any
 # more: the film was reordered on 31.8.2026 and the folders kept their names, so
 # this table is the only place the mapping lives.
-SCENE_OF = {'0':'0', '1':'1', '2':'2', '3':'3', '4':'4', '5':'5',
-            '6':'16', '7':'17', '8':'8', '9':'9', '10':'18', '11':'19',
-            '12':'10', '13':'11', '14':'12', '15':'13', '16':'14'}
+# A phase can draw on several scene folders now: the house gathers its exterior,
+# its front door, the rooms and the threshold, and the theories gather both
+# boards. The folders kept their old numbers, so the catalogue carries the map.
+def scenes_of(e):
+    v = e.get('scenes') or ([e['scene']] if e.get('scene') else [])
+    return [str(x) for x in v]
 # The storyboard shows ONE version per shot where a shot has both a generated
 # placeholder and a real footage composite. Baba's rule, 30.8.2026: the generated
 # boy stands in on the front page because it reads finished at a glance, and the
@@ -1157,8 +1160,10 @@ rt = [_mast, '<h1>THE BRAIN BRAKE ANIMATIC</h1>',
       '<div class=rtsheet>']
 for e in _fl:
     n = str(e.get('n', ''))
-    sc = SCENE_OF.get(n)
-    frames = _byscene.get(sc, []) if sc else []
+    frames = []
+    for sc in scenes_of(e):
+        frames.extend(_byscene.get(sc, []))
+    frames.sort(key=lambda f: shot_key(f.get('shot', '0')))
     live = n in ('2', '4', '5')
     # phases 8 and 11 both draw on scene 6, so its frames are split between them:
     # the corridor and the rooms are the journey, the control room is Coach Brain.
@@ -1169,9 +1174,9 @@ for e in _fl:
               % (n, e.get('title', ''), st))
     # the last shot is phase 15, so its sequence belongs here in the flow rather
     # than at the foot of the page
-    if n == '15':
+    if n == '11':
         rt.append(lastshot_strip())
-    if n == '16':
+    if n == '12':
         # the same names as the cards, as plain text, so they can be copied into
         # a title tool without being retyped off a picture
         rt.append(

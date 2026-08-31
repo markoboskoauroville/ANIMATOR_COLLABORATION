@@ -709,18 +709,6 @@
     },
     {
       "kind": "keyframe",
-      "shot": "13.0",
-      "file": "BB_C_13/11-1-A-v3.png",
-      "representative": true,
-      "status": "proposal",
-      "date": "2026-08-30",
-      "note": "THE KEY, AS A PLATE WITH A HOLE. Coach Brain's hand is drawn and holds the key. THE RIGHT HALF IS BARE PAPER ON PURPOSE: Manan's REAL hand goes there, keyed from the footage, entering from the right with the palm open under the key. NEVER DRAW MANAN, not even a hand. This is the only frame in the film where the drawn world and the photographed one are in physical contact, which makes it the strongest use of the film's founding law anywhere in it. Hold the gap one beat: permission offered and not yet taken.",
-      "slug": "INSERT — TWO HANDS",
-      "what": "A drawn hand offers a key. The right half of the frame is bare paper.",
-      "why": "THE ONLY PLACE THE TWO WORLDS TOUCH. Coach Brain’s hand is drawn, Manan’s is a photograph keyed in from the right. Hold the gap one beat: permission offered and not yet taken. The key is the only colour in the film. MOVED 31.8.2026: this now comes AFTER the fly through, out of the white. He takes the key, we go back to white, and fade to black. It is the last image in the film."
-    },
-    {
-      "kind": "keyframe",
       "shot": "11.1",
       "file": "BB_C_11/11-1-A-v2.png",
       "status": "superseded",
@@ -984,159 +972,6 @@
       "note": "Placeholder credit card."
     },
     {
-      "kind": "flow",
-      "n": "0",
-      "file": "flow/00-title.jpg",
-      "title": "TITLE",
-      "status": "placeholder",
-      "scene": "0",
-      "note": "The film opens on its own title, drawn in the film’s hand."
-    },
-    {
-      "kind": "flow",
-      "n": "1",
-      "file": "flow/01-runner.jpg",
-      "title": "THE RUNNER",
-      "status": "placeholder",
-      "scene": "1",
-      "note": "A man at the end of himself finds a finish line and runs like he just started."
-    },
-    {
-      "kind": "flow",
-      "n": "2",
-      "file": "flow/02-bike-out.jpg",
-      "title": "HE TRIES IT HIMSELF",
-      "status": "placeholder",
-      "scene": "2",
-      "note": "Manan on a real bicycle on a real road. Curious, not convinced."
-    },
-    {
-      "kind": "flow",
-      "n": "3",
-      "file": "flow/03-bike-in.jpg",
-      "title": "RACING HIMSELF",
-      "status": "placeholder",
-      "scene": "3",
-      "note": "On the trainer at home, racing a recording of his own best ride."
-    },
-    {
-      "kind": "flow",
-      "n": "4",
-      "file": "flow/04-the-wall.jpg",
-      "title": "HE IS DONE",
-      "status": "placeholder",
-      "scene": "4",
-      "note": "Nothing left. He cannot go on."
-    },
-    {
-      "kind": "flow",
-      "n": "5",
-      "file": "flow/05-eyes-closed.jpg",
-      "title": "HE CLOSES HIS EYES",
-      "status": "placeholder",
-      "scene": "5",
-      "note": "He stops, breathes, relaxes. Out to white. This is the way in."
-    },
-    {
-      "kind": "flow",
-      "n": "6",
-      "file": "flow/06-the-house.jpg",
-      "title": "THE HOUSE",
-      "status": "drawn",
-      "scene": "16",
-      "note": "He is standing in front of a building, and the building is his body. Organic architecture in the manner of Gaudi, never a factory."
-    },
-    {
-      "kind": "flow",
-      "n": "7",
-      "file": "flow/07-the-front-door.jpg",
-      "title": "HE OPENS THE DOOR",
-      "status": "drawn",
-      "scene": "17",
-      "note": "He opens the front door and light floods out of it."
-    },
-    {
-      "kind": "flow",
-      "n": "8",
-      "file": "flow/08-ganesha.jpg",
-      "title": "THROUGH THE ROOMS",
-      "status": "placeholder",
-      "scene": "6",
-      "note": "The corridor and the rooms behind it, flown through. Each room’s walls are made of the organ it stands for."
-    },
-    {
-      "kind": "flow",
-      "n": "9",
-      "file": "flow/09-brain-room.jpg",
-      "title": "GANESHA",
-      "status": "placeholder",
-      "scene": "8",
-      "note": "He rises out of the light, grows, and is gone. The last thing seen in the body before the brain."
-    },
-    {
-      "kind": "flow",
-      "n": "10",
-      "file": "flow/10-the-skull-door.jpg",
-      "title": "THE SKULL DOOR",
-      "status": "drawn",
-      "scene": "18",
-      "note": "Another door, made of bone, with a small name plate reading COACH BRAIN. He opens it the same way he opened the first."
-    },
-    {
-      "kind": "flow",
-      "n": "11",
-      "file": "flow/11-new-theory.jpg",
-      "title": "COACH BRAIN",
-      "status": "placeholder",
-      "scene": "6",
-      "note": "Inside. What happened? I pulled the brakes on you."
-    },
-    {
-      "kind": "flow",
-      "n": "12",
-      "file": "flow/12-conclusion.jpg",
-      "title": "THE OLD THEORY",
-      "status": "placeholder",
-      "scene": "10",
-      "note": "Manan explains what he read. Blackboard, white chalk, drawing itself as he speaks."
-    },
-    {
-      "kind": "flow",
-      "n": "13",
-      "file": "flow/13-the-key.jpg",
-      "title": "THE NEW THEORY",
-      "status": "placeholder",
-      "scene": "11",
-      "note": "Coach Brain answers. Whiteboard, black marker. The inversion."
-    },
-    {
-      "kind": "flow",
-      "n": "14",
-      "file": "flow/14-credits.jpg",
-      "title": "THE FLY THROUGH",
-      "status": "placeholder",
-      "scene": "12",
-      "note": "We fly at the banner reading THE LIMIT IS A SETTING and pass through it into white. Manan says the line while we are flying."
-    },
-    {
-      "kind": "flow",
-      "n": "15",
-      "file": "flow/the-key.jpg",
-      "title": "THE KEY",
-      "status": "placeholder",
-      "scene": "13",
-      "note": "Out of the white, a drawn hand gives the key to Manan’s real hand. He takes it. Then white, then black. THE END."
-    },
-    {
-      "kind": "flow",
-      "n": "16",
-      "file": "flow/end-credits.jpg",
-      "title": "END CREDITS",
-      "status": "placeholder",
-      "scene": "14",
-      "note": "Seven classical cards, in the longer version only."
-    },
-    {
       "kind": "keyframe",
       "shot": "16.0",
       "file": "BB_C_16/16-0-A-v1.png",
@@ -1300,6 +1135,154 @@
       "slug": "EXT. — THE HAND CLOSES",
       "what": "The fingers curl toward a grip.",
       "why": "THE LAST IMAGE. Fade out as he closes. Ending mid action is stronger than landing on a finished fist, and it means no frame has to be invented. THE TWO HANDS ARE NEVER IN THE SAME FRAME. Coach Brain drops the key, it falls through an empty frame, and we cut to Manan catching it. So there is nothing to composite and the lighting difference between the drawn hand and the footage does not matter: they are never side by side."
+    },
+    {
+      "kind": "flow",
+      "n": "0",
+      "file": "flow/00-title.jpg",
+      "title": "TITLE",
+      "status": "placeholder",
+      "scenes": [
+        "0"
+      ],
+      "note": "The film opens on its own title, drawn in the film’s hand."
+    },
+    {
+      "kind": "flow",
+      "n": "1",
+      "file": "flow/01-runner.jpg",
+      "title": "THE RUNNER",
+      "status": "placeholder",
+      "scenes": [
+        "1"
+      ],
+      "note": "A man at the end of himself finds a finish line and runs like he just started."
+    },
+    {
+      "kind": "flow",
+      "n": "2",
+      "file": "flow/02-bike-out.jpg",
+      "title": "HE TRIES IT HIMSELF",
+      "status": "placeholder",
+      "scenes": [
+        "2"
+      ],
+      "note": "Manan on a real bicycle on a real road. Curious, not convinced."
+    },
+    {
+      "kind": "flow",
+      "n": "3",
+      "file": "flow/03-bike-in.jpg",
+      "title": "RACING HIMSELF",
+      "status": "placeholder",
+      "scenes": [
+        "3"
+      ],
+      "note": "On the trainer at home, racing a recording of his own best ride."
+    },
+    {
+      "kind": "flow",
+      "n": "4",
+      "file": "flow/04-the-wall.jpg",
+      "title": "HE IS DONE",
+      "status": "placeholder",
+      "scenes": [
+        "4"
+      ],
+      "note": "Nothing left. He cannot go on."
+    },
+    {
+      "kind": "flow",
+      "n": "5",
+      "file": "flow/05-eyes-closed.jpg",
+      "title": "HE CLOSES HIS EYES",
+      "status": "placeholder",
+      "scenes": [
+        "5"
+      ],
+      "note": "He stops, breathes, relaxes. Out to white."
+    },
+    {
+      "kind": "flow",
+      "n": "6",
+      "file": "flow/06-the-house.jpg",
+      "title": "GANESHA",
+      "status": "placeholder",
+      "scenes": [
+        "9"
+      ],
+      "note": "He rises out of the light, grows, and is gone. Never explained, never mentioned. The remover of obstacles, at the threshold of a film about an obstacle that turns out to be a setting."
+    },
+    {
+      "kind": "flow",
+      "n": "7",
+      "file": "flow/07-the-front-door.jpg",
+      "title": "THE HOUSE OF THE BODY",
+      "status": "placeholder",
+      "scenes": [
+        "16",
+        "17",
+        "8",
+        "7"
+      ],
+      "note": "He stands in front of a building and the building is his body. He opens the front door, light floods out, and he goes through it: the corridor of named doors, the rooms behind them, and the threshold at the far end. Organic architecture in the manner of Gaudi throughout, never a factory."
+    },
+    {
+      "kind": "flow",
+      "n": "8",
+      "file": "flow/08-ganesha.jpg",
+      "title": "COACH BRAIN",
+      "status": "placeholder",
+      "scenes": [
+        "18",
+        "19"
+      ],
+      "note": "A second door, bone, with a plate reading COACH BRAIN. He opens it the same way he opened the first and goes in. What happened? I pulled the brakes on you."
+    },
+    {
+      "kind": "flow",
+      "n": "9",
+      "file": "flow/09-brain-room.jpg",
+      "title": "THE THEORIES",
+      "status": "placeholder",
+      "scenes": [
+        "10",
+        "11"
+      ],
+      "note": "Manan explains what he read on a blackboard in white chalk. Coach Brain answers on a whiteboard in black marker. Same layout, same three lines, same gauge, every value reversed."
+    },
+    {
+      "kind": "flow",
+      "n": "10",
+      "file": "flow/10-the-skull-door.jpg",
+      "title": "THE FLY THROUGH",
+      "status": "placeholder",
+      "scenes": [
+        "12"
+      ],
+      "note": "We fly at the banner reading THE LIMIT IS A SETTING and pass through it into white. Manan says the line while we are flying."
+    },
+    {
+      "kind": "flow",
+      "n": "11",
+      "file": "flow/11-new-theory.jpg",
+      "title": "THE KEY",
+      "status": "placeholder",
+      "scenes": [
+        "15"
+      ],
+      "note": "Coach Brain lets the key go, it falls through an empty frame, and we cut to Manan catching it. THE END."
+    },
+    {
+      "kind": "flow",
+      "n": "12",
+      "file": "flow/12-conclusion.jpg",
+      "title": "END CREDITS",
+      "status": "placeholder",
+      "scenes": [
+        "14"
+      ],
+      "note": "Seven classical cards, in the longer version only."
     }
   ],
   "event": "Breakthrough Junior Challenge 2026"
