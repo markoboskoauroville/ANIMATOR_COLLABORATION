@@ -1248,11 +1248,20 @@ for e in _fl:
               % (n, e.get('title', ''), st))
     # the last shot is phase 15, so its sequence belongs here in the flow rather
     # than at the foot of the page
-    has_strip = n in ('7', '11')
+    # a frame shown in a strip is not listed again in the grid below it, but the
+    # rest of the phase still is. Suppressing the whole grid hid the rooms of the
+    # house and printed EMPTY boxes over them.
+    in_strip = set()
     if n == '7':
         rt.append(arrival_strip())
+        in_strip = {f for f, _ in ARRIVAL if isinstance(f, str)}
     if n == '11':
+        # Baba, 31.8.2026: this phase shows the strip and nothing else. The other
+        # live stills and drawn attempts are still on their card pages.
         rt.append(lastshot_strip())
+        frames = []
+    if in_strip:
+        frames = [f for f in frames if f['file'] not in in_strip]
     if n == '12':
         # the same names as the cards, as plain text, so they can be copied into
         # a title tool without being retyped off a picture
@@ -1265,14 +1274,14 @@ for e in _fl:
             '<span class=warn>PLACEHOLDER. ONLY AUROVENKATESH, JAGAN AND PUSHPARAJ ARE CONFIRMED. '
             'EVERYTHING ELSE IS WAITING ON NEHA AND MUST NOT BE USED AS IS.</span></div>'
             % CREDITS_TEXT)
-    if frames and not has_strip:
+    if frames:
         rt.append('<div class=tiny>')
         for f in frames:
             b = os.path.basename(f['file']).rsplit('.', 1)[0].replace(' ', '_')
             rt.append('<a href="card/%s.html"><img src="tiny/%s.jpg" alt="" loading=lazy>'
                       '<div class=c>%s</div></a>' % (b, b, b))
         rt.append('</div>')
-    else:
+    elif not (n == '11'):
         rt.append('<div class=tiny>')
         for i in range(6):
             rt.append('<a><div class="box empty" style="aspect-ratio:16/9;border:1px dashed '
