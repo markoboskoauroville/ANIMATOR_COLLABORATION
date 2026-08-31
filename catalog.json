@@ -1403,6 +1403,19 @@
       "speaker": "COACH BRAIN",
       "line": "You found me. Took you long enough.",
       "linestate": "to record"
+    },
+    {
+      "kind": "keyframe",
+      "shot": "19.4",
+      "file": "BB_C_19/19-4-A-v1.png",
+      "status": "proposal",
+      "date": "2026-08-31",
+      "slug": "INT. CONTROL ROOM — ON MANAN, PLATE",
+      "what": "The room from the reverse side. The near end of the desk at the far left, the clay wall across the middle, the arched door at the right, and empty floor across the whole width. Camera at a standing person's chest height.",
+      "why": "THE THIRD OF THE THREE DIALOGUE SETUPS AND A PURE PLATE. Nobody is drawn in it. MANAN IS KEYED INTO THE MIDDLE OF THE FLOOR, standing, LOOKING LEFT toward Coach Brain, which is the screen direction the wide fixed. It came back clean first time because the prompt said the room was empty and gave no reason. The attempt before it explained that the space was where somebody would be standing, and the model drew them.",
+      "speaker": "MANAN",
+      "line": "You closed that door.",
+      "linestate": "recorded, PANA6308"
     }
   ],
   "event": "Breakthrough Junior Challenge 2026"
