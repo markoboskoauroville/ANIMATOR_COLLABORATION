@@ -1456,6 +1456,116 @@
       "slug": "EXT. — PUSHING",
       "what": "Leaning into it, further in.",
       "why": "Carries into phase 4, where he stops. LOW RESOLUTION FOR NOW, 380 px: the 1920 px originals were destroyed by an in-place downscale and are being re-exported from the Resolve timeline, STEP 77."
+    },
+    {
+      "kind": "keyframe",
+      "shot": "2.0",
+      "file": "BB_C_2/ref/V7_5_5_road.jpg",
+      "status": "placeholder",
+      "date": "2026-08-31",
+      "slug": "EXT. ROAD — DAY",
+      "what": "He rides on a real road, small against it.",
+      "why": "PLACEHOLDER. This is a reference frame from the document Venkatesh shot from, standing in until the real footage is exported. It shows the intended framing and nothing more. The phase was shot and the material exists; it is not on this machine yet."
+    },
+    {
+      "kind": "keyframe",
+      "shot": "2.1",
+      "file": "BB_C_2/ref/V7_5_1_bike.jpg",
+      "status": "placeholder",
+      "date": "2026-08-31",
+      "slug": "EXT. ROAD — CLOSER",
+      "what": "Working, but not yet in trouble.",
+      "why": "PLACEHOLDER. This is a reference frame from the document Venkatesh shot from, standing in until the real footage is exported. It shows the intended framing and nothing more. The phase was shot and the material exists; it is not on this machine yet."
+    },
+    {
+      "kind": "keyframe",
+      "shot": "2.2",
+      "file": "BB_C_2/ref/5_5_LIVE.jpg",
+      "status": "placeholder",
+      "date": "2026-08-31",
+      "slug": "EXT. ROAD — FROM THE SHOOT",
+      "what": "A frame from the day.",
+      "why": "PLACEHOLDER. This is a reference frame from the document Venkatesh shot from, standing in until the real footage is exported. It shows the intended framing and nothing more. The phase was shot and the material exists; it is not on this machine yet."
+    },
+    {
+      "kind": "keyframe",
+      "shot": "3.8",
+      "file": "BB_C_3/ref/V7_5_6_racing.jpg",
+      "status": "placeholder",
+      "date": "2026-08-31",
+      "slug": "INT. ROOM — RACING HIMSELF",
+      "what": "On the trainer with his own ride playing back.",
+      "why": "PLACEHOLDER. This is a reference frame from the document Venkatesh shot from, standing in until the real footage is exported. It shows the intended framing and nothing more. The phase was shot and the material exists; it is not on this machine yet."
+    },
+    {
+      "kind": "keyframe",
+      "shot": "3.9",
+      "file": "BB_C_3/ref/V7_5_4_idea_lands.jpg",
+      "status": "placeholder",
+      "date": "2026-08-31",
+      "slug": "INT. ROOM — THE IDEA LANDS",
+      "what": "The moment he decides to try it.",
+      "why": "PLACEHOLDER. This is a reference frame from the document Venkatesh shot from, standing in until the real footage is exported. It shows the intended framing and nothing more. The phase was shot and the material exists; it is not on this machine yet."
+    },
+    {
+      "kind": "keyframe",
+      "shot": "4.0",
+      "file": "BB_C_4/ref/V7_5_7_the_wall.jpg",
+      "status": "placeholder",
+      "date": "2026-08-31",
+      "slug": "INT. ROOM — HE IS DONE",
+      "what": "Nothing left. He stops.",
+      "why": "PLACEHOLDER. This is a reference frame from the document Venkatesh shot from, standing in until the real footage is exported. It shows the intended framing and nothing more. The phase was shot and the material exists; it is not on this machine yet."
+    },
+    {
+      "kind": "keyframe",
+      "shot": "4.1",
+      "file": "BB_C_4/ref/V7_5_3_beat_it.jpg",
+      "status": "placeholder",
+      "date": "2026-08-31",
+      "slug": "INT. ROOM — THE NUMBER",
+      "what": "What he was chasing, and did not reach.",
+      "why": "PLACEHOLDER. This is a reference frame from the document Venkatesh shot from, standing in until the real footage is exported. It shows the intended framing and nothing more. The phase was shot and the material exists; it is not on this machine yet."
+    },
+    {
+      "kind": "keyframe",
+      "shot": "4.2",
+      "file": "BB_C_4/ref/5_7_LIVE.jpg",
+      "status": "placeholder",
+      "date": "2026-08-31",
+      "slug": "INT. ROOM — FROM THE SHOOT",
+      "what": "A frame from the day.",
+      "why": "PLACEHOLDER. This is a reference frame from the document Venkatesh shot from, standing in until the real footage is exported. It shows the intended framing and nothing more. The phase was shot and the material exists; it is not on this machine yet."
+    },
+    {
+      "kind": "keyframe",
+      "shot": "5.0",
+      "file": "BB_C_5/ref/V7_5_8_eyes_closed.jpg",
+      "status": "placeholder",
+      "date": "2026-08-31",
+      "slug": "INT. ROOM — EYES CLOSED",
+      "what": "He stops pushing and closes his eyes.",
+      "why": "PLACEHOLDER. This is a reference frame from the document Venkatesh shot from, standing in until the real footage is exported. It shows the intended framing and nothing more. The phase was shot and the material exists; it is not on this machine yet."
+    },
+    {
+      "kind": "keyframe",
+      "shot": "5.1",
+      "file": "BB_C_5/ref/V7_8_1_breathing.jpg",
+      "status": "placeholder",
+      "date": "2026-08-31",
+      "slug": "INT. ROOM — BREATHING",
+      "what": "Stillness. This is the way in.",
+      "why": "PLACEHOLDER. This is a reference frame from the document Venkatesh shot from, standing in until the real footage is exported. It shows the intended framing and nothing more. The phase was shot and the material exists; it is not on this machine yet."
+    },
+    {
+      "kind": "keyframe",
+      "shot": "5.2",
+      "file": "BB_C_5/ref/5_8_LIVE.jpg",
+      "status": "placeholder",
+      "date": "2026-08-31",
+      "slug": "INT. ROOM — FROM THE SHOOT",
+      "what": "A frame from the day.",
+      "why": "PLACEHOLDER. This is a reference frame from the document Venkatesh shot from, standing in until the real footage is exported. It shows the intended framing and nothing more. The phase was shot and the material exists; it is not on this machine yet."
     }
   ],
   "event": "Breakthrough Junior Challenge 2026"

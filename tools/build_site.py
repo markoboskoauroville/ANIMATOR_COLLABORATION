@@ -1251,13 +1251,16 @@ for e in _fl:
     # filter another phase's frames out of a shared folder
     # a phase whose frames are all photographs says so: calling footage "drawn"
     # was misleading on the one phase that was shot rather than drawn
+    # the label says what the frames actually are. Calling a reference still
+    # "drawn" hides that a phase is still waiting for its real material.
     shot = [f for f in frames if '/live/' in f.get('file', '')]
-    if frames and len(shot) == len(frames):
-        st = '%d shot' % len(frames)
-    elif frames:
-        st = '%d drawn' % len(frames)
-    else:
-        st = 'LIVE ACTION' if live else 'NOT DRAWN YET'
+    ref  = [f for f in frames if f.get('status') == 'placeholder']
+    drawn = [f for f in frames if f not in shot and f not in ref]
+    bits = []
+    if drawn: bits.append('%d drawn' % len(drawn))
+    if shot:  bits.append('%d shot' % len(shot))
+    if ref:   bits.append('%d reference' % len(ref))
+    st = ', '.join(bits) if bits else ('LIVE ACTION' if live else 'NOT DRAWN YET')
     rt.append('<div class=rtph><span class=n>%s</span><h3>%s</h3><span class=st>%s</span></div>'
               % (n, e.get('title', ''), st))
     # the last shot is phase 15, so its sequence belongs here in the flow rather
