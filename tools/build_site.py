@@ -295,7 +295,7 @@ h2{font-size:19px;margin:38px 0 14px;padding-bottom:7px;border-bottom:1px solid 
 .seqstrip .f img{width:100%;display:block;border:1px solid var(--rule);background:var(--card)}
 .seqstrip .f .n{font:600 8.5px ui-monospace,monospace;letter-spacing:.06em;color:var(--dim);
  padding-top:5px}
-.seqstrip .f iframe{width:100%;aspect-ratio:16/9;border:1px solid var(--rule);display:block;
+.seqstrip .f iframe,.seqstrip .f video{width:100%;aspect-ratio:16/9;border:1px solid var(--rule);display:block;
  background:var(--card);pointer-events:none}
 .seqstrip .f .vid{position:relative}
 .seqstrip .f .vid .lbl{position:absolute;left:5px;bottom:5px;background:var(--brass);
@@ -1133,13 +1133,13 @@ LASTSHOT = [
     ('BB_C_15/live/PANA6276_11_47_46_08.png', 'his hand arrives'),
     ('BB_C_15/live/PANA6279_11_48_30_06.png', 'the key lands'),
     ('BB_C_15/live/KEY_CATCH_1_00_00_04_19.png', 'he closes on it'),
-    (('yt', 'e6PPvpJt5ZI'), 'the catch, moving'),
+    (('mp4', 'clips/key-catch-loop.mp4'), 'the catch, moving'),
 ]
 
 
 ARRIVAL = [
     ('BB_C_16/live/16-1-MOCKUP-v1.png', 'he is at the door'),
-    (('yt', '4__oXqbMoAc'), 'in front of the door'),
+    (('mp4', 'clips/in-front-of-door-loop.mp4'), 'in front of the door'),
     ('BB_C_16/16-1-A-v1.png', 'the door open'),
     ('BB_C_16/16-0-A-v1.png', 'the door shut'),
 ]
@@ -1150,6 +1150,16 @@ def strip(items, lede, prefix=''):
     for f, label in items:
         if f is None:
             out.append('<div class=cut>&rarr;</div>')
+            continue
+        if isinstance(f, tuple) and f[0] == 'mp4':
+            # a native loop. A YouTube embed lays a title card and a watermark
+            # over the picture, which is unreadable at thumbnail size, so these
+            # are served straight from the repository instead.
+            out.append('<div class=f><div class=vid>'
+                       '<video src="%s%s" autoplay muted loop playsinline preload=metadata '
+                       'disablepictureinpicture tabindex=-1></video>'
+                       '<span class=lbl>LOOP</span></div><div class=n>%s</div></div>'
+                       % (prefix, f[1], label.upper()))
             continue
         if isinstance(f, tuple) and f[0] == 'yt':
             vid = f[1]
@@ -1179,36 +1189,11 @@ def arrival_strip(prefix=''):
 
 
 def lastshot_strip(prefix=''):
-    out = ['<p class=lede>Coach Brain lets the key go, it falls through an empty frame, and we cut. '
-           'His hand and Manan’s are never on screen together, so nothing is composited and the '
-           'lighting difference between the drawing and the footage does not matter. '
-           'The first three are drawn. The last three are real.</p>',
-           '<div class=seqstrip>']
-    for f, label in LASTSHOT:
-        if f is None:
-            out.append('<div class=cut>&rarr;</div>')
-            continue
-        if isinstance(f, tuple) and f[0] == 'yt':
-            # a silent looping preview at thumbnail size. No controls, no sound,
-            # nothing to click: it reads as a still that happens to move. The
-            # full resolution file is reached from the card page, not from here.
-            vid = f[1]
-            out.append('<div class=f><div class=vid>'
-                       '<iframe src="https://www.youtube-nocookie.com/embed/%s'
-                       '?autoplay=1&mute=1&loop=1&playlist=%s&controls=0&modestbranding=1'
-                       '&playsinline=1&rel=0&disablekb=1" '
-                       'title="%s" frameborder=0 allow="autoplay" tabindex=-1></iframe>'
-                       '<span class=lbl>LOOP</span></div>'
-                       '<div class=n>%s</div></div>'
-                       % (vid, vid, label, label.upper()))
-            continue
-        if not os.path.exists(os.path.join(ROOT, f)):
-            continue
-        out.append('<div class=f><a href="%s%s"><img src="%s%s" alt="" loading=lazy></a>'
-                   '<div class=n>%s</div></div>'
-                   % (prefix, f, prefix, small(f, 'tiny'), label.upper()))
-    out.append('</div>')
-    return ''.join(out)
+    return strip(LASTSHOT,
+                 'Coach Brain lets the key go, it falls through an empty frame, and we cut. '
+                 'His hand and Manan\u2019s are never on screen together, so nothing is composited '
+                 'and the lighting difference between the drawing and the footage does not matter. '
+                 'The first three are drawn. The last three are real.', prefix)
 
 
 _titlecard = 'BB_C_0/0-0-TITLE-v1.png'

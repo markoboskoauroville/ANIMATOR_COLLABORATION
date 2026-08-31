@@ -1335,9 +1335,9 @@
       "why": "THE LAST IMAGE IN THE FILM. Shot against black so it keys cleanly, and composited here onto the film's own measured paper. This is the frame that did not exist when the ending was planned; it was shot afterwards and it removes the need to invent anything. KEY FROM THE ORIGINAL, NOT FROM THIS COMPOSITE: the hood at the right edge picks up a rough matte where the fabric shadow meets the black, and it wants a proper key rather than my luma one.",
       "source": [
         {
-          "name": "The catch, moving",
-          "url": "https://youtu.be/e6PPvpJt5ZI",
-          "note": "The clip that loops in the sequence on the front page, at full size and with sound. The loop there is a preview only: it is muted, has no controls and is meant to read as a still that moves. Composite from the alpha footage below, never from the preview."
+          "name": "The catch, the clip",
+          "url": "../clips/key-catch.mp4",
+          "note": "The clip that loops in the sequence on the front page, at 4K. The loop there is 480 wide and silent, small enough that the page stays light. Served from this repository rather than YouTube, which lays a title card and a watermark over an embed and makes it unreadable at thumbnail size."
         },
         {
           "name": "The footage, with alpha",
@@ -1357,9 +1357,9 @@
       "why": "THE FRAME THE ARRIVAL PULL BACK STARTS ON. A mockup: he is keyed by luma from footage shot against black and graded onto the film's paper. IT SHOWS SCALE AND POSITION, NOT THE FINISH. Composite from the alpha footage. An earlier attempt measured the light spill instead of the arch and made him taller than the door; the opening is 463 px and he is 370.",
       "source": [
         {
-          "name": "In front of the door, moving",
-          "url": "https://youtu.be/4__oXqbMoAc",
-          "note": "The clip that loops in the arrival sequence on the front page, at full size. The loop there is a preview only: muted, no controls, meant to read as a still that moves."
+          "name": "In front of the door, the clip",
+          "url": "../clips/in-front-of-door.mp4",
+          "note": "The clip that loops in the sequence on the front page, at 4K. The loop there is 480 wide and silent, small enough that the page stays light. Served from this repository rather than YouTube, which lays a title card and a watermark over an embed and makes it unreadable at thumbnail size."
         },
         {
           "name": "The door footage, with alpha",
