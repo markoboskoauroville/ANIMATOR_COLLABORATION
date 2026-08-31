@@ -1187,6 +1187,15 @@
       "slug": "INT. THE BODY — THE CONTROL ROOM",
       "what": "Coach Brain seated at a long desk that grows out of the floor on a swelling base, its dials sunk into shallow hollows, the screens in an irregular cluster of rounded openings in the wall, the door arched and soft panelled.",
       "why": "REBUILT 31.8.2026 in the language of the house, and it is the deepest room in the body. The clay walls with their shallow winding grooves are unchanged and were always right. THE SCREENS AS CELLS are the detail that matters: the last piece of machinery becomes part of the body. The floor kept rectangular slabs despite being asked three times across three frames; it barely reads and was left."
+    },
+    {
+      "frame": "11",
+      "file": "reference/OBJECT_SHEET_DESK-v3.png",
+      "kind": "sheet",
+      "title": "Coach Brain's desk and chair",
+      "status": "reference",
+      "date": "2026-08-31",
+      "note": "Four views of the grown desk and its chair: front, three quarter, side, rear. THE SIDE VIEW IS THE USEFUL ONE, it shows the desk and the floor as a single continuous curve, which is what you need to redraw it from any angle. Dials and levers sit down in shallow hollows, never bolted onto a panel, and nothing has a rivet, bolt, flange or straight edge. The chair is a shell on a single stem. ONE DIFFERENCE FROM THE ROOM: this sheet draws the screens as part of the console. In the room they are cell-like openings in the clay wall behind it. Keep them in the wall."
     }
   ],
   "event": "Breakthrough Junior Challenge 2026"
