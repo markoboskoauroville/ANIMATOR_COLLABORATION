@@ -273,6 +273,12 @@ h2{font-size:19px;margin:38px 0 14px;padding-bottom:7px;border-bottom:1px solid 
  color:var(--dim)}
 .filmfoot span{display:block;font-weight:600;font-size:9px;letter-spacing:.14em;
  padding-top:6px;color:var(--dim);opacity:.75}
+.srcbox{margin:16px 0 6px;padding:13px 16px;background:var(--box);
+ border-left:3px solid var(--brass)}
+.srcbox .t{display:flex;justify-content:space-between;align-items:baseline;gap:12px}
+.srcbox .t b{font:700 10.5px ui-monospace,monospace;letter-spacing:.11em;
+ text-transform:uppercase;color:var(--body)}
+.srcbox p{margin:7px 0 0;font-size:12.5px;line-height:1.55;color:var(--dim)}
 .creds{margin:16px 0 8px 44px;max-width:760px}
 .creds .hd{display:flex;justify-content:space-between;align-items:baseline;gap:12px;
  margin-bottom:8px}
@@ -1227,6 +1233,12 @@ for _i, e in enumerate(_order):
     if e.get('why'):
         cd.append('<p class=note>%s</p>' % e['why'])
     cd.append('<p class=note style="color:var(--dim)">%s</p>' % e.get('note', ''))
+
+    for src in (e.get('source') or []):
+        cd.append('<div class=srcbox><div class=t><b>%s</b>'
+                  '<a class=dl href="%s" target=_blank rel=noopener>OPEN ON DRIVE &nearr;</a></div>'
+                  '<p>%s</p></div>'
+                  % (src.get('name', 'source footage'), src['url'], src.get('note', '')))
 
     for a in (e.get('audio') or []):
         amb = os.path.getsize(os.path.join(ROOT, a['file'])) / 1048576.0

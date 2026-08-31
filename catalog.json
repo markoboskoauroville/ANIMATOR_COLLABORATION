@@ -1102,7 +1102,14 @@
       "date": "2026-08-31",
       "slug": "EXT. — MANAN’S HAND ARRIVES",
       "what": "His open palm comes into frame from below, empty.",
-      "why": "CUT. Coach Brain is gone. This is real footage and it is where the film returns to the world. THE TWO HANDS ARE NEVER IN THE SAME FRAME. Coach Brain drops the key, it falls through an empty frame, and we cut to Manan catching it. So there is nothing to composite and the lighting difference between the drawn hand and the footage does not matter: they are never side by side."
+      "why": "CUT. Coach Brain is gone. This is real footage and it is where the film returns to the world. THE TWO HANDS ARE NEVER IN THE SAME FRAME. Coach Brain drops the key, it falls through an empty frame, and we cut to Manan catching it. So there is nothing to composite and the lighting difference between the drawn hand and the footage does not matter: they are never side by side.",
+      "source": [
+        {
+          "name": "The footage, with alpha",
+          "url": "https://drive.google.com/drive/folders/1YGb_z7OCrLSUX7JagNpynXbu1fAK2wNu",
+          "note": "The whole take with a real alpha channel, ready to composite. The still above is a mockup keyed by luma and it is not good enough to finish with: the hood picks up a rough matte where the fabric shadow meets the black. Pull the frames you need from this footage instead."
+        }
+      ]
     },
     {
       "kind": "keyframe",
@@ -1112,7 +1119,14 @@
       "date": "2026-08-31",
       "slug": "EXT. — THE KEY LANDS",
       "what": "The key is in his open palm, still, caught.",
-      "why": "The real key, shot with the real hand. Nothing composited and nothing drawn. THE TWO HANDS ARE NEVER IN THE SAME FRAME. Coach Brain drops the key, it falls through an empty frame, and we cut to Manan catching it. So there is nothing to composite and the lighting difference between the drawn hand and the footage does not matter: they are never side by side."
+      "why": "The real key, shot with the real hand. Nothing composited and nothing drawn. THE TWO HANDS ARE NEVER IN THE SAME FRAME. Coach Brain drops the key, it falls through an empty frame, and we cut to Manan catching it. So there is nothing to composite and the lighting difference between the drawn hand and the footage does not matter: they are never side by side.",
+      "source": [
+        {
+          "name": "The footage, with alpha",
+          "url": "https://drive.google.com/drive/folders/1YGb_z7OCrLSUX7JagNpynXbu1fAK2wNu",
+          "note": "The whole take with a real alpha channel, ready to composite. The still above is a mockup keyed by luma and it is not good enough to finish with: the hood picks up a rough matte where the fabric shadow meets the black. Pull the frames you need from this footage instead."
+        }
+      ]
     },
     {
       "kind": "keyframe",
@@ -1122,7 +1136,14 @@
       "date": "2026-08-31",
       "slug": "EXT. — THE HAND CLOSES",
       "what": "The fingers curl toward a grip.",
-      "why": "THE LAST IMAGE. Fade out as he closes. Ending mid action is stronger than landing on a finished fist, and it means no frame has to be invented. THE TWO HANDS ARE NEVER IN THE SAME FRAME. Coach Brain drops the key, it falls through an empty frame, and we cut to Manan catching it. So there is nothing to composite and the lighting difference between the drawn hand and the footage does not matter: they are never side by side."
+      "why": "THE LAST IMAGE. Fade out as he closes. Ending mid action is stronger than landing on a finished fist, and it means no frame has to be invented. THE TWO HANDS ARE NEVER IN THE SAME FRAME. Coach Brain drops the key, it falls through an empty frame, and we cut to Manan catching it. So there is nothing to composite and the lighting difference between the drawn hand and the footage does not matter: they are never side by side.",
+      "source": [
+        {
+          "name": "The footage, with alpha",
+          "url": "https://drive.google.com/drive/folders/1YGb_z7OCrLSUX7JagNpynXbu1fAK2wNu",
+          "note": "The whole take with a real alpha channel, ready to composite. The still above is a mockup keyed by luma and it is not good enough to finish with: the hood picks up a rough matte where the fabric shadow meets the black. Pull the frames you need from this footage instead."
+        }
+      ]
     },
     {
       "kind": "flow",
@@ -1311,7 +1332,14 @@
       "date": "2026-08-31",
       "slug": "EXT. — HE CLOSES ON IT",
       "what": "His fist closed around the key, the gold just visible between the fingers.",
-      "why": "THE LAST IMAGE IN THE FILM. Shot against black so it keys cleanly, and composited here onto the film's own measured paper. This is the frame that did not exist when the ending was planned; it was shot afterwards and it removes the need to invent anything. KEY FROM THE ORIGINAL, NOT FROM THIS COMPOSITE: the hood at the right edge picks up a rough matte where the fabric shadow meets the black, and it wants a proper key rather than my luma one."
+      "why": "THE LAST IMAGE IN THE FILM. Shot against black so it keys cleanly, and composited here onto the film's own measured paper. This is the frame that did not exist when the ending was planned; it was shot afterwards and it removes the need to invent anything. KEY FROM THE ORIGINAL, NOT FROM THIS COMPOSITE: the hood at the right edge picks up a rough matte where the fabric shadow meets the black, and it wants a proper key rather than my luma one.",
+      "source": [
+        {
+          "name": "The footage, with alpha",
+          "url": "https://drive.google.com/drive/folders/1YGb_z7OCrLSUX7JagNpynXbu1fAK2wNu",
+          "note": "The whole take with a real alpha channel, ready to composite. The still above is a mockup keyed by luma and it is not good enough to finish with: the hood picks up a rough matte where the fabric shadow meets the black. Pull the frames you need from this footage instead."
+        }
+      ]
     }
   ],
   "event": "Breakthrough Junior Challenge 2026"
