@@ -1079,8 +1079,7 @@ LASTSHOT = [
 
 
 def lastshot_strip(prefix=''):
-    out = ['<h2>The last shot</h2>',
-           '<p class=lede>Coach Brain lets the key go, it falls through an empty frame, and we cut. '
+    out = ['<p class=lede>Coach Brain lets the key go, it falls through an empty frame, and we cut. '
            'His hand and Manan’s are never on screen together, so nothing is composited and the '
            'lighting difference between the drawing and the footage does not matter. '
            'The first three are drawn. The last two are real.</p>',
@@ -1126,6 +1125,10 @@ for e in _fl:
     st = ('%d drawn' % len(frames)) if frames else ('LIVE ACTION' if live else 'NOT DRAWN YET')
     rt.append('<div class=rtph><span class=n>%s</span><h3>%s</h3><span class=st>%s</span></div>'
               % (n, e.get('title', ''), st))
+    # the last shot is phase 15, so its sequence belongs here in the flow rather
+    # than at the foot of the page
+    if n == '15':
+        rt.append(lastshot_strip())
     if frames:
         rt.append('<div class=tiny>')
         for f in frames:
@@ -1141,7 +1144,6 @@ for e in _fl:
                       % ('FOOTAGE' if live else 'EMPTY'))
         rt.append('</div>')
 rt.append('</div>')
-rt.append(lastshot_strip())
 open(os.path.join(ROOT, 'index.html'), 'w').write(
     page('%s, %s' % (FILM.title(), SUBTITLE), ''.join(rt), here='home', depth=0))
 
