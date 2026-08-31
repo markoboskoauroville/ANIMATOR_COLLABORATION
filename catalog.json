@@ -653,10 +653,11 @@
       "file": "BB_C_3/3-0-A-v2.png",
       "status": "reference",
       "date": "2026-08-30",
-      "note": "Kept as framing reference, not a shot. Phase 3 is live action as of 31.8.2026, so Manan is a photograph here. The idea this frame carries, him and the screen legible in one frame, still applies to how the footage is cut.",
+      "note": "Off the storyboard, 31.8.2026. PHASE 3 WAS SHOT AND THE FOOTAGE IS USED. A drawn Manan does not belong on the page when a real one exists: he is a photograph everywhere else in the bicycle sequence and drawing him here contradicts the film's founding law. Kept in the catalogue as framing reference only.",
       "slug": "INT. ROOM — DAY — MANAN ON THE TRAINER",
       "what": "A boy on an exercise bike leaning into a large laptop, its screen a blank rectangle of bare paper.",
-      "why": "A COMPOSITE PLATE. THE SCREEN IS A HOLE: the earlier ride footage goes in it. He is racing a recording of himself and no still we have says that. Same framing as the runner seeing the finish line, so the two rhyme."
+      "why": "A COMPOSITE PLATE. THE SCREEN IS A HOLE: the earlier ride footage goes in it. He is racing a recording of himself and no still we have says that. Same framing as the runner seeing the finish line, so the two rhyme.",
+      "storyboard": "hide"
     },
     {
       "kind": "keyframe",

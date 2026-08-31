@@ -1249,7 +1249,15 @@ for e in _fl:
     # the corridor and the rooms are the journey, the control room is Coach Brain.
     # every shot number is unique again as of 31.8.2026, so no phase needs to
     # filter another phase's frames out of a shared folder
-    st = ('%d drawn' % len(frames)) if frames else ('LIVE ACTION' if live else 'NOT DRAWN YET')
+    # a phase whose frames are all photographs says so: calling footage "drawn"
+    # was misleading on the one phase that was shot rather than drawn
+    shot = [f for f in frames if '/live/' in f.get('file', '')]
+    if frames and len(shot) == len(frames):
+        st = '%d shot' % len(frames)
+    elif frames:
+        st = '%d drawn' % len(frames)
+    else:
+        st = 'LIVE ACTION' if live else 'NOT DRAWN YET'
     rt.append('<div class=rtph><span class=n>%s</span><h3>%s</h3><span class=st>%s</span></div>'
               % (n, e.get('title', ''), st))
     # the last shot is phase 15, so its sequence belongs here in the flow rather
