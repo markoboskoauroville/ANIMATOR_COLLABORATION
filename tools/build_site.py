@@ -1130,9 +1130,6 @@ LASTSHOT = [
     ('BB_C_15/15-3-A-v1.png', 'turns over'),
     ('BB_C_15/15-4-A-v1.png', 'the key alone'),
     (None, 'CUT'),
-    ('BB_C_15/live/PANA6276_11_47_46_08.png', 'his hand arrives'),
-    ('BB_C_15/live/PANA6279_11_48_30_06.png', 'the key lands'),
-    ('BB_C_15/live/KEY_CATCH_1_00_00_04_19.png', 'he closes on it'),
     (('mp4', 'clips/key-catch-loop.mp4'), 'the catch, moving'),
 ]
 
@@ -1193,7 +1190,7 @@ def lastshot_strip(prefix=''):
                  'Coach Brain lets the key go, it falls through an empty frame, and we cut. '
                  'His hand and Manan\u2019s are never on screen together, so nothing is composited '
                  'and the lighting difference between the drawing and the footage does not matter. '
-                 'The first three are drawn. The last three are real.', prefix)
+                 'The first three are drawn. The catch is the live clip, looping here as it will cut.', prefix)
 
 
 _titlecard = 'BB_C_0/0-0-TITLE-v1.png'
