@@ -1,6 +1,6 @@
 {
   "film": "THE BRAIN BRAKE",
-  "subtitle": "Breakthrough Junior Challenge 2026",
+  "subtitle": "The Central Governor Theory",
   "version": "V9 DRAFT",
   "working_scene": "1",
   "updated": "2026-08-28",
@@ -1135,5 +1135,6 @@
       "scene": "14",
       "note": "Seven classical cards, in the longer version only."
     }
-  ]
+  ],
+  "event": "Breakthrough Junior Challenge 2026"
 }

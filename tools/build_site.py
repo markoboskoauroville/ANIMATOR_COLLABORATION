@@ -16,6 +16,9 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 CAT = json.load(open(os.path.join(ROOT, 'catalog.json')))
 SCENES = CAT['scenes']
 VERSION = CAT.get('version', '')
+FILM = CAT.get('film', 'THE BRAIN BRAKE')
+SUBTITLE = CAT.get('subtitle', '')
+EVENT = CAT.get('event', '')
 WORKING = str(CAT.get('working_scene', ''))
 ARCHIVE = {}
 _ap = os.path.join(ROOT, 'archive.json')
@@ -265,6 +268,16 @@ h2{font-size:19px;margin:38px 0 14px;padding-bottom:7px;border-bottom:1px solid 
  letter-spacing:.11em;color:#17150f;background:var(--brass);border-radius:2px;padding:3px 7px}
 @media(max-width:900px){.fp{width:calc(50% - 10px)}}
 @media(max-width:600px){.fp{width:100%}}
+.filmfoot{margin:60px 0 10px;padding-top:18px;border-top:1px solid var(--rule);
+ text-align:center;font:700 11px ui-monospace,monospace;letter-spacing:.16em;
+ color:var(--dim)}
+.filmfoot span{display:block;font-weight:600;font-size:9px;letter-spacing:.14em;
+ padding-top:6px;color:var(--dim);opacity:.75}
+.mast{margin:0 0 26px}
+.mast img{width:100%;max-width:760px;display:block;border:1px solid var(--rule);
+ background:var(--card);margin:0 auto}
+.mast .sub{text-align:center;font:600 10px ui-monospace,monospace;letter-spacing:.18em;
+ color:var(--dim);padding-top:10px;text-transform:uppercase}
 .rtsheet{max-width:1180px;margin:0 auto}
 .tiny{display:flex;flex-wrap:wrap;gap:9px;margin:12px 0 4px}
 .tiny a{width:calc(16.666% - 8px);display:block;text-decoration:none;color:inherit}
@@ -582,9 +595,14 @@ def page(title, body, here=None, depth=0):
             # HIDDEN ONLY WHEN THERE IS A GATE TO UNHIDE IT. On 28.8.2026 the gate was
             # switched off and this div stayed display:none, so every page went blank
             # in the middle of production. Nothing else on the site ever un-hides it.
-            '<div id=app style="display:%s">%s<div class=wrap>%s</div></div></body></html>'
+            '<div id=app style="display:%s">%s<div class=wrap>%s'
+            # the film's full name sits at the foot of every page, so the subtitle
+            # travels with the work wherever a page is opened or printed
+            '<p class=filmfoot>%s<br><span>%s &nbsp;&middot;&nbsp; %s</span></p>'
+            '</div></div></body></html>'
             % (title, r, r, r, r, CSS, GATE if GATED else '',
-               'none' if GATED else 'block', bar(here, r), body))
+               'none' if GATED else 'block', bar(here, r), body,
+               FILM, SUBTITLE, EVENT))
 
 
 import re
@@ -1040,7 +1058,14 @@ for e in _kf:
 
 _fl = flow_of()
 _done = sum(len(v) for v in _byscene.values())
-rt = ['<h1>THE BRAIN BRAKE ANIMATIC</h1>',
+_titlecard = 'BB_C_0/0-0-TITLE-v1.png'
+_mast = ''
+if os.path.exists(os.path.join(ROOT, _titlecard)):
+    _mast = ('<div class=mast><a href="card/0-0-TITLE-v1.html">'
+             '<img src="%s" alt="%s, %s"></a>'
+             '<div class=sub>%s &nbsp;&middot;&nbsp; %s</div></div>'
+             % (small(_titlecard), FILM, SUBTITLE, SUBTITLE, EVENT))
+rt = [_mast, '<h1>THE BRAIN BRAKE ANIMATIC</h1>',
       '<p class=lede>The whole film as a storyboard, in order. <b>%d frames drawn so far.</b> '
       'Empty frames are phases that have not been drawn yet, and they are shown on purpose so the '
       'gaps are as visible as the work. This page is built from the catalogue, so it is current the '
@@ -1079,7 +1104,7 @@ for e in _fl:
         rt.append('</div>')
 rt.append('</div>')
 open(os.path.join(ROOT, 'index.html'), 'w').write(
-    page('The Brain Brake Animatic', ''.join(rt), here='home', depth=0))
+    page('%s, %s' % (FILM.title(), SUBTITLE), ''.join(rt), here='home', depth=0))
 
 # ------------------------------------------------------------- the card pages
 # One page per frame. A medium image, never the full one, the code on the left
