@@ -312,6 +312,11 @@ h2{font-size:19px;margin:38px 0 14px;padding-bottom:7px;border-bottom:1px solid 
 .seqstrip .cut{width:16px;display:flex;align-items:center;justify-content:center;
  font:700 12px ui-monospace,monospace;color:var(--brass)}
 @media(max-width:820px){.seqstrip .f{width:calc(33.33% - 8px)}.seqstrip .cut{display:none}}
+.flight{margin:0 0 22px;padding:16px 20px;background:var(--box);
+ border-left:3px solid var(--brass);max-width:1180px}
+.flight b{display:block;font:700 11px ui-monospace,monospace;letter-spacing:.13em;
+ text-transform:uppercase;color:var(--body);margin-bottom:8px}
+.flight p{margin:0;font-size:13px;line-height:1.65;color:var(--dim)}
 .sitev{font:700 10px ui-monospace,monospace;letter-spacing:.14em;color:#17150f;
  background:var(--brass);border-radius:3px;padding:3px 8px;margin-left:10px}
 .mast{margin:0 0 26px}
@@ -1246,7 +1251,9 @@ if os.path.exists(os.path.join(ROOT, _titlecard)):
              '<img src="%s" alt="%s, %s"></a>'
              '<div class=sub>%s &nbsp;&middot;&nbsp; %s</div></div>'
              % (small(_titlecard), FILM, SUBTITLE, SUBTITLE, EVENT))
-rt = [_mast, '<h1>THE BRAIN BRAKE ANIMATIC</h1>',
+_flight = ('<div class=flight><b>How the second half moves</b><p>%s</p></div>'
+           % CAT.get('flight_note', '')) if CAT.get('flight_note') else ''
+rt = [_mast, '<h1>THE BRAIN BRAKE ANIMATIC</h1>', _flight,
       '<p class=lede>The whole film as a storyboard, in order. <b>%d frames drawn so far.</b> '
       'Empty frames are phases that have not been drawn yet, and they are shown on purpose so the '
       'gaps are as visible as the work. This page is built from the catalogue, so it is current the '
