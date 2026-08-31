@@ -713,7 +713,10 @@
       "note": "MANAN'S SIDE OF THE ROOM, AND IT IS A PLATE. Same control room as 6.3 from a new angle: console away on the left, screens above it, the closed riveted door on the right. THE WHOLE RIGHT HALF IS OPEN FLAGSTONE WITH NOTHING ON IT, because that is where Manan is keyed in from the grey backdrop footage, walking in through that door. He is never drawn. The chair is gone because Coach Brain is not in this shot yet: Manan arrives, asks what happened, and the answer comes after.",
       "slug": "INT. CONTROL ROOM — MANAN’S SIDE",
       "what": "The room from a new angle. Console away on the left, the closed door on the right, and the whole right half open flagstone.",
-      "why": "A PLATE. The empty floor is where Manan is keyed in from the grey backdrop footage, walking in through that door. He is never drawn."
+      "why": "A PLATE. The empty floor is where Manan is keyed in from the grey backdrop footage, walking in through that door. He is never drawn.",
+      "speaker": "MANAN",
+      "line": "You closed that door.",
+      "linestate": "recorded, PANA6308"
     },
     {
       "kind": "keyframe",
@@ -1010,7 +1013,10 @@
       "date": "2026-08-31",
       "slug": "INT. THE BODY — THE CONTROL ROOM",
       "what": "Coach Brain seated at a long desk that grows out of the floor on a swelling base, its dials sunk into shallow hollows, the screens in an irregular cluster of rounded openings in the wall, the door arched and soft panelled.",
-      "why": "REBUILT 31.8.2026 in the language of the house, and it is the deepest room in the body. The clay walls with their shallow winding grooves are unchanged and were always right. THE SCREENS AS CELLS are the detail that matters: the last piece of machinery becomes part of the body. The floor kept rectangular slabs despite being asked three times across three frames; it barely reads and was left."
+      "why": "REBUILT 31.8.2026 in the language of the house, and it is the deepest room in the body. The clay walls with their shallow winding grooves are unchanged and were always right. THE SCREENS AS CELLS are the detail that matters: the last piece of machinery becomes part of the body. The floor kept rectangular slabs despite being asked three times across three frames; it barely reads and was left.",
+      "speaker": "COACH BRAIN",
+      "line": "You found me. Took you long enough.",
+      "linestate": "to record"
     },
     {
       "frame": "11",

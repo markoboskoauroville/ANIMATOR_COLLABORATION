@@ -322,6 +322,12 @@ h2{font-size:19px;margin:38px 0 14px;padding-bottom:7px;border-bottom:1px solid 
 .tiny img{width:100%;display:block;border:1px solid var(--rule);background:var(--card)}
 .tiny a:hover img{border-color:var(--brass)}
 .tiny .c{font:600 8.5px ui-monospace,monospace;letter-spacing:.04em;color:var(--dim);padding-top:4px}
+.tiny .ln{padding-top:5px}
+.tiny .ln .sp{display:block;font:700 7.5px ui-monospace,monospace;letter-spacing:.11em;
+ color:var(--brass)}
+.tiny .ln .tx{display:block;font-size:11.5px;line-height:1.45;color:var(--body);padding-top:2px}
+.tiny .ln .st{display:block;font:600 7px ui-monospace,monospace;letter-spacing:.09em;
+ color:var(--dim);padding-top:3px}
 @media(max-width:900px){.tiny a{width:calc(25% - 7px)}}
 @media(max-width:600px){.tiny a{width:calc(33.333% - 6px)}}
 .cardhead{display:flex;justify-content:space-between;align-items:baseline;gap:16px;
@@ -1278,8 +1284,14 @@ for e in _fl:
         rt.append('<div class=tiny>')
         for f in frames:
             b = os.path.basename(f['file']).rsplit('.', 1)[0].replace(' ', '_')
+            ln = ''
+            if f.get('line'):
+                ln = ('<div class=ln><span class=sp>%s</span>'
+                      '<span class=tx>“%s”</span>'
+                      '<span class=st>%s</span></div>'
+                      % (f.get('speaker', ''), f['line'], f.get('linestate', '').upper()))
             rt.append('<a href="card/%s.html"><img src="tiny/%s.jpg" alt="" loading=lazy>'
-                      '<div class=c>%s</div></a>' % (b, b, b))
+                      '<div class=c>%s</div>%s</a>' % (b, b, b, ln))
         rt.append('</div>')
     elif not (n == '11'):
         rt.append('<div class=tiny>')
