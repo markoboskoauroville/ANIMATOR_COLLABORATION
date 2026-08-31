@@ -273,6 +273,14 @@ h2{font-size:19px;margin:38px 0 14px;padding-bottom:7px;border-bottom:1px solid 
  color:var(--dim)}
 .filmfoot span{display:block;font-weight:600;font-size:9px;letter-spacing:.14em;
  padding-top:6px;color:var(--dim);opacity:.75}
+.seqstrip{display:flex;flex-wrap:wrap;gap:10px;margin:16px 0 8px}
+.seqstrip .f{width:calc(14.28% - 9px);min-width:110px}
+.seqstrip .f img{width:100%;display:block;border:1px solid var(--rule);background:var(--card)}
+.seqstrip .f .n{font:600 8.5px ui-monospace,monospace;letter-spacing:.06em;color:var(--dim);
+ padding-top:5px}
+.seqstrip .cut{width:16px;display:flex;align-items:center;justify-content:center;
+ font:700 12px ui-monospace,monospace;color:var(--brass)}
+@media(max-width:820px){.seqstrip .f{width:calc(33.33% - 8px)}.seqstrip .cut{display:none}}
 .mast{margin:0 0 26px}
 .mast img{width:100%;max-width:760px;display:block;border:1px solid var(--rule);
  background:var(--card);margin:0 auto}
@@ -1058,6 +1066,40 @@ for e in _kf:
 
 _fl = flow_of()
 _done = sum(len(v) for v in _byscene.values())
+# the last shot, laid out as the sequence it is: four drawn frames, a cut, and
+# three live ones. The two hands never share a frame, which is the whole point.
+LASTSHOT = [
+    ('BB_C_15/15-1-A-v1.png', 'closed'),
+    ('BB_C_15/15-2-A-v1.png', 'opening'),
+    ('BB_C_15/15-3-A-v1.png', 'turns over'),
+    ('BB_C_15/15-4-A-v1.png', 'the key alone'),
+    (None, 'CUT'),
+    ('BB_C_15/live/PANA6276_11_47_46_08.png', 'his hand arrives'),
+    ('BB_C_15/live/PANA6279_11_48_30_06.png', 'the key lands'),
+    ('BB_C_15/live/PANA6270_11_46_40_11.png', 'he closes'),
+]
+
+
+def lastshot_strip(prefix=''):
+    out = ['<h2>The last shot</h2>',
+           '<p class=lede>Coach Brain lets the key go, it falls through an empty frame, and we cut. '
+           'His hand and Manan’s are never on screen together, so nothing is composited and the '
+           'lighting difference between the drawing and the footage does not matter. '
+           'The first four are drawn. The last three are real.</p>',
+           '<div class=seqstrip>']
+    for f, label in LASTSHOT:
+        if f is None:
+            out.append('<div class=cut>&rarr;</div>')
+            continue
+        if not os.path.exists(os.path.join(ROOT, f)):
+            continue
+        out.append('<div class=f><a href="%s%s"><img src="%s%s" alt="" loading=lazy></a>'
+                   '<div class=n>%s</div></div>'
+                   % (prefix, f, prefix, small(f, 'tiny'), label.upper()))
+    out.append('</div>')
+    return ''.join(out)
+
+
 _titlecard = 'BB_C_0/0-0-TITLE-v1.png'
 _mast = ''
 if os.path.exists(os.path.join(ROOT, _titlecard)):
@@ -1101,6 +1143,7 @@ for e in _fl:
                       % ('FOOTAGE' if live else 'EMPTY'))
         rt.append('</div>')
 rt.append('</div>')
+rt.append(lastshot_strip())
 open(os.path.join(ROOT, 'index.html'), 'w').write(
     page('%s, %s' % (FILM.title(), SUBTITLE), ''.join(rt), here='home', depth=0))
 

@@ -1270,6 +1270,36 @@
       "slug": "INSERT — THE KEY ALONE",
       "what": "Bare paper edge to edge with one small gold key near the middle, tumbling as it falls. Nothing else in the frame at all: no hand, no arm, no shadow, no ground.",
       "why": "PHASE 4 OF 4, and the last drawn frame in the film. Ink measures 0.43 percent. After everything the film has built it comes down to one small object falling through empty space with nobody holding it, which is the argument in a single frame. THE FRAME AFTER THIS ONE IS NOT DRAWN AND MUST NOT BE: Manan's real hand comes in from below and closes on the key, keyed over this same bare paper. Coach Brain's hand is gone by then. Manan's fist stays and the film fades out on it, so the last image is a boy holding something, alone."
+    },
+    {
+      "kind": "keyframe",
+      "shot": "15.5",
+      "file": "BB_C_15/live/PANA6276_11_47_46_08.png",
+      "status": "proposal",
+      "date": "2026-08-31",
+      "slug": "EXT. — MANAN’S HAND ARRIVES",
+      "what": "His open palm comes into frame from below, empty.",
+      "why": "CUT. Coach Brain is gone. This is real footage and it is where the film returns to the world. THE TWO HANDS ARE NEVER IN THE SAME FRAME. Coach Brain drops the key, it falls through an empty frame, and we cut to Manan catching it. So there is nothing to composite and the lighting difference between the drawn hand and the footage does not matter: they are never side by side."
+    },
+    {
+      "kind": "keyframe",
+      "shot": "15.6",
+      "file": "BB_C_15/live/PANA6279_11_48_30_06.png",
+      "status": "proposal",
+      "date": "2026-08-31",
+      "slug": "EXT. — THE KEY LANDS",
+      "what": "The key is in his open palm, still, caught.",
+      "why": "The real key, shot with the real hand. Nothing composited and nothing drawn. THE TWO HANDS ARE NEVER IN THE SAME FRAME. Coach Brain drops the key, it falls through an empty frame, and we cut to Manan catching it. So there is nothing to composite and the lighting difference between the drawn hand and the footage does not matter: they are never side by side."
+    },
+    {
+      "kind": "keyframe",
+      "shot": "15.7",
+      "file": "BB_C_15/live/PANA6270_11_46_40_11.png",
+      "status": "proposal",
+      "date": "2026-08-31",
+      "slug": "EXT. — THE HAND CLOSES",
+      "what": "The fingers curl toward a grip.",
+      "why": "THE LAST IMAGE. Fade out as he closes. Ending mid action is stronger than landing on a finished fist, and it means no frame has to be invented. THE TWO HANDS ARE NEVER IN THE SAME FRAME. Coach Brain drops the key, it falls through an empty frame, and we cut to Manan catching it. So there is nothing to composite and the lighting difference between the drawn hand and the footage does not matter: they are never side by side."
     }
   ],
   "event": "Breakthrough Junior Challenge 2026"
