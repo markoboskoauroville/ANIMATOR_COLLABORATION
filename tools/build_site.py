@@ -326,7 +326,7 @@ h2{font-size:19px;margin:38px 0 14px;padding-bottom:7px;border-bottom:1px solid 
 .tiny .ln .sp{display:block;font:700 7.5px ui-monospace,monospace;letter-spacing:.11em;
  color:var(--brass)}
 .tiny .ln .tx{display:block;font-size:11.5px;line-height:1.45;color:var(--body);padding-top:2px}
-.tiny .ln .st{display:block;font:600 7px ui-monospace,monospace;letter-spacing:.09em;
+.tiny .ln .rec{display:block;font:600 7px ui-monospace,monospace;letter-spacing:.09em;
  color:var(--dim);padding-top:3px}
 @media(max-width:900px){.tiny a{width:calc(25% - 7px)}}
 @media(max-width:600px){.tiny a{width:calc(33.333% - 6px)}}
@@ -1296,7 +1296,7 @@ for e in _fl:
             if f.get('line'):
                 ln = ('<div class=ln><span class=sp>%s</span>'
                       '<span class=tx>“%s”</span>'
-                      '<span class=st>%s</span></div>'
+                      '<span class=rec>%s</span></div>'
                       % (f.get('speaker', ''), f['line'], f.get('linestate', '').upper()))
             rt.append('<a href="card/%s.html"><img src="tiny/%s.jpg" alt="" loading=lazy>'
                       '<div class=c>%s</div>%s</a>' % (b, b, b, ln))
