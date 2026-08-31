@@ -299,7 +299,8 @@ h2{font-size:19px;margin:38px 0 14px;padding-bottom:7px;border-bottom:1px solid 
  background:var(--card);pointer-events:none}
 .seqstrip .f .vid{position:relative}
 .seqstrip .f .vid{cursor:zoom-in}
-.seqstrip .f .n{display:flex;justify-content:space-between;align-items:baseline;gap:6px}
+.seqstrip .f .n{display:block}
+.seqstrip .f .pr{display:inline-block;margin-top:4px}
 .seqstrip .f .pr{font:700 7.5px ui-monospace,monospace;letter-spacing:.09em;color:#17150f;
  background:var(--brass);border-radius:2px;padding:2px 5px;text-decoration:none;
  white-space:nowrap}
@@ -1247,6 +1248,7 @@ for e in _fl:
               % (n, e.get('title', ''), st))
     # the last shot is phase 15, so its sequence belongs here in the flow rather
     # than at the foot of the page
+    has_strip = n in ('7', '11')
     if n == '7':
         rt.append(arrival_strip())
     if n == '11':
@@ -1263,7 +1265,7 @@ for e in _fl:
             '<span class=warn>PLACEHOLDER. ONLY AUROVENKATESH, JAGAN AND PUSHPARAJ ARE CONFIRMED. '
             'EVERYTHING ELSE IS WAITING ON NEHA AND MUST NOT BE USED AS IS.</span></div>'
             % CREDITS_TEXT)
-    if frames:
+    if frames and not has_strip:
         rt.append('<div class=tiny>')
         for f in frames:
             b = os.path.basename(f['file']).rsplit('.', 1)[0].replace(' ', '_')
