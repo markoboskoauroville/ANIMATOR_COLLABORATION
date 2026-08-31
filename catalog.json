@@ -1362,8 +1362,8 @@
           "note": "The clip that loops in the arrival sequence on the front page, at full size. The loop there is a preview only: muted, no controls, meant to read as a still that moves."
         },
         {
-          "name": "The footage, with alpha",
-          "url": "https://drive.google.com/drive/folders/1YGb_z7OCrLSUX7JagNpynXbu1fAK2wNu",
+          "name": "The door footage, with alpha",
+          "url": "https://drive.google.com/drive/folders/1ph36NxPciUB5Y4s_IiowDotmjk2ciFZ4",
           "note": "The take with a real alpha channel, ready to composite. Use this, not the mockup above."
         }
       ]
