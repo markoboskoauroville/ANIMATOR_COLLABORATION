@@ -1390,6 +1390,19 @@
       "speaker": "COACH BRAIN",
       "line": "You found me. Took you long enough.",
       "linestate": "to record"
+    },
+    {
+      "kind": "keyframe",
+      "shot": "19.3",
+      "file": "BB_C_19/19-3-A-v4.png",
+      "status": "proposal",
+      "date": "2026-08-31",
+      "slug": "INT. CONTROL ROOM — ON COACH BRAIN",
+      "what": "His single. Seated in the shell chair on the left, three quarter, the gold key on its chain, the desk and clay wall behind. The right half is empty room.",
+      "why": "THE SECOND OF THE THREE DIALOGUE SETUPS, and the only one that needs nothing keyed. He is on the LEFT and looking RIGHT, which is the screen direction the wide fixed. He is a little more frontal than asked for and the smile is broad, which suits the line he is saying. THE RIGHT HALF IS EMPTY ROOM AND MUST STAY EMPTY: three earlier attempts either drew Manan there or lost the character, and this is the one that did neither.",
+      "speaker": "COACH BRAIN",
+      "line": "You found me. Took you long enough.",
+      "linestate": "to record"
     }
   ],
   "event": "Breakthrough Junior Challenge 2026"
