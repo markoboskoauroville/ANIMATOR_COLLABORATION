@@ -295,6 +295,12 @@ h2{font-size:19px;margin:38px 0 14px;padding-bottom:7px;border-bottom:1px solid 
 .seqstrip .f img{width:100%;display:block;border:1px solid var(--rule);background:var(--card)}
 .seqstrip .f .n{font:600 8.5px ui-monospace,monospace;letter-spacing:.06em;color:var(--dim);
  padding-top:5px}
+.seqstrip .f iframe{width:100%;aspect-ratio:16/9;border:1px solid var(--rule);display:block;
+ background:var(--card);pointer-events:none}
+.seqstrip .f .vid{position:relative}
+.seqstrip .f .vid .lbl{position:absolute;left:5px;bottom:5px;background:var(--brass);
+ color:#17150f;font:700 7.5px ui-monospace,monospace;letter-spacing:.1em;padding:2px 5px;
+ border-radius:2px}
 .seqstrip .cut{width:16px;display:flex;align-items:center;justify-content:center;
  font:700 12px ui-monospace,monospace;color:var(--brass)}
 @media(max-width:820px){.seqstrip .f{width:calc(33.33% - 8px)}.seqstrip .cut{display:none}}
@@ -1127,6 +1133,7 @@ LASTSHOT = [
     ('BB_C_15/live/PANA6276_11_47_46_08.png', 'his hand arrives'),
     ('BB_C_15/live/PANA6279_11_48_30_06.png', 'the key lands'),
     ('BB_C_15/live/KEY_CATCH_1_00_00_04_19.png', 'he closes on it'),
+    (('yt', 'e6PPvpJt5ZI'), 'the catch, moving'),
 ]
 
 
@@ -1139,6 +1146,20 @@ def lastshot_strip(prefix=''):
     for f, label in LASTSHOT:
         if f is None:
             out.append('<div class=cut>&rarr;</div>')
+            continue
+        if isinstance(f, tuple) and f[0] == 'yt':
+            # a silent looping preview at thumbnail size. No controls, no sound,
+            # nothing to click: it reads as a still that happens to move. The
+            # full resolution file is reached from the card page, not from here.
+            vid = f[1]
+            out.append('<div class=f><div class=vid>'
+                       '<iframe src="https://www.youtube-nocookie.com/embed/%s'
+                       '?autoplay=1&mute=1&loop=1&playlist=%s&controls=0&modestbranding=1'
+                       '&playsinline=1&rel=0&disablekb=1" '
+                       'title="%s" frameborder=0 allow="autoplay" tabindex=-1></iframe>'
+                       '<span class=lbl>LOOP</span></div>'
+                       '<div class=n>%s</div></div>'
+                       % (vid, vid, label, label.upper()))
             continue
         if not os.path.exists(os.path.join(ROOT, f)):
             continue
