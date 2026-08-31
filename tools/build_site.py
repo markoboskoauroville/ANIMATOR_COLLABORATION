@@ -1042,7 +1042,7 @@ if ARCHIVE.get('items'):
 # more: the film was reordered on 31.8.2026 and the folders kept their names, so
 # this table is the only place the mapping lives.
 SCENE_OF = {'0':'0', '1':'1', '2':'2', '3':'3', '4':'4', '5':'5',
-            '6':'16', '7':'17', '8':'6', '9':'8', '10':'18', '11':'6',
+            '6':'16', '7':'17', '8':'8', '9':'9', '10':'18', '11':'19',
             '12':'10', '13':'11', '14':'12', '15':'13', '16':'14'}
 # The storyboard shows ONE version per shot where a shot has both a generated
 # placeholder and a real footage composite. Baba's rule, 30.8.2026: the generated
@@ -1081,10 +1081,8 @@ for e in _fl:
     live = n in ('2', '4', '5')
     # phases 8 and 11 both draw on scene 6, so its frames are split between them:
     # the corridor and the rooms are the journey, the control room is Coach Brain.
-    if n == '11':
-        frames = [f for f in frames if str(f['shot']) in ('6.3', '6.4')]
-    if n == '8':
-        frames = [f for f in frames if str(f['shot']) not in ('6.3', '6.4')]
+    # every shot number is unique again as of 31.8.2026, so no phase needs to
+    # filter another phase's frames out of a shared folder
     st = ('%d drawn' % len(frames)) if frames else ('LIVE ACTION' if live else 'NOT DRAWN YET')
     rt.append('<div class=rtph><span class=n>%s</span><h3>%s</h3><span class=st>%s</span></div>'
               % (n, e.get('title', ''), st))

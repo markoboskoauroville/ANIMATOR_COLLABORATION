@@ -21,7 +21,8 @@
     "14": "End credits",
     "16": "The house",
     "17": "The front door",
-    "18": "The skull door"
+    "18": "The skull door",
+    "19": "The control room"
   },
   "entries": [
     {
@@ -571,8 +572,8 @@
     },
     {
       "kind": "keyframe",
-      "shot": "8.0",
-      "file": "BB_C_8/8-0-A-v1.png",
+      "shot": "9.0",
+      "file": "BB_C_9/9-0-GANESHA-v1.png",
       "representative": true,
       "status": "proposal",
       "date": "2026-08-28",
@@ -696,8 +697,8 @@
     },
     {
       "kind": "keyframe",
-      "shot": "8.1",
-      "file": "BB_C_8/8-1-A-v1.png",
+      "shot": "9.1",
+      "file": "BB_C_9/9-1-GANESHA-v1.png",
       "representative": true,
       "status": "proposal",
       "date": "2026-08-30",
@@ -728,8 +729,8 @@
     },
     {
       "kind": "keyframe",
-      "shot": "9.0",
-      "file": "BB_C_9/9-0-A-v1.png",
+      "shot": "19.1",
+      "file": "BB_C_19/19-1-A-v1.png",
       "representative": true,
       "status": "proposal",
       "date": "2026-08-30",
@@ -1179,8 +1180,8 @@
     },
     {
       "kind": "keyframe",
-      "shot": "11.0",
-      "file": "BB_C_11/11-0-A-v3.png",
+      "shot": "19.0",
+      "file": "BB_C_19/19-0-A-v1.png",
       "representative": true,
       "status": "proposal",
       "date": "2026-08-31",
