@@ -1702,10 +1702,20 @@
       "slug": "INT. — HE LETS IT GO",
       "what": "The hand open and relaxed, palm turned down, the ribbed tracksuit cuff at the wrist, and the painted gold key falling clear of the fingers into empty paper.",
       "why": "THIRD OF THREE: OFFERING, TURNING, LETTING GO, AND THIS IS THE RELEASE. The hand has let go rather than offered: fingers spread and relaxed, nothing held out. HE DOES NOT KNOW WHO CATCHES IT, which is why there is clear paper between the fingers and the key and no second hand anywhere. The gold is painted, not tinted."
+    },
+    {
+      "kind": "keyframe",
+      "shot": "10.1",
+      "file": "BB_C_10/10-1-MOCKUP-v1.png",
+      "status": "proposal",
+      "date": "2026-09-01",
+      "slug": "INT. — AT THE BLACKBOARD, MOCKUP",
+      "what": "A real boy standing at the left of the blackboard with chalk in his hand, back to us, clear of the writing.",
+      "why": "A MOCKUP FOR COMPOSITING, NOT A FRAME OF THE FILM. The boy is generated and is not Manan: he is here so the standing position, the scale against the board and the eyeline can be seen. In the film Manan is a photograph keyed onto the drawn board. TWO THINGS ARE WRONG IN IT AND ARE LEFT WRONG. There is a second disembodied hand at the right holding chalk, which must not be there: nobody else writes on this board. And the board itself has gone photographic, where it should stay a drawing with only the boy real. Use the position, not the rendering."
     }
   ],
   "event": "Breakthrough Junior Challenge 2026",
-  "site_version": 15,
+  "site_version": 16,
   "footage": [
     {
       "name": "Key catch",
