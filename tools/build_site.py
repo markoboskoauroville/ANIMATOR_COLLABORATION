@@ -492,7 +492,11 @@ if(seen()){window.addEventListener('DOMContentLoaded',o);}
 </script>""".replace('PASSPHRASE', PASS)
 
 
-DRIVE = 'https://drive.google.com/drive/folders/1INASz6hT4OUQo4UrpT62rMJaF24Amnuu'
+# The shared Drive folder the top bar links to. Named DRIVE_FOLDER, not DRIVE:
+# the drive_links.json lookup below rebinds the bare name DRIVE, and because
+# bar() reads it at call time it was emitting the entire links dict into the
+# GDRIVE href instead of this URL.
+DRIVE_FOLDER = 'https://drive.google.com/drive/folders/1INASz6hT4OUQo4UrpT62rMJaF24Amnuu'
 
 
 TRAY = """
@@ -635,7 +639,7 @@ def bar(here, r):
         o.append('<a href="%sarchive.html"%s>ARH</a>'
                  % (r, ' class=on' if here == 'archive' else ''))
     o.append('<span class=sp></span>')
-    o.append('<a class=drive href="%s" target=_blank rel=noopener>GDRIVE &nearr;</a>' % DRIVE)
+    o.append('<a class=drive href="%s" target=_blank rel=noopener>GDRIVE &nearr;</a>' % DRIVE_FOLDER)
     o.append('<span class=sitev title="site version">v%d</span>' % SITEV)
     o.append('<button class=th id=th onclick="tt()" title="light or dark">&#9681;</button>')
     o.append('</div>')
@@ -715,10 +719,24 @@ if os.path.exists(_dl):
         DRIVE = {}
 
 
-def full_link(path):
+def full_link(path, prefix=''):
     """Where the full resolution original lives, or the local file if it is
-    still in the repository."""
-    return DRIVE.get(os.path.basename(path)) or path
+    still in the repository.
+
+    drive_links.json holds {name: {"bytes": n, "url": u}}, so this used to
+    return a dict and anything that dropped it into an href wrote the whole
+    dict into the page. It returns a string now, always. The card path did the
+    unwrapping itself and was correct; every other caller was not, which is why
+    the front page strip and eight shot pages pointed at originals the daemon
+    had already removed. One lookup, used everywhere, so they cannot drift
+    apart again.
+    """
+    v = DRIVE.get(os.path.basename(path))
+    if v:
+        u = v if isinstance(v, str) else v.get('url', '')
+        if u:
+            return u
+    return prefix + path
 
 
 def small(path, size='mid'):
@@ -1065,10 +1083,11 @@ for n in sorted(SCENES, key=int):
                 bd = ('<a class=bd href="%s_breakdown.html">Breakdown &rarr;</a>'
                       % os.path.splitext(os.path.basename(e['file']))[0]) if lay else ''
                 lbl = ('%s %s' % (os.path.basename(e['file']), ver(e))).strip()
-                k.append('<div class=cell><a href="../%s"><img src="../%s" alt=""></a>'
+                k.append('<div class=cell><a href="%s"><img src="../%s" alt=""></a>'
                          '<div class=meta><span class=fid>%s</span>%s%s%s'
                          '<p class=note>%s</p>%s%s</div></div>'
-                         % (e['file'], small(e['file']), os.path.basename(e['file']),
+                         % (full_link(e['file'], '../'),
+                            small(e['file']), os.path.basename(e['file']),
                             ('<span class=ver>%s</span>' % ver(e)) if ver(e) else '',
                             '<span class=kf>represents the shot</span>' if e is rep else '',
                             tag(e.get('status', 'proposal')),
@@ -1159,6 +1178,18 @@ for e in _kf:
 
 _fl = flow_of()
 _done = sum(len(v) for v in _byscene.values())
+# _done is the number of frames ON THIS PAGE, which is not the number drawn and
+# never was. Two things separate them. 22 live keyframes carry storyboard=hide,
+# because a shot with both a generated stand-in and a real footage composite
+# shows one of them here and keeps the other for the scene page. And some of
+# what is shown is a placeholder rather than artwork. Calling the total "drawn"
+# overstated the work in one direction and understated it in the other, so all
+# three numbers are stated instead of one doing a job it cannot do.
+_live_kf = len([e for e in ENTRIES if e.get('kind') == 'keyframe'
+                and e.get('status') != 'superseded'])
+_holding = sum(1 for v in _byscene.values() for e in v
+               if e.get('status') == 'placeholder')
+_drawn = _done - _holding
 # the last shot, laid out as the sequence it is: four drawn frames, a cut, and
 # three live ones. The two hands never share a frame, which is the whole point.
 CREDITS_TEXT = '''THE BRAIN BRAKE
@@ -1283,9 +1314,9 @@ def strip(items, lede, prefix=''):
         if not os.path.exists(os.path.join(ROOT, f)) and \
            not os.path.exists(os.path.join(ROOT, 'tiny', _b + '.jpg')):
             continue
-        out.append('<div class=f><a href="%s%s"><img src="%s%s" alt="" loading=lazy></a>'
+        out.append('<div class=f><a href="%s"><img src="%s%s" alt="" loading=lazy></a>'
                    '<div class=n>%s</div></div>'
-                   % (prefix, f, prefix, small(f, 'tiny'), label.upper()))
+                   % (full_link(f, prefix), prefix, small(f, 'tiny'), label.upper()))
     out.append('</div>')
     return ''.join(out)
 
@@ -1300,7 +1331,7 @@ def arrival_strip(prefix=''):
 
 def lastshot_strip(prefix=''):
     return strip(LASTSHOT,
-                 'Coach Brain lets the key go, it falls through an empty frame, and we cut. '
+                 'Coach Brain lets the key go and it falls through an empty frame. '
                  'His hand and Manan\u2019s are never on screen together, so nothing is composited '
                  'and the lighting difference between the drawing and the footage does not matter. '
                  'The key falls out of the sky, turning and growing, and the whole film replays behind it in '
@@ -1324,11 +1355,14 @@ _flight = ('<div class=flight><b>How the first half arrives</b><p>%s</p></div>'
 _flight += ('<div class=flight><b>How the second half moves</b><p>%s</p></div>'
             % CAT.get('flight_note', '')) if CAT.get('flight_note') else ''
 rt = [_mast, '<h1>THE BRAIN BRAKE ANIMATIC</h1>', _flight,
-      '<p class=lede>The whole film as a storyboard, in order. <b>%d frames drawn so far.</b> '
-      'Empty frames are phases that have not been drawn yet, and they are shown on purpose so the '
-      'gaps are as visible as the work. This page is built from the catalogue, so it is current the '
-      'moment anything is filed. Everything we have collected for each phase, kept and abandoned, '
-      'is on <a href="brainstorm.html">brainstorm</a>.</p>' % _done,
+      '<p class=lede>The whole film as a storyboard, in order. <b>%d frames drawn, %d holding as '
+      'placeholders, %d keyframes live in all.</b> The count here is lower than the last because a '
+      'shot with both a generated stand-in and a real footage composite shows one of them on this '
+      'page and keeps the other for its scene page. Placeholders are shown on purpose, so what is '
+      'still waiting is as visible as what is finished. This page is built from the catalogue, so '
+      'it is current the moment anything is filed. Everything we have collected for each phase, '
+      'kept and abandoned, is on <a href="brainstorm.html">brainstorm</a>.</p>'
+      % (_drawn, _holding, _live_kf),
       '<p class=lede><a class=rt href="#">Download the PDF &darr;</a> &nbsp;'
       '<span style="color:var(--dim);font-size:12px">PDF coming, this page is the live one</span></p>',
       '<div class=rtsheet>']

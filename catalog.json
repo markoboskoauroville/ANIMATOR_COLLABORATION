@@ -3,7 +3,7 @@
   "subtitle": "The Central Governor Theory",
   "version": "V9 DRAFT",
   "working_scene": "1",
-  "updated": "2026-08-28",
+  "updated": "2026-09-01",
   "scenes": {
     "0": "Title",
     "1": "The mystery",
@@ -1775,7 +1775,7 @@
     }
   ],
   "event": "Breakthrough Junior Challenge 2026",
-  "site_version": 25,
+  "site_version": 26,
   "footage": [
     {
       "name": "Key catch",
