@@ -1203,10 +1203,7 @@ CLIP_SOURCE = {
 # the whole fall, sky to hand. 15-3-A and 15-4-A carry the old modern key and
 # are superseded by the FALL sequence.
 LASTSHOT = [
-    ('BB_C_15/15-1-A-v2.png', 'the fist'),
-    ('BB_C_15/15-2-A-v1.png', 'opening'),
-    ('BB_C_15/15-3-FALL-1-v1.png', 'released'),
-    ('BB_C_15/15-3-FALL-2-v1.png', 'falling'),
+    ('BB_C_15/15-3-FALL-2-v1.png', 'released'),
     ('BB_C_15/15-3-FALL-3-v4.png', 'the boards behind it'),
     ('BB_C_15/15-3-FALL-4-v2.png', 'the room behind it'),
     ('BB_C_15/15-3-FALL-5-v1.png', 'the house behind it'),
@@ -1350,7 +1347,11 @@ for e in _fl:
         frames = []
     if n == '12':
         # Baba, 1.9.2026: one representative frame for the credits, not eight.
-        frames = [f for f in frames if 'CLOUD-v1' in f.get('file', '')] or frames[:1]
+        # a finished card with lettering, never the blank tall plate: the plate
+        # is a working asset and shows nothing about what the credits look like.
+        frames = [f for f in frames if 'CLOUD-v1' in f.get('file', '')
+                  and 'PLATE' not in f.get('file', '')] or \
+                 [f for f in frames if 'CREDITS' in f.get('file', '')][:1]
     if in_strip:
         frames = [f for f in frames if f['file'] not in in_strip]
     if frames:

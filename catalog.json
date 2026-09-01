@@ -1078,7 +1078,9 @@
       "date": "2026-08-31",
       "slug": "INSERT — THE HAND BEGINS TO OPEN",
       "what": "The same hand, now wearing Coach Brain's tracksuit cuff with the stripe running off the left edge. The fingers have uncurled halfway and the gold key is clearly visible, still resting in the hand.",
-      "why": "PHASE 2 OF 4. The cuff is how we know whose hand it is; the body stays out of frame. Caught in the middle of releasing, neither open nor closed."
+      "why": "PHASE 2 OF 4. The cuff is how we know whose hand it is; the body stays out of frame. Caught in the middle of releasing, neither open nor closed.",
+      "note": "Off the strip 1.9.2026. The key in it was never made gold.",
+      "storyboard": "hide"
     },
     {
       "kind": "keyframe",
@@ -1605,7 +1607,9 @@
       "date": "2026-09-01",
       "slug": "EXT. SKY — THE KEY FALLS, 1 OF 6",
       "what": "Cloud along the top, and the key small and tilted head down in the empty paper below it, with a great deal of bare sheet under it to fall into.",
-      "why": "FIRST OF THE FALL. It spans about a twelfth of the frame width here and grows all the way down, because Coach Brain is desk height and Manan is life size: the same object, simply getting nearer. It turns, grows and crosses from pencil to photograph together. GOLD ADDED IN THE CONTAINER, no coin: it came back drawn in the same pale pencil as the clouds, and on a sheet this empty the one coloured thing is the only thing the eye has."
+      "why": "FIRST OF THE FALL. It spans about a twelfth of the frame width here and grows all the way down, because Coach Brain is desk height and Manan is life size: the same object, simply getting nearer. It turns, grows and crosses from pencil to photograph together. GOLD ADDED IN THE CONTAINER, no coin: it came back drawn in the same pale pencil as the clouds, and on a sheet this empty the one coloured thing is the only thing the eye has.",
+      "note": "Off the strip 1.9.2026: measured 0.00 percent colour, so the key was never made gold. v2 was generated to fix it and never reached the repository.",
+      "storyboard": "hide"
     },
     {
       "kind": "keyframe",
@@ -1639,7 +1643,7 @@
     }
   ],
   "event": "Breakthrough Junior Challenge 2026",
-  "site_version": 9,
+  "site_version": 10,
   "footage": [
     {
       "name": "Key catch",
