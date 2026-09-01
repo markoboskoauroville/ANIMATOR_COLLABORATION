@@ -1203,7 +1203,6 @@ CLIP_SOURCE = {
 # the whole fall, sky to hand. 15-3-A and 15-4-A carry the old modern key and
 # are superseded by the FALL sequence.
 LASTSHOT = [
-    ('BB_C_15/15-1-A-v1.png', 'offering'),
     ('BB_C_15/15-1-B-v2.png', 'turning'),
     ('BB_C_15/15-2-A-v3.png', 'letting go'),
     ('BB_C_15/15-3-FALL-2-v1.png', 'released'),
@@ -1346,7 +1345,10 @@ for e in _fl:
     # was misleading on the one phase that was shot rather than drawn
     # the label says what the frames actually are. Calling a reference still
     # "drawn" hides that a phase is still waiting for its real material.
-    shot = [f for f in frames if '/live/' in f.get('file', '')]
+    # a hero frame is a photograph however it was made, so it counts as shot.
+    # Calling it drawn told the animator to draw a phase that was filmed.
+    shot = [f for f in frames if '/live/' in f.get('file', '')
+            or 'HERO' in f.get('file', '')]
     ref  = [f for f in frames if f.get('status') == 'placeholder']
     drawn = [f for f in frames if f not in shot and f not in ref]
     bits = []
