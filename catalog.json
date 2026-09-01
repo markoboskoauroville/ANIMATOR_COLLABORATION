@@ -839,9 +839,9 @@
       "file": "reference/CHARACTER_SHEET_COACH_BRAIN-v2.png",
       "kind": "sheet",
       "title": "Coach Brain",
-      "status": "reference",
+      "status": "superseded",
       "date": "2026-08-30",
-      "note": "THIS IS COACH BRAIN. Four views: front, three quarter, side, rear. A brain for a head with no neck, wider than his body, two small eyes and a wide simple smile low on the front. Zipped tracksuit with a stripe down each sleeve and leg, mitten hands, white trainers, short and stocky, about desk height. Same proportions in all four so he can be turned. THE KEY ROUND HIS NECK IS GOLD AND IT IS THE ONLY COLOUR IN THE FILM. The chain stays pencil grey right up to the ring. He wears the thing he later hands to Manan, which is why the key frame lands: he has been carrying it the whole time. Colour measures 0.467 percent of the frame. He had no sheet until 30.8.2026 and was being drawn from four inconsistent frames, which is the same failure that cost days on the runner before his face sheet existed."
+      "note": "Superseded by v4. Carried a generic modern key, not the real object on the live set."
     },
     {
       "kind": "keyframe",
@@ -1585,6 +1585,15 @@
       "status": "reference",
       "date": "2026-09-01",
       "note": "THIS IS THE KEY, AND IT IS A REAL OBJECT ON THE LIVE SET. Four views: full side, tilted three quarter, head detail, bit end profile. A long round shaft; at one end a flat round disc with a three lobed clover hole and the number 5 stamped near its edge; a collar of three raised rings where head meets shaft; at the other end a flat rectangular bit with three square teeth. EVERY DRAWN KEY IN THE FILM MUST MATCH THIS. The earlier frames drew a modern flat key and are all wrong: the Coach Brain character sheet, and the four hand phases 15-1 through 15-4. The point of matching it exactly is that the drawn key and the real key are the same object, so the cross dissolve from drawing to photograph in the last shot lands on itself rather than on something similar. Photographs in reference/key/."
+    },
+    {
+      "frame": "11",
+      "file": "reference/CHARACTER_SHEET_COACH_BRAIN-v4.png",
+      "kind": "sheet",
+      "title": "Coach Brain",
+      "status": "reference",
+      "date": "2026-09-01",
+      "note": "THIS IS COACH BRAIN. Four views: front, three quarter, side, rear. A brain for a head with no neck, two small eyes and a wide simple smile, zipped tracksuit with a stripe down each sleeve and leg, mitten hands, white trainers, about desk height. HE WEARS THE REAL KEY, the object photographed on the live set: round head with a three lobed clover hole, three ring collar, shaft, toothed bit. See reference/OBJECT_SHEET_KEY-v2.png. It hangs small, about the size of one of his eyes, and IT IS GOLD AND THE ONLY COLOUR IN THE FILM. The chain stays pencil grey right up to the ring. He wears the thing he later hands over, which is why the key frame lands: he has been carrying it the whole time."
     }
   ],
   "event": "Breakthrough Junior Challenge 2026",
