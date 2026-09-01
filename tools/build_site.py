@@ -1215,6 +1215,28 @@ LASTSHOT = [
 ]
 
 
+# the boards do not appear whole, they are written line by line. Six states
+# each, and they are the phase: two finished boards on their own show none of
+# the argument being made.
+THEORIES = [
+    ('BB_C_10/10-0-BUILD-0.png', 'blackboard, empty'),
+    ('BB_C_10/10-0-BUILD-2.png', 'the old theory, building'),
+    ('BB_C_10/10-0-A-v2.png', 'the old theory'),
+    (None, 'CUT'),
+    ('BB_C_11/11-0-BUILD-0.png', 'whiteboard, empty'),
+    ('BB_C_11/11-0-BUILD-2.png', 'the answer, building'),
+    ('BB_C_11/11-0-A-v1.png', 'the new theory'),
+]
+
+
+def theories_strip(prefix=''):
+    return strip(THEORIES,
+                 'Neither board arrives finished. Manan writes what he read, line by line, in white '
+                 'chalk. Coach Brain answers on the whiteboard in black marker: same layout, same '
+                 'three lines, same gauge, every value reversed. Six build states exist for each '
+                 'board and the middle one is shown here.', prefix)
+
+
 ARRIVAL = [
     ('BB_C_16/live/16-1-MOCKUP-v1.png', 'he is at the door'),
     (('mp4', 'clips/in-front-of-door-loop.mp4'), 'in front of the door'),
@@ -1343,6 +1365,9 @@ for e in _fl:
     if n == '7':
         rt.append(arrival_strip())
         in_strip = {f for f, _ in ARRIVAL if isinstance(f, str)}
+    if n == '9':
+        rt.append(theories_strip())
+        in_strip = {f for f, _ in THEORIES if isinstance(f, str)}
     if n == '11':
         # Baba, 31.8.2026: this phase shows the strip and nothing else. The other
         # live stills and drawn attempts are still on their card pages.
