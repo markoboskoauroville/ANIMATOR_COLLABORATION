@@ -164,7 +164,26 @@ def upload():
     with open(os.path.join(ROOT, 'catalog.json'), 'w') as fh:
         json.dump(cat, fh, indent=1)
         fh.write('\n')
-    print('verified %d, failed %d, catalogue entries linked %d' % (ok, fail, changed))
+    # and drive_links.json for EVERY verified file, entry or no entry, the
+    # same contract the daemon honours: the link must be in the repository
+    # before any --cut may remove the file it points at
+    dlp = os.path.join(ROOT, 'drive_links.json')
+    dl = {}
+    if os.path.exists(dlp):
+        try:
+            dl = json.load(open(dlp))
+        except ValueError:
+            dl = {}
+    linked = 0
+    for f, r in done.items():
+        if r.get('verified'):
+            dl[os.path.basename(f)] = {'url': r['link'], 'bytes': r['bytes']}
+            linked += 1
+    with open(dlp, 'w') as fh:
+        json.dump(dl, fh, indent=1, sort_keys=True)
+        fh.write('\n')
+    print('verified %d, failed %d, catalogue entries linked %d, drive_links entries %d'
+          % (ok, fail, changed, linked))
     print('kept local: %d layer files, %d prefer winners' % (len(layers), len(kept)))
 
 
