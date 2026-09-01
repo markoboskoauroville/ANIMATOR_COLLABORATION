@@ -1345,6 +1345,15 @@ for e in _fl:
         # live stills and drawn attempts are still on their card pages.
         rt.append(lastshot_strip())
         frames = []
+    if n == '11' and os.path.exists(os.path.join(ROOT, 'assets3d', 'brain_break_key.obj')):
+        rt.append(
+            '<div class=srcbox><div class=t><b>The key in 3D</b>'
+            '<span><a class=dl href="assets3d/brain_break_key_blender.py" download>SCRIPT</a>&nbsp;'
+            '<a class=dl href="assets3d/brain_break_key.obj" download>OBJ</a></span></div>'
+            '<p>The real key modelled from the photographs, one mesh with two materials: slot 0 '
+            'polished brass, slot 1 flat drawn cream. The mesh never changes, only the surface, so '
+            'the key crosses from the drawn world to the real one without a vertex moving. '
+            'Both files in one folder, open Blender, Scripting tab, Run.</p></div>')
     if n == '12':
         # Baba, 1.9.2026: one representative frame for the credits, not eight.
         # a finished card with lettering, never the blank tall plate: the plate
@@ -1532,6 +1541,14 @@ for _i, e in enumerate(_order):
             'EVERYTHING ELSE IS WAITING ON NEHA AND MUST NOT BE USED AS IS.</span></div>'
             % CREDITS_TEXT)
 
+    if any(k in e.get('file', '') for k in ('FALL', '15-1-A', '15-2-A', 'OBJECT_SHEET_KEY',
+                                            'CHARACTER_SHEET_COACH')):
+        cd.append(
+            '<div class=srcbox><div class=t><b>The key in 3D</b>'
+            '<span><a class=dl href="../assets3d/brain_break_key_blender.py" download>SCRIPT</a>'
+            '&nbsp;<a class=dl href="../assets3d/brain_break_key.obj" download>OBJ</a></span></div>'
+            '<p>The same key as a mesh, with a brass material and a drawn one. Both files in one '
+            'folder, open Blender, Scripting tab, Run.</p></div>')
     for src in (e.get('source') or []):
         cd.append('<div class=srcbox><div class=t><b>%s</b>'
                   '<a class=dl href="%s" target=_blank rel=noopener>OPEN ON DRIVE &nearr;</a></div>'
