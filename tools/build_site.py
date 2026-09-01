@@ -1200,12 +1200,18 @@ CLIP_SOURCE = {
 }
 
 
+# the whole fall, sky to hand. 15-3-A and 15-4-A carry the old modern key and
+# are superseded by the FALL sequence.
 LASTSHOT = [
+    ('BB_C_15/15-1-A-v2.png', 'the fist'),
     ('BB_C_15/15-2-A-v1.png', 'opening'),
-    ('BB_C_15/15-3-A-v1.png', 'turns over'),
-    ('BB_C_15/15-4-A-v1.png', 'the key alone'),
+    ('BB_C_15/15-3-FALL-1-v1.png', 'released'),
+    ('BB_C_15/15-3-FALL-2-v1.png', 'falling'),
+    ('BB_C_15/15-3-FALL-3-v4.png', 'the boards behind it'),
+    ('BB_C_15/15-3-FALL-4-v2.png', 'the room behind it'),
+    ('BB_C_15/15-3-FALL-5-v1.png', 'the house behind it'),
     (None, 'CUT'),
-    (('mp4', 'clips/key-catch-loop.mp4'), 'the catch, moving'),
+    (('mp4', 'clips/key-catch-loop.mp4'), 'he catches it'),
 ]
 
 
@@ -1251,7 +1257,11 @@ def strip(items, lede, prefix=''):
                        '<span class=lbl>LOOP</span></div><div class=n>%s</div></div>'
                        % (vid, vid, label, label.upper()))
             continue
-        if not os.path.exists(os.path.join(ROOT, f)):
+        # a frame may exist only as tiny/ and mid/ now: the watch folder uploads
+        # the original to Drive and keeps it out of the repository.
+        _b = os.path.basename(f).rsplit('.', 1)[0].replace(' ', '_')
+        if not os.path.exists(os.path.join(ROOT, f)) and \
+           not os.path.exists(os.path.join(ROOT, 'tiny', _b + '.jpg')):
             continue
         out.append('<div class=f><a href="%s%s"><img src="%s%s" alt="" loading=lazy></a>'
                    '<div class=n>%s</div></div>'
@@ -1273,7 +1283,10 @@ def lastshot_strip(prefix=''):
                  'Coach Brain lets the key go, it falls through an empty frame, and we cut. '
                  'His hand and Manan\u2019s are never on screen together, so nothing is composited '
                  'and the lighting difference between the drawing and the footage does not matter. '
-                 'The first three are drawn. The catch is the live clip, looping here as it will cut.', prefix)
+                 'The key falls out of the sky, turning and growing, and the whole film replays behind it in '
+       'reverse, so faint it is almost not there: the boards, the room, the house, and the avenue as '
+       'it lands. It crosses from pencil to photograph on the way down, so no single frame is the '
+       'moment it becomes real. His hand and Coach Brain\u2019s are never on screen together.', prefix)
 
 
 _titlecard = 'BB_C_0/0-0-TITLE-v1.png'
@@ -1335,6 +1348,9 @@ for e in _fl:
         # live stills and drawn attempts are still on their card pages.
         rt.append(lastshot_strip())
         frames = []
+    if n == '12':
+        # Baba, 1.9.2026: one representative frame for the credits, not eight.
+        frames = [f for f in frames if 'CLOUD-v1' in f.get('file', '')] or frames[:1]
     if in_strip:
         frames = [f for f in frames if f['file'] not in in_strip]
     if frames:
