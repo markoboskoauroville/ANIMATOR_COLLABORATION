@@ -1733,10 +1733,21 @@
       "slug": "EXT. — INTO THE BANNER",
       "what": "The same banner drawing seen much closer: a few pencil letters filling the frame, cut off by its edges, the sketched weave between them, flat even paper.",
       "why": "THE FLY THROUGH IS A SCALE MOVE ON ONE DRAWING AND NOTHING ELSE. Close up and wide are the same banner: no relighting, no cast shadow, no depth of field, no photographic fabric. As though somebody held a magnifying glass over one part of the same sheet. THE CLOTH NEVER TEARS. We pass through by cutting to white, as at every other crossing in the film. Two earlier attempts are kept: one split the cloth open, the other rendered it as a photograph."
+    },
+    {
+      "kind": "keyframe",
+      "shot": "2.0",
+      "representative": true,
+      "file": "BB_C_2/2-0-HERO-v1.png",
+      "status": "proposal",
+      "date": "2026-09-01",
+      "slug": "EXT. ROAD — HE TRIES IT HIMSELF",
+      "what": "A boy riding a bicycle on an empty tree lined road in low warm late afternoon light, long shadows across the tarmac, riding steadily rather than straining.",
+      "why": "A HERO FRAME STANDING IN FOR FOOTAGE. Phase 2 was shot and this holds the phase until the real material is exported. Generated, photographic, and not Manan. IT IS THE TONE TO SHOOT AND GRADE TOWARD: quiet desaturated colour, low sun from behind, the road empty, the boy small against it. He is curious, not committed, which is the whole beat: he has read something and is trying it out. The avenue of trees rhymes with the film's opening shot, which was not asked for and is worth keeping."
     }
   ],
   "event": "Breakthrough Junior Challenge 2026",
-  "site_version": 18,
+  "site_version": 19,
   "footage": [
     {
       "name": "Key catch",
