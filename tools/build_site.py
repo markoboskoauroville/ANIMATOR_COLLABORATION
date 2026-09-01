@@ -1766,7 +1766,15 @@ if sy:
     b.append('</div>')
 
 if overlays_of():
-    b.append((TRAY % ('the frame', 'The frame')).replace("EMAILADDR", EMAIL).replace('../marko.png', 'marko.png'))
+    # TRAY is written for pages one directory down, which is where it is used
+    # everywhere except here. breakdown.html sits at the root, so every ../ in it
+    # climbs out of the repository entirely and lands on markoboskoauroville.github.io.
+    # The portrait was the only casualty and it 404'd on the live site. Both
+    # paths are rewritten now, the deeper one first so it is not shadowed by the
+    # shorter match.
+    b.append((TRAY % ('the frame', 'The frame')).replace("EMAILADDR", EMAIL)
+             .replace('../mid/marko.png', 'mid/marko.png')
+             .replace('../marko.png', 'marko.png'))
 # everything above became the BREAKDOWN page. The homepage is now the flow.
 open(os.path.join(ROOT, 'breakdown.html'), 'w').write(
     page('Breakdown', ''.join(b), here='breakdown', depth=0))
