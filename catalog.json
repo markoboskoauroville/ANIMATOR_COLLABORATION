@@ -1665,11 +1665,12 @@
       "kind": "keyframe",
       "shot": "15.15",
       "file": "BB_C_15/15-1-B-v1.png",
-      "status": "proposal",
+      "status": "superseded",
       "date": "2026-09-01",
       "slug": "INT. — THE HAND TURNS OVER",
       "what": "Coach Brain's hand tilting, the tracksuit cuff clear at the wrist, the key sliding head down across the fingers.",
-      "why": "SECOND OF THREE: OFFERING, TURNING, FALLING. The key is drawn in pencil here and is gold in the film. It came back grey twice and the reason is now known: a small coloured object inside a large pencil drawing is drawn in pencil, because the surrounding style wins. Colouring it in the container failed too, four attempts, because the key touches the fingers and no threshold separates them. COLOUR IT IN THE COMPOSITE."
+      "why": "SECOND OF THREE: OFFERING, TURNING, FALLING. The key is drawn in pencil here and is gold in the film. It came back grey twice and the reason is now known: a small coloured object inside a large pencil drawing is drawn in pencil, because the surrounding style wins. Colouring it in the container failed too, four attempts, because the key touches the fingers and no threshold separates them. COLOUR IT IN THE COMPOSITE.",
+      "note": "Superseded by v2. The key came back in pencil, and four attempts to tint it in the container failed because it touches the fingers. Tinting is banned as of 1.9.2026: if the gold is missing the prompt was wrong and the frame is regenerated."
     },
     {
       "kind": "keyframe",
@@ -1680,10 +1681,20 @@
       "slug": "INT. — HE LETS IT GO",
       "what": "The hand open and relaxed, palm turned down, the key clear of the fingers and falling away into empty paper.",
       "why": "THIRD OF THREE, AND THE RELEASE. The hand has let go rather than offered: fingers spread, nothing held out to anybody. HE DOES NOT KNOW WHO CATCHES IT. That is why there is bare paper between the fingers and the key, and why no second hand is anywhere in the frame. Gold added in the container, 0.83 percent, the pencil shading kept underneath."
+    },
+    {
+      "kind": "keyframe",
+      "shot": "15.15",
+      "file": "BB_C_15/15-1-B-v2.png",
+      "status": "proposal",
+      "date": "2026-09-01",
+      "slug": "INT. — THE HAND TURNS OVER",
+      "what": "Coach Brain's hand tilting, the ribbed tracksuit cuff at the wrist, the painted gold key sliding head down across the opening fingers.",
+      "why": "SECOND OF THREE: OFFERING, TURNING, LETTING GO. THE GOLD LANDED HERE AND THE METHOD IS RECORDED. Two earlier attempts came back in pencil because every sentence described a pencil drawing and one sentence asked for colour, so the drawing won. The prompt that worked names the two materials as separate things, calls the key PAINTED rather than coloured, gives three tones instead of one, states the contrast as the point of the picture, and puts all of it first rather than last. See modules/imgtoimg.md."
     }
   ],
   "event": "Breakthrough Junior Challenge 2026",
-  "site_version": 12,
+  "site_version": 13,
   "footage": [
     {
       "name": "Key catch",
