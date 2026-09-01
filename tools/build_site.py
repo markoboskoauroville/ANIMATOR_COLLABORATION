@@ -1344,6 +1344,30 @@ rt.append('</div>')
 # reason is usually worth more than the frame. Images only, because a PDF has no
 # small version and would be loaded at full size as if it were a thumbnail.
 _as = ['<h1>ASSETS</h1>']
+# the key as a 3D model, one mesh with two materials so it can cross from drawn
+# to real without a vertex moving
+if os.path.exists(os.path.join(ROOT, 'assets3d', 'brain_break_key.obj')):
+    _as.append(
+        '<div class=srcbox><div class=t><b>The key in 3D, for Blender</b>'
+        '<span><a class=dl href="assets3d/brain_break_key_blender.py" download>SCRIPT</a>&nbsp;'
+        '<a class=dl href="assets3d/brain_break_key.obj" download>OBJ</a>&nbsp;'
+        '<a class=dl href="assets3d/brain_break_key_source.py" download>SOURCE</a></span></div>'
+        '<img src="%s" alt="" style="width:100%%;max-width:900px;display:block;margin:12px 0 8px;'
+        'border:1px solid var(--rule)">'
+        '<p>The real key modelled from the photographs: 110 mm long, 26 mm head, clover hole cut '
+        'clean through, three ring collar, three teeth. Watertight, 694 vertices, exported in '
+        'metres so it lands at the right scale.</p>'
+        '<p><b>Put both files in one folder, open Blender, Scripting tab, open the script, press '
+        'Run.</b> You get one mesh with two materials on it: slot 0 <b>KEY_REAL</b>, polished '
+        'brass, and slot 1 <b>KEY_DRAWN</b>, flat cream with no specular. The mesh never changes, '
+        'only the surface, so the key crosses from the drawn world to the real one without a vertex '
+        'moving. Keyframe the material index across the fall.</p>'
+        '<p style="color:var(--dim)">The origin is at the centre of volume, so it tumbles about '
+        'itself in a rigid body sim rather than swinging around a corner. The third file is the '
+        'source that generated the mesh: every dimension is a named constant at the top if you want '
+        'to change proportions.</p></div>'
+        % small('reference/OBJECT_SHEET_KEY-v2.png'))
+
 # the film's own lettering as an installable font, built from a specimen sheet
 # drawn in the same hand. See MANTRA_MANIFEST/modules/font-from-drawing.md.
 if os.path.exists(os.path.join(ROOT, 'font', 'brain_break.ttf')):

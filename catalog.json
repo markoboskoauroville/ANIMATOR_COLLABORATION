@@ -1607,7 +1607,7 @@
     }
   ],
   "event": "Breakthrough Junior Challenge 2026",
-  "site_version": 7,
+  "site_version": 8,
   "footage": [
     {
       "name": "Key catch",
@@ -1653,6 +1653,15 @@
       "codec": "TTF and OTF",
       "what": "The film's hand lettering as an installable font. 41 glyphs, built from a specimen sheet drawn in the same hand.",
       "use": "Type a line instead of drawing it. On the ASSETS page, top of the page, both formats. Small enough to live in the repository so it does not need Drive."
+    },
+    {
+      "name": "The key in 3D",
+      "phase": "15",
+      "phase_title": "THE KEY",
+      "url": "https://markoboskoauroville.github.io/ANIMATOR_COLLABORATION/assets.html",
+      "codec": "OBJ and a Blender script",
+      "what": "The real key modelled from the photographs, one mesh with two materials: polished brass and flat drawn cream.",
+      "use": "For the fall. The key turns, grows and crosses from pencil to photograph on the way down. Same mesh throughout, only the material changes. On the ASSETS page."
     }
   ],
   "flight_note": "FROM PHASE 5 ONWARD THE FILM DOES NOT CUT, IT FLIES. Think of an aeroplane going through cloud: you do not arrive by cutting, you arrive by passing through something. We fly in toward his head as his eyes close, pass into white, meet Ganesha in flight, arrive at the door, and he is drawn through it rather than walking in. Then we fly backwards and the house assembles around what we have just entered, fly on through the rooms, and land at the skull door. The landing is the only stop, because the conversation needs stillness. Then we fly at the banner and through it, and the key is given in the white on the other side. The credits fly too, card to card, through cloud. IF A BEAT SEEMS TO NEED A CUT, LOOK AGAIN: there is nearly always a surface to pass through. The one deliberate exception is the cut to Manan catching the key, because his hand and Coach Brain's must never share a frame.",
