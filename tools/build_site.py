@@ -701,6 +701,26 @@ MOVED_TO_DRIVE = {
 }
 
 
+# The watch folder daemon uploads every original to Drive and records the link
+# in drive_links.json, keyed by file name. It writes that file the moment a
+# frame arrives, which is BEFORE the chat session has written a catalogue entry
+# for it. Looking the link up here rather than storing it on the entry removes
+# the ordering dependency entirely: either side can go first.
+DRIVE = {}
+_dl = os.path.join(ROOT, 'drive_links.json')
+if os.path.exists(_dl):
+    try:
+        DRIVE = json.load(open(_dl))
+    except Exception:
+        DRIVE = {}
+
+
+def full_link(path):
+    """Where the full resolution original lives, or the local file if it is
+    still in the repository."""
+    return DRIVE.get(os.path.basename(path)) or path
+
+
 def small(path, size='mid'):
     # a transparent png keeps its alpha: it gets a small png, never a jpg
     if path.lower().endswith('.png') and os.path.exists(
@@ -1454,9 +1474,18 @@ for _i, e in enumerate(_order):
     # catalogue, because there is no local file left to weigh. A frame with no
     # `full` behaves exactly as before, and a missing local file no longer
     # crashes the build, it just says 0.0 MB until someone looks.
+    # Three places the original might be, in order of trust. The entry itself,
+    # which the daemon fills in once a catalogue entry exists. Then
+    # drive_links.json, which the daemon writes the moment a frame arrives,
+    # before anybody has written an entry for it. Then the local file, for
+    # everything not yet migrated.
+    _dv = DRIVE.get(os.path.basename(e['file']))
     if e.get('full'):
         _href = e['full']
         mb = e.get('full_bytes', 0) / 1048576.0
+    elif _dv:
+        _href = _dv if isinstance(_dv, str) else _dv.get('url', '')
+        mb = (_dv.get('bytes', 0) / 1048576.0) if isinstance(_dv, dict) else 0.0
     else:
         _href = '../' + e['file']
         _p = os.path.join(ROOT, e['file'])
