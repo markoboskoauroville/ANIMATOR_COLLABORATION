@@ -1676,11 +1676,12 @@
       "kind": "keyframe",
       "shot": "15.2",
       "file": "BB_C_15/15-2-A-v2.png",
-      "status": "proposal",
+      "status": "superseded",
       "date": "2026-09-01",
       "slug": "INT. — HE LETS IT GO",
       "what": "The hand open and relaxed, palm turned down, the key clear of the fingers and falling away into empty paper.",
-      "why": "THIRD OF THREE, AND THE RELEASE. The hand has let go rather than offered: fingers spread, nothing held out to anybody. HE DOES NOT KNOW WHO CATCHES IT. That is why there is bare paper between the fingers and the key, and why no second hand is anywhere in the frame. Gold added in the container, 0.83 percent, the pencil shading kept underneath."
+      "why": "THIRD OF THREE, AND THE RELEASE. The hand has let go rather than offered: fingers spread, nothing held out to anybody. HE DOES NOT KNOW WHO CATCHES IT. That is why there is bare paper between the fingers and the key, and why no second hand is anywhere in the frame. Gold added in the container, 0.83 percent, the pencil shading kept underneath.",
+      "note": "Superseded by v3. The key came back in pencil."
     },
     {
       "kind": "keyframe",
@@ -1691,10 +1692,20 @@
       "slug": "INT. — THE HAND TURNS OVER",
       "what": "Coach Brain's hand tilting, the ribbed tracksuit cuff at the wrist, the painted gold key sliding head down across the opening fingers.",
       "why": "SECOND OF THREE: OFFERING, TURNING, LETTING GO. THE GOLD LANDED HERE AND THE METHOD IS RECORDED. Two earlier attempts came back in pencil because every sentence described a pencil drawing and one sentence asked for colour, so the drawing won. The prompt that worked names the two materials as separate things, calls the key PAINTED rather than coloured, gives three tones instead of one, states the contrast as the point of the picture, and puts all of it first rather than last. See modules/imgtoimg.md."
+    },
+    {
+      "kind": "keyframe",
+      "shot": "15.2",
+      "file": "BB_C_15/15-2-A-v3.png",
+      "status": "proposal",
+      "date": "2026-09-01",
+      "slug": "INT. — HE LETS IT GO",
+      "what": "The hand open and relaxed, palm turned down, the ribbed tracksuit cuff at the wrist, and the painted gold key falling clear of the fingers into empty paper.",
+      "why": "THIRD OF THREE: OFFERING, TURNING, LETTING GO, AND THIS IS THE RELEASE. The hand has let go rather than offered: fingers spread and relaxed, nothing held out. HE DOES NOT KNOW WHO CATCHES IT, which is why there is clear paper between the fingers and the key and no second hand anywhere. The gold is painted, not tinted."
     }
   ],
   "event": "Breakthrough Junior Challenge 2026",
-  "site_version": 13,
+  "site_version": 14,
   "footage": [
     {
       "name": "Key catch",

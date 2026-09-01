@@ -1205,7 +1205,7 @@ CLIP_SOURCE = {
 LASTSHOT = [
     ('BB_C_15/15-1-A-v1.png', 'offering'),
     ('BB_C_15/15-1-B-v2.png', 'turning'),
-    ('BB_C_15/15-2-A-v2.png', 'letting go'),
+    ('BB_C_15/15-2-A-v3.png', 'letting go'),
     ('BB_C_15/15-3-FALL-2-v1.png', 'released'),
     ('BB_C_15/15-3-FALL-3-v4.png', 'the boards behind it'),
     ('BB_C_15/15-3-FALL-4-v2.png', 'the room behind it'),
