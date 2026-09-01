@@ -1425,11 +1425,12 @@
       "kind": "keyframe",
       "shot": "12.1",
       "file": "BB_C_12/12-1-A-v2.png",
-      "status": "proposal",
+      "status": "superseded",
       "date": "2026-08-31",
       "slug": "EXT. CREAM VOID — INTO THE BANNER",
       "what": "Close on the cloth. A few letters very large and cut off by the frame edges, the weave between them, the banner whole.",
-      "why": "THE CLOTH DOES NOT TEAR OR PART. An earlier attempt split it down the middle and was rejected: we pass through by cutting to white, not by the fabric giving way, the same as every other crossing in the film. Graded onto the film's own paper and pencil in the container, no coin spent: it came back warm and photographic at 6.39 percent colour and is now 0.00."
+      "why": "THE CLOTH DOES NOT TEAR OR PART. An earlier attempt split it down the middle and was rejected: we pass through by cutting to white, not by the fabric giving way, the same as every other crossing in the film. Graded onto the film's own paper and pencil in the container, no coin spent: it came back warm and photographic at 6.39 percent colour and is now 0.00.",
+      "note": "Superseded by v3. It came back as a photograph of a canvas: raking light, fabric weave, shallow focus. A fly through of a drawing is a scale move on that drawing and nothing else."
     },
     {
       "kind": "keyframe",
@@ -1722,10 +1723,20 @@
       "slug": "INT. CONTROL ROOM — ON MANAN, MOCKUP",
       "what": "A real boy standing on the stone floor in the middle of the reverse plate, photographic against the drawn room, with the desk end at the left and the arched door at the right.",
       "why": "A MOCKUP FOR COMPOSITING, NOT A FRAME OF THE FILM. The boy is generated and is not Manan. The position, the scale and the way he stands on the floor are all correct and are what to take from it. The visible cut out edge around him is useful rather than a fault: it reads unmistakably as a photograph laid onto a drawing, which is exactly what the composite is. THE EYELINE IS WRONG AND IS LEFT WRONG. He looks toward the right of frame. The desk is at frame left, so Coach Brain is off frame LEFT and Manan must look LEFT. This is the third mockup to get the eyeline backwards. The direction was fixed by the wide 19-2-A-v1: COACH BRAIN ON THE LEFT LOOKING RIGHT, MANAN ON THE RIGHT LOOKING LEFT. Use the position, not the eyeline."
+    },
+    {
+      "kind": "keyframe",
+      "shot": "12.1",
+      "file": "BB_C_12/12-1-A-v3.png",
+      "status": "proposal",
+      "date": "2026-09-01",
+      "slug": "EXT. CREAM VOID — INTO THE BANNER",
+      "what": "The same banner as the wide, enlarged. Pencil letters cut off by the frame edges, the sketched weave between them, flat even paper.",
+      "why": "A FLY THROUGH OF A DRAWING IS A SCALE MOVE ON THAT DRAWING AND NOTHING ELSE. The close up and the wide are the same banner: no relighting, no cast shadow, no depth of field, no fabric rendering, nothing added that the pencil did not already draw. Two earlier attempts failed the other way, one tearing the cloth open and one turning it into a photographed canvas. THE CLOTH STAYS WHOLE: we pass through by cutting to white, as at every other crossing in the film."
     }
   ],
   "event": "Breakthrough Junior Challenge 2026",
-  "site_version": 17,
+  "site_version": 18,
   "footage": [
     {
       "name": "Key catch",
