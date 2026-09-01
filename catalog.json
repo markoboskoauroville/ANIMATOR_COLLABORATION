@@ -1626,6 +1626,16 @@
       "slug": "EXT. — THE KEY FALLS, 4 OF 6",
       "what": "The key turned further, smaller in frame, with the control room behind it as a ghost: the desk, the screens, the arched door.",
       "why": "THE FILM CONTINUES BACKWARDS. The whiteboard was frame three, this is the room before it, and the next reach further back still. Key at 17 percent of frame width, ink at 2.23, close enough to frame three to cut together. NO SHADOW UNDER IT: a contact shadow puts it on a surface, and it is in the air."
+    },
+    {
+      "kind": "keyframe",
+      "shot": "15.35",
+      "file": "BB_C_15/15-3-FALL-5-v1.png",
+      "status": "proposal",
+      "date": "2026-09-01",
+      "slug": "EXT. — THE KEY FALLS, 5 OF 6",
+      "what": "The key close to vertical, the house behind it as a ghost, and the metal now rendering as real brass rather than shaded pencil.",
+      "why": "THIS IS WHERE THE CROSSING SHOWS. Frames one to four are drawn, this is halfway, and the next is a photograph in his hand. Set it against frame four and the change is visible; set it against its neighbours in motion and no single cut is the moment it becomes real. House faded in the container from 6.34 to 3.60 percent ink, still a little above frames three and four at 1.6 to 2.2. The key is vertical and centred here, which is more posed than the rest of the fall; accepted because Kristijan interpolates between these and sets the final levels in the composite."
     }
   ],
   "event": "Breakthrough Junior Challenge 2026",
