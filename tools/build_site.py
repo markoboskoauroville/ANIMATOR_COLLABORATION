@@ -1424,10 +1424,22 @@ os.makedirs(os.path.join(ROOT, 'card'), exist_ok=True)
 _order = [e for e in _kf]
 for _i, e in enumerate(_order):
     b = os.path.basename(e['file']).rsplit('.', 1)[0].replace(' ', '_')
-    mb = os.path.getsize(os.path.join(ROOT, e['file'])) / 1048576.0
+    # STEP 80. A frame whose original lives on Drive carries `full` and
+    # `full_bytes` on its catalogue entry: the watch folder daemon writes both
+    # when it uploads. The button goes to Drive and the size comes from the
+    # catalogue, because there is no local file left to weigh. A frame with no
+    # `full` behaves exactly as before, and a missing local file no longer
+    # crashes the build, it just says 0.0 MB until someone looks.
+    if e.get('full'):
+        _href = e['full']
+        mb = e.get('full_bytes', 0) / 1048576.0
+    else:
+        _href = '../' + e['file']
+        _p = os.path.join(ROOT, e['file'])
+        mb = (os.path.getsize(_p) if os.path.exists(_p) else 0) / 1048576.0
     cd = ['<div class=cardhead><span class=code>%s</span>'
-          '<a class=dl href="../%s" download>DOWNLOAD FULL SIZE &nbsp;%.1f MB</a></div>'
-          % (b.upper(), e['file'], mb)]
+          '<a class=dl href="%s" download>DOWNLOAD FULL SIZE &nbsp;%.1f MB</a></div>'
+          % (b.upper(), _href, mb)]
     cd.append('<img class=cardimg src="../mid/%s.jpg" alt="">' % b)
     if e.get('slug'):
         cd.append('<div class=slug>%s</div>' % e['slug'])
