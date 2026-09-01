@@ -1074,12 +1074,12 @@
       "kind": "keyframe",
       "shot": "15.2",
       "file": "BB_C_15/15-2-A-v1.png",
-      "status": "proposal",
+      "status": "superseded",
       "date": "2026-08-31",
       "slug": "INSERT — THE HAND BEGINS TO OPEN",
       "what": "The same hand, now wearing Coach Brain's tracksuit cuff with the stripe running off the left edge. The fingers have uncurled halfway and the gold key is clearly visible, still resting in the hand.",
       "why": "PHASE 2 OF 4. The cuff is how we know whose hand it is; the body stays out of frame. Caught in the middle of releasing, neither open nor closed.",
-      "note": "Off the strip 1.9.2026. The key in it was never made gold.",
+      "note": "Superseded by v2, which has the real key and the tracksuit cuff.",
       "storyboard": "hide"
     },
     {
@@ -1660,10 +1660,30 @@
       "slug": "INT. CONTROL ROOM — WIDE, MOCKUP WITH A BOY",
       "what": "The wide of the control room with a real boy standing on the open floor at the right, photographic against the drawn room.",
       "why": "A MOCKUP FOR COMPOSITING, NOT A FRAME OF THE FILM. The boy is generated and is not Manan: he is here so the scale, the standing position and the eyeline can be seen at a glance. In the film Manan is a photograph of the real boy keyed into this plate. ONE THING IS WRONG IN IT AND IS LEFT WRONG: he faces away toward the door instead of left toward Coach Brain. The screen direction the wide fixed is Coach Brain on the left looking right, Manan on the right looking left. Use the position, not the eyeline."
+    },
+    {
+      "kind": "keyframe",
+      "shot": "15.15",
+      "file": "BB_C_15/15-1-B-v1.png",
+      "status": "proposal",
+      "date": "2026-09-01",
+      "slug": "INT. — THE HAND TURNS OVER",
+      "what": "Coach Brain's hand tilting, the tracksuit cuff clear at the wrist, the key sliding head down across the fingers.",
+      "why": "SECOND OF THREE: OFFERING, TURNING, FALLING. The key is drawn in pencil here and is gold in the film. It came back grey twice and the reason is now known: a small coloured object inside a large pencil drawing is drawn in pencil, because the surrounding style wins. Colouring it in the container failed too, four attempts, because the key touches the fingers and no threshold separates them. COLOUR IT IN THE COMPOSITE."
+    },
+    {
+      "kind": "keyframe",
+      "shot": "15.2",
+      "file": "BB_C_15/15-2-A-v2.png",
+      "status": "proposal",
+      "date": "2026-09-01",
+      "slug": "INT. — HE LETS IT GO",
+      "what": "The hand open and relaxed, palm turned down, the key clear of the fingers and falling away into empty paper.",
+      "why": "THIRD OF THREE, AND THE RELEASE. The hand has let go rather than offered: fingers spread, nothing held out to anybody. HE DOES NOT KNOW WHO CATCHES IT. That is why there is bare paper between the fingers and the key, and why no second hand is anywhere in the frame. Gold added in the container, 0.83 percent, the pencil shading kept underneath."
     }
   ],
   "event": "Breakthrough Junior Challenge 2026",
-  "site_version": 11,
+  "site_version": 12,
   "footage": [
     {
       "name": "Key catch",
