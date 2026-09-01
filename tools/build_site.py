@@ -312,6 +312,16 @@ h2{font-size:19px;margin:38px 0 14px;padding-bottom:7px;border-bottom:1px solid 
 .seqstrip .cut{width:16px;display:flex;align-items:center;justify-content:center;
  font:700 12px ui-monospace,monospace;color:var(--brass)}
 @media(max-width:820px){.seqstrip .f{width:calc(33.33% - 8px)}.seqstrip .cut{display:none}}
+.asset{display:flex;flex-wrap:wrap;gap:9px;margin:10px 0 26px}
+.asset a{width:calc(12.5% - 8px);display:block;text-decoration:none;color:inherit}
+.asset img{width:100%;display:block;border:1px solid var(--rule);background:var(--card)}
+.asset a:hover img{border-color:var(--brass)}
+.asset .c{font:600 8px ui-monospace,monospace;letter-spacing:.03em;color:var(--dim);
+ padding-top:3px;word-break:break-all}
+.asset .sup img{opacity:.42}
+.asset .sup .c{color:#8a7a5e}
+@media(max-width:900px){.asset a{width:calc(25% - 7px)}}
+@media(max-width:600px){.asset a{width:calc(33.333% - 6px)}}
 .flight{margin:0 0 22px;padding:16px 20px;background:var(--box);
  border-left:3px solid var(--brass);max-width:1180px}
 .flight b{display:block;font:700 11px ui-monospace,monospace;letter-spacing:.13em;
@@ -613,6 +623,8 @@ def bar(here, r):
     o.append(('<span class=vb>%s</span>' % VERSION) if VERSION else '')
     o.append('<a href="%sfootage.html"%s>FOOTAGE</a>'
              % (r, ' class=on' if here == 'footage' else ''))
+    o.append('<a href="%sassets.html"%s>ASSETS</a>'
+             % (r, ' class=on' if here == 'assets' else ''))
     o.append('<a href="%sbrainstorm.html"%s>BRAINSTORM</a>'
              % (r, ' class=on' if here == 'brainstorm' else ''))
     o.append('<a href="%sbreakdown.html"%s>BREAKDOWN</a>'
@@ -1326,6 +1338,44 @@ for e in _fl:
                       % ('FOOTAGE' if live else 'EMPTY'))
         rt.append('</div>')
 rt.append('</div>')
+# ---------------------------------------------------------------- assets
+# Everything ever made for this film, including what was abandoned. Nothing is
+# thrown away: a rejected frame is a decision with a reason attached, and the
+# reason is usually worth more than the frame. Images only, because a PDF has no
+# small version and would be loaded at full size as if it were a thumbnail.
+_as = ['<h1>ASSETS</h1>',
+       '<p class=lede>Every image ever made for this film, live and retired. Nothing here is '
+       'deleted. A frame that was rejected carries the reason it was rejected, which is usually '
+       'worth more than the frame. Click any of them for the full note and a download. Faded ones '
+       'are superseded.</p>']
+_groups = [
+    ('In the film', lambda e: e.get('kind') == 'keyframe' and e.get('status') != 'superseded'),
+    ('Superseded and rejected', lambda e: e.get('status') == 'superseded'),
+    ('Sheets and references', lambda e: e.get('kind') in ('sheet', 'overlay', 'symbol', 'example',
+                                                          'rate', 'style', 'document')
+        and e.get('status') != 'superseded'),
+]
+for _title, _pred in _groups:
+    _items = [e for e in ENTRIES if _pred(e) and e.get('file')
+              and os.path.splitext(e['file'])[1].lower() in ('.png', '.jpg', '.jpeg')
+              and os.path.exists(os.path.join(ROOT, e['file']))]
+    if not _items:
+        continue
+    _items.sort(key=lambda e: e['file'])
+    _as.append('<h2>%s <span style="color:var(--dim);font-weight:400">%d</span></h2>'
+               % (_title, len(_items)))
+    _as.append('<div class=asset>')
+    for e in _items:
+        b = os.path.basename(e['file']).rsplit('.', 1)[0].replace(' ', '_')
+        cls = ' class=sup' if e.get('status') == 'superseded' else ''
+        card = os.path.join(ROOT, 'card', b + '.html')
+        href = ('card/%s.html' % b) if os.path.exists(card) else e['file']
+        _as.append('<a href="%s"%s><img src="%s" alt="" loading=lazy>'
+                   '<div class=c>%s</div></a>' % (href, cls, small(e['file'], 'tiny'), b))
+    _as.append('</div>')
+open(os.path.join(ROOT, 'assets.html'), 'w').write(
+    page('Assets', ''.join(_as), here='assets', depth=0))
+
 # ---------------------------------------------------------------- footage
 # One page listing every export, what is in it and which phase it belongs to.
 # The site has many levels now and this is the way out of the forest.
