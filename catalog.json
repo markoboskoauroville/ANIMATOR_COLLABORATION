@@ -1712,10 +1712,20 @@
       "slug": "INT. — AT THE BLACKBOARD, MOCKUP",
       "what": "A real boy standing at the left of the blackboard with chalk in his hand, back to us, clear of the writing.",
       "why": "A MOCKUP FOR COMPOSITING, NOT A FRAME OF THE FILM. The boy is generated and is not Manan: he is here so the standing position, the scale against the board and the eyeline can be seen. In the film Manan is a photograph keyed onto the drawn board. IT CAME BACK WITH TWO HANDS AND BABA KEPT THEM. The boy at the left with his back to us, and a second hand entering at the right holding chalk. That is two ways to cut the scene: the whole figure when we need to see who is arguing, and the hand alone when the board is the subject and a body would only take up room. Both are usable and both are wanted. One thing is wrong and is left wrong: the board has gone photographic where it should stay a drawing with only the boy real. Use the positions, not the rendering."
+    },
+    {
+      "kind": "keyframe",
+      "shot": "19.41",
+      "file": "BB_C_19/19-4-MOCKUP-v1.png",
+      "status": "proposal",
+      "date": "2026-09-01",
+      "slug": "INT. CONTROL ROOM — ON MANAN, MOCKUP",
+      "what": "A real boy standing on the stone floor in the middle of the reverse plate, photographic against the drawn room, with the desk end at the left and the arched door at the right.",
+      "why": "A MOCKUP FOR COMPOSITING, NOT A FRAME OF THE FILM. The boy is generated and is not Manan. The position, the scale and the way he stands on the floor are all correct and are what to take from it. The visible cut out edge around him is useful rather than a fault: it reads unmistakably as a photograph laid onto a drawing, which is exactly what the composite is. THE EYELINE IS WRONG AND IS LEFT WRONG. He looks toward the right of frame. The desk is at frame left, so Coach Brain is off frame LEFT and Manan must look LEFT. This is the third mockup to get the eyeline backwards. The direction was fixed by the wide 19-2-A-v1: COACH BRAIN ON THE LEFT LOOKING RIGHT, MANAN ON THE RIGHT LOOKING LEFT. Use the position, not the eyeline."
     }
   ],
   "event": "Breakthrough Junior Challenge 2026",
-  "site_version": 16,
+  "site_version": 17,
   "footage": [
     {
       "name": "Key catch",
