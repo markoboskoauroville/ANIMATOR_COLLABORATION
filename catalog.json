@@ -1530,7 +1530,9 @@
       "date": "2026-08-31",
       "slug": "INT. ROOM — THE NUMBER",
       "what": "What he was chasing, and did not reach.",
-      "why": "PLACEHOLDER. This is a reference frame from the document Venkatesh shot from, standing in until the real footage is exported. It shows the intended framing and nothing more. The phase was shot and the material exists; it is not on this machine yet."
+      "why": "PLACEHOLDER. This is a reference frame from the document Venkatesh shot from, standing in until the real footage is exported. It shows the intended framing and nothing more. The phase was shot and the material exists; it is not on this machine yet.",
+      "storyboard": "hide",
+      "note": "Off the storyboard, 1.9.2026. This is a drawing sitting in a live action phase alongside real footage of the same beat, which tells the animator to draw something that was already shot. Kept in the catalogue as early reference only."
     },
     {
       "kind": "keyframe",
@@ -1560,7 +1562,9 @@
       "date": "2026-08-31",
       "slug": "INT. ROOM — BREATHING",
       "what": "Stillness. This is the way in.",
-      "why": "PLACEHOLDER. This is a reference frame from the document Venkatesh shot from, standing in until the real footage is exported. It shows the intended framing and nothing more. The phase was shot and the material exists; it is not on this machine yet."
+      "why": "PLACEHOLDER. This is a reference frame from the document Venkatesh shot from, standing in until the real footage is exported. It shows the intended framing and nothing more. The phase was shot and the material exists; it is not on this machine yet.",
+      "storyboard": "hide",
+      "note": "Off the storyboard, 1.9.2026, same reason as V7_5_3_beat_it. A drawing in a live action phase beside real footage of the same beat. Found by measuring coloured pixels across all three live phases rather than by eye: 2.4 per cent against 62 to 92 for every photograph around it."
     },
     {
       "kind": "keyframe",
@@ -1769,7 +1773,7 @@
     }
   ],
   "event": "Breakthrough Junior Challenge 2026",
-  "site_version": 21,
+  "site_version": 22,
   "footage": [
     {
       "name": "Key catch",
