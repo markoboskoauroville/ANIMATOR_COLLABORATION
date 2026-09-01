@@ -1209,7 +1209,6 @@ LASTSHOT = [
     ('BB_C_15/15-3-FALL-3-v4.png', 'the boards behind it'),
     ('BB_C_15/15-3-FALL-4-v2.png', 'the room behind it'),
     ('BB_C_15/15-3-FALL-5-v1.png', 'the house behind it'),
-    (None, 'CUT'),
     (('mp4', 'clips/key-catch-loop.mp4'), 'he catches it'),
 ]
 
@@ -1307,7 +1306,10 @@ def lastshot_strip(prefix=''):
                  'The key falls out of the sky, turning and growing, and the whole film replays behind it in '
        'reverse, so faint it is almost not there: the boards, the room, the house, and the avenue as '
        'it lands. It crosses from pencil to photograph on the way down, so no single frame is the '
-       'moment it becomes real. His hand and Coach Brain\u2019s are never on screen together.', prefix)
+       'moment it becomes real. THERE IS NO CUT ANYWHERE IN THIS. The camera never stops following '
+       'the key. Coach Brain\u2019s hand leaves the top of the fall and Manan\u2019s arrives at the '
+       'bottom of it, and the two of them never share a frame because a whole journey lies between '
+       'them.', prefix)
 
 
 _titlecard = 'BB_C_0/0-0-TITLE-v1.png'
