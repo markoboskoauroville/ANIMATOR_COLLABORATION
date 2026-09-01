@@ -1343,7 +1343,25 @@ rt.append('</div>')
 # thrown away: a rejected frame is a decision with a reason attached, and the
 # reason is usually worth more than the frame. Images only, because a PDF has no
 # small version and would be loaded at full size as if it were a thumbnail.
-_as = ['<h1>ASSETS</h1>',
+_as = ['<h1>ASSETS</h1>']
+# the film's own lettering as an installable font, built from a specimen sheet
+# drawn in the same hand. See MANTRA_MANIFEST/modules/font-from-drawing.md.
+if os.path.exists(os.path.join(ROOT, 'font', 'brain_break.ttf')):
+    _as.append(
+        '<div class=srcbox><div class=t><b>Brain Brake, the film\u2019s own font</b>'
+        '<span><a class=dl href="font/brain_break.ttf" download>TTF</a>&nbsp;'
+        '<a class=dl href="font/brain_break.otf" download>OTF</a></span></div>'
+        '<img src="%s" alt="" style="width:100%%;max-width:900px;display:block;margin:12px 0 8px;'
+        'border:1px solid var(--rule)">'
+        '<p>The hand lettering of the film, traced from a specimen sheet and built into a font so '
+        'a line can be typed instead of drawn. 41 glyphs: A to Z, 0 to 9, and full stop, comma, '
+        'colon, apostrophe and hyphen. Double click to install on macOS or Windows; it appears as '
+        '<b>Brain Brake</b>.</p>'
+        '<p style="color:var(--dim)">No kerning, so tight pairs like AV or TA may want manual '
+        'tracking. Every letter is identical each time it repeats, which real handwriting is not: '
+        'for a title that has to look truly hand drawn, draw it rather than set it.</p></div>'
+        % small('DOCS/FONT_SPECIMEN.png'))
+_as += [
        '<p class=lede>Every image ever made for this film, live and retired. Nothing here is '
        'deleted. A frame that was rejected carries the reason it was rejected, which is usually '
        'worth more than the frame. Click any of them for the full note and a download. Faded ones '
