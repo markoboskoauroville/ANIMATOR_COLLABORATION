@@ -1576,6 +1576,15 @@
       "slug": "END CREDITS — THE CLOUD PLATE",
       "what": "A tall nine by sixteen sheet of faint cloud in bands, with clear bare paper between them and an open column down the centre.",
       "why": "NOT USED YET, KEPT ANYWAY. Built so the credits could be one plate with text composed over it rather than seven separate cards, which is cheaper and lets the order change without regenerating anything. Fly the camera down the open middle and pass through a cloud bank between each name."
+    },
+    {
+      "frame": "15",
+      "file": "reference/OBJECT_SHEET_KEY-v2.png",
+      "kind": "sheet",
+      "title": "The key",
+      "status": "reference",
+      "date": "2026-09-01",
+      "note": "THIS IS THE KEY, AND IT IS A REAL OBJECT ON THE LIVE SET. Four views: full side, tilted three quarter, head detail, bit end profile. A long round shaft; at one end a flat round disc with a three lobed clover hole and the number 5 stamped near its edge; a collar of three raised rings where head meets shaft; at the other end a flat rectangular bit with three square teeth. EVERY DRAWN KEY IN THE FILM MUST MATCH THIS. The earlier frames drew a modern flat key and are all wrong: the Coach Brain character sheet, and the four hand phases 15-1 through 15-4. The point of matching it exactly is that the drawn key and the real key are the same object, so the cross dissolve from drawing to photograph in the last shot lands on itself rather than on something similar. Photographs in reference/key/."
     }
   ],
   "event": "Breakthrough Junior Challenge 2026",
