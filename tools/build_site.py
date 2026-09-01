@@ -1558,7 +1558,22 @@ open(os.path.join(ROOT, 'index.html'), 'w').write(
 # is doing. The full file is only ever reached by pressing download.
 os.makedirs(os.path.join(ROOT, 'card'), exist_ok=True)
 _order = [e for e in _kf]
-for _i, e in enumerate(_order):
+# _kf is the STORYBOARD set: it drops superseded frames and anything carrying
+# storyboard=hide. Cards were built from it alone, so 20 catalogued frames kept
+# whatever card page an older build had left on disk and were never regenerated
+# again. That is how 11 pages were still serving a top bar from before the
+# GDRIVE fix, and the hidden set is exactly the real footage composites that
+# assets, scene and breakdown pages link to, which is where the work is done.
+# So every catalogued keyframe with a mid image gets a page. The extras are
+# appended AFTER _order, so the prev/next chain over indices 0..len(_order)-1 is
+# byte for byte what it was: the storyboard walk is unchanged and nobody
+# navigates into a superseded frame by pressing next.
+_extra = [e for e in ENTRIES
+          if e.get('kind') == 'keyframe' and e not in _kf and e.get('file')
+          and os.path.exists(os.path.join(
+              ROOT, 'mid', os.path.basename(e['file']).rsplit('.', 1)[0].replace(' ', '_') + '.jpg'))]
+_cards = _order + _extra
+for _i, e in enumerate(_cards):
     b = os.path.basename(e['file']).rsplit('.', 1)[0].replace(' ', '_')
     # STEP 80. A frame whose original lives on Drive carries `full` and
     # `full_bytes` on its catalogue entry: the watch folder daemon writes both
@@ -1645,17 +1660,18 @@ for _i, e in enumerate(_order):
         cd.append('</div>')
 
     nav = []
-    if _i > 0:
+    _instory = _i < len(_order)
+    if _instory and _i > 0:
         pb = os.path.basename(_order[_i-1]['file']).rsplit('.', 1)[0].replace(' ', '_')
         nav.append('<a href="%s.html">&larr; %s</a>' % (pb, pb))
     nav.append('<a href="../index.html">all frames</a>')
-    if _i < len(_order) - 1:
+    if _instory and _i < len(_order) - 1:
         nb = os.path.basename(_order[_i+1]['file']).rsplit('.', 1)[0].replace(' ', '_')
         nav.append('<a href="%s.html">%s &rarr;</a>' % (nb, nb))
     cd.append('<p class=lede style="margin-top:26px">%s</p>' % ' &nbsp;&middot;&nbsp; '.join(nav))
     open(os.path.join(ROOT, 'card', b + '.html'), 'w').write(
         page(b, ''.join(cd), here='home', depth=1))
-print('  %d card pages' % len(_order))
+print('  %d card pages, %d on the storyboard walk' % (len(_cards), len(_order)))
 
 open(os.path.join(ROOT, 'documentation.html'), 'w').write(
     page('Documentation', ''.join(b), here='doc', depth=0))
