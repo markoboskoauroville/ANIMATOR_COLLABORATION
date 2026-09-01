@@ -1744,10 +1744,21 @@
       "slug": "EXT. ROAD — HE TRIES IT HIMSELF",
       "what": "A boy riding a bicycle on an empty tree lined road in low warm late afternoon light, long shadows across the tarmac, riding steadily rather than straining.",
       "why": "A HERO FRAME STANDING IN FOR FOOTAGE. Phase 2 was shot and this holds the phase until the real material is exported. Generated, photographic, and not Manan. IT IS THE TONE TO SHOOT AND GRADE TOWARD: quiet desaturated colour, low sun from behind, the road empty, the boy small against it. He is curious, not committed, which is the whole beat: he has read something and is trying it out. The avenue of trees rhymes with the film's opening shot, which was not asked for and is worth keeping."
+    },
+    {
+      "kind": "keyframe",
+      "shot": "4.0",
+      "representative": true,
+      "file": "BB_C_4/4-0-HERO-v1.png",
+      "status": "proposal",
+      "date": "2026-09-01",
+      "slug": "INT. ROOM — HE IS DONE",
+      "what": "Slumped forward over the handlebars of the exercise bike, head down on his forearm, not pedalling. Damp hair, sweat on the neck, the whole body gone heavy.",
+      "why": "A HERO FRAME STANDING IN FOR FOOTAGE, generated and not Manan. THIS IS THE WATER BEAT, where the audience feels it in their own legs before anything has been explained. So it has to be exhaustion you recognise rather than exhaustion performed: no grimace, no clenching, just a body that has stopped. The tone to shoot toward: low warm window light from behind, the far side of the room in soft shadow, quiet desaturated colour, an ordinary lived in room rather than a styled one."
     }
   ],
   "event": "Breakthrough Junior Challenge 2026",
-  "site_version": 19,
+  "site_version": 20,
   "footage": [
     {
       "name": "Key catch",
