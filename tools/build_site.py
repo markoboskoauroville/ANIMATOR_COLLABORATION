@@ -1587,11 +1587,20 @@ for _i, e in enumerate(_cards):
     # before anybody has written an entry for it. Then the local file, for
     # everything not yet migrated.
     _dv = DRIVE.get(os.path.basename(e['file']))
+    # STEP 86. A row with an empty url is a CLAIM, not a link: the chat session
+    # writes {"bytes": 0, "url": ""} when it files a frame from the phone, and
+    # the daemon fills it in when it uploads. So an empty url must fall through
+    # to the local file, exactly as a missing row does. Testing the row for
+    # truth rather than the url would have put href="" on every frame waiting
+    # in that queue, which is worse than a heavy repository because it looks
+    # like a link and does nothing. full_link() already gets this right; this
+    # branch is the other half of the same rule.
+    _dvu = '' if not _dv else (_dv if isinstance(_dv, str) else _dv.get('url', ''))
     if e.get('full'):
         _href = e['full']
         mb = e.get('full_bytes', 0) / 1048576.0
-    elif _dv:
-        _href = _dv if isinstance(_dv, str) else _dv.get('url', '')
+    elif _dvu:
+        _href = _dvu
         mb = (_dv.get('bytes', 0) / 1048576.0) if isinstance(_dv, dict) else 0.0
     else:
         _href = '../' + e['file']
