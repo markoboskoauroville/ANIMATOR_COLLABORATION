@@ -21,7 +21,7 @@ the front, once, because almost every per frame note is an application of them.
 Built from catalog.json, so it cannot drift from the site. If a note changes
 there, it changes here on the next build.
 """
-import json, os, textwrap
+import json, os, re, textwrap
 from reportlab.lib.pagesizes import A4, landscape
 from reportlab.lib.units import mm
 from reportlab.lib import colors
@@ -79,6 +79,84 @@ CUES = {
  '14-8-DEDICATION-v2.png': 'The last card. Ganesha rubs on by frottage, the lettering after him, '
     'then hold in silence with the music. Nothing moves out. The film simply stops.',
 }
+
+
+# WHAT EACH PHASE IS, AND HOW ITS FRAMES MOVE. A frame with no cue of its own
+# inherits its phase, and a phase note is a real instruction rather than the
+# single generic line the first build fell back to for 86 of 99 pages.
+PHASES = {
+ 0:  ('The title', 'The title rubs itself onto the paper by frottage, edge first. Nothing is typed on.'),
+ 1:  ('The mystery', 'First half grammar. Each element rubs through the paper as it is needed, one at a '
+      'time, never sliding in and never fading up. Between beats the sheet is allowed to be empty.'),
+ 2:  ('The old theory', 'The engine picture assembles part by part. Rub each part on in the order a '
+      'person would say it, so the drawing keeps pace with the voice rather than waiting for it.'),
+ 3:  ('The full tank', 'Hold on the measurement. This is the fact the whole film turns on, so let it '
+      'sit longer than feels comfortable before anything else moves.'),
+ 4:  ('The gatekeeper', 'The governor is introduced as something protective, not sinister. Slow, even '
+      'moves. Nothing lurches.'),
+ 5:  ('The experiment', 'The last phase of the first half. Things still arrive by frottage, and after '
+      'this they never do again.'),
+ 6:  ('The release', 'THE HINGE. He goes past the voice that says stop and the film changes grammar '
+      'here. From this frame on nothing arrives: we move, and every transition is a passage through '
+      'a surface. There is no cut after this point.'),
+ 7:  ('The verdict', 'Second half grammar. Move through, never cut to. Enter and leave by surface.'),
+ 8:  ('The house of the body', 'Constant walking pace down each hall, the same speed in every room, '
+      'because sameness is what makes the fourth door land. Cross THROUGH each door: the frame '
+      'darkens as the door fills the lens and the next hall is already there.'),
+ 9:  ('The passage', 'The camera does not move. THE WATER DOES. The strands turn and climb, the throat '
+      'holds its position, so the shot rotates without the frame rotating.'),
+ 10: ('The old theory on the board', 'A build sequence. Each BUILD frame is one more part rubbed on. '
+      'Play them in order at the pace of the voice; they are not alternatives.'),
+ 11: ('The new theory and the key', 'A build sequence, same as phase 10. In order, at the pace of the '
+      'voice.'),
+ 12: ('It is a setting', 'Hold. This is the sentence the film exists to say, so nothing competes with '
+      'it.'),
+ 14: ('End credits', 'Names rub on and rub off by frottage, in order, evenly paced. The last card is '
+      'the dedication and it simply holds.'),
+ 15: ('The key falls', 'The fall. The key turns, grows, and crosses from pencil to photograph on the '
+      'way down, so no single frame is the moment it becomes real. Behind it the whole film replays '
+      'in reverse, motion blurred because it is passing, while the key stays sharp.'),
+ 16: ('The house', 'Second half grammar. Move through, never cut to.'),
+ 17: ('The front door', 'Move through the door, not around it.'),
+ 18: ('The skull door', 'Hold longer than is comfortable, then in through the door.'),
+ 19: ('The control room', 'Slow drift. Coach Brain turns on his own time. Nothing hurries here.'),
+}
+
+# LIVE FOOTAGE. Kristijan does not animate these and must not be asked to. The
+# page shows the hero frame and says what happens in the shot, so he knows what
+# the cut contains and what the drawing on either side has to meet.
+FOOTAGE_MARKS = ('PANA', 'V7_', 'SHOT_', '_LIVE', 'LIVE.', 'MOCKUP')
+FOOTAGE_WHAT = {
+ 'V7_5_5_road.jpg': 'Manan running on the road past the water tank, wide, real. The shot the whole '
+   'film is asking a question about.',
+ 'V7_5_1_bike.jpg': 'On the bicycle, testing where the limit is. Handheld, real.',
+ '5_5_LIVE.jpg': 'Live plate for phase 2. The drawn engine sits over this.',
+ 'SHOT_PANA6223_00_00_14_00_G.jpg': 'Studio, front on, talking to camera.',
+ 'SHOT_PANA6227_00_00_06_00_G.jpg': 'Studio, the measurement beat.',
+ 'SHOT_PANA6229_00_00_06_00_G.jpg': 'Studio, continuing.',
+ 'V7_5_6_racing.jpg': 'Racing himself down the corridor at home.',
+ 'V7_5_4_idea_lands.jpg': 'The moment the idea lands on him.',
+ 'V7_5_7_the_wall.jpg': 'Hitting the wall. The voice that says stop.',
+ 'V7_5_3_beat_it.jpg': 'Going past it anyway.',
+ '5_7_LIVE.jpg': 'Live plate for phase 4.',
+ 'V7_5_8_eyes_closed.jpg': 'Eyes closing. The last live frame of the first half.',
+ 'V7_8_1_breathing.jpg': 'Breathing, held.',
+ '5_8_LIVE.jpg': 'Live plate for phase 5.',
+ 'PANA6276_11_47_46_08.png': 'Live plate, the fall. Shot on set.',
+ 'PANA6279_11_48_30_06.png': 'Live plate, the fall.',
+ 'PANA6270_11_46_40_11.png': 'Live plate, the fall.',
+ 'KEY_CATCH_1_00_00_04_19.png': 'His hand catching the key, shot against black with alpha.',
+ '16-1-MOCKUP-v1.png': 'Live composite mockup: photographed Manan at the drawn door.',
+ '10-1-MOCKUP-v1.png': 'Live composite mockup.',
+ '19-2-MOCKUP-v1.png': 'Live composite mockup.',
+ '19-4-MOCKUP-v1.png': 'Live composite mockup.',
+}
+
+
+def is_footage(e):
+    b = os.path.basename(e['file'])
+    return '/live/' in e['file'] or any(k in b for k in FOOTAGE_MARKS)
+
 
 GRAMMAR = [
  ('BEFORE HE CLOSES HIS EYES, THINGS ARRIVE.',
@@ -138,20 +216,36 @@ def page_frame(c, e, n, total):
     c.drawString(x, y, os.path.basename(e['file']))
     y -= 18
     c.setStrokeColor(RULE); c.line(x, y, x + right, y); y -= 16
+    foot = is_footage(e)
+    sc = e.get('scene')
+    try:
+        sc = int(str(e.get('shot', '0')).split('.')[0])
+    except ValueError:
+        pass
+    ph = PHASES.get(sc)
+    if ph:
+        c.setFont('Helvetica', 7.5); c.setFillColor(DIM)
+        c.drawString(x, y, ph[0].upper()); y -= 15
     c.setFont('Helvetica-Bold', 7.5); c.setFillColor(GOLD)
-    c.drawString(x, y, 'WHAT IT IS'); y -= 13
-    y = wrap(c, (e.get('note') or '').replace('\n', ' '), x, y, right)
+    c.drawString(x, y, 'LIVE FOOTAGE, NOTHING TO ANIMATE' if foot else 'WHAT IT IS'); y -= 13
+    b_ = os.path.basename(e['file'])
+    what = (e.get('note') or '').replace('\n', ' ').strip()
+    if foot:
+        what = FOOTAGE_WHAT.get(b_) or what or 'Live footage from the shoot.'
+        what += ('  This is a filmed shot and there is nothing here to draw. It is on this page so '
+                 'you know what the cut contains and what the drawing on either side has to meet.')
+    elif not what:
+        what = ('No description written yet. Ask before animating this one, rather than guessing '
+                'from the picture.')
+    y = wrap(c, what, x, y, right)
     y -= 12
-    c.setFont('Helvetica-Bold', 7.5); c.setFillColor(GOLD)
-    c.drawString(x, y, 'HOW IT MOVES'); y -= 13
-    cue = CUES.get(os.path.basename(e['file']))
-    if not cue:
-        sc = e.get('scene', 0)
-        cue = ('First half grammar: it arrives by frottage, rubbed through the paper, never slid in '
-               'and never faded up.' if isinstance(sc, int) and sc <= 5 else
-               'Second half grammar: we move, it does not arrive. Enter and leave through a surface. '
-               'There is no cut.')
-    wrap(c, cue, x, y, right, colour=INK)
+    if not foot:
+        c.setFont('Helvetica-Bold', 7.5); c.setFillColor(GOLD)
+        c.drawString(x, y, 'HOW IT MOVES'); y -= 13
+        cue = CUES.get(b_) or (ph[1] if ph else
+              'Second half grammar: we move, it does not arrive. Enter and leave through a surface. '
+              'There is no cut.')
+        wrap(c, cue, x, y, right, colour=INK)
     c.setFont('Courier', 7); c.setFillColor(DIM)
     c.drawString(18 * mm, 12 * mm, 'THE BRAIN BRAKE  \u00b7  animator read through')
     c.drawRightString(W - 18 * mm, 12 * mm, '%d / %d' % (n, total))
@@ -164,10 +258,20 @@ def main():
             if e.get('kind') == 'keyframe' and e.get('status') not in ('superseded',)
             and e.get('file')]
     def order(e):
-        try:
-            return [float(p) for p in str(e.get('shot', '0')).split('.')]
-        except ValueError:
-            return [999.0]
+        """Sort by shot, and survive a letter on the end of one.
+
+        2.9.2026. This used float() and threw everything it could not parse to
+        999, so shots 1.2b and 1.2c landed at the BACK of the document, after
+        phase 19. Five phase one frames were printed last. Nothing errored and
+        the page count was right, which is why the first two checks passed it.
+        A number and a letter now sort as a pair, so 1.2 comes before 1.2b
+        comes before 1.2c comes before 1.3.
+        """
+        out = []
+        for part in str(e.get('shot', '0')).split('.'):
+            m = re.match(r'(\d*)([a-zA-Z]*)', part)
+            out.append((int(m.group(1) or 0), m.group(2)))
+        return out
     live.sort(key=order)
     os.makedirs(os.path.dirname(OUT), exist_ok=True)
     c = canvas.Canvas(OUT, pagesize=PAGE)
