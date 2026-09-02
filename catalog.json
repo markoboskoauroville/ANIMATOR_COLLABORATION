@@ -1350,8 +1350,8 @@
       "source": [
         {
           "name": "The catch, the clip",
-          "url": "../clips/key-catch.mp4",
-          "note": "The clip that loops in the sequence on the front page, at 4K. The loop there is 480 wide and silent, small enough that the page stays light. Served from this repository rather than YouTube, which lays a title card and a watermark over an embed and makes it unreadable at thumbnail size."
+          "url": "../clips/key-catch-loop.mp4",
+          "note": "The clip that loops in the sequence on the front page, at 480 wide, the loop. The loop there is 480 wide and silent, small enough that the page stays light. Served from this repository rather than YouTube, which lays a title card and a watermark over an embed and makes it unreadable at thumbnail size. The 4K master is not in the repository; this is the loop that is."
         },
         {
           "name": "The footage, with alpha",
@@ -1373,8 +1373,8 @@
       "source": [
         {
           "name": "In front of the door, the clip",
-          "url": "../clips/in-front-of-door.mp4",
-          "note": "The clip that loops in the sequence on the front page, at 4K. The loop there is 480 wide and silent, small enough that the page stays light. Served from this repository rather than YouTube, which lays a title card and a watermark over an embed and makes it unreadable at thumbnail size."
+          "url": "../clips/in-front-of-door-loop.mp4",
+          "note": "The clip that loops in the sequence on the front page, at 480 wide, the loop. The loop there is 480 wide and silent, small enough that the page stays light. Served from this repository rather than YouTube, which lays a title card and a watermark over an embed and makes it unreadable at thumbnail size. The 4K master is not in the repository; this is the loop that is."
         },
         {
           "name": "The door footage, with alpha",
@@ -1775,7 +1775,7 @@
     }
   ],
   "event": "Breakthrough Junior Challenge 2026",
-  "site_version": 149,
+  "site_version": 150,
   "footage": [
     {
       "name": "Key catch",

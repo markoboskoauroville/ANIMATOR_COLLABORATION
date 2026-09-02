@@ -10,7 +10,7 @@ Pages: the landing page, one per scene, one breakdown per frame that has
 layers, and the documentation page. Every page carries the bar and the gate.
 No zips anywhere: Kristijan downloads what he needs, one file at a time.
 """
-import json, os, glob
+import json, os, glob, urllib.parse
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 CAT = json.load(open(os.path.join(ROOT, 'catalog.json')))
@@ -719,20 +719,35 @@ if os.path.exists(_dl):
         DRIVE = {}
 
 
+ORIGINALS = {}
+_ol = os.path.join(ROOT, 'originals.json')
+if os.path.exists(_ol):
+    try:
+        ORIGINALS = json.load(open(_ol))
+    except Exception:
+        ORIGINALS = {}
+
+
 def full_link(path, prefix=''):
     """Where the full resolution original lives, or the local file if it is
     still in the repository.
 
-    drive_links.json holds {name: {"bytes": n, "url": u}}, so this used to
-    return a dict and anything that dropped it into an href wrote the whole
-    dict into the page. It returns a string now, always. The card path did the
-    unwrapping itself and was correct; every other caller was not, which is why
-    the front page strip and eight shot pages pointed at originals the daemon
-    had already removed. One lookup, used everywhere, so they cannot drift
-    apart again.
+    Three places are tried, in this order, and the order is the history of the
+    project. ORIGINALS first: BRAIN_BRAKE_ORIGINALS is public, has no Pages
+    site and therefore no 1 GB ceiling, and a raw link needs no permission call
+    and no credential, so there is no state that can drift. DRIVE second, still
+    read so that anything not yet migrated keeps working. The local file last.
+
+    An EMPTY url is a claim, not a link. STEP 86: the chat session writes
+    {"bytes": 0, "url": ""} when it files a frame from a phone and something
+    else fills it in later. So the url is tested for truth, never the row,
+    or every frame waiting in that queue renders href="" on the page.
     """
-    v = DRIVE.get(os.path.basename(path))
-    if v:
+    b = os.path.basename(path)
+    for table in (ORIGINALS, DRIVE):
+        v = table.get(b)
+        if not v:
+            continue
         u = v if isinstance(v, str) else v.get('url', '')
         if u:
             return u
@@ -1003,10 +1018,10 @@ for n in sorted(SCENES, key=int):
         lbl = ('%s %s' % (e.get('title', 'character sheet'), ver(e))).strip()
         if _i == 0:
             b.append('<h2>Character sheet%s</h2>' % ('s' if len(sh) > 1 else ''))
-        b.append('<div class=sheet><a href="../%s"><img src="../%s" alt=""></a>'
+        b.append('<div class=sheet><a href="%s"><img src="../%s" alt=""></a>'
                  '<div class=meta><span class=fid>%s</span>%s%s'
                  '<p class=note>%s</p>%s</div></div>'
-                 % (e['file'], small(e['file']), e.get('title', 'character sheet'),
+                 % (full_link(e['file'], '../'), small(e['file']), e.get('title', 'character sheet'),
                     ('<span class=ver>%s</span>' % ver(e)) if ver(e) else '',
                     tag(e.get('status', 'reference')),
                     e.get('note', 'note pending'), picks(lbl)))
@@ -1050,11 +1065,11 @@ for n in sorted(SCENES, key=int):
                 bd = ('<a class=bd href="%s_breakdown.html">Breakdown &rarr;</a>'
                       % os.path.splitext(os.path.basename(e['file']))[0]) if lay else ''
                 fid = e.get('frame', '')
-                b.append('<div class=cell><a href="../%s"><img src="../%s" alt=""></a>'
+                b.append('<div class=cell><a href="%s"><img src="../%s" alt=""></a>'
                          '<div class=meta><span class=fid>%s</span>%s%s'
                          '<p class=note>%s</p>%s%s'
                          '</div></div>'
-                         % (e['file'], small(e['file'], 'tiny'), fid,
+                         % (full_link(e['file'], '../'), small(e['file'], 'tiny'), fid,
                             ('<span class=ver>%s</span>' % ver(e)) if ver(e) else '',
                             tag(e.get('status', 'proposal')),
                             e.get('note', 'note pending'), bd,
@@ -1110,10 +1125,11 @@ for n in sorted(SCENES, key=int):
                 '<b>Composite</b> is what it must look like when they are stacked.</div>']
         order = sorted(lay, key=lambda p: ('comp' not in p.lower(), 'bg' not in p.lower(), p))
         for p in order:
-            rows.append('<div class=lay><a href="../%s"><img src="../%s" alt="" loading=lazy></a><div>'
+            rows.append('<div class=lay><a href="%s"><img src="../%s" alt="" loading=lazy></a><div>'
                         '<div class=n>%s</div><div class=s>%s &nbsp;·&nbsp; %s</div>'
-                        '<a href="../%s" download>Download</a></div></div>'
-                        % (p, small(p), os.path.basename(p), dims(p), human(size_of(p)), p))
+                        '<a href="%s" download>Download</a></div></div>'
+                        % (full_link(p, '../'), small(p), os.path.basename(p), dims(p),
+                           human(size_of(p)), full_link(p, '../')))
         rows.append('<p style="margin-top:30px"><a href="index.html">&larr; back to scene %s</a></p>' % n)
         open(os.path.join(ROOT, 'BB_C_%s' % n, base + '_breakdown.html'), 'w').write(
             page('%s breakdown' % e.get('frame', base), ''.join(rows), here=n, depth=1))
@@ -1144,9 +1160,30 @@ if ARCHIVE.get('items'):
         if it['group'] != last:
             a.append('<div class=arcg>%s</div>' % it['group'])
             last = it['group']
+        # 2.9.2026. Three rows here pointed at raw links for files that are not
+        # in any repository: PRINT_PACK.pdf and read throughs v4 and v8, the two
+        # 75 MB ones that were moved to Drive when they took the site over the
+        # Pages ceiling. MOVED_TO_DRIVE already knew about the read throughs and
+        # this builder never consulted it, so the archive advertised three
+        # documents that opened on a 404 page. It consults it now, and anything
+        # with neither a repository file nor a Drive entry is shown as gone
+        # rather than as a link. An archive that lies about what it holds is
+        # worse than one with a hole in it.
+        _u = it['url']
+        _local = _u.split('/main/', 1)[1] if '/main/' in _u else None
+        _moved = MOVED_TO_DRIVE.get(_local) if _local else None
+        _here = _local and 'ANIMATOR_COLLABORATION' in _u and \
+            os.path.exists(os.path.join(ROOT, urllib.parse.unquote(_local)))
+        if _moved:
+            _u = _moved
+        elif _local and 'ANIMATOR_COLLABORATION' in _u and not _here:
+            a.append('<div class=arcr><span style="flex:1;color:var(--dim)">%s</span>'
+                     '<span class=d>%s</span><span class=z>gone</span></div>'
+                     % (it['name'], it.get('date', '')))
+            continue
         a.append('<div class=arcr><a href="%s" target=_blank rel=noopener>%s</a>'
                  '<span class=d>%s</span><span class=z>%s MB</span></div>'
-                 % (it['url'], it['name'], it.get('date', ''), it['mb']))
+                 % (_u, it['name'], it.get('date', ''), it['mb']))
     a.append('</div>')
     open(os.path.join(ROOT, 'archive.html'), 'w').write(
         page('Archive', ''.join(a), here='archive', depth=0))
@@ -1618,15 +1655,21 @@ for _i, e in enumerate(_cards):
     # drive_links.json, which the daemon writes the moment a frame arrives,
     # before anybody has written an entry for it. Then the local file, for
     # everything not yet migrated.
-    _dv = DRIVE.get(os.path.basename(e['file']))
+    # ONE lookup order for the whole site: originals, then Drive, then local.
+    # This branch used to read DRIVE on its own, which is exactly how the card
+    # path and the strip path drifted apart on 1.9 and put fourteen dead links
+    # on the live site. It now reads the same tables in the same order as
+    # full_link(), and it still needs the size, which is why it is not simply
+    # a call to it.
+    _b = os.path.basename(e['file'])
+    _dv = ORIGINALS.get(_b) or DRIVE.get(_b)
     # STEP 86. A row with an empty url is a CLAIM, not a link: the chat session
     # writes {"bytes": 0, "url": ""} when it files a frame from the phone, and
-    # the daemon fills it in when it uploads. So an empty url must fall through
-    # to the local file, exactly as a missing row does. Testing the row for
-    # truth rather than the url would have put href="" on every frame waiting
-    # in that queue, which is worse than a heavy repository because it looks
-    # like a link and does nothing. full_link() already gets this right; this
-    # branch is the other half of the same rule.
+    # something else fills it in later. So an empty url must fall through to
+    # the local file, exactly as a missing row does. Testing the row for truth
+    # rather than the url would have put href="" on every frame waiting in that
+    # queue, which is worse than a heavy repository because it looks like a
+    # link and does nothing.
     _dvu = '' if not _dv else (_dv if isinstance(_dv, str) else _dv.get('url', ''))
     if e.get('full'):
         _href = e['full']
@@ -1713,6 +1756,39 @@ for _i, e in enumerate(_cards):
     open(os.path.join(ROOT, 'card', b + '.html'), 'w').write(
         page(b, ''.join(cd), here='home', depth=1))
 print('  %d card pages, %d on the storyboard walk' % (len(_cards), len(_order)))
+
+# ------------------------------------------------- sweep this build's own litter
+# 2.9.2026. A page that is no longer generated does not disappear, it keeps
+# being served. Six card pages and one shot page were still live from an older
+# catalogue, pointing at originals that exist in no repository and on no drive,
+# and they had survived every rebuild since. verify_site.py found them; this
+# stops them coming back.
+#
+# Deliberately narrow. Only the three name shapes this file owns completely,
+# card/NAME.html, BB_C_n/shot-N-N.html and BB_C_n/NAME_breakdown.html, so
+# nothing hand made and nothing from another tool is ever in range.
+_kept = {os.path.basename(x['file']).rsplit('.', 1)[0].replace(' ', '_') + '.html'
+         for x in _cards}
+_swept = []
+for _f in glob.glob(os.path.join(ROOT, 'card', '*.html')):
+    if os.path.basename(_f) not in _kept:
+        os.remove(_f)
+        _swept.append(os.path.relpath(_f, ROOT))
+# Shot pages are NOT swept by rule. The first attempt derived the live set from
+# entry.shot and deleted seven pages the build then wrote again, so two runs in
+# a row never agreed. A sweep that is not idempotent is worse than no sweep: it
+# churns the repository and hides real changes in the diff. Only the two shapes
+# that can be derived EXACTLY from what was just written are swept.
+for _d in glob.glob(os.path.join(ROOT, 'BB_C_*')):
+    for _f in glob.glob(os.path.join(_d, '*_breakdown.html')):
+        _b = os.path.basename(_f)[:-len('_breakdown.html')] + '.html'
+        if _b not in _kept:
+            os.remove(_f)
+            _swept.append(os.path.relpath(_f, ROOT))
+if _swept:
+    print('  swept %d page(s) this build no longer generates:' % len(_swept))
+    for _f in sorted(_swept):
+        print('     %s' % _f)
 
 open(os.path.join(ROOT, 'documentation.html'), 'w').write(
     page('Documentation', ''.join(b), here='doc', depth=0))
