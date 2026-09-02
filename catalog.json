@@ -965,7 +965,8 @@
       "what": "A classical credit card, one contribution to a card.",
       "why": "PLACEHOLDER, TYPESET NOT DRAWN, so it cannot be mistaken for final. Only Aurovenkatesh as Cinematographer and Jagan and Pushparaj as crew are confirmed, by them, on 31.8.2026. Everything else is a guess waiting on Neha. When the names come back these are redrawn in the film's own hand through Image to Image. Credits appear in the longer version only: the competition cut has none because of the two minute limit.",
       "note": "Superseded by v2, which has the clouds.",
-      "flow_pos": 18
+      "flow_pos": 18,
+      "storyboard": "hide"
     },
     {
       "kind": "keyframe",
@@ -978,7 +979,8 @@
       "what": "A classical credit card, one contribution to a card.",
       "why": "PLACEHOLDER, TYPESET NOT DRAWN, so it cannot be mistaken for final. Only Aurovenkatesh as Cinematographer and Jagan and Pushparaj as crew are confirmed, by them, on 31.8.2026. Everything else is a guess waiting on Neha. When the names come back these are redrawn in the film's own hand through Image to Image. Credits appear in the longer version only: the competition cut has none because of the two minute limit.",
       "note": "Placeholder credit card.",
-      "flow_pos": 18
+      "flow_pos": 18,
+      "storyboard": "hide"
     },
     {
       "kind": "keyframe",
@@ -991,7 +993,8 @@
       "what": "A classical credit card, one contribution to a card.",
       "why": "PLACEHOLDER, TYPESET NOT DRAWN, so it cannot be mistaken for final. Only Aurovenkatesh as Cinematographer and Jagan and Pushparaj as crew are confirmed, by them, on 31.8.2026. Everything else is a guess waiting on Neha. When the names come back these are redrawn in the film's own hand through Image to Image. Credits appear in the longer version only: the competition cut has none because of the two minute limit.",
       "note": "Placeholder credit card.",
-      "flow_pos": 18
+      "flow_pos": 18,
+      "storyboard": "hide"
     },
     {
       "kind": "keyframe",
@@ -1004,7 +1007,8 @@
       "what": "A classical credit card, one contribution to a card.",
       "why": "PLACEHOLDER, TYPESET NOT DRAWN, so it cannot be mistaken for final. Only Aurovenkatesh as Cinematographer and Jagan and Pushparaj as crew are confirmed, by them, on 31.8.2026. Everything else is a guess waiting on Neha. When the names come back these are redrawn in the film's own hand through Image to Image. Credits appear in the longer version only: the competition cut has none because of the two minute limit.",
       "note": "Placeholder credit card.",
-      "flow_pos": 18
+      "flow_pos": 18,
+      "storyboard": "hide"
     },
     {
       "kind": "keyframe",
@@ -1017,7 +1021,8 @@
       "what": "A classical credit card, one contribution to a card.",
       "why": "PLACEHOLDER, TYPESET NOT DRAWN, so it cannot be mistaken for final. Only Aurovenkatesh as Cinematographer and Jagan and Pushparaj as crew are confirmed, by them, on 31.8.2026. Everything else is a guess waiting on Neha. When the names come back these are redrawn in the film's own hand through Image to Image. Credits appear in the longer version only: the competition cut has none because of the two minute limit.",
       "note": "Placeholder credit card.",
-      "flow_pos": 18
+      "flow_pos": 18,
+      "storyboard": "hide"
     },
     {
       "kind": "keyframe",
@@ -1030,7 +1035,8 @@
       "what": "A classical credit card, one contribution to a card.",
       "why": "PLACEHOLDER, TYPESET NOT DRAWN, so it cannot be mistaken for final. Only Aurovenkatesh as Cinematographer and Jagan and Pushparaj as crew are confirmed, by them, on 31.8.2026. Everything else is a guess waiting on Neha. When the names come back these are redrawn in the film's own hand through Image to Image. Credits appear in the longer version only: the competition cut has none because of the two minute limit.",
       "note": "Placeholder credit card.",
-      "flow_pos": 18
+      "flow_pos": 18,
+      "storyboard": "hide"
     },
     {
       "kind": "keyframe",
@@ -1043,7 +1049,8 @@
       "what": "A classical credit card, one contribution to a card.",
       "why": "PLACEHOLDER, TYPESET NOT DRAWN, so it cannot be mistaken for final. Only Aurovenkatesh as Cinematographer and Jagan and Pushparaj as crew are confirmed, by them, on 31.8.2026. Everything else is a guess waiting on Neha. When the names come back these are redrawn in the film's own hand through Image to Image. Credits appear in the longer version only: the competition cut has none because of the two minute limit.",
       "note": "Placeholder credit card.",
-      "flow_pos": 18
+      "flow_pos": 18,
+      "storyboard": "hide"
     },
     {
       "kind": "keyframe",
@@ -1372,10 +1379,13 @@
       "kind": "flow",
       "n": "9",
       "file": "flow/09-brain-room.jpg",
-      "title": "Coach Brain’s room",
+      "title": "Coach Brain explains it on the board",
       "status": "placeholder",
       "scenes": [
-        "19"
+        "19",
+        "10",
+        "11",
+        "12"
       ],
       "note": "Manan explains what he read on a blackboard in white chalk. Coach Brain answers on a whiteboard in black marker. Same layout, same three lines, same gauge, every value reversed.",
       "flow_pos": 0
@@ -1384,10 +1394,10 @@
       "kind": "flow",
       "n": "10",
       "file": "flow/10-the-skull-door.jpg",
-      "title": "The old theory, on the board",
+      "title": "The vortex, down",
       "status": "placeholder",
       "scenes": [
-        "10"
+        "9R"
       ],
       "note": "We fly at the banner reading THE LIMIT IS A SETTING and pass through it into white. Manan says the line while we are flying.",
       "flow_pos": 0
@@ -1396,11 +1406,10 @@
       "kind": "flow",
       "n": "11",
       "file": "flow/11-new-theory.jpg",
-      "title": "The new theory, and the key",
+      "title": "He lets the key go, and Manan catches it",
       "status": "placeholder",
       "scenes": [
-        "11",
-        "12"
+        "15"
       ],
       "note": "Coach Brain lets the key go, it falls through an empty frame, and we cut to Manan catching it. THE END.",
       "flow_pos": 0
@@ -1409,10 +1418,10 @@
       "kind": "flow",
       "n": "12",
       "file": "flow/12-conclusion.jpg",
-      "title": "The vortex, down",
+      "title": "Credits, and the dedication",
       "status": "placeholder",
       "scenes": [
-        "9R"
+        "14"
       ],
       "note": "Seven classical cards, in the longer version only.",
       "flow_pos": 0
@@ -1720,7 +1729,8 @@
       "slug": "END CREDITS — THE CLOUD PLATE",
       "what": "A tall nine by sixteen sheet of faint cloud in bands, with clear bare paper between them and an open column down the centre.",
       "why": "NOT USED YET, KEPT ANYWAY. Built so the credits could be one plate with text composed over it rather than seven separate cards, which is cheaper and lets the order change without regenerating anything. Fly the camera down the open middle and pass through a cloud bank between each name.",
-      "flow_pos": 18
+      "flow_pos": 18,
+      "storyboard": "hide"
     },
     {
       "frame": "15",
@@ -2077,32 +2087,10 @@
       "status": "placeholder",
       "date": "2026-09-02",
       "note": "NOT DRAWN YET. He goes under. The last thing the first half does and the hinge of the whole film: past the voice that says stop, into the trance, and from here on nothing arrives and we move instead. There is one old frame in this phase and it does not carry the beat."
-    },
-    {
-      "kind": "flow",
-      "n": "13",
-      "file": "flow/13.jpg",
-      "title": "He lets the key go, and Manan picks it up",
-      "status": "placeholder",
-      "scenes": [
-        "15"
-      ],
-      "note": ""
-    },
-    {
-      "kind": "flow",
-      "n": "14",
-      "file": "flow/14.jpg",
-      "title": "Credits, and the dedication",
-      "status": "placeholder",
-      "scenes": [
-        "14"
-      ],
-      "note": ""
     }
   ],
   "event": "Breakthrough Junior Challenge 2026",
-  "site_version": 157,
+  "site_version": 158,
   "footage": [
     {
       "name": "Key catch",
