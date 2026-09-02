@@ -684,9 +684,9 @@
       "shot": "12.0",
       "file": "BB_C_12/12-0-A-v1.png",
       "representative": true,
-      "status": "proposal",
+      "status": "superseded",
       "date": "2026-08-30",
-      "note": "THE ENDCARD, and the film's closing rhyme. The finish banner from shot 1.2b, which was tiny between the trees and unreadable, is now the whole frame with the sentence on it: THE LIMIT IS A SETTING, NOT A WALL. The object that opened the film closes it. 4 percent ink, everything else bare paper.",
+      "note": "THE ENDCARD, and the film's closing rhyme. The finish banner from shot 1.2b, which was tiny between the trees and unreadable, is now the whole frame with the sentence on it: THE LIMIT IS A SETTING, NOT A WALL. The object that opened the film closes it. 4 percent ink, everything else bare paper. CUT 2.9.2026. The banner fly through is out. The conclusion is reached in conversation between Manan and Coach Brain, not delivered on a banner the camera flies through.",
       "slug": "EXT. CREAM VOID — THE FLY THROUGH",
       "what": "The banner with the sentence on it, seen close and straight on. The camera flies at it and passes through into white.",
       "why": "NO LONGER THE ENDCARD. Changed 31.8.2026. Manan says the line while we are flying, the move is the same as the rise through the vortex, and we go through into white. The key follows it, then white again, then black. The sentence is stated, then permission is handed over, then nothing.",
@@ -1367,7 +1367,7 @@
       "kind": "flow",
       "n": "8",
       "file": "flow/08-ganesha.jpg",
-      "title": "The key door",
+      "title": "He sees the key, and goes in",
       "status": "placeholder",
       "scenes": [
         "18"
@@ -1379,13 +1379,10 @@
       "kind": "flow",
       "n": "9",
       "file": "flow/09-brain-room.jpg",
-      "title": "Coach Brain explains it on the board",
+      "title": "They introduce each other",
       "status": "placeholder",
       "scenes": [
-        "19",
-        "10",
-        "11",
-        "12"
+        "19"
       ],
       "note": "Manan explains what he read on a blackboard in white chalk. Coach Brain answers on a whiteboard in black marker. Same layout, same three lines, same gauge, every value reversed.",
       "flow_pos": 0
@@ -1394,10 +1391,11 @@
       "kind": "flow",
       "n": "10",
       "file": "flow/10-the-skull-door.jpg",
-      "title": "The vortex, down",
+      "title": "The two theories, on the board",
       "status": "placeholder",
       "scenes": [
-        "9R"
+        "10",
+        "11"
       ],
       "note": "We fly at the banner reading THE LIMIT IS A SETTING and pass through it into white. Manan says the line while we are flying.",
       "flow_pos": 0
@@ -1406,10 +1404,10 @@
       "kind": "flow",
       "n": "11",
       "file": "flow/11-new-theory.jpg",
-      "title": "He lets the key go, and Manan catches it",
+      "title": "The conclusion, and goodbye",
       "status": "placeholder",
       "scenes": [
-        "15"
+        "12"
       ],
       "note": "Coach Brain lets the key go, it falls through an empty frame, and we cut to Manan catching it. THE END.",
       "flow_pos": 0
@@ -1418,10 +1416,10 @@
       "kind": "flow",
       "n": "12",
       "file": "flow/12-conclusion.jpg",
-      "title": "Credits, and the dedication",
+      "title": "The vortex down, and the key falls with him",
       "status": "placeholder",
       "scenes": [
-        "14"
+        "9R"
       ],
       "note": "Seven classical cards, in the longer version only.",
       "flow_pos": 0
@@ -1892,12 +1890,13 @@
       "kind": "keyframe",
       "shot": "12.1",
       "file": "BB_C_12/12-1-A-v3.png",
-      "status": "proposal",
+      "status": "superseded",
       "date": "2026-09-01",
       "slug": "EXT. — INTO THE BANNER",
       "what": "The same banner drawing seen much closer: a few pencil letters filling the frame, cut off by its edges, the sketched weave between them, flat even paper.",
       "why": "THE FLY THROUGH IS A SCALE MOVE ON ONE DRAWING AND NOTHING ELSE. Close up and wide are the same banner: no relighting, no cast shadow, no depth of field, no photographic fabric. As though somebody held a magnifying glass over one part of the same sheet. THE CLOTH NEVER TEARS. We pass through by cutting to white, as at every other crossing in the film. Two earlier attempts are kept: one split the cloth open, the other rendered it as a photograph.",
-      "flow_pos": 15
+      "flow_pos": 15,
+      "note": "CUT 2.9.2026. The banner fly through is out. The conclusion is reached in conversation between Manan and Coach Brain, not delivered on a banner the camera flies through."
     },
     {
       "kind": "keyframe",
@@ -2068,10 +2067,10 @@
       "flow_pos": 7
     },
     {
-      "file": "BB_C_9/9-9-VORTEX-RETURN-PLACEHOLDER.png",
+      "file": "BB_C_9R/9R-1-VORTEX-DOWN-PLACEHOLDER.png",
       "kind": "keyframe",
-      "scene": 9,
-      "shot": "9R.0",
+      "scene": "9R",
+      "shot": "9R.1",
       "title": "The vortex, down",
       "status": "placeholder",
       "date": "2026-09-02",
@@ -2087,10 +2086,52 @@
       "status": "placeholder",
       "date": "2026-09-02",
       "note": "NOT DRAWN YET. He goes under. The last thing the first half does and the hinge of the whole film: past the voice that says stop, into the trance, and from here on nothing arrives and we move instead. There is one old frame in this phase and it does not carry the beat."
+    },
+    {
+      "kind": "flow",
+      "n": "13",
+      "file": "flow/13.jpg",
+      "status": "placeholder",
+      "note": "",
+      "title": "He catches it",
+      "scenes": [
+        "15"
+      ]
+    },
+    {
+      "kind": "flow",
+      "n": "14",
+      "file": "flow/14.jpg",
+      "status": "placeholder",
+      "note": "",
+      "title": "Credits, and the dedication",
+      "scenes": [
+        "14"
+      ]
+    },
+    {
+      "file": "BB_C_12/12-0-CONCLUSION-PLACEHOLDER.png",
+      "kind": "keyframe",
+      "scene": "12",
+      "shot": "12.0",
+      "title": "The conclusion, and goodbye",
+      "status": "placeholder",
+      "date": "2026-09-02",
+      "note": "NOT DRAWN YET. They weigh both theories together and agree what the limit really is. Then Manan says goodbye. Conversation, not a banner."
+    },
+    {
+      "file": "BB_C_9R/9R-2-KEY-FALLS-PLACEHOLDER.png",
+      "kind": "keyframe",
+      "scene": "9R",
+      "shot": "9R.2",
+      "title": "The key falls with him",
+      "status": "placeholder",
+      "date": "2026-09-02",
+      "note": "NOT DRAWN YET. As the vortex takes him down, Coach Brain lets the key go and it falls with him. One beat, not two: the giving and the descent are the same moment."
     }
   ],
   "event": "Breakthrough Junior Challenge 2026",
-  "site_version": 158,
+  "site_version": 159,
   "footage": [
     {
       "name": "Key catch",

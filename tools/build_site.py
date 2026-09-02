@@ -873,7 +873,10 @@ def shot_key(sh):
     parts = str(sh).split('.')
     out = []
     for p in parts:
-        m = _r.match(r'(\d*)([a-z]*)', p)
+        # 2.9.2026: this accepted lowercase only, so shot 9R parsed as plain 9
+        # and the vortex DOWN could not be told apart from the vortex UP.
+        # Its whole section rendered empty while the frames sat in the other one.
+        m = _r.match(r'(\d*)([a-zA-Z]*)', p)
         out.append((int(m.group(1)) if m.group(1) else 0, m.group(2)))
     return out
 
@@ -1503,12 +1506,15 @@ for e in _fl:
     if n == '9':
         rt.append(theories_strip())
         in_strip = {f for f, _ in THEORIES if isinstance(f, str)}
-    if n == '11':
-        # Baba, 31.8.2026: this phase shows the strip and nothing else. The other
+    if n == '13':
+        # Baba, 31.8.2026: this phase shows the strip and nothing else.
+        # 2.9.2026: it is section 13 now, 'He catches it'. It was pinned to 11,
+        # which is the conclusion, so the whole key sequence was printing under
+        # Coach Brain's goodbye. The other
         # live stills and drawn attempts are still on their card pages.
         rt.append(lastshot_strip())
         frames = []
-    if n == '11' and os.path.exists(os.path.join(ROOT, 'assets3d', 'brain_break_key.obj')):
+    if n == '13' and os.path.exists(os.path.join(ROOT, 'assets3d', 'brain_break_key.obj')):
         rt.append(
             '<div class=srcbox><div class=t><b>The key in 3D</b>'
             '<span><a class=dl href="assets3d/brain_break_key_blender.py" download>SCRIPT</a>&nbsp;'
@@ -1517,8 +1523,14 @@ for e in _fl:
             'polished brass, slot 1 flat drawn cream. The mesh never changes, only the surface, so '
             'the key crosses from the drawn world to the real one without a vertex moving. '
             'Both files in one folder, open Blender, Scripting tab, Run.</p></div>')
-    if n == '12':
+    if n == '14':
         # Baba, 1.9.2026: one representative frame for the credits, not eight.
+        # 2.9.2026: this was pinned to section 12, which is the VORTEX DOWN now.
+        # It filtered that section for frames with CREDITS in the name, found
+        # none, and rendered the section empty while its two frames sat in the
+        # catalogue. Sections are named things; pinning behaviour to a number
+        # breaks the moment the running order changes, which it did four times
+        # today.
         # a finished card with lettering, never the blank tall plate: the plate
         # is a working asset and shows nothing about what the credits look like.
         frames = [f for f in frames if 'CLOUD-v1' in f.get('file', '')
