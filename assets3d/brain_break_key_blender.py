@@ -19,7 +19,11 @@ it lands at the right scale in a Blender scene.
 import bpy, os, math
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-OBJ = os.path.join(HERE, 'key.obj')
+# 2.9.2026. This said 'key.obj' and the file beside it has always been called
+# brain_break_key.obj, so the import failed for anyone who followed the
+# instructions in the docstring above. Found while building the vortex script,
+# which imports the same mesh.
+OBJ = os.path.join(HERE, 'brain_break_key.obj')
 
 for o in [o for o in bpy.data.objects if o.name.startswith('BRAIN_BRAKE_KEY')]:
     bpy.data.objects.remove(o, do_unlink=True)

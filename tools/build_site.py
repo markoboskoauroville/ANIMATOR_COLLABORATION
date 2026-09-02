@@ -1456,6 +1456,38 @@ rt.append('</div>')
 # reason is usually worth more than the frame. Images only, because a PDF has no
 # small version and would be loaded at full size as if it were a thumbnail.
 _as = ['<h1>ASSETS</h1>']
+# the passage. A vortex built out of keys, generated rather than modelled, so
+# the shape can be tuned by changing four numbers rather than by rebuilding it
+if os.path.exists(os.path.join(ROOT, 'assets3d', 'brain_brake_vortex.py')):
+    _as.append(
+        '<div class=srcbox><div class=t><b>The passage, a vortex of keys, for Blender</b>'
+        '<span><a class=dl href="assets3d/brain_brake_vortex.py" download>SCRIPT</a>&nbsp;'
+        '<a class=dl href="assets3d/brain_brake_vortex_guide.obj" download>GUIDE OBJ</a>&nbsp;'
+        '<a class=dl href="assets3d/brain_brake_vortex_source.py" download>SOURCE</a></span></div>'
+        '<p><b>Put the script, the guide and <code>brain_break_key.obj</code> in one folder, open '
+        'Blender, Scripting tab, Run.</b> You get 432 keys laid along the spiral as linked '
+        'instances of the one key mesh, the funnel as a wireframe guide that is hidden in render, '
+        'and <b>VORTEX_CAM</b> already animated, 100 frames at 25 fps, flying from outside the '
+        'mouth into the throat and rolling with the spiral. Animate the camera, not the keys.</p>'
+        '<p>The shape is Viktor Schauberger\u2019s implosion vortex and two facts do all the work. '
+        'The section is a <b>rectangular hyperbola, not a cone</b>, so the wall curves inward as it '
+        'descends; Schauberger held the right form for a vortex chamber was the egg, which is a '
+        'section through the hyperboloid of rotation. And the plan is <b>Kepler\u2019s harmonic '
+        'spiral</b>, so successive turns come in to 1, 1/2, 1/3, 1/4 of the mouth radius and the '
+        'turns tighten toward the centre. That is what pulls the eye in rather than leading it '
+        'along. Mouth 7 m, throat 0.70 m, 26 m deep, ten turns. The keys scale with the local '
+        'radius, so coverage rises from 1.2 keys deep at the mouth to 3.1 at the throat and the '
+        'wall closes up on its own. Nothing is placed by hand.</p>'
+        '<p><b>The keys in this shot are pencil and they are not gold.</b> Gold in this film means '
+        'found, and Manan has not found the key yet when he goes through the passage. The script '
+        'assigns a third material, <b>KEY_PENCIL</b>, flat paper white with no specular and a '
+        'Freestyle outline, and deliberately uses neither the brass slot nor the drawn cream one. '
+        'The first gold is the key at Coach Brain\u2019s neck and the last is the key falling.</p>'
+        '<p style="color:var(--dim)">Four numbers at the top of the script control everything: '
+        '<code>MOUTH_R</code>, <code>TURNS</code>, <code>DEPTH</code>, <code>KEYS_PER_TURN</code>. '
+        'Reach for <code>KEYS_PER_TURN</code> first: raise it until the wall reads solid at your '
+        'camera angle, lower it if the viewport crawls. The source file regenerates the guide with '
+        'no Blender and no libraries, so the geometry can be checked in any package.</p></div>')
 # the key as a 3D model, one mesh with two materials so it can cross from drawn
 # to real without a vertex moving
 if os.path.exists(os.path.join(ROOT, 'assets3d', 'brain_break_key.obj')):
