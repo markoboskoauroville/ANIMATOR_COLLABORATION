@@ -6,23 +6,24 @@
   "updated": "2026-09-02",
   "scenes": {
     "0": "Title",
-    "1": "The mystery",
-    "2": "The old theory",
-    "3": "The full tank",
-    "4": "The gatekeeper",
-    "5": "The experiment",
-    "6": "The release",
-    "7": "The verdict",
-    "8": "The invitation",
-    "10": "The old theory on the board",
-    "11": "The new theory and the key",
-    "12": "It is a setting",
-    "13": "The key",
-    "14": "End credits",
-    "16": "The house",
+    "1": "The runner",
+    "2": "The bicycle",
+    "3": "Testing where the limit is",
+    "4": "Tired, and the wall",
+    "5": "His eyes close",
+    "6": "The trance",
+    "9": "The vortex, transported",
+    "16": "The house of the body",
     "17": "The front door",
-    "18": "The skull door",
-    "19": "The control room"
+    "8": "The halls and the doors",
+    "18": "The key door",
+    "19": "Coach Brain’s room",
+    "10": "The old theory, on the board",
+    "11": "The new theory, and the key",
+    "12": "It is a setting, not a wall",
+    "9R": "The same vortex, coming back",
+    "15": "He lets the key go, and Manan picks it up",
+    "14": "Credits, and the dedication"
   },
   "entries": [
     {
@@ -32,7 +33,8 @@
       "status": "reference",
       "date": "2026-08-28",
       "note": "The frame as a matte. 2731 x 1536 RGBA. The paper margin and the drawn line are solid, and the window in the middle is transparent, so you drop it straight on top of any frame and it cuts its own window: the artwork shows through and the border and the margin come from this layer. The window edge follows the hand drawn wobble exactly, because it was found by walking outward from the centre of a real drawing until it hit the line, rather than by drawing a rectangle. Cut out of existing artwork, not generated, so it is the same pencil and the same paper as everything it sits on. Move it, scale it, animate it or take it off.",
-      "scene": "1"
+      "scene": "1",
+      "flow_pos": 0
     },
     {
       "frame": "1",
@@ -41,7 +43,8 @@
       "title": "The marathon runner, face",
       "status": "reference",
       "date": "2026-08-28",
-      "note": "THIS IS THE MAN. Three studies of his head: front, three quarter, profile. Until today the only description of his face in the whole production was nine generic words, so every frame invented him again and he was a different person in each one. This sheet is the lock. The three things that carry him and must survive into every frame are the flattened bridge of the nose, the wide set deep eyes under a straight brow, and the narrow jaw under wide cheekbones. Individual views are cut out in reference/ for building frames from, because a sheet handed to a frame brings its grid with it."
+      "note": "THIS IS THE MAN. Three studies of his head: front, three quarter, profile. Until today the only description of his face in the whole production was nine generic words, so every frame invented him again and he was a different person in each one. This sheet is the lock. The three things that carry him and must survive into every frame are the flattened bridge of the nose, the wide set deep eyes under a straight brow, and the narrow jaw under wide cheekbones. Individual views are cut out in reference/ for building frames from, because a sheet handed to a frame brings its grid with it.",
+      "flow_pos": 0
     },
     {
       "file": "FRAME_BORDER-v1.png",
@@ -49,7 +52,8 @@
       "title": "The frame",
       "status": "superseded",
       "date": "2026-08-28",
-      "note": "The border line alone, with everything around it transparent. Wrong shape for the job: laid over a frame it drew a line and did nothing else. Kept, and the link still works. Superseded by v2."
+      "note": "The border line alone, with everything around it transparent. Wrong shape for the job: laid over a frame it drew a line and did nothing else. Kept, and the link still works. Superseded by v2.",
+      "flow_pos": 0
     },
     {
       "frame": "1",
@@ -58,21 +62,24 @@
       "title": "The marathon runner, body",
       "status": "reference",
       "date": "2026-08-28",
-      "note": "The runner's body, four views: front, three quarter, profile, rear. Lean, about forty five, singlet and shorts, bib 27, worn racing shoes. The face sheet below is the one that holds his identity; this one holds his build and his costume."
+      "note": "The runner's body, four views: front, three quarter, profile, rear. Lean, about forty five, singlet and shorts, bib 27, worn racing shoes. The face sheet below is the one that holds his identity; this one holds his build and his costume.",
+      "flow_pos": 0
     },
     {
       "file": "DOCS/4-BRAIN_BRAKE_READ_THROUGH_v4.pdf",
       "kind": "document",
       "status": "superseded",
       "date": "2026-08-28",
-      "note": "The whole film as it stands, four panels to a page, with every line and every frame number. The live action frames now show the real footage from the shoot beside the drawn version, with the clip and the timecode on each. At the back there are two pages of clean footage frames, one per shot, for pulling into tests. This is not a proposal, it is the current version of the document. Superseded by v8. It is not deleted and the link still works, but v8 is the one to read."
+      "note": "The whole film as it stands, four panels to a page, with every line and every frame number. The live action frames now show the real footage from the shoot beside the drawn version, with the clip and the timecode on each. At the back there are two pages of clean footage frames, one per shot, for pulling into tests. This is not a proposal, it is the current version of the document. Superseded by v8. It is not deleted and the link still works, but v8 is the one to read.",
+      "flow_pos": 0
     },
     {
       "file": "DOCS/8-BRAIN_BRAKE_READ_THROUGH_v8.pdf",
       "kind": "document",
       "status": "superseded",
       "date": "2026-08-28",
-      "note": "The whole film as it stands, four panels to a page, fifty panels, with every line and every frame number. Live action frames show the real footage from the shoot beside the drawn version with the clip and the timecode on each. Superseded by v9, which carries the rebuilt scene 1."
+      "note": "The whole film as it stands, four panels to a page, fifty panels, with every line and every frame number. Live action frames show the real footage from the shoot beside the drawn version with the clip and the timecode on each. Superseded by v9, which carries the rebuilt scene 1.",
+      "flow_pos": 0
     },
     {
       "kind": "example",
@@ -94,7 +101,8 @@
       "note": "What he sees. His subjective view down the avenue, the finish banner caught small in the gap between the trunks. This is the answer to the question the previous shot planted, and it is what explains the trees: he could not have seen it before, so his exhaustion was honest.",
       "slug": "EXT. AVENUE — DAY — HIS POINT OF VIEW",
       "what": "Down the corridor of trunks, the finish banner caught small in a gap, the word FINISH just legible.",
-      "why": "The answer to the question the last shot planted, and the reason the trees exist: he could not have seen it before, so his exhaustion was never weakness. Motivation is information."
+      "why": "The answer to the question the last shot planted, and the reason the trees exist: he could not have seen it before, so his exhaustion was never weakness. Motivation is information.",
+      "flow_pos": 1
     },
     {
       "kind": "keyframe",
@@ -102,7 +110,8 @@
       "file": "BB_C_1/1-3-v1.png",
       "status": "superseded",
       "date": "2026-08-28",
-      "note": "Superseded by the 1-3-A and 1-3-B pair. This was the sprint before the muscle activation existed. The run now begins as a dissolve out of the flayed figure, so phase 1 has to match that pose exactly and this one does not. Kept, and the link still works."
+      "note": "Superseded by the 1-3-A and 1-3-B pair. This was the sprint before the muscle activation existed. The run now begins as a dissolve out of the flayed figure, so phase 1 has to match that pose exactly and this one does not. Kept, and the link still works.",
+      "flow_pos": 1
     },
     {
       "kind": "symbol",
@@ -118,7 +127,8 @@
         "BB_C_*/*ganesha*.jpg",
         "BB_C_*/*GANESHA*.png",
         "BB_C_*/*GANESHA*.jpg"
-      ]
+      ],
+      "flow_pos": 0
     },
     {
       "kind": "symbol",
@@ -126,7 +136,8 @@
       "title": "The stamp — CASE CLOSED",
       "status": "reference",
       "date": "2026-08-28",
-      "note": "A century of settled science, pressed flat onto paper. It is what the film reopens. The stamp is not villainous, it is what happens when an answer is good enough for long enough that nobody asks again. Scene 2."
+      "note": "A century of settled science, pressed flat onto paper. It is what the film reopens. The stamp is not villainous, it is what happens when an answer is good enough for long enough that nobody asks again. Scene 2.",
+      "flow_pos": 0
     },
     {
       "kind": "symbol",
@@ -134,7 +145,8 @@
       "title": "The two cards — 1923 and 1997",
       "status": "reference",
       "date": "2026-08-28",
-      "note": "The old answer and the new one, side by side: an arm, and a brain. Fatigue was in the muscle for seventy four years before anyone looked higher up. The film is the gap between these two cards. Scene 7."
+      "note": "The old answer and the new one, side by side: an arm, and a brain. Fatigue was in the muscle for seventy four years before anyone looked higher up. The film is the gap between these two cards. Scene 7.",
+      "flow_pos": 0
     },
     {
       "kind": "symbol",
@@ -142,7 +154,8 @@
       "title": "The magnifying glass",
       "status": "reference",
       "date": "2026-08-28",
-      "note": "Manan's tool and his posture. He is not a student being taught, he is an investigator looking closer at something everybody already believes they understand. It is also the film's only handheld object that crosses between the photographed world and the drawn one. Scenes 1 and 2."
+      "note": "Manan's tool and his posture. He is not a student being taught, he is an investigator looking closer at something everybody already believes they understand. It is also the film's only handheld object that crosses between the photographed world and the drawn one. Scenes 1 and 2.",
+      "flow_pos": 0
     },
     {
       "kind": "symbol",
@@ -150,7 +163,8 @@
       "title": "The tanks",
       "status": "reference",
       "date": "2026-08-28",
-      "note": "The body as a factory, and the tanks are full. A man says he is empty while his stores stand untouched behind him. Scarcity that turns out to be policy, not supply. Scene 3."
+      "note": "The body as a factory, and the tanks are full. A man says he is empty while his stores stand untouched behind him. Scarcity that turns out to be policy, not supply. Scene 3.",
+      "flow_pos": 0
     },
     {
       "kind": "symbol",
@@ -158,7 +172,8 @@
       "title": "The lever — 95 of 100",
       "status": "reference",
       "date": "2026-08-28",
-      "note": "The centre of the whole film in one object. Effort is not a wall you hit, it is a dial somebody set, and it is sitting at ninety five. A wall cannot be moved. A setting can. Scenes 6 and 8."
+      "note": "The centre of the whole film in one object. Effort is not a wall you hit, it is a dial somebody set, and it is sitting at ninety five. A wall cannot be moved. A setting can. Scenes 6 and 8.",
+      "flow_pos": 0
     },
     {
       "kind": "symbol",
@@ -166,7 +181,8 @@
       "title": "The single fibre lighting",
       "status": "reference",
       "date": "2026-08-28",
-      "note": "Recruitment, seen from inside. One muscle fibre fires, then the cluster, then the leg, then the whole body. This is the muscle activation motif, and it is the only thing in the film animated at full frame rate. It appears three times, identical each time. Scenes 1, 5 and 6."
+      "note": "Recruitment, seen from inside. One muscle fibre fires, then the cluster, then the leg, then the whole body. This is the muscle activation motif, and it is the only thing in the film animated at full frame rate. It appears three times, identical each time. Scenes 1, 5 and 6.",
+      "flow_pos": 0
     },
     {
       "kind": "symbol",
@@ -174,7 +190,8 @@
       "title": "The key",
       "status": "reference",
       "date": "2026-08-28",
-      "note": "Handed from one palm to another. The brake can be released, but only by someone who has been told it exists. Knowledge as permission, and the reason the film is worth making at all. Scene 8."
+      "note": "Handed from one palm to another. The brake can be released, but only by someone who has been told it exists. Knowledge as permission, and the reason the film is worth making at all. Scene 8.",
+      "flow_pos": 0
     },
     {
       "kind": "symbol",
@@ -182,7 +199,8 @@
       "title": "The finish line behind the trees",
       "status": "reference",
       "date": "2026-08-28",
-      "note": "The goal was always there and could not be seen. The runner is not weak, he is misinformed: he thinks he has ten kilometres left. Motivation is information. Scene 1."
+      "note": "The goal was always there and could not be seen. The runner is not weak, he is misinformed: he thinks he has ten kilometres left. Motivation is information. Scene 1.",
+      "flow_pos": 0
     },
     {
       "kind": "rate",
@@ -230,7 +248,8 @@
       "note": "KEY FRAME 1 of 3. He is finished, and he believes he still has ten kilometres to run, which is why the exhaustion is total. Head down, eyes on the ground, mouth open. THE CAMERA DOES NOT MOVE across these three: same head size, same position, same three quarter angle throughout. The emotion changes inside the shot without a cut, so this is the start of one continuous move, not three separate shots. Frame rate here is the slowest in the film, two to three a second, barely turning over.",
       "slug": "EXT. ROAD — DAY — CLOSE, THREE QUARTER",
       "what": "Head down, eyes on the ground a few feet ahead, mouth open. He believes he has ten kilometres left.",
-      "why": "The exhaustion has to be honest before the recovery can mean anything. He is not being brave here, he is finished."
+      "why": "The exhaustion has to be honest before the recovery can mean anything. He is not being brave here, he is finished.",
+      "flow_pos": 1
     },
     {
       "kind": "keyframe",
@@ -241,7 +260,8 @@
       "note": "KEY FRAME 2 of 3. The neck straightening, the chin off the chest, the eyes coming up off the ground to the middle distance. Still breathing hard. This is the middle of the move and the audience does not yet know why he is rising.",
       "slug": "EXT. ROAD — DAY — CLOSE, THREE QUARTER",
       "what": "The neck straightening, the chin coming off the chest, the eyes rising off the ground.",
-      "why": "The middle of a move the audience does not yet understand. They see him change before they know why, which is the question the next shot answers."
+      "why": "The middle of a move the audience does not yet understand. They see him change before they know why, which is the question the next shot answers.",
+      "flow_pos": 1
     },
     {
       "kind": "keyframe",
@@ -252,7 +272,8 @@
       "note": "KEY FRAME 3 of 3. He has seen it. The whole face relaxes: brow smooth, eyes resting easy on something far ahead and out of frame, the corners of the mouth just lifted. Relief arriving, not shock. End the shot here and cut. The audience asks why he changed, and shot 1.2b answers. He is looking OUT of frame on purpose: if he looked at us the cut would not work.",
       "slug": "EXT. ROAD — DAY — CLOSE, THREE QUARTER",
       "what": "The whole face relaxes. Brow smooth, eyes resting easy on something far ahead and out of frame, the corners of the mouth just lifted.",
-      "why": "Relief arriving, not shock. He is looking OUT of frame on purpose: if he looked at us the cut to what he sees would not work."
+      "why": "Relief arriving, not shock. He is looking OUT of frame on purpose: if he looked at us the cut to what he sees would not work.",
+      "flow_pos": 1
     },
     {
       "kind": "keyframe",
@@ -264,7 +285,8 @@
       "note": "KEY FRAME 1 of 4 of THE MUSCLE ACTIVATION. Deep inside a muscle, closer than any eye could get. One single fibre ignites and throws a hard star of light across the dark field; every other fibre is still unlit. THE DARKEST FRAME IN THE FILM, mean luminance 152 against about 240 everywhere else, and that darkness is what makes the light mean something. THIS SEQUENCE RUNS AT 25 FRAMES A SECOND, fully smooth, against 2 to 7 everywhere else. IT IS USED THREE TIMES IN THE FILM, the same files each time: here when the runner sees the finish line, again when Manan tries the bicycle, and again when Coach Brain names the limit. Never remake it for the other two, or the recognition dies.",
       "slug": "INT. MUSCLE — MICROSCOPIC",
       "what": "One fibre ignites in a dark field of packed fibres and throws a hard star of light.",
-      "why": "THE DARKEST FRAME IN THE FILM, and that darkness is what makes the light mean something. A small flame that could go out is more affecting than a lit room."
+      "why": "THE DARKEST FRAME IN THE FILM, and that darkness is what makes the light mean something. A small flame that could go out is more affecting than a lit room.",
+      "flow_pos": 1
     },
     {
       "kind": "keyframe",
@@ -275,7 +297,8 @@
       "note": "KEY FRAME 2 of 4 of the muscle activation. The fire spreads. A dozen ignition points along the same fibres, the fibres beneath them gone pale, the darkness pushed out to the corners. Same diagonal and same hand as key frame 1 on purpose: it has to read as recruitment spreading through one muscle, not as a cut to somewhere new. Measured escalation from key frame 1: mean luminance 152 to 185, bright pixels 16 percent to 33 percent. The light roughly doubles at each of the four beats.",
       "slug": "INT. MUSCLE — MICROSCOPIC",
       "what": "The fire spreads. A dozen ignition points along the same fibres, darkness pushed to the corners.",
-      "why": "Recruitment seen from inside. Same diagonal and same hand as the frame before, so it reads as spreading rather than as a cut somewhere new."
+      "why": "Recruitment seen from inside. Same diagonal and same hand as the frame before, so it reads as spreading rather than as a cut somewhere new.",
+      "flow_pos": 1
     },
     {
       "kind": "keyframe",
@@ -286,7 +309,8 @@
       "note": "KEY FRAME 3 of 4 of the muscle activation. THE REVEAL. We pull back and what filled the frame turns out to have been one muscle in a leg. Every muscle now alight along its whole length. This is where the audience finally learns the scale they have been looking at, and where the field turns from the darkest frame in the film to the brightest. Measured across the three beats so far: mean luminance 152, 185, 235, bright pixels 16, 33, 71 percent. The leg is at rest rather than braced, which reads as charged and not yet released.",
       "slug": "INT. BODY — THE LEG",
       "what": "We pull back and it was a leg. Every muscle alight along its whole length.",
-      "why": "The reveal of scale. Charged and not yet released, which is why the leg is at rest rather than braced."
+      "why": "The reveal of scale. Charged and not yet released, which is why the leg is at rest rather than braced.",
+      "flow_pos": 1
     },
     {
       "kind": "keyframe",
@@ -297,7 +321,8 @@
       "note": "KEY FRAME 4 of 4 of the muscle activation. The whole body, flayed, every muscle alight, caught pushing off into the sprint. The end of the sequence and the peak of the light. DISSOLVE FROM HERE INTO 1-3-A: the two frames are registered on purpose so the skin fades on with nothing moving. Mean pixel difference between them is 9.7 of 255.",
       "slug": "INT. BODY — WHOLE FIGURE",
       "what": "A flayed figure driving into a sprint, every muscle lit, moving left to right.",
-      "why": "The peak of the sequence and the end of it. DISSOLVE FROM HERE INTO 1-3-A: the two frames are registered so the skin fades on with nothing moving."
+      "why": "The peak of the sequence and the end of it. DISSOLVE FROM HERE INTO 1-3-A: the two frames are registered so the skin fades on with nothing moving.",
+      "flow_pos": 1
     },
     {
       "kind": "keyframe",
@@ -308,7 +333,8 @@
       "note": "PHASE 1 of the run. Same pose, size and position as the last muscle frame, with skin and clothing on: the far end of a DISSOLVE, not a cut. Mean pixel difference between the two is 9.7 of 255. From here the strobe has dropped and the animation runs at 8 to 10 frames a second.",
       "slug": "EXT. ROAD — DAY — FULL FIGURE",
       "what": "The same pose as the flayed figure, with skin and clothing on. Driving forward, chest open.",
-      "why": "The far end of a dissolve, not a cut. The internal state becoming the external one. The strobe has dropped and the film runs at eight to ten frames a second from here."
+      "why": "The far end of a dissolve, not a cut. The internal state becoming the external one. The strobe has dropped and the film runs at eight to ten frames a second from here.",
+      "flow_pos": 1
     },
     {
       "kind": "keyframe",
@@ -319,7 +345,8 @@
       "note": "PHASE 2 of the run. Two more attempts at a fully airborne mid-stride were abandoned after four rejects, all of which came back with three legs. Kristijan can interpolate the mid-stride from these two ends, which is what an animator does anyway. If a drawn airborne beat is wanted, reference/RUNNER_STRIDE_AIRBORNE-v2.jpg is the correct pose in the right hand.",
       "slug": "EXT. ROAD — DAY — FULL FIGURE",
       "what": "The stride advanced, both legs clean, driving hard.",
-      "why": "The second of the two ends Kristijan interpolates between. Four attempts at a fully airborne mid-stride all came back with three legs and were abandoned."
+      "why": "The second of the two ends Kristijan interpolates between. Four attempts at a fully airborne mid-stride all came back with three legs and were abandoned.",
+      "flow_pos": 1
     },
     {
       "kind": "keyframe",
@@ -327,7 +354,8 @@
       "file": "BB_C_1/1-4-A-v1.png",
       "status": "superseded",
       "date": "2026-08-28",
-      "note": "Retired. Attempts to rebuild this frame from the real keyed footage did not match the original and were abandoned. The originals are shots 1.5 and 1.6."
+      "note": "Retired. Attempts to rebuild this frame from the real keyed footage did not match the original and were abandoned. The originals are shots 1.5 and 1.6.",
+      "flow_pos": 1
     },
     {
       "kind": "keyframe",
@@ -335,7 +363,8 @@
       "file": "BB_C_1/1-4-B-v1.png",
       "status": "superseded",
       "date": "2026-08-28",
-      "note": "Retired. Attempts to rebuild this frame from the real keyed footage did not match the original and were abandoned. The originals are shots 1.5 and 1.6."
+      "note": "Retired. Attempts to rebuild this frame from the real keyed footage did not match the original and were abandoned. The originals are shots 1.5 and 1.6.",
+      "flow_pos": 1
     },
     {
       "kind": "keyframe",
@@ -347,7 +376,8 @@
       "note": "MANAN WALKS IN. The runner is still going and the boy steps into the drawn world beside him, magnifying glass up. The film's first crossing of its two worlds: anything real is a photograph, anything thought is a pencil drawing, and here they stand in one frame. Both figures are on the same ground line and the runner is the smaller of the two, which is what makes the boy the subject and the runner the thing being examined.",
       "slug": "EXT. CREAM VOID — THE TWO WORLDS MEET",
       "what": "The runner is still going and a boy steps into the drawn world beside him, magnifying glass up.",
-      "why": "The film’s first crossing: anything real is a photograph, anything thought is a pencil drawing, and here they stand in one frame. Both on the same ground line, and the runner is the smaller of the two, which makes the boy the subject and the runner the thing being examined."
+      "why": "The film’s first crossing: anything real is a photograph, anything thought is a pencil drawing, and here they stand in one frame. Both on the same ground line, and the runner is the smaller of the two, which makes the boy the subject and the runner the thing being examined.",
+      "flow_pos": 1
     },
     {
       "kind": "keyframe",
@@ -359,7 +389,8 @@
       "note": "HE TURNS TO US. Pushed in. Manan holds the glass and the runner is now a pale sketch beside his head, the same man drawn small and faint. He speaks to camera over it. The contrast drops as we push in, so the drawn world recedes exactly as the real one takes over.",
       "slug": "EXT. CREAM VOID — CLOSE ON MANAN",
       "what": "Pushed in. He holds the glass and the runner is a pale sketch beside his head. He speaks to camera.",
-      "why": "The contrast falls as we push in, so the drawn world recedes exactly as the real one takes over."
+      "why": "The contrast falls as we push in, so the drawn world recedes exactly as the real one takes over.",
+      "flow_pos": 1
     },
     {
       "kind": "keyframe",
@@ -368,7 +399,8 @@
       "status": "proposal",
       "date": "2026-08-28",
       "note": "THE SAME SHOT WITH THE REAL MANAN. Built from the keyed footage rather than generated: the black backdrop was keyed here by flooding from the frame edge, so his dark hair and black shoes survive intact, then graded warm and lifted toward the cream so he sits in the drawn world instead of on top of it. The generated frame beside it is still the reference for composition. Choose between them. ON THE SCENE AND BREAKDOWN PAGES ONLY, not on the front page storyboard: the generated version stands in there because it reads finished at a glance, and this one is the working material.",
-      "storyboard": "hide"
+      "storyboard": "hide",
+      "flow_pos": 1
     },
     {
       "kind": "keyframe",
@@ -377,7 +409,8 @@
       "status": "proposal",
       "date": "2026-08-28",
       "note": "THE SAME SHOT WITH THE REAL MANAN. The runner behind him is not a new drawing, it is the previous shot zoomed in and faded back, so the push-in is continuous and the contrast falls as we move closer. Real keyed footage, graded to the paper. Choose between this and the generated one beside it. ON THE SCENE AND BREAKDOWN PAGES ONLY, not on the front page storyboard: the generated version stands in there because it reads finished at a glance, and this one is the working material.",
-      "storyboard": "hide"
+      "storyboard": "hide",
+      "flow_pos": 1
     },
     {
       "kind": "keyframe",
@@ -386,7 +419,8 @@
       "representative": true,
       "status": "superseded",
       "date": "2026-08-28",
-      "note": "Superseded by v2. Same avenue, but the figure was in the old crouched pose."
+      "note": "Superseded by v2. Same avenue, but the figure was in the old crouched pose.",
+      "flow_pos": 1
     },
     {
       "kind": "keyframe",
@@ -397,7 +431,8 @@
       "note": "KEY FRAME 2 of 3. Close on the feet, which say runner faster than a face does and keep the face back for shot 1.1. One shoe landed flat and heavy with dust lifting, the other dragging low and barely clearing the ground. It also sets the film's method: look closely at the thing everyone thinks they already understand. NOTE: the shoes are modern trainers rather than the 1923 racing shoes on the character sheet. Cheap to correct if the period matters.",
       "slug": "EXT. ROAD — DAY — EXTREME CLOSE ON FEET",
       "what": "Worn racing shoes on tarmac, one landing flat and heavy with dust lifting, the other dragging low.",
-      "why": "It says runner and it says failing, before a face is ever seen. Feet carry exhaustion more honestly than a face does, because a face can perform and feet cannot."
+      "why": "It says runner and it says failing, before a face is ever seen. Feet carry exhaustion more honestly than a face does, because a face can perform and feet cannot.",
+      "flow_pos": 1
     },
     {
       "kind": "keyframe",
@@ -405,14 +440,16 @@
       "file": "BB_C_1/1-0-C-v1.png",
       "status": "superseded",
       "date": "2026-08-28",
-      "note": "Superseded by v2. Rejected by Baba: a half lunge, half crawl that read as neither running nor collapsing. The V7 shot 1.2 pose is the right one and v2 uses it."
+      "note": "Superseded by v2. Rejected by Baba: a half lunge, half crawl that read as neither running nor collapsing. The V7 shot 1.2 pose is the right one and v2 uses it.",
+      "flow_pos": 1
     },
     {
       "file": "DOCS/9-BRAIN_BRAKE_READ_THROUGH_v9.pdf",
       "kind": "document",
       "status": "reference",
       "date": "2026-08-28",
-      "note": "The whole film as it stands, four panels to a page. SCENE 1 IS REBUILT: 15 panels instead of 5, opening on the empty avenue and the labouring feet, through the collapse, the face lifting, what he sees, the four beats of the muscle activation, the sprint, and Manan walking in. The film is 60 panels, up from 50. Everything after scene 1 is unchanged but renumbered, so any timecode taken from an earlier read through is now wrong."
+      "note": "The whole film as it stands, four panels to a page. SCENE 1 IS REBUILT: 15 panels instead of 5, opening on the empty avenue and the labouring feet, through the collapse, the face lifting, what he sees, the four beats of the muscle activation, the sprint, and Manan walking in. The film is 60 panels, up from 50. Everything after scene 1 is unchanged but renumbered, so any timecode taken from an earlier read through is now wrong.",
+      "flow_pos": 0
     },
     {
       "kind": "keyframe",
@@ -424,7 +461,8 @@
       "note": "Superseded by 8-0-A-v4. Brick, rivets and iron doors, built before the house exterior existed. A factory interior behind a living facade.",
       "slug": "INT. THE BODY — CORRIDOR",
       "what": "A corridor of riveted doors, each with a name, and at the end one door standing open with light pouring out.",
-      "why": "The doors are Coach Brain’s own sensor list. Walking past them sets up a line he has not said yet, so when he says it the audience recognises rather than learns. He enters three or four; the rest going by is what says the body is bigger than what we see."
+      "why": "The doors are Coach Brain’s own sensor list. Walking past them sets up a line he has not said yet, so when he says it the audience recognises rather than learns. He enters three or four; the rest going by is what says the body is bigger than what we see.",
+      "flow_pos": 6
     },
     {
       "kind": "keyframe",
@@ -436,7 +474,8 @@
       "note": "Superseded by 8-1-A-v2. Riveted iron piston and machined gauges, built before the house exterior existed.",
       "slug": "INT. THE BODY — THE PUMP HALL",
       "what": "One enormous piston mid-stroke, pipes leaving in both directions, gauges along the left wall.",
-      "why": "THE WALLS ARE THE ORGAN: domed muscular chambers in relief with fibrous cords across the hollows. Architecture an engineer built, never an anatomy plate, and that is the whole test of the idea."
+      "why": "THE WALLS ARE THE ORGAN: domed muscular chambers in relief with fibrous cords across the hollows. Architecture an engineer built, never an anatomy plate, and that is the whole test of the idea.",
+      "flow_pos": 6
     },
     {
       "kind": "keyframe",
@@ -448,7 +487,8 @@
       "note": "Superseded by 8-2-A-v3. Riveted iron frame, built before the house existed. Its branching walls were right and were carried forward.",
       "slug": "INT. THE BODY — THE BELLOWS",
       "what": "A vast pleated bellows half open, and walls of arches dividing into smaller arches into clustered hollows.",
-      "why": "A lung as architecture. The branching walls carry the frame; describe the geometry and you get the organ, name the organ and you get a diagram."
+      "why": "A lung as architecture. The branching walls carry the frame; describe the geometry and you get the organ, name the organ and you get a diagram.",
+      "flow_pos": 6
     },
     {
       "kind": "keyframe",
@@ -460,7 +500,8 @@
       "note": "THE CONTROL ROOM, the end of the corridor and the deepest room in the body. A plain rectangular room, flat ceiling, square corners, worn flagstones, and the corridor door standing open on the right with the light still coming through it. THE WALLS ARE SMOOTHED GREY CLAY with shallow winding grooves pressed into them, low and quiet, with long calm stretches between: brainish, not a brain. v1 tried full relief on walls and ceiling and came back a cave. The chair is empty on purpose, this is the room before Coach Brain turns around. GANESHA IS NOT IN THIS FRAME. He is a hand's height in a room sized shot and three attempts failed to hold him, so he lives on the object sheet instead and gets composited.",
       "slug": "INT. THE BODY — THE CONTROL ROOM",
       "what": "A plain room at the end of the corridor. A long curved console, an empty chair turned away, the corridor door still open on the right.",
-      "why": "The chair is empty on purpose: this is the room before Coach Brain turns around. Clay walls with shallow grooves, brainish rather than a brain."
+      "why": "The chair is empty on purpose: this is the room before Coach Brain turns around. Clay walls with shallow grooves, brainish rather than a brain.",
+      "flow_pos": 6
     },
     {
       "frame": "6",
@@ -469,7 +510,8 @@
       "title": "Coach Brain's console",
       "status": "superseded",
       "date": "2026-08-28",
-      "note": "Superseded 31.8.2026. Shows the riveted iron console. The desk is now grown stone, see 11-0-A-v3, and this sheet would send an animator the wrong way."
+      "note": "Superseded 31.8.2026. Shows the riveted iron console. The desk is now grown stone, see 11-0-A-v3, and this sheet would send an animator the wrong way.",
+      "flow_pos": 0
     },
     {
       "frame": "6",
@@ -478,7 +520,8 @@
       "title": "Coach Brain's chair",
       "status": "superseded",
       "date": "2026-08-28",
-      "note": "Superseded 31.8.2026. Shows the wooden panelled chair. The chair is now a smooth shell on a single stem."
+      "note": "Superseded 31.8.2026. Shows the wooden panelled chair. The chair is now a smooth shell on a single stem.",
+      "flow_pos": 0
     },
     {
       "frame": "6",
@@ -487,7 +530,8 @@
       "title": "The control room wall",
       "status": "reference",
       "date": "2026-08-28",
-      "note": "Four studies of the clay wall: flat, an outside corner, the top edge where it meets the plain ceiling and the grooves stop, and the grooves drawn large. THE CORNER AND THE CEILING PANELS ARE THE POINT. Without them anyone drawing a new angle has to guess whether the grooves wrap or stop, and guessing that is exactly how the first control room came back as a cave. Smoothed grey clay, no straight edges, grooves barely raised with long calm stretches between them."
+      "note": "Four studies of the clay wall: flat, an outside corner, the top edge where it meets the plain ceiling and the grooves stop, and the grooves drawn large. THE CORNER AND THE CEILING PANELS ARE THE POINT. Without them anyone drawing a new angle has to guess whether the grooves wrap or stop, and guessing that is exactly how the first control room came back as a cave. Smoothed grey clay, no straight edges, grooves barely raised with long calm stretches between them.",
+      "flow_pos": 0
     },
     {
       "frame": "6",
@@ -496,7 +540,8 @@
       "title": "The control room wall, first attempt",
       "status": "superseded",
       "date": "2026-08-28",
-      "note": "Rejected. It redrew the whole room with four panels laid over it: floor, chair, door and desk base all still there. The room was the only reference, so the room is what came back. A study sheet needs a study sheet as its first reference."
+      "note": "Rejected. It redrew the whole room with four panels laid over it: floor, chair, door and desk base all still there. The room was the only reference, so the room is what came back. A study sheet needs a study sheet as its first reference.",
+      "flow_pos": 0
     },
     {
       "kind": "keyframe",
@@ -508,7 +553,8 @@
       "note": "Superseded by 11-0-A-v3. Riveted iron desk and a square screen frame, built before the house exterior existed.",
       "slug": "INT. CONTROL ROOM — COACH BRAIN AT THE DESK",
       "what": "The same room with the character seated in the chair, turned to face the room, one hand raised.",
-      "why": "He is small in a big room on purpose: the body is larger than the thing running it. MANAN IS NOT DRAWN HERE. This is the plate he is keyed into."
+      "why": "He is small in a big room on purpose: the body is larger than the thing running it. MANAN IS NOT DRAWN HERE. This is the plate he is keyed into.",
+      "flow_pos": 6
     },
     {
       "kind": "style",
@@ -568,7 +614,8 @@
       "note": "Superseded by v2. Iron sill, riveted frame and rectangular flagstones, built before the house exterior existed.",
       "slug": "INT. THE BODY — THE THRESHOLD",
       "what": "The open doorway fills the frame. Flagstones run to the iron sill and beyond it the paper is blank.",
-      "why": "The crossing itself. One dark line with drawn floor behind it and nothing beyond, which is what lets the next frame be empty without reading as a cut to nothing."
+      "why": "The crossing itself. One dark line with drawn floor behind it and nothing beyond, which is what lets the next frame be empty without reading as a cut to nothing.",
+      "flow_pos": 999
     },
     {
       "kind": "keyframe",
@@ -580,7 +627,8 @@
       "note": "GANESHA. Seated, calm, palm raised, forming out of the paper rather than sitting on it. Ink coverage is 0.28 percent against 5 to 7 on a full frame, so he is barely there on purpose. THIS IS THE MIDDLE OF THE MOVE, not the end: he scales up out of nothing, through this, and is gone. If he arrives fully drawn there is nothing left to animate. Nothing else in the frame, no lamps, no lotus, no throne, so nothing competes and nothing explains him. Never lit specially, never cut to, never mentioned.",
       "slug": "INT. THE LIGHT — GANESHA FORMING",
       "what": "A seated elephant-headed figure barely there, forming out of the paper rather than sitting on it.",
-      "why": "The middle of the move, not the end. He rises out of nothing, arrives, and is gone. Never lit specially, never cut to, never mentioned. Remover of obstacles, in a film about an obstacle that turns out to be a setting."
+      "why": "The middle of the move, not the end. He rises out of nothing, arrives, and is gone. Never lit specially, never cut to, never mentioned. Remover of obstacles, in a film about an obstacle that turns out to be a setting.",
+      "flow_pos": 7
     },
     {
       "kind": "keyframe",
@@ -599,7 +647,8 @@
           "name": "Manan, the old theory",
           "secs": 23.16
         }
-      ]
+      ],
+      "flow_pos": 13
     },
     {
       "kind": "keyframe",
@@ -607,7 +656,8 @@
       "file": "BB_C_10/10-0-A-v0-split.png",
       "status": "superseded",
       "date": "2026-08-30",
-      "note": "Rejected. It drew both theories on one split board, which was a design superseded hours earlier by the inversion. Two causes: the reference was the control room, whose symmetrical console and screen bank pull toward a two panel layout, and the prompt said 'nothing on the right', a negation, which adds the thing."
+      "note": "Rejected. It drew both theories on one split board, which was a design superseded hours earlier by the inversion. Two causes: the reference was the control room, whose symmetrical console and screen bank pull toward a two panel layout, and the prompt said 'nothing on the right', a negation, which adds the thing.",
+      "flow_pos": 13
     },
     {
       "kind": "keyframe",
@@ -626,7 +676,8 @@
           "name": "Coach Brain, the new theory",
           "secs": 34.96
         }
-      ]
+      ],
+      "flow_pos": 14
     },
     {
       "kind": "keyframe",
@@ -645,7 +696,8 @@
           "name": "Manan, spoken during the fly through",
           "secs": 8.28
         }
-      ]
+      ],
+      "flow_pos": 15
     },
     {
       "kind": "keyframe",
@@ -657,7 +709,8 @@
       "slug": "INT. ROOM — DAY — MANAN ON THE TRAINER",
       "what": "A boy on an exercise bike leaning into a large laptop, its screen a blank rectangle of bare paper.",
       "why": "A COMPOSITE PLATE. THE SCREEN IS A HOLE: the earlier ride footage goes in it. He is racing a recording of himself and no still we have says that. Same framing as the runner seeing the finish line, so the two rhyme.",
-      "storyboard": "hide"
+      "storyboard": "hide",
+      "flow_pos": 3
     },
     {
       "kind": "keyframe",
@@ -665,7 +718,8 @@
       "file": "BB_C_3/3-0-A-v1.png",
       "status": "superseded",
       "date": "2026-08-30",
-      "note": "Rejected. The laptop was small and low in the corner and he was looking at the floor, so it read as a boy exercising rather than a boy racing himself. The photographic still was the first reference and its layout was copied. Also far too dark, mean luminance 133 against the film's 200 to 240."
+      "note": "Rejected. The laptop was small and low in the corner and he was looking at the floor, so it read as a boy exercising rather than a boy racing himself. The photographic still was the first reference and its layout was copied. Also far too dark, mean luminance 133 against the film's 200 to 240.",
+      "flow_pos": 3
     },
     {
       "kind": "keyframe",
@@ -673,7 +727,8 @@
       "file": "BB_C_11/11-1-A-v1.png",
       "status": "superseded",
       "date": "2026-08-30",
-      "note": "Same drawing with a hand drawn panel border, inherited from the old V7 reference. Artwork ships edge to edge and the frame is its own layer, so the border was cropped out into v2."
+      "note": "Same drawing with a hand drawn panel border, inherited from the old V7 reference. Artwork ships edge to edge and the frame is its own layer, so the border was cropped out into v2.",
+      "flow_pos": 14
     },
     {
       "kind": "keyframe",
@@ -681,7 +736,8 @@
       "file": "BB_C_7/7-1-A-v1.png",
       "status": "superseded",
       "date": "2026-08-30",
-      "note": "Rejected at 17 percent ink. It kept the whole doorway and just widened the blank centre, because the threshold was the reference and the reference decides the form. THE FIX WAS TO START FROM AN ALMOST EMPTY FRAME instead: v2 was built from the Ganesha plate by removing the figure, and it worked first time. Emptying a full drawing does not work; subtracting one thing from an empty one does."
+      "note": "Rejected at 17 percent ink. It kept the whole doorway and just widened the blank centre, because the threshold was the reference and the reference decides the form. THE FIX WAS TO START FROM AN ALMOST EMPTY FRAME instead: v2 was built from the Ganesha plate by removing the figure, and it worked first time. Emptying a full drawing does not work; subtracting one thing from an empty one does.",
+      "flow_pos": 999
     },
     {
       "kind": "keyframe",
@@ -693,7 +749,8 @@
       "note": "GANESHA AT FULL PRESENCE, the top of the arc. Ink 2.02 percent against 0.28 on 8.0, every line now present, and it grew the second pair of arms with the axe and noose, which is correct iconography and better than what was asked for. He is 46 percent of frame height, so the move is faint and small, then drawn and larger, then out. Kristijan scales rather than redraws.",
       "slug": "INT. THE LIGHT — GANESHA PRESENT",
       "what": "Fully drawn now, larger, every line present.",
-      "why": "The top of the arc. Between this and the frame before, Kristijan has the whole appearance and the reverse takes him away."
+      "why": "The top of the arc. Between this and the frame before, Kristijan has the whole appearance and the reverse takes him away.",
+      "flow_pos": 7
     },
     {
       "kind": "keyframe",
@@ -701,7 +758,8 @@
       "file": "BB_C_11/11-1-A-v2.png",
       "status": "superseded",
       "date": "2026-08-30",
-      "note": "Both hands drawn. Correct as a drawing and wrong for this film: Manan is a photograph, so his hand cannot be drawn. Superseded by v3, which removes the receiving hand and leaves the hole."
+      "note": "Both hands drawn. Correct as a drawing and wrong for this film: Manan is a photograph, so his hand cannot be drawn. Superseded by v3, which removes the receiving hand and leaves the hole.",
+      "flow_pos": 14
     },
     {
       "kind": "keyframe",
@@ -716,7 +774,8 @@
       "why": "A PLATE. The empty floor is where Manan is keyed in from the grey backdrop footage, walking in through that door. He is never drawn.",
       "speaker": "MANAN",
       "line": "You closed that door.",
-      "linestate": "recorded, PANA6308"
+      "linestate": "recorded, PANA6308",
+      "flow_pos": 12
     },
     {
       "kind": "keyframe",
@@ -724,7 +783,8 @@
       "file": "BB_C_10/10-1-A-v1.png",
       "status": "superseded",
       "date": "2026-08-30",
-      "note": "Rejected by Baba. The collapsed runner drawn in chalk at the lower right is out. The board as it stands in 10.0 is the board: the arm, the gauge at empty, and the three underlined lines. Nothing more is added to it."
+      "note": "Rejected by Baba. The collapsed runner drawn in chalk at the lower right is out. The board as it stands in 10.0 is the board: the arm, the gauge at empty, and the three underlined lines. Nothing more is added to it.",
+      "flow_pos": 13
     },
     {
       "kind": "keyframe",
@@ -733,7 +793,8 @@
       "storyboard": "hide",
       "status": "reference",
       "date": "2026-08-30",
-      "note": "BOARD BUILD STATE 0 of 5. Shows: bare board. These are for the animatic: cut from one to the next in time with the voice so the chalk appears as Manan says the words. SUBTRACTED from the finished board rather than generated, so every state registers to the pixel. There are faint horizontal ghosts on the bare states where the chalk was; they do not read in motion at 5 to 7 frames a second and were left rather than chased."
+      "note": "BOARD BUILD STATE 0 of 5. Shows: bare board. These are for the animatic: cut from one to the next in time with the voice so the chalk appears as Manan says the words. SUBTRACTED from the finished board rather than generated, so every state registers to the pixel. There are faint horizontal ghosts on the bare states where the chalk was; they do not read in motion at 5 to 7 frames a second and were left rather than chased.",
+      "flow_pos": 13
     },
     {
       "kind": "keyframe",
@@ -742,7 +803,8 @@
       "storyboard": "hide",
       "status": "reference",
       "date": "2026-08-30",
-      "note": "BOARD BUILD STATE 1 of 5. Shows: the arm. These are for the animatic: cut from one to the next in time with the voice so the chalk appears as Manan says the words. SUBTRACTED from the finished board rather than generated, so every state registers to the pixel. There are faint horizontal ghosts on the bare states where the chalk was; they do not read in motion at 5 to 7 frames a second and were left rather than chased."
+      "note": "BOARD BUILD STATE 1 of 5. Shows: the arm. These are for the animatic: cut from one to the next in time with the voice so the chalk appears as Manan says the words. SUBTRACTED from the finished board rather than generated, so every state registers to the pixel. There are faint horizontal ghosts on the bare states where the chalk was; they do not read in motion at 5 to 7 frames a second and were left rather than chased.",
+      "flow_pos": 13
     },
     {
       "kind": "keyframe",
@@ -751,7 +813,8 @@
       "storyboard": "hide",
       "status": "reference",
       "date": "2026-08-30",
-      "note": "BOARD BUILD STATE 2 of 5. Shows: + FATIGUE IS IN THE MUSCLE. These are for the animatic: cut from one to the next in time with the voice so the chalk appears as Manan says the words. SUBTRACTED from the finished board rather than generated, so every state registers to the pixel. There are faint horizontal ghosts on the bare states where the chalk was; they do not read in motion at 5 to 7 frames a second and were left rather than chased."
+      "note": "BOARD BUILD STATE 2 of 5. Shows: + FATIGUE IS IN THE MUSCLE. These are for the animatic: cut from one to the next in time with the voice so the chalk appears as Manan says the words. SUBTRACTED from the finished board rather than generated, so every state registers to the pixel. There are faint horizontal ghosts on the bare states where the chalk was; they do not read in motion at 5 to 7 frames a second and were left rather than chased.",
+      "flow_pos": 13
     },
     {
       "kind": "keyframe",
@@ -760,7 +823,8 @@
       "storyboard": "hide",
       "status": "reference",
       "date": "2026-08-30",
-      "note": "BOARD BUILD STATE 3 of 5. Shows: + THE FUEL RUNS OUT. These are for the animatic: cut from one to the next in time with the voice so the chalk appears as Manan says the words. SUBTRACTED from the finished board rather than generated, so every state registers to the pixel. There are faint horizontal ghosts on the bare states where the chalk was; they do not read in motion at 5 to 7 frames a second and were left rather than chased."
+      "note": "BOARD BUILD STATE 3 of 5. Shows: + THE FUEL RUNS OUT. These are for the animatic: cut from one to the next in time with the voice so the chalk appears as Manan says the words. SUBTRACTED from the finished board rather than generated, so every state registers to the pixel. There are faint horizontal ghosts on the bare states where the chalk was; they do not read in motion at 5 to 7 frames a second and were left rather than chased.",
+      "flow_pos": 13
     },
     {
       "kind": "keyframe",
@@ -769,7 +833,8 @@
       "storyboard": "hide",
       "status": "reference",
       "date": "2026-08-30",
-      "note": "BOARD BUILD STATE 4 of 5. Shows: + the gauge at EMPTY. These are for the animatic: cut from one to the next in time with the voice so the chalk appears as Manan says the words. SUBTRACTED from the finished board rather than generated, so every state registers to the pixel. There are faint horizontal ghosts on the bare states where the chalk was; they do not read in motion at 5 to 7 frames a second and were left rather than chased."
+      "note": "BOARD BUILD STATE 4 of 5. Shows: + the gauge at EMPTY. These are for the animatic: cut from one to the next in time with the voice so the chalk appears as Manan says the words. SUBTRACTED from the finished board rather than generated, so every state registers to the pixel. There are faint horizontal ghosts on the bare states where the chalk was; they do not read in motion at 5 to 7 frames a second and were left rather than chased.",
+      "flow_pos": 13
     },
     {
       "kind": "keyframe",
@@ -778,7 +843,8 @@
       "storyboard": "hide",
       "status": "reference",
       "date": "2026-08-30",
-      "note": "BOARD BUILD STATE 5 of 5. Shows: + THE BODY STOPS. These are for the animatic: cut from one to the next in time with the voice so the chalk appears as Manan says the words. SUBTRACTED from the finished board rather than generated, so every state registers to the pixel. There are faint horizontal ghosts on the bare states where the chalk was; they do not read in motion at 5 to 7 frames a second and were left rather than chased."
+      "note": "BOARD BUILD STATE 5 of 5. Shows: + THE BODY STOPS. These are for the animatic: cut from one to the next in time with the voice so the chalk appears as Manan says the words. SUBTRACTED from the finished board rather than generated, so every state registers to the pixel. There are faint horizontal ghosts on the bare states where the chalk was; they do not read in motion at 5 to 7 frames a second and were left rather than chased.",
+      "flow_pos": 13
     },
     {
       "kind": "keyframe",
@@ -787,7 +853,8 @@
       "storyboard": "hide",
       "status": "reference",
       "date": "2026-08-30",
-      "note": "WHITEBOARD BUILD STATE 0 of 5. Shows: bare whiteboard. Cut from one to the next in time with Coach Brain speaking, so the marker appears as he says the words. Subtracted from the finished board so every state registers to the pixel, and the whiteboard erases perfectly clean because the surface is plain."
+      "note": "WHITEBOARD BUILD STATE 0 of 5. Shows: bare whiteboard. Cut from one to the next in time with Coach Brain speaking, so the marker appears as he says the words. Subtracted from the finished board so every state registers to the pixel, and the whiteboard erases perfectly clean because the surface is plain.",
+      "flow_pos": 14
     },
     {
       "kind": "keyframe",
@@ -796,7 +863,8 @@
       "storyboard": "hide",
       "status": "reference",
       "date": "2026-08-30",
-      "note": "WHITEBOARD BUILD STATE 1 of 5. Shows: the brain. Cut from one to the next in time with Coach Brain speaking, so the marker appears as he says the words. Subtracted from the finished board so every state registers to the pixel, and the whiteboard erases perfectly clean because the surface is plain."
+      "note": "WHITEBOARD BUILD STATE 1 of 5. Shows: the brain. Cut from one to the next in time with Coach Brain speaking, so the marker appears as he says the words. Subtracted from the finished board so every state registers to the pixel, and the whiteboard erases perfectly clean because the surface is plain.",
+      "flow_pos": 14
     },
     {
       "kind": "keyframe",
@@ -805,7 +873,8 @@
       "storyboard": "hide",
       "status": "reference",
       "date": "2026-08-30",
-      "note": "WHITEBOARD BUILD STATE 2 of 5. Shows: + FATIGUE IS IN THE BRAIN. Cut from one to the next in time with Coach Brain speaking, so the marker appears as he says the words. Subtracted from the finished board so every state registers to the pixel, and the whiteboard erases perfectly clean because the surface is plain."
+      "note": "WHITEBOARD BUILD STATE 2 of 5. Shows: + FATIGUE IS IN THE BRAIN. Cut from one to the next in time with Coach Brain speaking, so the marker appears as he says the words. Subtracted from the finished board so every state registers to the pixel, and the whiteboard erases perfectly clean because the surface is plain.",
+      "flow_pos": 14
     },
     {
       "kind": "keyframe",
@@ -814,7 +883,8 @@
       "storyboard": "hide",
       "status": "reference",
       "date": "2026-08-30",
-      "note": "WHITEBOARD BUILD STATE 3 of 5. Shows: + IT DECIDES WHEN TO STOP. Cut from one to the next in time with Coach Brain speaking, so the marker appears as he says the words. Subtracted from the finished board so every state registers to the pixel, and the whiteboard erases perfectly clean because the surface is plain."
+      "note": "WHITEBOARD BUILD STATE 3 of 5. Shows: + IT DECIDES WHEN TO STOP. Cut from one to the next in time with Coach Brain speaking, so the marker appears as he says the words. Subtracted from the finished board so every state registers to the pixel, and the whiteboard erases perfectly clean because the surface is plain.",
+      "flow_pos": 14
     },
     {
       "kind": "keyframe",
@@ -823,7 +893,8 @@
       "storyboard": "hide",
       "status": "reference",
       "date": "2026-08-30",
-      "note": "WHITEBOARD BUILD STATE 4 of 5. Shows: + the gauge at FULL. Cut from one to the next in time with Coach Brain speaking, so the marker appears as he says the words. Subtracted from the finished board so every state registers to the pixel, and the whiteboard erases perfectly clean because the surface is plain."
+      "note": "WHITEBOARD BUILD STATE 4 of 5. Shows: + the gauge at FULL. Cut from one to the next in time with Coach Brain speaking, so the marker appears as he says the words. Subtracted from the finished board so every state registers to the pixel, and the whiteboard erases perfectly clean because the surface is plain.",
+      "flow_pos": 14
     },
     {
       "kind": "keyframe",
@@ -832,7 +903,8 @@
       "storyboard": "hide",
       "status": "reference",
       "date": "2026-08-30",
-      "note": "WHITEBOARD BUILD STATE 5 of 5. Shows: + THE FUEL IS STILL THERE. Cut from one to the next in time with Coach Brain speaking, so the marker appears as he says the words. Subtracted from the finished board so every state registers to the pixel, and the whiteboard erases perfectly clean because the surface is plain."
+      "note": "WHITEBOARD BUILD STATE 5 of 5. Shows: + THE FUEL IS STILL THERE. Cut from one to the next in time with Coach Brain speaking, so the marker appears as he says the words. Subtracted from the finished board so every state registers to the pixel, and the whiteboard erases perfectly clean because the surface is plain.",
+      "flow_pos": 14
     },
     {
       "frame": "6",
@@ -841,7 +913,8 @@
       "title": "Coach Brain",
       "status": "superseded",
       "date": "2026-08-30",
-      "note": "Superseded by v4. Carried a generic modern key, not the real object on the live set."
+      "note": "Superseded by v4. Carried a generic modern key, not the real object on the live set.",
+      "flow_pos": 0
     },
     {
       "kind": "keyframe",
@@ -853,7 +926,8 @@
       "note": "KEY FRAME 1 of 3. THE FILM OPENS HERE. He is tiny and alone in a corridor of trees, the road running away to nothing. Same avenue and viewpoint as shot 1.2b on purpose: this is the place before there is anything to see in it. The figure carries the collapse pose from V7 shot 1.2, so the wide and the close say the same thing.",
       "slug": "EXT. AVENUE OF TREES — DAY — WIDE",
       "what": "The film opens here. A road running away to nothing between two rows of trunks, and one man far down it, folded over. He is small enough that the road is the subject and he is an incident in it.",
-      "why": "Loneliness, and distance without end. The same avenue returns in 1-2b with a finish line in it, so this frame is the place before there is anything to see. That is what makes the banner land later."
+      "why": "Loneliness, and distance without end. The same avenue returns in 1-2b with a finish line in it, so this frame is the place before there is anything to see. That is what makes the banner land later.",
+      "flow_pos": 1
     },
     {
       "kind": "keyframe",
@@ -864,7 +938,8 @@
       "note": "KEY FRAME 3 of 3, AND HALF OF THE FILM'S BOOKEND. His legs have gone from under him and he is falling backwards, one leg folded beneath him, arms dead at his sides, head tipped back. THE POSE COMES FROM V7 SHOT 1.2 at Baba's instruction, replacing an invented crouch that read as neither running nor collapsing. Cut against shot 1.3 phase 1 at the far end of the scene: same man, same frame, one destroyed and one fresh. Frame rate here is the slowest in the film, two to three a second.",
       "slug": "EXT. ROAD — DAY — FULL FIGURE",
       "what": "His legs have gone from under him. Falling backwards, one leg folded beneath, arms dead at his sides, head tipped back.",
-      "why": "HALF OF THE FILM’S BOOKEND. Cut this against 1-3-A at the far end of the scene: identical frame, identical man, one destroyed and one fresh. Everything between them is the reason."
+      "why": "HALF OF THE FILM’S BOOKEND. Cut this against 1-3-A at the far end of the scene: identical frame, identical man, one destroyed and one fresh. Everything between them is the reason.",
+      "flow_pos": 1
     },
     {
       "kind": "keyframe",
@@ -876,7 +951,8 @@
       "slug": "TITLE CARD",
       "what": "THE BRAIN BRAKE, and under it THE CENTRAL GOVERNOR THEORY, hand drawn in pencil on bare cream paper. Nothing else in the frame.",
       "why": "The first thing in the film, in both the competition version and the longer one. Drawn in the film's own hand rather than set in a typeface, so the title belongs to the picture instead of sitting on top of it. Ink is 1.62 percent: almost the whole frame is paper.",
-      "note": "Title card. Front of both versions."
+      "note": "Title card. Front of both versions.",
+      "flow_pos": 0
     },
     {
       "kind": "keyframe",
@@ -888,7 +964,8 @@
       "slug": "END CREDITS — CARD 1 OF 7",
       "what": "A classical credit card, one contribution to a card.",
       "why": "PLACEHOLDER, TYPESET NOT DRAWN, so it cannot be mistaken for final. Only Aurovenkatesh as Cinematographer and Jagan and Pushparaj as crew are confirmed, by them, on 31.8.2026. Everything else is a guess waiting on Neha. When the names come back these are redrawn in the film's own hand through Image to Image. Credits appear in the longer version only: the competition cut has none because of the two minute limit.",
-      "note": "Superseded by v2, which has the clouds."
+      "note": "Superseded by v2, which has the clouds.",
+      "flow_pos": 18
     },
     {
       "kind": "keyframe",
@@ -900,7 +977,8 @@
       "slug": "END CREDITS — CARD 2 OF 7",
       "what": "A classical credit card, one contribution to a card.",
       "why": "PLACEHOLDER, TYPESET NOT DRAWN, so it cannot be mistaken for final. Only Aurovenkatesh as Cinematographer and Jagan and Pushparaj as crew are confirmed, by them, on 31.8.2026. Everything else is a guess waiting on Neha. When the names come back these are redrawn in the film's own hand through Image to Image. Credits appear in the longer version only: the competition cut has none because of the two minute limit.",
-      "note": "Placeholder credit card."
+      "note": "Placeholder credit card.",
+      "flow_pos": 18
     },
     {
       "kind": "keyframe",
@@ -912,7 +990,8 @@
       "slug": "END CREDITS — CARD 3 OF 7",
       "what": "A classical credit card, one contribution to a card.",
       "why": "PLACEHOLDER, TYPESET NOT DRAWN, so it cannot be mistaken for final. Only Aurovenkatesh as Cinematographer and Jagan and Pushparaj as crew are confirmed, by them, on 31.8.2026. Everything else is a guess waiting on Neha. When the names come back these are redrawn in the film's own hand through Image to Image. Credits appear in the longer version only: the competition cut has none because of the two minute limit.",
-      "note": "Placeholder credit card."
+      "note": "Placeholder credit card.",
+      "flow_pos": 18
     },
     {
       "kind": "keyframe",
@@ -924,7 +1003,8 @@
       "slug": "END CREDITS — CARD 4 OF 7",
       "what": "A classical credit card, one contribution to a card.",
       "why": "PLACEHOLDER, TYPESET NOT DRAWN, so it cannot be mistaken for final. Only Aurovenkatesh as Cinematographer and Jagan and Pushparaj as crew are confirmed, by them, on 31.8.2026. Everything else is a guess waiting on Neha. When the names come back these are redrawn in the film's own hand through Image to Image. Credits appear in the longer version only: the competition cut has none because of the two minute limit.",
-      "note": "Placeholder credit card."
+      "note": "Placeholder credit card.",
+      "flow_pos": 18
     },
     {
       "kind": "keyframe",
@@ -936,7 +1016,8 @@
       "slug": "END CREDITS — CARD 5 OF 7",
       "what": "A classical credit card, one contribution to a card.",
       "why": "PLACEHOLDER, TYPESET NOT DRAWN, so it cannot be mistaken for final. Only Aurovenkatesh as Cinematographer and Jagan and Pushparaj as crew are confirmed, by them, on 31.8.2026. Everything else is a guess waiting on Neha. When the names come back these are redrawn in the film's own hand through Image to Image. Credits appear in the longer version only: the competition cut has none because of the two minute limit.",
-      "note": "Placeholder credit card."
+      "note": "Placeholder credit card.",
+      "flow_pos": 18
     },
     {
       "kind": "keyframe",
@@ -948,7 +1029,8 @@
       "slug": "END CREDITS — CARD 6 OF 7",
       "what": "A classical credit card, one contribution to a card.",
       "why": "PLACEHOLDER, TYPESET NOT DRAWN, so it cannot be mistaken for final. Only Aurovenkatesh as Cinematographer and Jagan and Pushparaj as crew are confirmed, by them, on 31.8.2026. Everything else is a guess waiting on Neha. When the names come back these are redrawn in the film's own hand through Image to Image. Credits appear in the longer version only: the competition cut has none because of the two minute limit.",
-      "note": "Placeholder credit card."
+      "note": "Placeholder credit card.",
+      "flow_pos": 18
     },
     {
       "kind": "keyframe",
@@ -960,7 +1042,8 @@
       "slug": "END CREDITS — CARD 7 OF 7",
       "what": "A classical credit card, one contribution to a card.",
       "why": "PLACEHOLDER, TYPESET NOT DRAWN, so it cannot be mistaken for final. Only Aurovenkatesh as Cinematographer and Jagan and Pushparaj as crew are confirmed, by them, on 31.8.2026. Everything else is a guess waiting on Neha. When the names come back these are redrawn in the film's own hand through Image to Image. Credits appear in the longer version only: the competition cut has none because of the two minute limit.",
-      "note": "Placeholder credit card."
+      "note": "Placeholder credit card.",
+      "flow_pos": 18
     },
     {
       "kind": "keyframe",
@@ -971,7 +1054,8 @@
       "date": "2026-08-31",
       "slug": "EXT. THE HOUSE OF THE BODY — DAY",
       "what": "The front of a building where nothing is straight. Bone columns bowed narrow at the middle, a roofline of melted stone, windows set deep under heavy brows, one broad low opening with a curved sill, and a single heavy door at ground level.",
-      "why": "THE BUILDING IS HIS BODY, and it reads as a face without being drawn as one: the windows are eyes, the balcony is a mouth. It replaced a factory, which said industry when the film needed living thing. The style is organic architecture in the manner of Gaudi, and it was got by describing the geometry rather than naming a building, which is the same law that made the organ walls work. MANAN IS KEYED INTO THE DOORWAY, never drawn."
+      "why": "THE BUILDING IS HIS BODY, and it reads as a face without being drawn as one: the windows are eyes, the balcony is a mouth. It replaced a factory, which said industry when the film needed living thing. The style is organic architecture in the manner of Gaudi, and it was got by describing the geometry rather than naming a building, which is the same law that made the organ walls work. MANAN IS KEYED INTO THE DOORWAY, never drawn.",
+      "flow_pos": 8
     },
     {
       "kind": "keyframe",
@@ -982,7 +1066,8 @@
       "date": "2026-08-31",
       "slug": "INT. THE BODY — THE CORRIDOR",
       "what": "A vaulted corridor where nothing is straight. Walls swelling at the base, bone columns narrow at their middles, soft irregular stone underfoot, and at the far end one door standing open with light washing everything to bare paper.",
-      "why": "REBUILT 31.8.2026 in the language of the house. The first version was brick and riveted iron, a factory interior behind a living facade, and the two contradicted each other. Shaped more like a throat than a hallway. The plaques carry Coach Brain's own sensor list, so walking past them sets up a line he has not said yet."
+      "why": "REBUILT 31.8.2026 in the language of the house. The first version was brick and riveted iron, a factory interior behind a living facade, and the two contradicted each other. Shaped more like a throat than a hallway. The plaques carry Coach Brain's own sensor list, so walking past them sets up a line he has not said yet.",
+      "flow_pos": 10
     },
     {
       "kind": "keyframe",
@@ -992,7 +1077,8 @@
       "date": "2026-08-31",
       "slug": "INT. THE BODY — THE PUMP HALL",
       "what": "A vaulted hall with one great smooth vessel standing in it, swelling at the base and narrow at the waist, with rounded tubes leaving it in both directions.",
-      "why": "REBUILT 31.8.2026 in the language of the house. THE WALLS ARE UNCHANGED and were never the problem: domed muscular chambers with fibrous cords stretched across the hollows. Only the built things changed, and the instruction that did the work was no rivet, bolt, flange or straight edge anywhere. TWO THINGS DID NOT LAND: the pressure gauges vanished into the wall relief, and the floor kept rectangular flagstones instead of soft irregular stone. Accepted at two seconds on screen; the gauges belong with Coach Brain anyway."
+      "why": "REBUILT 31.8.2026 in the language of the house. THE WALLS ARE UNCHANGED and were never the problem: domed muscular chambers with fibrous cords stretched across the hollows. Only the built things changed, and the instruction that did the work was no rivet, bolt, flange or straight edge anywhere. TWO THINGS DID NOT LAND: the pressure gauges vanished into the wall relief, and the floor kept rectangular flagstones instead of soft irregular stone. Accepted at two seconds on screen; the gauges belong with Coach Brain anyway.",
+      "flow_pos": 10
     },
     {
       "kind": "keyframe",
@@ -1002,7 +1088,8 @@
       "date": "2026-08-31",
       "slug": "INT. THE BODY — THE BELLOWS",
       "what": "A vaulted hall with a vast bellows of soft pleated skin between two pale plates, held by slender bowed columns, a rounded tube leaving its top.",
-      "why": "REBUILT 31.8.2026 in the language of the house. The branching walls carry the frame: arches dividing into smaller arches down to fist-sized clusters, a lung as architecture. THE LEFT WALL STILL READS AS A PLAIN COLONNADE and only the right branches properly. Two runs on it, accepted: at two seconds the room reads as organic and the bellows is right."
+      "why": "REBUILT 31.8.2026 in the language of the house. The branching walls carry the frame: arches dividing into smaller arches down to fist-sized clusters, a lung as architecture. THE LEFT WALL STILL READS AS A PLAIN COLONNADE and only the right branches properly. Two runs on it, accepted: at two seconds the room reads as organic and the bellows is right.",
+      "flow_pos": 10
     },
     {
       "kind": "keyframe",
@@ -1016,7 +1103,8 @@
       "why": "REBUILT 31.8.2026 in the language of the house, and it is the deepest room in the body. The clay walls with their shallow winding grooves are unchanged and were always right. THE SCREENS AS CELLS are the detail that matters: the last piece of machinery becomes part of the body. The floor kept rectangular slabs despite being asked three times across three frames; it barely reads and was left.",
       "speaker": "COACH BRAIN",
       "line": "You found me. Took you long enough.",
-      "linestate": "to record"
+      "linestate": "to record",
+      "flow_pos": 12
     },
     {
       "frame": "11",
@@ -1025,7 +1113,8 @@
       "title": "Coach Brain's desk and chair",
       "status": "reference",
       "date": "2026-08-31",
-      "note": "Four views of the grown desk and its chair: front, three quarter, side, rear. THE SIDE VIEW IS THE USEFUL ONE, it shows the desk and the floor as a single continuous curve, which is what you need to redraw it from any angle. Dials and levers sit down in shallow hollows, never bolted onto a panel, and nothing has a rivet, bolt, flange or straight edge. The chair is a shell on a single stem. ONE DIFFERENCE FROM THE ROOM: this sheet draws the screens as part of the console. In the room they are cell-like openings in the clay wall behind it. Keep them in the wall."
+      "note": "Four views of the grown desk and its chair: front, three quarter, side, rear. THE SIDE VIEW IS THE USEFUL ONE, it shows the desk and the floor as a single continuous curve, which is what you need to redraw it from any angle. Dials and levers sit down in shallow hollows, never bolted onto a panel, and nothing has a rivet, bolt, flange or straight edge. The chair is a shell on a single stem. ONE DIFFERENCE FROM THE ROOM: this sheet draws the screens as part of the console. In the room they are cell-like openings in the clay wall behind it. Keep them in the wall.",
+      "flow_pos": 0
     },
     {
       "kind": "keyframe",
@@ -1036,7 +1125,8 @@
       "date": "2026-08-31",
       "slug": "INT. THE BODY — THE THRESHOLD",
       "what": "The doorway very close, filling the frame. Grown stone, arched and wider at the bottom, edges rounded over. Soft irregular slabs run up to a low rounded lip of a sill, and beyond it the paper is blank.",
-      "why": "REBUILT 31.8.2026 in the language of the house. THE SILL IS STILL ONE DARK LINE and that is the whole point: drawn floor behind it, nothing beyond, which is what lets the next frame be bare paper without reading as a cut to nothing. Measured, the middle of the frame is 100 percent unmarked paper. The flanking doors dropped out and the walls sweep in instead, which is better: fewer objects competing with the opening and the curve pulls the eye through."
+      "why": "REBUILT 31.8.2026 in the language of the house. THE SILL IS STILL ONE DARK LINE and that is the whole point: drawn floor behind it, nothing beyond, which is what lets the next frame be bare paper without reading as a cut to nothing. Measured, the middle of the frame is 100 percent unmarked paper. The flanking doors dropped out and the walls sweep in instead, which is better: fewer objects competing with the opening and the curve pulls the eye through.",
+      "flow_pos": 999
     },
     {
       "kind": "keyframe",
@@ -1047,7 +1137,8 @@
       "date": "2026-08-31",
       "slug": "EXT. THE HOUSE — THE FRONT DOOR OPENS",
       "what": "The doorway close and filling the frame. Two smooth stone leaves swung back almost flat against the opening, and light pouring out of the gap as bare unmarked paper, spilling forward onto the paving.",
-      "why": "THE FIRST OF TWO DOORS HE OPENS. The second is the skull door into the brain, opened the same way, so the second reads as a rhyme rather than a repeat. The leaves are the same stone as the wall with no rivet, hinge or straight edge, so they read as parts of the building that moved rather than joinery fitted into it. Blank centre measured 61.5 percent against 31 in the first version. MANAN IS KEYED INTO THE DOORWAY, never drawn."
+      "why": "THE FIRST OF TWO DOORS HE OPENS. The second is the skull door into the brain, opened the same way, so the second reads as a rhyme rather than a repeat. The leaves are the same stone as the wall with no rivet, hinge or straight edge, so they read as parts of the building that moved rather than joinery fitted into it. Blank centre measured 61.5 percent against 31 in the first version. MANAN IS KEYED INTO THE DOORWAY, never drawn.",
+      "flow_pos": 9
     },
     {
       "kind": "keyframe",
@@ -1058,7 +1149,8 @@
       "date": "2026-08-31",
       "slug": "INT. THE BODY — THE SKULL DOOR",
       "what": "A closed stone door at the end of a short passage. A softly domed top, one shallow oval push plate on the right at hand height, and an oval plaque at eye height reading COACH BRAIN.",
-      "why": "THE SECOND DOOR HE OPENS, and it rhymes with the front door rather than repeating it. A skull is suggested by the dome alone and never drawn: no teeth, no jaw, no sockets. Anyone who has walked the corridor will feel it, nobody is told. THE PLAQUE IS THE ONLY PLACE IN THE FILM THE CHARACTER IS NAMED IN WRITING, and it arrives before he does. The push plate sits where a hand falls and the plaque where an eye falls, because the building is strange but not inconvenient."
+      "why": "THE SECOND DOOR HE OPENS, and it rhymes with the front door rather than repeating it. A skull is suggested by the dome alone and never drawn: no teeth, no jaw, no sockets. Anyone who has walked the corridor will feel it, nobody is told. THE PLAQUE IS THE ONLY PLACE IN THE FILM THE CHARACTER IS NAMED IN WRITING, and it arrives before he does. The push plate sits where a hand falls and the plaque where an eye falls, because the building is strange but not inconvenient.",
+      "flow_pos": 11
     },
     {
       "kind": "keyframe",
@@ -1070,7 +1162,8 @@
       "what": "A hand entering from the upper left, cropped at the wrist, closed into a loose fist with the thumb across the fingers. Two small glints of gold show between the curled fingers.",
       "why": "PHASE 1 OF 4 OF THE LAST SHOT. A God hand: no body attached, which is how giving has been drawn for centuries without anyone being told whose hand it is. It is already closed when we arrive, so the opening is the event. THE LOWER RIGHT IS BLANK ON PURPOSE, measured 100 percent: Manan's real hand is keyed in there and is never drawn. Colour measures 0.24 percent, the key alone.",
       "storyboard": "hide",
-      "note": "Off the strip 1.9.2026. Carries the old modern key, not the real object, and the wrist has no tracksuit cuff. The release now starts on the turn."
+      "note": "Off the strip 1.9.2026. Carries the old modern key, not the real object, and the wrist has no tracksuit cuff. The release now starts on the turn.",
+      "flow_pos": 17
     },
     {
       "kind": "keyframe",
@@ -1082,7 +1175,8 @@
       "what": "The same hand, now wearing Coach Brain's tracksuit cuff with the stripe running off the left edge. The fingers have uncurled halfway and the gold key is clearly visible, still resting in the hand.",
       "why": "PHASE 2 OF 4. The cuff is how we know whose hand it is; the body stays out of frame. Caught in the middle of releasing, neither open nor closed.",
       "note": "Superseded by v2, which has the real key and the tracksuit cuff.",
-      "storyboard": "hide"
+      "storyboard": "hide",
+      "flow_pos": 17
     },
     {
       "kind": "keyframe",
@@ -1093,7 +1187,8 @@
       "slug": "INSERT — THE HAND TURNS OVER",
       "what": "The wrist has rolled, the palm faces down, the fingers are open and empty. The gold key falls clear of the hand in bare paper with nothing beneath it.",
       "why": "PHASE 3 OF 4. NOTHING WAITS BELOW. The key falls into empty air and Manan's hand comes in after it, so he is not given the key, he takes what was let go. The key renders fully solid gold here where earlier phases showed only glints between fingers; that is a deliberate step up in weight as it becomes the subject, not a continuity error.",
-      "note": "Superseded by the FALL sequence. Old modern key, and the drop is now a long fall from the sky."
+      "note": "Superseded by the FALL sequence. Old modern key, and the drop is now a long fall from the sky.",
+      "flow_pos": 17
     },
     {
       "kind": "keyframe",
@@ -1104,7 +1199,8 @@
       "slug": "INSERT — THE KEY ALONE",
       "what": "Bare paper edge to edge with one small gold key near the middle, tumbling as it falls. Nothing else in the frame at all: no hand, no arm, no shadow, no ground.",
       "why": "PHASE 4 OF 4, and the last drawn frame in the film. Ink measures 0.43 percent. After everything the film has built it comes down to one small object falling through empty space with nobody holding it, which is the argument in a single frame. THE FRAME AFTER THIS ONE IS NOT DRAWN AND MUST NOT BE: Manan's real hand comes in from below and closes on the key, keyed over this same bare paper. Coach Brain's hand is gone by then. Manan's fist stays and the film fades out on it, so the last image is a boy holding something, alone.",
-      "note": "Superseded by the FALL sequence. Old modern key."
+      "note": "Superseded by the FALL sequence. Old modern key.",
+      "flow_pos": 17
     },
     {
       "kind": "keyframe",
@@ -1122,7 +1218,8 @@
           "note": "The whole take with a real alpha channel, ready to composite. The still above is a mockup keyed by luma and it is not good enough to finish with: the hood picks up a rough matte where the fabric shadow meets the black. Pull the frames you need from this footage instead."
         }
       ],
-      "storyboard": "hide"
+      "storyboard": "hide",
+      "flow_pos": 17
     },
     {
       "kind": "keyframe",
@@ -1140,7 +1237,8 @@
           "note": "The whole take with a real alpha channel, ready to composite. The still above is a mockup keyed by luma and it is not good enough to finish with: the hood picks up a rough matte where the fabric shadow meets the black. Pull the frames you need from this footage instead."
         }
       ],
-      "storyboard": "hide"
+      "storyboard": "hide",
+      "flow_pos": 17
     },
     {
       "kind": "keyframe",
@@ -1157,7 +1255,8 @@
           "url": "https://drive.google.com/drive/folders/1YGb_z7OCrLSUX7JagNpynXbu1fAK2wNu",
           "note": "The whole take with a real alpha channel, ready to composite. The still above is a mockup keyed by luma and it is not good enough to finish with: the hood picks up a rough matte where the fabric shadow meets the black. Pull the frames you need from this footage instead."
         }
-      ]
+      ],
+      "flow_pos": 17
     },
     {
       "kind": "flow",
@@ -1168,7 +1267,8 @@
       "scenes": [
         "0"
       ],
-      "note": "The film opens on its own title, drawn in the film’s hand."
+      "note": "The film opens on its own title, drawn in the film’s hand.",
+      "flow_pos": 0
     },
     {
       "kind": "flow",
@@ -1179,7 +1279,8 @@
       "scenes": [
         "1"
       ],
-      "note": "A man at the end of himself finds a finish line and runs like he just started."
+      "note": "A man at the end of himself finds a finish line and runs like he just started.",
+      "flow_pos": 0
     },
     {
       "kind": "flow",
@@ -1190,7 +1291,8 @@
       "scenes": [
         "2"
       ],
-      "note": "Manan on a real bicycle on a real road. Curious, not convinced."
+      "note": "Manan on a real bicycle on a real road. Curious, not convinced.",
+      "flow_pos": 0
     },
     {
       "kind": "flow",
@@ -1201,7 +1303,8 @@
       "scenes": [
         "3"
       ],
-      "note": "On the trainer at home, racing a recording of his own best ride."
+      "note": "On the trainer at home, racing a recording of his own best ride.",
+      "flow_pos": 0
     },
     {
       "kind": "flow",
@@ -1212,7 +1315,8 @@
       "scenes": [
         "4"
       ],
-      "note": "Nothing left. He cannot go on."
+      "note": "Nothing left. He cannot go on.",
+      "flow_pos": 0
     },
     {
       "kind": "flow",
@@ -1223,7 +1327,8 @@
       "scenes": [
         "5"
       ],
-      "note": "He stops, breathes, relaxes. Out to white."
+      "note": "He stops, breathes, relaxes. Out to white.",
+      "flow_pos": 0
     },
     {
       "kind": "flow",
@@ -1234,7 +1339,8 @@
       "scenes": [
         "9"
       ],
-      "note": "He closes his eyes and goes into the light. While he is travelling through it Ganesha rises, grows, and is gone, and the white closes around him exactly as it opened. Never explained, never mentioned. Then the light fades down."
+      "note": "He closes his eyes and goes into the light. While he is travelling through it Ganesha rises, grows, and is gone, and the white closes around him exactly as it opened. Never explained, never mentioned. Then the light fades down.",
+      "flow_pos": 0
     },
     {
       "kind": "flow",
@@ -1248,7 +1354,8 @@
         "8",
         "7"
       ],
-      "note": "The light fades and he is standing in front of the door, and the door is giving off light too. He opens it and goes in, and only then do we see the building he is inside: the corridor of named doors, the rooms behind them, the threshold at the far end. Organic architecture in the manner of Gaudi throughout."
+      "note": "The light fades and he is standing in front of the door, and the door is giving off light too. He opens it and goes in, and only then do we see the building he is inside: the corridor of named doors, the rooms behind them, the threshold at the far end. Organic architecture in the manner of Gaudi throughout.",
+      "flow_pos": 0
     },
     {
       "kind": "flow",
@@ -1260,7 +1367,8 @@
         "18",
         "19"
       ],
-      "note": "A second door, bone, with a plate reading COACH BRAIN. He opens it the same way he opened the first and goes in. What happened? I pulled the brakes on you."
+      "note": "A second door, bone, with a plate reading COACH BRAIN. He opens it the same way he opened the first and goes in. What happened? I pulled the brakes on you.",
+      "flow_pos": 0
     },
     {
       "kind": "flow",
@@ -1272,7 +1380,8 @@
         "10",
         "11"
       ],
-      "note": "Manan explains what he read on a blackboard in white chalk. Coach Brain answers on a whiteboard in black marker. Same layout, same three lines, same gauge, every value reversed."
+      "note": "Manan explains what he read on a blackboard in white chalk. Coach Brain answers on a whiteboard in black marker. Same layout, same three lines, same gauge, every value reversed.",
+      "flow_pos": 0
     },
     {
       "kind": "flow",
@@ -1283,7 +1392,8 @@
       "scenes": [
         "12"
       ],
-      "note": "We fly at the banner reading THE LIMIT IS A SETTING and pass through it into white. Manan says the line while we are flying."
+      "note": "We fly at the banner reading THE LIMIT IS A SETTING and pass through it into white. Manan says the line while we are flying.",
+      "flow_pos": 0
     },
     {
       "kind": "flow",
@@ -1294,7 +1404,8 @@
       "scenes": [
         "15"
       ],
-      "note": "Coach Brain lets the key go, it falls through an empty frame, and we cut to Manan catching it. THE END."
+      "note": "Coach Brain lets the key go, it falls through an empty frame, and we cut to Manan catching it. THE END.",
+      "flow_pos": 0
     },
     {
       "kind": "flow",
@@ -1305,7 +1416,8 @@
       "scenes": [
         "14"
       ],
-      "note": "Seven classical cards, in the longer version only."
+      "note": "Seven classical cards, in the longer version only.",
+      "flow_pos": 0
     },
     {
       "kind": "keyframe",
@@ -1315,7 +1427,8 @@
       "date": "2026-08-31",
       "slug": "INT. THE LIGHT — BEFORE",
       "what": "Bare paper, edge to edge, with the faintest broken strokes clinging to the four corners.",
-      "why": "HE CLOSES HIS EYES AND GOES INTO THE LIGHT. This is the travel, not a transition: he is moving through it when Ganesha appears. Nothing is drawn to stand for light, the light is the paper."
+      "why": "HE CLOSES HIS EYES AND GOES INTO THE LIGHT. This is the travel, not a transition: he is moving through it when Ganesha appears. Nothing is drawn to stand for light, the light is the paper.",
+      "flow_pos": 7
     },
     {
       "kind": "keyframe",
@@ -1325,7 +1438,8 @@
       "date": "2026-08-31",
       "slug": "INT. THE LIGHT — AFTER",
       "what": "The same bare paper. Ganesha has gone.",
-      "why": "THE SAME FRAME AS 9.0 ON PURPOSE, so the white closes around him exactly as it opened. He arrives out of nothing and leaves into nothing. From here the light fades down and he is standing in front of the door."
+      "why": "THE SAME FRAME AS 9.0 ON PURPOSE, so the white closes around him exactly as it opened. He arrives out of nothing and leaves into nothing. From here the light fades down and he is standing in front of the door.",
+      "flow_pos": 7
     },
     {
       "kind": "keyframe",
@@ -1336,7 +1450,8 @@
       "date": "2026-08-31",
       "slug": "EXT. THE HOUSE — THE DOOR OPEN",
       "what": "The whole building with the front door open and light pouring out of it as bare unmarked paper, spilling forward onto the paving.",
-      "why": "THE FRAME THE ARRIVAL IS BUILT ON. Push into the doorway to start, pull back to full frame, and the building is revealed as the answer to where he went. Manan is keyed into the doorway and taken out of the composite part way through the pull, so he disappears inside without ever being drawn. MEASURED: the doorway differs from the closed door version by 48.6 of 255 but the rest of the facade by 16.0, so the two do not register exactly. Do not cross dissolve between them for the ending. Hold on THIS frame and animate the doors closing over it."
+      "why": "THE FRAME THE ARRIVAL IS BUILT ON. Push into the doorway to start, pull back to full frame, and the building is revealed as the answer to where he went. Manan is keyed into the doorway and taken out of the composite part way through the pull, so he disappears inside without ever being drawn. MEASURED: the doorway differs from the closed door version by 48.6 of 255 but the rest of the facade by 16.0, so the two do not register exactly. Do not cross dissolve between them for the ending. Hold on THIS frame and animate the doors closing over it.",
+      "flow_pos": 8
     },
     {
       "kind": "keyframe",
@@ -1359,7 +1474,8 @@
           "note": "The whole take with a real alpha channel, ready to composite. The still above is a mockup keyed by luma and it is not good enough to finish with: the hood picks up a rough matte where the fabric shadow meets the black. Pull the frames you need from this footage instead."
         }
       ],
-      "storyboard": "hide"
+      "storyboard": "hide",
+      "flow_pos": 17
     },
     {
       "kind": "keyframe",
@@ -1381,7 +1497,8 @@
           "url": "https://drive.google.com/drive/folders/1ph36NxPciUB5Y4s_IiowDotmjk2ciFZ4",
           "note": "The take with a real alpha channel, ready to composite. Use this, not the mockup above."
         }
-      ]
+      ],
+      "flow_pos": 8
     },
     {
       "kind": "keyframe",
@@ -1395,7 +1512,8 @@
       "why": "THE WIDE, AND THE FIRST OF THE THREE SETUPS. It fixes the screen direction for everything that follows: COACH BRAIN IS ON THE LEFT AND LOOKS RIGHT, MANAN IS ON THE RIGHT AND LOOKS LEFT. Both singles must obey that or the two of them will appear to be looking away from each other. IT IS A PLATE. The clear floor on the right is where Manan is keyed in; he is a photograph and is never drawn. Coach Brain is already turned toward that space with his hand moving, so the moment the composite happens they read as talking.",
       "speaker": "COACH BRAIN",
       "line": "You found me. Took you long enough.",
-      "linestate": "to record"
+      "linestate": "to record",
+      "flow_pos": 12
     },
     {
       "kind": "keyframe",
@@ -1408,7 +1526,8 @@
       "why": "THE SECOND OF THE THREE DIALOGUE SETUPS, and the only one that needs nothing keyed. He is on the LEFT and looking RIGHT, which is the screen direction the wide fixed. He is a little more frontal than asked for and the smile is broad, which suits the line he is saying. THE RIGHT HALF IS EMPTY ROOM AND MUST STAY EMPTY: three earlier attempts either drew Manan there or lost the character, and this is the one that did neither.",
       "speaker": "COACH BRAIN",
       "line": "You found me. Took you long enough.",
-      "linestate": "to record"
+      "linestate": "to record",
+      "flow_pos": 12
     },
     {
       "kind": "keyframe",
@@ -1421,7 +1540,8 @@
       "why": "THE THIRD OF THE THREE DIALOGUE SETUPS AND A PURE PLATE. Nobody is drawn in it. MANAN IS KEYED INTO THE MIDDLE OF THE FLOOR, standing, LOOKING LEFT toward Coach Brain, which is the screen direction the wide fixed. It came back clean first time because the prompt said the room was empty and gave no reason. The attempt before it explained that the space was where somebody would be standing, and the model drew them.",
       "speaker": "MANAN",
       "line": "You closed that door.",
-      "linestate": "recorded, PANA6308"
+      "linestate": "recorded, PANA6308",
+      "flow_pos": 12
     },
     {
       "kind": "keyframe",
@@ -1432,7 +1552,8 @@
       "slug": "EXT. CREAM VOID — INTO THE BANNER",
       "what": "Close on the cloth. A few letters very large and cut off by the frame edges, the weave between them, the banner whole.",
       "why": "THE CLOTH DOES NOT TEAR OR PART. An earlier attempt split it down the middle and was rejected: we pass through by cutting to white, not by the fabric giving way, the same as every other crossing in the film. Graded onto the film's own paper and pencil in the container, no coin spent: it came back warm and photographic at 6.39 percent colour and is now 0.00.",
-      "note": "Superseded by v3. Came back photographic: raking light across real canvas and shallow focus."
+      "note": "Superseded by v3. Came back photographic: raking light across real canvas and shallow focus.",
+      "flow_pos": 15
     },
     {
       "kind": "keyframe",
@@ -1442,7 +1563,8 @@
       "date": "2026-08-31",
       "slug": "EXT. — ON THE TRAINER, WIDE",
       "what": "Him on the trainer at home with the laptop in the room.",
-      "why": "PHASE 3 IS LIVE ACTION. He is a photograph here as he is in phases 2, 4 and 5, so the whole bicycle sequence keeps him real. LOW RESOLUTION FOR NOW, 380 px: the 1920 px originals were destroyed by an in-place downscale and are being re-exported from the Resolve timeline, STEP 77."
+      "why": "PHASE 3 IS LIVE ACTION. He is a photograph here as he is in phases 2, 4 and 5, so the whole bicycle sequence keeps him real. LOW RESOLUTION FOR NOW, 380 px: the 1920 px originals were destroyed by an in-place downscale and are being re-exported from the Resolve timeline, STEP 77.",
+      "flow_pos": 3
     },
     {
       "kind": "keyframe",
@@ -1452,7 +1574,8 @@
       "date": "2026-08-31",
       "slug": "EXT. — RACING",
       "what": "Closer, working, eyes on the screen.",
-      "why": "The beat the phase exists for: he is competing with a recording of himself. LOW RESOLUTION FOR NOW, 380 px: the 1920 px originals were destroyed by an in-place downscale and are being re-exported from the Resolve timeline, STEP 77."
+      "why": "The beat the phase exists for: he is competing with a recording of himself. LOW RESOLUTION FOR NOW, 380 px: the 1920 px originals were destroyed by an in-place downscale and are being re-exported from the Resolve timeline, STEP 77.",
+      "flow_pos": 3
     },
     {
       "kind": "keyframe",
@@ -1462,7 +1585,8 @@
       "date": "2026-08-31",
       "slug": "EXT. — PUSHING",
       "what": "Leaning into it, further in.",
-      "why": "Carries into phase 4, where he stops. LOW RESOLUTION FOR NOW, 380 px: the 1920 px originals were destroyed by an in-place downscale and are being re-exported from the Resolve timeline, STEP 77."
+      "why": "Carries into phase 4, where he stops. LOW RESOLUTION FOR NOW, 380 px: the 1920 px originals were destroyed by an in-place downscale and are being re-exported from the Resolve timeline, STEP 77.",
+      "flow_pos": 3
     },
     {
       "kind": "keyframe",
@@ -1472,7 +1596,8 @@
       "date": "2026-08-31",
       "slug": "EXT. ROAD — DAY",
       "what": "He rides on a real road, small against it.",
-      "why": "PLACEHOLDER. This is a reference frame from the document Venkatesh shot from, standing in until the real footage is exported. It shows the intended framing and nothing more. The phase was shot and the material exists; it is not on this machine yet."
+      "why": "PLACEHOLDER. This is a reference frame from the document Venkatesh shot from, standing in until the real footage is exported. It shows the intended framing and nothing more. The phase was shot and the material exists; it is not on this machine yet.",
+      "flow_pos": 2
     },
     {
       "kind": "keyframe",
@@ -1482,7 +1607,8 @@
       "date": "2026-08-31",
       "slug": "EXT. ROAD — CLOSER",
       "what": "Working, but not yet in trouble.",
-      "why": "PLACEHOLDER. This is a reference frame from the document Venkatesh shot from, standing in until the real footage is exported. It shows the intended framing and nothing more. The phase was shot and the material exists; it is not on this machine yet."
+      "why": "PLACEHOLDER. This is a reference frame from the document Venkatesh shot from, standing in until the real footage is exported. It shows the intended framing and nothing more. The phase was shot and the material exists; it is not on this machine yet.",
+      "flow_pos": 2
     },
     {
       "kind": "keyframe",
@@ -1492,7 +1618,8 @@
       "date": "2026-08-31",
       "slug": "EXT. ROAD — FROM THE SHOOT",
       "what": "A frame from the day.",
-      "why": "PLACEHOLDER. This is a reference frame from the document Venkatesh shot from, standing in until the real footage is exported. It shows the intended framing and nothing more. The phase was shot and the material exists; it is not on this machine yet."
+      "why": "PLACEHOLDER. This is a reference frame from the document Venkatesh shot from, standing in until the real footage is exported. It shows the intended framing and nothing more. The phase was shot and the material exists; it is not on this machine yet.",
+      "flow_pos": 2
     },
     {
       "kind": "keyframe",
@@ -1502,7 +1629,8 @@
       "date": "2026-08-31",
       "slug": "INT. ROOM — RACING HIMSELF",
       "what": "On the trainer with his own ride playing back.",
-      "why": "PLACEHOLDER. This is a reference frame from the document Venkatesh shot from, standing in until the real footage is exported. It shows the intended framing and nothing more. The phase was shot and the material exists; it is not on this machine yet."
+      "why": "PLACEHOLDER. This is a reference frame from the document Venkatesh shot from, standing in until the real footage is exported. It shows the intended framing and nothing more. The phase was shot and the material exists; it is not on this machine yet.",
+      "flow_pos": 3
     },
     {
       "kind": "keyframe",
@@ -1512,7 +1640,8 @@
       "date": "2026-08-31",
       "slug": "INT. ROOM — THE IDEA LANDS",
       "what": "The moment he decides to try it.",
-      "why": "PLACEHOLDER. This is a reference frame from the document Venkatesh shot from, standing in until the real footage is exported. It shows the intended framing and nothing more. The phase was shot and the material exists; it is not on this machine yet."
+      "why": "PLACEHOLDER. This is a reference frame from the document Venkatesh shot from, standing in until the real footage is exported. It shows the intended framing and nothing more. The phase was shot and the material exists; it is not on this machine yet.",
+      "flow_pos": 3
     },
     {
       "kind": "keyframe",
@@ -1522,7 +1651,8 @@
       "date": "2026-08-31",
       "slug": "INT. ROOM — HE IS DONE",
       "what": "Nothing left. He stops.",
-      "why": "PLACEHOLDER. This is a reference frame from the document Venkatesh shot from, standing in until the real footage is exported. It shows the intended framing and nothing more. The phase was shot and the material exists; it is not on this machine yet."
+      "why": "PLACEHOLDER. This is a reference frame from the document Venkatesh shot from, standing in until the real footage is exported. It shows the intended framing and nothing more. The phase was shot and the material exists; it is not on this machine yet.",
+      "flow_pos": 4
     },
     {
       "kind": "keyframe",
@@ -1534,7 +1664,8 @@
       "what": "What he was chasing, and did not reach.",
       "why": "PLACEHOLDER. This is a reference frame from the document Venkatesh shot from, standing in until the real footage is exported. It shows the intended framing and nothing more. The phase was shot and the material exists; it is not on this machine yet.",
       "storyboard": "hide",
-      "note": "Off the storyboard, 1.9.2026. This is a drawing sitting in a live action phase alongside real footage of the same beat, which tells the animator to draw something that was already shot. Kept in the catalogue as early reference only."
+      "note": "Off the storyboard, 1.9.2026. This is a drawing sitting in a live action phase alongside real footage of the same beat, which tells the animator to draw something that was already shot. Kept in the catalogue as early reference only.",
+      "flow_pos": 4
     },
     {
       "kind": "keyframe",
@@ -1544,7 +1675,8 @@
       "date": "2026-08-31",
       "slug": "INT. ROOM — FROM THE SHOOT",
       "what": "A frame from the day.",
-      "why": "PLACEHOLDER. This is a reference frame from the document Venkatesh shot from, standing in until the real footage is exported. It shows the intended framing and nothing more. The phase was shot and the material exists; it is not on this machine yet."
+      "why": "PLACEHOLDER. This is a reference frame from the document Venkatesh shot from, standing in until the real footage is exported. It shows the intended framing and nothing more. The phase was shot and the material exists; it is not on this machine yet.",
+      "flow_pos": 4
     },
     {
       "kind": "keyframe",
@@ -1554,7 +1686,8 @@
       "date": "2026-08-31",
       "slug": "INT. ROOM — EYES CLOSED",
       "what": "He stops pushing and closes his eyes.",
-      "why": "PLACEHOLDER. This is a reference frame from the document Venkatesh shot from, standing in until the real footage is exported. It shows the intended framing and nothing more. The phase was shot and the material exists; it is not on this machine yet."
+      "why": "PLACEHOLDER. This is a reference frame from the document Venkatesh shot from, standing in until the real footage is exported. It shows the intended framing and nothing more. The phase was shot and the material exists; it is not on this machine yet.",
+      "flow_pos": 5
     },
     {
       "kind": "keyframe",
@@ -1566,7 +1699,8 @@
       "what": "Stillness. This is the way in.",
       "why": "PLACEHOLDER. This is a reference frame from the document Venkatesh shot from, standing in until the real footage is exported. It shows the intended framing and nothing more. The phase was shot and the material exists; it is not on this machine yet.",
       "storyboard": "hide",
-      "note": "Off the storyboard, 1.9.2026, same reason as V7_5_3_beat_it. A drawing in a live action phase beside real footage of the same beat. Found by measuring coloured pixels across all three live phases rather than by eye: 2.4 per cent against 62 to 92 for every photograph around it."
+      "note": "Off the storyboard, 1.9.2026, same reason as V7_5_3_beat_it. A drawing in a live action phase beside real footage of the same beat. Found by measuring coloured pixels across all three live phases rather than by eye: 2.4 per cent against 62 to 92 for every photograph around it.",
+      "flow_pos": 5
     },
     {
       "kind": "keyframe",
@@ -1576,7 +1710,8 @@
       "date": "2026-08-31",
       "slug": "INT. ROOM — FROM THE SHOOT",
       "what": "A frame from the day.",
-      "why": "PLACEHOLDER. This is a reference frame from the document Venkatesh shot from, standing in until the real footage is exported. It shows the intended framing and nothing more. The phase was shot and the material exists; it is not on this machine yet."
+      "why": "PLACEHOLDER. This is a reference frame from the document Venkatesh shot from, standing in until the real footage is exported. It shows the intended framing and nothing more. The phase was shot and the material exists; it is not on this machine yet.",
+      "flow_pos": 5
     },
     {
       "kind": "keyframe",
@@ -1586,7 +1721,8 @@
       "date": "2026-09-01",
       "slug": "END CREDITS — THE CLOUD PLATE",
       "what": "A tall nine by sixteen sheet of faint cloud in bands, with clear bare paper between them and an open column down the centre.",
-      "why": "NOT USED YET, KEPT ANYWAY. Built so the credits could be one plate with text composed over it rather than seven separate cards, which is cheaper and lets the order change without regenerating anything. Fly the camera down the open middle and pass through a cloud bank between each name."
+      "why": "NOT USED YET, KEPT ANYWAY. Built so the credits could be one plate with text composed over it rather than seven separate cards, which is cheaper and lets the order change without regenerating anything. Fly the camera down the open middle and pass through a cloud bank between each name.",
+      "flow_pos": 18
     },
     {
       "frame": "15",
@@ -1595,7 +1731,8 @@
       "title": "The key",
       "status": "reference",
       "date": "2026-09-01",
-      "note": "THIS IS THE KEY, AND IT IS A REAL OBJECT ON THE LIVE SET. Four views: full side, tilted three quarter, head detail, bit end profile. A long round shaft; at one end a flat round disc with a three lobed clover hole and the number 5 stamped near its edge; a collar of three raised rings where head meets shaft; at the other end a flat rectangular bit with three square teeth. EVERY DRAWN KEY IN THE FILM MUST MATCH THIS. The earlier frames drew a modern flat key and are all wrong: the Coach Brain character sheet, and the four hand phases 15-1 through 15-4. The point of matching it exactly is that the drawn key and the real key are the same object, so the cross dissolve from drawing to photograph in the last shot lands on itself rather than on something similar. Photographs in reference/key/."
+      "note": "THIS IS THE KEY, AND IT IS A REAL OBJECT ON THE LIVE SET. Four views: full side, tilted three quarter, head detail, bit end profile. A long round shaft; at one end a flat round disc with a three lobed clover hole and the number 5 stamped near its edge; a collar of three raised rings where head meets shaft; at the other end a flat rectangular bit with three square teeth. EVERY DRAWN KEY IN THE FILM MUST MATCH THIS. The earlier frames drew a modern flat key and are all wrong: the Coach Brain character sheet, and the four hand phases 15-1 through 15-4. The point of matching it exactly is that the drawn key and the real key are the same object, so the cross dissolve from drawing to photograph in the last shot lands on itself rather than on something similar. Photographs in reference/key/.",
+      "flow_pos": 0
     },
     {
       "frame": "11",
@@ -1604,7 +1741,8 @@
       "title": "Coach Brain",
       "status": "reference",
       "date": "2026-09-01",
-      "note": "THIS IS COACH BRAIN. Four views: front, three quarter, side, rear. A brain for a head with no neck, two small eyes and a wide simple smile, zipped tracksuit with a stripe down each sleeve and leg, mitten hands, white trainers, about desk height. HE WEARS THE REAL KEY, the object photographed on the live set: round head with a three lobed clover hole, three ring collar, shaft, toothed bit. See reference/OBJECT_SHEET_KEY-v2.png. It hangs small, about the size of one of his eyes, and IT IS GOLD AND THE ONLY COLOUR IN THE FILM. The chain stays pencil grey right up to the ring. He wears the thing he later hands over, which is why the key frame lands: he has been carrying it the whole time."
+      "note": "THIS IS COACH BRAIN. Four views: front, three quarter, side, rear. A brain for a head with no neck, two small eyes and a wide simple smile, zipped tracksuit with a stripe down each sleeve and leg, mitten hands, white trainers, about desk height. HE WEARS THE REAL KEY, the object photographed on the live set: round head with a three lobed clover hole, three ring collar, shaft, toothed bit. See reference/OBJECT_SHEET_KEY-v2.png. It hangs small, about the size of one of his eyes, and IT IS GOLD AND THE ONLY COLOUR IN THE FILM. The chain stays pencil grey right up to the ring. He wears the thing he later hands over, which is why the key frame lands: he has been carrying it the whole time.",
+      "flow_pos": 0
     },
     {
       "kind": "keyframe",
@@ -1616,7 +1754,8 @@
       "what": "Cloud along the top, and the key small and tilted head down in the empty paper below it, with a great deal of bare sheet under it to fall into.",
       "why": "FIRST OF THE FALL. It spans about a twelfth of the frame width here and grows all the way down, because Coach Brain is desk height and Manan is life size: the same object, simply getting nearer. It turns, grows and crosses from pencil to photograph together. GOLD ADDED IN THE CONTAINER, no coin: it came back drawn in the same pale pencil as the clouds, and on a sheet this empty the one coloured thing is the only thing the eye has.",
       "note": "Off the strip 1.9.2026: measured 0.00 percent colour, so the key was never made gold. v2 was generated to fix it and never reached the repository.",
-      "storyboard": "hide"
+      "storyboard": "hide",
+      "flow_pos": 17
     },
     {
       "kind": "keyframe",
@@ -1626,7 +1765,8 @@
       "date": "2026-09-01",
       "slug": "EXT. — THE KEY FALLS, 3 OF 6",
       "what": "The key falling, turned past horizontal, with the whiteboard behind it as a barely visible ghost.",
-      "why": "THE FILM RUNS BACKWARDS BEHIND THE FALL. The whiteboard is first because it is the last thing before the fly through; each following frame reaches further back, ending on the avenue as he catches it. It is the image people describe when they nearly die, in a film about a brain deciding when you stop. IT MUST BE ALMOST INVISIBLE. If a viewer can describe what they saw it is too strong. Ink here is 1.59 percent against 7.54 in the first attempt; faded in the container, which only lifted the ghost toward the paper and never touched the key."
+      "why": "THE FILM RUNS BACKWARDS BEHIND THE FALL. The whiteboard is first because it is the last thing before the fly through; each following frame reaches further back, ending on the avenue as he catches it. It is the image people describe when they nearly die, in a film about a brain deciding when you stop. IT MUST BE ALMOST INVISIBLE. If a viewer can describe what they saw it is too strong. Ink here is 1.59 percent against 7.54 in the first attempt; faded in the container, which only lifted the ghost toward the paper and never touched the key.",
+      "flow_pos": 17
     },
     {
       "kind": "keyframe",
@@ -1636,7 +1776,8 @@
       "date": "2026-09-01",
       "slug": "EXT. — THE KEY FALLS, 4 OF 6",
       "what": "The key turned further, smaller in frame, with the control room behind it as a ghost: the desk, the screens, the arched door.",
-      "why": "THE FILM CONTINUES BACKWARDS. The whiteboard was frame three, this is the room before it, and the next reach further back still. Key at 17 percent of frame width, ink at 2.23, close enough to frame three to cut together. NO SHADOW UNDER IT: a contact shadow puts it on a surface, and it is in the air."
+      "why": "THE FILM CONTINUES BACKWARDS. The whiteboard was frame three, this is the room before it, and the next reach further back still. Key at 17 percent of frame width, ink at 2.23, close enough to frame three to cut together. NO SHADOW UNDER IT: a contact shadow puts it on a surface, and it is in the air.",
+      "flow_pos": 17
     },
     {
       "kind": "keyframe",
@@ -1646,7 +1787,8 @@
       "date": "2026-09-01",
       "slug": "EXT. — THE KEY FALLS, 5 OF 6",
       "what": "The key close to vertical, the house behind it as a ghost, and the metal now rendering as real brass rather than shaded pencil.",
-      "why": "THIS IS WHERE THE CROSSING SHOWS. Frames one to four are drawn, this is halfway, and the next is a photograph in his hand. Set it against frame four and the change is visible; set it against its neighbours in motion and no single cut is the moment it becomes real. House faded in the container from 6.34 to 3.60 percent ink, still a little above frames three and four at 1.6 to 2.2. The key is vertical and centred here, which is more posed than the rest of the fall; accepted because Kristijan interpolates between these and sets the final levels in the composite."
+      "why": "THIS IS WHERE THE CROSSING SHOWS. Frames one to four are drawn, this is halfway, and the next is a photograph in his hand. Set it against frame four and the change is visible; set it against its neighbours in motion and no single cut is the moment it becomes real. House faded in the container from 6.34 to 3.60 percent ink, still a little above frames three and four at 1.6 to 2.2. The key is vertical and centred here, which is more posed than the rest of the fall; accepted because Kristijan interpolates between these and sets the final levels in the composite.",
+      "flow_pos": 17
     },
     {
       "kind": "keyframe",
@@ -1656,7 +1798,8 @@
       "date": "2026-09-01",
       "slug": "END CREDITS — THE LOOK",
       "what": "A finished credit card: cloud in the four corners and along the bottom, the centre clear bare paper, the credit in the film’s own hand.",
-      "why": "THIS IS WHAT THE CREDITS LOOK LIKE. The centre stays open because the camera flies through it, card to card, and the clouds must never cross the lettering. The lobed cloud shapes rhyme with Coach Brain’s head, which is never pointed at. Only Aurovenkatesh, Jagan and Pushparaj are confirmed names."
+      "why": "THIS IS WHAT THE CREDITS LOOK LIKE. The centre stays open because the camera flies through it, card to card, and the clouds must never cross the lettering. The lobed cloud shapes rhyme with Coach Brain’s head, which is never pointed at. Only Aurovenkatesh, Jagan and Pushparaj are confirmed names.",
+      "flow_pos": 18
     },
     {
       "kind": "keyframe",
@@ -1666,7 +1809,8 @@
       "date": "2026-09-01",
       "slug": "INT. CONTROL ROOM — WIDE, MOCKUP WITH A BOY",
       "what": "The wide of the control room with a real boy standing on the open floor at the right, photographic against the drawn room.",
-      "why": "A MOCKUP FOR COMPOSITING, NOT A FRAME OF THE FILM. The boy is generated and is not Manan: he is here so the scale, the standing position and the eyeline can be seen at a glance. In the film Manan is a photograph of the real boy keyed into this plate. ONE THING IS WRONG IN IT AND IS LEFT WRONG: he faces away toward the door instead of left toward Coach Brain. The screen direction the wide fixed is Coach Brain on the left looking right, Manan on the right looking left. Use the position, not the eyeline."
+      "why": "A MOCKUP FOR COMPOSITING, NOT A FRAME OF THE FILM. The boy is generated and is not Manan: he is here so the scale, the standing position and the eyeline can be seen at a glance. In the film Manan is a photograph of the real boy keyed into this plate. ONE THING IS WRONG IN IT AND IS LEFT WRONG: he faces away toward the door instead of left toward Coach Brain. The screen direction the wide fixed is Coach Brain on the left looking right, Manan on the right looking left. Use the position, not the eyeline.",
+      "flow_pos": 12
     },
     {
       "kind": "keyframe",
@@ -1677,7 +1821,8 @@
       "slug": "INT. — THE HAND TURNS OVER",
       "what": "Coach Brain's hand tilting, the tracksuit cuff clear at the wrist, the key sliding head down across the fingers.",
       "why": "SECOND OF THREE: OFFERING, TURNING, FALLING. The key is drawn in pencil here and is gold in the film. It came back grey twice and the reason is now known: a small coloured object inside a large pencil drawing is drawn in pencil, because the surrounding style wins. Colouring it in the container failed too, four attempts, because the key touches the fingers and no threshold separates them. COLOUR IT IN THE COMPOSITE.",
-      "note": "Superseded by v2. The key came back in pencil, and four attempts to tint it in the container failed because it touches the fingers. Tinting is banned as of 1.9.2026: if the gold is missing the prompt was wrong and the frame is regenerated."
+      "note": "Superseded by v2. The key came back in pencil, and four attempts to tint it in the container failed because it touches the fingers. Tinting is banned as of 1.9.2026: if the gold is missing the prompt was wrong and the frame is regenerated.",
+      "flow_pos": 17
     },
     {
       "kind": "keyframe",
@@ -1688,7 +1833,8 @@
       "slug": "INT. — HE LETS IT GO",
       "what": "The hand open and relaxed, palm turned down, the key clear of the fingers and falling away into empty paper.",
       "why": "THIRD OF THREE, AND THE RELEASE. The hand has let go rather than offered: fingers spread, nothing held out to anybody. HE DOES NOT KNOW WHO CATCHES IT. That is why there is bare paper between the fingers and the key, and why no second hand is anywhere in the frame. Gold added in the container, 0.83 percent, the pencil shading kept underneath.",
-      "note": "Superseded by v3. The key came back in pencil."
+      "note": "Superseded by v3. The key came back in pencil.",
+      "flow_pos": 17
     },
     {
       "kind": "keyframe",
@@ -1698,7 +1844,8 @@
       "date": "2026-09-01",
       "slug": "INT. — THE HAND TURNS OVER",
       "what": "Coach Brain's hand tilting, the ribbed tracksuit cuff at the wrist, the painted gold key sliding head down across the opening fingers.",
-      "why": "SECOND OF THREE: OFFERING, TURNING, LETTING GO. THE GOLD LANDED HERE AND THE METHOD IS RECORDED. Two earlier attempts came back in pencil because every sentence described a pencil drawing and one sentence asked for colour, so the drawing won. The prompt that worked names the two materials as separate things, calls the key PAINTED rather than coloured, gives three tones instead of one, states the contrast as the point of the picture, and puts all of it first rather than last. See modules/imgtoimg.md."
+      "why": "SECOND OF THREE: OFFERING, TURNING, LETTING GO. THE GOLD LANDED HERE AND THE METHOD IS RECORDED. Two earlier attempts came back in pencil because every sentence described a pencil drawing and one sentence asked for colour, so the drawing won. The prompt that worked names the two materials as separate things, calls the key PAINTED rather than coloured, gives three tones instead of one, states the contrast as the point of the picture, and puts all of it first rather than last. See modules/imgtoimg.md.",
+      "flow_pos": 17
     },
     {
       "kind": "keyframe",
@@ -1708,7 +1855,8 @@
       "date": "2026-09-01",
       "slug": "INT. — HE LETS IT GO",
       "what": "The hand open and relaxed, palm turned down, the ribbed tracksuit cuff at the wrist, and the painted gold key falling clear of the fingers into empty paper.",
-      "why": "THIRD OF THREE: OFFERING, TURNING, LETTING GO, AND THIS IS THE RELEASE. The hand has let go rather than offered: fingers spread and relaxed, nothing held out. HE DOES NOT KNOW WHO CATCHES IT, which is why there is clear paper between the fingers and the key and no second hand anywhere. The gold is painted, not tinted."
+      "why": "THIRD OF THREE: OFFERING, TURNING, LETTING GO, AND THIS IS THE RELEASE. The hand has let go rather than offered: fingers spread and relaxed, nothing held out. HE DOES NOT KNOW WHO CATCHES IT, which is why there is clear paper between the fingers and the key and no second hand anywhere. The gold is painted, not tinted.",
+      "flow_pos": 17
     },
     {
       "kind": "keyframe",
@@ -1718,7 +1866,8 @@
       "date": "2026-09-01",
       "slug": "INT. — AT THE BLACKBOARD, MOCKUP",
       "what": "A real boy standing at the left of the blackboard with chalk in his hand, back to us, clear of the writing.",
-      "why": "A MOCKUP FOR COMPOSITING, NOT A FRAME OF THE FILM. The boy is generated and is not Manan: he is here so the standing position, the scale against the board and the eyeline can be seen. In the film Manan is a photograph keyed onto the drawn board. IT CAME BACK WITH TWO HANDS AND BABA KEPT THEM. The boy at the left with his back to us, and a second hand entering at the right holding chalk. That is two ways to cut the scene: the whole figure when we need to see who is arguing, and the hand alone when the board is the subject and a body would only take up room. Both are usable and both are wanted. One thing is wrong and is left wrong: the board has gone photographic where it should stay a drawing with only the boy real. Use the positions, not the rendering."
+      "why": "A MOCKUP FOR COMPOSITING, NOT A FRAME OF THE FILM. The boy is generated and is not Manan: he is here so the standing position, the scale against the board and the eyeline can be seen. In the film Manan is a photograph keyed onto the drawn board. IT CAME BACK WITH TWO HANDS AND BABA KEPT THEM. The boy at the left with his back to us, and a second hand entering at the right holding chalk. That is two ways to cut the scene: the whole figure when we need to see who is arguing, and the hand alone when the board is the subject and a body would only take up room. Both are usable and both are wanted. One thing is wrong and is left wrong: the board has gone photographic where it should stay a drawing with only the boy real. Use the positions, not the rendering.",
+      "flow_pos": 13
     },
     {
       "kind": "keyframe",
@@ -1728,7 +1877,8 @@
       "date": "2026-09-01",
       "slug": "INT. CONTROL ROOM — ON MANAN, MOCKUP",
       "what": "A real boy standing on the stone floor in the middle of the reverse plate, photographic against the drawn room, with the desk end at the left and the arched door at the right.",
-      "why": "A MOCKUP FOR COMPOSITING, NOT A FRAME OF THE FILM. The boy is generated and is not Manan. The position, the scale and the way he stands on the floor are all correct and are what to take from it. The visible cut out edge around him is useful rather than a fault: it reads unmistakably as a photograph laid onto a drawing, which is exactly what the composite is. THE EYELINE IS WRONG AND IS LEFT WRONG. He looks toward the right of frame. The desk is at frame left, so Coach Brain is off frame LEFT and Manan must look LEFT. This is the third mockup to get the eyeline backwards. The direction was fixed by the wide 19-2-A-v1: COACH BRAIN ON THE LEFT LOOKING RIGHT, MANAN ON THE RIGHT LOOKING LEFT. Use the position, not the eyeline."
+      "why": "A MOCKUP FOR COMPOSITING, NOT A FRAME OF THE FILM. The boy is generated and is not Manan. The position, the scale and the way he stands on the floor are all correct and are what to take from it. The visible cut out edge around him is useful rather than a fault: it reads unmistakably as a photograph laid onto a drawing, which is exactly what the composite is. THE EYELINE IS WRONG AND IS LEFT WRONG. He looks toward the right of frame. The desk is at frame left, so Coach Brain is off frame LEFT and Manan must look LEFT. This is the third mockup to get the eyeline backwards. The direction was fixed by the wide 19-2-A-v1: COACH BRAIN ON THE LEFT LOOKING RIGHT, MANAN ON THE RIGHT LOOKING LEFT. Use the position, not the eyeline.",
+      "flow_pos": 12
     },
     {
       "kind": "keyframe",
@@ -1738,7 +1888,8 @@
       "date": "2026-09-01",
       "slug": "EXT. — INTO THE BANNER",
       "what": "The same banner drawing seen much closer: a few pencil letters filling the frame, cut off by its edges, the sketched weave between them, flat even paper.",
-      "why": "THE FLY THROUGH IS A SCALE MOVE ON ONE DRAWING AND NOTHING ELSE. Close up and wide are the same banner: no relighting, no cast shadow, no depth of field, no photographic fabric. As though somebody held a magnifying glass over one part of the same sheet. THE CLOTH NEVER TEARS. We pass through by cutting to white, as at every other crossing in the film. Two earlier attempts are kept: one split the cloth open, the other rendered it as a photograph."
+      "why": "THE FLY THROUGH IS A SCALE MOVE ON ONE DRAWING AND NOTHING ELSE. Close up and wide are the same banner: no relighting, no cast shadow, no depth of field, no photographic fabric. As though somebody held a magnifying glass over one part of the same sheet. THE CLOTH NEVER TEARS. We pass through by cutting to white, as at every other crossing in the film. Two earlier attempts are kept: one split the cloth open, the other rendered it as a photograph.",
+      "flow_pos": 15
     },
     {
       "kind": "keyframe",
@@ -1749,7 +1900,8 @@
       "date": "2026-09-01",
       "slug": "EXT. ROAD — HE TRIES IT HIMSELF",
       "what": "A boy riding a bicycle on an empty tree lined road in low warm late afternoon light, long shadows across the tarmac, riding steadily rather than straining.",
-      "why": "A HERO FRAME STANDING IN FOR FOOTAGE. Phase 2 was shot and this holds the phase until the real material is exported. Generated, photographic, and not Manan. IT IS THE TONE TO SHOOT AND GRADE TOWARD: quiet desaturated colour, low sun from behind, the road empty, the boy small against it. He is curious, not committed, which is the whole beat: he has read something and is trying it out. The avenue of trees rhymes with the film's opening shot, which was not asked for and is worth keeping."
+      "why": "A HERO FRAME STANDING IN FOR FOOTAGE. Phase 2 was shot and this holds the phase until the real material is exported. Generated, photographic, and not Manan. IT IS THE TONE TO SHOOT AND GRADE TOWARD: quiet desaturated colour, low sun from behind, the road empty, the boy small against it. He is curious, not committed, which is the whole beat: he has read something and is trying it out. The avenue of trees rhymes with the film's opening shot, which was not asked for and is worth keeping.",
+      "flow_pos": 2
     },
     {
       "kind": "keyframe",
@@ -1760,7 +1912,8 @@
       "date": "2026-09-01",
       "slug": "INT. ROOM — HE IS DONE",
       "what": "Slumped forward over the handlebars of the exercise bike, head down on his forearm, not pedalling. Damp hair, sweat on the neck, the whole body gone heavy.",
-      "why": "A HERO FRAME STANDING IN FOR FOOTAGE, generated and not Manan. THIS IS THE WATER BEAT, where the audience feels it in their own legs before anything has been explained. So it has to be exhaustion you recognise rather than exhaustion performed: no grimace, no clenching, just a body that has stopped. The tone to shoot toward: low warm window light from behind, the far side of the room in soft shadow, quiet desaturated colour, an ordinary lived in room rather than a styled one."
+      "why": "A HERO FRAME STANDING IN FOR FOOTAGE, generated and not Manan. THIS IS THE WATER BEAT, where the audience feels it in their own legs before anything has been explained. So it has to be exhaustion you recognise rather than exhaustion performed: no grimace, no clenching, just a body that has stopped. The tone to shoot toward: low warm window light from behind, the far side of the room in soft shadow, quiet desaturated colour, an ordinary lived in room rather than a styled one.",
+      "flow_pos": 4
     },
     {
       "kind": "keyframe",
@@ -1771,7 +1924,8 @@
       "date": "2026-09-01",
       "slug": "INT. ROOM — HE CLOSES HIS EYES",
       "what": "Sat up on the bike, hands loose on his thighs, shoulders dropped, eyes closed, the face completely still. Still wet from the effort.",
-      "why": "A HERO FRAME STANDING IN FOR FOOTAGE, generated and not Manan. THIS IS THE HINGE OF THE FILM. Everything before it is the world coming at him and everything after is him moving through it, and the turn happens here. The difference from the phase before is the whole point: that is a body that failed, this is a body that stopped fighting. He is still visibly wet from the effort, so the stillness reads as something that arrived after exhaustion rather than instead of it. No strain in the face, nothing held. From here he goes into the light."
+      "why": "A HERO FRAME STANDING IN FOR FOOTAGE, generated and not Manan. THIS IS THE HINGE OF THE FILM. Everything before it is the world coming at him and everything after is him moving through it, and the turn happens here. The difference from the phase before is the whole point: that is a body that failed, this is a body that stopped fighting. He is still visibly wet from the effort, so the stillness reads as something that arrived after exhaustion rather than instead of it. No strain in the face, nothing held. From here he goes into the light.",
+      "flow_pos": 5
     },
     {
       "file": "BB_C_8/8-0-A-v5.png",
@@ -1781,7 +1935,8 @@
       "title": "The corridor, the doors carry shapes",
       "status": "proposal",
       "date": "2026-09-02",
-      "note": "The written plaques are gone. Each door swells outward into the shape of what is behind it, moulded in the same white clay as the door. A word excludes anybody who does not read English and does not survive translation; a raised shape is read by the body. This is the frame that teaches the audience to read the doors, so everything after it depends on it. Supersedes v4."
+      "note": "The written plaques are gone. Each door swells outward into the shape of what is behind it, moulded in the same white clay as the door. A word excludes anybody who does not read English and does not survive translation; a raised shape is read by the body. This is the frame that teaches the audience to read the doors, so everything after it depends on it. Supersedes v4.",
+      "flow_pos": 10
     },
     {
       "file": "BB_C_8/8-3-MUSCLE-v1.png",
@@ -1791,7 +1946,8 @@
       "title": "The muscle door",
       "status": "proposal",
       "date": "2026-09-02",
-      "note": "A bundle of fibres raised in the clay, and the door standing a hand’s width open because he has already tried it. Beyond the gap, soft darkness with nothing legible in it."
+      "note": "A bundle of fibres raised in the clay, and the door standing a hand’s width open because he has already tried it. Beyond the gap, soft darkness with nothing legible in it.",
+      "flow_pos": 10
     },
     {
       "file": "BB_C_8/8-4-MUSCLE-v1.png",
@@ -1801,7 +1957,8 @@
       "title": "The muscle hall, the lung door beyond",
       "status": "proposal",
       "date": "2026-09-02",
-      "note": "Tendon and cord running the length of the room, calm and slack rather than straining. This is the part of him that had been shouting all afternoon and it has nothing to say. The next door is visible at the far end of the same frame, because there is no cut anywhere after phase 5 and every transition is a passage through a surface."
+      "note": "Tendon and cord running the length of the room, calm and slack rather than straining. This is the part of him that had been shouting all afternoon and it has nothing to say. The next door is visible at the far end of the same frame, because there is no cut anywhere after phase 5 and every transition is a passage through a surface.",
+      "flow_pos": 10
     },
     {
       "file": "BB_C_8/8-1-A-v3.png",
@@ -1811,7 +1968,8 @@
       "title": "The bellows hall, the heart door beyond",
       "status": "proposal",
       "date": "2026-09-02",
-      "note": "The hall as it was, with the heart door added at the vanishing point. Supersedes v2."
+      "note": "The hall as it was, with the heart door added at the vanishing point. Supersedes v2.",
+      "flow_pos": 10
     },
     {
       "file": "BB_C_8/8-6-HEART-v1.png",
@@ -1821,7 +1979,8 @@
       "title": "The heart hall, and the key door",
       "status": "proposal",
       "date": "2026-09-02",
-      "note": "The last of the wrong rooms. Chambered and patient rather than urgent. At the vanishing point, a door carrying a key in clay: the first sight of the answer, at the smallest scale it will ever have."
+      "note": "The last of the wrong rooms. Chambered and patient rather than urgent. At the vanishing point, a door carrying a key in clay: the first sight of the answer, at the smallest scale it will ever have.",
+      "flow_pos": 10
     },
     {
       "file": "BB_C_18/18-0-A-v6.png",
@@ -1831,7 +1990,8 @@
       "title": "The key door",
       "status": "proposal",
       "date": "2026-09-02",
-      "note": "COACH BRAIN is gone. A key raised in the clay running the whole height of the door, white on white, part of the door rather than attached to it. By now the audience has learnt to read the bumps, so nobody has to be told. Supersedes v5."
+      "note": "COACH BRAIN is gone. A key raised in the clay running the whole height of the door, white on white, part of the door rather than attached to it. By now the audience has learnt to read the bumps, so nobody has to be told. Supersedes v5.",
+      "flow_pos": 11
     },
     {
       "file": "BB_C_19/19-0-A-v2.png",
@@ -1841,7 +2001,8 @@
       "title": "Coach Brain, and the first gold",
       "status": "proposal",
       "date": "2026-09-02",
-      "note": "He turns to look at us, and on a cord at his neck hangs the key. THE FIRST GOLD IN THE FILM. Gouache over pencil, the only painted thing on the sheet. It hangs small, worn rather than displayed. Supersedes v1."
+      "note": "He turns to look at us, and on a cord at his neck hangs the key. THE FIRST GOLD IN THE FILM. Gouache over pencil, the only painted thing on the sheet. It hangs small, worn rather than displayed. Supersedes v1.",
+      "flow_pos": 12
     },
     {
       "file": "BB_C_14/14-8-DEDICATION-v2.png",
@@ -1851,7 +2012,8 @@
       "title": "Dedicated to Lord Ganesha",
       "status": "proposal",
       "date": "2026-09-02",
-      "note": "The last card of the film. The film is an offering, made and then given away, the way food is offered before it is eaten. Nothing before this hints at it, which is the difference between a theme and a gift. The lettering is drawn by the same hand that drew the figure: v1 came back as a typeface because the reference order put a frame with no lettering in it first."
+      "note": "The last card of the film. The film is an offering, made and then given away, the way food is offered before it is eaten. Nothing before this hints at it, which is the difference between a theme and a gift. The lettering is drawn by the same hand that drew the figure: v1 came back as a typeface because the reference order put a frame with no lettering in it first.",
+      "flow_pos": 18
     },
     {
       "file": "BB_C_9/9-1-VORTEX-v2.png",
@@ -1861,7 +2023,8 @@
       "title": "The passage, at full presence",
       "status": "proposal",
       "date": "2026-09-02",
-      "note": "The vortex drawn as water, long soft strokes sweeping around and inward to an off centre throat, with the keys tiny and scattered and CARRIED by the current rather than building it. He is surrounded by thousands of the thing he is looking for and cannot see it, because he does not yet know he needs it. Replaces the Ganesha passage. Two earlier attempts built a wall out of keys and got a rosette."
+      "note": "The vortex drawn as water, long soft strokes sweeping around and inward to an off centre throat, with the keys tiny and scattered and CARRIED by the current rather than building it. He is surrounded by thousands of the thing he is looking for and cannot see it, because he does not yet know he needs it. Replaces the Ganesha passage. Two earlier attempts built a wall out of keys and got a rosette.",
+      "flow_pos": 7
     },
     {
       "file": "BB_C_9/9-2-MANAN-1-v2.png",
@@ -1871,7 +2034,8 @@
       "title": "He begins to rise",
       "status": "proposal",
       "date": "2026-09-02",
-      "note": "He is drawn upward, feet leaving whatever he was standing on. PHOTOGRAPHIC and monochrome inside a drawn world: he is real and the inside of the body is a drawing. His clothes and hair pull DOWNWARD because he is going up, which is the only thing that separates rising from falling."
+      "note": "He is drawn upward, feet leaving whatever he was standing on. PHOTOGRAPHIC and monochrome inside a drawn world: he is real and the inside of the body is a drawing. His clothes and hair pull DOWNWARD because he is going up, which is the only thing that separates rising from falling.",
+      "flow_pos": 7
     },
     {
       "file": "BB_C_9/9-2-MANAN-2-v2.png",
@@ -1881,7 +2045,8 @@
       "title": "The turn",
       "status": "proposal",
       "date": "2026-09-02",
-      "note": "The current rolls him onto his side as it lifts him and he looks back down the way he came. Calm rather than frightened. The strands of keys are the water itself, sparse and dotted, and he is passing through thousands of the thing he is looking for without seeing one of them."
+      "note": "The current rolls him onto his side as it lifts him and he looks back down the way he came. Calm rather than frightened. The strands of keys are the water itself, sparse and dotted, and he is passing through thousands of the thing he is looking for without seeing one of them.",
+      "flow_pos": 7
     },
     {
       "file": "BB_C_9/9-2-MANAN-3-v1.png",
@@ -1891,11 +2056,33 @@
       "title": "He rises past us",
       "status": "proposal",
       "date": "2026-09-02",
-      "note": "Close to the throat, face open, astonishment with no fear in it. The last frame before he arrives standing in the house, so it is the one clear look the audience gets at him inside the drawn world."
+      "note": "Close to the throat, face open, astonishment with no fear in it. The last frame before he arrives standing in the house, so it is the one clear look the audience gets at him inside the drawn world.",
+      "flow_pos": 7
+    },
+    {
+      "file": "BB_C_9/9-9-VORTEX-RETURN-PLACEHOLDER.png",
+      "kind": "keyframe",
+      "scene": 9,
+      "shot": "9R.0",
+      "title": "The same vortex, coming back",
+      "status": "placeholder",
+      "date": "2026-09-02",
+      "note": "NOT DRAWN YET. He returns through the same vortex he arrived by, after Coach Brain has told him the theories. Same throat, same strands of keys, the same water. The direction of travel is the only thing that differs, and whether it differs at all is a decision still to be made. Placeholder on purpose: a gap you can see is a gap that gets filled.",
+      "flow_pos": 16
+    },
+    {
+      "file": "BB_C_6/6-0-PLACEHOLDER.png",
+      "kind": "keyframe",
+      "scene": "6",
+      "shot": "6.0",
+      "title": "The trance",
+      "status": "placeholder",
+      "date": "2026-09-02",
+      "note": "NOT DRAWN YET. He goes under. The last thing the first half does and the hinge of the whole film: past the voice that says stop, into the trance, and from here on nothing arrives and we move instead. There is one old frame in this phase and it does not carry the beat."
     }
   ],
   "event": "Breakthrough Junior Challenge 2026",
-  "site_version": 153,
+  "site_version": 154,
   "footage": [
     {
       "name": "Key catch",
@@ -1953,5 +2140,83 @@
     }
   ],
   "flight_note": "FROM PHASE 5 ONWARD THE FILM DOES NOT CUT, IT FLIES. Think of an aeroplane going through cloud: you do not arrive by cutting, you arrive by passing through something. We fly in toward his head as his eyes close, pass into white, meet Ganesha in flight, arrive at the door, and he is drawn through it rather than walking in. Then we fly backwards and the house assembles around what we have just entered, fly on through the rooms, and land at the skull door. The landing is the only stop, because the conversation needs stillness. Then we fly at the banner and through it, and the key is given in the white on the other side. The credits fly too, card to card, through cloud. IF A BEAT SEEMS TO NEED A CUT, LOOK AGAIN: there is nearly always a surface to pass through, and there is no exception anywhere. The key falls the whole way and the camera never leaves it. Coach Brain's hand and Manan's never share a frame because an entire descent lies between them, which is better than a cut: a cut is a decision the audience can feel, a fall is one they take with the object. THE MEMORIES BEHIND THE FALL ARE MOTION BLURRED, streaked vertically in the direction of the fall, because they are passing at speed. Not so much that they become mush: you must still be able to make out what each one is if you look for it. THE KEY STAYS SHARP, because the camera is travelling with it, and that difference between the sharp key and the streaked world is what makes the fall read as fast.",
-  "rubbing_note": "THE FIRST HALF DOES NOT GET DRAWN ON SCREEN, IT SURFACES. Think of a coin under a sheet of paper and a pencil rubbed across it until the shape comes through. Parts arrive one at a time and in an order that is a law, not a preference: WHAT SUPPORTS COMES FIRST. The road, then the shoes standing on it, then the legs, then the trees either side, and last of all the man. A shoe cannot appear before the road it stands on. Ground before figure, and the thing he stands on before the thing that stands. Each part comes up out of blank paper in a few frames and then simply is. USE IT ONLY TO OPEN A SCENE. It is how the drawn world comes into existence, so it happens once at the start and then stops; from the next frame on, the animation is ordinary. It returns exactly once more, on the first frame of the muscle sequence, because that is a second world being entered. Anywhere else it becomes decoration and stops meaning anything. It is cheap to make, which is the point: a few frames of an image resolving is a filter and a mask, not drawn inbetweens. SO THE FILM HAS ONE GRAMMAR PER HALF. Before he closes his eyes, things arrive: the world is manifested out of paper. After he closes his eyes, nothing arrives and we move instead: every transition is a passage through a surface. One is the world coming to him, the other is him going through the world."
+  "rubbing_note": "THE FIRST HALF DOES NOT GET DRAWN ON SCREEN, IT SURFACES. Think of a coin under a sheet of paper and a pencil rubbed across it until the shape comes through. Parts arrive one at a time and in an order that is a law, not a preference: WHAT SUPPORTS COMES FIRST. The road, then the shoes standing on it, then the legs, then the trees either side, and last of all the man. A shoe cannot appear before the road it stands on. Ground before figure, and the thing he stands on before the thing that stands. Each part comes up out of blank paper in a few frames and then simply is. USE IT ONLY TO OPEN A SCENE. It is how the drawn world comes into existence, so it happens once at the start and then stops; from the next frame on, the animation is ordinary. It returns exactly once more, on the first frame of the muscle sequence, because that is a second world being entered. Anywhere else it becomes decoration and stops meaning anything. It is cheap to make, which is the point: a few frames of an image resolving is a filter and a mask, not drawn inbetweens. SO THE FILM HAS ONE GRAMMAR PER HALF. Before he closes his eyes, things arrive: the world is manifested out of paper. After he closes his eyes, nothing arrives and we move instead: every transition is a passage through a surface. One is the world coming to him, the other is him going through the world.",
+  "flow": [
+    {
+      "phase": "0",
+      "title": "Title"
+    },
+    {
+      "phase": "1",
+      "title": "The runner"
+    },
+    {
+      "phase": "2",
+      "title": "The bicycle"
+    },
+    {
+      "phase": "3",
+      "title": "Testing where the limit is"
+    },
+    {
+      "phase": "4",
+      "title": "Tired, and the wall"
+    },
+    {
+      "phase": "5",
+      "title": "His eyes close"
+    },
+    {
+      "phase": "6",
+      "title": "The trance"
+    },
+    {
+      "phase": "9",
+      "title": "The vortex, transported"
+    },
+    {
+      "phase": "16",
+      "title": "The house of the body"
+    },
+    {
+      "phase": "17",
+      "title": "The front door"
+    },
+    {
+      "phase": "8",
+      "title": "The halls and the doors"
+    },
+    {
+      "phase": "18",
+      "title": "The key door"
+    },
+    {
+      "phase": "19",
+      "title": "Coach Brain’s room"
+    },
+    {
+      "phase": "10",
+      "title": "The old theory, on the board"
+    },
+    {
+      "phase": "11",
+      "title": "The new theory, and the key"
+    },
+    {
+      "phase": "12",
+      "title": "It is a setting, not a wall"
+    },
+    {
+      "phase": "9R",
+      "title": "The same vortex, coming back"
+    },
+    {
+      "phase": "15",
+      "title": "He lets the key go, and Manan picks it up"
+    },
+    {
+      "phase": "14",
+      "title": "Credits, and the dedication"
+    }
+  ]
 }

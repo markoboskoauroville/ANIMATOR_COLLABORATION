@@ -614,35 +614,39 @@ function cp(){
 </script>"""
 
 
+def _phkey(v):
+    """Phases are mostly numbers and one of them is 9R, the return vortex.
+
+    2.9.2026. int() was fine while every phase was a number and threw the moment
+    the flow gained a phase that is not one. Digits first, then any letters, so
+    9 sorts before 9R sorts before 10 rather than crashing the build.
+    """
+    m = re.match(r'(\d*)([a-zA-Z]*)', str(v))
+    return (int(m.group(1) or 0), m.group(2))
+
+
 def bar(here, r):
-    """An invisible table. Home and documentation left, the scenes in the middle,
-    and the last cell is always Google Drive, hard right."""
-    # HOME, then the scenes, then everything else. The scenes are what the animator
-    # comes here for, so they sit before the documents.
-    o = ['<div class=bar><a class=home href="%sindex.html">HOME</a>' % r]
-    for n in sorted(SCENES, key=int):
-        o.append('<a href="%sBB_C_%s/index.html"%s>SC%s</a>'
-                 % (r, n, ' class=on' if here == n else '', n))
-    o.append('<span class=sp></span>')
-    o.append(('<span class=vb>%s</span>' % VERSION) if VERSION else '')
-    o.append('<a href="%sfootage.html"%s>FOOTAGE</a>'
-             % (r, ' class=on' if here == 'footage' else ''))
-    o.append('<a href="%sassets.html"%s>ASSETS</a>'
-             % (r, ' class=on' if here == 'assets' else ''))
-    o.append('<a href="%sbrainstorm.html"%s>BRAINSTORM</a>'
-             % (r, ' class=on' if here == 'brainstorm' else ''))
-    o.append('<a href="%sbreakdown.html"%s>BREAKDOWN</a>'
-             % (r, ' class=on' if here == 'breakdown' else ''))
-    o.append('<a href="%sdocumentation.html"%s>DOCUMENTATION</a>'
-             % (r, ' class=on' if here == 'doc' else ''))
-    if ARCHIVE.get('items'):
-        o.append('<a href="%sarchive.html"%s>ARH</a>'
-                 % (r, ' class=on' if here == 'archive' else ''))
-    o.append('<span class=sp></span>')
-    o.append('<a class=drive href="%s" target=_blank rel=noopener>GDRIVE &nearr;</a>' % DRIVE_FOLDER)
-    o.append('<span class=sitev title="site version">v%d</span>' % SITEV)
-    o.append('<button class=th id=th onclick="tt()" title="light or dark">&#9681;</button>')
-    o.append('</div>')
+    """TWO PLACES ONLY: this page, and the archive.
+
+    Baba, 2.9.2026: everything is on the main page now, so every other link in
+    this bar was clutter competing with the one thing anybody came for. Nineteen
+    scene buttons, footage, assets, brainstorm, breakdown, documentation, and a
+    Drive folder, above a page that already contains all of it.
+
+    The other pages still exist and are still built. They are LISTED ON THE
+    ARCHIVE PAGE, so nothing is lost and nothing is deleted, it is simply no
+    longer shouting. If a page turns out to be needed weekly it can come back;
+    the cost of finding it in the archive twice is smaller than the cost of a
+    bar nobody reads.
+    """
+    o = ['<div class=bar>',
+         '<a class=home href="%sindex.html"%s>THE FILM</a>' % (r, ' class=on' if here == 'home' else ''),
+         '<a href="%sarchive.html"%s>ARCHIVE</a>' % (r, ' class=on' if here == 'archive' else ''),
+         '<span class=sp></span>',
+         ('<span class=vb>%s</span>' % VERSION) if VERSION else '',
+         '<span class=sitev title="site version">v%d</span>' % SITEV,
+         '<button class=th id=th onclick="tt()" title="light or dark">&#9681;</button>',
+         '</div>']
     return ''.join(o)
 
 
@@ -977,7 +981,7 @@ def layers_of(e):
     return out
 
 
-for n in sorted(SCENES, key=int):
+for n in sorted(SCENES, key=_phkey):
     fs = frames_of(n)
     sh = sheets_of(n)
     b = ['<h1>Scene %s &nbsp;<span style="color:#8a8170;font-weight:400">%s</span></h1>'
@@ -1148,8 +1152,45 @@ for e in docs:
              '<p><a href="%s" download>Download</a></p></div></div>'
              % (thumb, os.path.basename(e['file']), human(size_of(e['file'])),
                 e.get('date', ''), e.get('note', 'note pending'), e['file']))
-if ARCHIVE.get('items'):
+if True:
+    ARCHIVE.setdefault('items', [])
+    # EVERY OTHER PAGE LIVES HERE NOW. 2.9.2026. The bar is the film and the
+    # archive, nothing else, so the pages that used to be buttons are listed
+    # here instead. They are still built and still current; they have simply
+    # stopped competing with the one page anybody came for. Nothing is deleted,
+    # because a page that is hard to find can be found and a page that is gone
+    # cannot.
+    _other = [('footage.html', 'Footage', 'Every live shot, its plate and its ProRes'),
+              ('assets.html', 'Assets', 'The key in 3D, the vortex for Blender, the font'),
+              ('brainstorm.html', 'Brainstorm', 'Everything collected per phase, kept and abandoned'),
+              ('breakdown.html', 'Breakdown', 'Layers, plates and composites, frame by frame'),
+              ('documentation.html', 'Documentation', 'How the film is put together'),
+              ('animatic.html', 'Animatic', 'The film as a timed strip')]
     a = ['<h1>Archive</h1>',
+         '<p class=lede>Everything that is not the film itself. <b>The main page holds the whole '
+         'film and every download you need</b>, so nothing here is needed to do the work. It is '
+         'here so it can be found when it is wanted.</p>',
+         '<div class=arcg>THE OTHER PAGES</div>', '<div class=arc>']
+    for _h, _n, _d in _other:
+        if os.path.exists(os.path.join(ROOT, _h)):
+            a.append('<div class=arcr><a href="%s">%s</a>'
+                     '<span class=d>%s</span><span class=z>page</span></div>' % (_h, _n, _d))
+    for _n in sorted(SCENES, key=lambda x: (len(str(x)), str(x))):
+        _h = 'BB_C_%s/index.html' % _n
+        if os.path.exists(os.path.join(ROOT, _h)):
+            a.append('<div class=arcr><a href="%s">Scene %s</a>'
+                     '<span class=d>%s</span><span class=z>page</span></div>'
+                     % (_h, _n, SCENES.get(_n, '')))
+    a.append('</div>')
+    a += ['<div class=arcg>EVERYTHING AT FULL SIZE</div>', '<div class=arc>',
+          '<div class=arcr><a href="%s" target=_blank rel=noopener>Footage on Drive</a>'
+          '<span class=d>ProRes masters and every take</span><span class=z>drive</span></div>'
+          % DRIVE_FOLDER,
+          '<div class=arcr><a href="https://github.com/markoboskoauroville/BRAIN_BRAKE_ORIGINALS" '
+          'target=_blank rel=noopener>Full resolution originals</a>'
+          '<span class=d>Every still at full size, public, no sign in needed</span>'
+          '<span class=z>repo</span></div>', '</div>']
+    a += ['<div class=arcg>DOCUMENTS</div>',
          '<p class=lede>Every PDF this production has ever made, %d of them. Nothing is deleted here, '
          'so superseded versions are kept and still open: an old cut is often the fastest way to see '
          'what changed. Files open from the film repository, they are not copied into this one.</p>'
@@ -1831,7 +1872,7 @@ for e in overlays_of():
     b.insert(2, overlay_block(e, ''))
 for e in examples_of():
     b.append(example_block(e, ''))
-for n in sorted(SCENES, key=int):
+for n in sorted(SCENES, key=_phkey):
     c = len(frames_of(n))
     b.append('<li><a href="BB_C_%s/index.html"><span class=n>SC%s</span>'
              '<span class=t>%s</span><span class=c>%s</span></a></li>'

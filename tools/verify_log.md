@@ -28,3 +28,16 @@
 - 172 originals in originals.json, 823.6 MB
 - 140 rows still in drive_links.json, kept as a fallback
 - **everything passed**
+
+## 2026-09-02 19:45 — v153 — full run
+
+217 pages, 186 remote targets, 172 originals.
+
+- live version v153 matches catalog.json
+- published weight 84.8 MB of the 1024 MB Pages ceiling, 8%
+- 172 originals in originals.json, 823.6 MB
+- 140 rows still in drive_links.json, kept as a fallback
+
+**FAILED, 1:**
+
+- **remote link** — https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE/main  000 0  from archive.html
