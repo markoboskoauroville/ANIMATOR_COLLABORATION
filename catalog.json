@@ -1676,12 +1676,13 @@
       "kind": "keyframe",
       "shot": "4.2",
       "file": "BB_C_4/ref/5_7_LIVE.jpg",
-      "status": "placeholder",
+      "status": "superseded",
       "date": "2026-08-31",
       "slug": "INT. ROOM — FROM THE SHOOT",
       "what": "A frame from the day.",
       "why": "PLACEHOLDER. This is a reference frame from the document Venkatesh shot from, standing in until the real footage is exported. It shows the intended framing and nothing more. The phase was shot and the material exists; it is not on this machine yet.",
-      "flow_pos": 4
+      "flow_pos": 4,
+      "note": "CUT 2.9.2026. He does not come back to the bicycle. Once his eyes close he is in the trance and the film does not return to him cycling, rested or otherwise. This plate showed exactly that and contradicted the whole second half."
     },
     {
       "kind": "keyframe",
@@ -1711,12 +1712,13 @@
       "kind": "keyframe",
       "shot": "5.2",
       "file": "BB_C_5/ref/5_8_LIVE.jpg",
-      "status": "placeholder",
+      "status": "superseded",
       "date": "2026-08-31",
       "slug": "INT. ROOM — FROM THE SHOOT",
       "what": "A frame from the day.",
       "why": "PLACEHOLDER. This is a reference frame from the document Venkatesh shot from, standing in until the real footage is exported. It shows the intended framing and nothing more. The phase was shot and the material exists; it is not on this machine yet.",
-      "flow_pos": 5
+      "flow_pos": 5,
+      "note": "CUT 2.9.2026. He does not come back to the bicycle. Once his eyes close he is in the trance and the film does not return to him cycling, rested or otherwise. This plate showed exactly that and contradicted the whole second half."
     },
     {
       "kind": "keyframe",
