@@ -274,7 +274,7 @@ h2{font-size:19px;margin:38px 0 14px;padding-bottom:7px;border-bottom:1px solid 
  color:var(--dim)}
 .filmfoot span{display:block;font-weight:600;font-size:9px;letter-spacing:.14em;
  padding-top:6px;color:var(--dim);opacity:.75}
-.srcbox{margin:16px 0 6px;padding:13px 16px;background:var(--box);
+.twoup{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:14px 0 6px}\n@media(max-width:760px){.twoup{grid-template-columns:1fr}}\n.twoup .srcbox{margin:0}\n.srcbox{margin:16px 0 6px;padding:13px 16px;background:var(--box);
  border-left:3px solid var(--brass)}
 .srcbox .t{display:flex;justify-content:space-between;align-items:baseline;gap:12px}
 .srcbox .t b{font:700 10.5px ui-monospace,monospace;letter-spacing:.11em;
@@ -1400,22 +1400,27 @@ rt = [_mast, '<h1>THE BRAIN BRAKE ANIMATIC</h1>', _flight,
       'it is current the moment anything is filed. Everything we have collected for each phase, '
       'kept and abandoned, is on <a href="brainstorm.html">brainstorm</a>.</p>'
       % (_drawn, _holding, _live_kf),
-      # THE BOOK, at the top, above everything. 2.9.2026. The film has two
-      # minutes and can hold perhaps four hundred words. The book has no limit,
-      # so it says the things the film can only imply, and it is the first place
-      # to send anybody who wants to understand the thing rather than animate it.
-      '<div class=srcbox style="margin-top:8px"><div class=t>'
-      '<b>Brain Brake, the book</b>'
+      # THE TWO DOCUMENTS, AT THE TOP, BESIDE THE TITLE. 2.9.2026. Anybody
+      # arriving here wants one of two things: to understand the film, or to
+      # animate it. One box each, before a single frame, so neither has to
+      # scroll to find their own door.
+      '<div class=twoup>'
+      '<div class=srcbox><div class=t><b>The animator read through</b>'
+      '<span><a class=dl href="DOCS/BRAIN_BRAKE_READTHROUGH.pdf" download>PDF &darr;</a></span></div>'
+      '<p><b>Every frame in order, with what it is, what it means and HOW IT MOVES.</b> '
+      'The five rules that decide every shot are on the second page: things arrive by frottage '
+      'before he closes his eyes, we move through surfaces after, there is no cut anywhere after '
+      'phase 5, gold means found, and the signs are never explained. Built from the catalogue, so '
+      'it cannot drift from this page. Print it and mark it up; the page stays the live one.</p>'
+      '</div>'
+      '<div class=srcbox><div class=t><b>Brain Brake, the book</b>'
       '<span><a class=dl href="https://markoboskoauroville.github.io/BRAIN_BRAKE_BOOK/" '
       'target=_blank rel=noopener>READ &nearr;</a></span></div>'
       '<p>The book the film was made from, written as though it came first. '
       '<b>%d words, fourteen chapters</b>, rooms described that the camera only passes and reasons '
-      'given that two minutes can only imply. It reads itself aloud in two voices, Beatrice and '
-      'Priya, about sixteen minutes, and it remembers where you stopped. Tick <b>ABC</b> in the '
-      'player and the page follows the voice word by word.</p>'
-      '<p style="color:var(--dim)">A PDF of the book and of this flow, with the artwork at print '
-      'resolution, is not made yet. The link above is the live one and is always current.</p>'
-      '</div>' % 3106,
+      'given that two minutes can only imply. It reads itself aloud in two voices, about sixteen '
+      'minutes, remembers where you stopped, and can follow the voice word by word on the page.</p>'
+      '</div></div>' % 3106,
       '<div class=rtsheet>']
 for e in _fl:
     n = str(e.get('n', ''))
