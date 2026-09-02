@@ -1,4 +1,5 @@
-PRINT_PACK.pdf
 ANIMATIC/
 EXPORT/
+PRINT_PACK.pdf
+tools/.verify_cache.json
 tools/_step80_results.json
