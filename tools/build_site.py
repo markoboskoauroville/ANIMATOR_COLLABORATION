@@ -274,6 +274,8 @@ h2{font-size:19px;margin:38px 0 14px;padding-bottom:7px;border-bottom:1px solid 
  color:var(--dim)}
 .filmfoot span{display:block;font-weight:600;font-size:9px;letter-spacing:.14em;
  padding-top:6px;color:var(--dim);opacity:.75}
+.soon{font:600 10px/1 ui-monospace,monospace;letter-spacing:.12em;color:var(--dim);
+  border:1px solid var(--rule);border-radius:6px;padding:6px 10px}
 .twoup{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:14px 0 6px}\n@media(max-width:760px){.twoup{grid-template-columns:1fr}}\n.twoup .srcbox{margin:0}\n.srcbox{margin:16px 0 6px;padding:13px 16px;background:var(--box);
  border-left:3px solid var(--brass)}
 .srcbox .t{display:flex;justify-content:space-between;align-items:baseline;gap:12px}
@@ -1450,12 +1452,17 @@ rt = [_mast, '<h1>THE BRAIN BRAKE ANIMATIC</h1>', _flight,
       # scroll to find their own door.
       '<div class=twoup>'
       '<div class=srcbox><div class=t><b>The animator read through</b>'
-      '<span><a class=dl href="DOCS/BRAIN_BRAKE_READTHROUGH.pdf" download>PDF &darr;</a></span></div>'
-      '<p><b>Every frame in order, with what it is, what it means and HOW IT MOVES.</b> '
-      'The five rules that decide every shot are on the second page: things arrive by frottage '
-      'before he closes his eyes, we move through surfaces after, there is no cut anywhere after '
-      'phase 5, gold means found, and the signs are never explained. Built from the catalogue, so '
-      'it cannot drift from this page. Print it and mark it up; the page stays the live one.</p>'
+      # 2.9.2026. NOT OFFERED WHILE IT IS OUT OF DATE. The running order was
+      # rewritten five times today and the read through still carries the old
+      # one, so downloading it would hand Kristijan a document that quietly
+      # contradicts the page he is looking at. A file that is wrong is worse
+      # than a file that is missing, because he cannot tell which to believe.
+      '<span class=soon>COMING</span></div>'
+      '<p><b>Every frame in order, with what it is, what it means and HOW IT MOVES:</b> the zoom, '
+      'the push, the frottage, the passage through the surface. Made to print and mark up.</p>'
+      '<p style="color:var(--dim)"><b>Not ready to download.</b> The running order changed today '
+      'and this document has not caught up, so it is held back rather than handed over wrong. '
+      'This page is the live one and is always current.</p>'
       '</div>'
       '<div class=srcbox><div class=t><b>Brain Brake, the book</b>'
       '<span><a class=dl href="https://markoboskoauroville.github.io/BRAIN_BRAKE_BOOK/" '
