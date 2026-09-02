@@ -12,7 +12,7 @@
     "4": "Tired, and the wall",
     "5": "His eyes close",
     "6": "The trance",
-    "9": "The vortex, transported",
+    "9": "The vortex, up",
     "16": "The house of the body",
     "17": "The front door",
     "8": "The halls and the doors",
@@ -21,7 +21,7 @@
     "10": "The old theory, on the board",
     "11": "The new theory, and the key",
     "12": "It is a setting, not a wall",
-    "9R": "The same vortex, coming back",
+    "9R": "The vortex, down",
     "15": "He lets the key go, and Manan picks it up",
     "14": "Credits, and the dedication"
   },
@@ -624,7 +624,7 @@
       "representative": true,
       "status": "superseded",
       "date": "2026-08-28",
-      "note": "GANESHA. Seated, calm, palm raised, forming out of the paper rather than sitting on it. Ink coverage is 0.28 percent against 5 to 7 on a full frame, so he is barely there on purpose. THIS IS THE MIDDLE OF THE MOVE, not the end: he scales up out of nothing, through this, and is gone. If he arrives fully drawn there is nothing left to animate. Nothing else in the frame, no lamps, no lotus, no throne, so nothing competes and nothing explains him. Never lit specially, never cut to, never mentioned.",
+      "note": "GANESHA. Seated, calm, palm raised, forming out of the paper rather than sitting on it. Ink coverage is 0.28 percent against 5 to 7 on a full frame, so he is barely there on purpose. THIS IS THE MIDDLE OF THE MOVE, not the end: he scales up out of nothing, through this, and is gone. If he arrives fully drawn there is nothing left to animate. Nothing else in the frame, no lamps, no lotus, no throne, so nothing competes and nothing explains him. Never lit specially, never cut to, never mentioned. SUPERSEDED. This phase is the vortex now, not Ganesha. Ganesha is not gone from the film: he is the dedication card at the very end, 14-8-DEDICATION-v2, which is a different thing and arrives unannounced.",
       "slug": "INT. THE LIGHT — GANESHA FORMING",
       "what": "A seated elephant-headed figure barely there, forming out of the paper rather than sitting on it.",
       "why": "The middle of the move, not the end. He rises out of nothing, arrives, and is gone. Never lit specially, never cut to, never mentioned. Remover of obstacles, in a film about an obstacle that turns out to be a setting.",
@@ -746,7 +746,7 @@
       "representative": true,
       "status": "superseded",
       "date": "2026-08-30",
-      "note": "GANESHA AT FULL PRESENCE, the top of the arc. Ink 2.02 percent against 0.28 on 8.0, every line now present, and it grew the second pair of arms with the axe and noose, which is correct iconography and better than what was asked for. He is 46 percent of frame height, so the move is faint and small, then drawn and larger, then out. Kristijan scales rather than redraws.",
+      "note": "GANESHA AT FULL PRESENCE, the top of the arc. Ink 2.02 percent against 0.28 on 8.0, every line now present, and it grew the second pair of arms with the axe and noose, which is correct iconography and better than what was asked for. He is 46 percent of frame height, so the move is faint and small, then drawn and larger, then out. Kristijan scales rather than redraws. SUPERSEDED. This phase is the vortex now, not Ganesha. Ganesha is not gone from the film: he is the dedication card at the very end, 14-8-DEDICATION-v2, which is a different thing and arrives unannounced.",
       "slug": "INT. THE LIGHT — GANESHA PRESENT",
       "what": "Fully drawn now, larger, every line present.",
       "why": "The top of the arc. Between this and the frame before, Kristijan has the whole appearance and the reverse takes him away.",
@@ -1361,7 +1361,7 @@
       "kind": "flow",
       "n": "8",
       "file": "flow/08-ganesha.jpg",
-      "title": "COACH BRAIN",
+      "title": "The vortex",
       "status": "placeholder",
       "scenes": [
         "18",
@@ -2021,9 +2021,9 @@
       "scene": 9,
       "shot": "9.2",
       "title": "The passage, at full presence",
-      "status": "proposal",
+      "status": "superseded",
       "date": "2026-09-02",
-      "note": "The vortex drawn as water, long soft strokes sweeping around and inward to an off centre throat, with the keys tiny and scattered and CARRIED by the current rather than building it. He is surrounded by thousands of the thing he is looking for and cannot see it, because he does not yet know he needs it. Replaces the Ganesha passage. Two earlier attempts built a wall out of keys and got a rosette.",
+      "note": "The vortex drawn as water, long soft strokes sweeping around and inward to an off centre throat, with the keys tiny and scattered and CARRIED by the current rather than building it. He is surrounded by thousands of the thing he is looking for and cannot see it, because he does not yet know he needs it. Replaces the Ganesha passage. Two earlier attempts built a wall out of keys and got a rosette. SUPERSEDED 2.9.2026, MEMORY 28f. The vortex carries NO KEYS. Not a wall, not chains, not a scattering. Keys in the passage discover too much: they tell the audience what he is looking for before he knows it himself, and the film has then said the word before he reaches the key door. It is a soft, gentle vortex of CLOUD, nothing sharp and nothing to read. Regenerating.",
       "flow_pos": 7
     },
     {
@@ -2032,9 +2032,9 @@
       "scene": 9,
       "shot": "9.3",
       "title": "He begins to rise",
-      "status": "proposal",
+      "status": "superseded",
       "date": "2026-09-02",
-      "note": "He is drawn upward, feet leaving whatever he was standing on. PHOTOGRAPHIC and monochrome inside a drawn world: he is real and the inside of the body is a drawing. His clothes and hair pull DOWNWARD because he is going up, which is the only thing that separates rising from falling.",
+      "note": "He is drawn upward, feet leaving whatever he was standing on. PHOTOGRAPHIC and monochrome inside a drawn world: he is real and the inside of the body is a drawing. His clothes and hair pull DOWNWARD because he is going up, which is the only thing that separates rising from falling. SUPERSEDED 2.9.2026, MEMORY 28f. The vortex carries NO KEYS. Not a wall, not chains, not a scattering. Keys in the passage discover too much: they tell the audience what he is looking for before he knows it himself, and the film has then said the word before he reaches the key door. It is a soft, gentle vortex of CLOUD, nothing sharp and nothing to read. Regenerating.",
       "flow_pos": 7
     },
     {
@@ -2043,9 +2043,9 @@
       "scene": 9,
       "shot": "9.4",
       "title": "The turn",
-      "status": "proposal",
+      "status": "superseded",
       "date": "2026-09-02",
-      "note": "The current rolls him onto his side as it lifts him and he looks back down the way he came. Calm rather than frightened. The strands of keys are the water itself, sparse and dotted, and he is passing through thousands of the thing he is looking for without seeing one of them.",
+      "note": "The current rolls him onto his side as it lifts him and he looks back down the way he came. Calm rather than frightened. The strands of keys are the water itself, sparse and dotted, and he is passing through thousands of the thing he is looking for without seeing one of them. SUPERSEDED 2.9.2026, MEMORY 28f. The vortex carries NO KEYS. Not a wall, not chains, not a scattering. Keys in the passage discover too much: they tell the audience what he is looking for before he knows it himself, and the film has then said the word before he reaches the key door. It is a soft, gentle vortex of CLOUD, nothing sharp and nothing to read. Regenerating.",
       "flow_pos": 7
     },
     {
@@ -2054,9 +2054,9 @@
       "scene": 9,
       "shot": "9.5",
       "title": "He rises past us",
-      "status": "proposal",
+      "status": "superseded",
       "date": "2026-09-02",
-      "note": "Close to the throat, face open, astonishment with no fear in it. The last frame before he arrives standing in the house, so it is the one clear look the audience gets at him inside the drawn world.",
+      "note": "Close to the throat, face open, astonishment with no fear in it. The last frame before he arrives standing in the house, so it is the one clear look the audience gets at him inside the drawn world. SUPERSEDED 2.9.2026, MEMORY 28f. The vortex carries NO KEYS. Not a wall, not chains, not a scattering. Keys in the passage discover too much: they tell the audience what he is looking for before he knows it himself, and the film has then said the word before he reaches the key door. It is a soft, gentle vortex of CLOUD, nothing sharp and nothing to read. Regenerating.",
       "flow_pos": 7
     },
     {
@@ -2064,10 +2064,10 @@
       "kind": "keyframe",
       "scene": 9,
       "shot": "9R.0",
-      "title": "The same vortex, coming back",
+      "title": "The vortex, down",
       "status": "placeholder",
       "date": "2026-09-02",
-      "note": "NOT DRAWN YET. He returns through the same vortex he arrived by, after Coach Brain has told him the theories. Same throat, same strands of keys, the same water. The direction of travel is the only thing that differs, and whether it differs at all is a decision still to be made. Placeholder on purpose: a gap you can see is a gap that gets filled.",
+      "note": "NOT DRAWN YET. THE SECOND VORTEX, AND THIS ONE GOES DOWN. He arrived by rising; he leaves by falling, after Coach Brain has explained the theory and let the key go. Same throat, same strands of keys, same water, and the direction of travel reversed: his clothes and hair now pull UPWARD because he is going down, which is the only thing that tells the audience which way he is moving. Up on the way in, down on the way back, and that symmetry is the shape of the whole second half.",
       "flow_pos": 16
     },
     {
@@ -2082,7 +2082,7 @@
     }
   ],
   "event": "Breakthrough Junior Challenge 2026",
-  "site_version": 154,
+  "site_version": 155,
   "footage": [
     {
       "name": "Key catch",
@@ -2172,7 +2172,7 @@
     },
     {
       "phase": "9",
-      "title": "The vortex, transported"
+      "title": "The vortex, up"
     },
     {
       "phase": "16",
@@ -2208,7 +2208,7 @@
     },
     {
       "phase": "9R",
-      "title": "The same vortex, coming back"
+      "title": "The vortex, down"
     },
     {
       "phase": "15",
