@@ -18,3 +18,13 @@
 - 169 originals in originals.json, 806.4 MB
 - 140 rows still in drive_links.json, kept as a fallback
 - **everything passed**
+
+## 2026-09-02 19:18 — v152 — full run
+
+217 pages, 186 remote targets, 172 originals.
+
+- live version v152 matches catalog.json
+- published weight 84.8 MB of the 1024 MB Pages ceiling, 8%
+- 172 originals in originals.json, 823.6 MB
+- 140 rows still in drive_links.json, kept as a fallback
+- **everything passed**
