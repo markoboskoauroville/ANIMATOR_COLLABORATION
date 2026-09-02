@@ -1400,8 +1400,22 @@ rt = [_mast, '<h1>THE BRAIN BRAKE ANIMATIC</h1>', _flight,
       'it is current the moment anything is filed. Everything we have collected for each phase, '
       'kept and abandoned, is on <a href="brainstorm.html">brainstorm</a>.</p>'
       % (_drawn, _holding, _live_kf),
-      '<p class=lede><a class=rt href="#">Download the PDF &darr;</a> &nbsp;'
-      '<span style="color:var(--dim);font-size:12px">PDF coming, this page is the live one</span></p>',
+      # THE BOOK, at the top, above everything. 2.9.2026. The film has two
+      # minutes and can hold perhaps four hundred words. The book has no limit,
+      # so it says the things the film can only imply, and it is the first place
+      # to send anybody who wants to understand the thing rather than animate it.
+      '<div class=srcbox style="margin-top:8px"><div class=t>'
+      '<b>Brain Brake, the book</b>'
+      '<span><a class=dl href="https://markoboskoauroville.github.io/BRAIN_BRAKE_BOOK/" '
+      'target=_blank rel=noopener>READ &nearr;</a></span></div>'
+      '<p>The book the film was made from, written as though it came first. '
+      '<b>%d words, fourteen chapters</b>, rooms described that the camera only passes and reasons '
+      'given that two minutes can only imply. It reads itself aloud in two voices, Beatrice and '
+      'Priya, about sixteen minutes, and it remembers where you stopped. Tick <b>ABC</b> in the '
+      'player and the page follows the voice word by word.</p>'
+      '<p style="color:var(--dim)">A PDF of the book and of this flow, with the artwork at print '
+      'resolution, is not made yet. The link above is the live one and is always current.</p>'
+      '</div>' % 3106,
       '<div class=rtsheet>']
 for e in _fl:
     n = str(e.get('n', ''))
