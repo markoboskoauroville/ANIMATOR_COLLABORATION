@@ -1262,7 +1262,7 @@
       "kind": "flow",
       "n": "0",
       "file": "flow/00-title.jpg",
-      "title": "TITLE",
+      "title": "Title",
       "status": "placeholder",
       "scenes": [
         "0"
@@ -1274,7 +1274,7 @@
       "kind": "flow",
       "n": "1",
       "file": "flow/01-runner.jpg",
-      "title": "THE RUNNER",
+      "title": "The runner",
       "status": "placeholder",
       "scenes": [
         "1"
@@ -1286,7 +1286,7 @@
       "kind": "flow",
       "n": "2",
       "file": "flow/02-bike-out.jpg",
-      "title": "HE TRIES IT HIMSELF",
+      "title": "The bicycle",
       "status": "placeholder",
       "scenes": [
         "2"
@@ -1298,7 +1298,7 @@
       "kind": "flow",
       "n": "3",
       "file": "flow/03-bike-in.jpg",
-      "title": "RACING HIMSELF",
+      "title": "Testing where the limit is",
       "status": "placeholder",
       "scenes": [
         "3"
@@ -1310,7 +1310,7 @@
       "kind": "flow",
       "n": "4",
       "file": "flow/04-the-wall.jpg",
-      "title": "HE IS DONE",
+      "title": "Tired, and the wall",
       "status": "placeholder",
       "scenes": [
         "4"
@@ -1322,7 +1322,7 @@
       "kind": "flow",
       "n": "5",
       "file": "flow/05-eyes-closed.jpg",
-      "title": "HE CLOSES HIS EYES",
+      "title": "He closes his eyes",
       "status": "placeholder",
       "scenes": [
         "5"
@@ -1334,7 +1334,7 @@
       "kind": "flow",
       "n": "6",
       "file": "flow/06-the-house.jpg",
-      "title": "GANESHA",
+      "title": "The vortex, up",
       "status": "placeholder",
       "scenes": [
         "9"
@@ -1346,13 +1346,12 @@
       "kind": "flow",
       "n": "7",
       "file": "flow/07-the-front-door.jpg",
-      "title": "THE HOUSE OF THE BODY",
+      "title": "The house of the body",
       "status": "placeholder",
       "scenes": [
-        "17",
         "16",
-        "8",
-        "7"
+        "17",
+        "8"
       ],
       "note": "The light fades and he is standing in front of the door, and the door is giving off light too. He opens it and goes in, and only then do we see the building he is inside: the corridor of named doors, the rooms behind them, the threshold at the far end. Organic architecture in the manner of Gaudi throughout.",
       "flow_pos": 0
@@ -1361,11 +1360,10 @@
       "kind": "flow",
       "n": "8",
       "file": "flow/08-ganesha.jpg",
-      "title": "The vortex",
+      "title": "The key door",
       "status": "placeholder",
       "scenes": [
-        "18",
-        "19"
+        "18"
       ],
       "note": "A second door, bone, with a plate reading COACH BRAIN. He opens it the same way he opened the first and goes in. What happened? I pulled the brakes on you.",
       "flow_pos": 0
@@ -1374,11 +1372,10 @@
       "kind": "flow",
       "n": "9",
       "file": "flow/09-brain-room.jpg",
-      "title": "THE THEORIES",
+      "title": "Coach Brain’s room",
       "status": "placeholder",
       "scenes": [
-        "10",
-        "11"
+        "19"
       ],
       "note": "Manan explains what he read on a blackboard in white chalk. Coach Brain answers on a whiteboard in black marker. Same layout, same three lines, same gauge, every value reversed.",
       "flow_pos": 0
@@ -1387,10 +1384,10 @@
       "kind": "flow",
       "n": "10",
       "file": "flow/10-the-skull-door.jpg",
-      "title": "THE FLY THROUGH",
+      "title": "The old theory, on the board",
       "status": "placeholder",
       "scenes": [
-        "12"
+        "10"
       ],
       "note": "We fly at the banner reading THE LIMIT IS A SETTING and pass through it into white. Manan says the line while we are flying.",
       "flow_pos": 0
@@ -1399,10 +1396,11 @@
       "kind": "flow",
       "n": "11",
       "file": "flow/11-new-theory.jpg",
-      "title": "THE KEY",
+      "title": "The new theory, and the key",
       "status": "placeholder",
       "scenes": [
-        "15"
+        "11",
+        "12"
       ],
       "note": "Coach Brain lets the key go, it falls through an empty frame, and we cut to Manan catching it. THE END.",
       "flow_pos": 0
@@ -1411,10 +1409,10 @@
       "kind": "flow",
       "n": "12",
       "file": "flow/12-conclusion.jpg",
-      "title": "END CREDITS",
+      "title": "The vortex, down",
       "status": "placeholder",
       "scenes": [
-        "14"
+        "9R"
       ],
       "note": "Seven classical cards, in the longer version only.",
       "flow_pos": 0
@@ -2079,10 +2077,32 @@
       "status": "placeholder",
       "date": "2026-09-02",
       "note": "NOT DRAWN YET. He goes under. The last thing the first half does and the hinge of the whole film: past the voice that says stop, into the trance, and from here on nothing arrives and we move instead. There is one old frame in this phase and it does not carry the beat."
+    },
+    {
+      "kind": "flow",
+      "n": "13",
+      "file": "flow/13.jpg",
+      "title": "He lets the key go, and Manan picks it up",
+      "status": "placeholder",
+      "scenes": [
+        "15"
+      ],
+      "note": ""
+    },
+    {
+      "kind": "flow",
+      "n": "14",
+      "file": "flow/14.jpg",
+      "title": "Credits, and the dedication",
+      "status": "placeholder",
+      "scenes": [
+        "14"
+      ],
+      "note": ""
     }
   ],
   "event": "Breakthrough Junior Challenge 2026",
-  "site_version": 156,
+  "site_version": 157,
   "footage": [
     {
       "name": "Key catch",
