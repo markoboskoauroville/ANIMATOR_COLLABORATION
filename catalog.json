@@ -2847,7 +2847,7 @@
     }
   ],
   "event": "Breakthrough Junior Challenge 2026",
-  "site_version": 170,
+  "site_version": 171,
   "footage": [
     {
       "name": "Key catch",
@@ -2983,5 +2983,154 @@
       "phase": "14",
       "title": "Credits, and the dedication"
     }
-  ]
+  ],
+  "dialogue_scene19": {
+    "19-A2": [
+      {
+        "speaker": "COACH",
+        "line": "Ah. There you are. I was expecting you.",
+        "direction": "Warm and unhurried, pleased, the tone of somebody who has been waiting a while and is glad you finally came.",
+        "audio": "voice/scene19/19-A2-COACH.mp3",
+        "sec": 3.34
+      }
+    ],
+    "19-A3": [
+      {
+        "speaker": "COACH",
+        "line": "Before we start. Lift your right arm for me.",
+        "direction": "Easy and matter of fact, an instruction given without ceremony.",
+        "audio": "voice/scene19/19-A3a-COACH.mp3",
+        "sec": 2.98
+      },
+      {
+        "speaker": "MANAN",
+        "line": "I'm trying.",
+        "direction": "A boy's voice, puzzled, quiet, testing something that should be simple.",
+        "audio": "voice/scene19/19-A3b-MANAN.mp3",
+        "sec": 0.94
+      },
+      {
+        "speaker": "COACH",
+        "line": "I know.",
+        "direction": "Two words, calm, completely unsurprised.",
+        "audio": "voice/scene19/19-A3c-COACH.mp3",
+        "sec": 0.74
+      },
+      {
+        "speaker": "MANAN",
+        "line": "I can't. Why can't I move it?",
+        "direction": "Alarmed but not panicking, genuinely asking.",
+        "audio": "voice/scene19/19-A3d-MANAN.mp3",
+        "sec": 2.71
+      }
+    ],
+    "19-A4": [
+      {
+        "speaker": "COACH",
+        "line": "Try now.",
+        "direction": "Light, almost offhand, not looking up.",
+        "audio": "voice/scene19/19-A4-COACH.mp3",
+        "sec": 0.94
+      }
+    ],
+    "19-A5": [
+      {
+        "speaker": "MANAN",
+        "line": "It's back. It just came back.",
+        "direction": "Relief and disbelief together, quiet.",
+        "audio": "voice/scene19/19-A5a-MANAN.mp3",
+        "sec": 2.26
+      },
+      {
+        "speaker": "COACH",
+        "line": "It never went anywhere. I simply stopped signing for it.",
+        "direction": "Dry and gentle, explaining something ordinary.",
+        "audio": "voice/scene19/19-A5b-COACH.mp3",
+        "sec": 3.79
+      }
+    ],
+    "19-A6": [
+      {
+        "speaker": "MANAN",
+        "line": "That was you. It was never my arm at all.",
+        "direction": "Working it out aloud, slowly.",
+        "audio": "voice/scene19/19-A6a-MANAN.mp3",
+        "sec": 3.43
+      },
+      {
+        "speaker": "COACH",
+        "line": "It is always your arm. The permission is mine.",
+        "direction": "Kind and precise, correcting gently.",
+        "audio": "voice/scene19/19-A6b-COACH.mp3",
+        "sec": 3.55
+      }
+    ],
+    "19-A7": [
+      {
+        "speaker": "MANAN",
+        "line": "But I was taught it works the other way. Nineteen twenty three. You run, the muscle burns its fuel, the fuel runs out, and the body stops. The tank is empty.",
+        "direction": "Reciting something learned, confident at first and losing certainty toward the end.",
+        "audio": "voice/scene19/19-A7a-MANAN.mp3",
+        "sec": 10.58
+      },
+      {
+        "speaker": "COACH",
+        "line": "And when you collapsed on that road. Was the tank empty?",
+        "direction": "A question asked softly, already knowing the answer.",
+        "audio": "voice/scene19/19-A7b-COACH.mp3",
+        "sec": 3.82
+      },
+      {
+        "speaker": "MANAN",
+        "line": "No. There was some left.",
+        "direction": "Quiet, the moment of admitting it.",
+        "audio": "voice/scene19/19-A7c-MANAN.mp3",
+        "sec": 2.14
+      },
+      {
+        "speaker": "COACH",
+        "line": "There is always some left.",
+        "direction": "Slow and deliberate. The most important line in the film. Let it sit.",
+        "audio": "voice/scene19/19-A7d-COACH.mp3",
+        "sec": 2.14
+      }
+    ],
+    "19-A8": [
+      {
+        "speaker": "COACH",
+        "line": "I read the heat, the distance, how this went last time, and I decide how much you may have. Then I take the rest away, long before anything is actually in danger.",
+        "direction": "Teaching voice, calm and generous, describing something protective rather than sinister.",
+        "audio": "voice/scene19/19-A8a-COACH.mp3",
+        "sec": 11.18
+      },
+      {
+        "speaker": "MANAN",
+        "line": "So the wall...",
+        "direction": "Half a sentence, thinking, trailing off.",
+        "audio": "voice/scene19/19-A8b-MANAN.mp3",
+        "sec": 2.47
+      },
+      {
+        "speaker": "COACH",
+        "line": "Is a number I chose. Carefully. To keep you alive.",
+        "direction": "Firm and warm, three short pieces, each landed.",
+        "audio": "voice/scene19/19-A8c-COACH.mp3",
+        "sec": 3.43
+      },
+      {
+        "speaker": "MANAN",
+        "line": "Then it can be a different number.",
+        "direction": "Quiet realisation, the boy arriving at it himself.",
+        "audio": "voice/scene19/19-A8d-MANAN.mp3",
+        "sec": 2.02
+      },
+      {
+        "speaker": "COACH",
+        "line": "Now you understand what I do.",
+        "direction": "Pleased, warm, the end of the scene.",
+        "audio": "voice/scene19/19-A8e-COACH.mp3",
+        "sec": 2.06
+      }
+    ]
+  }
 }

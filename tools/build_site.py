@@ -274,6 +274,15 @@ h2{font-size:19px;margin:38px 0 14px;padding-bottom:7px;border-bottom:1px solid 
  color:var(--dim)}
 .filmfoot span{display:block;font-weight:600;font-size:9px;letter-spacing:.14em;
  padding-top:6px;color:var(--dim);opacity:.75}
+.dlg{margin:14px 0 4px;border-left:2px solid var(--gold);padding-left:14px}
+.dlgr{margin:0 0 14px}
+.dlgw{font:600 10px/1 ui-monospace,monospace;letter-spacing:.16em;color:var(--gold);
+  text-transform:uppercase}
+.dlgl{font-size:17px;line-height:1.5;margin:4px 0 2px;color:var(--ink)}
+.dlgd{font-size:12.5px;color:var(--dim);font-style:italic;margin-bottom:6px}
+.dlga{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.dlga audio{height:32px;max-width:260px}
+.dlgs{font:400 11px/1 ui-monospace,monospace;color:var(--dim)}
 .soon{font:600 10px/1 ui-monospace,monospace;letter-spacing:.12em;color:var(--dim);
   border:1px solid var(--rule);border-radius:6px;padding:6px 10px}
 .twoup{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:14px 0 6px}\n@media(max-width:760px){.twoup{grid-template-columns:1fr}}\n.twoup .srcbox{margin:0}\n.idb{margin:22px 0}
@@ -645,6 +654,45 @@ def _phkey(v):
     """
     m = re.match(r'(\d*)([a-zA-Z]*)', str(v))
     return (int(m.group(1) or 0), m.group(2))
+
+
+
+DIALOGUE = CAT.get('dialogue_scene19', {})
+
+
+def dialogue_for(shot_id, depth=0):
+    """The words, with a player and a download, under the frame they belong to.
+
+    Baba, 3.9.2026: Kristijan should never have to ask anybody for anything. So
+    the line, the direction it was read with, the audio and the file itself all
+    sit on the page beside the picture. He plays it where he stands, or takes
+    the mp3 for the cut.
+
+    The voice is the Hume actress, which is a STAND IN. Baba clones Manan's own
+    voice from these, so the download matters as much as the player: the file is
+    the thing that gets used, the player only tells you which file you want.
+    """
+    rows = DIALOGUE.get(shot_id)
+    if not rows:
+        return ''
+    r = '../' * depth
+    o = ['<div class=dlg>']
+    for x in rows:
+        who = x.get('speaker', '')
+        o.append('<div class=dlgr>')
+        o.append('<div class=dlgw>%s</div>' % who)
+        o.append('<div class=dlgl>%s</div>' % html.escape(x.get('line', '')))
+        if x.get('direction'):
+            o.append('<div class=dlgd>%s</div>' % html.escape(x['direction']))
+        a = x.get('audio')
+        if a:
+            o.append('<div class=dlga><audio controls preload=none src="%s%s"></audio>'
+                     '<a class=dl href="%s%s" download>MP3 &darr;</a>'
+                     '<span class=dlgs>%s s</span></div>'
+                     % (r, a, r, a, x.get('sec', '')))
+        o.append('</div>')
+    o.append('</div>')
+    return ''.join(o)
 
 
 def bar(here, r):
@@ -1597,6 +1645,17 @@ for e in _fl:
         frames = [f for f in frames if 'CLOUD-v1' in f.get('file', '')
                   and 'PLATE' not in f.get('file', '')] or \
                  [f for f in frames if 'CREDITS' in f.get('file', '')][:1]
+    # THE WORDS GO WITH THE PICTURE. Baba, 3.9.2026: Kristijan should never
+    # have to ask anybody for anything, so the line, how it is read, a player
+    # and the mp3 itself all sit on the page beside the frames of the shot they
+    # belong to. He plays it where he stands or takes the file for the cut.
+    #
+    # The voice is the Hume actress and it is a STAND IN: Baba clones Manan's
+    # own voice from these, so the download matters as much as the player. The
+    # file is what gets used; the player only tells you which file you want.
+    if n == '9':
+        for _sid in sorted(DIALOGUE):
+            rt.append(dialogue_for(_sid))
     if in_strip:
         frames = [f for f in frames if f['file'] not in in_strip]
     if frames:
