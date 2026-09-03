@@ -787,6 +787,7 @@ def dialogue_for(shot_id, depth=0):
 
 
 DRAMA = CAT.get('radio_drama', [])
+DRAMA_HR = CAT.get('radio_drama_hr', [])
 TAKES = CAT.get('manan_takes', {})
 COACH = CAT.get('coach_takes', {})
 
@@ -964,6 +965,30 @@ def drama_block(depth=0):
     return deck_block('drama', 'THE BRAIN BRAKE, READ ALOUD',
                       '%d parts, three voices, about three minutes.' % len(DRAMA),
                       rows, 'downloads/BRAIN_BRAKE_radio_drama.zip', depth)
+
+
+
+def drama_hr_block(depth=0):
+    """V2, in Croatian, with the theories spoken and the dedication at the end.
+
+    Two things V1 was missing and Baba caught both. The theories were only
+    described, never SAID, so the argument the film is built on was never heard.
+    And it ended on the credits rather than on the offering.
+
+    Russian voices reading Croatian. Speechify has no Croatian voice, and Baba's
+    own suggestion was that the Slavic ones land close enough. The multilingual
+    model handles the diacritics.
+    """
+    if not DRAMA_HR:
+        return ''
+    rows = [('head', 'HRVATSKI, V2, S TEORIJAMA', '', 0)]
+    for x in DRAMA_HR:
+        rows.append(('line', x['speaker'] + '   ' + x['text'][:90], '', 0))
+        rows.append(('take', '%02d %s' % (x['n'], x['speaker']), x['audio'], x['sec']))
+    return deck_block('dramahr', 'THE BRAIN BRAKE, NA HRVATSKOM',
+                      '%d dijelova, tri glasa, oko \u010detiri minute. S teorijama i posvetom.'
+                      % len(DRAMA_HR),
+                      rows, 'downloads/BRAIN_BRAKE_radio_drama_HR_v2.zip', depth)
 
 
 def takes_block(depth=0):
@@ -1594,7 +1619,7 @@ _dg = ['<h1>Dialogue and takes</h1>',
        'voice, and Manan\u2019s own recorded takes.</b> The words themselves are on the film page '
        'under each frame, which is where they are needed; this is for listening, choosing a take '
        'and taking the files.</p>',
-       drama_block(), dialogue_block(), takes_block(), DECK_JS]
+       drama_hr_block(), drama_block(), dialogue_block(), takes_block(), DECK_JS]
 open(os.path.join(ROOT, 'dialogue.html'), 'w').write(
     page('Dialogue', ''.join(_dg), here='archive', depth=0))
 
