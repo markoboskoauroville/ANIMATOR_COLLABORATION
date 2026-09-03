@@ -1934,6 +1934,45 @@ for _i, e in enumerate(_cards):
                   'colour, and are the better drawing otherwise. They are here so a later '
                   'session can see what was tried before trying it again.</p>'))
 
+    # ------------------------------------------------------------- THE DNA
+    # Baba, 2.9.2026. Every frame is made of something older than itself, and
+    # WINNING_FILM sets out what. Three strands, and an animator who has them
+    # makes better decisions than one who has only the picture.
+    #
+    #   ELEMENT   which of the signs the frame is built on. From the book:
+    #             threshold, stairs, light, glow, flame, ash, WATER, the hand,
+    #             kneeling standing walking, bread, the bell, sacred space.
+    #             Water is the one that is both the danger and the cure, which
+    #             is why it is the most useful and the most easily overused.
+    #   SYMBOL    what it carries without saying. Never explained on screen.
+    #   COMPOSITION  how it is organised, and why THAT arrangement. Rule of
+    #             thirds for a figure who must be seen inside a world. The
+    #             spiral, which moves the eye rather than merely placing
+    #             things. The pyramid for something unshakeable. Symmetry for
+    #             calm and official, wrong for anything unstable. Full frame
+    #             for one subject and nothing else. Diagonals carry energy,
+    #             horizontals carry rest.
+    #
+    # The book also says the structure should CHANGE across a film, because a
+    # rule applied identically for two minutes stops being structure and
+    # becomes wallpaper. Recording the composition per frame is what makes that
+    # checkable rather than a hope.
+    _dna = e.get('dna') or {}
+    if _dna:
+        _rows = []
+        for _k, _lab in (('element', 'Element'), ('symbol', 'Symbol'),
+                         ('composition', 'Composition'), ('balance', 'Balance')):
+            _v = (_dna.get(_k) or '').strip()
+            if _v:
+                _rows.append('<p><b style="color:var(--gold)">%s.</b> %s</p>'
+                             % (_lab, html.escape(_v)))
+        cd.append(idcard_block('The DNA of this frame', ''.join(_rows)))
+    else:
+        cd.append(idcard_block('The DNA of this frame',
+                  'Not set down yet. Every frame is built on an element, carries a symbol and uses '
+                  'a composition, and WINNING_FILM says which ones exist. Until this is filled in, '
+                  'the animator is working from the picture alone.', dim=True))
+
     _mn = (e.get('meaning') or '').strip()
     cd.append(idcard_block('What it means, and what it does',
               html.escape(_mn).replace('\n\n', '</p><p>').join(['<p>', '</p>']) if _mn else
