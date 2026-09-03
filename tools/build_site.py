@@ -281,9 +281,9 @@ h2{font-size:19px;margin:38px 0 14px;padding-bottom:7px;border-bottom:1px solid 
 .deckn{font:400 10.5px/1 ui-monospace,monospace;color:var(--dim)}
 .wave{position:relative;height:40px;background:var(--panel);border:1px solid var(--rule);
   border-radius:3px;display:flex;align-items:flex-end;gap:1px;padding:3px;overflow:hidden}
-.wave span{flex:1 1 0;background:#6E655C;border-radius:1px 1px 0 0;min-width:0;
-  transition:background .06s linear}
-.wave span.played{background:var(--gold)}
+.wave span{flex:1 1 0;background:#6B4E1E;border-radius:1px 1px 0 0;min-width:0;
+  transition:background .05s linear}
+.wave span.played{background:#F7D488}
 .cursor{position:absolute;top:0;bottom:0;width:1px;background:var(--gold);left:0;
   pointer-events:none}
 .deckf{display:flex;align-items:center;gap:10px;margin-top:6px}
@@ -310,8 +310,16 @@ h2{font-size:19px;margin:38px 0 14px;padding-bottom:7px;border-bottom:1px solid 
 .takew{font:600 10px/1 ui-monospace,monospace;letter-spacing:.16em;color:var(--dim);
   text-transform:uppercase;margin:18px 0 4px;border-top:1px solid var(--rule);
   padding-top:14px}
-.takel{font-size:16px;color:var(--ink);margin:14px 0 6px;border-left:2px solid var(--gold);
-  padding-left:10px}
+.takeg{margin:0 0 8px;border:1px solid var(--rule);border-radius:8px;background:var(--bg)}
+.takeg[open]{border-color:#5A431E}
+.takel{font-size:15.5px;color:var(--ink);padding:11px 13px;cursor:pointer;list-style:none;
+  display:flex;align-items:center;gap:10px}
+.takel::-webkit-details-marker{display:none}
+.takel:before{content:'>';color:var(--gold);font-size:11px;transition:transform .15s}
+.takeg[open] .takel:before{transform:rotate(90deg)}
+.takec{font:600 10px/1 ui-monospace,monospace;color:#16110D;background:var(--gold);
+  border-radius:999px;padding:3px 7px;flex:none}
+.takeg .deck{margin:0 11px 9px}
 .taker{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin:0 0 5px}
 .taken{font:400 10.5px/1 ui-monospace,monospace;color:var(--dim);min-width:96px}
 .taker audio{height:30px;max-width:230px}
@@ -775,7 +783,9 @@ def takes_block(depth=0):
       for key, blk in table.items():
         if not blk.get('takes'):
             continue
-        o.append('<div class=takel>%s</div>' % html.escape(blk.get('line', '')))
+        o.append('<details class=takeg><summary class=takel>'
+                 '<span class=takec>%d</span> %s</summary>'
+                 % (len(blk['takes']), html.escape(blk.get('line', ''))))
         for t in blk['takes']:
             o.append(
               '<div class=deck data-i="%d">'
@@ -794,6 +804,7 @@ def takes_block(depth=0):
               % (n, html.escape(t['name'].replace('REC0000', 'rec ')),
                  r, t['file'], r, t['file']))
             n += 1
+        o.append('</details>')
     o.append('</div>')
     o.append("""<script>
 /* The player is Baba's own, lifted from NOVA_TV_777/songs.js: the bar waveform,
@@ -822,7 +833,7 @@ def takes_block(depth=0):
     var N = 96;
     for (var i=0;i<N;i++){
       var b = document.createElement('span');
-      b.style.height = '18%';
+      b.style.height = '22%';
       d.wave.appendChild(b);
     }
     d.bars = [].slice.call(d.wave.querySelectorAll('span'));
@@ -835,7 +846,10 @@ def takes_block(depth=0):
     }).then(function(j){
       if (!j || !j.bars) return;
       var n = Math.min(d.bars.length, j.bars.length);
-      for (var i=0;i<n;i++) d.bars[i].style.height = Math.max(6, j.bars[i]*100) + '%';
+      /* 3.9.2026: a 6% floor made the quiet parts of a take look like an
+         empty box, so the waveform appeared to vanish rather than to be
+         quiet. 14 is the smallest bar that still reads on a phone. */
+      for (var i=0;i<n;i++) d.bars[i].style.height = Math.max(14, j.bars[i]*100) + '%';
     }).catch(function(){});
     return d;
   });
@@ -875,7 +889,13 @@ def takes_block(depth=0):
       paint(d);
       d.wave.style.cursor = canSeek(d) ? 'pointer' : 'default';
     });
-    d.audio.addEventListener('play',  function(){ setPlaying(d,true); });
+    d.audio.addEventListener('play',  function(){
+      setPlaying(d,true);
+      /* the chain can run into a collapsed group, and hearing a take you
+         cannot see is worse than not hearing it. Opening the group is what
+         makes collapse safe to combine with PLAY ALL. */
+      var g = d.el.closest('details'); if (g) g.open = true;
+    });
     /* Pausing breaks the chain, which is the point: Baba stops on the take he
        wants to hear again and the rest must not run over him. */
     d.audio.addEventListener('pause', function(){
