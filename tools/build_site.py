@@ -310,16 +310,23 @@ h2{font-size:19px;margin:38px 0 14px;padding-bottom:7px;border-bottom:1px solid 
 .takew{font:600 10px/1 ui-monospace,monospace;letter-spacing:.16em;color:var(--dim);
   text-transform:uppercase;margin:18px 0 4px;border-top:1px solid var(--rule);
   padding-top:14px}
-.takeg{margin:0 0 8px;border:1px solid var(--rule);border-radius:8px;background:var(--bg)}
-.takeg[open]{border-color:#5A431E}
-.takel{font-size:15.5px;color:var(--ink);padding:11px 13px;cursor:pointer;list-style:none;
-  display:flex;align-items:center;gap:10px}
-.takel::-webkit-details-marker{display:none}
-.takel:before{content:'>';color:var(--gold);font-size:11px;transition:transform .15s}
-.takeg[open] .takel:before{transform:rotate(90deg)}
+.takes{margin:16px 0 6px;background:var(--panel);border:1px solid var(--rule);
+  border-radius:12px;padding:0}
+.takeh{display:flex;align-items:center;gap:11px;flex-wrap:wrap;cursor:pointer;
+  list-style:none;padding:15px 18px;
+  font:600 11px/1 ui-monospace,monospace;letter-spacing:.14em;color:var(--gold)}
+.takeh::-webkit-details-marker{display:none}
+.takeh:after{content:'>';margin-left:auto;color:var(--gold);font-size:12px;
+  transition:transform .15s}
+.takes[open] .takeh:after{transform:rotate(90deg)}
+.takehd{font:400 11.5px/1.4 Inter,system-ui,sans-serif;letter-spacing:0;color:var(--dim);
+  text-transform:none;flex-basis:100%}
+.takebody{padding:0 18px 18px}
 .takec{font:600 10px/1 ui-monospace,monospace;color:#16110D;background:var(--gold);
-  border-radius:999px;padding:3px 7px;flex:none}
-.takeg .deck{margin:0 11px 9px}
+  border-radius:999px;padding:4px 8px;flex:none}
+.takecn{font:600 10px/1 ui-monospace,monospace;color:var(--dim);margin-right:6px}
+.takel{font-size:15.5px;color:var(--ink);margin:16px 0 7px;
+  border-left:2px solid var(--gold);padding-left:10px}
 .taker{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin:0 0 5px}
 .taken{font:400 10.5px/1 ui-monospace,monospace;color:var(--dim);min-width:96px}
 .taker audio{height:30px;max-width:230px}
@@ -770,9 +777,14 @@ def takes_block(depth=0):
     if not TAKES and not COACH:
         return ''
     r = '../' * depth
-    o = ['<div class=takes id=takes>',
-         '<div class=takeh><b>MANAN, THE RECORDED PERFORMANCE</b>'
-         '<button class=playall id=playall>PLAY ALL &#9654;</button></div>']
+    _n = sum(len(b.get('takes', [])) for t in (TAKES, COACH) for b in t.values())
+    o = ['<details class=takes id=takes>',
+         '<summary class=takeh><span class=takec>%d</span>'
+         '<b>THE RECORDED PERFORMANCE</b>'
+         '<span class=takehd>Manan, and Manan as Coach Brain. Every take, with a '
+         'download.</span></summary>' % _n,
+         '<div class=takebody>'
+         '<button class=playall id=playall>PLAY ALL &#9654;</button>']
     n = 0
     # Manan reading the old theory, then Manan reading Coach Brain. Two speakers,
     # one chain, so PLAY ALL runs the whole exchange in order.
@@ -783,8 +795,7 @@ def takes_block(depth=0):
       for key, blk in table.items():
         if not blk.get('takes'):
             continue
-        o.append('<details class=takeg><summary class=takel>'
-                 '<span class=takec>%d</span> %s</summary>'
+        o.append('<div class=takel><span class=takecn>%d</span> %s</div>'
                  % (len(blk['takes']), html.escape(blk.get('line', ''))))
         for t in blk['takes']:
             o.append(
@@ -804,8 +815,7 @@ def takes_block(depth=0):
               % (n, html.escape(t['name'].replace('REC0000', 'rec ')),
                  r, t['file'], r, t['file']))
             n += 1
-        o.append('</details>')
-    o.append('</div>')
+    o.append('</div></details>')
     o.append("""<script>
 /* The player is Baba's own, lifted from NOVA_TV_777/songs.js: the bar waveform,
    the cursor, the play and pause icons, elapsed and remaining. The VU meter is
