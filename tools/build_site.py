@@ -786,179 +786,189 @@ TAKES = CAT.get('manan_takes', {})
 COACH = CAT.get('coach_takes', {})
 
 
-def takes_block(depth=0):
-    """ONE deck for the scene, with the playlist underneath it.
+def deck_block(uid, title, sub, rows, zipfile_, depth=0):
+    """ONE deck, ONE transport row, ONE zip. Used for every set of audio.
 
-    Baba, 3.9.2026, and the model is his own NOVA_TV_777 player plus Winamp:
-    a single transport at the top, a waveform that fills as it plays, and the
-    list of everything below it. Forty three separate players was the wrong
-    shape; there is one thing playing at a time, so there should be one player.
+    Baba, 3.9.2026, three corrections in one:
 
-    Kept from songs.js because it was learned there: only one thing plays at a
-    time, the waveform fills behind a cursor rather than animating, and a host
-    that does not serve HTTP Range leaves the audio unseekable so the scrub bar
-    stops pretending.
+    THE PLAY BUTTON IS IN THE ROW WITH THE OTHERS. A separate big button above
+    the transport meant two places to look for a control. It is a cassette deck
+    now: play, then the buttons you expect beside it.
 
-    The VU meter is deliberately not here. Baba asked for the waveform and the
-    controls, and a meter on a review page is decoration.
+    NO DOWNLOAD PER ROW. Forty three download buttons is not a feature. The set
+    is zipped once, numbered in playing order so the folder on disk reads as the
+    scene, and offered as one file in the transport.
 
-    DOWNLOAD APPEARS TWICE ON PURPOSE. Once in the transport, for whatever is
-    playing, and once on every row, so he can take a take he has not listened to
-    without loading it first.
+    AND THE DIALOGUE USES THIS TOO. Nineteen bare browser players were still
+    sitting loose on the page while the takes had a real deck. One player shape
+    for everything that makes a sound.
+
+    rows is a list of (kind, text, src, seconds). kind is head, line or take.
     """
-    if not TAKES and not COACH:
+    if not rows:
         return ''
     r = '../' * depth
-    rows, n = [], 0
+    takes = [x for x in rows if x[0] == 'take']
+    o = ['<div class=nova id=nv-%s>' % uid,
+         '<div class=novatc><span class=nv-el>00:00</span>'
+         '<span class=nv-rem>-00:00</span></div>',
+         '<div class=novah><div><b class=nv-name>%s</b>'
+         '<span class=nv-sub>%s</span></div></div>' % (html.escape(title), html.escape(sub)),
+         '<div class=novascrub><div class="wave nv-wave"><div class="cursor nv-cur"></div>'
+         '</div></div>',
+         '<div class=novabar>'
+         '<button class="mcbtn play nv-play" type=button title="play">'
+         '<svg class=ic-play viewBox="0 0 24 24"><path d="M7 4l13 8-13 8z"/></svg>'
+         '<svg class=ic-pause viewBox="0 0 24 24" style="display:none">'
+         '<path d="M6 4h4v16H6zM14 4h4v16h-4z"/></svg></button>'
+         '<button class="mcbtn nv-stop" type=button title="stop">'
+         '<svg viewBox="0 0 24 24"><path d="M6 6h12v12H6z"/></svg></button>'
+         '<button class="mcbtn nv-first" type=button title="first">'
+         '<svg viewBox="0 0 24 24"><path d="M6 5h2v14H6zM20 5v14L9 12z"/></svg></button>'
+         '<button class="mcbtn nv-prev" type=button title="previous">'
+         '<svg viewBox="0 0 24 24"><path d="M11 5v14L2 12zM22 5v14l-9-7z"/></svg></button>'
+         '<button class="mcbtn nv-next" type=button title="next">'
+         '<svg viewBox="0 0 24 24"><path d="M13 5v14l9-7zM2 5v14l9-7z"/></svg></button>'
+         '<button class="mcbtn nv-last" type=button title="last">'
+         '<svg viewBox="0 0 24 24"><path d="M18 5h2v14h-2zM4 5v14l11-7z"/></svg></button>'
+         '%s'
+         '<span class="novastate nv-state">READY</span></div>'
+         % (('<a class="mcbtn wide" href="%s%s" download title="all of them, zipped">'
+             'ZIP &darr;</a>' % (r, zipfile_)) if zipfile_ else ''),
+         '<details class=novapl><summary class=novaplh>'
+         '<span class=takec>%d</span>PLAYLIST</summary><div class=novapb>' % len(takes)]
+    i = 0
+    for kind, text, src, sec in rows:
+        if kind == 'head':
+            o.append('<div class=plhead>%s</div>' % html.escape(text))
+        elif kind == 'line':
+            o.append('<div class=plline>%s</div>' % html.escape(text))
+        else:
+            o.append('<div class=plrow data-i="%d" data-src="%s%s" data-name="%s">'
+                     '<span class=plno>%d</span><span class=plnm>%s</span>'
+                     '<span class=plsec>%s s</span></div>'
+                     % (i, r, src, html.escape(text), i + 1, html.escape(text), sec))
+            i += 1
+    o.append('</div></details></div>')
+    return ''.join(o)
+
+
+DECK_JS = """<script>
+/* One controller, applied to every deck on the page. Modelled on Baba's own
+   NOVA_TV_777 player: waveform that fills behind a cursor, real peaks loaded
+   per file, click to scrub, and a host that does not serve HTTP Range leaves
+   the audio unseekable so the scrub stops pretending rather than lying. */
+(function(){
+  [].slice.call(document.querySelectorAll('.nova')).forEach(function(wrap){
+    var rows = [].slice.call(wrap.querySelectorAll('.plrow'));
+    if (!rows.length) return;
+    var q = function(c){ return wrap.querySelector(c); };
+    var audio = new Audio(); audio.preload = 'metadata';
+    var wave=q('.nv-wave'), cur=q('.nv-cur'), el=q('.nv-el'), rem=q('.nv-rem');
+    var nm=q('.nv-name'), sub=q('.nv-sub'), btn=q('.nv-play'), st=q('.nv-state');
+    var pl = wrap.querySelector('details');
+    var title = nm.textContent, subtitle = sub.textContent;
+    var idx=-1, chain=true, bars=[];
+    for (var i=0;i<110;i++){ var b=document.createElement('span');
+      b.style.height='16%'; wave.appendChild(b); }
+    bars=[].slice.call(wave.querySelectorAll('span'));
+    function mmss(s){ s=Math.max(0,s||0);
+      return String(Math.floor(s/60)).padStart(2,'0')+':'+
+             String(Math.floor(s%60)).padStart(2,'0'); }
+    function dur(){ return (audio.duration && isFinite(audio.duration)) ? audio.duration : 0; }
+    function canSeek(){ var s=audio.seekable; return !!(s&&s.length&&s.end(s.length-1)>1); }
+    function peaks(src){
+      for (var i=0;i<bars.length;i++) bars[i].style.height='16%';
+      fetch(src.slice(0,-4)+'.json').then(function(r){return r.ok?r.json():null;})
+        .then(function(j){ if(!j||!j.bars) return;
+          for (var i=0;i<bars.length;i++){
+            var v=j.bars[Math.floor(i*j.bars.length/bars.length)]||0;
+            bars[i].style.height=Math.max(14,v*100)+'%'; }
+        }).catch(function(){});
+    }
+    function paint(){
+      var D=dur(), c=audio.currentTime||0, p=D?c/D:0;
+      for (var i=0;i<bars.length;i++) bars[i].classList.toggle('played', i/bars.length<=p);
+      cur.style.left=(p*100)+'%';
+      el.textContent=mmss(c); rem.textContent='-'+mmss(D-c);
+    }
+    function setPlaying(on){
+      btn.classList.toggle('on',on);
+      btn.querySelector('.ic-play').style.display  = on?'none':'block';
+      btn.querySelector('.ic-pause').style.display = on?'block':'none';
+      st.textContent = on?'PLAYING':(idx>=0?'PAUSED':'READY');
+    }
+    function load(i,play){
+      if(i<0||i>=rows.length) return;
+      idx=i; rows.forEach(function(x,k){ x.classList.toggle('on',k===i); });
+      audio.src=rows[i].dataset.src;
+      nm.textContent=rows[i].dataset.name;
+      sub.textContent=(i+1)+' of '+rows.length;
+      peaks(rows[i].dataset.src); paint();
+      if(play){ if(pl) pl.open=true; audio.play().catch(function(){}); }
+    }
+    audio.addEventListener('timeupdate',paint);
+    audio.addEventListener('loadedmetadata',function(){
+      paint(); wave.style.cursor=canSeek()?'pointer':'default'; });
+    audio.addEventListener('play',function(){ setPlaying(true); });
+    audio.addEventListener('pause',function(){ if(!audio.ended) chain=false; setPlaying(false); });
+    audio.addEventListener('ended',function(){ setPlaying(false);
+      if(chain && idx+1<rows.length) load(idx+1,true); });
+    btn.onclick=function(){
+      if(idx<0){ chain=true; load(0,true); return; }
+      if(audio.paused){ chain=true; audio.play().catch(function(){}); } else audio.pause(); };
+    q('.nv-stop').onclick=function(){
+      audio.pause(); audio.currentTime=0; chain=false; idx=-1;
+      rows.forEach(function(x){ x.classList.remove('on'); });
+      nm.textContent=title; sub.textContent=subtitle; paint(); setPlaying(false); };
+    q('.nv-first').onclick=function(){ chain=true; load(0,true); };
+    q('.nv-last').onclick =function(){ chain=true; load(rows.length-1,true); };
+    q('.nv-prev').onclick =function(){ chain=true; load(idx<=0?0:idx-1,true); };
+    q('.nv-next').onclick =function(){ chain=true;
+      load(idx+1>=rows.length?rows.length-1:idx+1,true); };
+    wave.addEventListener('click',function(e){
+      if(!canSeek()) return;
+      var b=e.currentTarget.getBoundingClientRect();
+      audio.currentTime=((e.clientX-b.left)/b.width)*dur(); paint(); });
+    rows.forEach(function(x,i){ x.addEventListener('click',function(){ chain=true; load(i,true); }); });
+    load(0,false);
+  });
+})();
+</script>"""
+
+
+def takes_block(depth=0):
+    rows = []
     for who, table in (('MANAN, THE OLD THEORY', TAKES),
                        ('MANAN AS COACH BRAIN', COACH)):
         if not table:
             continue
-        rows.append(('head', who, '', '', 0))
+        rows.append(('head', who, '', 0))
         for key, blk in table.items():
             if not blk.get('takes'):
                 continue
-            rows.append(('line', blk.get('line', ''), '', '', len(blk['takes'])))
+            rows.append(('line', blk.get('line', ''), '', 0))
             for t in blk['takes']:
-                rows.append(('take', t['name'].replace('REC0000', 'rec ').replace('CB0000', 'cb '),
-                             r + t['file'], t.get('sec', 0), n))
-                n += 1
-    o = ['<div class=nova id=nova>',
-         '<div class=novatc><span id=nv-el>00:00</span><span id=nv-rem>-00:00</span></div>',
-         '<div class=novah><div><b id=nv-name>THE RECORDED PERFORMANCE</b>'
-         '<span id=nv-sub>%d takes. Manan, and Manan as Coach Brain.</span></div>'
-         '<button class="mcbtn play" id=nv-play type=button>'
-         '<svg class=ic-play viewBox="0 0 24 24"><path d="M7 4l13 8-13 8z"/></svg>'
-         '<svg class=ic-pause viewBox="0 0 24 24" style="display:none">'
-         '<path d="M6 4h4v16H6zM14 4h4v16h-4z"/></svg></button></div>' % n,
-         '<div class=novascrub><div class=wave id=nv-wave><div class=cursor id=nv-cur></div>'
-         '</div></div>',
-         '<div class=novabar>'
-         '<button class=mcbtn id=nv-first type=button title="first">'
-         '<svg viewBox="0 0 24 24"><path d="M6 5h2v14H6zM20 5v14L9 12z"/></svg></button>'
-         '<button class=mcbtn id=nv-prev type=button title="previous">'
-         '<svg viewBox="0 0 24 24"><path d="M11 5v14L2 12zM22 5v14l-9-7z"/></svg></button>'
-         '<button class=mcbtn id=nv-next type=button title="next">'
-         '<svg viewBox="0 0 24 24"><path d="M13 5v14l9-7zM2 5v14l9-7z"/></svg></button>'
-         '<button class=mcbtn id=nv-last type=button title="last">'
-         '<svg viewBox="0 0 24 24"><path d="M18 5h2v14h-2zM4 5v14l11-7z"/></svg></button>'
-         '<a class="mcbtn wide" id=nv-dl href="#" download>MP3 &darr;</a>'
-         '<span class=novastate id=nv-state>READY</span></div>',
-         '<details class=novapl id=nv-pl><summary class=novaplh>'
-         '<span class=takec>%d</span>PLAYLIST</summary><div class=novapb>' % n]
-    for kind, a, b, c, d in rows:
-        if kind == 'head':
-            o.append('<div class=plhead>%s</div>' % html.escape(a))
-        elif kind == 'line':
-            o.append('<div class=plline><span class=takecn>%d</span>%s</div>'
-                     % (d, html.escape(a)))
-        else:
-            o.append('<div class=plrow data-i="%d" data-src="%s" data-name="%s">'
-                     '<span class=plno>%d</span>'
-                     '<span class=plnm>%s</span>'
-                     '<span class=plsec>%s s</span>'
-                     '<a class=pldl href="%s" download title="download">&darr;</a>'
-                     '</div>' % (d, b, html.escape(a), d + 1, html.escape(a), c, b))
-    o.append('</div></details></div>')
-    o.append("""<script>
-(function(){
-  var wrap = document.getElementById('nova'); if (!wrap) return;
-  var rows = [].slice.call(wrap.querySelectorAll('.plrow'));
-  if (!rows.length) return;
-  var audio = new Audio(); audio.preload = 'metadata';
-  var wave = document.getElementById('nv-wave'), cur = document.getElementById('nv-cur');
-  var el = document.getElementById('nv-el'), rem = document.getElementById('nv-rem');
-  var nm = document.getElementById('nv-name'), sub = document.getElementById('nv-sub');
-  var btn = document.getElementById('nv-play'), dl = document.getElementById('nv-dl');
-  var state = document.getElementById('nv-state'), pl = document.getElementById('nv-pl');
-  var idx = -1, bars = [], chain = true;
+                rows.append(('take',
+                             t['name'].replace('REC0000', 'rec ').replace('CB0000', 'cb '),
+                             t['file'], t.get('sec', 0)))
+    n = len([x for x in rows if x[0] == 'take'])
+    return deck_block('takes', 'THE RECORDED PERFORMANCE',
+                      '%d takes. Manan, and Manan as Coach Brain.' % n,
+                      rows, 'downloads/BRAIN_BRAKE_takes.zip', depth)
 
-  var N = 110;
-  for (var i=0;i<N;i++){ var b=document.createElement('span'); b.style.height='16%';
-    wave.appendChild(b); }
-  bars = [].slice.call(wave.querySelectorAll('span'));
 
-  function mmss(s){ s=Math.max(0,s||0);
-    return String(Math.floor(s/60)).padStart(2,'0')+':'+String(Math.floor(s%60)).padStart(2,'0'); }
-  function dur(){ return (audio.duration && isFinite(audio.duration)) ? audio.duration : 0; }
-  function canSeek(){ var s=audio.seekable; return !!(s && s.length && s.end(s.length-1) > 1); }
-
-  function peaks(src){
-    /* real peaks, computed once at build time and shipped beside each take. A
-       flat shape shows first so the deck is usable while it loads. */
-    for (var i=0;i<bars.length;i++) bars[i].style.height='16%';
-    fetch(src.slice(0,-4) + '.json').then(function(r){ return r.ok ? r.json() : null; })
-      .then(function(j){
-        if (!j || !j.bars) return;
-        for (var i=0;i<bars.length;i++){
-          var v = j.bars[Math.floor(i*j.bars.length/bars.length)] || 0;
-          bars[i].style.height = Math.max(14, v*100) + '%';
-        }
-      }).catch(function(){});
-  }
-  function paint(){
-    var D=dur(), c=audio.currentTime||0, p=D?c/D:0;
-    for (var i=0;i<bars.length;i++) bars[i].classList.toggle('played', i/bars.length <= p);
-    cur.style.left = (p*100)+'%';
-    el.textContent = mmss(c);
-    rem.textContent = '-' + mmss(D-c);
-  }
-  function load(i, play){
-    if (i<0 || i>=rows.length) return;
-    idx = i;
-    rows.forEach(function(r,k){ r.classList.toggle('on', k===i); });
-    var r = rows[i];
-    audio.src = r.dataset.src;
-    dl.href = r.dataset.src;
-    nm.textContent = r.dataset.name;
-    sub.textContent = (i+1) + ' of ' + rows.length;
-    peaks(r.dataset.src);
-    paint();
-    /* the playlist opens itself when the chain moves on, because hearing a take
-       you cannot see is worse than not hearing it */
-    if (play){ if (pl) pl.open = true; audio.play().catch(function(){}); }
-  }
-  function setPlaying(on){
-    btn.classList.toggle('on', on);
-    btn.querySelector('.ic-play').style.display  = on ? 'none' : 'block';
-    btn.querySelector('.ic-pause').style.display = on ? 'block' : 'none';
-    state.textContent = on ? 'PLAYING' : (idx>=0 ? 'PAUSED' : 'READY');
-  }
-  audio.addEventListener('timeupdate', paint);
-  audio.addEventListener('loadedmetadata', function(){
-    paint(); wave.style.cursor = canSeek() ? 'pointer' : 'default';
-  });
-  audio.addEventListener('play',  function(){ setPlaying(true); });
-  audio.addEventListener('pause', function(){ if(!audio.ended) chain=false; setPlaying(false); });
-  audio.addEventListener('ended', function(){
-    setPlaying(false);
-    if (chain && idx+1 < rows.length) load(idx+1, true);
-  });
-  btn.onclick = function(){
-    if (idx < 0) { chain=true; load(0,true); return; }
-    if (audio.paused){ chain=true; audio.play().catch(function(){}); } else audio.pause();
-  };
-  wave.addEventListener('click', function(e){
-    if (!canSeek()) return;
-    var b=e.currentTarget.getBoundingClientRect();
-    audio.currentTime = ((e.clientX-b.left)/b.width)*dur(); paint();
-  });
-  document.getElementById('nv-first').onclick = function(){ chain=true; load(0,true); };
-  document.getElementById('nv-last').onclick  = function(){ chain=true; load(rows.length-1,true); };
-  document.getElementById('nv-prev').onclick  = function(){
-    chain=true; load(idx<=0 ? 0 : idx-1, true); };
-  document.getElementById('nv-next').onclick  = function(){
-    chain=true; load(idx+1 >= rows.length ? rows.length-1 : idx+1, true); };
-  rows.forEach(function(r,i){
-    r.addEventListener('click', function(e){
-      if (e.target.closest('.pldl')) return;   /* the row download is not a play */
-      chain=true; load(i,true);
-    });
-  });
-  load(0,false);
-})();
-</script>""")
-    return ''.join(o)
+def dialogue_block(depth=0):
+    """The scene as written, read by the Hume actress. Same deck as the takes."""
+    rows = []
+    for sid, lines in DIALOGUE.items():
+        for x in lines:
+            rows.append(('line', x.get('speaker', '') + '   ' + x.get('line', ''), '', 0))
+            rows.append(('take', x.get('line', '')[:52], x.get('audio', ''), x.get('sec', 0)))
+    n = len([x for x in rows if x[0] == 'take'])
+    return deck_block('dlg', 'THE SCENE, READ',
+                      '%d lines. A stand in read, for timing and for the cut.' % n,
+                      rows, 'downloads/BRAIN_BRAKE_scene19_dialogue.zip', depth)
 
 
 def bar(here, r):
@@ -1922,8 +1932,7 @@ for e in _fl:
     if n == '10':
         rt.append(takes_block())
     if n == '9':
-        for _sid in sorted(DIALOGUE):
-            rt.append(dialogue_for(_sid))
+        rt.append(dialogue_block())
     if in_strip:
         frames = [f for f in frames if f['file'] not in in_strip]
     if frames:
@@ -1946,6 +1955,7 @@ for e in _fl:
                       'var(--rule);background:#0b0a08"></div><div class=c>%s</div></a>'
                       % ('FOOTAGE' if live else 'EMPTY'))
         rt.append('</div>')
+rt.append(DECK_JS)
 rt.append('</div>')
 # ---------------------------------------------------------------- assets
 # Everything ever made for this film, including what was abandoned. Nothing is
