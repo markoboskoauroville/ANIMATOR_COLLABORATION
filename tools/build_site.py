@@ -1809,6 +1809,45 @@ THEORIES = [
 ]
 
 
+THEORY_LINES = {
+    'BB_C_10/10-0-BUILD-2.png': [
+        ('MANAN', 'Nineteen twenty three. Hill puts runners on a treadmill and measures '
+                  'everything they do. His answer is simple.'),
+        ('MANAN', 'Fatigue is in the muscle.')],
+    'BB_C_10/10-0-A-v2.png': [
+        ('MANAN', 'You run. The muscle burns through its oxygen. The fuel runs out.'),
+        ('MANAN', 'And when the tank reads empty, the body stops.'),
+        ('COACH', 'And when you collapsed on that road. Was the tank empty?'),
+        ('MANAN', 'No. There was some left.'),
+        ('COACH', 'There is always some left.')],
+    'BB_C_11/11-0-BUILD-2.png': [
+        ('COACH', 'Heart rate, breath, temperature, water, distance. I read all of it, '
+                  'all the time.'),
+        ('COACH', 'And I ask one question: can we keep going safely?')],
+    'BB_C_11/11-0-A-v1.png': [
+        ('COACH', 'When the answer starts to look like no, I slow you down. So no. Fatigue '
+                  'is in the brain, not in your legs. Up here.'),
+        ('COACH', 'It decides when to stop. When I stop you, the fuel is still there.'),
+        ('MANAN', 'So the wall...'),
+        ('COACH', 'Is a number I chose. Carefully. To keep you alive.'),
+        ('MANAN', 'Then it can be a different number.'),
+        ('COACH', 'Now you understand what I do.')],
+}
+
+
+def theory_lines(f):
+    """The words said over a board, under the board."""
+    rows = THEORY_LINES.get(f)
+    if not rows:
+        return ''
+    o = []
+    for who, line in rows:
+        o.append('<div class=ln><span class=sp>%s</span>'
+                 '<span class=tx>\u201c%s\u201d</span></div>'
+                 % (who, html.escape(line)))
+    return ''.join(o)
+
+
 def theories_strip(prefix=''):
     return strip(THEORIES,
                  'Neither board arrives finished. Manan writes what he read, line by line, in white '
@@ -1866,8 +1905,9 @@ def strip(items, lede, prefix=''):
            not os.path.exists(os.path.join(ROOT, 'tiny', _b + '.jpg')):
             continue
         out.append('<div class=f><a href="%s"><img src="%s%s" alt="" loading=lazy></a>'
-                   '<div class=n>%s</div></div>'
-                   % (full_link(f, prefix), prefix, small(f, 'tiny'), label.upper()))
+                   '<div class=n>%s</div>%s</div>'
+                   % (full_link(f, prefix), prefix, small(f, 'tiny'), label.upper(),
+                      theory_lines(f)))
     out.append('</div>')
     return ''.join(out)
 
@@ -1978,7 +2018,12 @@ for e in _fl:
     if n == '7':
         rt.append(arrival_strip())
         in_strip = {f for f, _ in ARRIVAL if isinstance(f, str)}
-    if n == '9':
+    # 3.9.2026. The boards were pinned to section 9, which is the MEETING, so the
+    # film showed both theories on the board before the two men had spoken. They
+    # belong to section 10, which is called THE TWO THEORIES, ON THE BOARD. The
+    # same fault as the key strip and the credits filter: behaviour nailed to a
+    # section NUMBER while the running order moved underneath it.
+    if n == '10':
         rt.append(theories_strip())
         in_strip = {f for f, _ in THEORIES if isinstance(f, str)}
     if n == '13':
