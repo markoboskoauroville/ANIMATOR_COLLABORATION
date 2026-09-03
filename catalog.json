@@ -496,11 +496,11 @@
     },
     {
       "kind": "keyframe",
-      "shot": "1.00",
+      "shot": "1.99h",
       "file": "BB_C_1/1-0-B-v1.png",
-      "status": "proposal",
+      "status": "superseded",
       "date": "2026-08-28",
-      "note": "KEY FRAME 2 of 3. Close on the feet, which say runner faster than a face does and keep the face back for shot 1.1. One shoe landed flat and heavy with dust lifting, the other dragging low and barely clearing the ground. It also sets the film's method: look closely at the thing everyone thinks they already understand. NOTE: the shoes are modern trainers rather than the 1923 racing shoes on the character sheet. Cheap to correct if the period matters.",
+      "note": "KEY FRAME 2 of 3. Close on the feet, which say runner faster than a face does and keep the face back for shot 1.1. One shoe landed flat and heavy with dust lifting, the other dragging low and barely clearing the ground. It also sets the film's method: look closely at the thing everyone thinks they already understand. NOTE: the shoes are modern trainers rather than the 1923 racing shoes on the character sheet. Cheap to correct if the period matters. SUPERSEDED 3.9.2026 by 1-0-B-v2. Wrong legs: mid stride in modern trainers, while the man in 1-0-C-v2 is sliding down in thin flat heeled shoes. A close up of a different pair of legs from the figure it cuts to.",
       "slug": "EXT. ROAD — DAY — EXTREME CLOSE ON FEET",
       "what": "Worn racing shoes on tarmac, one landing flat and heavy with dust lifting, the other dragging low.",
       "why": "It says runner and it says failing, before a face is ever seen. Feet carry exhaustion more honestly than a face does, because a face can perform and feet cannot.",
@@ -1114,7 +1114,7 @@
     },
     {
       "kind": "keyframe",
-      "shot": "1.02",
+      "shot": "1.00",
       "file": "BB_C_1/1-0-A-v2.png",
       "representative": true,
       "status": "proposal",
@@ -1131,7 +1131,7 @@
     },
     {
       "kind": "keyframe",
-      "shot": "1.01",
+      "shot": "1.02",
       "file": "BB_C_1/1-0-C-v2.png",
       "status": "proposal",
       "date": "2026-08-30",
@@ -3093,10 +3093,20 @@
       "status": "accepted",
       "date": "2026-09-03",
       "note": "THE END OF THE SCENE. Bare paper and nothing standing in it. NOT GENERATED. The tone and the grain were measured off a clean corner of 1-2c-4-v1 and rebuilt, so this is the film's own paper rather than an invented white. Cream and not white on purpose: the white belongs to the trance, and scene one has not left the drawn world yet."
+    },
+    {
+      "file": "BB_C_1/1-0-B-v2.png",
+      "kind": "keyframe",
+      "scene": "1",
+      "shot": "1.01",
+      "title": "The legs, going down",
+      "status": "accepted",
+      "date": "2026-09-03",
+      "note": "THE LEGS, IN THE POSITION HE ACTUALLY FALLS IN. Shot two of the opening, between the wide and the figure, so the first three shots are one instant at three sizes. NOT DRAWN FROM A DESCRIPTION. The region of 1-0-C-v2 from the shorts hem down to both shoes was cropped out and redrawn sharp at full size, single reference, which is why it matches by construction rather than by resemblance: same knee bend, same near foot rolled onto the outside edge of the shoe, same far foot planted, same thin flat heeled shoes. His hand hangs into the left of the frame because it is inside the crop. SUPERSEDES 1-0-B-v1, which had him mid stride in modern trainers and could not sit beside the man it was supposed to belong to. The ground is even cream corner to corner: the two frames before it came back with a warm vignette, and asking for the flat ground in the prompt fixed it."
     }
   ],
   "event": "Breakthrough Junior Challenge 2026",
-  "site_version": 202,
+  "site_version": 203,
   "footage": [
     {
       "name": "Key catch",
