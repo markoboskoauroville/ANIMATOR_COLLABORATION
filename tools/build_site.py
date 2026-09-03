@@ -1168,6 +1168,12 @@ def bar(here, r):
     """
     o = ['<div class=bar>',
          '<a class=home href="%sindex.html"%s>THE FILM</a>' % (r, ' class=on' if here == 'home' else ''),
+         # 3.9.2026: the radio drama is the fastest way to understand the film,
+         # and it was reachable only through the archive, two clicks behind a
+         # page called Archive. That is the wrong place for the thing you would
+         # hand somebody first.
+         '<a href="%sradiodrama.html"%s>RADIO DRAMA</a>'
+         % (r, ' class=on' if here == 'drama' else ''),
          '<a href="%sarchive.html"%s>ARCHIVE</a>' % (r, ' class=on' if here == 'archive' else ''),
          '<span class=sp></span>',
          ('<span class=vb>%s</span>' % VERSION) if VERSION else '',
@@ -1726,7 +1732,7 @@ _rd = ['<h1>Radio drama, and the music</h1>',
        'downloaded: the drama as numbered parts, the music as it was composed.</p>',
        drama_v6_block(), music_block(), DECK_JS]
 open(os.path.join(ROOT, 'radiodrama.html'), 'w').write(
-    page('Radio drama', ''.join(_rd), here='archive', depth=0))
+    page('Radio drama', ''.join(_rd), here='drama', depth=0))
 
 # ---------------------------------------------------------------- dialogue page
 # The audio has its OWN page. Baba, 3.9.2026: Kristijan does not need to listen
