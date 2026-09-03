@@ -421,12 +421,12 @@
     },
     {
       "kind": "keyframe",
-      "shot": "1.10",
+      "shot": "1.99i",
       "file": "BB_C_1/1-5-v1.jpg",
       "representative": true,
-      "status": "accepted",
+      "status": "superseded",
       "date": "2026-08-28",
-      "note": "MANAN WALKS IN. The runner is still going and the boy steps into the drawn world beside him, magnifying glass up. The film's first crossing of its two worlds: anything real is a photograph, anything thought is a pencil drawing, and here they stand in one frame. Both figures are on the same ground line and the runner is the smaller of the two, which is what makes the boy the subject and the runner the thing being examined.",
+      "note": "MANAN WALKS IN. The runner is still going and the boy steps into the drawn world beside him, magnifying glass up. The film's first crossing of its two worlds: anything real is a photograph, anything thought is a pencil drawing, and here they stand in one frame. Both figures are on the same ground line and the runner is the smaller of the two, which is what makes the boy the subject and the runner the thing being examined. SUPERSEDED 3.9.2026 by 1-5-v3. The runner in it was mid sprint, not the collapse.",
       "slug": "EXT. CREAM VOID — THE TWO WORLDS MEET",
       "what": "The runner is still going and a boy steps into the drawn world beside him, magnifying glass up.",
       "why": "The film’s first crossing: anything real is a photograph, anything thought is a pencil drawing, and here they stand in one frame. Both on the same ground line, and the runner is the smaller of the two, which makes the boy the subject and the runner the thing being examined.",
@@ -438,12 +438,12 @@
     },
     {
       "kind": "keyframe",
-      "shot": "1.11",
+      "shot": "1.99j",
       "file": "BB_C_1/1-6-v1.jpg",
       "representative": true,
-      "status": "accepted",
+      "status": "superseded",
       "date": "2026-08-28",
-      "note": "HE TURNS TO US. Pushed in. Manan holds the glass and the runner is now a pale sketch beside his head, the same man drawn small and faint. He speaks to camera over it. The contrast drops as we push in, so the drawn world recedes exactly as the real one takes over.",
+      "note": "HE TURNS TO US. Pushed in. Manan holds the glass and the runner is now a pale sketch beside his head, the same man drawn small and faint. He speaks to camera over it. The contrast drops as we push in, so the drawn world recedes exactly as the real one takes over. SUPERSEDED 3.9.2026 by 1-6-v3. The head behind him was an unrelated profile of the old man rather than the frame he is inspecting. KEPT AS THE FACE OF RECORD: this is where the one boy was decided, and every appearance of him is measured against it.",
       "slug": "EXT. CREAM VOID — CLOSE ON MANAN",
       "what": "Pushed in. He holds the glass and the runner is a pale sketch beside his head. He speaks to camera.",
       "why": "The contrast falls as we push in, so the drawn world recedes exactly as the real one takes over.",
@@ -469,11 +469,11 @@
     },
     {
       "kind": "keyframe",
-      "shot": "1.12",
+      "shot": "1.99k",
       "file": "BB_C_1/1-4-D-v3.png",
-      "status": "proposal",
+      "status": "superseded",
       "date": "2026-08-28",
-      "note": "THE SAME SHOT WITH THE REAL MANAN. The runner behind him is not a new drawing, it is the previous shot zoomed in and faded back, so the push-in is continuous and the contrast falls as we move closer. Real keyed footage, graded to the paper. Choose between this and the generated one beside it. ON THE SCENE AND BREAKDOWN PAGES ONLY, not on the front page storyboard: the generated version stands in there because it reads finished at a glance, and this one is the working material.",
+      "note": "THE SAME SHOT WITH THE REAL MANAN. The runner behind him is not a new drawing, it is the previous shot zoomed in and faded back, so the push-in is continuous and the contrast falls as we move closer. Real keyed footage, graded to the paper. Choose between this and the generated one beside it. ON THE SCENE AND BREAKDOWN PAGES ONLY, not on the front page storyboard: the generated version stands in there because it reads finished at a glance, and this one is the working material. OUT OF THE GRID 3.9.2026, Baba. A DIFFERENT BOY. It sat at 1.12 on the front page between two shots of the reference boy from 1-6-v1, and read as a second child. One face, one man, and this is not him. Shot 1.12 is now empty and the inspection runs 1.10 wide, 1.11 close, 1.13 the dead leg through the glass. 1-4-C-v2 stays at 1.12b as working material; note that it is close to the same composition 1-5 had and its runner is still the sprint, so it needs the same treatment if it ever comes back into the order.",
       "flow_pos": 1,
       "dna": {
         "phase": "Phase 2 of 15, THE RUNNER.",
@@ -3103,10 +3103,30 @@
       "status": "accepted",
       "date": "2026-09-03",
       "note": "THE LEGS, IN THE POSITION HE ACTUALLY FALLS IN. Shot two of the opening, between the wide and the figure, so the first three shots are one instant at three sizes. NOT DRAWN FROM A DESCRIPTION. The region of 1-0-C-v2 from the shorts hem down to both shoes was cropped out and redrawn sharp at full size, single reference, which is why it matches by construction rather than by resemblance: same knee bend, same near foot rolled onto the outside edge of the shoe, same far foot planted, same thin flat heeled shoes. His hand hangs into the left of the frame because it is inside the crop. SUPERSEDES 1-0-B-v1, which had him mid stride in modern trainers and could not sit beside the man it was supposed to belong to. The ground is even cream corner to corner: the two frames before it came back with a warm vignette, and asking for the flat ground in the prompt fixed it."
+    },
+    {
+      "file": "BB_C_1/1-5-v3.png",
+      "kind": "keyframe",
+      "scene": "1",
+      "shot": "1.10",
+      "title": "Manan walks in",
+      "status": "accepted",
+      "date": "2026-09-03",
+      "note": "MANAN WALKS IN, AND WHAT HE WALKS IN ON IS THE COLLAPSE. The boy steps into the drawn world beside the runner, magnifying glass up. The film's first crossing of its two worlds: anything real is a photograph, anything thought is a pencil drawing, and here they stand in one frame on one ground line, with the boy the taller of the two so he is the subject and the drawing is the thing being looked at. SUPERSEDES 1-5-v1, which had the runner mid sprint. magnifying-glass.md section 4: every inspection happens to ONE body in ONE pose, 1-6-COLLAPSE-v1, and a different runner in a different pose reads as a different scene however good the drawing is. BUILT FROM APPROVED MATERIAL, NOT FROM WORDS. The collapse was cut out of 1-6-COLLAPSE-v1 and composited onto the plate, and that composite was the single reference for the 2K render, so neither the boy nor the runner was invented."
+    },
+    {
+      "file": "BB_C_1/1-6-v3.png",
+      "kind": "keyframe",
+      "scene": "1",
+      "shot": "1.11",
+      "title": "He turns to us",
+      "status": "accepted",
+      "date": "2026-09-03",
+      "note": "HE TURNS TO US. Pushed in, and the drawing behind him is the SAME picture nearer: the head and shoulders of 1-6-COLLAPSE-v1, head tipped back, face up, mouth open. He is inspecting one image at two distances, which is what makes 1.10 and 1.11 one action rather than two shots. The drawing is pale and much fainter than he is, so the drawn world recedes exactly as the real one takes over. SUPERSEDES 1-6-v1, which carried an unrelated profile head of the old man. Same method as 1-5-v3: composite first, then render from that composite as the single reference."
     }
   ],
   "event": "Breakthrough Junior Challenge 2026",
-  "site_version": 203,
+  "site_version": 204,
   "footage": [
     {
       "name": "Key catch",
