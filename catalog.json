@@ -2955,10 +2955,40 @@
       "status": "accepted",
       "date": "2026-09-03",
       "note": "INSPECTION TWO. Glass on the camera lens, per 1.71: large and close, no shadow on the paper, the drawing seen through it and around it. His face arrives almost at the viewer, eyes rolled up and unfocused, jaw slack, every hatching stroke and the grain of the graphite readable at that size. This is the evidence Manan is examining: a man with nothing left. Hold on it, because the next thing the film shows is the same man sprinting."
+    },
+    {
+      "file": "BB_C_1/1-7-RECOVERY-v5.png",
+      "kind": "keyframe",
+      "scene": "1",
+      "shot": "1.90",
+      "title": "The recovery",
+      "status": "accepted",
+      "date": "2026-09-03",
+      "note": "THE INSTANT BETWEEN FALLING AND RUNNING. He has caught his balance and come upright, one foot ahead of the other, arms away from his sides, and his head is up and looking down the road. The face is the whole point: the empty upward stare of the collapse has gone and been replaced by recognition, mouth closed with one corner lifted. He has seen the finish and understood he is going to reach it. He has not started running yet."
+    },
+    {
+      "file": "BB_C_1/1-7-RECOVERY-OPEN-v1.png",
+      "kind": "keyframe",
+      "scene": "1",
+      "shot": "1.91",
+      "title": "The leg opens, and the light starts",
+      "status": "accepted",
+      "date": "2026-09-03",
+      "note": "The same pose with his near leg drawn open: the skin transparent as tracing paper and the muscular structure showing through, and in the belly of the calf a small fierce point of white light with rays pushing out through the fibres. This is the FIRST SPARK, not the blaze. IT IS DRAWN INTO THE FRAME, which matters: per modules/magnifying-glass.md the glass only ever enlarges what is already there, so the light has to exist on the paper before any lens goes near it."
+    },
+    {
+      "file": "BB_C_1/1-7-RECOVERY-GLASS-v2.png",
+      "kind": "keyframe",
+      "scene": "1",
+      "shot": "1.92",
+      "title": "The spark, through the glass",
+      "status": "accepted",
+      "date": "2026-09-03",
+      "note": "INSPECTION FIVE, AND THE DOORWAY. The glass is on the camera lens as always, and it simply makes the open calf larger: the same fibres, the same tendon, the same spark, only vast, with the rays pushing out through the graphite and bowing toward the brass. Nothing new inside the lens. This is the last inspection in the film. After it the glass is gone and the release takes the whole frame: the light travels up through him muscle by muscle, and it is not new fuel, it was there the whole time and somebody has just decided to open it."
     }
   ],
   "event": "Breakthrough Junior Challenge 2026",
-  "site_version": 196,
+  "site_version": 197,
   "footage": [
     {
       "name": "Key catch",

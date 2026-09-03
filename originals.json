@@ -1108,5 +1108,23 @@
     "sha256": "84cf74493288afd9a06972d766d8500542d472cc515ebffab065de777b2f60d6",
     "path": "BB_C_1/1-6-COLLAPSE-GLASS-v1.png",
     "url": "https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIGINALS/main/BB_C_1/1-6-COLLAPSE-GLASS-v1.png"
+  },
+  "1-7-RECOVERY-v5.png": {
+    "bytes": 1519016,
+    "sha256": "337d161ee1f34d59397afe42ab15adb09b8f47dd0c586aa7aba5661d5210e772",
+    "path": "BB_C_1/1-7-RECOVERY-v5.png",
+    "url": "https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIGINALS/main/BB_C_1/1-7-RECOVERY-v5.png"
+  },
+  "1-7-RECOVERY-OPEN-v1.png": {
+    "bytes": 1591555,
+    "sha256": "63686315ef1e5bb8a93bb0a1240de55614a41054e83eac5dd1dba6736d19859d",
+    "path": "BB_C_1/1-7-RECOVERY-OPEN-v1.png",
+    "url": "https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIGINALS/main/BB_C_1/1-7-RECOVERY-OPEN-v1.png"
+  },
+  "1-7-RECOVERY-GLASS-v2.png": {
+    "bytes": 2040126,
+    "sha256": "01d6e01de338a7a6442084d370900f5ae36cad75619bbdc1510c418cded4271e",
+    "path": "BB_C_1/1-7-RECOVERY-GLASS-v2.png",
+    "url": "https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIGINALS/main/BB_C_1/1-7-RECOVERY-GLASS-v2.png"
   }
 }
