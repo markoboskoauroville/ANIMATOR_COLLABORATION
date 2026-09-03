@@ -2935,10 +2935,30 @@
       "status": "accepted",
       "date": "2026-09-03",
       "note": "THE GLASS IS ON THE CAMERA LENS, NOT ON THE PAPER. That is the rule this frame establishes and every inspection frame follows it: imagine the magnifying glass held immediately in front of the lens that is shooting the shot. So it is large and close, slightly soft at the rim from being that near, it casts NO shadow on the drawing because it is not touching it, and the world is seen through it and around it. Inside, the distant banner arrives almost at the viewer, F I N filling the circle, bowing outward toward the brass with a refracted fringe at the very edge. There is only ever ONE banner: the lens shows what is already there, made larger. Built in stages, which is what finally made it work: crop the real frame, redraw that crop sharp in the same hand, put the glass on it, then compose."
+    },
+    {
+      "file": "BB_C_1/1-6-COLLAPSE-v1.png",
+      "kind": "keyframe",
+      "scene": "1",
+      "shot": "1.80",
+      "title": "He goes down",
+      "status": "accepted",
+      "date": "2026-09-03",
+      "note": "The collapse. Caught mid fall, leaning back, one arm hanging, both legs sliding out from under him, head tipped up and mouth open. He is empty, and everybody watching knows what empty looks like. This is the frame the whole film has to earn, because what happens thirty seconds later contradicts it."
+    },
+    {
+      "file": "BB_C_1/1-6-COLLAPSE-GLASS-v1.png",
+      "kind": "keyframe",
+      "scene": "1",
+      "shot": "1.81",
+      "title": "His face, through the glass",
+      "status": "accepted",
+      "date": "2026-09-03",
+      "note": "INSPECTION TWO. Glass on the camera lens, per 1.71: large and close, no shadow on the paper, the drawing seen through it and around it. His face arrives almost at the viewer, eyes rolled up and unfocused, jaw slack, every hatching stroke and the grain of the graphite readable at that size. This is the evidence Manan is examining: a man with nothing left. Hold on it, because the next thing the film shows is the same man sprinting."
     }
   ],
   "event": "Breakthrough Junior Challenge 2026",
-  "site_version": 195,
+  "site_version": 196,
   "footage": [
     {
       "name": "Key catch",
