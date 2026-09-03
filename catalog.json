@@ -2737,9 +2737,9 @@
       "scene": "9",
       "shot": "9.1",
       "title": "The vortex, up",
-      "status": "proposal",
+      "status": "superseded",
       "date": "2026-09-02",
-      "note": "The cloud vortex he is drawn up through after his eyes close. Square aspect, so it is a stand in until the widescreen version lands, and it is the reference the widescreen one is built from because the drawing itself is right.",
+      "note": "REJECTED FOR ITS ASPECT RATIO ONLY. Square, 2048 x 2048, where the film is 16:9. The drawing itself was right and this frame became the reference v3 was built from, so only the framing changed. Kept because a rejected take is not rubbish.",
       "refs": [
         "https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIGINALS/main/BB_C_9/9-1-GANESHA-v1.png"
       ],
@@ -2786,10 +2786,38 @@
         "why": "He rose to a solo and returns with a pulse under him. The heart he found in the house comes home with him, which is the whole point of a road back."
       },
       "meaning": "THE WAY HOME. He has what he came for and the film has to get him back without inventing a new idea, so it uses the shape it already built. Rising was the loss of ground; falling is the return of it. The key falls beside him rather than in his hand, because the catch has to be his own action and not a delivery."
+    },
+    {
+      "file": "BB_C_9/9-1-VORTEX-UP-v3.png",
+      "kind": "keyframe",
+      "scene": "9",
+      "shot": "9.1",
+      "title": "The vortex, up",
+      "status": "proposal",
+      "date": "2026-09-03",
+      "note": "THE ACCEPTED TAKE. The cloud vortex he is drawn up through after his eyes close. Widescreen, 2752 x 1536, throat centred, zero coloured pixels. Third attempt: v1 had the drawing right in a square frame, v2 recomposed into a curling wave seen from the side, and v3 kept v1 as its reference so only the framing changed.",
+      "refs": [
+        "https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIGINALS/main/BB_C_9/9-1-VORTEX-UP-v1.png"
+      ],
+      "prompt": "The same drawing as the reference, the same soft cloud vortex, the same warm cream paper, the same grey graphite, the same smudged side-of-the-pencil strokes and dissolving edges. Do not change the look and do not redraw it.\n\nOnly the framing changes. The picture is WIDESCREEN, much wider than it is tall, and the spiral is CENTRED: its small dark throat sits in the middle of the frame, both across and down. The cloud opens outward from that throat in every direction and turns as it goes, reaching toward the left and right edges, with bare paper in the four corners.\n\nWe are looking straight into the throat, the way you look down the middle of a whirlpool. The turn is still asymmetrical, so it reads as a spiral rather than a ring.\n\nGrey graphite only, no colour anywhere. No keys of any kind, no person, no figure, no hands, no animal, no face, no lettering, no numbers, no border, no architecture, no floor, no objects of any kind carried in the cloud.",
+      "dna": {
+        "phase": "Phase 6 of 15, THE VORTEX UP. The first frame after his eyes close and the first of the second half. Everything before arrives by frottage; everything after is travelled through, and there is no cut from here to the end.",
+        "journey": "CROSSING THE THRESHOLD. Not the door, the line under it. He spends the first half arguing with the limit and here he stops arguing and goes through. Point of no return, which is why the film never returns him to the bicycle.",
+        "element": "WATER as cloud, and THRESHOLD. WINNING_FILM calls water the only element that is both the danger and the cure, which is the ambiguity this shot needs: it takes him somewhere he did not ask to go and it is the only way he gets there. Cloud is water with the weight taken out, which is why it lifts rather than drowns.",
+        "symbol": "The turn itself. A spiral says a thing is being drawn toward a centre rather than travelling in a line, and the same shape turns up in shells, storms and seed heads, so nobody has to be taught it. Never explained and never mentioned.",
+        "composition": "THE SPIRAL, centred. Chosen because it moves the eye rather than merely placing things, and moving the eye inward is the literal action of the shot. The throat is the tight end and the cloud wraps around it, so the audience travels the frame the way Manan travels the vortex. The film does not repeat this: the corridors are one point perspective and the credits are symmetrical, because a structure repeated becomes wallpaper.",
+        "balance": "Centred throat with the cloud mass thrown to the right and trailing off left, so it turns rather than sits. Squint and the dark weight is off axis: the picture leans, and the audience feels that without knowing why. A symmetrical version would read calm and official, which is wrong for the moment the floor goes out."
+      },
+      "suno": {
+        "scene": "instrumental, no vocals, no percussion. slow ambient raga drone in a single unhurried key, tanpura and a low sustained cello holding one note underneath. weightless, unresolved. nothing arrives and nothing lands. 60 bpm, feels slower.",
+        "shot": "the same drone, and above it ONE bansuri flute alone. solo, breathy, unaccompanied, long phrases with audible breath between them, rising and circling rather than going anywhere. no other instrument enters. no percussion at all.",
+        "why": "AIR, because this is cloud, and breath instruments are what air sounds like. The bansuri plays alone because a solo has no ground under it, which is the feeling of the floor going out. Percussion stays out until the heart hall, so the first heartbeat in the film is a heart."
+      },
+      "meaning": "THE DOOR OUT OF THE WORLD. The first frame of the second half, and it does two things at once: it convinces the audience the film has changed, and it explains nothing.\n\nIt carries no information on purpose. Nothing to read, no object, no symbol, nothing that could be a clue. Four earlier versions built the vortex out of keys and every one failed for the same reason: a tunnel made of keys tells the audience what he is looking for before he knows it himself, so the film would say the word long before he reaches the key door.\n\nEmotionally it is gentle. Not a storm, and he is not in danger. He is being taken, not wrecked, and that softness is what makes the house of the body afterwards read as somewhere he belongs rather than somewhere he has crashed.\n\nIt moves the film forward by changing its grammar, and the same vortex returns near the end going down. Rising into it and falling out of it is the shape of the whole second half."
     }
   ],
   "event": "Breakthrough Junior Challenge 2026",
-  "site_version": 167,
+  "site_version": 168,
   "footage": [
     {
       "name": "Key catch",
