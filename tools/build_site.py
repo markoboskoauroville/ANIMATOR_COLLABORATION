@@ -1921,12 +1921,25 @@ for _i, e in enumerate(_cards):
         for _o in _rej:
             _ob = os.path.basename(_o['file']).rsplit('.', 1)[0].replace(' ', '_')
             _why = (_o.get('note') or '').strip()
+            # A REJECTED TAKE CARRIES ITS OWN PROMPT. When the prompt changed
+            # between takes, both are on the page, and the difference between
+            # them is the most useful thing on the card: what was tried, what it
+            # produced, and what fixed it. Without this the same wrong prompt
+            # gets run again in three weeks by somebody who has only the final
+            # picture and no idea what was already ruled out.
+            _op = (_o.get('prompt') or '').strip()
+            _same = _op and _op == (e.get('prompt') or '').strip()
             _r.append('<figure><span class=rejtag>REJECTED TAKE</span>'
                       '<a href="%s" target=_blank rel=noopener><img src="../%s" alt="" '
-                      'loading=lazy></a><figcaption>%s<br>%s</figcaption></figure>'
+                      'loading=lazy></a><figcaption>%s<br>%s%s</figcaption></figure>'
                       % (full_link(_o['file'], '../'), small(_o['file']),
                          html.escape(os.path.basename(_o['file'])),
-                         html.escape(_why[:150] + ('...' if len(_why) > 150 else ''))))
+                         html.escape(_why[:150] + ('...' if len(_why) > 150 else '')),
+                         ('<br><b>Same prompt as the accepted take.</b>' if _same else
+                          ('<br><details><summary style="cursor:pointer;color:var(--gold)">'
+                           'its own prompt</summary><pre style="font-size:11px">%s</pre></details>'
+                           % html.escape(_op)) if _op else
+                          '<br>Prompt not recorded.')))
         _r.append('</div>')
         cd.append(idcard_block('Rejected takes, kept on purpose',
                   ''.join(_r) + '<p style="color:var(--dim);margin:11px 0 0">A rejected take is '
