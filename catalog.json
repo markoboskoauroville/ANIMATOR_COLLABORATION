@@ -473,7 +473,6 @@
       "status": "proposal",
       "date": "2026-08-28",
       "note": "THE SAME SHOT WITH THE REAL MANAN. The runner behind him is not a new drawing, it is the previous shot zoomed in and faded back, so the push-in is continuous and the contrast falls as we move closer. Real keyed footage, graded to the paper. Choose between this and the generated one beside it. ON THE SCENE AND BREAKDOWN PAGES ONLY, not on the front page storyboard: the generated version stands in there because it reads finished at a glance, and this one is the working material.",
-      "storyboard": "hide",
       "flow_pos": 1,
       "dna": {
         "phase": "Phase 2 of 15, THE RUNNER.",
@@ -2915,12 +2914,11 @@
       "title": "The same frame, inspected",
       "status": "accepted",
       "date": "2026-09-03",
-      "note": "THE INSPECTION PRINCIPLE, and it applies to every approved frame from here. Take the frame as it already is, change nothing in it, and lay ONE photorealistic magnifying glass over it with the handle running off the bottom edge so it reads as held from outside the shot. Only what sits BEHIND the lens grows: four or five times up, filling the circle with almost no empty glass, every pencil stroke readable. The lens distorts like real glass, the lines bowing toward the rim with a refracted fringe at the edge, and the magnified image does not line up with the drawing outside it because the glass displaces what is behind it. NEVER a second glass, never a small figure beside a big one, and never a redrawn subject. Each inspection frame sits immediately after the frame it inspects. Sits with 1-4-D-v3 on the scene and breakdown pages rather than on the front page storyboard, because it is built from that frame and a pair split across two pages is not a pair.",
-      "storyboard": "hide"
+      "note": "THE INSPECTION PRINCIPLE, and it applies to every approved frame from here. Take the frame as it already is, change nothing in it, and lay ONE photorealistic magnifying glass over it with the handle running off the bottom edge so it reads as held from outside the shot. Only what sits BEHIND the lens grows: four or five times up, filling the circle with almost no empty glass, every pencil stroke readable. The lens distorts like real glass, the lines bowing toward the rim with a refracted fringe at the edge, and the magnified image does not line up with the drawing outside it because the glass displaces what is behind it. NEVER a second glass, never a small figure beside a big one, and never a redrawn subject. Each inspection frame sits immediately after the frame it inspects. Sits with 1-4-D-v3 on the scene and breakdown pages rather than on the front page storyboard, because it is built from that frame and a pair split across two pages is not a pair."
     }
   ],
   "event": "Breakthrough Junior Challenge 2026",
-  "site_version": 193,
+  "site_version": 194,
   "footage": [
     {
       "name": "Key catch",
