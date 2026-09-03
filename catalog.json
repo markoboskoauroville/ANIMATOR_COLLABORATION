@@ -2447,8 +2447,21 @@
       "dna": {
         "phase": "Phase 8 of 15, THE HOUSE OF THE BODY.",
         "journey": "THE ROAD OF TESTS. Three wrong rooms, each saying no, none of them the thing that stopped him.",
-        "element": "EARTH and the body. Walls you could put a hand on."
-      }
+        "element": "EARTH, the body as a building. Hand pressed clay, walls you could put a palm on.",
+        "symbol": "THE DOOR, and what a door promises. Six of them in one frame, each swelling with the shape of what waits behind it, so the audience learns to read a bump before anything asks them to. This is the frame that makes the key door work forty seconds later.",
+        "composition": "ONE POINT PERSPECTIVE, dead centre, and deliberately not the spiral used for the vortex. Every line runs to the bright opening at the end, which is where he is going and what he has not found yet. The book calls symmetry calm and official; here it is used for a house that has been running smoothly for fourteen years without him.",
+        "balance": "Almost perfectly symmetrical, which is the point. The only asymmetry is the one open door near the vanishing point, and because a small counterweight far out carries real weight, that gap holds the whole frame."
+      },
+      "refs": [
+        "https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIGINALS/main/BB_C_8/8-0-A-v4.png"
+      ],
+      "prompt": "The same corridor as the reference, the same warm cream paper and grey pencil, the same vaulted ceiling and rows of pale clay doors receding to a small bright opening at the far end.\n\nOne thing is different. Every oval name plaque with writing on it has gone. In place of each, the clay of the door swells outward into a raised shape, moulded in the surface the way a tree is pressed into the wall of an old clay house, catching the light along its upper edge.\n\nNearest left, a bundle of muscle fibres. Nearest right, a pair of lungs. Beyond them a heart and a coil of gut. No lettering anywhere.",
+      "suno": {
+        "scene": "instrumental, no vocals. low sustained drone, one unhurried key, a slow plucked bass note every few bars. patient, warm, nothing hurrying. 60 bpm.",
+        "shot": "the drone continues and a low frame drum enters, soft, walking pace, one beat per step. no melody yet. no flute. the room is bigger than the music.",
+        "why": "Root and earth: skin and wood. The walking pulse is the first percussion since the threshold, and it is deliberately not the heartbeat, which is saved for the heart hall."
+      },
+      "meaning": "THE FRAME THAT TEACHES THE AUDIENCE TO READ. Nothing is explained here and everything is taught. Six doors carry six shapes and no word appears anywhere, so by the time the audience reaches a door with a key on it they already know what that means and nobody had to tell them.\n\nThe written plaques were removed for the reason in WINNING_FILM: a word excludes anybody who does not read English and does not survive translation. A shape raised in clay is read by the body.\n\nIt also establishes the house as ordinary and working. This is not a ruin and not a nightmare. The floor is worn down the middle by long use, and the long use is his own."
     },
     {
       "file": "BB_C_8/8-3-MUSCLE-v1.png",
@@ -2527,8 +2540,22 @@
       "dna": {
         "phase": "Phase 9 of 15, HE SEES THE KEY, AND GOES IN.",
         "journey": "APPROACH TO THE INMOST CAVE. He can read the door, and he knows.",
-        "element": "THRESHOLD, the one the book says films waste."
-      }
+        "element": "THRESHOLD. Not the door, the line under it, and the last one he crosses alone.",
+        "symbol": "THE KEY, at the only moment in the film it is not gold. It is the door telling the truth about itself in the only language this house has.",
+        "composition": "FULL FRAME and near symmetrical: one subject filling the picture, no other arrangement needed. The film has been in one point perspective for three rooms and it stops moving here. Stillness after travel is what makes an arrival read as an arrival.",
+        "balance": "Centred and heavy at the bottom, a pyramid, which the book gives for anything that must feel unshakeable. This door is not going to open by accident."
+      },
+      "refs": [
+        "https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIGINALS/main/BB_C_18/18-0-A-v5.png",
+        "https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIGINALS/main/reference/OBJECT_SHEET_KEY-v2.png"
+      ],
+      "prompt": "The same pale clay doorway as the first reference, same paper, same pencil, same soft arch and worn floor and small oval handle.\n\nThe plaque and its words are gone completely. In their place the clay swells outward into one large raised shape running the whole height of the door, from just above the floor to the top of the arch: the key from the second reference, seen from the side. Moulded in the same white clay as the door, part of it and not attached to it, no paint, no colour, upper edges catching the light.",
+      "suno": {
+        "scene": "instrumental, no vocals. the low drone thins to almost nothing, one held note.",
+        "shot": "everything drops away except a single sustained note and room tone. no percussion, no melody, no movement. a very long decay, then near silence.",
+        "why": "SPACE, which the book says is what is left when the others stop, and should not be filled. The ordeal is comprehension, so the loudest thing here is the absence of everything else."
+      },
+      "meaning": "THE CONFIRMATION, NOT THE SURPRISE. By now the audience can read the doors, so this one does not startle them, it satisfies them. That is a better feeling and a rarer one.\n\nCOACH BRAIN came off the door for this. A name would have told us who; a key tells us what, and what is the thing he came for. He does not know yet that the two are the same.\n\nIt is also the last frame of the approach. Everything before it is searching and everything after it is meeting."
     },
     {
       "file": "BB_C_19/19-0-A-v2.png",
@@ -2762,7 +2789,7 @@
     }
   ],
   "event": "Breakthrough Junior Challenge 2026",
-  "site_version": 166,
+  "site_version": 167,
   "footage": [
     {
       "name": "Key catch",
