@@ -1807,6 +1807,16 @@
           "name": "The footage, with alpha",
           "url": "https://drive.google.com/drive/folders/1YGb_z7OCrLSUX7JagNpynXbu1fAK2wNu",
           "note": "The whole take with a real alpha channel, ready to composite. The still above is a mockup keyed by luma and it is not good enough to finish with: the hood picks up a rough matte where the fabric shadow meets the black. Pull the frames you need from this footage instead."
+        },
+        {
+          "name": "The catch, take two",
+          "url": "../clips/key-catch-2-loop.mp4",
+          "note": "The second take, 2.9.2026, whole and looping at 480 wide and silent. Transcoded from the 1.1 GB ProRes master; the master itself stays on Drive and is linked, never copied here."
+        },
+        {
+          "name": "Take two, ProRes master",
+          "url": "https://drive.google.com/file/d/1HkTXJx_yDQ2k3grS7m7rI3gzeV7Ixztr/view",
+          "note": "3840 x 2160 ProRes, 33.4 seconds, on Drive."
         }
       ],
       "storyboard": "hide",
@@ -1815,7 +1825,8 @@
         "phase": "Phase 14 of 15, HE CATCHES IT.",
         "journey": "RESURRECTION. His hand closes on a real object and the change is proved.",
         "element": "THE HAND, closing. The most complete sentence a film can make without words."
-      }
+      },
+      "note": "TWO TAKES EXIST. Take one loops in the sequence on the front page; take two is beside it here."
     },
     {
       "kind": "keyframe",
@@ -2847,7 +2858,7 @@
     }
   ],
   "event": "Breakthrough Junior Challenge 2026",
-  "site_version": 180,
+  "site_version": 181,
   "footage": [
     {
       "name": "Key catch",
