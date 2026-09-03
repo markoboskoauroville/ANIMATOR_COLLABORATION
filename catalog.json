@@ -728,7 +728,7 @@
       "why": "The 1923 answer Manan arrives with. Blackboard and white chalk on purpose: Coach Brain answers on a whiteboard in black marker, and the reversal is felt before the argument is followed.",
       "audio": [
         {
-          "file": "reference/voice/SYNTESISED_MANAN_OLD_THEORY.wav",
+          "file": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/reference/voice/SYNTESISED_MANAN_OLD_THEORY.wav",
           "name": "Manan, the old theory",
           "secs": 23.16
         }
@@ -767,7 +767,7 @@
       "why": "THE INVERSION. Same layout, same three lines, same instrument, every value reversed. The gauge needle moving from EMPTY to FULL says the fuel was always there without a word.",
       "audio": [
         {
-          "file": "reference/voice/SYNTESISED_BRAIN_NEW_THEORY.wav",
+          "file": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/reference/voice/SYNTESISED_BRAIN_NEW_THEORY.wav",
           "name": "Coach Brain, the new theory",
           "secs": 34.96
         }
@@ -792,7 +792,7 @@
       "why": "NO LONGER THE ENDCARD. Changed 31.8.2026. Manan says the line while we are flying, the move is the same as the rise through the vortex, and we go through into white. The key follows it, then white again, then black. The sentence is stated, then permission is handed over, then nothing.",
       "audio": [
         {
-          "file": "reference/voice/THE_LIMIT_IS_A_SETTING_NOT_A_WALL.wav",
+          "file": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/reference/voice/THE_LIMIT_IS_A_SETTING_NOT_A_WALL.wav",
           "name": "Manan, spoken during the fly through",
           "secs": 8.28
         }
@@ -2909,7 +2909,7 @@
     }
   ],
   "event": "Breakthrough Junior Challenge 2026",
-  "site_version": 186,
+  "site_version": 187,
   "footage": [
     {
       "name": "Key catch",
@@ -3052,7 +3052,7 @@
         "speaker": "COACH",
         "line": "Ah. There you are. I was expecting you.",
         "direction": "Warm and unhurried, pleased, the tone of somebody who has been waiting a while and is glad you finally came.",
-        "audio": "voice/scene19/19-A2-COACH.mp3",
+        "audio": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/scene19/19-A2-COACH.mp3",
         "sec": 3.34
       }
     ],
@@ -3061,28 +3061,28 @@
         "speaker": "COACH",
         "line": "Before we start. Lift your right arm for me.",
         "direction": "Easy and matter of fact, an instruction given without ceremony.",
-        "audio": "voice/scene19/19-A3a-COACH.mp3",
+        "audio": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/scene19/19-A3a-COACH.mp3",
         "sec": 2.98
       },
       {
         "speaker": "MANAN",
         "line": "I'm trying.",
         "direction": "A boy's voice, puzzled, quiet, testing something that should be simple.",
-        "audio": "voice/scene19/19-A3b-MANAN.mp3",
+        "audio": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/scene19/19-A3b-MANAN.mp3",
         "sec": 0.94
       },
       {
         "speaker": "COACH",
         "line": "I know.",
         "direction": "Two words, calm, completely unsurprised.",
-        "audio": "voice/scene19/19-A3c-COACH.mp3",
+        "audio": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/scene19/19-A3c-COACH.mp3",
         "sec": 0.74
       },
       {
         "speaker": "MANAN",
         "line": "I can't. Why can't I move it?",
         "direction": "Alarmed but not panicking, genuinely asking.",
-        "audio": "voice/scene19/19-A3d-MANAN.mp3",
+        "audio": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/scene19/19-A3d-MANAN.mp3",
         "sec": 2.71
       }
     ],
@@ -3091,7 +3091,7 @@
         "speaker": "COACH",
         "line": "Try now.",
         "direction": "Light, almost offhand, not looking up.",
-        "audio": "voice/scene19/19-A4-COACH.mp3",
+        "audio": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/scene19/19-A4-COACH.mp3",
         "sec": 0.94
       }
     ],
@@ -3100,14 +3100,14 @@
         "speaker": "MANAN",
         "line": "It's back. It just came back.",
         "direction": "Relief and disbelief together, quiet.",
-        "audio": "voice/scene19/19-A5a-MANAN.mp3",
+        "audio": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/scene19/19-A5a-MANAN.mp3",
         "sec": 2.26
       },
       {
         "speaker": "COACH",
         "line": "It never went anywhere. I simply stopped signing for it.",
         "direction": "Dry and gentle, explaining something ordinary.",
-        "audio": "voice/scene19/19-A5b-COACH.mp3",
+        "audio": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/scene19/19-A5b-COACH.mp3",
         "sec": 3.79
       }
     ],
@@ -3116,14 +3116,14 @@
         "speaker": "MANAN",
         "line": "That was you. It was never my arm at all.",
         "direction": "Working it out aloud, slowly.",
-        "audio": "voice/scene19/19-A6a-MANAN.mp3",
+        "audio": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/scene19/19-A6a-MANAN.mp3",
         "sec": 3.43
       },
       {
         "speaker": "COACH",
         "line": "It is always your arm. The permission is mine.",
         "direction": "Kind and precise, correcting gently.",
-        "audio": "voice/scene19/19-A6b-COACH.mp3",
+        "audio": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/scene19/19-A6b-COACH.mp3",
         "sec": 3.55
       }
     ],
@@ -3132,28 +3132,28 @@
         "speaker": "MANAN",
         "line": "But I was taught it works the other way. Nineteen twenty three. You run, the muscle burns its fuel, the fuel runs out, and the body stops. The tank is empty.",
         "direction": "Reciting something learned, confident at first and losing certainty toward the end.",
-        "audio": "voice/scene19/19-A7a-MANAN.mp3",
+        "audio": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/scene19/19-A7a-MANAN.mp3",
         "sec": 10.58
       },
       {
         "speaker": "COACH",
         "line": "And when you collapsed on that road. Was the tank empty?",
         "direction": "A question asked softly, already knowing the answer.",
-        "audio": "voice/scene19/19-A7b-COACH.mp3",
+        "audio": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/scene19/19-A7b-COACH.mp3",
         "sec": 3.82
       },
       {
         "speaker": "MANAN",
         "line": "No. There was some left.",
         "direction": "Quiet, the moment of admitting it.",
-        "audio": "voice/scene19/19-A7c-MANAN.mp3",
+        "audio": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/scene19/19-A7c-MANAN.mp3",
         "sec": 2.14
       },
       {
         "speaker": "COACH",
         "line": "There is always some left.",
         "direction": "Slow and deliberate. The most important line in the film. Let it sit.",
-        "audio": "voice/scene19/19-A7d-COACH.mp3",
+        "audio": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/scene19/19-A7d-COACH.mp3",
         "sec": 2.14
       }
     ],
@@ -3162,35 +3162,35 @@
         "speaker": "COACH",
         "line": "I read the heat, the distance, how this went last time, and I decide how much you may have. Then I take the rest away, long before anything is actually in danger.",
         "direction": "Teaching voice, calm and generous, describing something protective rather than sinister.",
-        "audio": "voice/scene19/19-A8a-COACH.mp3",
+        "audio": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/scene19/19-A8a-COACH.mp3",
         "sec": 11.18
       },
       {
         "speaker": "MANAN",
         "line": "So the wall...",
         "direction": "Half a sentence, thinking, trailing off.",
-        "audio": "voice/scene19/19-A8b-MANAN.mp3",
+        "audio": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/scene19/19-A8b-MANAN.mp3",
         "sec": 2.47
       },
       {
         "speaker": "COACH",
         "line": "Is a number I chose. Carefully. To keep you alive.",
         "direction": "Firm and warm, three short pieces, each landed.",
-        "audio": "voice/scene19/19-A8c-COACH.mp3",
+        "audio": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/scene19/19-A8c-COACH.mp3",
         "sec": 3.43
       },
       {
         "speaker": "MANAN",
         "line": "Then it can be a different number.",
         "direction": "Quiet realisation, the boy arriving at it himself.",
-        "audio": "voice/scene19/19-A8d-MANAN.mp3",
+        "audio": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/scene19/19-A8d-MANAN.mp3",
         "sec": 2.02
       },
       {
         "speaker": "COACH",
         "line": "Now you understand what I do.",
         "direction": "Pleased, warm, the end of the scene.",
-        "audio": "voice/scene19/19-A8e-COACH.mp3",
+        "audio": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/scene19/19-A8e-COACH.mp3",
         "sec": 2.06
       }
     ]
@@ -3200,61 +3200,61 @@
       "line": "1923, A.V. Hill puts runners on a treadmill and measures everything they do.",
       "takes": [
         {
-          "file": "voice/manan/REC00003-take3.mp3",
+          "file": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/manan/REC00003-take3.mp3",
           "name": "REC00003-take3",
           "sec": 15.55,
           "text": "1923, A.V. Hill puts runners on a treadmill and measures everything they do. His answer is simple: fatigue is in the muscle."
         },
         {
-          "file": "voice/manan/REC00004-take2.mp3",
+          "file": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/manan/REC00004-take2.mp3",
           "name": "REC00004-take2",
           "sec": 13.27,
           "text": "Hill puts runners on a treadmill and measures everything they do. His answer is simple: fatigue is in the muscle."
         },
         {
-          "file": "voice/manan/REC00002-take2.mp3",
+          "file": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/manan/REC00002-take2.mp3",
           "name": "REC00002-take2",
           "sec": 12.91,
           "text": "1923, puts runners on a treadmill and measures everything they do. His answer is simple: fatigue is in the muscle. Fatigue is in the muscle."
         },
         {
-          "file": "voice/manan/REC00002-take6.mp3",
+          "file": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/manan/REC00002-take6.mp3",
           "name": "REC00002-take6",
           "sec": 12.29,
           "text": "923. 1923. Amy puts runners on a treadmill and measures everything they do. His answer is simple: fatigue is in the muscle. 1923."
         },
         {
-          "file": "voice/manan/REC00002-take7.mp3",
+          "file": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/manan/REC00002-take7.mp3",
           "name": "REC00002-take7",
           "sec": 11.98,
           "text": "1923, A.V. Hill puts runners on a treadmill and measures everything they do. His answer is simple: fatigue is in the muscle."
         },
         {
-          "file": "voice/manan/REC00002-take9.mp3",
+          "file": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/manan/REC00002-take9.mp3",
           "name": "REC00002-take9",
           "sec": 11.26,
           "text": "Hill puts runners on a treadmill and measures everything they do. His answer is simple: fatigue is in the muscle."
         },
         {
-          "file": "voice/manan/REC00001-take2.mp3",
+          "file": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/manan/REC00001-take2.mp3",
           "name": "REC00001-take2",
           "sec": 4.66,
           "text": "Hill puts runners on a treadmill and measures everything they do."
         },
         {
-          "file": "voice/manan/REC00001-take1.mp3",
+          "file": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/manan/REC00001-take1.mp3",
           "name": "REC00001-take1",
           "sec": 2.33,
           "text": "923."
         },
         {
-          "file": "voice/manan/REC00004-take1.mp3",
+          "file": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/manan/REC00004-take1.mp3",
           "name": "REC00004-take1",
           "sec": 2.16,
           "text": "1923."
         },
         {
-          "file": "voice/manan/REC00002-take8.mp3",
+          "file": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/manan/REC00002-take8.mp3",
           "name": "REC00002-take8",
           "sec": 2.11,
           "text": "1923."
@@ -3265,37 +3265,37 @@
       "line": "Fatigue is in the muscle.",
       "takes": [
         {
-          "file": "voice/manan/REC00002-take4.mp3",
+          "file": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/manan/REC00002-take4.mp3",
           "name": "REC00002-take4",
           "sec": 6.12,
           "text": "Fatigue is in the muscle. Fatigue is in the muscle."
         },
         {
-          "file": "voice/manan/REC00002-take5.mp3",
+          "file": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/manan/REC00002-take5.mp3",
           "name": "REC00002-take5",
           "sec": 5.88,
           "text": "Fatigue. Fatigue. Fatigue. Fatigue is in the muscle."
         },
         {
-          "file": "voice/manan/REC00002-take1.mp3",
+          "file": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/manan/REC00002-take1.mp3",
           "name": "REC00002-take1",
           "sec": 5.14,
           "text": "One minute, I'm going to make you read till the fatigue is in the muscle."
         },
         {
-          "file": "voice/manan/REC00002-take3.mp3",
+          "file": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/manan/REC00002-take3.mp3",
           "name": "REC00002-take3",
           "sec": 2.98,
           "text": "Fatigue is in the muscle."
         },
         {
-          "file": "voice/manan/REC00003-take1.mp3",
+          "file": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/manan/REC00003-take1.mp3",
           "name": "REC00003-take1",
           "sec": 2.88,
           "text": "Fatigue is in the muscle."
         },
         {
-          "file": "voice/manan/REC00002-take13.mp3",
+          "file": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/manan/REC00002-take13.mp3",
           "name": "REC00002-take13",
           "sec": 2.42,
           "text": "Fatigue is in the muscle."
@@ -3306,43 +3306,43 @@
       "line": "You run, the muscle burns through its oxygen.",
       "takes": [
         {
-          "file": "voice/manan/REC00002-take10.mp3",
+          "file": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/manan/REC00002-take10.mp3",
           "name": "REC00002-take10",
           "sec": 31.49,
           "text": "You run, the muscle burns through its oxygen, the fuel runs out, and when Runs out, and when the tank runs out, burns through its oxygen. The run, the muscle is in the muscle. You run, the muscle burns through its oxygen. The fuel runs out, and when the tank reads empty, is in the muscle."
         },
         {
-          "file": "voice/manan/REC00002-take15.mp3",
+          "file": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/manan/REC00002-take15.mp3",
           "name": "REC00002-take15",
           "sec": 5.78,
           "text": "The muscle burns through its oxygen. The fuel runs out."
         },
         {
-          "file": "voice/manan/REC00002-take12.mp3",
+          "file": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/manan/REC00002-take12.mp3",
           "name": "REC00002-take12",
           "sec": 5.74,
           "text": "The muscle burns through its oxygen. The fuel runs out."
         },
         {
-          "file": "voice/manan/REC00002-take11.mp3",
+          "file": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/manan/REC00002-take11.mp3",
           "name": "REC00002-take11",
           "sec": 4.75,
           "text": "The muscle burns through its oxygen. The fuel runs out."
         },
         {
-          "file": "voice/manan/REC00002-take14.mp3",
+          "file": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/manan/REC00002-take14.mp3",
           "name": "REC00002-take14",
           "sec": 4.7,
           "text": "The muscle burns through its oxygen. The fuel runs out."
         },
         {
-          "file": "voice/manan/REC00003-take4.mp3",
+          "file": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/manan/REC00003-take4.mp3",
           "name": "REC00003-take4",
           "sec": 4.63,
           "text": "You run, the muscle burns through its oxygen."
         },
         {
-          "file": "voice/manan/REC00004-take3.mp3",
+          "file": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/manan/REC00004-take3.mp3",
           "name": "REC00004-take3",
           "sec": 4.22,
           "text": "You run The muscle burns through its oxygen."
@@ -3353,7 +3353,7 @@
       "line": "The fuel runs out.",
       "takes": [
         {
-          "file": "voice/manan/REC00003-take2.mp3",
+          "file": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/manan/REC00003-take2.mp3",
           "name": "REC00003-take2",
           "sec": 3.34,
           "text": "The fuel runs out."
@@ -3364,31 +3364,31 @@
       "line": "And when the tank reads empty, the body stops.",
       "takes": [
         {
-          "file": "voice/manan/REC00004-take4.mp3",
+          "file": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/manan/REC00004-take4.mp3",
           "name": "REC00004-take4",
           "sec": 10.68,
           "text": "The fuel runs out. And when the tank reads empty, the body stops."
         },
         {
-          "file": "voice/manan/REC00002-take18.mp3",
+          "file": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/manan/REC00002-take18.mp3",
           "name": "REC00002-take18",
           "sec": 10.51,
           "text": "And when the tank reads empty, the body stops. And when the tank reads empty, the body stops."
         },
         {
-          "file": "voice/manan/REC00003-take5.mp3",
+          "file": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/manan/REC00003-take5.mp3",
           "name": "REC00003-take5",
           "sec": 10.03,
           "text": "The fuel runs out, and when the tank reads empty, the body stops."
         },
         {
-          "file": "voice/manan/REC00002-take17.mp3",
+          "file": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/manan/REC00002-take17.mp3",
           "name": "REC00002-take17",
           "sec": 4.68,
           "text": "And when the tank reads empty, the body stops."
         },
         {
-          "file": "voice/manan/REC00002-take16.mp3",
+          "file": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/manan/REC00002-take16.mp3",
           "name": "REC00002-take16",
           "sec": 2.71,
           "text": "The tank reads empty."
@@ -3401,25 +3401,25 @@
       "line": "Heart rate, breath, temperature, water, distance. I read all of it, all the time.",
       "takes": [
         {
-          "file": "voice/coachbrain/CB00003-take1.mp3",
+          "file": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/coachbrain/CB00003-take1.mp3",
           "name": "CB00003-take1",
           "sec": 11.28,
           "text": "Heart rate, breath, temperature, water, distance. I read all of it, all the time."
         },
         {
-          "file": "voice/coachbrain/CB00002-take1.mp3",
+          "file": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/coachbrain/CB00002-take1.mp3",
           "name": "CB00002-take1",
           "sec": 9.31,
           "text": "Heart rate, breath, temperature, water, distance. I read all of it, all the time."
         },
         {
-          "file": "voice/coachbrain/CB00001-take2.mp3",
+          "file": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/coachbrain/CB00001-take2.mp3",
           "name": "CB00001-take2",
           "sec": 6.19,
           "text": "Heart rate, breath, temperature. Water, distance."
         },
         {
-          "file": "voice/coachbrain/CB00001-take1.mp3",
+          "file": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/coachbrain/CB00001-take1.mp3",
           "name": "CB00001-take1",
           "sec": 4.18,
           "text": "And slowly, heart rate, stop. Breath, stop."
@@ -3430,37 +3430,37 @@
       "line": "Fatigue is in the brain, not in your legs. Up here.",
       "takes": [
         {
-          "file": "voice/coachbrain/CB00003-take3.mp3",
+          "file": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/coachbrain/CB00003-take3.mp3",
           "name": "CB00003-take3",
           "sec": 12.34,
           "text": "Fatigue is in the brain. Not in your legs. Up here. And it decides long before anything is actually wrong."
         },
         {
-          "file": "voice/coachbrain/CB00002-take2.mp3",
+          "file": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/coachbrain/CB00002-take2.mp3",
           "name": "CB00002-take2",
           "sec": 8.42,
           "text": "So no, fatigue is the brain, not in your legs."
         },
         {
-          "file": "voice/coachbrain/CB00001-take3.mp3",
+          "file": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/coachbrain/CB00001-take3.mp3",
           "name": "CB00001-take3",
           "sec": 6.0,
           "text": "Fatigue is in the brain, not in your legs. Up here."
         },
         {
-          "file": "voice/coachbrain/CB00001-take5.mp3",
+          "file": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/coachbrain/CB00001-take5.mp3",
           "name": "CB00001-take5",
           "sec": 3.24,
           "text": "Not in your legs, up here."
         },
         {
-          "file": "voice/coachbrain/CB00001-take4.mp3",
+          "file": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/coachbrain/CB00001-take4.mp3",
           "name": "CB00001-take4",
           "sec": 2.81,
           "text": "Not in your legs, up here."
         },
         {
-          "file": "voice/coachbrain/CB00002-take3.mp3",
+          "file": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/coachbrain/CB00002-take3.mp3",
           "name": "CB00002-take3",
           "sec": 2.69,
           "text": "Fatigue is in the brain."
@@ -3471,13 +3471,13 @@
       "line": "It decides when to stop.",
       "takes": [
         {
-          "file": "voice/coachbrain/CB00003-take4.mp3",
+          "file": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/coachbrain/CB00003-take4.mp3",
           "name": "CB00003-take4",
           "sec": 3.55,
           "text": "It decides when to stop."
         },
         {
-          "file": "voice/coachbrain/CB00001-take6.mp3",
+          "file": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/coachbrain/CB00001-take6.mp3",
           "name": "CB00001-take6",
           "sec": 2.93,
           "text": "It decides when to stop."
@@ -3488,13 +3488,13 @@
       "line": "When I stop you, the fuel is still there.",
       "takes": [
         {
-          "file": "voice/coachbrain/CB00001-take7.mp3",
+          "file": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/coachbrain/CB00001-take7.mp3",
           "name": "CB00001-take7",
           "sec": 6.82,
           "text": "When I stop you, the fuel is still there."
         },
         {
-          "file": "voice/coachbrain/CB00003-take5.mp3",
+          "file": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/coachbrain/CB00003-take5.mp3",
           "name": "CB00003-take5",
           "sec": 6.17,
           "text": "When I stop you, the fuel is still there."
@@ -3507,161 +3507,161 @@
       "n": 1,
       "speaker": "NARRATOR",
       "text": "A boy runs. Not a race, not a competition, just a boy on a road. And the world he runs through does not appear the way drawings usually appear. It surfaces. Like a coin under paper with a pencil rubbed over it, things come up out of the blank sheet one at a time, and always in the same order: the road first, then the shoes standing on it, then the legs, then the trees, and the man last of all. What holds a thing up must exist before the thing. This happens once, to open the film, and then it stops.",
-      "audio": "voice/drama/01-NARRATOR.mp3",
+      "audio": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/drama/01-NARRATOR.mp3",
       "sec": 29.35
     },
     {
       "n": 2,
       "speaker": "NARRATOR",
       "text": "He rides a bicycle. He tests where his limit is, again and again. He gets tired, and he meets the wall.",
-      "audio": "voice/drama/02-NARRATOR.mp3",
+      "audio": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/drama/02-NARRATOR.mp3",
       "sec": 8.42
     },
     {
       "n": 3,
       "speaker": "NARRATOR",
       "text": "He closes his eyes.",
-      "audio": "voice/drama/03-NARRATOR.mp3",
+      "audio": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/drama/03-NARRATOR.mp3",
       "sec": 1.66
     },
     {
       "n": 4,
       "speaker": "NARRATOR",
       "text": "From that moment the film changes its rules and never changes them back. Before, things came to him. Now nothing arrives and we move instead. Every change of place is a passage through a surface, and there is not one cut left in the film. We fly into his head as his eyes shut, through white, and a vortex takes him upward, out of the world.",
-      "audio": "voice/drama/04-NARRATOR.mp3",
+      "audio": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/drama/04-NARRATOR.mp3",
       "sec": 19.03
     },
     {
       "n": 5,
       "speaker": "NARRATOR",
       "text": "He arrives at a door already giving off light, and he is drawn through it rather than walking in. We pull back and the house assembles around us, and by the time we can see the whole building the door is shut. It is a house made of his own body.",
-      "audio": "voice/drama/05-NARRATOR.mp3",
+      "audio": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/drama/05-NARRATOR.mp3",
       "sec": 14.42
     },
     {
       "n": 6,
       "speaker": "NARRATOR",
       "text": "We fly along its corridors. The doors do not have names on them. They have shapes pressed into the clay: a muscle, a pair of lungs, a heart. He looks in each room, and there is nothing in it for him.",
-      "audio": "voice/drama/06-NARRATOR.mp3",
+      "audio": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/drama/06-NARRATOR.mp3",
       "sec": 10.99
     },
     {
       "n": 7,
       "speaker": "NARRATOR",
       "text": "Then a door with a key on it. And he goes in.",
-      "audio": "voice/drama/07-NARRATOR.mp3",
+      "audio": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/drama/07-NARRATOR.mp3",
       "sec": 3.43
     },
     {
       "n": 8,
       "speaker": "NARRATOR",
       "text": "Inside, a small brain in a chair at a wall of dials. And he has been waiting.",
-      "audio": "voice/drama/08-NARRATOR.mp3",
+      "audio": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/drama/08-NARRATOR.mp3",
       "sec": 5.9
     },
     {
       "n": 9,
       "speaker": "COACH BRAIN",
       "text": "Ah. There you are. I was expecting you.",
-      "audio": "voice/drama/09-COACH.mp3",
+      "audio": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/drama/09-COACH.mp3",
       "sec": 3.82
     },
     {
       "n": 10,
       "speaker": "COACH BRAIN",
       "text": "Before we start. Lift your right arm for me.",
-      "audio": "voice/drama/10-COACH.mp3",
+      "audio": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/drama/10-COACH.mp3",
       "sec": 3.19
     },
     {
       "n": 11,
       "speaker": "MANAN",
       "text": "I'm trying.",
-      "audio": "voice/drama/11-MANAN.mp3",
+      "audio": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/drama/11-MANAN.mp3",
       "sec": 1.34
     },
     {
       "n": 12,
       "speaker": "COACH BRAIN",
       "text": "I know.",
-      "audio": "voice/drama/12-COACH.mp3",
+      "audio": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/drama/12-COACH.mp3",
       "sec": 0.84
     },
     {
       "n": 13,
       "speaker": "MANAN",
       "text": "I can't. Why can't I move it?",
-      "audio": "voice/drama/13-MANAN.mp3",
+      "audio": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/drama/13-MANAN.mp3",
       "sec": 3.38
     },
     {
       "n": 14,
       "speaker": "COACH BRAIN",
       "text": "Try now.",
-      "audio": "voice/drama/14-COACH.mp3",
+      "audio": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/drama/14-COACH.mp3",
       "sec": 1.01
     },
     {
       "n": 15,
       "speaker": "MANAN",
       "text": "That was you. It was never my arm at all.",
-      "audio": "voice/drama/15-MANAN.mp3",
+      "audio": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/drama/15-MANAN.mp3",
       "sec": 3.48
     },
     {
       "n": 16,
       "speaker": "COACH BRAIN",
       "text": "It is always your arm. The permission is mine.",
-      "audio": "voice/drama/16-COACH.mp3",
+      "audio": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/drama/16-COACH.mp3",
       "sec": 4.13
     },
     {
       "n": 17,
       "speaker": "NARRATOR",
       "text": "Then the two of them put it on the boards. Neither board arrives finished. Manan writes what he was taught, in white chalk, line by line: the old theory. Coach Brain answers on the whiteboard in black marker. The same layout, the same three lines, the same gauge, and every single value reversed.",
-      "audio": "voice/drama/17-NARRATOR.mp3",
+      "audio": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/drama/17-NARRATOR.mp3",
       "sec": 18.77
     },
     {
       "n": 18,
       "speaker": "NARRATOR",
       "text": "They reach a conclusion together. Then the vortex takes him back down, and the key falls with him.",
-      "audio": "voice/drama/18-NARRATOR.mp3",
+      "audio": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/drama/18-NARRATOR.mp3",
       "sec": 6.46
     },
     {
       "n": 19,
       "speaker": "NARRATOR",
       "text": "Coach Brain lets it go, and it falls through an empty frame. It turns and it grows as it comes, and behind it the whole film replays in reverse, so faint it is almost not there: the boards, the room, the house, and the avenue as it lands. The memories are streaked in the direction of the fall because they are passing at speed, but you can still make out what each one is if you look. The key stays sharp, because the camera is falling with it, and that difference is what makes the fall feel fast.",
-      "audio": "voice/drama/19-NARRATOR.mp3",
+      "audio": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/drama/19-NARRATOR.mp3",
       "sec": 25.25
     },
     {
       "n": 20,
       "speaker": "NARRATOR",
       "text": "On the way down it crosses from a pencil drawing to a photograph, and no single frame is the moment it becomes real.",
-      "audio": "voice/drama/20-NARRATOR.mp3",
+      "audio": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/drama/20-NARRATOR.mp3",
       "sec": 6.67
     },
     {
       "n": 21,
       "speaker": "NARRATOR",
       "text": "Manan catches it at the bottom.",
-      "audio": "voice/drama/21-NARRATOR.mp3",
+      "audio": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/drama/21-NARRATOR.mp3",
       "sec": 1.9
     },
     {
       "n": 22,
       "speaker": "NARRATOR",
       "text": "Their two hands are never in the same frame, because an entire descent lies between them. That is deliberate, and it is better than a cut. A cut is a decision the audience can feel. A fall is one they take with the object.",
-      "audio": "voice/drama/22-NARRATOR.mp3",
+      "audio": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/drama/22-NARRATOR.mp3",
       "sec": 12.7
     },
     {
       "n": 23,
       "speaker": "NARRATOR",
       "text": "Credits, flying card to card through cloud. Then a dedication.",
-      "audio": "voice/drama/23-NARRATOR.mp3",
+      "audio": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/drama/23-NARRATOR.mp3",
       "sec": 5.02
     }
   ],
@@ -3670,231 +3670,231 @@
       "n": 1,
       "speaker": "NARATOR",
       "text": "Dječak trči. Nije utrka, nije natjecanje, samo dječak na cesti. A svijet kroz koji trči ne pojavljuje se onako kako se crteži obično pojavljuju. On izranja. Kao novčić ispod papira preko kojeg se olovkom trlja, stvari izlaze iz praznog lista jedna po jedna, i uvijek istim redom. Prvo cesta, pa cipele koje na njoj stoje, pa noge, pa drveće, i tek na kraju čovjek. Ono što nešto drži mora postojati prije te stvari. To se dogodi jednom, da otvori film, i onda prestane.",
-      "audio": "voice/drama_hr/01-NARATOR.mp3",
+      "audio": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/drama_hr/01-NARATOR.mp3",
       "sec": 31.46
     },
     {
       "n": 2,
       "speaker": "NARATOR",
       "text": "Vozi bicikl. Ispituje gdje mu je granica, opet i opet. Umara se, i nailazi na zid.",
-      "audio": "voice/drama_hr/02-NARATOR.mp3",
+      "audio": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/drama_hr/02-NARATOR.mp3",
       "sec": 6.46
     },
     {
       "n": 3,
       "speaker": "NARATOR",
       "text": "Zatvara oči.",
-      "audio": "voice/drama_hr/03-NARATOR.mp3",
+      "audio": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/drama_hr/03-NARATOR.mp3",
       "sec": 1.2
     },
     {
       "n": 4,
       "speaker": "NARATOR",
       "text": "Od tog trenutka film mijenja svoja pravila i više ih ne vraća. Prije su stvari dolazile k njemu. Sada ništa ne dolazi, nego se mi krećemo. Svaka promjena mjesta je prolazak kroz površinu, i u filmu više nema nijednog reza. Ulijećemo mu u glavu dok se oči zatvaraju, kroz bijelo, i vrtlog ga podiže prema gore, izvan svijeta.",
-      "audio": "voice/drama_hr/04-NARATOR.mp3",
+      "audio": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/drama_hr/04-NARATOR.mp3",
       "sec": 21.5
     },
     {
       "n": 5,
       "speaker": "NARATOR",
       "text": "Stiže pred vrata koja već svijetle, i biva uvučen kroz njih umjesto da ušeta. Odmičemo se, i kuća se sklapa oko nas, a dok vidimo cijelu zgradu vrata su već zatvorena. To je kuća sagrađena od njegova vlastitog tijela.",
-      "audio": "voice/drama_hr/05-NARATOR.mp3",
+      "audio": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/drama_hr/05-NARATOR.mp3",
       "sec": 13.58
     },
     {
       "n": 6,
       "speaker": "NARATOR",
       "text": "Letimo njezinim hodnicima. Vrata nemaju imena na sebi. Imaju oblike utisnute u glinu: mišić, pluća, srce. Zaviruje u svaku sobu, i ni u jednoj nema ničega za njega.",
-      "audio": "voice/drama_hr/06-NARATOR.mp3",
+      "audio": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/drama_hr/06-NARATOR.mp3",
       "sec": 10.68
     },
     {
       "n": 7,
       "speaker": "NARATOR",
       "text": "Onda vrata s ključem na sebi. I ulazi.",
-      "audio": "voice/drama_hr/07-NARATOR.mp3",
+      "audio": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/drama_hr/07-NARATOR.mp3",
       "sec": 3.29
     },
     {
       "n": 8,
       "speaker": "NARATOR",
       "text": "Unutra, mali mozak u stolici pred zidom punim brojčanika. I on ga je čekao.",
-      "audio": "voice/drama_hr/08-NARATOR.mp3",
+      "audio": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/drama_hr/08-NARATOR.mp3",
       "sec": 7.3
     },
     {
       "n": 9,
       "speaker": "COACH BRAIN",
       "text": "Ah. Tu si. Očekivao sam te.",
-      "audio": "voice/drama_hr/09-COACH.mp3",
+      "audio": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/drama_hr/09-COACH.mp3",
       "sec": 3.38
     },
     {
       "n": 10,
       "speaker": "COACH BRAIN",
       "text": "Prije nego počnemo. Podigni mi desnu ruku.",
-      "audio": "voice/drama_hr/10-COACH.mp3",
+      "audio": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/drama_hr/10-COACH.mp3",
       "sec": 2.95
     },
     {
       "n": 11,
       "speaker": "MANAN",
       "text": "Pokušavam.",
-      "audio": "voice/drama_hr/11-MANAN.mp3",
+      "audio": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/drama_hr/11-MANAN.mp3",
       "sec": 0.91
     },
     {
       "n": 12,
       "speaker": "COACH BRAIN",
       "text": "Znam.",
-      "audio": "voice/drama_hr/12-COACH.mp3",
+      "audio": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/drama_hr/12-COACH.mp3",
       "sec": 0.6
     },
     {
       "n": 13,
       "speaker": "MANAN",
       "text": "Ne mogu. Zašto je ne mogu pomaknuti?",
-      "audio": "voice/drama_hr/13-MANAN.mp3",
+      "audio": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/drama_hr/13-MANAN.mp3",
       "sec": 3.77
     },
     {
       "n": 14,
       "speaker": "COACH BRAIN",
       "text": "Probaj sada.",
-      "audio": "voice/drama_hr/14-COACH.mp3",
+      "audio": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/drama_hr/14-COACH.mp3",
       "sec": 1.8
     },
     {
       "n": 15,
       "speaker": "MANAN",
       "text": "To si bio ti. Nikada to nije ni bila moja ruka.",
-      "audio": "voice/drama_hr/15-MANAN.mp3",
+      "audio": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/drama_hr/15-MANAN.mp3",
       "sec": 3.84
     },
     {
       "n": 16,
       "speaker": "COACH BRAIN",
       "text": "Ruka je uvijek tvoja. Dopuštenje je moje.",
-      "audio": "voice/drama_hr/16-COACH.mp3",
+      "audio": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/drama_hr/16-COACH.mp3",
       "sec": 3.89
     },
     {
       "n": 17,
       "speaker": "NARATOR",
       "text": "Onda njih dvojica to iznose na ploče. Nijedna ploča ne dolazi gotova. Manan bijelom kredom piše ono što su ga učili, redak po redak. Stara teorija.",
-      "audio": "voice/drama_hr/17-NARATOR.mp3",
+      "audio": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/drama_hr/17-NARATOR.mp3",
       "sec": 10.15
     },
     {
       "n": 18,
       "speaker": "MANAN",
       "text": "Tisuću devetsto dvadeset treća. Hill stavlja trkače na traku i mjeri sve što rade. Njegov odgovor je jednostavan. Umor je u mišiću.",
-      "audio": "voice/drama_hr/18-MANAN.mp3",
+      "audio": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/drama_hr/18-MANAN.mp3",
       "sec": 8.16
     },
     {
       "n": 19,
       "speaker": "MANAN",
       "text": "Trčiš. Mišić troši svoj kisik. Gorivo se potroši. I kad spremnik pokaže prazno, tijelo stane.",
-      "audio": "voice/drama_hr/19-MANAN.mp3",
+      "audio": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/drama_hr/19-MANAN.mp3",
       "sec": 7.94
     },
     {
       "n": 20,
       "speaker": "NARATOR",
       "text": "Coach Brain odgovara na bijeloj ploči crnim markerom. Isti raspored, ista tri retka, isti mjerač, i svaka vrijednost obrnuta.",
-      "audio": "voice/drama_hr/20-NARATOR.mp3",
+      "audio": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/drama_hr/20-NARATOR.mp3",
       "sec": 7.66
     },
     {
       "n": 21,
       "speaker": "COACH BRAIN",
       "text": "Puls, dah, temperatura, voda, udaljenost. Čitam sve to, cijelo vrijeme. I postavljam jedno pitanje: možemo li nastaviti sigurno?",
-      "audio": "voice/drama_hr/21-COACH.mp3",
+      "audio": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/drama_hr/21-COACH.mp3",
       "sec": 8.88
     },
     {
       "n": 22,
       "speaker": "COACH BRAIN",
       "text": "Kad odgovor počne izgledati kao ne, usporim te. Dakle ne. Umor je u mozgu, a ne u tvojim nogama. Ovdje gore. I odlučuje mnogo prije nego što je išta stvarno u opasnosti.",
-      "audio": "voice/drama_hr/22-COACH.mp3",
+      "audio": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/drama_hr/22-COACH.mp3",
       "sec": 11.23
     },
     {
       "n": 23,
       "speaker": "COACH BRAIN",
       "text": "Kad te ja zaustavim, gorivo je još uvijek tu.",
-      "audio": "voice/drama_hr/23-COACH.mp3",
+      "audio": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/drama_hr/23-COACH.mp3",
       "sec": 3.46
     },
     {
       "n": 24,
       "speaker": "MANAN",
       "text": "Znači zid...",
-      "audio": "voice/drama_hr/24-MANAN.mp3",
+      "audio": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/drama_hr/24-MANAN.mp3",
       "sec": 1.13
     },
     {
       "n": 25,
       "speaker": "COACH BRAIN",
       "text": "Je broj koji sam ja odabrao. Pažljivo. Da te održim na životu.",
-      "audio": "voice/drama_hr/25-COACH.mp3",
+      "audio": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/drama_hr/25-COACH.mp3",
       "sec": 4.99
     },
     {
       "n": 26,
       "speaker": "MANAN",
       "text": "Onda to može biti i drugi broj.",
-      "audio": "voice/drama_hr/26-MANAN.mp3",
+      "audio": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/drama_hr/26-MANAN.mp3",
       "sec": 2.35
     },
     {
       "n": 27,
       "speaker": "NARATOR",
       "text": "Dolaze do zaključka zajedno. Onda ga vrtlog nosi natrag dolje, i ključ pada s njim.",
-      "audio": "voice/drama_hr/27-NARATOR.mp3",
+      "audio": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/drama_hr/27-NARATOR.mp3",
       "sec": 5.64
     },
     {
       "n": 28,
       "speaker": "NARATOR",
       "text": "Coach Brain ga pušta, i on pada kroz prazan kadar. Okreće se i raste dok dolazi, a iza njega se cijeli film vrti unatrag, tako blijedo da ga gotovo nema. Ploče, soba, kuća, i drvored dok slijeće. Sjećanja su razvučena u smjeru pada jer prolaze brzinom, ali još uvijek možeš razabrati što je svako od njih ako pogledaš. Ključ ostaje oštar, jer kamera pada s njim, i ta razlika je ono što čini da pad djeluje brzo.",
-      "audio": "voice/drama_hr/28-NARATOR.mp3",
+      "audio": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/drama_hr/28-NARATOR.mp3",
       "sec": 25.18
     },
     {
       "n": 29,
       "speaker": "NARATOR",
       "text": "Na putu prema dolje prelazi iz crteža olovkom u fotografiju, i nijedan pojedini kadar nije trenutak u kojem postaje stvaran.",
-      "audio": "voice/drama_hr/29-NARATOR.mp3",
+      "audio": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/drama_hr/29-NARATOR.mp3",
       "sec": 7.82
     },
     {
       "n": 30,
       "speaker": "NARATOR",
       "text": "Manan ga hvata na dnu.",
-      "audio": "voice/drama_hr/30-NARATOR.mp3",
+      "audio": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/drama_hr/30-NARATOR.mp3",
       "sec": 1.51
     },
     {
       "n": 31,
       "speaker": "NARATOR",
       "text": "Njihove dvije ruke nikada nisu u istom kadru, jer između njih leži cijeli pad. To je namjerno, i bolje je od reza. Rez je odluka koju publika osjeti. Pad je odluka koju uzmu zajedno s predmetom.",
-      "audio": "voice/drama_hr/31-NARATOR.mp3",
+      "audio": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/drama_hr/31-NARATOR.mp3",
       "sec": 11.66
     },
     {
       "n": 32,
       "speaker": "NARATOR",
       "text": "Odjavna špica, od kartice do kartice, kroz oblake.",
-      "audio": "voice/drama_hr/32-NARATOR.mp3",
+      "audio": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/drama_hr/32-NARATOR.mp3",
       "sec": 4.22
     },
     {
       "n": 33,
       "speaker": "NARATOR",
       "text": "Posvećeno Gospodinu Ganeshi. Uklonitelju prepreka.",
-      "audio": "voice/drama_hr/33-NARATOR.mp3",
+      "audio": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/drama_hr/33-NARATOR.mp3",
       "sec": 4.06
     }
   ]

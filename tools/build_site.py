@@ -75,11 +75,19 @@ def human(n):
 
 
 def size_of(rel):
+    # 3.9.2026: audio moved to BRAINBREAK_AUDIO and its catalogue paths became
+    # absolute URLs, which os.path.join happily turned into a nonsense local
+    # path and then tried to measure. A remote file has no size we can read
+    # here, and saying zero is honest rather than crashing the build.
+    if str(rel).startswith(('http://', 'https://')):
+        return 0
     p = os.path.join(ROOT, rel)
     return os.path.getsize(p) if os.path.exists(p) else 0
 
 
 def dims(rel):
+    if str(rel).startswith(('http://', 'https://')):
+        return ''
     try:
         from PIL import Image
         with Image.open(os.path.join(ROOT, rel)) as im:
@@ -839,8 +847,8 @@ def deck_block(uid, title, sub, rows, zipfile_, depth=0):
          '<svg viewBox="0 0 24 24"><path d="M18 5h2v14h-2zM4 5v14l11-7z"/></svg></button>'
          '%s'
          '<span class="novastate nv-state">READY</span></div>'
-         % (('<a class="mcbtn wide" href="%s%s" download title="all of them, zipped">'
-             'ZIP &darr;</a>' % (r, zipfile_)) if zipfile_ else ''),
+         % (('<a class="mcbtn wide" href="%s" download title="all of them, zipped">'
+             'ZIP &darr;</a>' % aud(zipfile_)) if zipfile_ else ''),
          '<details class=novapl><summary class=novaplh>'
          '<span class=takec>%d</span>PLAYLIST</summary><div class=novapb>' % len(takes)]
     i = 0
@@ -850,10 +858,10 @@ def deck_block(uid, title, sub, rows, zipfile_, depth=0):
         elif kind == 'line':
             o.append('<div class=plline>%s</div>' % html.escape(text))
         else:
-            o.append('<div class=plrow data-i="%d" data-src="%s%s" data-name="%s">'
+            o.append('<div class=plrow data-i="%d" data-src="%s" data-name="%s">'
                      '<span class=plno>%d</span><span class=plnm>%s</span>'
                      '<span class=plsec>%s s</span></div>'
-                     % (i, r, src, html.escape(text), i + 1, html.escape(text), sec))
+                     % (i, aud(src), html.escape(text), i + 1, html.escape(text), sec))
             i += 1
     o.append('</div></details></div>')
     return ''.join(o)
@@ -1043,6 +1051,20 @@ def lines_of(e):
                  % (html.escape(x.get('speaker', '')), html.escape(x.get('line', ''))))
     o.append('</div>')
     return ''.join(o)
+
+
+
+# EVERY AUDIO PATH POINTS AT THE AUDIO REPOSITORY. 3.9.2026. This repository
+# publishes the Pages site and Pages fails SILENTLY above 1 GB; at 876 MB two
+# builds failed in a row while the content was correct and nothing errored.
+# Audio was what filled it, so it lives in BRAINBREAK_AUDIO and the site links
+# to it. Public, no Pages site of its own, no ceiling, no credential needed.
+AUDIO = 'https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/'
+
+
+def aud(path):
+    """A raw link to the audio repository, from a site relative path."""
+    return AUDIO + path.lstrip('./')
 
 
 def bar(here, r):
@@ -2330,7 +2352,7 @@ for _i, e in enumerate(_cards):
                   % (src.get('name', 'source footage'), src['url'], src.get('note', '')))
 
     for a in (e.get('audio') or []):
-        amb = os.path.getsize(os.path.join(ROOT, a['file'])) / 1048576.0
+        amb = size_of(a['file']) / 1048576.0
         cd.append('<div class=aud><div class=t><b>%s</b>'
                   '<span>%.1f s &nbsp;&middot;&nbsp; '
                   '<a class=dl href="../%s" download title="download the wav">&darr; %.1f MB</a>'
