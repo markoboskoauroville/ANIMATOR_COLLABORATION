@@ -2065,6 +2065,13 @@ for e in _fl:
     st = ', '.join(bits) if bits else ('LIVE ACTION' if live else 'NOT DRAWN YET')
     rt.append('<div class=rtph><span class=n>%s</span><h3>%s</h3><span class=st>%s</span></div>'
               % (n, e.get('title', ''), st))
+    # A SECTION CAN EXPLAIN ITSELF. 3.9.2026: the flow entries carried notes and
+    # nothing printed them, so two beats Baba had written down were invisible on
+    # the page: the frame freezing while Manan walks into it with a magnifying
+    # glass, and him racing his own recorded ride until he collapses. The film is
+    # a progression and the page was flattening it into a list of pictures.
+    if e.get('note'):
+        rt.append('<p class=lede>%s</p>' % e['note'])
     # the last shot is phase 15, so its sequence belongs here in the flow rather
     # than at the foot of the page
     # a frame shown in a strip is not listed again in the grid below it, but the
