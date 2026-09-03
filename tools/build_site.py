@@ -274,6 +274,23 @@ h2{font-size:19px;margin:38px 0 14px;padding-bottom:7px;border-bottom:1px solid 
  color:var(--dim)}
 .filmfoot span{display:block;font-weight:600;font-size:9px;letter-spacing:.14em;
  padding-top:6px;color:var(--dim);opacity:.75}
+.deck{background:var(--bg);border:1px solid var(--rule);border-radius:8px;
+  padding:9px 11px;margin:0 0 8px}
+.deck.is-playing{border-color:var(--gold)}
+.deckh{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:6px}
+.deckn{font:400 10.5px/1 ui-monospace,monospace;color:var(--dim)}
+.wave{position:relative;height:40px;background:var(--panel);border:1px solid var(--rule);
+  border-radius:3px;display:flex;align-items:flex-end;gap:1px;padding:3px;overflow:hidden}
+.wave span{flex:1 1 0;background:var(--rule);border-radius:1px 1px 0 0;min-width:0}
+.wave span.played{background:var(--gold)}
+.cursor{position:absolute;top:0;bottom:0;width:1px;background:var(--gold);left:0;
+  pointer-events:none}
+.deckf{display:flex;align-items:center;gap:10px;margin-top:6px}
+.pbtn{background:var(--gold);color:#16110D;border:0;border-radius:999px;width:30px;height:30px;
+  cursor:pointer;display:flex;align-items:center;justify-content:center;flex:none;padding:0}
+.pbtn svg{width:13px;height:13px;fill:#16110D}
+.tc{font:400 11px/1 ui-monospace,monospace;color:var(--dim)}
+.tc.rem{margin-left:auto}
 .takes{margin:16px 0 6px;background:var(--panel);border:1px solid var(--rule);
   border-radius:12px;padding:16px 18px}
 .takeh{display:flex;align-items:center;justify-content:space-between;gap:12px;
@@ -741,42 +758,106 @@ def takes_block(depth=0):
             continue
         o.append('<div class=takel>%s</div>' % html.escape(blk.get('line', '')))
         for t in blk['takes']:
-            o.append('<div class=taker>'
-                     '<span class=taken>%s</span>'
-                     '<audio class=tk data-i="%d" controls preload=none src="%s%s"></audio>'
-                     '<a class=dl href="%s%s" download>MP3 &darr;</a>'
-                     '<span class=takes2>%s s</span>'
-                     '</div>' % (html.escape(t['name'].replace('REC0000', 'rec ')),
-                                 n, r, t['file'], r, t['file'], t.get('sec', '')))
+            o.append(
+              '<div class=deck data-i="%d">'
+              '<div class=deckh><span class=deckn>%s</span>'
+              '<a class=dl href="%s%s" download>MP3 &darr;</a></div>'
+              '<div class=wave><div class=cursor></div></div>'
+              '<div class=deckf>'
+              '<button class=pbtn type=button>'
+              '<svg class=ic-play viewBox="0 0 24 24"><path d="M7 4l13 8-13 8z"/></svg>'
+              '<svg class=ic-pause viewBox="0 0 24 24" style="display:none">'
+              '<path d="M6 4h4v16H6zM14 4h4v16h-4z"/></svg></button>'
+              '<span class=tc>0:00</span><span class="tc rem">-%s</span>'
+              '</div>'
+              '<audio preload=metadata src="%s%s"></audio>'
+              '</div>'
+              % (n, html.escape(t['name'].replace('REC0000', 'rec ')),
+                 r, t['file'], t.get('sec', ''), r, t['file']))
             n += 1
     o.append('</div>')
     o.append("""<script>
+/* The player is Baba's own, lifted from NOVA_TV_777/songs.js: the bar waveform,
+   the cursor, the play and pause icons, elapsed and remaining. The VU meter is
+   deliberately left behind; he asked for the waveform and the controls only.
+   Two things are kept from that file because they were learned the hard way
+   there: only one deck plays at a time, and a host that does not serve HTTP
+   Range leaves the audio unseekable, so the waveform stops pretending to scrub
+   rather than lying about it. */
 (function(){
-  var a = [].slice.call(document.querySelectorAll('#takes audio.tk'));
-  if (!a.length) return;
+  var mmss = function(s){ s = Math.max(0, s||0);
+    return Math.floor(s/60) + ':' + String(Math.floor(s%60)).padStart(2,'0'); };
+  var decks = [].slice.call(document.querySelectorAll('#takes .deck')).map(function(el){
+    var d = { el: el,
+      audio: el.querySelector('audio'), wave: el.querySelector('.wave'),
+      cur: el.querySelector('.cursor'), btn: el.querySelector('.pbtn'),
+      tc: el.querySelector('.tc'), rem: el.querySelector('.rem'), bars: [] };
+    /* No stored peaks for these, so the bars are drawn from a fixed shape and
+       the colour does the work. The real waveform would mean decoding every
+       take in the browser, which is a lot of bandwidth for a review page. */
+    var N = 96;
+    for (var i=0;i<N;i++){
+      var b = document.createElement('span');
+      var v = 0.30 + 0.55*Math.abs(Math.sin(i*0.7)) * (0.6+0.4*Math.abs(Math.cos(i*0.23)));
+      b.style.height = Math.max(8, v*100) + '%';
+      d.wave.appendChild(b);
+    }
+    d.bars = [].slice.call(d.wave.querySelectorAll('span'));
+    return d;
+  });
+  if (!decks.length) return;
   var chain = false;
-  /* Pausing breaks the chain, which is the whole point: Baba stops on the take
-     he wants to listen to again and the rest does not run over him. Pressing
-     play on that same one picks the chain back up from there rather than
-     starting the scene again. */
-  a.forEach(function(el, i){
-    el.addEventListener('play', function(){
-      chain = true;
-      a.forEach(function(o){ if (o !== el) { o.pause(); } });
+
+  function dur(d){ var a=d.audio; return (a.duration && isFinite(a.duration)) ? a.duration : 0; }
+  function canSeek(d){ var s=d.audio.seekable; return !!(s && s.length && s.end(s.length-1) > 1); }
+  function paint(d){
+    var D = dur(d), c = d.audio.currentTime || 0, p = D ? c/D : 0, n = d.bars.length;
+    for (var i=0;i<n;i++) d.bars[i].classList.toggle('played', i/n <= p);
+    d.cur.style.left = (p*100) + '%';
+    d.tc.textContent = mmss(c);
+    d.rem.textContent = '-' + mmss(D - c);
+  }
+  function setPlaying(d,on){
+    d.btn.classList.toggle('on', on);
+    d.btn.querySelector('.ic-play').style.display  = on ? 'none' : 'block';
+    d.btn.querySelector('.ic-pause').style.display = on ? 'block' : 'none';
+    d.el.classList.toggle('is-playing', on);
+  }
+  decks.forEach(function(d, i){
+    d.btn.onclick = function(){
+      if (d.audio.paused){ chain = true;
+        decks.forEach(function(o){ if (o!==d && !o.audio.paused) o.audio.pause(); });
+        d.audio.play().catch(function(){});
+      } else { d.audio.pause(); }
+    };
+    d.wave.addEventListener('click', function(e){
+      if (!canSeek(d)) return;
+      var r = e.currentTarget.getBoundingClientRect();
+      d.audio.currentTime = ((e.clientX - r.left)/r.width) * dur(d);
+      paint(d);
     });
-    el.addEventListener('pause', function(){
-      if (!el.ended) chain = false;
+    d.audio.addEventListener('timeupdate', function(){ paint(d); });
+    d.audio.addEventListener('loadedmetadata', function(){
+      paint(d);
+      d.wave.style.cursor = canSeek(d) ? 'pointer' : 'default';
     });
-    el.addEventListener('ended', function(){
+    d.audio.addEventListener('play',  function(){ setPlaying(d,true); });
+    /* Pausing breaks the chain, which is the point: Baba stops on the take he
+       wants to hear again and the rest must not run over him. */
+    d.audio.addEventListener('pause', function(){
+      setPlaying(d,false); if (!d.audio.ended) chain = false;
+    });
+    d.audio.addEventListener('ended', function(){
+      setPlaying(d,false); paint(d);
       if (!chain) return;
-      var nx = a[i+1];
-      if (!nx) return;
-      nx.play().catch(function(){});
-      nx.scrollIntoView({block:'center', behavior:'smooth'});
+      var nx = decks[i+1]; if (!nx) return;
+      nx.audio.play().catch(function(){});
+      nx.el.scrollIntoView({block:'center', behavior:'smooth'});
     });
+    paint(d);
   });
   var b = document.getElementById('playall');
-  if (b) b.onclick = function(){ chain = true; a[0].play().catch(function(){}); };
+  if (b) b.onclick = function(){ chain = true; decks[0].audio.play().catch(function(){}); };
 })();
 </script>""")
     return ''.join(o)
