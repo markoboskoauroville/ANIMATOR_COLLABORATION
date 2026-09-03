@@ -2909,7 +2909,7 @@
     }
   ],
   "event": "Breakthrough Junior Challenge 2026",
-  "site_version": 182,
+  "site_version": 183,
   "footage": [
     {
       "name": "Key catch",
@@ -3501,5 +3501,168 @@
         }
       ]
     }
-  }
+  },
+  "radio_drama": [
+    {
+      "n": 1,
+      "speaker": "NARRATOR",
+      "text": "A boy runs. Not a race, not a competition, just a boy on a road. And the world he runs through does not appear the way drawings usually appear. It surfaces. Like a coin under paper with a pencil rubbed over it, things come up out of the blank sheet one at a time, and always in the same order: the road first, then the shoes standing on it, then the legs, then the trees, and the man last of all. What holds a thing up must exist before the thing. This happens once, to open the film, and then it stops.",
+      "audio": "voice/drama/01-NARRATOR.mp3",
+      "sec": 29.35
+    },
+    {
+      "n": 2,
+      "speaker": "NARRATOR",
+      "text": "He rides a bicycle. He tests where his limit is, again and again. He gets tired, and he meets the wall.",
+      "audio": "voice/drama/02-NARRATOR.mp3",
+      "sec": 8.42
+    },
+    {
+      "n": 3,
+      "speaker": "NARRATOR",
+      "text": "He closes his eyes.",
+      "audio": "voice/drama/03-NARRATOR.mp3",
+      "sec": 1.66
+    },
+    {
+      "n": 4,
+      "speaker": "NARRATOR",
+      "text": "From that moment the film changes its rules and never changes them back. Before, things came to him. Now nothing arrives and we move instead. Every change of place is a passage through a surface, and there is not one cut left in the film. We fly into his head as his eyes shut, through white, and a vortex takes him upward, out of the world.",
+      "audio": "voice/drama/04-NARRATOR.mp3",
+      "sec": 19.03
+    },
+    {
+      "n": 5,
+      "speaker": "NARRATOR",
+      "text": "He arrives at a door already giving off light, and he is drawn through it rather than walking in. We pull back and the house assembles around us, and by the time we can see the whole building the door is shut. It is a house made of his own body.",
+      "audio": "voice/drama/05-NARRATOR.mp3",
+      "sec": 14.42
+    },
+    {
+      "n": 6,
+      "speaker": "NARRATOR",
+      "text": "We fly along its corridors. The doors do not have names on them. They have shapes pressed into the clay: a muscle, a pair of lungs, a heart. He looks in each room, and there is nothing in it for him.",
+      "audio": "voice/drama/06-NARRATOR.mp3",
+      "sec": 10.99
+    },
+    {
+      "n": 7,
+      "speaker": "NARRATOR",
+      "text": "Then a door with a key on it. And he goes in.",
+      "audio": "voice/drama/07-NARRATOR.mp3",
+      "sec": 3.43
+    },
+    {
+      "n": 8,
+      "speaker": "NARRATOR",
+      "text": "Inside, a small brain in a chair at a wall of dials. And he has been waiting.",
+      "audio": "voice/drama/08-NARRATOR.mp3",
+      "sec": 5.9
+    },
+    {
+      "n": 9,
+      "speaker": "COACH BRAIN",
+      "text": "Ah. There you are. I was expecting you.",
+      "audio": "voice/drama/09-COACH.mp3",
+      "sec": 3.82
+    },
+    {
+      "n": 10,
+      "speaker": "COACH BRAIN",
+      "text": "Before we start. Lift your right arm for me.",
+      "audio": "voice/drama/10-COACH.mp3",
+      "sec": 3.19
+    },
+    {
+      "n": 11,
+      "speaker": "MANAN",
+      "text": "I'm trying.",
+      "audio": "voice/drama/11-MANAN.mp3",
+      "sec": 1.34
+    },
+    {
+      "n": 12,
+      "speaker": "COACH BRAIN",
+      "text": "I know.",
+      "audio": "voice/drama/12-COACH.mp3",
+      "sec": 0.84
+    },
+    {
+      "n": 13,
+      "speaker": "MANAN",
+      "text": "I can't. Why can't I move it?",
+      "audio": "voice/drama/13-MANAN.mp3",
+      "sec": 3.38
+    },
+    {
+      "n": 14,
+      "speaker": "COACH BRAIN",
+      "text": "Try now.",
+      "audio": "voice/drama/14-COACH.mp3",
+      "sec": 1.01
+    },
+    {
+      "n": 15,
+      "speaker": "MANAN",
+      "text": "That was you. It was never my arm at all.",
+      "audio": "voice/drama/15-MANAN.mp3",
+      "sec": 3.48
+    },
+    {
+      "n": 16,
+      "speaker": "COACH BRAIN",
+      "text": "It is always your arm. The permission is mine.",
+      "audio": "voice/drama/16-COACH.mp3",
+      "sec": 4.13
+    },
+    {
+      "n": 17,
+      "speaker": "NARRATOR",
+      "text": "Then the two of them put it on the boards. Neither board arrives finished. Manan writes what he was taught, in white chalk, line by line: the old theory. Coach Brain answers on the whiteboard in black marker. The same layout, the same three lines, the same gauge, and every single value reversed.",
+      "audio": "voice/drama/17-NARRATOR.mp3",
+      "sec": 18.77
+    },
+    {
+      "n": 18,
+      "speaker": "NARRATOR",
+      "text": "They reach a conclusion together. Then the vortex takes him back down, and the key falls with him.",
+      "audio": "voice/drama/18-NARRATOR.mp3",
+      "sec": 6.46
+    },
+    {
+      "n": 19,
+      "speaker": "NARRATOR",
+      "text": "Coach Brain lets it go, and it falls through an empty frame. It turns and it grows as it comes, and behind it the whole film replays in reverse, so faint it is almost not there: the boards, the room, the house, and the avenue as it lands. The memories are streaked in the direction of the fall because they are passing at speed, but you can still make out what each one is if you look. The key stays sharp, because the camera is falling with it, and that difference is what makes the fall feel fast.",
+      "audio": "voice/drama/19-NARRATOR.mp3",
+      "sec": 25.25
+    },
+    {
+      "n": 20,
+      "speaker": "NARRATOR",
+      "text": "On the way down it crosses from a pencil drawing to a photograph, and no single frame is the moment it becomes real.",
+      "audio": "voice/drama/20-NARRATOR.mp3",
+      "sec": 6.67
+    },
+    {
+      "n": 21,
+      "speaker": "NARRATOR",
+      "text": "Manan catches it at the bottom.",
+      "audio": "voice/drama/21-NARRATOR.mp3",
+      "sec": 1.9
+    },
+    {
+      "n": 22,
+      "speaker": "NARRATOR",
+      "text": "Their two hands are never in the same frame, because an entire descent lies between them. That is deliberate, and it is better than a cut. A cut is a decision the audience can feel. A fall is one they take with the object.",
+      "audio": "voice/drama/22-NARRATOR.mp3",
+      "sec": 12.7
+    },
+    {
+      "n": 23,
+      "speaker": "NARRATOR",
+      "text": "Credits, flying card to card through cloud. Then a dedication.",
+      "audio": "voice/drama/23-NARRATOR.mp3",
+      "sec": 5.02
+    }
+  ]
 }

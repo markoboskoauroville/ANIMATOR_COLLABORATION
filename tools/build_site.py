@@ -786,6 +786,7 @@ def dialogue_for(shot_id, depth=0):
 
 
 
+DRAMA = CAT.get('radio_drama', [])
 TAKES = CAT.get('manan_takes', {})
 COACH = CAT.get('coach_takes', {})
 
@@ -939,6 +940,30 @@ DECK_JS = """<script>
   });
 })();
 </script>"""
+
+
+
+def drama_block(depth=0):
+    """The film as a radio drama, three voices, one file per paragraph.
+
+    Baba is dyslexic and short sighted, so reading a page of prose to check
+    whether the film is understood is the slowest possible way for him to do it.
+    Listening is not a convenience here, it is the difference between checking
+    the thing and not checking it.
+
+    Narrator, Manan and Coach Brain on separate voices so the exchange in the
+    control room plays as an exchange rather than as one person reading both
+    halves of it.
+    """
+    if not DRAMA:
+        return ''
+    rows = [('head', 'THE FILM, AS IT READS OFF THE PAGE', '', 0)]
+    for x in DRAMA:
+        rows.append(('line', x['speaker'] + '   ' + x['text'][:90], '', 0))
+        rows.append(('take', '%02d %s' % (x['n'], x['speaker']), x['audio'], x['sec']))
+    return deck_block('drama', 'THE BRAIN BRAKE, READ ALOUD',
+                      '%d parts, three voices, about three minutes.' % len(DRAMA),
+                      rows, 'downloads/BRAIN_BRAKE_radio_drama.zip', depth)
 
 
 def takes_block(depth=0):
@@ -1569,7 +1594,7 @@ _dg = ['<h1>Dialogue and takes</h1>',
        'voice, and Manan\u2019s own recorded takes.</b> The words themselves are on the film page '
        'under each frame, which is where they are needed; this is for listening, choosing a take '
        'and taking the files.</p>',
-       dialogue_block(), takes_block(), DECK_JS]
+       drama_block(), dialogue_block(), takes_block(), DECK_JS]
 open(os.path.join(ROOT, 'dialogue.html'), 'w').write(
     page('Dialogue', ''.join(_dg), here='archive', depth=0))
 
