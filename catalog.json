@@ -2972,7 +2972,7 @@
       "scene": "1",
       "shot": "1.91",
       "title": "The leg opens, and the light starts",
-      "status": "accepted",
+      "status": "superseded",
       "date": "2026-09-03",
       "note": "The same pose with his near leg drawn open: the skin transparent as tracing paper and the muscular structure showing through, and in the belly of the calf a small fierce point of white light with rays pushing out through the fibres. This is the FIRST SPARK, not the blaze. IT IS DRAWN INTO THE FRAME, which matters: per modules/magnifying-glass.md the glass only ever enlarges what is already there, so the light has to exist on the paper before any lens goes near it."
     },
@@ -2982,13 +2982,43 @@
       "scene": "1",
       "shot": "1.92",
       "title": "The spark, through the glass",
-      "status": "accepted",
+      "status": "superseded",
       "date": "2026-09-03",
       "note": "INSPECTION FIVE, AND THE DOORWAY. The glass is on the camera lens as always, and it simply makes the open calf larger: the same fibres, the same tendon, the same spark, only vast, with the rays pushing out through the graphite and bowing toward the brass. Nothing new inside the lens. This is the last inspection in the film. After it the glass is gone and the release takes the whole frame: the light travels up through him muscle by muscle, and it is not new fuel, it was there the whole time and somebody has just decided to open it."
+    },
+    {
+      "file": "BB_C_1/1-7-RECOVERY-GLASS-v8.png",
+      "kind": "keyframe",
+      "scene": "1",
+      "shot": "1.92",
+      "title": "The calf, through the glass",
+      "status": "accepted",
+      "date": "2026-09-03",
+      "note": "INSPECTION FIVE, AND THE LAST ONE IN THE FILM. Glass on the camera lens as always, but CENTRED ON THE CALF rather than beside it, which is what finally made the leg align: with the lens on the leg, magnifying about the lens centre and magnifying about the leg’s own axis become the same thing, so the leg runs unbroken from the shorts, through the circle, out into the ankle and the shoe. Three times up: one calf fills the lens, each fibre a separate line, the two bellies of the muscle broad and modelled, and the light burning where they meet. It stops reading as a leg with muscles in it and starts reading as the machinery itself. Nothing new is invented inside the lens, per modules/magnifying-glass.md."
+    },
+    {
+      "file": "BB_C_1/1-8-IGNITION-v2.png",
+      "kind": "keyframe",
+      "scene": "1",
+      "shot": "1.93",
+      "title": "Ignition",
+      "status": "accepted",
+      "date": "2026-09-03",
+      "note": "THE FRAME IMMEDIATELY AFTER THE GLASS, and the first of the release. We are inside the muscle now: dense diagonal graphite fibres filling the whole frame, and a white star bursting at the centre with long rays driving out along them. THE GLASS IS GONE and it does not come back: it took us in and the sequence takes over. What follows is the light travelling up through him foot to hip, muscle by muscle, as though somebody is throwing switches one at a time. AND IT IS NOT NEW FUEL. Nobody gave him anything. It was there the whole time, closed, and somebody has just decided to open it."
+    },
+    {
+      "file": "BB_C_1/1-7-RECOVERY-OPEN-v2.png",
+      "kind": "keyframe",
+      "scene": "1",
+      "shot": "1.91",
+      "title": "The leg opens, and the light starts",
+      "status": "accepted",
+      "date": "2026-09-03",
+      "note": "The recovery pose with his near leg drawn open: the skin transparent as tracing paper, the muscular structure showing through, and a small fierce point of white light in the belly of the calf travelling along the fibres. THE LIGHT STAYS INSIDE THE OUTLINE OF THE LEG. No rays leave him, nothing spills onto the paper, and that containment is what makes it read as something happening under the skin rather than an effect drawn on top. v1 had it bursting out across the sheet and was wrong. IT IS DRAWN INTO THE FRAME, which matters: per modules/magnifying-glass.md the glass only ever enlarges what is already there, so the light has to exist on the paper before any lens goes near it."
     }
   ],
   "event": "Breakthrough Junior Challenge 2026",
-  "site_version": 197,
+  "site_version": 198,
   "footage": [
     {
       "name": "Key catch",

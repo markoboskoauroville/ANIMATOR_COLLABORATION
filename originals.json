@@ -1126,5 +1126,23 @@
     "sha256": "01d6e01de338a7a6442084d370900f5ae36cad75619bbdc1510c418cded4271e",
     "path": "BB_C_1/1-7-RECOVERY-GLASS-v2.png",
     "url": "https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIGINALS/main/BB_C_1/1-7-RECOVERY-GLASS-v2.png"
+  },
+  "1-7-RECOVERY-GLASS-v8.png": {
+    "bytes": 2032803,
+    "sha256": "90659a8b5688ce210b7ec06d72143618e071a66784c227f51dc2144a50982eb2",
+    "path": "BB_C_1/1-7-RECOVERY-GLASS-v8.png",
+    "url": "https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIGINALS/main/BB_C_1/1-7-RECOVERY-GLASS-v8.png"
+  },
+  "1-8-IGNITION-v2.png": {
+    "bytes": 823774,
+    "sha256": "9fd46e1701906de8838f3bccb57a7d437c15fe14b708b9ac899d6e754324e1e7",
+    "path": "BB_C_1/1-8-IGNITION-v2.png",
+    "url": "https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIGINALS/main/BB_C_1/1-8-IGNITION-v2.png"
+  },
+  "1-7-RECOVERY-OPEN-v2.png": {
+    "bytes": 1498517,
+    "sha256": "23393a59060d2ae3e29b054bad766993db24e6885229f348bd8d084fb2c77bfd",
+    "path": "BB_C_1/1-7-RECOVERY-OPEN-v2.png",
+    "url": "https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIGINALS/main/BB_C_1/1-7-RECOVERY-OPEN-v2.png"
   }
 }
