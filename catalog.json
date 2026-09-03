@@ -2737,9 +2737,9 @@
       "scene": "9",
       "shot": "9.1",
       "title": "The vortex, up",
-      "status": "superseded",
+      "status": "accepted",
       "date": "2026-09-02",
-      "note": "REJECTED FOR ITS ASPECT RATIO ONLY. Square, 2048 x 2048, where the film is 16:9. The drawing itself was right and this frame became the reference v3 was built from, so only the framing changed. Kept because a rejected take is not rubbish.",
+      "note": "REJECTED FOR ITS ASPECT RATIO ONLY. Square, 2048 x 2048, where the film is 16:9. The drawing itself was right and this frame became the reference v3 was built from, so only the framing changed. Kept because a rejected take is not rubbish. APPROVED BY BABA IN CHAT 3.9.2026. It had been superseded by v3, which was generated separately while he was approving this one. v3 is kept as a proposal; this is the frame he chose.",
       "refs": [
         "https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIGINALS/main/BB_C_9/9-1-GANESHA-v1.png"
       ],
@@ -2795,7 +2795,7 @@
       "title": "The vortex, up",
       "status": "proposal",
       "date": "2026-09-03",
-      "note": "THE ACCEPTED TAKE. The cloud vortex he is drawn up through after his eyes close. Widescreen, 2752 x 1536, throat centred, zero coloured pixels. Third attempt: v1 had the drawing right in a square frame, v2 recomposed into a curling wave seen from the side, and v3 kept v1 as its reference so only the framing changed.",
+      "note": "THE ACCEPTED TAKE. The cloud vortex he is drawn up through after his eyes close. Widescreen, 2752 x 1536, throat centred, zero coloured pixels. Third attempt: v1 had the drawing right in a square frame, v2 recomposed into a curling wave seen from the side, and v3 kept v1 as its reference so only the framing changed. Alternative take, kept. Baba approved v1.",
       "refs": [
         "https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIGINALS/main/BB_C_9/9-1-VORTEX-UP-v1.png"
       ],
@@ -2814,10 +2814,30 @@
         "why": "AIR, because this is cloud, and breath instruments are what air sounds like. The bansuri plays alone because a solo has no ground under it, which is the feeling of the floor going out. Percussion stays out until the heart hall, so the first heartbeat in the film is a heart."
       },
       "meaning": "THE DOOR OUT OF THE WORLD. The first frame of the second half, and it does two things at once: it convinces the audience the film has changed, and it explains nothing.\n\nIt carries no information on purpose. Nothing to read, no object, no symbol, nothing that could be a clue. Four earlier versions built the vortex out of keys and every one failed for the same reason: a tunnel made of keys tells the audience what he is looking for before he knows it himself, so the film would say the word long before he reaches the key door.\n\nEmotionally it is gentle. Not a storm, and he is not in danger. He is being taken, not wrecked, and that softness is what makes the house of the body afterwards read as somewhere he belongs rather than somewhere he has crashed.\n\nIt moves the film forward by changing its grammar, and the same vortex returns near the end going down. Rising into it and falling out of it is the shape of the whole second half."
+    },
+    {
+      "file": "BB_C_9/9-2-RISING-v2.png",
+      "kind": "keyframe",
+      "scene": "9",
+      "shot": "9.2",
+      "title": "He is carried up",
+      "status": "accepted",
+      "date": "2026-09-03",
+      "note": "APPROVED BY BABA 3.9.2026. MANAN IS FULL COLOUR AND THE WORLD IS GRAPHITE, and those are the only two colours in the film with the gold key. Head and lifted arm highest and pointing at the throat, feet trailing below, sweatshirt and hair streaming DOWNWARD because he is rising and the air is going past him the other way. That trail is the only thing separating rising from falling. Colour measures 0.37 per cent of the frame, all of it him. Layers CLOUD and MANAN are generated separately rather than keyed, in BB_C_9/layers."
+    },
+    {
+      "file": "BB_C_9R/9R-2-FALLING-v1.png",
+      "kind": "keyframe",
+      "scene": "9R",
+      "shot": "9R.2",
+      "title": "He is carried back down",
+      "status": "accepted",
+      "date": "2026-09-03",
+      "note": "APPROVED BY BABA 3.9.2026. The rising frame turned over. A vertical flip is physically correct rather than a shortcut: his head now points at the throat below and his clothes stream upward, which is what a head first descent looks like. Same boy, same cloud, opposite direction, and the two passages match exactly because it is the same vortex. Layers flip with it."
     }
   ],
   "event": "Breakthrough Junior Challenge 2026",
-  "site_version": 168,
+  "site_version": 169,
   "footage": [
     {
       "name": "Key catch",
