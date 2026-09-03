@@ -797,6 +797,8 @@ def dialogue_for(shot_id, depth=0):
 DRAMA = CAT.get('radio_drama', [])
 DRAMA_HR = CAT.get('radio_drama_hr', [])
 DRAMA_V3 = CAT.get('radio_drama_v3', [])
+DRAMA_V6 = CAT.get('radio_drama_v6', [])
+MUSIC = CAT.get('music', [])
 TAKES = CAT.get('manan_takes', {})
 COACH = CAT.get('coach_takes', {})
 
@@ -1026,6 +1028,48 @@ def drama_v3_block(depth=0):
     return deck_block('dramav3', 'THE BRAIN BRAKE, HRVATSKI V3',
                       '%d dijelova, oko pet minuta. Srecko i Gabrijela.' % len(DRAMA_V3),
                       rows, 'downloads/BRAIN_BRAKE_radio_drama_HR_v3.zip', depth)
+
+
+
+def drama_v6_block(depth=0):
+    """THE radio drama. The film told out loud, in Croatian.
+
+    Baba is dyslexic and short sighted, so a page of prose is the slowest way for
+    him to check whether the film is understood. This is not a convenience: it is
+    the difference between checking the thing and not checking it. Kristijan gets
+    the same benefit, because a film explained aloud in nine minutes lands harder
+    than a page he skims.
+
+    Gabrijela narrates, Srecko is Manan, Antonin is Coach Brain. The narrator
+    names the speaker before every line, so nobody has to work out who is who.
+    """
+    if not DRAMA_V6:
+        return ''
+    rows = []
+    for x in DRAMA_V6:
+        rows.append(('line', x['speaker'] + '   ' + x['text'][:110], '', 0))
+        rows.append(('take', '%02d %s' % (x['n'], x['speaker']), x['audio'], x['sec']))
+    return deck_block('dramav6', 'THE BRAIN BRAKE, CIJELI FILM',
+                      '%d dijelova, oko devet minuta. Gabrijela, Srecko, Antonin.' % len(DRAMA_V6),
+                      rows, 'downloads/BRAIN_BRAKE_radio_drama_HR_v6.zip', depth)
+
+
+def music_block(depth=0):
+    """The two pieces written for the film.
+
+    Here so Kristijan can hear what the picture is going to sit on. An animator
+    working to the music times things differently from one working in silence,
+    and these were composed before the animation, which is the right way round.
+    """
+    if not MUSIC:
+        return ''
+    rows = []
+    for m in MUSIC:
+        rows.append(('line', m['name'] + '   ' + m.get('note', ''), '', 0))
+        rows.append(('take', m['name'], m['file'], m.get('sec', 0)))
+    return deck_block('music', 'THE MUSIC, WRITTEN FOR THE FILM',
+                      'Theme song and end credits. Composed before the animation.',
+                      rows, 'downloads/BRAIN_BRAKE_music.zip', depth)
 
 
 def takes_block(depth=0):
@@ -1660,6 +1704,18 @@ for e in docs:
              '<p><a href="%s" download>Download</a></p></div></div>'
              % (thumb, os.path.basename(e['file']), human(size_of(e['file'])),
                 e.get('date', ''), e.get('note', 'note pending'), e['file']))
+# ------------------------------------------------------------- radio drama page
+# The film out loud, and the music it sits on. Its own page because the film page
+# is for looking and this page is for listening, and mixing the two made the one
+# that does the work twice as long to read.
+_rd = ['<h1>Radio drama, and the music</h1>',
+       '<p class=lede>The whole film told out loud in Croatian, and the two pieces written for it. '
+       '<b>Nine minutes of listening instead of a page of reading.</b> Everything here can be '
+       'downloaded: the drama as numbered parts, the music as it was composed.</p>',
+       drama_v6_block(), music_block(), DECK_JS]
+open(os.path.join(ROOT, 'radiodrama.html'), 'w').write(
+    page('Radio drama', ''.join(_rd), here='archive', depth=0))
+
 # ---------------------------------------------------------------- dialogue page
 # The audio has its OWN page. Baba, 3.9.2026: Kristijan does not need to listen
 # to anything, he needs the words under the frame he is animating, so the decks
@@ -1682,7 +1738,9 @@ if True:
     # stopped competing with the one page anybody came for. Nothing is deleted,
     # because a page that is hard to find can be found and a page that is gone
     # cannot.
-    _other = [('dialogue.html', 'Dialogue and takes',
+    _other = [('radiodrama.html', 'Radio drama, and the music',
+               'The whole film told out loud, and the theme and credits songs'),
+              ('dialogue.html', 'Dialogue and takes',
                'Every line read aloud, and Manan\u2019s own takes, with the zips'),
               ('footage.html', 'Footage', 'Every live shot, its plate and its ProRes'),
               ('assets.html', 'Assets', 'The key in 3D, the vortex for Blender, the font'),
