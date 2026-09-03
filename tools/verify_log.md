@@ -171,3 +171,61 @@
 - **live version** — catalog says v206, live serves v205. The push has not published yet, or it failed.
 - **original** — 9-1-VORTEX-UP-v1.png  200 2060708
 - **original** — 9R-1-VORTEX-DOWN-v1.png  200 4973671
+
+## 2026-09-03 21:33 — v207 — cached run
+
+326 pages, 453 remote targets, 205 originals.
+
+- published weight 69.2 MB of the 1024 MB Pages ceiling, 7%
+- 205 originals in originals.json, 938.5 MB
+- 140 rows still in drive_links.json, kept as a fallback
+
+**FAILED, 27:**
+
+- **local path missing** — L.html -> card/1-0-A-v2.html
+- **local path missing** — L.html -> tiny/1-0-A-v2.jpg
+- **local path missing** — L.html -> card/1-0-C-v2.html
+- **local path missing** — L.html -> tiny/1-0-C-v2.jpg
+- **local path missing** — L.html -> card/1-1-v11.html
+- **local path missing** — L.html -> tiny/1-1-v11.jpg
+- **local path missing** — L.html -> card/1-1-v15.html
+- **local path missing** — L.html -> tiny/1-1-v15.jpg
+- **local path missing** — L.html -> card/1-1-v18.html
+- **local path missing** — L.html -> tiny/1-1-v18.jpg
+- **local path missing** — L.html -> card/1-2c-1-v1.html
+- **local path missing** — L.html -> tiny/1-2c-1-v1.jpg
+- **local path missing** — L.html -> card/1-2c-2-v1.html
+- **local path missing** — L.html -> tiny/1-2c-2-v1.jpg
+- **local path missing** — L.html -> card/1-2c-4-v1.html
+- **local path missing** — L.html -> tiny/1-2c-4-v1.jpg
+- **local path missing** — L.html -> card/1-3-A-v1.html
+- **local path missing** — L.html -> tiny/1-3-A-v1.jpg
+- **local path missing** — card/11-0-A-v1.html -> ../https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/reference/voice/SYNTESISED_BRAIN_NEW_THEORY.wav
+- **local path missing** — card/11-0-A-v1.html -> ../https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/reference/voice/SYNTESISED_BRAIN_NEW_THEORY.wav
+- **local path missing** — card/12-0-A-v1.html -> ../https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/reference/voice/THE_LIMIT_IS_A_SETTING_NOT_A_WALL.wav
+- **local path missing** — card/12-0-A-v1.html -> ../https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/reference/voice/THE_LIMIT_IS_A_SETTING_NOT_A_WALL.wav
+- **local path missing** — card/10-0-A-v2.html -> ../https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/reference/voice/SYNTESISED_MANAN_OLD_THEORY.wav
+- **local path missing** — card/10-0-A-v2.html -> ../https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/reference/voice/SYNTESISED_MANAN_OLD_THEORY.wav
+- **live version** — catalog says v207, live serves v206. The push has not published yet, or it failed.
+- **original** — 9-1-VORTEX-UP-v1.png  200 2060708
+- **original** — 9R-1-VORTEX-DOWN-v1.png  200 4973671
+
+## 2026-09-03 21:34 — v207 — cached run
+
+325 pages, 453 remote targets, 205 originals.
+
+- published weight 69.2 MB of the 1024 MB Pages ceiling, 7%
+- 205 originals in originals.json, 938.5 MB
+- 140 rows still in drive_links.json, kept as a fallback
+
+**FAILED, 9:**
+
+- **local path missing** — card/11-0-A-v1.html -> ../https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/reference/voice/SYNTESISED_BRAIN_NEW_THEORY.wav
+- **local path missing** — card/11-0-A-v1.html -> ../https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/reference/voice/SYNTESISED_BRAIN_NEW_THEORY.wav
+- **local path missing** — card/12-0-A-v1.html -> ../https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/reference/voice/THE_LIMIT_IS_A_SETTING_NOT_A_WALL.wav
+- **local path missing** — card/12-0-A-v1.html -> ../https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/reference/voice/THE_LIMIT_IS_A_SETTING_NOT_A_WALL.wav
+- **local path missing** — card/10-0-A-v2.html -> ../https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/reference/voice/SYNTESISED_MANAN_OLD_THEORY.wav
+- **local path missing** — card/10-0-A-v2.html -> ../https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/reference/voice/SYNTESISED_MANAN_OLD_THEORY.wav
+- **live version** — catalog says v207, live serves v206. The push has not published yet, or it failed.
+- **original** — 9-1-VORTEX-UP-v1.png  200 2060708
+- **original** — 9R-1-VORTEX-DOWN-v1.png  200 4973671
