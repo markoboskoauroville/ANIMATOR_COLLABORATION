@@ -1136,7 +1136,19 @@ AUDIO = 'https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/
 
 
 def aud(path):
-    """A raw link to the audio repository, from a site relative path."""
+    """A raw link to the audio repository, from a site relative path.
+
+    3.9.2026: this prefixed everything, including paths that were ALREADY
+    absolute after the catalogue was repointed, so every source came out as
+    the base glued onto a full URL and every single one 404'd. Nothing played
+    and nothing said why: the deck loaded, the button worked, the browser
+    fetched a dead link and stayed silent.
+
+    An absolute URL is already the answer and is returned untouched.
+    """
+    path = str(path)
+    if path.startswith(('http://', 'https://')):
+        return path
     return AUDIO + path.lstrip('./')
 
 
