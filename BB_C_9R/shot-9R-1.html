@@ -210,37 +210,66 @@ h2{font-size:19px;margin:38px 0 14px;padding-bottom:7px;border-bottom:1px solid 
 .deck.is-playing .wave{border-color:var(--gold)}
 .tc{font:400 11px/1 ui-monospace,monospace;color:var(--dim)}
 .tc.rem{margin-left:auto}
-.takes{margin:16px 0 6px;background:var(--panel);border:1px solid var(--rule);
-  border-radius:12px;padding:16px 18px}
-.takeh{display:flex;align-items:center;justify-content:space-between;gap:12px;
-  font:600 10.5px/1 ui-monospace,monospace;letter-spacing:.14em;color:var(--gold);
-  margin-bottom:10px}
-.playall{background:var(--gold);color:#16110D;border:0;border-radius:999px;
-  padding:7px 14px;font:600 10px/1 ui-monospace,monospace;letter-spacing:.1em;cursor:pointer}
-.takew{font:600 10px/1 ui-monospace,monospace;letter-spacing:.16em;color:var(--dim);
-  text-transform:uppercase;margin:18px 0 4px;border-top:1px solid var(--rule);
-  padding-top:14px}
-.takes{margin:16px 0 6px;background:var(--panel);border:1px solid var(--rule);
-  border-radius:12px;padding:0}
-.takeh{display:flex;align-items:center;gap:11px;flex-wrap:wrap;cursor:pointer;
-  list-style:none;padding:15px 18px;
-  font:600 11px/1 ui-monospace,monospace;letter-spacing:.14em;color:var(--gold)}
-.takeh::-webkit-details-marker{display:none}
-.takeh:after{content:'>';margin-left:auto;color:var(--gold);font-size:12px;
-  transition:transform .15s}
-.takes[open] .takeh:after{transform:rotate(90deg)}
-.takehd{font:400 11.5px/1.4 Inter,system-ui,sans-serif;letter-spacing:0;color:var(--dim);
-  text-transform:none;flex-basis:100%}
-.takebody{padding:0 18px 18px}
+/* ONE DECK, PLAYLIST UNDER IT. Modelled on Baba's own NOVA_TV_777 player and on
+   Winamp: transport at the top, a waveform that fills as it plays, the list
+   below. Forty three separate players was the wrong shape, because only one
+   thing plays at a time. The VU meter is deliberately absent: he asked for the
+   waveform and the controls, and a meter on a review page is decoration. */
+.nova{margin:16px 0 6px;background:#0F0E0C;border:1px solid var(--rule);border-radius:10px;
+  overflow:hidden}
+.novatc{display:flex;justify-content:space-between;padding:11px 15px;
+  font:400 15px/1 ui-monospace,monospace;color:var(--gold);border-bottom:1px solid var(--rule)}
+.novatc span:last-child{color:var(--dim)}
+.novah{display:flex;align-items:center;justify-content:space-between;gap:14px;
+  padding:14px 15px;background:#171310;border-bottom:1px solid var(--rule)}
+.novah b{display:block;font:700 15px/1.25 Inter,system-ui,sans-serif;color:var(--gold);
+  letter-spacing:.01em}
+.novah span{display:block;font:400 12.5px/1.45 Inter,system-ui,sans-serif;color:var(--dim);
+  margin-top:3px}
+.mcbtn{background:#1A1A1D;border:1px solid var(--rule);border-radius:3px;color:var(--ink);
+  cursor:pointer;width:40px;height:34px;display:inline-flex;align-items:center;
+  justify-content:center;flex:0 0 auto;padding:0;text-decoration:none}
+.mcbtn svg{width:15px;height:15px;fill:currentColor;display:block}
+.mcbtn.wide{width:auto;padding:0 12px;font:600 10px/1 ui-monospace,monospace;
+  letter-spacing:.12em;color:var(--gold)}
+.mcbtn.play{width:78px;height:46px;background:var(--gold);border-color:var(--gold);flex:none}
+.mcbtn.play svg{width:20px;height:20px;fill:#fff}
+.novascrub{padding:12px 15px;background:#0B0A09}
+.wave{position:relative;height:52px;width:100%;background:#131110;
+  border:1px solid var(--rule);border-radius:3px;display:flex;align-items:flex-end;
+  gap:1px;padding:4px 3px;overflow:hidden}
+.wave span{flex:1 1 0;background:#6B4E1E;border-radius:1px 1px 0 0;min-width:0;
+  transition:background .05s linear}
+.wave span.played{background:#F7D488}
+.cursor{position:absolute;top:0;bottom:0;width:1px;background:#FFE7B0;left:0;pointer-events:none}
+.novabar{display:flex;align-items:center;gap:8px;padding:11px 15px;flex-wrap:wrap;
+  border-top:1px solid var(--rule)}
+.novastate{margin-left:auto;font:400 11px/1 ui-monospace,monospace;letter-spacing:.14em;
+  color:var(--dim)}
+.novapl{border-top:1px solid var(--rule)}
+.novaplh{display:flex;align-items:center;gap:10px;cursor:pointer;list-style:none;
+  padding:12px 15px;font:600 10.5px/1 ui-monospace,monospace;letter-spacing:.16em;
+  color:var(--dim)}
+.novaplh::-webkit-details-marker{display:none}
+.novaplh:after{content:'>';margin-left:auto;color:var(--gold);transition:transform .15s}
+.novapl[open] .novaplh:after{transform:rotate(90deg)}
+.novapb{padding:0 8px 12px;max-height:420px;overflow-y:auto}
+.plhead{font:600 9.5px/1 ui-monospace,monospace;letter-spacing:.16em;color:var(--gold);
+  text-transform:uppercase;margin:12px 0 5px;padding:0 7px}
+.plline{font-size:13.5px;color:var(--dim);margin:9px 0 3px;padding:0 7px}
+.plrow{display:flex;align-items:center;gap:10px;padding:7px 7px;border-radius:5px;cursor:pointer}
+.plrow:hover{background:#17150F}
+.plrow.on{background:#241B0D}
+.plrow.on .plnm{color:var(--gold)}
+.plno{font:400 10.5px/1 ui-monospace,monospace;color:var(--dim);width:22px;flex:none}
+.plnm{flex:1;font:400 13px/1.3 ui-monospace,monospace;color:var(--ink);min-width:0;
+  overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.plsec{font:400 10.5px/1 ui-monospace,monospace;color:var(--dim);flex:none}
+.pldl{color:var(--gold);text-decoration:none;font-size:15px;padding:2px 7px;flex:none;
+  border:1px solid var(--rule);border-radius:4px}
 .takec{font:600 10px/1 ui-monospace,monospace;color:#16110D;background:var(--gold);
   border-radius:999px;padding:4px 8px;flex:none}
-.takecn{font:600 10px/1 ui-monospace,monospace;color:var(--dim);margin-right:6px}
-.takel{font-size:15.5px;color:var(--ink);margin:16px 0 7px;
-  border-left:2px solid var(--gold);padding-left:10px}
-.taker{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin:0 0 5px}
-.taken{font:400 10.5px/1 ui-monospace,monospace;color:var(--dim);min-width:96px}
-.taker audio{height:30px;max-width:230px}
-.takes2{font:400 10.5px/1 ui-monospace,monospace;color:var(--dim)}
+.takecn{font:600 10px/1 ui-monospace,monospace;color:var(--dim);margin-right:7px}
 .dlg{margin:14px 0 4px;border-left:2px solid var(--gold);padding-left:14px}
 .dlgr{margin:0 0 14px}
 .dlgw{font:600 10px/1 ui-monospace,monospace;letter-spacing:.16em;color:var(--gold);

@@ -300,37 +300,66 @@ h2{font-size:19px;margin:38px 0 14px;padding-bottom:7px;border-bottom:1px solid 
 .deck.is-playing .wave{border-color:var(--gold)}
 .tc{font:400 11px/1 ui-monospace,monospace;color:var(--dim)}
 .tc.rem{margin-left:auto}
-.takes{margin:16px 0 6px;background:var(--panel);border:1px solid var(--rule);
-  border-radius:12px;padding:16px 18px}
-.takeh{display:flex;align-items:center;justify-content:space-between;gap:12px;
-  font:600 10.5px/1 ui-monospace,monospace;letter-spacing:.14em;color:var(--gold);
-  margin-bottom:10px}
-.playall{background:var(--gold);color:#16110D;border:0;border-radius:999px;
-  padding:7px 14px;font:600 10px/1 ui-monospace,monospace;letter-spacing:.1em;cursor:pointer}
-.takew{font:600 10px/1 ui-monospace,monospace;letter-spacing:.16em;color:var(--dim);
-  text-transform:uppercase;margin:18px 0 4px;border-top:1px solid var(--rule);
-  padding-top:14px}
-.takes{margin:16px 0 6px;background:var(--panel);border:1px solid var(--rule);
-  border-radius:12px;padding:0}
-.takeh{display:flex;align-items:center;gap:11px;flex-wrap:wrap;cursor:pointer;
-  list-style:none;padding:15px 18px;
-  font:600 11px/1 ui-monospace,monospace;letter-spacing:.14em;color:var(--gold)}
-.takeh::-webkit-details-marker{display:none}
-.takeh:after{content:'>';margin-left:auto;color:var(--gold);font-size:12px;
-  transition:transform .15s}
-.takes[open] .takeh:after{transform:rotate(90deg)}
-.takehd{font:400 11.5px/1.4 Inter,system-ui,sans-serif;letter-spacing:0;color:var(--dim);
-  text-transform:none;flex-basis:100%}
-.takebody{padding:0 18px 18px}
+/* ONE DECK, PLAYLIST UNDER IT. Modelled on Baba's own NOVA_TV_777 player and on
+   Winamp: transport at the top, a waveform that fills as it plays, the list
+   below. Forty three separate players was the wrong shape, because only one
+   thing plays at a time. The VU meter is deliberately absent: he asked for the
+   waveform and the controls, and a meter on a review page is decoration. */
+.nova{margin:16px 0 6px;background:#0F0E0C;border:1px solid var(--rule);border-radius:10px;
+  overflow:hidden}
+.novatc{display:flex;justify-content:space-between;padding:11px 15px;
+  font:400 15px/1 ui-monospace,monospace;color:var(--gold);border-bottom:1px solid var(--rule)}
+.novatc span:last-child{color:var(--dim)}
+.novah{display:flex;align-items:center;justify-content:space-between;gap:14px;
+  padding:14px 15px;background:#171310;border-bottom:1px solid var(--rule)}
+.novah b{display:block;font:700 15px/1.25 Inter,system-ui,sans-serif;color:var(--gold);
+  letter-spacing:.01em}
+.novah span{display:block;font:400 12.5px/1.45 Inter,system-ui,sans-serif;color:var(--dim);
+  margin-top:3px}
+.mcbtn{background:#1A1A1D;border:1px solid var(--rule);border-radius:3px;color:var(--ink);
+  cursor:pointer;width:40px;height:34px;display:inline-flex;align-items:center;
+  justify-content:center;flex:0 0 auto;padding:0;text-decoration:none}
+.mcbtn svg{width:15px;height:15px;fill:currentColor;display:block}
+.mcbtn.wide{width:auto;padding:0 12px;font:600 10px/1 ui-monospace,monospace;
+  letter-spacing:.12em;color:var(--gold)}
+.mcbtn.play{width:78px;height:46px;background:var(--gold);border-color:var(--gold);flex:none}
+.mcbtn.play svg{width:20px;height:20px;fill:#fff}
+.novascrub{padding:12px 15px;background:#0B0A09}
+.wave{position:relative;height:52px;width:100%;background:#131110;
+  border:1px solid var(--rule);border-radius:3px;display:flex;align-items:flex-end;
+  gap:1px;padding:4px 3px;overflow:hidden}
+.wave span{flex:1 1 0;background:#6B4E1E;border-radius:1px 1px 0 0;min-width:0;
+  transition:background .05s linear}
+.wave span.played{background:#F7D488}
+.cursor{position:absolute;top:0;bottom:0;width:1px;background:#FFE7B0;left:0;pointer-events:none}
+.novabar{display:flex;align-items:center;gap:8px;padding:11px 15px;flex-wrap:wrap;
+  border-top:1px solid var(--rule)}
+.novastate{margin-left:auto;font:400 11px/1 ui-monospace,monospace;letter-spacing:.14em;
+  color:var(--dim)}
+.novapl{border-top:1px solid var(--rule)}
+.novaplh{display:flex;align-items:center;gap:10px;cursor:pointer;list-style:none;
+  padding:12px 15px;font:600 10.5px/1 ui-monospace,monospace;letter-spacing:.16em;
+  color:var(--dim)}
+.novaplh::-webkit-details-marker{display:none}
+.novaplh:after{content:'>';margin-left:auto;color:var(--gold);transition:transform .15s}
+.novapl[open] .novaplh:after{transform:rotate(90deg)}
+.novapb{padding:0 8px 12px;max-height:420px;overflow-y:auto}
+.plhead{font:600 9.5px/1 ui-monospace,monospace;letter-spacing:.16em;color:var(--gold);
+  text-transform:uppercase;margin:12px 0 5px;padding:0 7px}
+.plline{font-size:13.5px;color:var(--dim);margin:9px 0 3px;padding:0 7px}
+.plrow{display:flex;align-items:center;gap:10px;padding:7px 7px;border-radius:5px;cursor:pointer}
+.plrow:hover{background:#17150F}
+.plrow.on{background:#241B0D}
+.plrow.on .plnm{color:var(--gold)}
+.plno{font:400 10.5px/1 ui-monospace,monospace;color:var(--dim);width:22px;flex:none}
+.plnm{flex:1;font:400 13px/1.3 ui-monospace,monospace;color:var(--ink);min-width:0;
+  overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.plsec{font:400 10.5px/1 ui-monospace,monospace;color:var(--dim);flex:none}
+.pldl{color:var(--gold);text-decoration:none;font-size:15px;padding:2px 7px;flex:none;
+  border:1px solid var(--rule);border-radius:4px}
 .takec{font:600 10px/1 ui-monospace,monospace;color:#16110D;background:var(--gold);
   border-radius:999px;padding:4px 8px;flex:none}
-.takecn{font:600 10px/1 ui-monospace,monospace;color:var(--dim);margin-right:6px}
-.takel{font-size:15.5px;color:var(--ink);margin:16px 0 7px;
-  border-left:2px solid var(--gold);padding-left:10px}
-.taker{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin:0 0 5px}
-.taken{font:400 10.5px/1 ui-monospace,monospace;color:var(--dim);min-width:96px}
-.taker audio{height:30px;max-width:230px}
-.takes2{font:400 10.5px/1 ui-monospace,monospace;color:var(--dim)}
+.takecn{font:600 10px/1 ui-monospace,monospace;color:var(--dim);margin-right:7px}
 .dlg{margin:14px 0 4px;border-left:2px solid var(--gold);padding-left:14px}
 .dlgr{margin:0 0 14px}
 .dlgw{font:600 10px/1 ui-monospace,monospace;letter-spacing:.16em;color:var(--gold);
@@ -758,170 +787,175 @@ COACH = CAT.get('coach_takes', {})
 
 
 def takes_block(depth=0):
-    """Manan's own recordings, grouped by line, every take kept.
+    """ONE deck for the scene, with the playlist underneath it.
 
-    Baba, 3.9.2026: this is the FINAL PERFORMANCE, not voice material. He is not
-    cloning anything, so these files are the film and the download matters as
-    much as the player.
+    Baba, 3.9.2026, and the model is his own NOVA_TV_777 player plus Winamp:
+    a single transport at the top, a waveform that fills as it plays, and the
+    list of everything below it. Forty three separate players was the wrong
+    shape; there is one thing playing at a time, so there should be one player.
 
-    Cut from the transcript rather than from silence: he pauses unevenly while
-    reading, so silence detection would split him mid thought. Half a second of
-    true silence on each side and no line allowed to overlap the next.
+    Kept from songs.js because it was learned there: only one thing plays at a
+    time, the waveform fills behind a cursor rather than animating, and a host
+    that does not serve HTTP Range leaves the audio unseekable so the scrub bar
+    stops pretending.
 
-    THE PLAYERS ARE CHAINED. One press runs the whole line, take after take, and
-    then the next line, to the end. Each take keeps its own player so you can see
-    which one is speaking. Pause anything and the chain stops there and waits;
-    press that one again and it carries on from where it stopped, rather than
-    starting the scene over.
+    The VU meter is deliberately not here. Baba asked for the waveform and the
+    controls, and a meter on a review page is decoration.
+
+    DOWNLOAD APPEARS TWICE ON PURPOSE. Once in the transport, for whatever is
+    playing, and once on every row, so he can take a take he has not listened to
+    without loading it first.
     """
     if not TAKES and not COACH:
         return ''
     r = '../' * depth
-    _n = sum(len(b.get('takes', [])) for t in (TAKES, COACH) for b in t.values())
-    o = ['<details class=takes id=takes>',
-         '<summary class=takeh><span class=takec>%d</span>'
-         '<b>THE RECORDED PERFORMANCE</b>'
-         '<span class=takehd>Manan, and Manan as Coach Brain. Every take, with a '
-         'download.</span></summary>' % _n,
-         '<div class=takebody>'
-         '<button class=playall id=playall>PLAY ALL &#9654;</button>']
-    n = 0
-    # Manan reading the old theory, then Manan reading Coach Brain. Two speakers,
-    # one chain, so PLAY ALL runs the whole exchange in order.
+    rows, n = [], 0
     for who, table in (('MANAN, THE OLD THEORY', TAKES),
                        ('MANAN AS COACH BRAIN', COACH)):
-      if table:
-        o.append('<div class=takew>%s</div>' % who)
-      for key, blk in table.items():
-        if not blk.get('takes'):
+        if not table:
             continue
-        o.append('<div class=takel><span class=takecn>%d</span> %s</div>'
-                 % (len(blk['takes']), html.escape(blk.get('line', ''))))
-        for t in blk['takes']:
-            o.append(
-              '<div class=deck data-i="%d">'
-              '<div class=deckh><span class=deckn>%s</span>'
-              '<a class=dl href="%s%s" download>MP3 &darr;</a></div>'
-              '<div class=wave><div class=cursor></div></div>'
-              '<div class=deckf>'
-              '<button class=pbtn type=button>'
-              '<svg class=ic-play viewBox="0 0 24 24"><path d="M7 4l13 8-13 8z"/></svg>'
-              '<svg class=ic-pause viewBox="0 0 24 24" style="display:none">'
-              '<path d="M6 4h4v16H6zM14 4h4v16h-4z"/></svg></button>'
-              '<span class=tc>0:00</span><span class="tc rem">-0:00</span>'
-              '</div>'
-              '<audio preload=metadata src="%s%s"></audio>'
-              '</div>'
-              % (n, html.escape(t['name'].replace('REC0000', 'rec ')),
-                 r, t['file'], r, t['file']))
-            n += 1
-    o.append('</div></details>')
+        rows.append(('head', who, '', '', 0))
+        for key, blk in table.items():
+            if not blk.get('takes'):
+                continue
+            rows.append(('line', blk.get('line', ''), '', '', len(blk['takes'])))
+            for t in blk['takes']:
+                rows.append(('take', t['name'].replace('REC0000', 'rec ').replace('CB0000', 'cb '),
+                             r + t['file'], t.get('sec', 0), n))
+                n += 1
+    o = ['<div class=nova id=nova>',
+         '<div class=novatc><span id=nv-el>00:00</span><span id=nv-rem>-00:00</span></div>',
+         '<div class=novah><div><b id=nv-name>THE RECORDED PERFORMANCE</b>'
+         '<span id=nv-sub>%d takes. Manan, and Manan as Coach Brain.</span></div>'
+         '<button class="mcbtn play" id=nv-play type=button>'
+         '<svg class=ic-play viewBox="0 0 24 24"><path d="M7 4l13 8-13 8z"/></svg>'
+         '<svg class=ic-pause viewBox="0 0 24 24" style="display:none">'
+         '<path d="M6 4h4v16H6zM14 4h4v16h-4z"/></svg></button></div>' % n,
+         '<div class=novascrub><div class=wave id=nv-wave><div class=cursor id=nv-cur></div>'
+         '</div></div>',
+         '<div class=novabar>'
+         '<button class=mcbtn id=nv-first type=button title="first">'
+         '<svg viewBox="0 0 24 24"><path d="M6 5h2v14H6zM20 5v14L9 12z"/></svg></button>'
+         '<button class=mcbtn id=nv-prev type=button title="previous">'
+         '<svg viewBox="0 0 24 24"><path d="M11 5v14L2 12zM22 5v14l-9-7z"/></svg></button>'
+         '<button class=mcbtn id=nv-next type=button title="next">'
+         '<svg viewBox="0 0 24 24"><path d="M13 5v14l9-7zM2 5v14l9-7z"/></svg></button>'
+         '<button class=mcbtn id=nv-last type=button title="last">'
+         '<svg viewBox="0 0 24 24"><path d="M18 5h2v14h-2zM4 5v14l11-7z"/></svg></button>'
+         '<a class="mcbtn wide" id=nv-dl href="#" download>MP3 &darr;</a>'
+         '<span class=novastate id=nv-state>READY</span></div>',
+         '<details class=novapl id=nv-pl><summary class=novaplh>'
+         '<span class=takec>%d</span>PLAYLIST</summary><div class=novapb>' % n]
+    for kind, a, b, c, d in rows:
+        if kind == 'head':
+            o.append('<div class=plhead>%s</div>' % html.escape(a))
+        elif kind == 'line':
+            o.append('<div class=plline><span class=takecn>%d</span>%s</div>'
+                     % (d, html.escape(a)))
+        else:
+            o.append('<div class=plrow data-i="%d" data-src="%s" data-name="%s">'
+                     '<span class=plno>%d</span>'
+                     '<span class=plnm>%s</span>'
+                     '<span class=plsec>%s s</span>'
+                     '<a class=pldl href="%s" download title="download">&darr;</a>'
+                     '</div>' % (d, b, html.escape(a), d + 1, html.escape(a), c, b))
+    o.append('</div></details></div>')
     o.append("""<script>
-/* The player is Baba's own, lifted from NOVA_TV_777/songs.js: the bar waveform,
-   the cursor, the play and pause icons, elapsed and remaining. The VU meter is
-   deliberately left behind; he asked for the waveform and the controls only.
-   Two things are kept from that file because they were learned the hard way
-   there: only one deck plays at a time, and a host that does not serve HTTP
-   Range leaves the audio unseekable, so the waveform stops pretending to scrub
-   rather than lying about it. */
 (function(){
-  var mmss = function(s){ s = Math.max(0, s||0);
-    return Math.floor(s/60) + ':' + String(Math.floor(s%60)).padStart(2,'0'); };
-  var decks = [].slice.call(document.querySelectorAll('#takes .deck')).map(function(el){
-    var d = { el: el,
-      audio: el.querySelector('audio'), wave: el.querySelector('.wave'),
-      cur: el.querySelector('.cursor'), btn: el.querySelector('.pbtn'),
-      tc: el.querySelector('.tc'), rem: el.querySelector('.rem'), bars: [] };
-    /* No stored peaks for these, so the bars are drawn from a fixed shape and
-       the colour does the work. The real waveform would mean decoding every
-       take in the browser, which is a lot of bandwidth for a review page. */
-    /* Real peaks, computed once on the build machine and shipped as a small
-       JSON beside each take, which is the shape songs.js already expects.
-       Decoding 43 files in the browser would be a lot of bandwidth for a review
-       page and the peaks never change. A flat shape is drawn first so the deck
-       is usable immediately, then replaced when the JSON lands. */
-    var N = 96;
-    for (var i=0;i<N;i++){
-      var b = document.createElement('span');
-      b.style.height = '22%';
-      d.wave.appendChild(b);
-    }
-    d.bars = [].slice.call(d.wave.querySelectorAll('span'));
-    var src = d.audio.getAttribute('src');
-    /* No regex here on purpose: a backslash in this string is escaped twice on
-       the way into the page, so /\.mp3$/ arrived as a pattern that matches
-       nothing and the peaks would have silently never loaded. */
-    fetch(src.slice(0, -4) + '.json').then(function(r){
-      return r.ok ? r.json() : null;
-    }).then(function(j){
-      if (!j || !j.bars) return;
-      var n = Math.min(d.bars.length, j.bars.length);
-      /* 3.9.2026: a 6% floor made the quiet parts of a take look like an
-         empty box, so the waveform appeared to vanish rather than to be
-         quiet. 14 is the smallest bar that still reads on a phone. */
-      for (var i=0;i<n;i++) d.bars[i].style.height = Math.max(14, j.bars[i]*100) + '%';
-    }).catch(function(){});
-    return d;
-  });
-  if (!decks.length) return;
-  var chain = false;
+  var wrap = document.getElementById('nova'); if (!wrap) return;
+  var rows = [].slice.call(wrap.querySelectorAll('.plrow'));
+  if (!rows.length) return;
+  var audio = new Audio(); audio.preload = 'metadata';
+  var wave = document.getElementById('nv-wave'), cur = document.getElementById('nv-cur');
+  var el = document.getElementById('nv-el'), rem = document.getElementById('nv-rem');
+  var nm = document.getElementById('nv-name'), sub = document.getElementById('nv-sub');
+  var btn = document.getElementById('nv-play'), dl = document.getElementById('nv-dl');
+  var state = document.getElementById('nv-state'), pl = document.getElementById('nv-pl');
+  var idx = -1, bars = [], chain = true;
 
-  function dur(d){ var a=d.audio; return (a.duration && isFinite(a.duration)) ? a.duration : 0; }
-  function canSeek(d){ var s=d.audio.seekable; return !!(s && s.length && s.end(s.length-1) > 1); }
-  function paint(d){
-    var D = dur(d), c = d.audio.currentTime || 0, p = D ? c/D : 0, n = d.bars.length;
-    for (var i=0;i<n;i++) d.bars[i].classList.toggle('played', i/n <= p);
-    d.cur.style.left = (p*100) + '%';
-    d.tc.textContent = mmss(c);
-    d.rem.textContent = '-' + mmss(D - c);
+  var N = 110;
+  for (var i=0;i<N;i++){ var b=document.createElement('span'); b.style.height='16%';
+    wave.appendChild(b); }
+  bars = [].slice.call(wave.querySelectorAll('span'));
+
+  function mmss(s){ s=Math.max(0,s||0);
+    return String(Math.floor(s/60)).padStart(2,'0')+':'+String(Math.floor(s%60)).padStart(2,'0'); }
+  function dur(){ return (audio.duration && isFinite(audio.duration)) ? audio.duration : 0; }
+  function canSeek(){ var s=audio.seekable; return !!(s && s.length && s.end(s.length-1) > 1); }
+
+  function peaks(src){
+    /* real peaks, computed once at build time and shipped beside each take. A
+       flat shape shows first so the deck is usable while it loads. */
+    for (var i=0;i<bars.length;i++) bars[i].style.height='16%';
+    fetch(src.slice(0,-4) + '.json').then(function(r){ return r.ok ? r.json() : null; })
+      .then(function(j){
+        if (!j || !j.bars) return;
+        for (var i=0;i<bars.length;i++){
+          var v = j.bars[Math.floor(i*j.bars.length/bars.length)] || 0;
+          bars[i].style.height = Math.max(14, v*100) + '%';
+        }
+      }).catch(function(){});
   }
-  function setPlaying(d,on){
-    d.btn.classList.toggle('on', on);
-    d.btn.querySelector('.ic-play').style.display  = on ? 'none' : 'block';
-    d.btn.querySelector('.ic-pause').style.display = on ? 'block' : 'none';
-    d.el.classList.toggle('is-playing', on);
+  function paint(){
+    var D=dur(), c=audio.currentTime||0, p=D?c/D:0;
+    for (var i=0;i<bars.length;i++) bars[i].classList.toggle('played', i/bars.length <= p);
+    cur.style.left = (p*100)+'%';
+    el.textContent = mmss(c);
+    rem.textContent = '-' + mmss(D-c);
   }
-  decks.forEach(function(d, i){
-    d.btn.onclick = function(){
-      if (d.audio.paused){ chain = true;
-        decks.forEach(function(o){ if (o!==d && !o.audio.paused) o.audio.pause(); });
-        d.audio.play().catch(function(){});
-      } else { d.audio.pause(); }
-    };
-    d.wave.addEventListener('click', function(e){
-      if (!canSeek(d)) return;
-      var r = e.currentTarget.getBoundingClientRect();
-      d.audio.currentTime = ((e.clientX - r.left)/r.width) * dur(d);
-      paint(d);
-    });
-    d.audio.addEventListener('timeupdate', function(){ paint(d); });
-    d.audio.addEventListener('loadedmetadata', function(){
-      paint(d);
-      d.wave.style.cursor = canSeek(d) ? 'pointer' : 'default';
-    });
-    d.audio.addEventListener('play',  function(){
-      setPlaying(d,true);
-      /* the chain can run into a collapsed group, and hearing a take you
-         cannot see is worse than not hearing it. Opening the group is what
-         makes collapse safe to combine with PLAY ALL. */
-      var g = d.el.closest('details'); if (g) g.open = true;
-    });
-    /* Pausing breaks the chain, which is the point: Baba stops on the take he
-       wants to hear again and the rest must not run over him. */
-    d.audio.addEventListener('pause', function(){
-      setPlaying(d,false); if (!d.audio.ended) chain = false;
-    });
-    d.audio.addEventListener('ended', function(){
-      setPlaying(d,false); paint(d);
-      if (!chain) return;
-      var nx = decks[i+1]; if (!nx) return;
-      nx.audio.play().catch(function(){});
-      nx.el.scrollIntoView({block:'center', behavior:'smooth'});
-    });
-    paint(d);
+  function load(i, play){
+    if (i<0 || i>=rows.length) return;
+    idx = i;
+    rows.forEach(function(r,k){ r.classList.toggle('on', k===i); });
+    var r = rows[i];
+    audio.src = r.dataset.src;
+    dl.href = r.dataset.src;
+    nm.textContent = r.dataset.name;
+    sub.textContent = (i+1) + ' of ' + rows.length;
+    peaks(r.dataset.src);
+    paint();
+    /* the playlist opens itself when the chain moves on, because hearing a take
+       you cannot see is worse than not hearing it */
+    if (play){ if (pl) pl.open = true; audio.play().catch(function(){}); }
+  }
+  function setPlaying(on){
+    btn.classList.toggle('on', on);
+    btn.querySelector('.ic-play').style.display  = on ? 'none' : 'block';
+    btn.querySelector('.ic-pause').style.display = on ? 'block' : 'none';
+    state.textContent = on ? 'PLAYING' : (idx>=0 ? 'PAUSED' : 'READY');
+  }
+  audio.addEventListener('timeupdate', paint);
+  audio.addEventListener('loadedmetadata', function(){
+    paint(); wave.style.cursor = canSeek() ? 'pointer' : 'default';
   });
-  var b = document.getElementById('playall');
-  if (b) b.onclick = function(){ chain = true; decks[0].audio.play().catch(function(){}); };
+  audio.addEventListener('play',  function(){ setPlaying(true); });
+  audio.addEventListener('pause', function(){ if(!audio.ended) chain=false; setPlaying(false); });
+  audio.addEventListener('ended', function(){
+    setPlaying(false);
+    if (chain && idx+1 < rows.length) load(idx+1, true);
+  });
+  btn.onclick = function(){
+    if (idx < 0) { chain=true; load(0,true); return; }
+    if (audio.paused){ chain=true; audio.play().catch(function(){}); } else audio.pause();
+  };
+  wave.addEventListener('click', function(e){
+    if (!canSeek()) return;
+    var b=e.currentTarget.getBoundingClientRect();
+    audio.currentTime = ((e.clientX-b.left)/b.width)*dur(); paint();
+  });
+  document.getElementById('nv-first').onclick = function(){ chain=true; load(0,true); };
+  document.getElementById('nv-last').onclick  = function(){ chain=true; load(rows.length-1,true); };
+  document.getElementById('nv-prev').onclick  = function(){
+    chain=true; load(idx<=0 ? 0 : idx-1, true); };
+  document.getElementById('nv-next').onclick  = function(){
+    chain=true; load(idx+1 >= rows.length ? rows.length-1 : idx+1, true); };
+  rows.forEach(function(r,i){
+    r.addEventListener('click', function(e){
+      if (e.target.closest('.pldl')) return;   /* the row download is not a play */
+      chain=true; load(i,true);
+    });
+  });
+  load(0,false);
 })();
 </script>""")
     return ''.join(o)
