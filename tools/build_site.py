@@ -360,6 +360,10 @@ h2{font-size:19px;margin:38px 0 14px;padding-bottom:7px;border-bottom:1px solid 
 .takec{font:600 10px/1 ui-monospace,monospace;color:#16110D;background:var(--gold);
   border-radius:999px;padding:4px 8px;flex:none}
 .takecn{font:600 10px/1 ui-monospace,monospace;color:var(--dim);margin-right:7px}
+.sline{margin:5px 0 0;font-size:12.5px;line-height:1.5}
+.slw{display:block;font:600 9px/1 ui-monospace,monospace;letter-spacing:.14em;
+  color:var(--gold);text-transform:uppercase;margin-top:5px}
+.slt{display:block;color:var(--ink)}
 .dlg{margin:14px 0 4px;border-left:2px solid var(--gold);padding-left:14px}
 .dlgr{margin:0 0 14px}
 .dlgw{font:600 10px/1 ui-monospace,monospace;letter-spacing:.16em;color:var(--gold);
@@ -971,6 +975,26 @@ def dialogue_block(depth=0):
                       rows, 'downloads/BRAIN_BRAKE_scene19_dialogue.zip', depth)
 
 
+
+def lines_of(e):
+    """The dialogue for one shot, as TEXT under its thumbnail.
+
+    Baba, 3.9.2026: Kristijan does not need to listen to anything. He needs to
+    know what is said over the frame he is animating, so the words go under the
+    picture and in the shot's own card. The audio has its own page and does not
+    pollute this one.
+    """
+    d = e.get('dialogue') or []
+    if not d:
+        return ''
+    o = ['<div class=sline>']
+    for x in d:
+        o.append('<span class=slw>%s</span><span class=slt>%s</span>'
+                 % (html.escape(x.get('speaker', '')), html.escape(x.get('line', ''))))
+    o.append('</div>')
+    return ''.join(o)
+
+
 def bar(here, r):
     """TWO PLACES ONLY: this page, and the archive.
 
@@ -1535,6 +1559,20 @@ for e in docs:
              '<p><a href="%s" download>Download</a></p></div></div>'
              % (thumb, os.path.basename(e['file']), human(size_of(e['file'])),
                 e.get('date', ''), e.get('note', 'note pending'), e['file']))
+# ---------------------------------------------------------------- dialogue page
+# The audio has its OWN page. Baba, 3.9.2026: Kristijan does not need to listen
+# to anything, he needs the words under the frame he is animating, so the decks
+# were taking room on the page that does the work. Nothing is lost, it simply
+# stopped being in the way.
+_dg = ['<h1>Dialogue and takes</h1>',
+       '<p class=lede>Everything that makes a sound. <b>The scene as written, read by a stand in '
+       'voice, and Manan\u2019s own recorded takes.</b> The words themselves are on the film page '
+       'under each frame, which is where they are needed; this is for listening, choosing a take '
+       'and taking the files.</p>',
+       dialogue_block(), takes_block(), DECK_JS]
+open(os.path.join(ROOT, 'dialogue.html'), 'w').write(
+    page('Dialogue', ''.join(_dg), here='archive', depth=0))
+
 if True:
     ARCHIVE.setdefault('items', [])
     # EVERY OTHER PAGE LIVES HERE NOW. 2.9.2026. The bar is the film and the
@@ -1543,7 +1581,9 @@ if True:
     # stopped competing with the one page anybody came for. Nothing is deleted,
     # because a page that is hard to find can be found and a page that is gone
     # cannot.
-    _other = [('footage.html', 'Footage', 'Every live shot, its plate and its ProRes'),
+    _other = [('dialogue.html', 'Dialogue and takes',
+               'Every line read aloud, and Manan\u2019s own takes, with the zips'),
+              ('footage.html', 'Footage', 'Every live shot, its plate and its ProRes'),
               ('assets.html', 'Assets', 'The key in 3D, the vortex for Blender, the font'),
               ('brainstorm.html', 'Brainstorm', 'Everything collected per phase, kept and abandoned'),
               ('breakdown.html', 'Breakdown', 'Layers, plates and composites, frame by frame'),
@@ -1929,10 +1969,6 @@ for e in _fl:
     # The voice is the Hume actress and it is a STAND IN: Baba clones Manan's
     # own voice from these, so the download matters as much as the player. The
     # file is what gets used; the player only tells you which file you want.
-    if n == '10':
-        rt.append(takes_block())
-    if n == '9':
-        rt.append(dialogue_block())
     if in_strip:
         frames = [f for f in frames if f['file'] not in in_strip]
     if frames:
@@ -1945,6 +1981,15 @@ for e in _fl:
                       '<span class=tx>“%s”</span>'
                       '<span class=rec>%s</span></div>'
                       % (f.get('speaker', ''), f['line'], f.get('linestate', '').upper()))
+            # A shot can carry several lines, because the arm beat is five
+            # exchanges over one picture. The existing single line renderer above
+            # stays for the shots that have one; this adds the rest under the
+            # thumbnail as TEXT, which is what Kristijan needs. The audio lives
+            # on its own page.
+            for _d in (f.get('dialogue') or []):
+                ln += ('<div class=ln><span class=sp>%s</span>'
+                       '<span class=tx>“%s”</span></div>'
+                       % (html.escape(_d.get('speaker', '')), html.escape(_d.get('line', ''))))
             rt.append('<a href="card/%s.html"><img src="tiny/%s.jpg" alt="" loading=lazy>'
                       '<div class=c>%s</div>%s</a>' % (b, b, b, ln))
         rt.append('</div>')
@@ -1955,7 +2000,6 @@ for e in _fl:
                       'var(--rule);background:#0b0a08"></div><div class=c>%s</div></a>'
                       % ('FOOTAGE' if live else 'EMPTY'))
         rt.append('</div>')
-rt.append(DECK_JS)
 rt.append('</div>')
 # ---------------------------------------------------------------- assets
 # Everything ever made for this film, including what was abandoned. Nothing is

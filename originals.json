@@ -1066,5 +1066,17 @@
     "sha256": "2c6b7cd5ca8d2a0bf7be10a7de0722daa72acb731c501be77ed7391b5aba9574",
     "path": "BB_C_19/19-A1-ENTER-v1.png",
     "url": "https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIGINALS/main/BB_C_19/19-A1-ENTER-v1.png"
+  },
+  "19-A2-EXPECTING-v1.png": {
+    "bytes": 3633028,
+    "sha256": "b22451a0e7c94a9a37cc99b0937ca2cc1788495519e559866d5305440d6c3067",
+    "path": "BB_C_19/19-A2-EXPECTING-v1.png",
+    "url": "https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIGINALS/main/BB_C_19/19-A2-EXPECTING-v1.png"
+  },
+  "19-A3-ARM-v2.png": {
+    "bytes": 3755441,
+    "sha256": "dda134e5225b8166aadfff698b660b91dae3fd2127b9157adf96354074c33ade",
+    "path": "BB_C_19/19-A3-ARM-v2.png",
+    "url": "https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIGINALS/main/BB_C_19/19-A3-ARM-v2.png"
   }
 }

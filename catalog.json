@@ -894,14 +894,12 @@
       "shot": "19.1",
       "file": "BB_C_19/19-1-A-v1.png",
       "representative": true,
-      "status": "proposal",
+      "status": "superseded",
       "date": "2026-08-30",
-      "note": "MANAN'S SIDE OF THE ROOM, AND IT IS A PLATE. Same control room as 6.3 from a new angle: console away on the left, screens above it, the closed riveted door on the right. THE WHOLE RIGHT HALF IS OPEN FLAGSTONE WITH NOTHING ON IT, because that is where Manan is keyed in from the grey backdrop footage, walking in through that door. He is never drawn. The chair is gone because Coach Brain is not in this shot yet: Manan arrives, asks what happened, and the answer comes after.",
+      "note": "MANAN'S SIDE OF THE ROOM, AND IT IS A PLATE. Same control room as 6.3 from a new angle: console away on the left, screens above it, the closed riveted door on the right. THE WHOLE RIGHT HALF IS OPEN FLAGSTONE WITH NOTHING ON IT, because that is where Manan is keyed in from the grey backdrop footage, walking in through that door. He is never drawn. The chair is gone because Coach Brain is not in this shot yet: Manan arrives, asks what happened, and the answer comes after. SUPERSEDED 3.9.2026. It carried dialogue from an earlier version of the meeting. The scene now runs: he arrives, Coach Brain turns and greets him, he is asked to lift his arm and cannot, a lever moves and it comes back, and ONLY THEN the board.",
       "slug": "INT. CONTROL ROOM — MANAN’S SIDE",
       "what": "The room from a new angle. Console away on the left, the closed door on the right, and the whole right half open flagstone.",
       "why": "A PLATE. The empty floor is where Manan is keyed in from the grey backdrop footage, walking in through that door. He is never drawn.",
-      "speaker": "MANAN",
-      "line": "You closed that door.",
       "linestate": "recorded, PANA6308",
       "flow_pos": 12,
       "dna": {
@@ -1861,58 +1859,55 @@
       "shot": "19.2",
       "file": "BB_C_19/19-2-A-v1.png",
       "representative": true,
-      "status": "proposal",
+      "status": "superseded",
       "date": "2026-08-31",
       "slug": "INT. CONTROL ROOM — WIDE, THE TWO OF THEM",
       "what": "The room from further back and to the left. Coach Brain at the desk on the LEFT, turned right round to face out into the room, one hand lifted mid gesture. The right half is open floor with the door beyond it.",
       "why": "THE WIDE, AND THE FIRST OF THE THREE SETUPS. It fixes the screen direction for everything that follows: COACH BRAIN IS ON THE LEFT AND LOOKS RIGHT, MANAN IS ON THE RIGHT AND LOOKS LEFT. Both singles must obey that or the two of them will appear to be looking away from each other. IT IS A PLATE. The clear floor on the right is where Manan is keyed in; he is a photograph and is never drawn. Coach Brain is already turned toward that space with his hand moving, so the moment the composite happens they read as talking.",
-      "speaker": "COACH BRAIN",
-      "line": "You found me. Took you long enough.",
       "linestate": "to record",
       "flow_pos": 12,
       "dna": {
         "phase": "Phase 10 of 15, THEY INTRODUCE EACH OTHER.",
         "journey": "MEETING THE MENTOR, late and inside the cave. The obstacle and the guide are one figure.",
         "element": "THE HAND, and SACRED SPACE. A room treated as different becomes different."
-      }
+      },
+      "note": "SUPERSEDED 3.9.2026. It carried dialogue from an earlier version of the meeting. The scene now runs: he arrives, Coach Brain turns and greets him, he is asked to lift his arm and cannot, a lever moves and it comes back, and ONLY THEN the board."
     },
     {
       "kind": "keyframe",
       "shot": "19.3",
       "file": "BB_C_19/19-3-A-v4.png",
-      "status": "proposal",
+      "status": "superseded",
       "date": "2026-08-31",
       "slug": "INT. CONTROL ROOM — ON COACH BRAIN",
       "what": "His single. Seated in the shell chair on the left, three quarter, the gold key on its chain, the desk and clay wall behind. The right half is empty room.",
       "why": "THE SECOND OF THE THREE DIALOGUE SETUPS, and the only one that needs nothing keyed. He is on the LEFT and looking RIGHT, which is the screen direction the wide fixed. He is a little more frontal than asked for and the smile is broad, which suits the line he is saying. THE RIGHT HALF IS EMPTY ROOM AND MUST STAY EMPTY: three earlier attempts either drew Manan there or lost the character, and this is the one that did neither.",
-      "speaker": "COACH BRAIN",
-      "line": "You found me. Took you long enough.",
       "linestate": "to record",
       "flow_pos": 12,
       "dna": {
         "phase": "Phase 10 of 15, THEY INTRODUCE EACH OTHER.",
         "journey": "MEETING THE MENTOR, late and inside the cave. The obstacle and the guide are one figure.",
         "element": "THE HAND, and SACRED SPACE. A room treated as different becomes different."
-      }
+      },
+      "note": "SUPERSEDED 3.9.2026. It carried dialogue from an earlier version of the meeting. The scene now runs: he arrives, Coach Brain turns and greets him, he is asked to lift his arm and cannot, a lever moves and it comes back, and ONLY THEN the board."
     },
     {
       "kind": "keyframe",
       "shot": "19.4",
       "file": "BB_C_19/19-4-A-v1.png",
-      "status": "proposal",
+      "status": "superseded",
       "date": "2026-08-31",
       "slug": "INT. CONTROL ROOM — ON MANAN, PLATE",
       "what": "The room from the reverse side. The near end of the desk at the far left, the clay wall across the middle, the arched door at the right, and empty floor across the whole width. Camera at a standing person's chest height.",
       "why": "THE THIRD OF THE THREE DIALOGUE SETUPS AND A PURE PLATE. Nobody is drawn in it. MANAN IS KEYED INTO THE MIDDLE OF THE FLOOR, standing, LOOKING LEFT toward Coach Brain, which is the screen direction the wide fixed. It came back clean first time because the prompt said the room was empty and gave no reason. The attempt before it explained that the space was where somebody would be standing, and the model drew them.",
-      "speaker": "MANAN",
-      "line": "You closed that door.",
       "linestate": "recorded, PANA6308",
       "flow_pos": 12,
       "dna": {
         "phase": "Phase 10 of 15, THEY INTRODUCE EACH OTHER.",
         "journey": "MEETING THE MENTOR, late and inside the cave. The obstacle and the guide are one figure.",
         "element": "THE HAND, and SACRED SPACE. A room treated as different becomes different."
-      }
+      },
+      "note": "SUPERSEDED 3.9.2026. It carried dialogue from an earlier version of the meeting. The scene now runs: he arrives, Coach Brain turns and greets him, he is asked to lift his arm and cannot, a lever moves and it comes back, and ONLY THEN the board."
     },
     {
       "kind": "keyframe",
@@ -2572,9 +2567,9 @@
       "file": "BB_C_19/19-0-A-v2.png",
       "kind": "keyframe",
       "scene": 19,
-      "shot": "19.0",
+      "shot": "19.40",
       "title": "Coach Brain, and the first gold",
-      "status": "proposal",
+      "status": "accepted",
       "date": "2026-09-02",
       "note": "He turns to look at us, and on a cord at his neck hangs the key. THE FIRST GOLD IN THE FILM. Gouache over pencil, the only painted thing on the sheet. It hangs small, worn rather than displayed. Supersedes v1.",
       "flow_pos": 12,
@@ -2582,7 +2577,17 @@
         "phase": "Phase 10 of 15, THEY INTRODUCE EACH OTHER.",
         "journey": "MEETING THE MENTOR, late and inside the cave. The obstacle and the guide are one figure.",
         "element": "THE HAND, and SACRED SPACE. A room treated as different becomes different."
-      }
+      },
+      "dialogue": [
+        {
+          "speaker": "MANAN",
+          "line": "That was you. It was never my arm at all."
+        },
+        {
+          "speaker": "COACH",
+          "line": "It is always your arm. The permission is mine."
+        }
+      ]
     },
     {
       "file": "BB_C_14/14-8-DEDICATION-v2.png",
@@ -2855,10 +2860,56 @@
       "status": "accepted",
       "date": "2026-09-03",
       "note": "POINT OF VIEW. We are standing in the doorway looking in, framed by the jamb on both sides and the top, and nothing of the viewer is visible: this is his eyes, per MEMORY 28g. Coach Brain has NOT turned round. He is small, absorbed, one hand on the console, completely unbothered that somebody has arrived, and that indifference is what makes him worth being impressed by. The second open door beyond him echoes the corridor without saying anything."
+    },
+    {
+      "file": "BB_C_19/19-A2-EXPECTING-v1.png",
+      "kind": "keyframe",
+      "scene": "19",
+      "shot": "19.02",
+      "title": "He turns, and he was expecting us",
+      "status": "accepted",
+      "date": "2026-09-03",
+      "dialogue": [
+        {
+          "speaker": "COACH",
+          "line": "Ah. There you are. I was expecting you."
+        }
+      ]
+    },
+    {
+      "file": "BB_C_19/19-A3-ARM-v2.png",
+      "kind": "keyframe",
+      "scene": "19",
+      "shot": "19.03",
+      "title": "Lift your arm. It will not come",
+      "status": "accepted",
+      "date": "2026-09-03",
+      "dialogue": [
+        {
+          "speaker": "COACH",
+          "line": "Before we start. Lift your right arm for me."
+        },
+        {
+          "speaker": "MANAN",
+          "line": "I'm trying."
+        },
+        {
+          "speaker": "COACH",
+          "line": "I know."
+        },
+        {
+          "speaker": "MANAN",
+          "line": "I can't. Why can't I move it?"
+        },
+        {
+          "speaker": "COACH",
+          "line": "Try now."
+        }
+      ]
     }
   ],
   "event": "Breakthrough Junior Challenge 2026",
-  "site_version": 181,
+  "site_version": 182,
   "footage": [
     {
       "name": "Key catch",
