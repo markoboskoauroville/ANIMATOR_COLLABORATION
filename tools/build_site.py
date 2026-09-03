@@ -281,14 +281,23 @@ h2{font-size:19px;margin:38px 0 14px;padding-bottom:7px;border-bottom:1px solid 
 .deckn{font:400 10.5px/1 ui-monospace,monospace;color:var(--dim)}
 .wave{position:relative;height:40px;background:var(--panel);border:1px solid var(--rule);
   border-radius:3px;display:flex;align-items:flex-end;gap:1px;padding:3px;overflow:hidden}
-.wave span{flex:1 1 0;background:var(--rule);border-radius:1px 1px 0 0;min-width:0}
+.wave span{flex:1 1 0;background:#6E655C;border-radius:1px 1px 0 0;min-width:0;
+  transition:background .06s linear}
 .wave span.played{background:var(--gold)}
 .cursor{position:absolute;top:0;bottom:0;width:1px;background:var(--gold);left:0;
   pointer-events:none}
 .deckf{display:flex;align-items:center;gap:10px;margin-top:6px}
-.pbtn{background:var(--gold);color:#16110D;border:0;border-radius:999px;width:30px;height:30px;
-  cursor:pointer;display:flex;align-items:center;justify-content:center;flex:none;padding:0}
-.pbtn svg{width:13px;height:13px;fill:#16110D}
+/* 3.9.2026. The button was a 13px dark glyph on gold, which on a phone in
+   sunlight reads as nothing at all. Baba could not find it. It is bigger now
+   and the glyph is WHITE, which holds against both the gold and the glare, and
+   it gets a ring when it is playing so the deck that is running is obvious
+   from across the room. */
+.pbtn{background:var(--gold);border:0;border-radius:999px;width:42px;height:42px;
+  cursor:pointer;display:flex;align-items:center;justify-content:center;flex:none;padding:0;
+  box-shadow:0 1px 0 rgba(0,0,0,.35)}
+.pbtn svg{width:17px;height:17px;fill:#fff;display:block}
+.pbtn.on{box-shadow:0 0 0 3px rgba(232,166,75,.35)}
+.deck.is-playing .wave{border-color:var(--gold)}
 .tc{font:400 11px/1 ui-monospace,monospace;color:var(--dim)}
 .tc.rem{margin-left:auto}
 .takes{margin:16px 0 6px;background:var(--panel);border:1px solid var(--rule);
@@ -298,6 +307,9 @@ h2{font-size:19px;margin:38px 0 14px;padding-bottom:7px;border-bottom:1px solid 
   margin-bottom:10px}
 .playall{background:var(--gold);color:#16110D;border:0;border-radius:999px;
   padding:7px 14px;font:600 10px/1 ui-monospace,monospace;letter-spacing:.1em;cursor:pointer}
+.takew{font:600 10px/1 ui-monospace,monospace;letter-spacing:.16em;color:var(--dim);
+  text-transform:uppercase;margin:18px 0 4px;border-top:1px solid var(--rule);
+  padding-top:14px}
 .takel{font-size:16px;color:var(--ink);margin:14px 0 6px;border-left:2px solid var(--gold);
   padding-left:10px}
 .taker{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin:0 0 5px}
@@ -727,6 +739,7 @@ def dialogue_for(shot_id, depth=0):
 
 
 TAKES = CAT.get('manan_takes', {})
+COACH = CAT.get('coach_takes', {})
 
 
 def takes_block(depth=0):
@@ -746,14 +759,20 @@ def takes_block(depth=0):
     press that one again and it carries on from where it stopped, rather than
     starting the scene over.
     """
-    if not TAKES:
+    if not TAKES and not COACH:
         return ''
     r = '../' * depth
     o = ['<div class=takes id=takes>',
          '<div class=takeh><b>MANAN, THE RECORDED PERFORMANCE</b>'
          '<button class=playall id=playall>PLAY ALL &#9654;</button></div>']
     n = 0
-    for key, blk in TAKES.items():
+    # Manan reading the old theory, then Manan reading Coach Brain. Two speakers,
+    # one chain, so PLAY ALL runs the whole exchange in order.
+    for who, table in (('MANAN, THE OLD THEORY', TAKES),
+                       ('MANAN AS COACH BRAIN', COACH)):
+      if table:
+        o.append('<div class=takew>%s</div>' % who)
+      for key, blk in table.items():
         if not blk.get('takes'):
             continue
         o.append('<div class=takel>%s</div>' % html.escape(blk.get('line', '')))
@@ -768,12 +787,12 @@ def takes_block(depth=0):
               '<svg class=ic-play viewBox="0 0 24 24"><path d="M7 4l13 8-13 8z"/></svg>'
               '<svg class=ic-pause viewBox="0 0 24 24" style="display:none">'
               '<path d="M6 4h4v16H6zM14 4h4v16h-4z"/></svg></button>'
-              '<span class=tc>0:00</span><span class="tc rem">-%s</span>'
+              '<span class=tc>0:00</span><span class="tc rem">-0:00</span>'
               '</div>'
               '<audio preload=metadata src="%s%s"></audio>'
               '</div>'
               % (n, html.escape(t['name'].replace('REC0000', 'rec ')),
-                 r, t['file'], t.get('sec', ''), r, t['file']))
+                 r, t['file'], r, t['file']))
             n += 1
     o.append('</div>')
     o.append("""<script>
