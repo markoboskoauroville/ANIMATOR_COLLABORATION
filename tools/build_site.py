@@ -814,14 +814,29 @@ def takes_block(depth=0):
     /* No stored peaks for these, so the bars are drawn from a fixed shape and
        the colour does the work. The real waveform would mean decoding every
        take in the browser, which is a lot of bandwidth for a review page. */
+    /* Real peaks, computed once on the build machine and shipped as a small
+       JSON beside each take, which is the shape songs.js already expects.
+       Decoding 43 files in the browser would be a lot of bandwidth for a review
+       page and the peaks never change. A flat shape is drawn first so the deck
+       is usable immediately, then replaced when the JSON lands. */
     var N = 96;
     for (var i=0;i<N;i++){
       var b = document.createElement('span');
-      var v = 0.30 + 0.55*Math.abs(Math.sin(i*0.7)) * (0.6+0.4*Math.abs(Math.cos(i*0.23)));
-      b.style.height = Math.max(8, v*100) + '%';
+      b.style.height = '18%';
       d.wave.appendChild(b);
     }
     d.bars = [].slice.call(d.wave.querySelectorAll('span'));
+    var src = d.audio.getAttribute('src');
+    /* No regex here on purpose: a backslash in this string is escaped twice on
+       the way into the page, so /\.mp3$/ arrived as a pattern that matches
+       nothing and the peaks would have silently never loaded. */
+    fetch(src.slice(0, -4) + '.json').then(function(r){
+      return r.ok ? r.json() : null;
+    }).then(function(j){
+      if (!j || !j.bars) return;
+      var n = Math.min(d.bars.length, j.bars.length);
+      for (var i=0;i<n;i++) d.bars[i].style.height = Math.max(6, j.bars[i]*100) + '%';
+    }).catch(function(){});
     return d;
   });
   if (!decks.length) return;
