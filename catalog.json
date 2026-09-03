@@ -102,7 +102,11 @@
       "slug": "EXT. AVENUE — DAY — HIS POINT OF VIEW",
       "what": "Down the corridor of trunks, the finish banner caught small in a gap, the word FINISH just legible.",
       "why": "The answer to the question the last shot planted, and the reason the trees exist: he could not have seen it before, so his exhaustion was never weakness. Motivation is information.",
-      "flow_pos": 1
+      "flow_pos": 1,
+      "dna": {
+        "phase": "Phase 2 of 15, THE RUNNER.",
+        "journey": "THE ORDINARY WORLD, and inside it THE CALL. A boy on an ordinary road, and a question that will not leave him alone."
+      }
     },
     {
       "kind": "keyframe",
@@ -111,7 +115,11 @@
       "status": "superseded",
       "date": "2026-08-28",
       "note": "Superseded by the 1-3-A and 1-3-B pair. This was the sprint before the muscle activation existed. The run now begins as a dissolve out of the flayed figure, so phase 1 has to match that pose exactly and this one does not. Kept, and the link still works.",
-      "flow_pos": 1
+      "flow_pos": 1,
+      "dna": {
+        "phase": "Phase 2 of 15, THE RUNNER.",
+        "journey": "THE ORDINARY WORLD, and inside it THE CALL. A boy on an ordinary road, and a question that will not leave him alone."
+      }
     },
     {
       "kind": "symbol",
@@ -249,7 +257,11 @@
       "slug": "EXT. ROAD — DAY — CLOSE, THREE QUARTER",
       "what": "Head down, eyes on the ground a few feet ahead, mouth open. He believes he has ten kilometres left.",
       "why": "The exhaustion has to be honest before the recovery can mean anything. He is not being brave here, he is finished.",
-      "flow_pos": 1
+      "flow_pos": 1,
+      "dna": {
+        "phase": "Phase 2 of 15, THE RUNNER.",
+        "journey": "THE ORDINARY WORLD, and inside it THE CALL. A boy on an ordinary road, and a question that will not leave him alone."
+      }
     },
     {
       "kind": "keyframe",
@@ -261,7 +273,11 @@
       "slug": "EXT. ROAD — DAY — CLOSE, THREE QUARTER",
       "what": "The neck straightening, the chin coming off the chest, the eyes rising off the ground.",
       "why": "The middle of a move the audience does not yet understand. They see him change before they know why, which is the question the next shot answers.",
-      "flow_pos": 1
+      "flow_pos": 1,
+      "dna": {
+        "phase": "Phase 2 of 15, THE RUNNER.",
+        "journey": "THE ORDINARY WORLD, and inside it THE CALL. A boy on an ordinary road, and a question that will not leave him alone."
+      }
     },
     {
       "kind": "keyframe",
@@ -273,7 +289,11 @@
       "slug": "EXT. ROAD — DAY — CLOSE, THREE QUARTER",
       "what": "The whole face relaxes. Brow smooth, eyes resting easy on something far ahead and out of frame, the corners of the mouth just lifted.",
       "why": "Relief arriving, not shock. He is looking OUT of frame on purpose: if he looked at us the cut to what he sees would not work.",
-      "flow_pos": 1
+      "flow_pos": 1,
+      "dna": {
+        "phase": "Phase 2 of 15, THE RUNNER.",
+        "journey": "THE ORDINARY WORLD, and inside it THE CALL. A boy on an ordinary road, and a question that will not leave him alone."
+      }
     },
     {
       "kind": "keyframe",
@@ -286,7 +306,11 @@
       "slug": "INT. MUSCLE — MICROSCOPIC",
       "what": "One fibre ignites in a dark field of packed fibres and throws a hard star of light.",
       "why": "THE DARKEST FRAME IN THE FILM, and that darkness is what makes the light mean something. A small flame that could go out is more affecting than a lit room.",
-      "flow_pos": 1
+      "flow_pos": 1,
+      "dna": {
+        "phase": "Phase 2 of 15, THE RUNNER.",
+        "journey": "THE ORDINARY WORLD, and inside it THE CALL. A boy on an ordinary road, and a question that will not leave him alone."
+      }
     },
     {
       "kind": "keyframe",
@@ -298,7 +322,11 @@
       "slug": "INT. MUSCLE — MICROSCOPIC",
       "what": "The fire spreads. A dozen ignition points along the same fibres, darkness pushed to the corners.",
       "why": "Recruitment seen from inside. Same diagonal and same hand as the frame before, so it reads as spreading rather than as a cut somewhere new.",
-      "flow_pos": 1
+      "flow_pos": 1,
+      "dna": {
+        "phase": "Phase 2 of 15, THE RUNNER.",
+        "journey": "THE ORDINARY WORLD, and inside it THE CALL. A boy on an ordinary road, and a question that will not leave him alone."
+      }
     },
     {
       "kind": "keyframe",
@@ -310,7 +338,11 @@
       "slug": "INT. BODY — THE LEG",
       "what": "We pull back and it was a leg. Every muscle alight along its whole length.",
       "why": "The reveal of scale. Charged and not yet released, which is why the leg is at rest rather than braced.",
-      "flow_pos": 1
+      "flow_pos": 1,
+      "dna": {
+        "phase": "Phase 2 of 15, THE RUNNER.",
+        "journey": "THE ORDINARY WORLD, and inside it THE CALL. A boy on an ordinary road, and a question that will not leave him alone."
+      }
     },
     {
       "kind": "keyframe",
@@ -322,7 +354,11 @@
       "slug": "INT. BODY — WHOLE FIGURE",
       "what": "A flayed figure driving into a sprint, every muscle lit, moving left to right.",
       "why": "The peak of the sequence and the end of it. DISSOLVE FROM HERE INTO 1-3-A: the two frames are registered so the skin fades on with nothing moving.",
-      "flow_pos": 1
+      "flow_pos": 1,
+      "dna": {
+        "phase": "Phase 2 of 15, THE RUNNER.",
+        "journey": "THE ORDINARY WORLD, and inside it THE CALL. A boy on an ordinary road, and a question that will not leave him alone."
+      }
     },
     {
       "kind": "keyframe",
@@ -334,7 +370,11 @@
       "slug": "EXT. ROAD — DAY — FULL FIGURE",
       "what": "The same pose as the flayed figure, with skin and clothing on. Driving forward, chest open.",
       "why": "The far end of a dissolve, not a cut. The internal state becoming the external one. The strobe has dropped and the film runs at eight to ten frames a second from here.",
-      "flow_pos": 1
+      "flow_pos": 1,
+      "dna": {
+        "phase": "Phase 2 of 15, THE RUNNER.",
+        "journey": "THE ORDINARY WORLD, and inside it THE CALL. A boy on an ordinary road, and a question that will not leave him alone."
+      }
     },
     {
       "kind": "keyframe",
@@ -346,7 +386,11 @@
       "slug": "EXT. ROAD — DAY — FULL FIGURE",
       "what": "The stride advanced, both legs clean, driving hard.",
       "why": "The second of the two ends Kristijan interpolates between. Four attempts at a fully airborne mid-stride all came back with three legs and were abandoned.",
-      "flow_pos": 1
+      "flow_pos": 1,
+      "dna": {
+        "phase": "Phase 2 of 15, THE RUNNER.",
+        "journey": "THE ORDINARY WORLD, and inside it THE CALL. A boy on an ordinary road, and a question that will not leave him alone."
+      }
     },
     {
       "kind": "keyframe",
@@ -355,7 +399,11 @@
       "status": "superseded",
       "date": "2026-08-28",
       "note": "Retired. Attempts to rebuild this frame from the real keyed footage did not match the original and were abandoned. The originals are shots 1.5 and 1.6.",
-      "flow_pos": 1
+      "flow_pos": 1,
+      "dna": {
+        "phase": "Phase 2 of 15, THE RUNNER.",
+        "journey": "THE ORDINARY WORLD, and inside it THE CALL. A boy on an ordinary road, and a question that will not leave him alone."
+      }
     },
     {
       "kind": "keyframe",
@@ -364,7 +412,11 @@
       "status": "superseded",
       "date": "2026-08-28",
       "note": "Retired. Attempts to rebuild this frame from the real keyed footage did not match the original and were abandoned. The originals are shots 1.5 and 1.6.",
-      "flow_pos": 1
+      "flow_pos": 1,
+      "dna": {
+        "phase": "Phase 2 of 15, THE RUNNER.",
+        "journey": "THE ORDINARY WORLD, and inside it THE CALL. A boy on an ordinary road, and a question that will not leave him alone."
+      }
     },
     {
       "kind": "keyframe",
@@ -377,7 +429,11 @@
       "slug": "EXT. CREAM VOID — THE TWO WORLDS MEET",
       "what": "The runner is still going and a boy steps into the drawn world beside him, magnifying glass up.",
       "why": "The film’s first crossing: anything real is a photograph, anything thought is a pencil drawing, and here they stand in one frame. Both on the same ground line, and the runner is the smaller of the two, which makes the boy the subject and the runner the thing being examined.",
-      "flow_pos": 1
+      "flow_pos": 1,
+      "dna": {
+        "phase": "Phase 2 of 15, THE RUNNER.",
+        "journey": "THE ORDINARY WORLD, and inside it THE CALL. A boy on an ordinary road, and a question that will not leave him alone."
+      }
     },
     {
       "kind": "keyframe",
@@ -390,7 +446,11 @@
       "slug": "EXT. CREAM VOID — CLOSE ON MANAN",
       "what": "Pushed in. He holds the glass and the runner is a pale sketch beside his head. He speaks to camera.",
       "why": "The contrast falls as we push in, so the drawn world recedes exactly as the real one takes over.",
-      "flow_pos": 1
+      "flow_pos": 1,
+      "dna": {
+        "phase": "Phase 2 of 15, THE RUNNER.",
+        "journey": "THE ORDINARY WORLD, and inside it THE CALL. A boy on an ordinary road, and a question that will not leave him alone."
+      }
     },
     {
       "kind": "keyframe",
@@ -400,7 +460,11 @@
       "date": "2026-08-28",
       "note": "THE SAME SHOT WITH THE REAL MANAN. Built from the keyed footage rather than generated: the black backdrop was keyed here by flooding from the frame edge, so his dark hair and black shoes survive intact, then graded warm and lifted toward the cream so he sits in the drawn world instead of on top of it. The generated frame beside it is still the reference for composition. Choose between them. ON THE SCENE AND BREAKDOWN PAGES ONLY, not on the front page storyboard: the generated version stands in there because it reads finished at a glance, and this one is the working material.",
       "storyboard": "hide",
-      "flow_pos": 1
+      "flow_pos": 1,
+      "dna": {
+        "phase": "Phase 2 of 15, THE RUNNER.",
+        "journey": "THE ORDINARY WORLD, and inside it THE CALL. A boy on an ordinary road, and a question that will not leave him alone."
+      }
     },
     {
       "kind": "keyframe",
@@ -410,7 +474,11 @@
       "date": "2026-08-28",
       "note": "THE SAME SHOT WITH THE REAL MANAN. The runner behind him is not a new drawing, it is the previous shot zoomed in and faded back, so the push-in is continuous and the contrast falls as we move closer. Real keyed footage, graded to the paper. Choose between this and the generated one beside it. ON THE SCENE AND BREAKDOWN PAGES ONLY, not on the front page storyboard: the generated version stands in there because it reads finished at a glance, and this one is the working material.",
       "storyboard": "hide",
-      "flow_pos": 1
+      "flow_pos": 1,
+      "dna": {
+        "phase": "Phase 2 of 15, THE RUNNER.",
+        "journey": "THE ORDINARY WORLD, and inside it THE CALL. A boy on an ordinary road, and a question that will not leave him alone."
+      }
     },
     {
       "kind": "keyframe",
@@ -420,7 +488,11 @@
       "status": "superseded",
       "date": "2026-08-28",
       "note": "Superseded by v2. Same avenue, but the figure was in the old crouched pose.",
-      "flow_pos": 1
+      "flow_pos": 1,
+      "dna": {
+        "phase": "Phase 2 of 15, THE RUNNER.",
+        "journey": "THE ORDINARY WORLD, and inside it THE CALL. A boy on an ordinary road, and a question that will not leave him alone."
+      }
     },
     {
       "kind": "keyframe",
@@ -432,7 +504,11 @@
       "slug": "EXT. ROAD — DAY — EXTREME CLOSE ON FEET",
       "what": "Worn racing shoes on tarmac, one landing flat and heavy with dust lifting, the other dragging low.",
       "why": "It says runner and it says failing, before a face is ever seen. Feet carry exhaustion more honestly than a face does, because a face can perform and feet cannot.",
-      "flow_pos": 1
+      "flow_pos": 1,
+      "dna": {
+        "phase": "Phase 2 of 15, THE RUNNER.",
+        "journey": "THE ORDINARY WORLD, and inside it THE CALL. A boy on an ordinary road, and a question that will not leave him alone."
+      }
     },
     {
       "kind": "keyframe",
@@ -441,7 +517,11 @@
       "status": "superseded",
       "date": "2026-08-28",
       "note": "Superseded by v2. Rejected by Baba: a half lunge, half crawl that read as neither running nor collapsing. The V7 shot 1.2 pose is the right one and v2 uses it.",
-      "flow_pos": 1
+      "flow_pos": 1,
+      "dna": {
+        "phase": "Phase 2 of 15, THE RUNNER.",
+        "journey": "THE ORDINARY WORLD, and inside it THE CALL. A boy on an ordinary road, and a question that will not leave him alone."
+      }
     },
     {
       "file": "DOCS/9-BRAIN_BRAKE_READ_THROUGH_v9.pdf",
@@ -628,7 +708,12 @@
       "slug": "INT. THE LIGHT — GANESHA FORMING",
       "what": "A seated elephant-headed figure barely there, forming out of the paper rather than sitting on it.",
       "why": "The middle of the move, not the end. He rises out of nothing, arrives, and is gone. Never lit specially, never cut to, never mentioned. Remover of obstacles, in a film about an obstacle that turns out to be a setting.",
-      "flow_pos": 7
+      "flow_pos": 7,
+      "dna": {
+        "phase": "Phase 7 of 15, THE VORTEX, UP.",
+        "journey": "CROSSING THE THRESHOLD. Not the door, the line under it. Point of no return.",
+        "element": "WATER as cloud, and THRESHOLD."
+      }
     },
     {
       "kind": "keyframe",
@@ -648,7 +733,12 @@
           "secs": 23.16
         }
       ],
-      "flow_pos": 13
+      "flow_pos": 13,
+      "dna": {
+        "phase": "Phase 11 of 15, THE TWO THEORIES, ON THE BOARD.",
+        "journey": "THE ORDEAL, which in this film is comprehension. Nothing is fought.",
+        "element": "LIGHT, which is what lets you see, as against GLOW, which burns and does not last."
+      }
     },
     {
       "kind": "keyframe",
@@ -657,7 +747,12 @@
       "status": "superseded",
       "date": "2026-08-30",
       "note": "Rejected. It drew both theories on one split board, which was a design superseded hours earlier by the inversion. Two causes: the reference was the control room, whose symmetrical console and screen bank pull toward a two panel layout, and the prompt said 'nothing on the right', a negation, which adds the thing.",
-      "flow_pos": 13
+      "flow_pos": 13,
+      "dna": {
+        "phase": "Phase 11 of 15, THE TWO THEORIES, ON THE BOARD.",
+        "journey": "THE ORDEAL, which in this film is comprehension. Nothing is fought.",
+        "element": "LIGHT, which is what lets you see, as against GLOW, which burns and does not last."
+      }
     },
     {
       "kind": "keyframe",
@@ -677,7 +772,12 @@
           "secs": 34.96
         }
       ],
-      "flow_pos": 14
+      "flow_pos": 14,
+      "dna": {
+        "phase": "Phase 11 of 15, THE TWO THEORIES, ON THE BOARD.",
+        "journey": "THE ORDEAL, which in this film is comprehension. Nothing is fought.",
+        "element": "LIGHT, which is what lets you see, as against GLOW, which burns and does not last."
+      }
     },
     {
       "kind": "keyframe",
@@ -697,7 +797,12 @@
           "secs": 8.28
         }
       ],
-      "flow_pos": 15
+      "flow_pos": 15,
+      "dna": {
+        "phase": "Phase 12 of 15, THE CONCLUSION, AND GOODBYE.",
+        "journey": "THE REWARD. Given rather than seized, which is why the goodbye matters.",
+        "element": "THE HAND, open. Giving and surrendering at once."
+      }
     },
     {
       "kind": "keyframe",
@@ -710,7 +815,11 @@
       "what": "A boy on an exercise bike leaning into a large laptop, its screen a blank rectangle of bare paper.",
       "why": "A COMPOSITE PLATE. THE SCREEN IS A HOLE: the earlier ride footage goes in it. He is racing a recording of himself and no still we have says that. Same framing as the runner seeing the finish line, so the two rhyme.",
       "storyboard": "hide",
-      "flow_pos": 3
+      "flow_pos": 3,
+      "dna": {
+        "phase": "Phase 4 of 15, TESTING WHERE THE LIMIT IS.",
+        "journey": "TESTS, before the threshold. He is learning the rules of his own body."
+      }
     },
     {
       "kind": "keyframe",
@@ -719,7 +828,11 @@
       "status": "superseded",
       "date": "2026-08-30",
       "note": "Rejected. The laptop was small and low in the corner and he was looking at the floor, so it read as a boy exercising rather than a boy racing himself. The photographic still was the first reference and its layout was copied. Also far too dark, mean luminance 133 against the film's 200 to 240.",
-      "flow_pos": 3
+      "flow_pos": 3,
+      "dna": {
+        "phase": "Phase 4 of 15, TESTING WHERE THE LIMIT IS.",
+        "journey": "TESTS, before the threshold. He is learning the rules of his own body."
+      }
     },
     {
       "kind": "keyframe",
@@ -728,7 +841,12 @@
       "status": "superseded",
       "date": "2026-08-30",
       "note": "Same drawing with a hand drawn panel border, inherited from the old V7 reference. Artwork ships edge to edge and the frame is its own layer, so the border was cropped out into v2.",
-      "flow_pos": 14
+      "flow_pos": 14,
+      "dna": {
+        "phase": "Phase 11 of 15, THE TWO THEORIES, ON THE BOARD.",
+        "journey": "THE ORDEAL, which in this film is comprehension. Nothing is fought.",
+        "element": "LIGHT, which is what lets you see, as against GLOW, which burns and does not last."
+      }
     },
     {
       "kind": "keyframe",
@@ -750,7 +868,12 @@
       "slug": "INT. THE LIGHT — GANESHA PRESENT",
       "what": "Fully drawn now, larger, every line present.",
       "why": "The top of the arc. Between this and the frame before, Kristijan has the whole appearance and the reverse takes him away.",
-      "flow_pos": 7
+      "flow_pos": 7,
+      "dna": {
+        "phase": "Phase 7 of 15, THE VORTEX, UP.",
+        "journey": "CROSSING THE THRESHOLD. Not the door, the line under it. Point of no return.",
+        "element": "WATER as cloud, and THRESHOLD."
+      }
     },
     {
       "kind": "keyframe",
@@ -759,7 +882,12 @@
       "status": "superseded",
       "date": "2026-08-30",
       "note": "Both hands drawn. Correct as a drawing and wrong for this film: Manan is a photograph, so his hand cannot be drawn. Superseded by v3, which removes the receiving hand and leaves the hole.",
-      "flow_pos": 14
+      "flow_pos": 14,
+      "dna": {
+        "phase": "Phase 11 of 15, THE TWO THEORIES, ON THE BOARD.",
+        "journey": "THE ORDEAL, which in this film is comprehension. Nothing is fought.",
+        "element": "LIGHT, which is what lets you see, as against GLOW, which burns and does not last."
+      }
     },
     {
       "kind": "keyframe",
@@ -775,7 +903,12 @@
       "speaker": "MANAN",
       "line": "You closed that door.",
       "linestate": "recorded, PANA6308",
-      "flow_pos": 12
+      "flow_pos": 12,
+      "dna": {
+        "phase": "Phase 10 of 15, THEY INTRODUCE EACH OTHER.",
+        "journey": "MEETING THE MENTOR, late and inside the cave. The obstacle and the guide are one figure.",
+        "element": "THE HAND, and SACRED SPACE. A room treated as different becomes different."
+      }
     },
     {
       "kind": "keyframe",
@@ -784,7 +917,12 @@
       "status": "superseded",
       "date": "2026-08-30",
       "note": "Rejected by Baba. The collapsed runner drawn in chalk at the lower right is out. The board as it stands in 10.0 is the board: the arm, the gauge at empty, and the three underlined lines. Nothing more is added to it.",
-      "flow_pos": 13
+      "flow_pos": 13,
+      "dna": {
+        "phase": "Phase 11 of 15, THE TWO THEORIES, ON THE BOARD.",
+        "journey": "THE ORDEAL, which in this film is comprehension. Nothing is fought.",
+        "element": "LIGHT, which is what lets you see, as against GLOW, which burns and does not last."
+      }
     },
     {
       "kind": "keyframe",
@@ -794,7 +932,12 @@
       "status": "reference",
       "date": "2026-08-30",
       "note": "BOARD BUILD STATE 0 of 5. Shows: bare board. These are for the animatic: cut from one to the next in time with the voice so the chalk appears as Manan says the words. SUBTRACTED from the finished board rather than generated, so every state registers to the pixel. There are faint horizontal ghosts on the bare states where the chalk was; they do not read in motion at 5 to 7 frames a second and were left rather than chased.",
-      "flow_pos": 13
+      "flow_pos": 13,
+      "dna": {
+        "phase": "Phase 11 of 15, THE TWO THEORIES, ON THE BOARD.",
+        "journey": "THE ORDEAL, which in this film is comprehension. Nothing is fought.",
+        "element": "LIGHT, which is what lets you see, as against GLOW, which burns and does not last."
+      }
     },
     {
       "kind": "keyframe",
@@ -804,7 +947,12 @@
       "status": "reference",
       "date": "2026-08-30",
       "note": "BOARD BUILD STATE 1 of 5. Shows: the arm. These are for the animatic: cut from one to the next in time with the voice so the chalk appears as Manan says the words. SUBTRACTED from the finished board rather than generated, so every state registers to the pixel. There are faint horizontal ghosts on the bare states where the chalk was; they do not read in motion at 5 to 7 frames a second and were left rather than chased.",
-      "flow_pos": 13
+      "flow_pos": 13,
+      "dna": {
+        "phase": "Phase 11 of 15, THE TWO THEORIES, ON THE BOARD.",
+        "journey": "THE ORDEAL, which in this film is comprehension. Nothing is fought.",
+        "element": "LIGHT, which is what lets you see, as against GLOW, which burns and does not last."
+      }
     },
     {
       "kind": "keyframe",
@@ -814,7 +962,12 @@
       "status": "reference",
       "date": "2026-08-30",
       "note": "BOARD BUILD STATE 2 of 5. Shows: + FATIGUE IS IN THE MUSCLE. These are for the animatic: cut from one to the next in time with the voice so the chalk appears as Manan says the words. SUBTRACTED from the finished board rather than generated, so every state registers to the pixel. There are faint horizontal ghosts on the bare states where the chalk was; they do not read in motion at 5 to 7 frames a second and were left rather than chased.",
-      "flow_pos": 13
+      "flow_pos": 13,
+      "dna": {
+        "phase": "Phase 11 of 15, THE TWO THEORIES, ON THE BOARD.",
+        "journey": "THE ORDEAL, which in this film is comprehension. Nothing is fought.",
+        "element": "LIGHT, which is what lets you see, as against GLOW, which burns and does not last."
+      }
     },
     {
       "kind": "keyframe",
@@ -824,7 +977,12 @@
       "status": "reference",
       "date": "2026-08-30",
       "note": "BOARD BUILD STATE 3 of 5. Shows: + THE FUEL RUNS OUT. These are for the animatic: cut from one to the next in time with the voice so the chalk appears as Manan says the words. SUBTRACTED from the finished board rather than generated, so every state registers to the pixel. There are faint horizontal ghosts on the bare states where the chalk was; they do not read in motion at 5 to 7 frames a second and were left rather than chased.",
-      "flow_pos": 13
+      "flow_pos": 13,
+      "dna": {
+        "phase": "Phase 11 of 15, THE TWO THEORIES, ON THE BOARD.",
+        "journey": "THE ORDEAL, which in this film is comprehension. Nothing is fought.",
+        "element": "LIGHT, which is what lets you see, as against GLOW, which burns and does not last."
+      }
     },
     {
       "kind": "keyframe",
@@ -834,7 +992,12 @@
       "status": "reference",
       "date": "2026-08-30",
       "note": "BOARD BUILD STATE 4 of 5. Shows: + the gauge at EMPTY. These are for the animatic: cut from one to the next in time with the voice so the chalk appears as Manan says the words. SUBTRACTED from the finished board rather than generated, so every state registers to the pixel. There are faint horizontal ghosts on the bare states where the chalk was; they do not read in motion at 5 to 7 frames a second and were left rather than chased.",
-      "flow_pos": 13
+      "flow_pos": 13,
+      "dna": {
+        "phase": "Phase 11 of 15, THE TWO THEORIES, ON THE BOARD.",
+        "journey": "THE ORDEAL, which in this film is comprehension. Nothing is fought.",
+        "element": "LIGHT, which is what lets you see, as against GLOW, which burns and does not last."
+      }
     },
     {
       "kind": "keyframe",
@@ -844,7 +1007,12 @@
       "status": "reference",
       "date": "2026-08-30",
       "note": "BOARD BUILD STATE 5 of 5. Shows: + THE BODY STOPS. These are for the animatic: cut from one to the next in time with the voice so the chalk appears as Manan says the words. SUBTRACTED from the finished board rather than generated, so every state registers to the pixel. There are faint horizontal ghosts on the bare states where the chalk was; they do not read in motion at 5 to 7 frames a second and were left rather than chased.",
-      "flow_pos": 13
+      "flow_pos": 13,
+      "dna": {
+        "phase": "Phase 11 of 15, THE TWO THEORIES, ON THE BOARD.",
+        "journey": "THE ORDEAL, which in this film is comprehension. Nothing is fought.",
+        "element": "LIGHT, which is what lets you see, as against GLOW, which burns and does not last."
+      }
     },
     {
       "kind": "keyframe",
@@ -854,7 +1022,12 @@
       "status": "reference",
       "date": "2026-08-30",
       "note": "WHITEBOARD BUILD STATE 0 of 5. Shows: bare whiteboard. Cut from one to the next in time with Coach Brain speaking, so the marker appears as he says the words. Subtracted from the finished board so every state registers to the pixel, and the whiteboard erases perfectly clean because the surface is plain.",
-      "flow_pos": 14
+      "flow_pos": 14,
+      "dna": {
+        "phase": "Phase 11 of 15, THE TWO THEORIES, ON THE BOARD.",
+        "journey": "THE ORDEAL, which in this film is comprehension. Nothing is fought.",
+        "element": "LIGHT, which is what lets you see, as against GLOW, which burns and does not last."
+      }
     },
     {
       "kind": "keyframe",
@@ -864,7 +1037,12 @@
       "status": "reference",
       "date": "2026-08-30",
       "note": "WHITEBOARD BUILD STATE 1 of 5. Shows: the brain. Cut from one to the next in time with Coach Brain speaking, so the marker appears as he says the words. Subtracted from the finished board so every state registers to the pixel, and the whiteboard erases perfectly clean because the surface is plain.",
-      "flow_pos": 14
+      "flow_pos": 14,
+      "dna": {
+        "phase": "Phase 11 of 15, THE TWO THEORIES, ON THE BOARD.",
+        "journey": "THE ORDEAL, which in this film is comprehension. Nothing is fought.",
+        "element": "LIGHT, which is what lets you see, as against GLOW, which burns and does not last."
+      }
     },
     {
       "kind": "keyframe",
@@ -874,7 +1052,12 @@
       "status": "reference",
       "date": "2026-08-30",
       "note": "WHITEBOARD BUILD STATE 2 of 5. Shows: + FATIGUE IS IN THE BRAIN. Cut from one to the next in time with Coach Brain speaking, so the marker appears as he says the words. Subtracted from the finished board so every state registers to the pixel, and the whiteboard erases perfectly clean because the surface is plain.",
-      "flow_pos": 14
+      "flow_pos": 14,
+      "dna": {
+        "phase": "Phase 11 of 15, THE TWO THEORIES, ON THE BOARD.",
+        "journey": "THE ORDEAL, which in this film is comprehension. Nothing is fought.",
+        "element": "LIGHT, which is what lets you see, as against GLOW, which burns and does not last."
+      }
     },
     {
       "kind": "keyframe",
@@ -884,7 +1067,12 @@
       "status": "reference",
       "date": "2026-08-30",
       "note": "WHITEBOARD BUILD STATE 3 of 5. Shows: + IT DECIDES WHEN TO STOP. Cut from one to the next in time with Coach Brain speaking, so the marker appears as he says the words. Subtracted from the finished board so every state registers to the pixel, and the whiteboard erases perfectly clean because the surface is plain.",
-      "flow_pos": 14
+      "flow_pos": 14,
+      "dna": {
+        "phase": "Phase 11 of 15, THE TWO THEORIES, ON THE BOARD.",
+        "journey": "THE ORDEAL, which in this film is comprehension. Nothing is fought.",
+        "element": "LIGHT, which is what lets you see, as against GLOW, which burns and does not last."
+      }
     },
     {
       "kind": "keyframe",
@@ -894,7 +1082,12 @@
       "status": "reference",
       "date": "2026-08-30",
       "note": "WHITEBOARD BUILD STATE 4 of 5. Shows: + the gauge at FULL. Cut from one to the next in time with Coach Brain speaking, so the marker appears as he says the words. Subtracted from the finished board so every state registers to the pixel, and the whiteboard erases perfectly clean because the surface is plain.",
-      "flow_pos": 14
+      "flow_pos": 14,
+      "dna": {
+        "phase": "Phase 11 of 15, THE TWO THEORIES, ON THE BOARD.",
+        "journey": "THE ORDEAL, which in this film is comprehension. Nothing is fought.",
+        "element": "LIGHT, which is what lets you see, as against GLOW, which burns and does not last."
+      }
     },
     {
       "kind": "keyframe",
@@ -904,7 +1097,12 @@
       "status": "reference",
       "date": "2026-08-30",
       "note": "WHITEBOARD BUILD STATE 5 of 5. Shows: + THE FUEL IS STILL THERE. Cut from one to the next in time with Coach Brain speaking, so the marker appears as he says the words. Subtracted from the finished board so every state registers to the pixel, and the whiteboard erases perfectly clean because the surface is plain.",
-      "flow_pos": 14
+      "flow_pos": 14,
+      "dna": {
+        "phase": "Phase 11 of 15, THE TWO THEORIES, ON THE BOARD.",
+        "journey": "THE ORDEAL, which in this film is comprehension. Nothing is fought.",
+        "element": "LIGHT, which is what lets you see, as against GLOW, which burns and does not last."
+      }
     },
     {
       "frame": "6",
@@ -927,7 +1125,11 @@
       "slug": "EXT. AVENUE OF TREES — DAY — WIDE",
       "what": "The film opens here. A road running away to nothing between two rows of trunks, and one man far down it, folded over. He is small enough that the road is the subject and he is an incident in it.",
       "why": "Loneliness, and distance without end. The same avenue returns in 1-2b with a finish line in it, so this frame is the place before there is anything to see. That is what makes the banner land later.",
-      "flow_pos": 1
+      "flow_pos": 1,
+      "dna": {
+        "phase": "Phase 2 of 15, THE RUNNER.",
+        "journey": "THE ORDINARY WORLD, and inside it THE CALL. A boy on an ordinary road, and a question that will not leave him alone."
+      }
     },
     {
       "kind": "keyframe",
@@ -939,7 +1141,11 @@
       "slug": "EXT. ROAD — DAY — FULL FIGURE",
       "what": "His legs have gone from under him. Falling backwards, one leg folded beneath, arms dead at his sides, head tipped back.",
       "why": "HALF OF THE FILM’S BOOKEND. Cut this against 1-3-A at the far end of the scene: identical frame, identical man, one destroyed and one fresh. Everything between them is the reason.",
-      "flow_pos": 1
+      "flow_pos": 1,
+      "dna": {
+        "phase": "Phase 2 of 15, THE RUNNER.",
+        "journey": "THE ORDINARY WORLD, and inside it THE CALL. A boy on an ordinary road, and a question that will not leave him alone."
+      }
     },
     {
       "kind": "keyframe",
@@ -952,7 +1158,11 @@
       "what": "THE BRAIN BRAKE, and under it THE CENTRAL GOVERNOR THEORY, hand drawn in pencil on bare cream paper. Nothing else in the frame.",
       "why": "The first thing in the film, in both the competition version and the longer one. Drawn in the film's own hand rather than set in a typeface, so the title belongs to the picture instead of sitting on top of it. Ink is 1.62 percent: almost the whole frame is paper.",
       "note": "Title card. Front of both versions.",
-      "flow_pos": 0
+      "flow_pos": 0,
+      "dna": {
+        "phase": "Phase 1 of 15, TITLE.",
+        "journey": "BEFORE THE JOURNEY. The world has not started moving yet."
+      }
     },
     {
       "kind": "keyframe",
@@ -966,7 +1176,12 @@
       "why": "PLACEHOLDER, TYPESET NOT DRAWN, so it cannot be mistaken for final. Only Aurovenkatesh as Cinematographer and Jagan and Pushparaj as crew are confirmed, by them, on 31.8.2026. Everything else is a guess waiting on Neha. When the names come back these are redrawn in the film's own hand through Image to Image. Credits appear in the longer version only: the competition cut has none because of the two minute limit.",
       "note": "Superseded by v2, which has the clouds.",
       "flow_pos": 18,
-      "storyboard": "hide"
+      "storyboard": "hide",
+      "dna": {
+        "phase": "Phase 15 of 15, CREDITS, AND THE DEDICATION.",
+        "journey": "RETURN WITH THE ELIXIR. What he brings back works for the audience too.",
+        "element": "ASH. What is left, carrying the whole history of the fire."
+      }
     },
     {
       "kind": "keyframe",
@@ -980,7 +1195,12 @@
       "why": "PLACEHOLDER, TYPESET NOT DRAWN, so it cannot be mistaken for final. Only Aurovenkatesh as Cinematographer and Jagan and Pushparaj as crew are confirmed, by them, on 31.8.2026. Everything else is a guess waiting on Neha. When the names come back these are redrawn in the film's own hand through Image to Image. Credits appear in the longer version only: the competition cut has none because of the two minute limit.",
       "note": "Placeholder credit card.",
       "flow_pos": 18,
-      "storyboard": "hide"
+      "storyboard": "hide",
+      "dna": {
+        "phase": "Phase 15 of 15, CREDITS, AND THE DEDICATION.",
+        "journey": "RETURN WITH THE ELIXIR. What he brings back works for the audience too.",
+        "element": "ASH. What is left, carrying the whole history of the fire."
+      }
     },
     {
       "kind": "keyframe",
@@ -994,7 +1214,12 @@
       "why": "PLACEHOLDER, TYPESET NOT DRAWN, so it cannot be mistaken for final. Only Aurovenkatesh as Cinematographer and Jagan and Pushparaj as crew are confirmed, by them, on 31.8.2026. Everything else is a guess waiting on Neha. When the names come back these are redrawn in the film's own hand through Image to Image. Credits appear in the longer version only: the competition cut has none because of the two minute limit.",
       "note": "Placeholder credit card.",
       "flow_pos": 18,
-      "storyboard": "hide"
+      "storyboard": "hide",
+      "dna": {
+        "phase": "Phase 15 of 15, CREDITS, AND THE DEDICATION.",
+        "journey": "RETURN WITH THE ELIXIR. What he brings back works for the audience too.",
+        "element": "ASH. What is left, carrying the whole history of the fire."
+      }
     },
     {
       "kind": "keyframe",
@@ -1008,7 +1233,12 @@
       "why": "PLACEHOLDER, TYPESET NOT DRAWN, so it cannot be mistaken for final. Only Aurovenkatesh as Cinematographer and Jagan and Pushparaj as crew are confirmed, by them, on 31.8.2026. Everything else is a guess waiting on Neha. When the names come back these are redrawn in the film's own hand through Image to Image. Credits appear in the longer version only: the competition cut has none because of the two minute limit.",
       "note": "Placeholder credit card.",
       "flow_pos": 18,
-      "storyboard": "hide"
+      "storyboard": "hide",
+      "dna": {
+        "phase": "Phase 15 of 15, CREDITS, AND THE DEDICATION.",
+        "journey": "RETURN WITH THE ELIXIR. What he brings back works for the audience too.",
+        "element": "ASH. What is left, carrying the whole history of the fire."
+      }
     },
     {
       "kind": "keyframe",
@@ -1022,7 +1252,12 @@
       "why": "PLACEHOLDER, TYPESET NOT DRAWN, so it cannot be mistaken for final. Only Aurovenkatesh as Cinematographer and Jagan and Pushparaj as crew are confirmed, by them, on 31.8.2026. Everything else is a guess waiting on Neha. When the names come back these are redrawn in the film's own hand through Image to Image. Credits appear in the longer version only: the competition cut has none because of the two minute limit.",
       "note": "Placeholder credit card.",
       "flow_pos": 18,
-      "storyboard": "hide"
+      "storyboard": "hide",
+      "dna": {
+        "phase": "Phase 15 of 15, CREDITS, AND THE DEDICATION.",
+        "journey": "RETURN WITH THE ELIXIR. What he brings back works for the audience too.",
+        "element": "ASH. What is left, carrying the whole history of the fire."
+      }
     },
     {
       "kind": "keyframe",
@@ -1036,7 +1271,12 @@
       "why": "PLACEHOLDER, TYPESET NOT DRAWN, so it cannot be mistaken for final. Only Aurovenkatesh as Cinematographer and Jagan and Pushparaj as crew are confirmed, by them, on 31.8.2026. Everything else is a guess waiting on Neha. When the names come back these are redrawn in the film's own hand through Image to Image. Credits appear in the longer version only: the competition cut has none because of the two minute limit.",
       "note": "Placeholder credit card.",
       "flow_pos": 18,
-      "storyboard": "hide"
+      "storyboard": "hide",
+      "dna": {
+        "phase": "Phase 15 of 15, CREDITS, AND THE DEDICATION.",
+        "journey": "RETURN WITH THE ELIXIR. What he brings back works for the audience too.",
+        "element": "ASH. What is left, carrying the whole history of the fire."
+      }
     },
     {
       "kind": "keyframe",
@@ -1050,7 +1290,12 @@
       "why": "PLACEHOLDER, TYPESET NOT DRAWN, so it cannot be mistaken for final. Only Aurovenkatesh as Cinematographer and Jagan and Pushparaj as crew are confirmed, by them, on 31.8.2026. Everything else is a guess waiting on Neha. When the names come back these are redrawn in the film's own hand through Image to Image. Credits appear in the longer version only: the competition cut has none because of the two minute limit.",
       "note": "Placeholder credit card.",
       "flow_pos": 18,
-      "storyboard": "hide"
+      "storyboard": "hide",
+      "dna": {
+        "phase": "Phase 15 of 15, CREDITS, AND THE DEDICATION.",
+        "journey": "RETURN WITH THE ELIXIR. What he brings back works for the audience too.",
+        "element": "ASH. What is left, carrying the whole history of the fire."
+      }
     },
     {
       "kind": "keyframe",
@@ -1062,7 +1307,12 @@
       "slug": "EXT. THE HOUSE OF THE BODY — DAY",
       "what": "The front of a building where nothing is straight. Bone columns bowed narrow at the middle, a roofline of melted stone, windows set deep under heavy brows, one broad low opening with a curved sill, and a single heavy door at ground level.",
       "why": "THE BUILDING IS HIS BODY, and it reads as a face without being drawn as one: the windows are eyes, the balcony is a mouth. It replaced a factory, which said industry when the film needed living thing. The style is organic architecture in the manner of Gaudi, and it was got by describing the geometry rather than naming a building, which is the same law that made the organ walls work. MANAN IS KEYED INTO THE DOORWAY, never drawn.",
-      "flow_pos": 8
+      "flow_pos": 8,
+      "dna": {
+        "phase": "Phase 8 of 15, THE HOUSE OF THE BODY.",
+        "journey": "THE ROAD OF TESTS. Three wrong rooms, each saying no, none of them the thing that stopped him.",
+        "element": "EARTH and the body. Walls you could put a hand on."
+      }
     },
     {
       "kind": "keyframe",
@@ -1074,7 +1324,12 @@
       "slug": "INT. THE BODY — THE CORRIDOR",
       "what": "A vaulted corridor where nothing is straight. Walls swelling at the base, bone columns narrow at their middles, soft irregular stone underfoot, and at the far end one door standing open with light washing everything to bare paper.",
       "why": "REBUILT 31.8.2026 in the language of the house. The first version was brick and riveted iron, a factory interior behind a living facade, and the two contradicted each other. Shaped more like a throat than a hallway. The plaques carry Coach Brain's own sensor list, so walking past them sets up a line he has not said yet.",
-      "flow_pos": 10
+      "flow_pos": 10,
+      "dna": {
+        "phase": "Phase 8 of 15, THE HOUSE OF THE BODY.",
+        "journey": "THE ROAD OF TESTS. Three wrong rooms, each saying no, none of them the thing that stopped him.",
+        "element": "EARTH and the body. Walls you could put a hand on."
+      }
     },
     {
       "kind": "keyframe",
@@ -1085,7 +1340,12 @@
       "slug": "INT. THE BODY — THE PUMP HALL",
       "what": "A vaulted hall with one great smooth vessel standing in it, swelling at the base and narrow at the waist, with rounded tubes leaving it in both directions.",
       "why": "REBUILT 31.8.2026 in the language of the house. THE WALLS ARE UNCHANGED and were never the problem: domed muscular chambers with fibrous cords stretched across the hollows. Only the built things changed, and the instruction that did the work was no rivet, bolt, flange or straight edge anywhere. TWO THINGS DID NOT LAND: the pressure gauges vanished into the wall relief, and the floor kept rectangular flagstones instead of soft irregular stone. Accepted at two seconds on screen; the gauges belong with Coach Brain anyway.",
-      "flow_pos": 10
+      "flow_pos": 10,
+      "dna": {
+        "phase": "Phase 8 of 15, THE HOUSE OF THE BODY.",
+        "journey": "THE ROAD OF TESTS. Three wrong rooms, each saying no, none of them the thing that stopped him.",
+        "element": "EARTH and the body. Walls you could put a hand on."
+      }
     },
     {
       "kind": "keyframe",
@@ -1096,7 +1356,12 @@
       "slug": "INT. THE BODY — THE BELLOWS",
       "what": "A vaulted hall with a vast bellows of soft pleated skin between two pale plates, held by slender bowed columns, a rounded tube leaving its top.",
       "why": "REBUILT 31.8.2026 in the language of the house. The branching walls carry the frame: arches dividing into smaller arches down to fist-sized clusters, a lung as architecture. THE LEFT WALL STILL READS AS A PLAIN COLONNADE and only the right branches properly. Two runs on it, accepted: at two seconds the room reads as organic and the bellows is right.",
-      "flow_pos": 10
+      "flow_pos": 10,
+      "dna": {
+        "phase": "Phase 8 of 15, THE HOUSE OF THE BODY.",
+        "journey": "THE ROAD OF TESTS. Three wrong rooms, each saying no, none of them the thing that stopped him.",
+        "element": "EARTH and the body. Walls you could put a hand on."
+      }
     },
     {
       "kind": "keyframe",
@@ -1111,7 +1376,12 @@
       "speaker": "COACH BRAIN",
       "line": "You found me. Took you long enough.",
       "linestate": "to record",
-      "flow_pos": 12
+      "flow_pos": 12,
+      "dna": {
+        "phase": "Phase 10 of 15, THEY INTRODUCE EACH OTHER.",
+        "journey": "MEETING THE MENTOR, late and inside the cave. The obstacle and the guide are one figure.",
+        "element": "THE HAND, and SACRED SPACE. A room treated as different becomes different."
+      }
     },
     {
       "frame": "11",
@@ -1145,7 +1415,12 @@
       "slug": "EXT. THE HOUSE — THE FRONT DOOR OPENS",
       "what": "The doorway close and filling the frame. Two smooth stone leaves swung back almost flat against the opening, and light pouring out of the gap as bare unmarked paper, spilling forward onto the paving.",
       "why": "THE FIRST OF TWO DOORS HE OPENS. The second is the skull door into the brain, opened the same way, so the second reads as a rhyme rather than a repeat. The leaves are the same stone as the wall with no rivet, hinge or straight edge, so they read as parts of the building that moved rather than joinery fitted into it. Blank centre measured 61.5 percent against 31 in the first version. MANAN IS KEYED INTO THE DOORWAY, never drawn.",
-      "flow_pos": 9
+      "flow_pos": 9,
+      "dna": {
+        "phase": "Phase 8 of 15, THE HOUSE OF THE BODY.",
+        "journey": "THE ROAD OF TESTS. Three wrong rooms, each saying no, none of them the thing that stopped him.",
+        "element": "EARTH and the body. Walls you could put a hand on."
+      }
     },
     {
       "kind": "keyframe",
@@ -1157,7 +1432,12 @@
       "slug": "INT. THE BODY — THE SKULL DOOR",
       "what": "A closed stone door at the end of a short passage. A softly domed top, one shallow oval push plate on the right at hand height, and an oval plaque at eye height reading COACH BRAIN.",
       "why": "THE SECOND DOOR HE OPENS, and it rhymes with the front door rather than repeating it. A skull is suggested by the dome alone and never drawn: no teeth, no jaw, no sockets. Anyone who has walked the corridor will feel it, nobody is told. THE PLAQUE IS THE ONLY PLACE IN THE FILM THE CHARACTER IS NAMED IN WRITING, and it arrives before he does. The push plate sits where a hand falls and the plaque where an eye falls, because the building is strange but not inconvenient.",
-      "flow_pos": 11
+      "flow_pos": 11,
+      "dna": {
+        "phase": "Phase 9 of 15, HE SEES THE KEY, AND GOES IN.",
+        "journey": "APPROACH TO THE INMOST CAVE. He can read the door, and he knows.",
+        "element": "THRESHOLD, the one the book says films waste."
+      }
     },
     {
       "kind": "keyframe",
@@ -1170,7 +1450,12 @@
       "why": "PHASE 1 OF 4 OF THE LAST SHOT. A God hand: no body attached, which is how giving has been drawn for centuries without anyone being told whose hand it is. It is already closed when we arrive, so the opening is the event. THE LOWER RIGHT IS BLANK ON PURPOSE, measured 100 percent: Manan's real hand is keyed in there and is never drawn. Colour measures 0.24 percent, the key alone.",
       "storyboard": "hide",
       "note": "Off the strip 1.9.2026. Carries the old modern key, not the real object, and the wrist has no tracksuit cuff. The release now starts on the turn.",
-      "flow_pos": 17
+      "flow_pos": 17,
+      "dna": {
+        "phase": "Phase 14 of 15, HE CATCHES IT.",
+        "journey": "RESURRECTION. His hand closes on a real object and the change is proved.",
+        "element": "THE HAND, closing. The most complete sentence a film can make without words."
+      }
     },
     {
       "kind": "keyframe",
@@ -1183,7 +1468,12 @@
       "why": "PHASE 2 OF 4. The cuff is how we know whose hand it is; the body stays out of frame. Caught in the middle of releasing, neither open nor closed.",
       "note": "Superseded by v2, which has the real key and the tracksuit cuff.",
       "storyboard": "hide",
-      "flow_pos": 17
+      "flow_pos": 17,
+      "dna": {
+        "phase": "Phase 14 of 15, HE CATCHES IT.",
+        "journey": "RESURRECTION. His hand closes on a real object and the change is proved.",
+        "element": "THE HAND, closing. The most complete sentence a film can make without words."
+      }
     },
     {
       "kind": "keyframe",
@@ -1195,7 +1485,12 @@
       "what": "The wrist has rolled, the palm faces down, the fingers are open and empty. The gold key falls clear of the hand in bare paper with nothing beneath it.",
       "why": "PHASE 3 OF 4. NOTHING WAITS BELOW. The key falls into empty air and Manan's hand comes in after it, so he is not given the key, he takes what was let go. The key renders fully solid gold here where earlier phases showed only glints between fingers; that is a deliberate step up in weight as it becomes the subject, not a continuity error.",
       "note": "Superseded by the FALL sequence. Old modern key, and the drop is now a long fall from the sky.",
-      "flow_pos": 17
+      "flow_pos": 17,
+      "dna": {
+        "phase": "Phase 14 of 15, HE CATCHES IT.",
+        "journey": "RESURRECTION. His hand closes on a real object and the change is proved.",
+        "element": "THE HAND, closing. The most complete sentence a film can make without words."
+      }
     },
     {
       "kind": "keyframe",
@@ -1207,7 +1502,12 @@
       "what": "Bare paper edge to edge with one small gold key near the middle, tumbling as it falls. Nothing else in the frame at all: no hand, no arm, no shadow, no ground.",
       "why": "PHASE 4 OF 4, and the last drawn frame in the film. Ink measures 0.43 percent. After everything the film has built it comes down to one small object falling through empty space with nobody holding it, which is the argument in a single frame. THE FRAME AFTER THIS ONE IS NOT DRAWN AND MUST NOT BE: Manan's real hand comes in from below and closes on the key, keyed over this same bare paper. Coach Brain's hand is gone by then. Manan's fist stays and the film fades out on it, so the last image is a boy holding something, alone.",
       "note": "Superseded by the FALL sequence. Old modern key.",
-      "flow_pos": 17
+      "flow_pos": 17,
+      "dna": {
+        "phase": "Phase 14 of 15, HE CATCHES IT.",
+        "journey": "RESURRECTION. His hand closes on a real object and the change is proved.",
+        "element": "THE HAND, closing. The most complete sentence a film can make without words."
+      }
     },
     {
       "kind": "keyframe",
@@ -1226,7 +1526,12 @@
         }
       ],
       "storyboard": "hide",
-      "flow_pos": 17
+      "flow_pos": 17,
+      "dna": {
+        "phase": "Phase 14 of 15, HE CATCHES IT.",
+        "journey": "RESURRECTION. His hand closes on a real object and the change is proved.",
+        "element": "THE HAND, closing. The most complete sentence a film can make without words."
+      }
     },
     {
       "kind": "keyframe",
@@ -1245,7 +1550,12 @@
         }
       ],
       "storyboard": "hide",
-      "flow_pos": 17
+      "flow_pos": 17,
+      "dna": {
+        "phase": "Phase 14 of 15, HE CATCHES IT.",
+        "journey": "RESURRECTION. His hand closes on a real object and the change is proved.",
+        "element": "THE HAND, closing. The most complete sentence a film can make without words."
+      }
     },
     {
       "kind": "keyframe",
@@ -1263,7 +1573,12 @@
           "note": "The whole take with a real alpha channel, ready to composite. The still above is a mockup keyed by luma and it is not good enough to finish with: the hood picks up a rough matte where the fabric shadow meets the black. Pull the frames you need from this footage instead."
         }
       ],
-      "flow_pos": 17
+      "flow_pos": 17,
+      "dna": {
+        "phase": "Phase 14 of 15, HE CATCHES IT.",
+        "journey": "RESURRECTION. His hand closes on a real object and the change is proved.",
+        "element": "THE HAND, closing. The most complete sentence a film can make without words."
+      }
     },
     {
       "kind": "flow",
@@ -1433,7 +1748,12 @@
       "slug": "INT. THE LIGHT — BEFORE",
       "what": "Bare paper, edge to edge, with the faintest broken strokes clinging to the four corners.",
       "why": "HE CLOSES HIS EYES AND GOES INTO THE LIGHT. This is the travel, not a transition: he is moving through it when the vortex opens. Nothing is drawn to stand for light, the light is the paper.",
-      "flow_pos": 7
+      "flow_pos": 7,
+      "dna": {
+        "phase": "Phase 7 of 15, THE VORTEX, UP.",
+        "journey": "CROSSING THE THRESHOLD. Not the door, the line under it. Point of no return.",
+        "element": "WATER as cloud, and THRESHOLD."
+      }
     },
     {
       "kind": "keyframe",
@@ -1444,7 +1764,12 @@
       "slug": "INT. THE LIGHT — AFTER",
       "what": "The same bare paper. The vortex has closed.",
       "why": "THE SAME FRAME AS 9.0 ON PURPOSE, so the white closes around him exactly as it opened. He arrives out of nothing and leaves into nothing. From here the light fades down and he is standing in front of the door.",
-      "flow_pos": 7
+      "flow_pos": 7,
+      "dna": {
+        "phase": "Phase 7 of 15, THE VORTEX, UP.",
+        "journey": "CROSSING THE THRESHOLD. Not the door, the line under it. Point of no return.",
+        "element": "WATER as cloud, and THRESHOLD."
+      }
     },
     {
       "kind": "keyframe",
@@ -1456,7 +1781,12 @@
       "slug": "EXT. THE HOUSE — THE DOOR OPEN",
       "what": "The whole building with the front door open and light pouring out of it as bare unmarked paper, spilling forward onto the paving.",
       "why": "THE FRAME THE ARRIVAL IS BUILT ON. Push into the doorway to start, pull back to full frame, and the building is revealed as the answer to where he went. Manan is keyed into the doorway and taken out of the composite part way through the pull, so he disappears inside without ever being drawn. MEASURED: the doorway differs from the closed door version by 48.6 of 255 but the rest of the facade by 16.0, so the two do not register exactly. Do not cross dissolve between them for the ending. Hold on THIS frame and animate the doors closing over it.",
-      "flow_pos": 8
+      "flow_pos": 8,
+      "dna": {
+        "phase": "Phase 8 of 15, THE HOUSE OF THE BODY.",
+        "journey": "THE ROAD OF TESTS. Three wrong rooms, each saying no, none of them the thing that stopped him.",
+        "element": "EARTH and the body. Walls you could put a hand on."
+      }
     },
     {
       "kind": "keyframe",
@@ -1480,7 +1810,12 @@
         }
       ],
       "storyboard": "hide",
-      "flow_pos": 17
+      "flow_pos": 17,
+      "dna": {
+        "phase": "Phase 14 of 15, HE CATCHES IT.",
+        "journey": "RESURRECTION. His hand closes on a real object and the change is proved.",
+        "element": "THE HAND, closing. The most complete sentence a film can make without words."
+      }
     },
     {
       "kind": "keyframe",
@@ -1503,7 +1838,12 @@
           "note": "The take with a real alpha channel, ready to composite. Use this, not the mockup above."
         }
       ],
-      "flow_pos": 8
+      "flow_pos": 8,
+      "dna": {
+        "phase": "Phase 8 of 15, THE HOUSE OF THE BODY.",
+        "journey": "THE ROAD OF TESTS. Three wrong rooms, each saying no, none of them the thing that stopped him.",
+        "element": "EARTH and the body. Walls you could put a hand on."
+      }
     },
     {
       "kind": "keyframe",
@@ -1518,7 +1858,12 @@
       "speaker": "COACH BRAIN",
       "line": "You found me. Took you long enough.",
       "linestate": "to record",
-      "flow_pos": 12
+      "flow_pos": 12,
+      "dna": {
+        "phase": "Phase 10 of 15, THEY INTRODUCE EACH OTHER.",
+        "journey": "MEETING THE MENTOR, late and inside the cave. The obstacle and the guide are one figure.",
+        "element": "THE HAND, and SACRED SPACE. A room treated as different becomes different."
+      }
     },
     {
       "kind": "keyframe",
@@ -1532,7 +1877,12 @@
       "speaker": "COACH BRAIN",
       "line": "You found me. Took you long enough.",
       "linestate": "to record",
-      "flow_pos": 12
+      "flow_pos": 12,
+      "dna": {
+        "phase": "Phase 10 of 15, THEY INTRODUCE EACH OTHER.",
+        "journey": "MEETING THE MENTOR, late and inside the cave. The obstacle and the guide are one figure.",
+        "element": "THE HAND, and SACRED SPACE. A room treated as different becomes different."
+      }
     },
     {
       "kind": "keyframe",
@@ -1546,7 +1896,12 @@
       "speaker": "MANAN",
       "line": "You closed that door.",
       "linestate": "recorded, PANA6308",
-      "flow_pos": 12
+      "flow_pos": 12,
+      "dna": {
+        "phase": "Phase 10 of 15, THEY INTRODUCE EACH OTHER.",
+        "journey": "MEETING THE MENTOR, late and inside the cave. The obstacle and the guide are one figure.",
+        "element": "THE HAND, and SACRED SPACE. A room treated as different becomes different."
+      }
     },
     {
       "kind": "keyframe",
@@ -1558,7 +1913,12 @@
       "what": "Close on the cloth. A few letters very large and cut off by the frame edges, the weave between them, the banner whole.",
       "why": "THE CLOTH DOES NOT TEAR OR PART. An earlier attempt split it down the middle and was rejected: we pass through by cutting to white, not by the fabric giving way, the same as every other crossing in the film. Graded onto the film's own paper and pencil in the container, no coin spent: it came back warm and photographic at 6.39 percent colour and is now 0.00.",
       "note": "Superseded by v3. Came back photographic: raking light across real canvas and shallow focus.",
-      "flow_pos": 15
+      "flow_pos": 15,
+      "dna": {
+        "phase": "Phase 12 of 15, THE CONCLUSION, AND GOODBYE.",
+        "journey": "THE REWARD. Given rather than seized, which is why the goodbye matters.",
+        "element": "THE HAND, open. Giving and surrendering at once."
+      }
     },
     {
       "kind": "keyframe",
@@ -1569,7 +1929,11 @@
       "slug": "EXT. — ON THE TRAINER, WIDE",
       "what": "Him on the trainer at home with the laptop in the room.",
       "why": "PHASE 3 IS LIVE ACTION. He is a photograph here as he is in phases 2, 4 and 5, so the whole bicycle sequence keeps him real. LOW RESOLUTION FOR NOW, 380 px: the 1920 px originals were destroyed by an in-place downscale and are being re-exported from the Resolve timeline, STEP 77.",
-      "flow_pos": 3
+      "flow_pos": 3,
+      "dna": {
+        "phase": "Phase 4 of 15, TESTING WHERE THE LIMIT IS.",
+        "journey": "TESTS, before the threshold. He is learning the rules of his own body."
+      }
     },
     {
       "kind": "keyframe",
@@ -1580,7 +1944,11 @@
       "slug": "EXT. — RACING",
       "what": "Closer, working, eyes on the screen.",
       "why": "The beat the phase exists for: he is competing with a recording of himself. LOW RESOLUTION FOR NOW, 380 px: the 1920 px originals were destroyed by an in-place downscale and are being re-exported from the Resolve timeline, STEP 77.",
-      "flow_pos": 3
+      "flow_pos": 3,
+      "dna": {
+        "phase": "Phase 4 of 15, TESTING WHERE THE LIMIT IS.",
+        "journey": "TESTS, before the threshold. He is learning the rules of his own body."
+      }
     },
     {
       "kind": "keyframe",
@@ -1591,7 +1959,11 @@
       "slug": "EXT. — PUSHING",
       "what": "Leaning into it, further in.",
       "why": "Carries into phase 4, where he stops. LOW RESOLUTION FOR NOW, 380 px: the 1920 px originals were destroyed by an in-place downscale and are being re-exported from the Resolve timeline, STEP 77.",
-      "flow_pos": 3
+      "flow_pos": 3,
+      "dna": {
+        "phase": "Phase 4 of 15, TESTING WHERE THE LIMIT IS.",
+        "journey": "TESTS, before the threshold. He is learning the rules of his own body."
+      }
     },
     {
       "kind": "keyframe",
@@ -1602,7 +1974,11 @@
       "slug": "EXT. ROAD — DAY",
       "what": "He rides on a real road, small against it.",
       "why": "PLACEHOLDER. This is a reference frame from the document Venkatesh shot from, standing in until the real footage is exported. It shows the intended framing and nothing more. The phase was shot and the material exists; it is not on this machine yet.",
-      "flow_pos": 2
+      "flow_pos": 2,
+      "dna": {
+        "phase": "Phase 3 of 15, THE BICYCLE.",
+        "journey": "REFUSAL, of a kind. He does not turn back, he argues. He tests the limit rather than obeying it."
+      }
     },
     {
       "kind": "keyframe",
@@ -1613,7 +1989,11 @@
       "slug": "EXT. ROAD — CLOSER",
       "what": "Working, but not yet in trouble.",
       "why": "PLACEHOLDER. This is a reference frame from the document Venkatesh shot from, standing in until the real footage is exported. It shows the intended framing and nothing more. The phase was shot and the material exists; it is not on this machine yet.",
-      "flow_pos": 2
+      "flow_pos": 2,
+      "dna": {
+        "phase": "Phase 3 of 15, THE BICYCLE.",
+        "journey": "REFUSAL, of a kind. He does not turn back, he argues. He tests the limit rather than obeying it."
+      }
     },
     {
       "kind": "keyframe",
@@ -1624,7 +2004,11 @@
       "slug": "EXT. ROAD — FROM THE SHOOT",
       "what": "A frame from the day.",
       "why": "PLACEHOLDER. This is a reference frame from the document Venkatesh shot from, standing in until the real footage is exported. It shows the intended framing and nothing more. The phase was shot and the material exists; it is not on this machine yet.",
-      "flow_pos": 2
+      "flow_pos": 2,
+      "dna": {
+        "phase": "Phase 3 of 15, THE BICYCLE.",
+        "journey": "REFUSAL, of a kind. He does not turn back, he argues. He tests the limit rather than obeying it."
+      }
     },
     {
       "kind": "keyframe",
@@ -1635,7 +2019,11 @@
       "slug": "INT. ROOM — RACING HIMSELF",
       "what": "On the trainer with his own ride playing back.",
       "why": "PLACEHOLDER. This is a reference frame from the document Venkatesh shot from, standing in until the real footage is exported. It shows the intended framing and nothing more. The phase was shot and the material exists; it is not on this machine yet.",
-      "flow_pos": 3
+      "flow_pos": 3,
+      "dna": {
+        "phase": "Phase 4 of 15, TESTING WHERE THE LIMIT IS.",
+        "journey": "TESTS, before the threshold. He is learning the rules of his own body."
+      }
     },
     {
       "kind": "keyframe",
@@ -1646,7 +2034,11 @@
       "slug": "INT. ROOM — THE IDEA LANDS",
       "what": "The moment he decides to try it.",
       "why": "PLACEHOLDER. This is a reference frame from the document Venkatesh shot from, standing in until the real footage is exported. It shows the intended framing and nothing more. The phase was shot and the material exists; it is not on this machine yet.",
-      "flow_pos": 3
+      "flow_pos": 3,
+      "dna": {
+        "phase": "Phase 4 of 15, TESTING WHERE THE LIMIT IS.",
+        "journey": "TESTS, before the threshold. He is learning the rules of his own body."
+      }
     },
     {
       "kind": "keyframe",
@@ -1657,7 +2049,11 @@
       "slug": "INT. ROOM — HE IS DONE",
       "what": "Nothing left. He stops.",
       "why": "PLACEHOLDER. This is a reference frame from the document Venkatesh shot from, standing in until the real footage is exported. It shows the intended framing and nothing more. The phase was shot and the material exists; it is not on this machine yet.",
-      "flow_pos": 4
+      "flow_pos": 4,
+      "dna": {
+        "phase": "Phase 5 of 15, TIRED, AND THE WALL.",
+        "journey": "THE CALL becoming undeniable. The wall is the thing he will later find was never a wall."
+      }
     },
     {
       "kind": "keyframe",
@@ -1670,7 +2066,11 @@
       "why": "PLACEHOLDER. This is a reference frame from the document Venkatesh shot from, standing in until the real footage is exported. It shows the intended framing and nothing more. The phase was shot and the material exists; it is not on this machine yet.",
       "storyboard": "hide",
       "note": "Off the storyboard, 1.9.2026. This is a drawing sitting in a live action phase alongside real footage of the same beat, which tells the animator to draw something that was already shot. Kept in the catalogue as early reference only.",
-      "flow_pos": 4
+      "flow_pos": 4,
+      "dna": {
+        "phase": "Phase 5 of 15, TIRED, AND THE WALL.",
+        "journey": "THE CALL becoming undeniable. The wall is the thing he will later find was never a wall."
+      }
     },
     {
       "kind": "keyframe",
@@ -1682,7 +2082,11 @@
       "what": "A frame from the day.",
       "why": "PLACEHOLDER. This is a reference frame from the document Venkatesh shot from, standing in until the real footage is exported. It shows the intended framing and nothing more. The phase was shot and the material exists; it is not on this machine yet.",
       "flow_pos": 4,
-      "note": "CUT 2.9.2026. He does not come back to the bicycle. Once his eyes close he is in the trance and the film does not return to him cycling, rested or otherwise. This plate showed exactly that and contradicted the whole second half."
+      "note": "CUT 2.9.2026. He does not come back to the bicycle. Once his eyes close he is in the trance and the film does not return to him cycling, rested or otherwise. This plate showed exactly that and contradicted the whole second half.",
+      "dna": {
+        "phase": "Phase 5 of 15, TIRED, AND THE WALL.",
+        "journey": "THE CALL becoming undeniable. The wall is the thing he will later find was never a wall."
+      }
     },
     {
       "kind": "keyframe",
@@ -1693,7 +2097,11 @@
       "slug": "INT. ROOM — EYES CLOSED",
       "what": "He stops pushing and closes his eyes.",
       "why": "PLACEHOLDER. This is a reference frame from the document Venkatesh shot from, standing in until the real footage is exported. It shows the intended framing and nothing more. The phase was shot and the material exists; it is not on this machine yet.",
-      "flow_pos": 5
+      "flow_pos": 5,
+      "dna": {
+        "phase": "Phase 6 of 15, HE CLOSES HIS EYES.",
+        "journey": "APPROACH TO THE THRESHOLD. The last frame of the ordinary world."
+      }
     },
     {
       "kind": "keyframe",
@@ -1706,7 +2114,11 @@
       "why": "PLACEHOLDER. This is a reference frame from the document Venkatesh shot from, standing in until the real footage is exported. It shows the intended framing and nothing more. The phase was shot and the material exists; it is not on this machine yet.",
       "storyboard": "hide",
       "note": "Off the storyboard, 1.9.2026, same reason as V7_5_3_beat_it. A drawing in a live action phase beside real footage of the same beat. Found by measuring coloured pixels across all three live phases rather than by eye: 2.4 per cent against 62 to 92 for every photograph around it.",
-      "flow_pos": 5
+      "flow_pos": 5,
+      "dna": {
+        "phase": "Phase 6 of 15, HE CLOSES HIS EYES.",
+        "journey": "APPROACH TO THE THRESHOLD. The last frame of the ordinary world."
+      }
     },
     {
       "kind": "keyframe",
@@ -1718,7 +2130,11 @@
       "what": "A frame from the day.",
       "why": "PLACEHOLDER. This is a reference frame from the document Venkatesh shot from, standing in until the real footage is exported. It shows the intended framing and nothing more. The phase was shot and the material exists; it is not on this machine yet.",
       "flow_pos": 5,
-      "note": "CUT 2.9.2026. He does not come back to the bicycle. Once his eyes close he is in the trance and the film does not return to him cycling, rested or otherwise. This plate showed exactly that and contradicted the whole second half."
+      "note": "CUT 2.9.2026. He does not come back to the bicycle. Once his eyes close he is in the trance and the film does not return to him cycling, rested or otherwise. This plate showed exactly that and contradicted the whole second half.",
+      "dna": {
+        "phase": "Phase 6 of 15, HE CLOSES HIS EYES.",
+        "journey": "APPROACH TO THE THRESHOLD. The last frame of the ordinary world."
+      }
     },
     {
       "kind": "keyframe",
@@ -1730,7 +2146,12 @@
       "what": "A tall nine by sixteen sheet of faint cloud in bands, with clear bare paper between them and an open column down the centre.",
       "why": "NOT USED YET, KEPT ANYWAY. Built so the credits could be one plate with text composed over it rather than seven separate cards, which is cheaper and lets the order change without regenerating anything. Fly the camera down the open middle and pass through a cloud bank between each name.",
       "flow_pos": 18,
-      "storyboard": "hide"
+      "storyboard": "hide",
+      "dna": {
+        "phase": "Phase 15 of 15, CREDITS, AND THE DEDICATION.",
+        "journey": "RETURN WITH THE ELIXIR. What he brings back works for the audience too.",
+        "element": "ASH. What is left, carrying the whole history of the fire."
+      }
     },
     {
       "frame": "15",
@@ -1763,7 +2184,12 @@
       "why": "FIRST OF THE FALL. It spans about a twelfth of the frame width here and grows all the way down, because Coach Brain is desk height and Manan is life size: the same object, simply getting nearer. It turns, grows and crosses from pencil to photograph together. GOLD ADDED IN THE CONTAINER, no coin: it came back drawn in the same pale pencil as the clouds, and on a sheet this empty the one coloured thing is the only thing the eye has.",
       "note": "Off the strip 1.9.2026: measured 0.00 percent colour, so the key was never made gold. v2 was generated to fix it and never reached the repository.",
       "storyboard": "hide",
-      "flow_pos": 17
+      "flow_pos": 17,
+      "dna": {
+        "phase": "Phase 14 of 15, HE CATCHES IT.",
+        "journey": "RESURRECTION. His hand closes on a real object and the change is proved.",
+        "element": "THE HAND, closing. The most complete sentence a film can make without words."
+      }
     },
     {
       "kind": "keyframe",
@@ -1774,7 +2200,12 @@
       "slug": "EXT. — THE KEY FALLS, 3 OF 6",
       "what": "The key falling, turned past horizontal, with the whiteboard behind it as a barely visible ghost.",
       "why": "THE FILM RUNS BACKWARDS BEHIND THE FALL. The whiteboard is first because it is the last thing before the fly through; each following frame reaches further back, ending on the avenue as he catches it. It is the image people describe when they nearly die, in a film about a brain deciding when you stop. IT MUST BE ALMOST INVISIBLE. If a viewer can describe what they saw it is too strong. Ink here is 1.59 percent against 7.54 in the first attempt; faded in the container, which only lifted the ghost toward the paper and never touched the key.",
-      "flow_pos": 17
+      "flow_pos": 17,
+      "dna": {
+        "phase": "Phase 14 of 15, HE CATCHES IT.",
+        "journey": "RESURRECTION. His hand closes on a real object and the change is proved.",
+        "element": "THE HAND, closing. The most complete sentence a film can make without words."
+      }
     },
     {
       "kind": "keyframe",
@@ -1785,7 +2216,12 @@
       "slug": "EXT. — THE KEY FALLS, 4 OF 6",
       "what": "The key turned further, smaller in frame, with the control room behind it as a ghost: the desk, the screens, the arched door.",
       "why": "THE FILM CONTINUES BACKWARDS. The whiteboard was frame three, this is the room before it, and the next reach further back still. Key at 17 percent of frame width, ink at 2.23, close enough to frame three to cut together. NO SHADOW UNDER IT: a contact shadow puts it on a surface, and it is in the air.",
-      "flow_pos": 17
+      "flow_pos": 17,
+      "dna": {
+        "phase": "Phase 14 of 15, HE CATCHES IT.",
+        "journey": "RESURRECTION. His hand closes on a real object and the change is proved.",
+        "element": "THE HAND, closing. The most complete sentence a film can make without words."
+      }
     },
     {
       "kind": "keyframe",
@@ -1796,7 +2232,12 @@
       "slug": "EXT. — THE KEY FALLS, 5 OF 6",
       "what": "The key close to vertical, the house behind it as a ghost, and the metal now rendering as real brass rather than shaded pencil.",
       "why": "THIS IS WHERE THE CROSSING SHOWS. Frames one to four are drawn, this is halfway, and the next is a photograph in his hand. Set it against frame four and the change is visible; set it against its neighbours in motion and no single cut is the moment it becomes real. House faded in the container from 6.34 to 3.60 percent ink, still a little above frames three and four at 1.6 to 2.2. The key is vertical and centred here, which is more posed than the rest of the fall; accepted because Kristijan interpolates between these and sets the final levels in the composite.",
-      "flow_pos": 17
+      "flow_pos": 17,
+      "dna": {
+        "phase": "Phase 14 of 15, HE CATCHES IT.",
+        "journey": "RESURRECTION. His hand closes on a real object and the change is proved.",
+        "element": "THE HAND, closing. The most complete sentence a film can make without words."
+      }
     },
     {
       "kind": "keyframe",
@@ -1807,7 +2248,12 @@
       "slug": "END CREDITS — THE LOOK",
       "what": "A finished credit card: cloud in the four corners and along the bottom, the centre clear bare paper, the credit in the film’s own hand.",
       "why": "THIS IS WHAT THE CREDITS LOOK LIKE. The centre stays open because the camera flies through it, card to card, and the clouds must never cross the lettering. The lobed cloud shapes rhyme with Coach Brain’s head, which is never pointed at. Only Aurovenkatesh, Jagan and Pushparaj are confirmed names.",
-      "flow_pos": 18
+      "flow_pos": 18,
+      "dna": {
+        "phase": "Phase 15 of 15, CREDITS, AND THE DEDICATION.",
+        "journey": "RETURN WITH THE ELIXIR. What he brings back works for the audience too.",
+        "element": "ASH. What is left, carrying the whole history of the fire."
+      }
     },
     {
       "kind": "keyframe",
@@ -1818,7 +2264,12 @@
       "slug": "INT. CONTROL ROOM — WIDE, MOCKUP WITH A BOY",
       "what": "The wide of the control room with a real boy standing on the open floor at the right, photographic against the drawn room.",
       "why": "A MOCKUP FOR COMPOSITING, NOT A FRAME OF THE FILM. The boy is generated and is not Manan: he is here so the scale, the standing position and the eyeline can be seen at a glance. In the film Manan is a photograph of the real boy keyed into this plate. ONE THING IS WRONG IN IT AND IS LEFT WRONG: he faces away toward the door instead of left toward Coach Brain. The screen direction the wide fixed is Coach Brain on the left looking right, Manan on the right looking left. Use the position, not the eyeline.",
-      "flow_pos": 12
+      "flow_pos": 12,
+      "dna": {
+        "phase": "Phase 10 of 15, THEY INTRODUCE EACH OTHER.",
+        "journey": "MEETING THE MENTOR, late and inside the cave. The obstacle and the guide are one figure.",
+        "element": "THE HAND, and SACRED SPACE. A room treated as different becomes different."
+      }
     },
     {
       "kind": "keyframe",
@@ -1830,7 +2281,12 @@
       "what": "Coach Brain's hand tilting, the tracksuit cuff clear at the wrist, the key sliding head down across the fingers.",
       "why": "SECOND OF THREE: OFFERING, TURNING, FALLING. The key is drawn in pencil here and is gold in the film. It came back grey twice and the reason is now known: a small coloured object inside a large pencil drawing is drawn in pencil, because the surrounding style wins. Colouring it in the container failed too, four attempts, because the key touches the fingers and no threshold separates them. COLOUR IT IN THE COMPOSITE.",
       "note": "Superseded by v2. The key came back in pencil, and four attempts to tint it in the container failed because it touches the fingers. Tinting is banned as of 1.9.2026: if the gold is missing the prompt was wrong and the frame is regenerated.",
-      "flow_pos": 17
+      "flow_pos": 17,
+      "dna": {
+        "phase": "Phase 14 of 15, HE CATCHES IT.",
+        "journey": "RESURRECTION. His hand closes on a real object and the change is proved.",
+        "element": "THE HAND, closing. The most complete sentence a film can make without words."
+      }
     },
     {
       "kind": "keyframe",
@@ -1842,7 +2298,12 @@
       "what": "The hand open and relaxed, palm turned down, the key clear of the fingers and falling away into empty paper.",
       "why": "THIRD OF THREE, AND THE RELEASE. The hand has let go rather than offered: fingers spread, nothing held out to anybody. HE DOES NOT KNOW WHO CATCHES IT. That is why there is bare paper between the fingers and the key, and why no second hand is anywhere in the frame. Gold added in the container, 0.83 percent, the pencil shading kept underneath.",
       "note": "Superseded by v3. The key came back in pencil.",
-      "flow_pos": 17
+      "flow_pos": 17,
+      "dna": {
+        "phase": "Phase 14 of 15, HE CATCHES IT.",
+        "journey": "RESURRECTION. His hand closes on a real object and the change is proved.",
+        "element": "THE HAND, closing. The most complete sentence a film can make without words."
+      }
     },
     {
       "kind": "keyframe",
@@ -1853,7 +2314,12 @@
       "slug": "INT. — THE HAND TURNS OVER",
       "what": "Coach Brain's hand tilting, the ribbed tracksuit cuff at the wrist, the painted gold key sliding head down across the opening fingers.",
       "why": "SECOND OF THREE: OFFERING, TURNING, LETTING GO. THE GOLD LANDED HERE AND THE METHOD IS RECORDED. Two earlier attempts came back in pencil because every sentence described a pencil drawing and one sentence asked for colour, so the drawing won. The prompt that worked names the two materials as separate things, calls the key PAINTED rather than coloured, gives three tones instead of one, states the contrast as the point of the picture, and puts all of it first rather than last. See modules/imgtoimg.md.",
-      "flow_pos": 17
+      "flow_pos": 17,
+      "dna": {
+        "phase": "Phase 14 of 15, HE CATCHES IT.",
+        "journey": "RESURRECTION. His hand closes on a real object and the change is proved.",
+        "element": "THE HAND, closing. The most complete sentence a film can make without words."
+      }
     },
     {
       "kind": "keyframe",
@@ -1864,7 +2330,12 @@
       "slug": "INT. — HE LETS IT GO",
       "what": "The hand open and relaxed, palm turned down, the ribbed tracksuit cuff at the wrist, and the painted gold key falling clear of the fingers into empty paper.",
       "why": "THIRD OF THREE: OFFERING, TURNING, LETTING GO, AND THIS IS THE RELEASE. The hand has let go rather than offered: fingers spread and relaxed, nothing held out. HE DOES NOT KNOW WHO CATCHES IT, which is why there is clear paper between the fingers and the key and no second hand anywhere. The gold is painted, not tinted.",
-      "flow_pos": 17
+      "flow_pos": 17,
+      "dna": {
+        "phase": "Phase 14 of 15, HE CATCHES IT.",
+        "journey": "RESURRECTION. His hand closes on a real object and the change is proved.",
+        "element": "THE HAND, closing. The most complete sentence a film can make without words."
+      }
     },
     {
       "kind": "keyframe",
@@ -1875,7 +2346,12 @@
       "slug": "INT. — AT THE BLACKBOARD, MOCKUP",
       "what": "A real boy standing at the left of the blackboard with chalk in his hand, back to us, clear of the writing.",
       "why": "A MOCKUP FOR COMPOSITING, NOT A FRAME OF THE FILM. The boy is generated and is not Manan: he is here so the standing position, the scale against the board and the eyeline can be seen. In the film Manan is a photograph keyed onto the drawn board. IT CAME BACK WITH TWO HANDS AND BABA KEPT THEM. The boy at the left with his back to us, and a second hand entering at the right holding chalk. That is two ways to cut the scene: the whole figure when we need to see who is arguing, and the hand alone when the board is the subject and a body would only take up room. Both are usable and both are wanted. One thing is wrong and is left wrong: the board has gone photographic where it should stay a drawing with only the boy real. Use the positions, not the rendering.",
-      "flow_pos": 13
+      "flow_pos": 13,
+      "dna": {
+        "phase": "Phase 11 of 15, THE TWO THEORIES, ON THE BOARD.",
+        "journey": "THE ORDEAL, which in this film is comprehension. Nothing is fought.",
+        "element": "LIGHT, which is what lets you see, as against GLOW, which burns and does not last."
+      }
     },
     {
       "kind": "keyframe",
@@ -1886,7 +2362,12 @@
       "slug": "INT. CONTROL ROOM — ON MANAN, MOCKUP",
       "what": "A real boy standing on the stone floor in the middle of the reverse plate, photographic against the drawn room, with the desk end at the left and the arched door at the right.",
       "why": "A MOCKUP FOR COMPOSITING, NOT A FRAME OF THE FILM. The boy is generated and is not Manan. The position, the scale and the way he stands on the floor are all correct and are what to take from it. The visible cut out edge around him is useful rather than a fault: it reads unmistakably as a photograph laid onto a drawing, which is exactly what the composite is. THE EYELINE IS WRONG AND IS LEFT WRONG. He looks toward the right of frame. The desk is at frame left, so Coach Brain is off frame LEFT and Manan must look LEFT. This is the third mockup to get the eyeline backwards. The direction was fixed by the wide 19-2-A-v1: COACH BRAIN ON THE LEFT LOOKING RIGHT, MANAN ON THE RIGHT LOOKING LEFT. Use the position, not the eyeline.",
-      "flow_pos": 12
+      "flow_pos": 12,
+      "dna": {
+        "phase": "Phase 10 of 15, THEY INTRODUCE EACH OTHER.",
+        "journey": "MEETING THE MENTOR, late and inside the cave. The obstacle and the guide are one figure.",
+        "element": "THE HAND, and SACRED SPACE. A room treated as different becomes different."
+      }
     },
     {
       "kind": "keyframe",
@@ -1898,7 +2379,12 @@
       "what": "The same banner drawing seen much closer: a few pencil letters filling the frame, cut off by its edges, the sketched weave between them, flat even paper.",
       "why": "THE FLY THROUGH IS A SCALE MOVE ON ONE DRAWING AND NOTHING ELSE. Close up and wide are the same banner: no relighting, no cast shadow, no depth of field, no photographic fabric. As though somebody held a magnifying glass over one part of the same sheet. THE CLOTH NEVER TEARS. We pass through by cutting to white, as at every other crossing in the film. Two earlier attempts are kept: one split the cloth open, the other rendered it as a photograph.",
       "flow_pos": 15,
-      "note": "CUT 2.9.2026. The banner fly through is out. The conclusion is reached in conversation between Manan and Coach Brain, not delivered on a banner the camera flies through."
+      "note": "CUT 2.9.2026. The banner fly through is out. The conclusion is reached in conversation between Manan and Coach Brain, not delivered on a banner the camera flies through.",
+      "dna": {
+        "phase": "Phase 12 of 15, THE CONCLUSION, AND GOODBYE.",
+        "journey": "THE REWARD. Given rather than seized, which is why the goodbye matters.",
+        "element": "THE HAND, open. Giving and surrendering at once."
+      }
     },
     {
       "kind": "keyframe",
@@ -1910,7 +2396,11 @@
       "slug": "EXT. ROAD — HE TRIES IT HIMSELF",
       "what": "A boy riding a bicycle on an empty tree lined road in low warm late afternoon light, long shadows across the tarmac, riding steadily rather than straining.",
       "why": "A HERO FRAME STANDING IN FOR FOOTAGE. Phase 2 was shot and this holds the phase until the real material is exported. Generated, photographic, and not Manan. IT IS THE TONE TO SHOOT AND GRADE TOWARD: quiet desaturated colour, low sun from behind, the road empty, the boy small against it. He is curious, not committed, which is the whole beat: he has read something and is trying it out. The avenue of trees rhymes with the film's opening shot, which was not asked for and is worth keeping.",
-      "flow_pos": 2
+      "flow_pos": 2,
+      "dna": {
+        "phase": "Phase 3 of 15, THE BICYCLE.",
+        "journey": "REFUSAL, of a kind. He does not turn back, he argues. He tests the limit rather than obeying it."
+      }
     },
     {
       "kind": "keyframe",
@@ -1922,7 +2412,11 @@
       "slug": "INT. ROOM — HE IS DONE",
       "what": "Slumped forward over the handlebars of the exercise bike, head down on his forearm, not pedalling. Damp hair, sweat on the neck, the whole body gone heavy.",
       "why": "A HERO FRAME STANDING IN FOR FOOTAGE, generated and not Manan. THIS IS THE WATER BEAT, where the audience feels it in their own legs before anything has been explained. So it has to be exhaustion you recognise rather than exhaustion performed: no grimace, no clenching, just a body that has stopped. The tone to shoot toward: low warm window light from behind, the far side of the room in soft shadow, quiet desaturated colour, an ordinary lived in room rather than a styled one.",
-      "flow_pos": 4
+      "flow_pos": 4,
+      "dna": {
+        "phase": "Phase 5 of 15, TIRED, AND THE WALL.",
+        "journey": "THE CALL becoming undeniable. The wall is the thing he will later find was never a wall."
+      }
     },
     {
       "kind": "keyframe",
@@ -1934,7 +2428,11 @@
       "slug": "INT. ROOM — HE CLOSES HIS EYES",
       "what": "Sat up on the bike, hands loose on his thighs, shoulders dropped, eyes closed, the face completely still. Still wet from the effort.",
       "why": "A HERO FRAME STANDING IN FOR FOOTAGE, generated and not Manan. THIS IS THE HINGE OF THE FILM. Everything before it is the world coming at him and everything after is him moving through it, and the turn happens here. The difference from the phase before is the whole point: that is a body that failed, this is a body that stopped fighting. He is still visibly wet from the effort, so the stillness reads as something that arrived after exhaustion rather than instead of it. No strain in the face, nothing held. From here he goes into the light.",
-      "flow_pos": 5
+      "flow_pos": 5,
+      "dna": {
+        "phase": "Phase 6 of 15, HE CLOSES HIS EYES.",
+        "journey": "APPROACH TO THE THRESHOLD. The last frame of the ordinary world."
+      }
     },
     {
       "file": "BB_C_8/8-0-A-v5.png",
@@ -1945,7 +2443,12 @@
       "status": "proposal",
       "date": "2026-09-02",
       "note": "The written plaques are gone. Each door swells outward into the shape of what is behind it, moulded in the same white clay as the door. A word excludes anybody who does not read English and does not survive translation; a raised shape is read by the body. This is the frame that teaches the audience to read the doors, so everything after it depends on it. Supersedes v4.",
-      "flow_pos": 10
+      "flow_pos": 10,
+      "dna": {
+        "phase": "Phase 8 of 15, THE HOUSE OF THE BODY.",
+        "journey": "THE ROAD OF TESTS. Three wrong rooms, each saying no, none of them the thing that stopped him.",
+        "element": "EARTH and the body. Walls you could put a hand on."
+      }
     },
     {
       "file": "BB_C_8/8-3-MUSCLE-v1.png",
@@ -1956,7 +2459,12 @@
       "status": "proposal",
       "date": "2026-09-02",
       "note": "A bundle of fibres raised in the clay, and the door standing a hand’s width open because he has already tried it. Beyond the gap, soft darkness with nothing legible in it.",
-      "flow_pos": 10
+      "flow_pos": 10,
+      "dna": {
+        "phase": "Phase 8 of 15, THE HOUSE OF THE BODY.",
+        "journey": "THE ROAD OF TESTS. Three wrong rooms, each saying no, none of them the thing that stopped him.",
+        "element": "EARTH and the body. Walls you could put a hand on."
+      }
     },
     {
       "file": "BB_C_8/8-4-MUSCLE-v1.png",
@@ -1967,7 +2475,12 @@
       "status": "proposal",
       "date": "2026-09-02",
       "note": "Tendon and cord running the length of the room, calm and slack rather than straining. This is the part of him that had been shouting all afternoon and it has nothing to say. The next door is visible at the far end of the same frame, because there is no cut anywhere after phase 5 and every transition is a passage through a surface.",
-      "flow_pos": 10
+      "flow_pos": 10,
+      "dna": {
+        "phase": "Phase 8 of 15, THE HOUSE OF THE BODY.",
+        "journey": "THE ROAD OF TESTS. Three wrong rooms, each saying no, none of them the thing that stopped him.",
+        "element": "EARTH and the body. Walls you could put a hand on."
+      }
     },
     {
       "file": "BB_C_8/8-1-A-v3.png",
@@ -1978,7 +2491,12 @@
       "status": "proposal",
       "date": "2026-09-02",
       "note": "The hall as it was, with the heart door added at the vanishing point. Supersedes v2.",
-      "flow_pos": 10
+      "flow_pos": 10,
+      "dna": {
+        "phase": "Phase 8 of 15, THE HOUSE OF THE BODY.",
+        "journey": "THE ROAD OF TESTS. Three wrong rooms, each saying no, none of them the thing that stopped him.",
+        "element": "EARTH and the body. Walls you could put a hand on."
+      }
     },
     {
       "file": "BB_C_8/8-6-HEART-v1.png",
@@ -1989,7 +2507,12 @@
       "status": "proposal",
       "date": "2026-09-02",
       "note": "The last of the wrong rooms. Chambered and patient rather than urgent. At the vanishing point, a door carrying a key in clay: the first sight of the answer, at the smallest scale it will ever have.",
-      "flow_pos": 10
+      "flow_pos": 10,
+      "dna": {
+        "phase": "Phase 8 of 15, THE HOUSE OF THE BODY.",
+        "journey": "THE ROAD OF TESTS. Three wrong rooms, each saying no, none of them the thing that stopped him.",
+        "element": "EARTH and the body. Walls you could put a hand on."
+      }
     },
     {
       "file": "BB_C_18/18-0-A-v6.png",
@@ -2000,7 +2523,12 @@
       "status": "proposal",
       "date": "2026-09-02",
       "note": "COACH BRAIN is gone. A key raised in the clay running the whole height of the door, white on white, part of the door rather than attached to it. By now the audience has learnt to read the bumps, so nobody has to be told. Supersedes v5.",
-      "flow_pos": 11
+      "flow_pos": 11,
+      "dna": {
+        "phase": "Phase 9 of 15, HE SEES THE KEY, AND GOES IN.",
+        "journey": "APPROACH TO THE INMOST CAVE. He can read the door, and he knows.",
+        "element": "THRESHOLD, the one the book says films waste."
+      }
     },
     {
       "file": "BB_C_19/19-0-A-v2.png",
@@ -2011,7 +2539,12 @@
       "status": "proposal",
       "date": "2026-09-02",
       "note": "He turns to look at us, and on a cord at his neck hangs the key. THE FIRST GOLD IN THE FILM. Gouache over pencil, the only painted thing on the sheet. It hangs small, worn rather than displayed. Supersedes v1.",
-      "flow_pos": 12
+      "flow_pos": 12,
+      "dna": {
+        "phase": "Phase 10 of 15, THEY INTRODUCE EACH OTHER.",
+        "journey": "MEETING THE MENTOR, late and inside the cave. The obstacle and the guide are one figure.",
+        "element": "THE HAND, and SACRED SPACE. A room treated as different becomes different."
+      }
     },
     {
       "file": "BB_C_14/14-8-DEDICATION-v2.png",
@@ -2022,7 +2555,12 @@
       "status": "proposal",
       "date": "2026-09-02",
       "note": "The last card of the film. The film is an offering, made and then given away, the way food is offered before it is eaten. Nothing before this hints at it, which is the difference between a theme and a gift. The lettering is drawn by the same hand that drew the figure: v1 came back as a typeface because the reference order put a frame with no lettering in it first.",
-      "flow_pos": 18
+      "flow_pos": 18,
+      "dna": {
+        "phase": "Phase 15 of 15, CREDITS, AND THE DEDICATION.",
+        "journey": "RETURN WITH THE ELIXIR. What he brings back works for the audience too.",
+        "element": "ASH. What is left, carrying the whole history of the fire."
+      }
     },
     {
       "file": "BB_C_9/9-1-VORTEX-v2.png",
@@ -2033,7 +2571,12 @@
       "status": "superseded",
       "date": "2026-09-02",
       "note": "The vortex drawn as water, long soft strokes sweeping around and inward to an off centre throat, with the keys tiny and scattered and CARRIED by the current rather than building it. He is surrounded by thousands of the thing he is looking for and cannot see it, because he does not yet know he needs it. Replaces the Ganesha passage. Two earlier attempts built a wall out of keys and got a rosette. SUPERSEDED 2.9.2026, MEMORY 28f. The vortex carries NO KEYS. Not a wall, not chains, not a scattering. Keys in the passage discover too much: they tell the audience what he is looking for before he knows it himself, and the film has then said the word before he reaches the key door. It is a soft, gentle vortex of CLOUD, nothing sharp and nothing to read. Regenerating.",
-      "flow_pos": 7
+      "flow_pos": 7,
+      "dna": {
+        "phase": "Phase 7 of 15, THE VORTEX, UP.",
+        "journey": "CROSSING THE THRESHOLD. Not the door, the line under it. Point of no return.",
+        "element": "WATER as cloud, and THRESHOLD."
+      }
     },
     {
       "file": "BB_C_9/9-2-MANAN-1-v2.png",
@@ -2044,7 +2587,12 @@
       "status": "superseded",
       "date": "2026-09-02",
       "note": "He is drawn upward, feet leaving whatever he was standing on. PHOTOGRAPHIC and monochrome inside a drawn world: he is real and the inside of the body is a drawing. His clothes and hair pull DOWNWARD because he is going up, which is the only thing that separates rising from falling. SUPERSEDED 2.9.2026, MEMORY 28f. The vortex carries NO KEYS. Not a wall, not chains, not a scattering. Keys in the passage discover too much: they tell the audience what he is looking for before he knows it himself, and the film has then said the word before he reaches the key door. It is a soft, gentle vortex of CLOUD, nothing sharp and nothing to read. Regenerating.",
-      "flow_pos": 7
+      "flow_pos": 7,
+      "dna": {
+        "phase": "Phase 7 of 15, THE VORTEX, UP.",
+        "journey": "CROSSING THE THRESHOLD. Not the door, the line under it. Point of no return.",
+        "element": "WATER as cloud, and THRESHOLD."
+      }
     },
     {
       "file": "BB_C_9/9-2-MANAN-2-v2.png",
@@ -2055,7 +2603,12 @@
       "status": "superseded",
       "date": "2026-09-02",
       "note": "The current rolls him onto his side as it lifts him and he looks back down the way he came. Calm rather than frightened. The strands of keys are the water itself, sparse and dotted, and he is passing through thousands of the thing he is looking for without seeing one of them. SUPERSEDED 2.9.2026, MEMORY 28f. The vortex carries NO KEYS. Not a wall, not chains, not a scattering. Keys in the passage discover too much: they tell the audience what he is looking for before he knows it himself, and the film has then said the word before he reaches the key door. It is a soft, gentle vortex of CLOUD, nothing sharp and nothing to read. Regenerating.",
-      "flow_pos": 7
+      "flow_pos": 7,
+      "dna": {
+        "phase": "Phase 7 of 15, THE VORTEX, UP.",
+        "journey": "CROSSING THE THRESHOLD. Not the door, the line under it. Point of no return.",
+        "element": "WATER as cloud, and THRESHOLD."
+      }
     },
     {
       "file": "BB_C_9/9-2-MANAN-3-v1.png",
@@ -2066,7 +2619,12 @@
       "status": "superseded",
       "date": "2026-09-02",
       "note": "Close to the throat, face open, astonishment with no fear in it. The last frame before he arrives standing in the house, so it is the one clear look the audience gets at him inside the drawn world. SUPERSEDED 2.9.2026, MEMORY 28f. The vortex carries NO KEYS. Not a wall, not chains, not a scattering. Keys in the passage discover too much: they tell the audience what he is looking for before he knows it himself, and the film has then said the word before he reaches the key door. It is a soft, gentle vortex of CLOUD, nothing sharp and nothing to read. Regenerating.",
-      "flow_pos": 7
+      "flow_pos": 7,
+      "dna": {
+        "phase": "Phase 7 of 15, THE VORTEX, UP.",
+        "journey": "CROSSING THE THRESHOLD. Not the door, the line under it. Point of no return.",
+        "element": "WATER as cloud, and THRESHOLD."
+      }
     },
     {
       "file": "BB_C_9R/9R-1-VORTEX-DOWN-PLACEHOLDER.png",
@@ -2074,10 +2632,15 @@
       "scene": "9R",
       "shot": "9R.1",
       "title": "The vortex, down",
-      "status": "placeholder",
+      "status": "superseded",
       "date": "2026-09-02",
       "note": "NOT DRAWN YET. THE SECOND VORTEX, AND THIS ONE GOES DOWN. He arrived by rising; he leaves by falling, after Coach Brain has explained the theory and let the key go. Same throat, same strands of keys, same water, and the direction of travel reversed: his clothes and hair now pull UPWARD because he is going down, which is the only thing that tells the audience which way he is moving. Up on the way in, down on the way back, and that symmetry is the shape of the whole second half.",
-      "flow_pos": 16
+      "flow_pos": 16,
+      "dna": {
+        "phase": "Phase 13 of 15, THE VORTEX DOWN, AND THE KEY FALLS WITH HIM.",
+        "journey": "THE ROAD BACK. He leaves with something, and leaving is its own difficulty.",
+        "element": "WATER as cloud, and THRESHOLD, crossed the other way."
+      }
     },
     {
       "file": "BB_C_6/6-0-PLACEHOLDER.png",
@@ -2119,7 +2682,12 @@
       "title": "The conclusion, and goodbye",
       "status": "placeholder",
       "date": "2026-09-02",
-      "note": "NOT DRAWN YET. They weigh both theories together and agree what the limit really is. Then Manan says goodbye. Conversation, not a banner."
+      "note": "NOT DRAWN YET. They weigh both theories together and agree what the limit really is. Then Manan says goodbye. Conversation, not a banner.",
+      "dna": {
+        "phase": "Phase 12 of 15, THE CONCLUSION, AND GOODBYE.",
+        "journey": "THE REWARD. Given rather than seized, which is why the goodbye matters.",
+        "element": "THE HAND, open. Giving and surrendering at once."
+      }
     },
     {
       "file": "BB_C_9R/9R-2-KEY-FALLS-PLACEHOLDER.png",
@@ -2129,7 +2697,12 @@
       "title": "The key falls with him",
       "status": "placeholder",
       "date": "2026-09-02",
-      "note": "NOT DRAWN YET. As the vortex takes him down, Coach Brain lets the key go and it falls with him. One beat, not two: the giving and the descent are the same moment."
+      "note": "NOT DRAWN YET. As the vortex takes him down, Coach Brain lets the key go and it falls with him. One beat, not two: the giving and the descent are the same moment.",
+      "dna": {
+        "phase": "Phase 13 of 15, THE VORTEX DOWN, AND THE KEY FALLS WITH HIM.",
+        "journey": "THE ROAD BACK. He leaves with something, and leaving is its own difficulty.",
+        "element": "WATER as cloud, and THRESHOLD, crossed the other way."
+      }
     },
     {
       "file": "BB_C_9/9-1-VORTEX-UP-v1.png",
@@ -2158,10 +2731,38 @@
         "shot": "the same drone, and above it ONE bansuri flute alone. solo, breathy, unaccompanied, long phrases with audible breath between them, rising and circling rather than going anywhere. no other instrument enters. no percussion at all. the flute is the only thing moving.",
         "why": "Air, because this is cloud, and the breath instruments are what air sounds like. The bansuri plays alone because he is alone in it and because a solo has no ground under it, which is the feeling of the floor going out. The drone continues from the scene bed so the music does not restart when the picture changes; only the instrumentation does. Percussion stays out until he arrives in the house, so that the first heartbeat in the film is the heart hall."
       }
+    },
+    {
+      "file": "BB_C_9R/9R-1-VORTEX-DOWN-v1.png",
+      "kind": "keyframe",
+      "scene": "9R",
+      "shot": "9R.1",
+      "title": "The vortex, down",
+      "status": "proposal",
+      "date": "2026-09-02",
+      "note": "THE UP VORTEX TURNED 180 DEGREES. A stand in, not a drawing. It is here so the shape of the film can be seen end to end while the real descent is made. Rotating a spiral does reverse the sense of the turn, which is why it holds at all, but the cloud still thins toward what is now the bottom and it will read as upside down once anybody looks twice.",
+      "refs": [
+        "https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIGINALS/main/BB_C_9/9-1-VORTEX-UP-v1.png"
+      ],
+      "prompt": "No prompt. This image was not generated. It is 9-1-VORTEX-UP-v1 rotated 180 degrees in the container, as a placeholder with the right shape.",
+      "dna": {
+        "phase": "Phase 12 of 15, THE VORTEX DOWN. After Coach Brain has explained it and let the key go, and before Manan catches it.",
+        "journey": "THE ROAD BACK. He leaves with something, and leaving is its own difficulty. The film rhymes here on purpose: he rose into the vortex and he falls out of it, and that symmetry is the shape of the whole second half.",
+        "element": "WATER as cloud, and THRESHOLD again, crossed the other way.",
+        "symbol": "The same turn, reversed. Nothing new is introduced on the way home.",
+        "composition": "The spiral again, inverted. This is the ONE place the film is allowed to repeat a composition, because the repetition is the meaning.",
+        "balance": "Off centre, mirrored from the ascent."
+      },
+      "suno": {
+        "scene": "instrumental, no vocals. the same slow drone as the ascent, tanpura and low cello, one unhurried key. 60 bpm.",
+        "shot": "the same drone, and the bansuri returns, but not alone this time: a single low frame drum enters underneath it, slow and steady. still no other instrument.",
+        "why": "He rose to a solo and returns with a pulse under him. The heart he found in the house comes home with him, which is the whole point of a road back."
+      },
+      "meaning": "THE WAY HOME. He has what he came for and the film has to get him back without inventing a new idea, so it uses the shape it already built. Rising was the loss of ground; falling is the return of it. The key falls beside him rather than in his hand, because the catch has to be his own action and not a delivery."
     }
   ],
   "event": "Breakthrough Junior Challenge 2026",
-  "site_version": 165,
+  "site_version": 166,
   "footage": [
     {
       "name": "Key catch",
