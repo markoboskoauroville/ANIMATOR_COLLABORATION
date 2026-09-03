@@ -298,7 +298,7 @@
     },
     {
       "kind": "keyframe",
-      "shot": "1.17",
+      "shot": "1.18",
       "file": "BB_C_1/1-2c-1-v1.png",
       "representative": true,
       "status": "accepted",
@@ -315,7 +315,7 @@
     },
     {
       "kind": "keyframe",
-      "shot": "1.18",
+      "shot": "1.19",
       "file": "BB_C_1/1-2c-2-v1.png",
       "status": "accepted",
       "date": "2026-08-28",
@@ -331,7 +331,7 @@
     },
     {
       "kind": "keyframe",
-      "shot": "1.19",
+      "shot": "1.20",
       "file": "BB_C_1/1-2c-3-v1.png",
       "status": "proposal",
       "date": "2026-08-28",
@@ -347,7 +347,7 @@
     },
     {
       "kind": "keyframe",
-      "shot": "1.20",
+      "shot": "1.21",
       "file": "BB_C_1/1-2c-4-v1.png",
       "status": "accepted",
       "date": "2026-08-28",
@@ -2996,7 +2996,7 @@
       "file": "BB_C_1/1-7-RECOVERY-GLASS-v8.png",
       "kind": "keyframe",
       "scene": "1",
-      "shot": "1.15",
+      "shot": "1.16",
       "title": "The calf, through the glass",
       "status": "accepted",
       "date": "2026-09-03",
@@ -3006,7 +3006,7 @@
       "file": "BB_C_1/1-8-IGNITION-v2.png",
       "kind": "keyframe",
       "scene": "1",
-      "shot": "1.16",
+      "shot": "1.17",
       "title": "Ignition",
       "status": "accepted",
       "date": "2026-09-03",
@@ -3016,21 +3016,21 @@
       "file": "BB_C_1/1-7-RECOVERY-OPEN-v2.png",
       "kind": "keyframe",
       "scene": "1",
-      "shot": "1.14",
+      "shot": "1.99n",
       "title": "The leg opens, and the light starts",
-      "status": "accepted",
+      "status": "superseded",
       "date": "2026-09-03",
-      "note": "The recovery pose with his near leg drawn open: the skin transparent as tracing paper, the muscular structure showing through, and a small fierce point of white light in the belly of the calf travelling along the fibres. THE LIGHT STAYS INSIDE THE OUTLINE OF THE LEG. No rays leave him, nothing spills onto the paper, and that containment is what makes it read as something happening under the skin rather than an effect drawn on top. v1 had it bursting out across the sheet and was wrong. IT IS DRAWN INTO THE FRAME, which matters: per modules/magnifying-glass.md the glass only ever enlarges what is already there, so the light has to exist on the paper before any lens goes near it."
+      "note": "The recovery pose with his near leg drawn open: the skin transparent as tracing paper, the muscular structure showing through, and a small fierce point of white light in the belly of the calf travelling along the fibres. THE LIGHT STAYS INSIDE THE OUTLINE OF THE LEG. No rays leave him, nothing spills onto the paper, and that containment is what makes it read as something happening under the skin rather than an effect drawn on top. v1 had it bursting out across the sheet and was wrong. IT IS DRAWN INTO THE FRAME, which matters: per modules/magnifying-glass.md the glass only ever enlarges what is already there, so the light has to exist on the paper before any lens goes near it. OUT OF THE GRID 3.9.2026, Baba. Went with the dead leg it belonged to."
     },
     {
       "file": "BB_C_1/1-6-COLLAPSE-GLASS-LEG-v2.png",
       "kind": "keyframe",
       "scene": "1",
-      "shot": "1.13",
+      "shot": "1.99m",
       "title": "The dead leg",
-      "status": "accepted",
+      "status": "superseded",
       "date": "2026-09-04",
-      "note": "INSPECTION FOUR. Glass centred on the calf so the leg runs unbroken through the circle. ORDINARY SKIN: no transparency, no anatomy, no light. Just a calf hanging slack, the shape soft and collapsed rather than gripped. That slackness is the entire subject of the frame, and it is the evidence against what happens next. Pair it with 1.72, the same leg opened with the light in it, and the two frames are the argument of the film in two pictures."
+      "note": "INSPECTION FOUR. Glass centred on the calf so the leg runs unbroken through the circle. ORDINARY SKIN: no transparency, no anatomy, no light. Just a calf hanging slack, the shape soft and collapsed rather than gripped. That slackness is the entire subject of the frame, and it is the evidence against what happens next. Pair it with 1.72, the same leg opened with the light in it, and the two frames are the argument of the film in two pictures. OUT OF THE GRID 3.9.2026, Baba. The inspection is three faces now, 1.13 to 1.15, and the dead leg is not part of it."
     },
     {
       "file": "BB_C_1/1-7-RECOVERY-GLASS-FACE-v1.png",
@@ -3068,7 +3068,7 @@
       "file": "BB_C_1/1-2c-5-v2.png",
       "kind": "keyframe",
       "scene": "1",
-      "shot": "1.21",
+      "shot": "1.22",
       "title": "He becomes real",
       "status": "accepted",
       "date": "2026-09-03",
@@ -3078,7 +3078,7 @@
       "file": "BB_C_1/1-2c-6-v1.png",
       "kind": "keyframe",
       "scene": "1",
-      "shot": "1.22",
+      "shot": "1.23",
       "title": "He runs out",
       "status": "accepted",
       "date": "2026-09-03",
@@ -3088,7 +3088,7 @@
       "file": "BB_C_1/1-2c-7-v1.png",
       "kind": "keyframe",
       "scene": "1",
-      "shot": "1.23",
+      "shot": "1.24",
       "title": "Nothing",
       "status": "accepted",
       "date": "2026-09-03",
@@ -3143,10 +3143,40 @@
       "status": "accepted",
       "date": "2026-09-03",
       "note": "THE PAGE, EMPTY, BEFORE THE COLLAPSE COMES BACK ONTO IT. The runner has gone and what is left is bare paper, which is what Manan will walk into two shots later. NOT GENERATED and not a copy: the tone and the grain were measured off a clean corner of 1-2c-4-v1 and built in the container, with its own grain, so it is a distinct file from 1-2c-7-v1 while being the same paper. Cream and not white: the white belongs to the trance and scene one has not left the drawn world yet."
+    },
+    {
+      "file": "BB_C_1/1-1-v11-GLASS-v2.png",
+      "kind": "keyframe",
+      "scene": "1",
+      "shot": "1.13",
+      "title": "The tired face, inspected",
+      "status": "accepted",
+      "date": "2026-09-03",
+      "note": "INSPECTION 1 OF 3. The glass on 1-1-v11, the face he wore before he saw anything: the eye heavy and half shut under a heavy brow, the mouth open, the lines cut deep down the cheek, the neck tendons standing. THE THREE FACES ARE THE WHOLE INSPECTION NOW. They are the same three faces the scene already showed at 1.03, 1.04 and 1.05, come back to be looked at, which is the why law: plant it before it is needed, then examine it. BUILT, NOT DESCRIBED. The brass rim and handle were cut out of 1-6-COLLAPSE-GLASS-v1 as a transparent sprite, so the glass in all three inspection frames is the approved object rather than a described one. The drawing was placed on the page small and the SAME drawing magnified inside the circle, then the lens laid over it, and that composite was the single reference for the 2K render. The lens enlarges what is already there and nothing was handed to it separately."
+    },
+    {
+      "file": "BB_C_1/1-1-v15-GLASS-v4.png",
+      "kind": "keyframe",
+      "scene": "1",
+      "shot": "1.14",
+      "title": "The face that sees",
+      "status": "accepted",
+      "date": "2026-09-03",
+      "note": "INSPECTION 2 OF 3. The glass on 1-1-v15, the moment it changes: the head up, the eye wide and fixed on something ahead, the brow drawn together, the mouth open. THIS ONE TOOK FOUR RUNS and the version number says so. The failures were the ones magnifying-glass.md already names: the head turned out of profile, a second man on the paper outside the rim, the glass vanishing from the frame completely, and two men side by side inside the lens. See nanobanana.md, 3.9.2026. BUILT, NOT DESCRIBED. The brass rim and handle were cut out of 1-6-COLLAPSE-GLASS-v1 as a transparent sprite, so the glass in all three inspection frames is the approved object rather than a described one. The drawing was placed on the page small and the SAME drawing magnified inside the circle, then the lens laid over it, and that composite was the single reference for the 2K render. The lens enlarges what is already there and nothing was handed to it separately."
+    },
+    {
+      "file": "BB_C_1/1-1-v18-GLASS-v2.png",
+      "kind": "keyframe",
+      "scene": "1",
+      "shot": "1.15",
+      "title": "The face changed",
+      "status": "accepted",
+      "date": "2026-09-03",
+      "note": "INSPECTION 3 OF 3. The glass on 1-1-v18: the eye clear and easy, a faint smile at the corner of the mouth, the deep lines of the first face softened out, the jaw loose. The end of the face sequence, and the calf and the ignition follow it. BUILT, NOT DESCRIBED. The brass rim and handle were cut out of 1-6-COLLAPSE-GLASS-v1 as a transparent sprite, so the glass in all three inspection frames is the approved object rather than a described one. The drawing was placed on the page small and the SAME drawing magnified inside the circle, then the lens laid over it, and that composite was the single reference for the 2K render. The lens enlarges what is already there and nothing was handed to it separately."
     }
   ],
   "event": "Breakthrough Junior Challenge 2026",
-  "site_version": 205,
+  "site_version": 206,
   "footage": [
     {
       "name": "Key catch",
