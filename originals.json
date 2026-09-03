@@ -1084,5 +1084,17 @@
     "sha256": "68ab2eb6a4809d1c73b35733b6f72e3d342086ad2eda16c98988b9b9251e7875",
     "path": "BB_C_1/1-4-E-GLASS-v1.png",
     "url": "https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIGINALS/main/BB_C_1/1-4-E-GLASS-v1.png"
+  },
+  "1-5-FINISH-v1.png": {
+    "bytes": 6371195,
+    "sha256": "2a8dcdc8d30f4756932a4a10cb61a8c7e46d266ba5f99880bc35525d509e0845",
+    "path": "BB_C_1/1-5-FINISH-v1.png",
+    "url": "https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIGINALS/main/BB_C_1/1-5-FINISH-v1.png"
+  },
+  "1-5-FINISH-GLASS-v4.png": {
+    "bytes": 2914357,
+    "sha256": "f1eb87e68059eba76490a7fa08301f631d9b5fcf22d72c14cb306680c1bee146",
+    "path": "BB_C_1/1-5-FINISH-GLASS-v4.png",
+    "url": "https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIGINALS/main/BB_C_1/1-5-FINISH-GLASS-v4.png"
   }
 }

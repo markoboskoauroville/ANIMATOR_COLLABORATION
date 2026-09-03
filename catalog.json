@@ -2915,10 +2915,30 @@
       "status": "accepted",
       "date": "2026-09-03",
       "note": "THE INSPECTION PRINCIPLE, and it applies to every approved frame from here. Take the frame as it already is, change nothing in it, and lay ONE photorealistic magnifying glass over it with the handle running off the bottom edge so it reads as held from outside the shot. Only what sits BEHIND the lens grows: four or five times up, filling the circle with almost no empty glass, every pencil stroke readable. The lens distorts like real glass, the lines bowing toward the rim with a refracted fringe at the edge, and the magnified image does not line up with the drawing outside it because the glass displaces what is behind it. NEVER a second glass, never a small figure beside a big one, and never a redrawn subject. Each inspection frame sits immediately after the frame it inspects. Sits with 1-4-D-v3 on the scene and breakdown pages rather than on the front page storyboard, because it is built from that frame and a pair split across two pages is not a pair."
+    },
+    {
+      "file": "BB_C_1/1-5-FINISH-v1.png",
+      "kind": "keyframe",
+      "scene": "1",
+      "shot": "1.70",
+      "title": "The avenue, and the finish",
+      "status": "accepted",
+      "date": "2026-09-03",
+      "note": "The wide shot. The avenue runs away between the trees and the banner is small and far off at the vanishing point, which is the whole point of it: he sees the finish from a long way out, while there is still nothing left in him."
+    },
+    {
+      "file": "BB_C_1/1-5-FINISH-GLASS-v4.png",
+      "kind": "keyframe",
+      "scene": "1",
+      "shot": "1.71",
+      "title": "The same finish, through the glass",
+      "status": "accepted",
+      "date": "2026-09-03",
+      "note": "THE GLASS IS ON THE CAMERA LENS, NOT ON THE PAPER. That is the rule this frame establishes and every inspection frame follows it: imagine the magnifying glass held immediately in front of the lens that is shooting the shot. So it is large and close, slightly soft at the rim from being that near, it casts NO shadow on the drawing because it is not touching it, and the world is seen through it and around it. Inside, the distant banner arrives almost at the viewer, F I N filling the circle, bowing outward toward the brass with a refracted fringe at the very edge. There is only ever ONE banner: the lens shows what is already there, made larger. Built in stages, which is what finally made it work: crop the real frame, redraw that crop sharp in the same hand, put the glass on it, then compose."
     }
   ],
   "event": "Breakthrough Junior Challenge 2026",
-  "site_version": 194,
+  "site_version": 195,
   "footage": [
     {
       "name": "Key catch",
