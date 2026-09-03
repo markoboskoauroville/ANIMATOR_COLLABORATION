@@ -1978,6 +1978,39 @@ for _i, e in enumerate(_cards):
                   'a composition, and WINNING_FILM says which ones exist. Until this is filled in, '
                   'the animator is working from the picture alone.', dim=True))
 
+    # ------------------------------------------------------------- THE MUSIC
+    # Baba, 2.9.2026. Two prompts, not one. The SCENE BED is the piece the whole
+    # scene is written in, and it does not restart at every cut. The SHOT
+    # ARRANGEMENT is the same piece with the instrumentation changed, so the
+    # music follows the picture without the audience noticing an edit.
+    #
+    # Instruments come from the ELEMENT, which is why the DNA is above this and
+    # not below it. Air is breath instruments, bansuri and low flutes. Water is
+    # anything poured or bowed. The crown, at Coach Brain, is crystal, bells and
+    # chime, because that is what the top of the head sounds like. A frame's
+    # element decides what plays; a frame's stage in the journey decides how much
+    # of it plays.
+    _su = e.get('suno') or {}
+    if _su:
+        _m = []
+        if _su.get('scene'):
+            _m.append('<p><b style="color:var(--gold)">The scene bed.</b> One piece under the whole '
+                      'scene. It does not restart at a cut.</p><pre>%s</pre>'
+                      % html.escape(_su['scene'].strip()))
+        if _su.get('shot'):
+            _m.append('<p style="margin-top:15px"><b style="color:var(--gold)">This shot.</b> The '
+                      'same piece, re-arranged. Change the instruments, never the key or the '
+                      'tempo.</p><pre>%s</pre>' % html.escape(_su['shot'].strip()))
+        if _su.get('why'):
+            _m.append('<p style="margin-top:13px;color:var(--dim)">%s</p>'
+                      % html.escape(_su['why'].strip()))
+        cd.append(idcard_block('The music, for Suno', ''.join(_m)))
+    else:
+        cd.append(idcard_block('The music, for Suno',
+                  'Not written yet. Every shot needs two: the scene bed it sits in, and this shot\u2019s '
+                  'own arrangement of it. The instruments come from the element in the DNA above.',
+                  dim=True))
+
     _mn = (e.get('meaning') or '').strip()
     cd.append(idcard_block('What it means, and what it does',
               html.escape(_mn).replace('\n\n', '</p><p>').join(['<p>', '</p>']) if _mn else
