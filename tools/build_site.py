@@ -1960,7 +1960,12 @@ for _i, e in enumerate(_cards):
     _dna = e.get('dna') or {}
     if _dna:
         _rows = []
-        for _k, _lab in (('element', 'Element'), ('symbol', 'Symbol'),
+        # WHERE IN THE FILM and WHERE IN THE JOURNEY come first, because they
+        # are the two things that decide how long a frame holds, and an animator
+        # who knows a frame is the crossing rather than a test will hold it
+        # longer without being asked. See MANTRA_MANIFEST/modules/hero-journey.md.
+        for _k, _lab in (('phase', 'Phase'), ('journey', 'Hero\u2019s journey'),
+                         ('element', 'Element'), ('symbol', 'Symbol'),
                          ('composition', 'Composition'), ('balance', 'Balance')):
             _v = (_dna.get(_k) or '').strip()
             if _v:
