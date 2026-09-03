@@ -796,6 +796,7 @@ def dialogue_for(shot_id, depth=0):
 
 DRAMA = CAT.get('radio_drama', [])
 DRAMA_HR = CAT.get('radio_drama_hr', [])
+DRAMA_V3 = CAT.get('radio_drama_v3', [])
 TAKES = CAT.get('manan_takes', {})
 COACH = CAT.get('coach_takes', {})
 
@@ -997,6 +998,34 @@ def drama_hr_block(depth=0):
                       '%d dijelova, tri glasa, oko \u010detiri minute. S teorijama i posvetom.'
                       % len(DRAMA_HR),
                       rows, 'downloads/BRAIN_BRAKE_radio_drama_HR_v2.zip', depth)
+
+
+
+def drama_v3_block(depth=0):
+    """V3. Croatian, on real Croatian voices, with two corrections from Baba.
+
+    A MARATHON RUNNER runs at the start, not the boy. That was wrong in V1 and
+    V2 and it matters: the film opens on somebody who has done this all his life,
+    which is what makes the limit worth asking about.
+
+    AND THE TWO HANDS PASSAGE IS OUT. Why Coach Brain's hand and Manan's never
+    share a frame is a note about how the film is made, not part of the film.
+    Explaining the craft inside the story breaks it.
+
+    Srecko and Gabrijela, from Edge. The Russian voices reading Croatian in V2
+    were a reasonable guess and they were bad; these are the real thing. Manan is
+    Srecko lifted and quickened, because two voices have to carry three parts and
+    the boy must not sound like the man answering him.
+    """
+    if not DRAMA_V3:
+        return ''
+    rows = [('head', 'HRVATSKI V3, SRECKO I GABRIJELA', '', 0)]
+    for x in DRAMA_V3:
+        rows.append(('line', x['speaker'] + '   ' + x['text'][:90], '', 0))
+        rows.append(('take', '%02d %s' % (x['n'], x['speaker']), x['audio'], x['sec']))
+    return deck_block('dramav3', 'THE BRAIN BRAKE, HRVATSKI V3',
+                      '%d dijelova, oko pet minuta. Srecko i Gabrijela.' % len(DRAMA_V3),
+                      rows, 'downloads/BRAIN_BRAKE_radio_drama_HR_v3.zip', depth)
 
 
 def takes_block(depth=0):
@@ -1641,7 +1670,7 @@ _dg = ['<h1>Dialogue and takes</h1>',
        'voice, and Manan\u2019s own recorded takes.</b> The words themselves are on the film page '
        'under each frame, which is where they are needed; this is for listening, choosing a take '
        'and taking the files.</p>',
-       drama_hr_block(), drama_block(), dialogue_block(), takes_block(), DECK_JS]
+       drama_v3_block(), drama_hr_block(), drama_block(), dialogue_block(), takes_block(), DECK_JS]
 open(os.path.join(ROOT, 'dialogue.html'), 'w').write(
     page('Dialogue', ''.join(_dg), here='archive', depth=0))
 
@@ -1813,7 +1842,12 @@ LASTSHOT = [
     ('BB_C_15/15-3-FALL-3-v4.png', 'the boards behind it'),
     ('BB_C_15/15-3-FALL-4-v2.png', 'the room behind it'),
     ('BB_C_15/15-3-FALL-5-v1.png', 'the house behind it'),
-    (('mp4', 'clips/key-catch-loop.mp4'), 'he catches it'),
+    (('mp4', 'clips/key-catch-loop.mp4'), 'he catches it, take one'),
+    # 3.9.2026. Two takes of the catch exist and both belong here, side by
+    # side, so the choice between them is made by looking rather than by
+    # remembering that a second one was shot. The 1.1 GB ProRes master
+    # stays on Drive; this is the whole take at 480 wide.
+    (('mp4', 'clips/key-catch-2-loop.mp4'), 'he catches it, take two'),
 ]
 
 
