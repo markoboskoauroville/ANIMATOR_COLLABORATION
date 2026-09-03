@@ -274,6 +274,19 @@ h2{font-size:19px;margin:38px 0 14px;padding-bottom:7px;border-bottom:1px solid 
  color:var(--dim)}
 .filmfoot span{display:block;font-weight:600;font-size:9px;letter-spacing:.14em;
  padding-top:6px;color:var(--dim);opacity:.75}
+.takes{margin:16px 0 6px;background:var(--panel);border:1px solid var(--rule);
+  border-radius:12px;padding:16px 18px}
+.takeh{display:flex;align-items:center;justify-content:space-between;gap:12px;
+  font:600 10.5px/1 ui-monospace,monospace;letter-spacing:.14em;color:var(--gold);
+  margin-bottom:10px}
+.playall{background:var(--gold);color:#16110D;border:0;border-radius:999px;
+  padding:7px 14px;font:600 10px/1 ui-monospace,monospace;letter-spacing:.1em;cursor:pointer}
+.takel{font-size:16px;color:var(--ink);margin:14px 0 6px;border-left:2px solid var(--gold);
+  padding-left:10px}
+.taker{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin:0 0 5px}
+.taken{font:400 10.5px/1 ui-monospace,monospace;color:var(--dim);min-width:96px}
+.taker audio{height:30px;max-width:230px}
+.takes2{font:400 10.5px/1 ui-monospace,monospace;color:var(--dim)}
 .dlg{margin:14px 0 4px;border-left:2px solid var(--gold);padding-left:14px}
 .dlgr{margin:0 0 14px}
 .dlgw{font:600 10px/1 ui-monospace,monospace;letter-spacing:.16em;color:var(--gold);
@@ -692,6 +705,80 @@ def dialogue_for(shot_id, depth=0):
                      % (r, a, r, a, x.get('sec', '')))
         o.append('</div>')
     o.append('</div>')
+    return ''.join(o)
+
+
+
+TAKES = CAT.get('manan_takes', {})
+
+
+def takes_block(depth=0):
+    """Manan's own recordings, grouped by line, every take kept.
+
+    Baba, 3.9.2026: this is the FINAL PERFORMANCE, not voice material. He is not
+    cloning anything, so these files are the film and the download matters as
+    much as the player.
+
+    Cut from the transcript rather than from silence: he pauses unevenly while
+    reading, so silence detection would split him mid thought. Half a second of
+    true silence on each side and no line allowed to overlap the next.
+
+    THE PLAYERS ARE CHAINED. One press runs the whole line, take after take, and
+    then the next line, to the end. Each take keeps its own player so you can see
+    which one is speaking. Pause anything and the chain stops there and waits;
+    press that one again and it carries on from where it stopped, rather than
+    starting the scene over.
+    """
+    if not TAKES:
+        return ''
+    r = '../' * depth
+    o = ['<div class=takes id=takes>',
+         '<div class=takeh><b>MANAN, THE RECORDED PERFORMANCE</b>'
+         '<button class=playall id=playall>PLAY ALL &#9654;</button></div>']
+    n = 0
+    for key, blk in TAKES.items():
+        if not blk.get('takes'):
+            continue
+        o.append('<div class=takel>%s</div>' % html.escape(blk.get('line', '')))
+        for t in blk['takes']:
+            o.append('<div class=taker>'
+                     '<span class=taken>%s</span>'
+                     '<audio class=tk data-i="%d" controls preload=none src="%s%s"></audio>'
+                     '<a class=dl href="%s%s" download>MP3 &darr;</a>'
+                     '<span class=takes2>%s s</span>'
+                     '</div>' % (html.escape(t['name'].replace('REC0000', 'rec ')),
+                                 n, r, t['file'], r, t['file'], t.get('sec', '')))
+            n += 1
+    o.append('</div>')
+    o.append("""<script>
+(function(){
+  var a = [].slice.call(document.querySelectorAll('#takes audio.tk'));
+  if (!a.length) return;
+  var chain = false;
+  /* Pausing breaks the chain, which is the whole point: Baba stops on the take
+     he wants to listen to again and the rest does not run over him. Pressing
+     play on that same one picks the chain back up from there rather than
+     starting the scene again. */
+  a.forEach(function(el, i){
+    el.addEventListener('play', function(){
+      chain = true;
+      a.forEach(function(o){ if (o !== el) { o.pause(); } });
+    });
+    el.addEventListener('pause', function(){
+      if (!el.ended) chain = false;
+    });
+    el.addEventListener('ended', function(){
+      if (!chain) return;
+      var nx = a[i+1];
+      if (!nx) return;
+      nx.play().catch(function(){});
+      nx.scrollIntoView({block:'center', behavior:'smooth'});
+    });
+  });
+  var b = document.getElementById('playall');
+  if (b) b.onclick = function(){ chain = true; a[0].play().catch(function(){}); };
+})();
+</script>""")
     return ''.join(o)
 
 
@@ -1653,6 +1740,8 @@ for e in _fl:
     # The voice is the Hume actress and it is a STAND IN: Baba clones Manan's
     # own voice from these, so the download matters as much as the player. The
     # file is what gets used; the player only tells you which file you want.
+    if n == '10':
+        rt.append(takes_block())
     if n == '9':
         for _sid in sorted(DIALOGUE):
             rt.append(dialogue_for(_sid))

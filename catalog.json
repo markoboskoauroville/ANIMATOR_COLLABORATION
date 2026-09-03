@@ -2847,7 +2847,7 @@
     }
   ],
   "event": "Breakthrough Junior Challenge 2026",
-  "site_version": 171,
+  "site_version": 172,
   "footage": [
     {
       "name": "Key catch",
@@ -3132,5 +3132,239 @@
         "sec": 2.06
       }
     ]
+  },
+  "manan_takes": {
+    "L1": {
+      "line": "1923, A.V. Hill puts runners on a treadmill and measures everything they do.",
+      "takes": [
+        {
+          "file": "voice/manan/REC00003-take3.mp3",
+          "name": "REC00003-take3",
+          "sec": 15.55,
+          "text": "1923, A.V. Hill puts runners on a treadmill and measures everything they do. His answer is simple: fatigue is in the muscle.",
+          "words": 22
+        },
+        {
+          "file": "voice/manan/REC00004-take2.mp3",
+          "name": "REC00004-take2",
+          "sec": 13.27,
+          "text": "Hill puts runners on a treadmill and measures everything they do. His answer is simple: fatigue is in the muscle.",
+          "words": 20
+        },
+        {
+          "file": "voice/manan/REC00002-take2.mp3",
+          "name": "REC00002-take2",
+          "sec": 12.91,
+          "text": "1923, puts runners on a treadmill and measures everything they do. His answer is simple: fatigue is in the muscle. Fatigue is in the muscle.",
+          "words": 25
+        },
+        {
+          "file": "voice/manan/REC00002-take6.mp3",
+          "name": "REC00002-take6",
+          "sec": 12.29,
+          "text": "923. 1923. Amy puts runners on a treadmill and measures everything they do. His answer is simple: fatigue is in the muscle. 1923.",
+          "words": 23
+        },
+        {
+          "file": "voice/manan/REC00002-take7.mp3",
+          "name": "REC00002-take7",
+          "sec": 11.98,
+          "text": "1923, A.V. Hill puts runners on a treadmill and measures everything they do. His answer is simple: fatigue is in the muscle.",
+          "words": 22
+        },
+        {
+          "file": "voice/manan/REC00002-take9.mp3",
+          "name": "REC00002-take9",
+          "sec": 11.26,
+          "text": "Hill puts runners on a treadmill and measures everything they do. His answer is simple: fatigue is in the muscle.",
+          "words": 20
+        },
+        {
+          "file": "voice/manan/REC00001-take2.mp3",
+          "name": "REC00001-take2",
+          "sec": 4.66,
+          "text": "Hill puts runners on a treadmill and measures everything they do.",
+          "words": 11
+        },
+        {
+          "file": "voice/manan/REC00001-take1.mp3",
+          "name": "REC00001-take1",
+          "sec": 2.33,
+          "text": "923.",
+          "words": 1
+        },
+        {
+          "file": "voice/manan/REC00004-take1.mp3",
+          "name": "REC00004-take1",
+          "sec": 2.16,
+          "text": "1923.",
+          "words": 1
+        },
+        {
+          "file": "voice/manan/REC00002-take8.mp3",
+          "name": "REC00002-take8",
+          "sec": 2.11,
+          "text": "1923.",
+          "words": 1
+        }
+      ]
+    },
+    "L2": {
+      "line": "Fatigue is in the muscle.",
+      "takes": [
+        {
+          "file": "voice/manan/REC00002-take4.mp3",
+          "name": "REC00002-take4",
+          "sec": 6.12,
+          "text": "Fatigue is in the muscle. Fatigue is in the muscle.",
+          "words": 10
+        },
+        {
+          "file": "voice/manan/REC00002-take5.mp3",
+          "name": "REC00002-take5",
+          "sec": 5.88,
+          "text": "Fatigue. Fatigue. Fatigue. Fatigue is in the muscle.",
+          "words": 8
+        },
+        {
+          "file": "voice/manan/REC00002-take1.mp3",
+          "name": "REC00002-take1",
+          "sec": 5.14,
+          "text": "One minute, I'm going to make you read till the fatigue is in the muscle.",
+          "words": 15
+        },
+        {
+          "file": "voice/manan/REC00002-take3.mp3",
+          "name": "REC00002-take3",
+          "sec": 2.98,
+          "text": "Fatigue is in the muscle.",
+          "words": 5
+        },
+        {
+          "file": "voice/manan/REC00003-take1.mp3",
+          "name": "REC00003-take1",
+          "sec": 2.88,
+          "text": "Fatigue is in the muscle.",
+          "words": 5
+        },
+        {
+          "file": "voice/manan/REC00002-take13.mp3",
+          "name": "REC00002-take13",
+          "sec": 2.42,
+          "text": "Fatigue is in the muscle.",
+          "words": 5
+        }
+      ]
+    },
+    "L3": {
+      "line": "You run, the muscle burns through its oxygen.",
+      "takes": [
+        {
+          "file": "voice/manan/REC00002-take10.mp3",
+          "name": "REC00002-take10",
+          "sec": 31.49,
+          "text": "You run, the muscle burns through its oxygen, the fuel runs out, and when Runs out, and when the tank runs out, burns through its oxygen. The run, the muscle is in the muscle. You run, the muscle burns through its oxygen. The fuel runs out, and when the tank reads empty, is in the muscle.",
+          "words": 56
+        },
+        {
+          "file": "voice/manan/REC00002-take15.mp3",
+          "name": "REC00002-take15",
+          "sec": 5.78,
+          "text": "The muscle burns through its oxygen. The fuel runs out.",
+          "words": 10
+        },
+        {
+          "file": "voice/manan/REC00002-take12.mp3",
+          "name": "REC00002-take12",
+          "sec": 5.74,
+          "text": "The muscle burns through its oxygen. The fuel runs out.",
+          "words": 10
+        },
+        {
+          "file": "voice/manan/REC00002-take11.mp3",
+          "name": "REC00002-take11",
+          "sec": 4.75,
+          "text": "The muscle burns through its oxygen. The fuel runs out.",
+          "words": 10
+        },
+        {
+          "file": "voice/manan/REC00002-take14.mp3",
+          "name": "REC00002-take14",
+          "sec": 4.7,
+          "text": "The muscle burns through its oxygen. The fuel runs out.",
+          "words": 10
+        },
+        {
+          "file": "voice/manan/REC00003-take4.mp3",
+          "name": "REC00003-take4",
+          "sec": 4.63,
+          "text": "You run, the muscle burns through its oxygen.",
+          "words": 8
+        },
+        {
+          "file": "voice/manan/REC00004-take3.mp3",
+          "name": "REC00004-take3",
+          "sec": 4.22,
+          "text": "You run The muscle burns through its oxygen.",
+          "words": 8
+        }
+      ]
+    },
+    "L4": {
+      "line": "The fuel runs out.",
+      "takes": [
+        {
+          "file": "voice/manan/REC00003-take2.mp3",
+          "name": "REC00003-take2",
+          "sec": 3.34,
+          "text": "The fuel runs out.",
+          "words": 4
+        }
+      ]
+    },
+    "L5": {
+      "line": "And when the tank reads empty, the body stops.",
+      "takes": [
+        {
+          "file": "voice/manan/REC00004-take4.mp3",
+          "name": "REC00004-take4",
+          "sec": 10.68,
+          "text": "The fuel runs out. And when the tank reads empty, the body stops.",
+          "words": 13
+        },
+        {
+          "file": "voice/manan/REC00002-take18.mp3",
+          "name": "REC00002-take18",
+          "sec": 10.51,
+          "text": "And when the tank reads empty, the body stops. And when the tank reads empty, the body stops.",
+          "words": 18
+        },
+        {
+          "file": "voice/manan/REC00003-take5.mp3",
+          "name": "REC00003-take5",
+          "sec": 10.03,
+          "text": "The fuel runs out, and when the tank reads empty, the body stops.",
+          "words": 13
+        },
+        {
+          "file": "voice/manan/REC00002-take17.mp3",
+          "name": "REC00002-take17",
+          "sec": 4.68,
+          "text": "And when the tank reads empty, the body stops.",
+          "words": 9
+        },
+        {
+          "file": "voice/manan/REC00002-take16.mp3",
+          "name": "REC00002-take16",
+          "sec": 2.71,
+          "text": "The tank reads empty.",
+          "words": 4
+        }
+      ]
+    },
+    "LX": {
+      "line": "Other fragments",
+      "takes": []
+    }
   }
 }
