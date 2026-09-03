@@ -10,7 +10,7 @@ Pages: the landing page, one per scene, one breakdown per frame that has
 layers, and the documentation page. Every page carries the bar and the gate.
 No zips anywhere: Kristijan downloads what he needs, one file at a time.
 """
-import json, os, glob, urllib.parse
+import json, os, re, glob, html, urllib.parse
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 CAT = json.load(open(os.path.join(ROOT, 'catalog.json')))
@@ -276,7 +276,27 @@ h2{font-size:19px;margin:38px 0 14px;padding-bottom:7px;border-bottom:1px solid 
  padding-top:6px;color:var(--dim);opacity:.75}
 .soon{font:600 10px/1 ui-monospace,monospace;letter-spacing:.12em;color:var(--dim);
   border:1px solid var(--rule);border-radius:6px;padding:6px 10px}
-.twoup{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:14px 0 6px}\n@media(max-width:760px){.twoup{grid-template-columns:1fr}}\n.twoup .srcbox{margin:0}\n.srcbox{margin:16px 0 6px;padding:13px 16px;background:var(--box);
+.twoup{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:14px 0 6px}\n@media(max-width:760px){.twoup{grid-template-columns:1fr}}\n.twoup .srcbox{margin:0}\n.idb{margin:22px 0}
+.idh{font:600 10px/1 ui-monospace,monospace;letter-spacing:.16em;color:var(--gold);
+  text-transform:uppercase;margin-bottom:9px}
+.idc{font-size:14.5px;line-height:1.62}
+.idc pre{white-space:pre-wrap;background:var(--box);border:1px solid var(--rule);
+  border-radius:9px;padding:13px 15px;font:400 12.5px/1.55 ui-monospace,monospace;
+  overflow-x:auto;margin:0}
+.idrefs{display:flex;gap:11px;flex-wrap:wrap}
+.idrefs a{display:block;width:150px}
+.idrefs img{width:100%;border-radius:7px;border:1px solid var(--rule);display:block}
+.idrefs span{display:block;font:400 10px/1.4 ui-monospace,monospace;color:var(--dim);
+  margin-top:5px;word-break:break-all}
+.rej{display:flex;gap:13px;flex-wrap:wrap}
+.rej figure{margin:0;width:190px}
+.rej img{width:100%;border-radius:7px;border:1px solid var(--rule);display:block;
+  filter:grayscale(.35) opacity(.82)}
+.rej figcaption{font:400 10.5px/1.45 ui-monospace,monospace;color:var(--dim);margin-top:5px}
+.rejtag{display:inline-block;font:600 9px/1 ui-monospace,monospace;letter-spacing:.12em;
+  color:var(--dim);border:1px solid var(--rule);border-radius:5px;padding:4px 7px;
+  margin-bottom:4px}
+.srcbox{margin:16px 0 6px;padding:13px 16px;background:var(--box);
  border-left:3px solid var(--brass)}
 .srcbox .t{display:flex;justify-content:space-between;align-items:baseline;gap:12px}
 .srcbox .t b{font:700 10.5px ui-monospace,monospace;letter-spacing:.11em;
@@ -732,6 +752,40 @@ if os.path.exists(_ol):
         ORIGINALS = json.load(open(_ol))
     except Exception:
         ORIGINALS = {}
+
+
+
+def rejected_takes(e):
+    """Every other version of THIS frame, newest first.
+
+    Baba, 2.9.2026: a rejected take is not rubbish. The square vortex was
+    rejected for its aspect and was the best drawing of the three. So they are
+    kept, shown, and labelled, and a later session can see what was tried and
+    why the chosen one won.
+
+    Frames are siblings when their name matches up to the version suffix:
+    9-1-VORTEX-UP-v1 and 9-1-VORTEX-UP-v3 are the same frame twice.
+    """
+    b = os.path.basename(e.get('file', ''))
+    stem = re.sub(r'-v\d+(\.\w+)?$', '', os.path.splitext(b)[0])
+    if not stem:
+        return []
+    out = []
+    for o in ENTRIES:
+        if o is e or not o.get('file'):
+            continue
+        ob = os.path.splitext(os.path.basename(o['file']))[0]
+        if re.sub(r'-v\d+$', '', ob) == stem:
+            out.append(o)
+    def vnum(o):
+        m = re.search(r'-v(\d+)$', os.path.splitext(os.path.basename(o['file']))[0])
+        return int(m.group(1)) if m else 0
+    return sorted(out, key=vnum, reverse=True)
+
+
+def idcard_block(title, body, dim=False):
+    return ('<div class=idb><div class=idh>%s</div><div class=idc%s>%s</div></div>'
+            % (title, ' style="color:var(--dim)"' if dim else '', body))
 
 
 def full_link(path, prefix=''):
@@ -1832,6 +1886,61 @@ for _i, e in enumerate(_cards):
         nb = os.path.basename(_order[_i+1]['file']).rsplit('.', 1)[0].replace(' ', '_')
         nav.append('<a href="%s.html">%s &rarr;</a>' % (nb, nb))
     cd.append('<p class=lede style="margin-top:26px">%s</p>' % ' &nbsp;&middot;&nbsp; '.join(nav))
+    # ---------------------------------------------------------- THE ID CARD
+    # Baba, 2.9.2026. A frame's page answers four questions and it answers them
+    # in this order: what it is, how it was made, what was tried and rejected,
+    # and what it MEANS. The last one is the reason the page exists. An animator
+    # who knows why a frame is in the film fixes things nobody specified; one
+    # given only a picture and a filename does not.
+    #
+    # Every section reads from the catalogue, so filling one in is data and not
+    # code, and an empty one SAYS it is empty rather than vanishing. A missing
+    # section that disappears looks finished.
+    _pr = (e.get('prompt') or '').strip()
+    cd.append(idcard_block('The prompt it was made from',
+              '<pre>%s</pre>' % html.escape(_pr) if _pr else
+              'Not recorded. This frame predates prompts being kept in the catalogue, '
+              'or it was made by hand.', dim=not _pr))
+
+    _rf = e.get('refs') or []
+    if _rf:
+        _r = ['<div class=idrefs>']
+        for _u in _rf:
+            _r.append('<a href="%s" target=_blank rel=noopener><img src="%s" alt="" '
+                      'loading=lazy><span>%s</span></a>'
+                      % (_u, _u, html.escape(os.path.basename(_u))))
+        _r.append('</div>')
+        cd.append(idcard_block('The references it came from', ''.join(_r)))
+    else:
+        cd.append(idcard_block('The references it came from',
+                  'Not recorded.', dim=True))
+
+    _rej = rejected_takes(e)
+    if _rej:
+        _r = ['<div class=rej>']
+        for _o in _rej:
+            _ob = os.path.basename(_o['file']).rsplit('.', 1)[0].replace(' ', '_')
+            _why = (_o.get('note') or '').strip()
+            _r.append('<figure><span class=rejtag>REJECTED TAKE</span>'
+                      '<a href="%s" target=_blank rel=noopener><img src="../%s" alt="" '
+                      'loading=lazy></a><figcaption>%s<br>%s</figcaption></figure>'
+                      % (full_link(_o['file'], '../'), small(_o['file']),
+                         html.escape(os.path.basename(_o['file'])),
+                         html.escape(_why[:150] + ('...' if len(_why) > 150 else ''))))
+        _r.append('</div>')
+        cd.append(idcard_block('Rejected takes, kept on purpose',
+                  ''.join(_r) + '<p style="color:var(--dim);margin:11px 0 0">A rejected take is '
+                  'not rubbish. Some were rejected for one thing only, an aspect ratio or a '
+                  'colour, and are the better drawing otherwise. They are here so a later '
+                  'session can see what was tried before trying it again.</p>'))
+
+    _mn = (e.get('meaning') or '').strip()
+    cd.append(idcard_block('What it means, and what it does',
+              html.escape(_mn).replace('\n\n', '</p><p>').join(['<p>', '</p>']) if _mn else
+              'Not written yet. This frame needs its meaning set down: where it sits in the film, '
+              'what it carries, how it moves the story on, and what it is doing to the audience. '
+              'Ask before animating it rather than guessing from the picture.', dim=not _mn))
+
     open(os.path.join(ROOT, 'card', b + '.html'), 'w').write(
         page(b, ''.join(cd), here='home', depth=1))
 print('  %d card pages, %d on the storyboard walk' % (len(_cards), len(_order)))

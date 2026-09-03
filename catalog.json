@@ -2130,10 +2130,25 @@
       "status": "placeholder",
       "date": "2026-09-02",
       "note": "NOT DRAWN YET. As the vortex takes him down, Coach Brain lets the key go and it falls with him. One beat, not two: the giving and the descent are the same moment."
+    },
+    {
+      "file": "BB_C_9/9-1-VORTEX-UP-v1.png",
+      "kind": "keyframe",
+      "scene": "9",
+      "shot": "9.1",
+      "title": "The vortex, up",
+      "status": "proposal",
+      "date": "2026-09-02",
+      "note": "The cloud vortex he is drawn up through after his eyes close. Square aspect, so it is a stand in until the widescreen version lands, and it is the reference the widescreen one is built from because the drawing itself is right.",
+      "refs": [
+        "https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIGINALS/main/BB_C_9/9-1-GANESHA-v1.png"
+      ],
+      "prompt": "A hand drawn pencil study on warm cream paper, the same graphite and the same sheet as the reference. Grey graphite only. There is no colour anywhere.\n\nA soft vortex of cloud, seen from below. It rises away from us and turns as it goes, narrowing to a small pale throat high in the upper part of the frame, slightly off centre. It is drawn the way cloud is drawn: long soft strokes made with the side of the pencil, smudged and blended, edges that dissolve rather than end. Light and airy, mostly bare paper, gentle rather than violent.\n\nThe frame is otherwise empty. No keys of any kind. No person, no figure, no lettering, no border, no architecture, no floor, no objects of any kind carried in the cloud.",
+      "meaning": "THE DOOR OUT OF THE WORLD. The first frame of the second half, and the first thing the audience sees after his eyes close. It does two jobs at once: it convinces them the film has changed, and it explains nothing.\n\nIt carries no information on purpose. Nothing to read, no object, no symbol, nothing that could be a clue. Three earlier versions built the vortex out of keys and every one failed for the same reason: a tunnel made of keys tells the audience what he is looking for before he knows it himself, so the film says the word out loud long before he reaches the key door.\n\nEmotionally it is gentle. Not a storm, and he is not in danger. He is being taken, not wrecked, and that softness is what makes the house of the body afterwards read as somewhere he belongs rather than somewhere he has crashed.\n\nIt moves the film forward by changing its grammar. Before it, things arrive by frottage. After it, nothing arrives and we travel through surfaces instead. This is the hinge, and it is why there is no cut anywhere after it.\n\nThe same vortex returns near the end, going down, when Coach Brain lets the key go. Rising into it and falling out of it is the shape of the whole second half."
     }
   ],
   "event": "Breakthrough Junior Challenge 2026",
-  "site_version": 160,
+  "site_version": 161,
   "footage": [
     {
       "name": "Key catch",
