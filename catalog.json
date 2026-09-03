@@ -3015,10 +3015,30 @@
       "status": "accepted",
       "date": "2026-09-03",
       "note": "The recovery pose with his near leg drawn open: the skin transparent as tracing paper, the muscular structure showing through, and a small fierce point of white light in the belly of the calf travelling along the fibres. THE LIGHT STAYS INSIDE THE OUTLINE OF THE LEG. No rays leave him, nothing spills onto the paper, and that containment is what makes it read as something happening under the skin rather than an effect drawn on top. v1 had it bursting out across the sheet and was wrong. IT IS DRAWN INTO THE FRAME, which matters: per modules/magnifying-glass.md the glass only ever enlarges what is already there, so the light has to exist on the paper before any lens goes near it."
+    },
+    {
+      "file": "BB_C_1/1-6-COLLAPSE-GLASS-LEG-v2.png",
+      "kind": "keyframe",
+      "scene": "1",
+      "shot": "1.63",
+      "title": "The dead leg",
+      "status": "accepted",
+      "date": "2026-09-04",
+      "note": "INSPECTION FOUR. Glass centred on the calf so the leg runs unbroken through the circle. ORDINARY SKIN: no transparency, no anatomy, no light. Just a calf hanging slack, the shape soft and collapsed rather than gripped. That slackness is the entire subject of the frame, and it is the evidence against what happens next. Pair it with 1.72, the same leg opened with the light in it, and the two frames are the argument of the film in two pictures."
+    },
+    {
+      "file": "BB_C_1/1-7-RECOVERY-GLASS-FACE-v1.png",
+      "kind": "keyframe",
+      "scene": "1",
+      "shot": "1.64",
+      "title": "The face, changed",
+      "status": "accepted",
+      "date": "2026-09-04",
+      "note": "INSPECTION FIVE. The same glass on the recovery pose, centred on his head. The eye is open and focused down the road, the jaw closed, one corner of the mouth lifted. Recognition, and something like defiance. PUT IT BESIDE 1.61 and the two read as before and after of the same man: the empty upward stare, then this. Nothing was given to him between them except the sight of the finish."
     }
   ],
   "event": "Breakthrough Junior Challenge 2026",
-  "site_version": 199,
+  "site_version": 200,
   "footage": [
     {
       "name": "Key catch",

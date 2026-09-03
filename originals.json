@@ -1144,5 +1144,17 @@
     "sha256": "23393a59060d2ae3e29b054bad766993db24e6885229f348bd8d084fb2c77bfd",
     "path": "BB_C_1/1-7-RECOVERY-OPEN-v2.png",
     "url": "https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIGINALS/main/BB_C_1/1-7-RECOVERY-OPEN-v2.png"
+  },
+  "1-6-COLLAPSE-GLASS-LEG-v2.png": {
+    "bytes": 1874585,
+    "sha256": "7a24afe05a6ceaafc342dc771f9e15844f8e61bdcb06f53893aa7c83eb9df88b",
+    "path": "BB_C_1/1-6-COLLAPSE-GLASS-LEG-v2.png",
+    "url": "https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIGINALS/main/BB_C_1/1-6-COLLAPSE-GLASS-LEG-v2.png"
+  },
+  "1-7-RECOVERY-GLASS-FACE-v1.png": {
+    "bytes": 2119167,
+    "sha256": "4ad2f01b5fabc4532a813a56cca218195d3f9767b0a8fc6195c70fece99ad8f5",
+    "path": "BB_C_1/1-7-RECOVERY-GLASS-FACE-v1.png",
+    "url": "https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIGINALS/main/BB_C_1/1-7-RECOVERY-GLASS-FACE-v1.png"
   }
 }
