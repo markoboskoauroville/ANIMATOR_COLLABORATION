@@ -1034,6 +1034,31 @@ def drama_v3_block(depth=0):
 
 
 
+def script_block(lines, scenes, uid, title, depth=0):
+    """The words, beside the deck but OUTSIDE it.
+
+    Baba, 3.9.2026: "the first scene is one file, and then again it breaks down
+    to paragraphs". It did. The playlist carried a row per line as well as the
+    scene file, so a deck that was supposed to be ten things to play read as
+    seventy one paragraphs with a file buried in them. The playlist is now
+    exactly the ten scenes and nothing else. The text is still here, folded,
+    because Kristijan reads it while it plays, but it is no longer inside the
+    thing you press play on.
+    """
+    o = ['<details class=novapl><summary class=novaplh>'
+         '<span class=takec>%d</span>%s</summary><div class=novapb>'
+         % (len(lines), html.escape(title))]
+    for i, sc in enumerate(scenes, 1):
+        o.append('<div class=plhead>%d.  %s</div>' % (i, html.escape(sc['title'])))
+        for x in lines:
+            if x.get('scene') == sc['id']:
+                mark = '' if x.get('audio') or x.get('file') else '   [još nije snimljeno]'
+                o.append('<div class=plline>%s</div>'
+                         % html.escape(x['speaker'] + '   ' + x['text'] + mark))
+    o.append('</div></details>')
+    return ''.join(o)
+
+
 def drama_v7_block(depth=0):
     """The film out loud, ONE FILE PER SCENE.
 
@@ -1058,14 +1083,8 @@ def drama_v7_block(depth=0):
     if not DRAMA_V7_SCENES:
         return ''
     silent = sum(1 for x in DRAMA_V7 if not x.get('audio'))
-    rows = []
-    for i, sc in enumerate(DRAMA_V7_SCENES, 1):
-        rows.append(('head', '%d.  %s' % (i, sc['title']), '', 0))
-        for x in DRAMA_V7:
-            if x.get('scene') == sc['id']:
-                mark = '' if x.get('audio') else '   [još nije snimljeno]'
-                rows.append(('line', x['speaker'] + '   ' + x['text'][:110] + mark, '', 0))
-        rows.append(('take', '%02d %s' % (i, sc['title']), sc['url'], sc['sec']))
+    rows = [('take', '%02d %s' % (i, sc['title']), sc['url'], sc['sec'])
+            for i, sc in enumerate(DRAMA_V7_SCENES, 1)]
     total = sum(sc['sec'] for sc in DRAMA_V7_SCENES)
     return deck_block('dramav7', 'THE BRAIN BRAKE, CIJELI FILM',
                       '%d scena, %d minuta %d sekundi. Jedna datoteka po sceni. Gabrijela pripovijeda, '
@@ -1091,13 +1110,8 @@ def drama_en_block(depth=0):
     """
     if not DRAMA_EN_SCENES:
         return ''
-    rows = []
-    for i, sc in enumerate(DRAMA_EN_SCENES, 1):
-        rows.append(('head', '%d.  %s' % (i, sc['title']), '', 0))
-        for x in DRAMA_EN:
-            if x.get('scene') == sc['id']:
-                rows.append(('line', x['speaker'] + '   ' + x['text'][:110], '', 0))
-        rows.append(('take', '%02d %s' % (i, sc['title']), sc['url'], sc['sec']))
+    rows = [('take', '%02d %s' % (i, sc['title']), sc['url'], sc['sec'])
+            for i, sc in enumerate(DRAMA_EN_SCENES, 1)]
     total = sum(sc['sec'] for sc in DRAMA_EN_SCENES)
     return deck_block('dramaen', 'THE BRAIN BRAKE, THE WHOLE FILM IN ENGLISH',
                       '%d scenes, %d minutes %d seconds. One file per scene. '
@@ -1783,7 +1797,11 @@ _rd = ['<h1>Radio drama, and the music</h1>',
        '<b>In English and in Croatian, one file per scene.</b> Nine lines of the new '
        'first scene are not yet recorded in Croatian, so they are here to read. '
        'Everything can be downloaded.</p>',
-       drama_en_block(), drama_v7_block(), music_block(), DECK_JS]
+       drama_en_block(),
+       script_block(DRAMA_EN, DRAMA_EN_SCENES, 'scripten', 'THE WORDS, IN ENGLISH'),
+       drama_v7_block(),
+       script_block(DRAMA_V7, DRAMA_V7_SCENES, 'scripthr', 'RIJEČI, NA HRVATSKOM'),
+       music_block(), DECK_JS]
 open(os.path.join(ROOT, 'radiodrama.html'), 'w').write(
     page('Radio drama', ''.join(_rd), here='drama', depth=0))
 
