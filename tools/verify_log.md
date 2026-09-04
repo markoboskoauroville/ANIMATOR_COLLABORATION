@@ -632,3 +632,431 @@
 - **live version** — catalog says v222, live serves v221. The push has not published yet, or it failed.
 - **original** — 9-1-VORTEX-UP-v1.png  200 2060708
 - **original** — 9R-1-VORTEX-DOWN-v1.png  200 4973671
+
+## 2026-09-04 18:24 — v223 — cached run
+
+356 pages, 431 remote targets, 216 originals.
+
+- published weight 72.0 MB of the 1024 MB Pages ceiling, 7%
+- 216 originals in originals.json, 978.3 MB
+- 140 rows still in drive_links.json, kept as a fallback
+
+**FAILED, 89:**
+
+- **local path missing** — index.html -> tiny/7-1.jpg
+- **local path missing** — index.html -> tiny/7-2.jpg
+- **local path missing** — index.html -> tiny/7-3.jpg
+- **local path missing** — index.html -> tiny/7-4.jpg
+- **local path missing** — index.html -> tiny/7-5.jpg
+- **local path missing** — index.html -> tiny/7-6.jpg
+- **local path missing** — index.html -> tiny/7-7.jpg
+- **local path missing** — index.html -> tiny/7-8.jpg
+- **local path missing** — card/7-7.html -> ../BB_C_7/7-7.png
+- **local path missing** — card/7-7.html -> ../mid/7-7.jpg
+- **local path missing** — card/7-4.html -> ../BB_C_7/7-4.png
+- **local path missing** — card/7-4.html -> ../mid/7-4.jpg
+- **local path missing** — card/11-0-A-v1.html -> ../https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/reference/voice/SYNTESISED_BRAIN_NEW_THEORY.wav
+- **local path missing** — card/11-0-A-v1.html -> ../https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/reference/voice/SYNTESISED_BRAIN_NEW_THEORY.wav
+- **local path missing** — card/12-0-A-v1.html -> ../https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/reference/voice/THE_LIMIT_IS_A_SETTING_NOT_A_WALL.wav
+- **local path missing** — card/12-0-A-v1.html -> ../https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/reference/voice/THE_LIMIT_IS_A_SETTING_NOT_A_WALL.wav
+- **local path missing** — card/7-5.html -> ../BB_C_7/7-5.png
+- **local path missing** — card/7-5.html -> ../mid/7-5.jpg
+- **local path missing** — card/10-0-A-v2.html -> ../https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/reference/voice/SYNTESISED_MANAN_OLD_THEORY.wav
+- **local path missing** — card/10-0-A-v2.html -> ../https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/reference/voice/SYNTESISED_MANAN_OLD_THEORY.wav
+- **local path missing** — card/7-3.html -> ../BB_C_7/7-3.png
+- **local path missing** — card/7-3.html -> ../mid/7-3.jpg
+- **local path missing** — card/7-2.html -> ../BB_C_7/7-2.png
+- **local path missing** — card/7-2.html -> ../mid/7-2.jpg
+- **local path missing** — card/7-8.html -> ../BB_C_7/7-8.png
+- **local path missing** — card/7-8.html -> ../mid/7-8.jpg
+- **local path missing** — card/7-1.html -> ../BB_C_7/7-1.png
+- **local path missing** — card/7-1.html -> ../mid/7-1.jpg
+- **local path missing** — card/7-6.html -> ../BB_C_7/7-6.png
+- **local path missing** — card/7-6.html -> ../mid/7-6.jpg
+- **local path missing** — BB_C_7/shot-7-5.html -> ../BB_C_7/7-5.png
+- **local path missing** — BB_C_7/shot-7-5.html -> ../BB_C_7/7-5.png
+- **local path missing** — BB_C_7/index.html -> ../BB_C_7/7-1.png
+- **local path missing** — BB_C_7/index.html -> ../BB_C_7/7-2.png
+- **local path missing** — BB_C_7/index.html -> ../BB_C_7/7-3.png
+- **local path missing** — BB_C_7/index.html -> ../BB_C_7/7-4.png
+- **local path missing** — BB_C_7/index.html -> ../BB_C_7/7-5.png
+- **local path missing** — BB_C_7/index.html -> ../BB_C_7/7-6.png
+- **local path missing** — BB_C_7/index.html -> ../BB_C_7/7-7.png
+- **local path missing** — BB_C_7/index.html -> ../BB_C_7/7-8.png
+- **local path missing** — BB_C_7/index.html -> ../BB_C_7/7-1.png
+- **local path missing** — BB_C_7/index.html -> ../BB_C_7/7-2.png
+- **local path missing** — BB_C_7/index.html -> ../BB_C_7/7-3.png
+- **local path missing** — BB_C_7/index.html -> ../BB_C_7/7-4.png
+- **local path missing** — BB_C_7/index.html -> ../BB_C_7/7-5.png
+- **local path missing** — BB_C_7/index.html -> ../BB_C_7/7-6.png
+- **local path missing** — BB_C_7/index.html -> ../BB_C_7/7-7.png
+- **local path missing** — BB_C_7/index.html -> ../BB_C_7/7-8.png
+- **local path missing** — BB_C_7/shot-7-3.html -> ../BB_C_7/7-3.png
+- **local path missing** — BB_C_7/shot-7-3.html -> ../BB_C_7/7-3.png
+- **local path missing** — BB_C_7/shot-7-4.html -> ../BB_C_7/7-4.png
+- **local path missing** — BB_C_7/shot-7-4.html -> ../BB_C_7/7-4.png
+- **local path missing** — BB_C_7/shot-7-2.html -> ../BB_C_7/7-2.png
+- **local path missing** — BB_C_7/shot-7-2.html -> ../BB_C_7/7-2.png
+- **local path missing** — BB_C_7/shot-7-7.html -> ../BB_C_7/7-7.png
+- **local path missing** — BB_C_7/shot-7-7.html -> ../BB_C_7/7-7.png
+- **local path missing** — BB_C_7/shot-7-6.html -> ../BB_C_7/7-6.png
+- **local path missing** — BB_C_7/shot-7-6.html -> ../BB_C_7/7-6.png
+- **local path missing** — BB_C_7/shot-7-1.html -> ../BB_C_7/7-1.png
+- **local path missing** — BB_C_7/shot-7-1.html -> ../BB_C_7/7-1.png
+- **local path missing** — BB_C_7/shot-7-8.html -> ../BB_C_7/7-8.png
+- **local path missing** — BB_C_7/shot-7-8.html -> ../BB_C_7/7-8.png
+- **missing tiny** — 7-1
+- **missing mid** — 7-1
+- **missing tiny** — 7-2
+- **missing mid** — 7-2
+- **missing tiny** — 7-3
+- **missing mid** — 7-3
+- **missing tiny** — 7-4
+- **missing mid** — 7-4
+- **missing tiny** — 7-5
+- **missing mid** — 7-5
+- **missing tiny** — 7-6
+- **missing mid** — 7-6
+- **missing tiny** — 7-7
+- **missing mid** — 7-7
+- **missing tiny** — 7-8
+- **missing mid** — 7-8
+- **live version** — catalog says v223, live serves v222. The push has not published yet, or it failed.
+- **original** — 7-1-20260903.png  200 6255421
+- **original** — 7-2-20260903.png  200 9006145
+- **original** — 7-3-20260903.png  200 10186861
+- **original** — 7-4-20260903.png  200 9698811
+- **original** — 7-5-20260903.png  200 7025145
+- **original** — 7-6-20260903.png  200 9842952
+- **original** — 7-7-20260903.png  200 9082034
+- **original** — 7-8-20260903.png  200 6082100
+- **original** — 9-1-VORTEX-UP-v1.png  200 2060708
+- **original** — 9R-1-VORTEX-DOWN-v1.png  200 4973671
+
+## 2026-09-04 18:24 — v223 — cached run
+
+356 pages, 431 remote targets, 216 originals.
+
+- published weight 72.0 MB of the 1024 MB Pages ceiling, 7%
+- 216 originals in originals.json, 978.3 MB
+- 140 rows still in drive_links.json, kept as a fallback
+
+**FAILED, 89:**
+
+- **local path missing** — index.html -> tiny/7-1.jpg
+- **local path missing** — index.html -> tiny/7-2.jpg
+- **local path missing** — index.html -> tiny/7-3.jpg
+- **local path missing** — index.html -> tiny/7-4.jpg
+- **local path missing** — index.html -> tiny/7-5.jpg
+- **local path missing** — index.html -> tiny/7-6.jpg
+- **local path missing** — index.html -> tiny/7-7.jpg
+- **local path missing** — index.html -> tiny/7-8.jpg
+- **local path missing** — card/7-7.html -> ../BB_C_7/7-7.png
+- **local path missing** — card/7-7.html -> ../mid/7-7.jpg
+- **local path missing** — card/7-4.html -> ../BB_C_7/7-4.png
+- **local path missing** — card/7-4.html -> ../mid/7-4.jpg
+- **local path missing** — card/11-0-A-v1.html -> ../https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/reference/voice/SYNTESISED_BRAIN_NEW_THEORY.wav
+- **local path missing** — card/11-0-A-v1.html -> ../https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/reference/voice/SYNTESISED_BRAIN_NEW_THEORY.wav
+- **local path missing** — card/12-0-A-v1.html -> ../https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/reference/voice/THE_LIMIT_IS_A_SETTING_NOT_A_WALL.wav
+- **local path missing** — card/12-0-A-v1.html -> ../https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/reference/voice/THE_LIMIT_IS_A_SETTING_NOT_A_WALL.wav
+- **local path missing** — card/7-5.html -> ../BB_C_7/7-5.png
+- **local path missing** — card/7-5.html -> ../mid/7-5.jpg
+- **local path missing** — card/10-0-A-v2.html -> ../https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/reference/voice/SYNTESISED_MANAN_OLD_THEORY.wav
+- **local path missing** — card/10-0-A-v2.html -> ../https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/reference/voice/SYNTESISED_MANAN_OLD_THEORY.wav
+- **local path missing** — card/7-3.html -> ../BB_C_7/7-3.png
+- **local path missing** — card/7-3.html -> ../mid/7-3.jpg
+- **local path missing** — card/7-2.html -> ../BB_C_7/7-2.png
+- **local path missing** — card/7-2.html -> ../mid/7-2.jpg
+- **local path missing** — card/7-8.html -> ../BB_C_7/7-8.png
+- **local path missing** — card/7-8.html -> ../mid/7-8.jpg
+- **local path missing** — card/7-1.html -> ../BB_C_7/7-1.png
+- **local path missing** — card/7-1.html -> ../mid/7-1.jpg
+- **local path missing** — card/7-6.html -> ../BB_C_7/7-6.png
+- **local path missing** — card/7-6.html -> ../mid/7-6.jpg
+- **local path missing** — BB_C_7/shot-7-5.html -> ../BB_C_7/7-5.png
+- **local path missing** — BB_C_7/shot-7-5.html -> ../BB_C_7/7-5.png
+- **local path missing** — BB_C_7/index.html -> ../BB_C_7/7-1.png
+- **local path missing** — BB_C_7/index.html -> ../BB_C_7/7-2.png
+- **local path missing** — BB_C_7/index.html -> ../BB_C_7/7-3.png
+- **local path missing** — BB_C_7/index.html -> ../BB_C_7/7-4.png
+- **local path missing** — BB_C_7/index.html -> ../BB_C_7/7-5.png
+- **local path missing** — BB_C_7/index.html -> ../BB_C_7/7-6.png
+- **local path missing** — BB_C_7/index.html -> ../BB_C_7/7-7.png
+- **local path missing** — BB_C_7/index.html -> ../BB_C_7/7-8.png
+- **local path missing** — BB_C_7/index.html -> ../BB_C_7/7-1.png
+- **local path missing** — BB_C_7/index.html -> ../BB_C_7/7-2.png
+- **local path missing** — BB_C_7/index.html -> ../BB_C_7/7-3.png
+- **local path missing** — BB_C_7/index.html -> ../BB_C_7/7-4.png
+- **local path missing** — BB_C_7/index.html -> ../BB_C_7/7-5.png
+- **local path missing** — BB_C_7/index.html -> ../BB_C_7/7-6.png
+- **local path missing** — BB_C_7/index.html -> ../BB_C_7/7-7.png
+- **local path missing** — BB_C_7/index.html -> ../BB_C_7/7-8.png
+- **local path missing** — BB_C_7/shot-7-3.html -> ../BB_C_7/7-3.png
+- **local path missing** — BB_C_7/shot-7-3.html -> ../BB_C_7/7-3.png
+- **local path missing** — BB_C_7/shot-7-4.html -> ../BB_C_7/7-4.png
+- **local path missing** — BB_C_7/shot-7-4.html -> ../BB_C_7/7-4.png
+- **local path missing** — BB_C_7/shot-7-2.html -> ../BB_C_7/7-2.png
+- **local path missing** — BB_C_7/shot-7-2.html -> ../BB_C_7/7-2.png
+- **local path missing** — BB_C_7/shot-7-7.html -> ../BB_C_7/7-7.png
+- **local path missing** — BB_C_7/shot-7-7.html -> ../BB_C_7/7-7.png
+- **local path missing** — BB_C_7/shot-7-6.html -> ../BB_C_7/7-6.png
+- **local path missing** — BB_C_7/shot-7-6.html -> ../BB_C_7/7-6.png
+- **local path missing** — BB_C_7/shot-7-1.html -> ../BB_C_7/7-1.png
+- **local path missing** — BB_C_7/shot-7-1.html -> ../BB_C_7/7-1.png
+- **local path missing** — BB_C_7/shot-7-8.html -> ../BB_C_7/7-8.png
+- **local path missing** — BB_C_7/shot-7-8.html -> ../BB_C_7/7-8.png
+- **missing tiny** — 7-1
+- **missing mid** — 7-1
+- **missing tiny** — 7-2
+- **missing mid** — 7-2
+- **missing tiny** — 7-3
+- **missing mid** — 7-3
+- **missing tiny** — 7-4
+- **missing mid** — 7-4
+- **missing tiny** — 7-5
+- **missing mid** — 7-5
+- **missing tiny** — 7-6
+- **missing mid** — 7-6
+- **missing tiny** — 7-7
+- **missing mid** — 7-7
+- **missing tiny** — 7-8
+- **missing mid** — 7-8
+- **live version** — catalog says v223, live serves v222. The push has not published yet, or it failed.
+- **original** — 7-1-20260903.png  200 6255421
+- **original** — 7-2-20260903.png  200 9006145
+- **original** — 7-3-20260903.png  200 10186861
+- **original** — 7-4-20260903.png  200 9698811
+- **original** — 7-5-20260903.png  200 7025145
+- **original** — 7-6-20260903.png  200 9842952
+- **original** — 7-7-20260903.png  200 9082034
+- **original** — 7-8-20260903.png  200 6082100
+- **original** — 9-1-VORTEX-UP-v1.png  200 2060708
+- **original** — 9R-1-VORTEX-DOWN-v1.png  200 4973671
+
+## 2026-09-04 18:24 — v223 — cached run
+
+356 pages, 431 remote targets, 216 originals.
+
+- published weight 72.1 MB of the 1024 MB Pages ceiling, 7%
+- 216 originals in originals.json, 978.3 MB
+- 140 rows still in drive_links.json, kept as a fallback
+
+**FAILED, 89:**
+
+- **local path missing** — index.html -> tiny/7-1.jpg
+- **local path missing** — index.html -> tiny/7-2.jpg
+- **local path missing** — index.html -> tiny/7-3.jpg
+- **local path missing** — index.html -> tiny/7-4.jpg
+- **local path missing** — index.html -> tiny/7-5.jpg
+- **local path missing** — index.html -> tiny/7-6.jpg
+- **local path missing** — index.html -> tiny/7-7.jpg
+- **local path missing** — index.html -> tiny/7-8.jpg
+- **local path missing** — card/7-7.html -> ../BB_C_7/7-7.png
+- **local path missing** — card/7-7.html -> ../mid/7-7.jpg
+- **local path missing** — card/7-4.html -> ../BB_C_7/7-4.png
+- **local path missing** — card/7-4.html -> ../mid/7-4.jpg
+- **local path missing** — card/11-0-A-v1.html -> ../https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/reference/voice/SYNTESISED_BRAIN_NEW_THEORY.wav
+- **local path missing** — card/11-0-A-v1.html -> ../https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/reference/voice/SYNTESISED_BRAIN_NEW_THEORY.wav
+- **local path missing** — card/12-0-A-v1.html -> ../https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/reference/voice/THE_LIMIT_IS_A_SETTING_NOT_A_WALL.wav
+- **local path missing** — card/12-0-A-v1.html -> ../https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/reference/voice/THE_LIMIT_IS_A_SETTING_NOT_A_WALL.wav
+- **local path missing** — card/7-5.html -> ../BB_C_7/7-5.png
+- **local path missing** — card/7-5.html -> ../mid/7-5.jpg
+- **local path missing** — card/10-0-A-v2.html -> ../https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/reference/voice/SYNTESISED_MANAN_OLD_THEORY.wav
+- **local path missing** — card/10-0-A-v2.html -> ../https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/reference/voice/SYNTESISED_MANAN_OLD_THEORY.wav
+- **local path missing** — card/7-3.html -> ../BB_C_7/7-3.png
+- **local path missing** — card/7-3.html -> ../mid/7-3.jpg
+- **local path missing** — card/7-2.html -> ../BB_C_7/7-2.png
+- **local path missing** — card/7-2.html -> ../mid/7-2.jpg
+- **local path missing** — card/7-8.html -> ../BB_C_7/7-8.png
+- **local path missing** — card/7-8.html -> ../mid/7-8.jpg
+- **local path missing** — card/7-1.html -> ../BB_C_7/7-1.png
+- **local path missing** — card/7-1.html -> ../mid/7-1.jpg
+- **local path missing** — card/7-6.html -> ../BB_C_7/7-6.png
+- **local path missing** — card/7-6.html -> ../mid/7-6.jpg
+- **local path missing** — BB_C_7/shot-7-5.html -> ../BB_C_7/7-5.png
+- **local path missing** — BB_C_7/shot-7-5.html -> ../BB_C_7/7-5.png
+- **local path missing** — BB_C_7/index.html -> ../BB_C_7/7-1.png
+- **local path missing** — BB_C_7/index.html -> ../BB_C_7/7-2.png
+- **local path missing** — BB_C_7/index.html -> ../BB_C_7/7-3.png
+- **local path missing** — BB_C_7/index.html -> ../BB_C_7/7-4.png
+- **local path missing** — BB_C_7/index.html -> ../BB_C_7/7-5.png
+- **local path missing** — BB_C_7/index.html -> ../BB_C_7/7-6.png
+- **local path missing** — BB_C_7/index.html -> ../BB_C_7/7-7.png
+- **local path missing** — BB_C_7/index.html -> ../BB_C_7/7-8.png
+- **local path missing** — BB_C_7/index.html -> ../BB_C_7/7-1.png
+- **local path missing** — BB_C_7/index.html -> ../BB_C_7/7-2.png
+- **local path missing** — BB_C_7/index.html -> ../BB_C_7/7-3.png
+- **local path missing** — BB_C_7/index.html -> ../BB_C_7/7-4.png
+- **local path missing** — BB_C_7/index.html -> ../BB_C_7/7-5.png
+- **local path missing** — BB_C_7/index.html -> ../BB_C_7/7-6.png
+- **local path missing** — BB_C_7/index.html -> ../BB_C_7/7-7.png
+- **local path missing** — BB_C_7/index.html -> ../BB_C_7/7-8.png
+- **local path missing** — BB_C_7/shot-7-3.html -> ../BB_C_7/7-3.png
+- **local path missing** — BB_C_7/shot-7-3.html -> ../BB_C_7/7-3.png
+- **local path missing** — BB_C_7/shot-7-4.html -> ../BB_C_7/7-4.png
+- **local path missing** — BB_C_7/shot-7-4.html -> ../BB_C_7/7-4.png
+- **local path missing** — BB_C_7/shot-7-2.html -> ../BB_C_7/7-2.png
+- **local path missing** — BB_C_7/shot-7-2.html -> ../BB_C_7/7-2.png
+- **local path missing** — BB_C_7/shot-7-7.html -> ../BB_C_7/7-7.png
+- **local path missing** — BB_C_7/shot-7-7.html -> ../BB_C_7/7-7.png
+- **local path missing** — BB_C_7/shot-7-6.html -> ../BB_C_7/7-6.png
+- **local path missing** — BB_C_7/shot-7-6.html -> ../BB_C_7/7-6.png
+- **local path missing** — BB_C_7/shot-7-1.html -> ../BB_C_7/7-1.png
+- **local path missing** — BB_C_7/shot-7-1.html -> ../BB_C_7/7-1.png
+- **local path missing** — BB_C_7/shot-7-8.html -> ../BB_C_7/7-8.png
+- **local path missing** — BB_C_7/shot-7-8.html -> ../BB_C_7/7-8.png
+- **missing tiny** — 7-1
+- **missing mid** — 7-1
+- **missing tiny** — 7-2
+- **missing mid** — 7-2
+- **missing tiny** — 7-3
+- **missing mid** — 7-3
+- **missing tiny** — 7-4
+- **missing mid** — 7-4
+- **missing tiny** — 7-5
+- **missing mid** — 7-5
+- **missing tiny** — 7-6
+- **missing mid** — 7-6
+- **missing tiny** — 7-7
+- **missing mid** — 7-7
+- **missing tiny** — 7-8
+- **missing mid** — 7-8
+- **live version** — catalog says v223, live serves v222. The push has not published yet, or it failed.
+- **original** — 7-1-20260903.png  200 6255421
+- **original** — 7-2-20260903.png  200 9006145
+- **original** — 7-3-20260903.png  200 10186861
+- **original** — 7-4-20260903.png  200 9698811
+- **original** — 7-5-20260903.png  200 7025145
+- **original** — 7-6-20260903.png  200 9842952
+- **original** — 7-7-20260903.png  200 9082034
+- **original** — 7-8-20260903.png  200 6082100
+- **original** — 9-1-VORTEX-UP-v1.png  200 2060708
+- **original** — 9R-1-VORTEX-DOWN-v1.png  200 4973671
+
+## 2026-09-04 18:24 — v223 — cached run
+
+356 pages, 431 remote targets, 216 originals.
+
+- published weight 73.5 MB of the 1024 MB Pages ceiling, 7%
+- 216 originals in originals.json, 978.3 MB
+- 140 rows still in drive_links.json, kept as a fallback
+
+**FAILED, 33:**
+
+- **local path missing** — card/7-7.html -> ../BB_C_7/7-7.png
+- **local path missing** — card/7-4.html -> ../BB_C_7/7-4.png
+- **local path missing** — card/11-0-A-v1.html -> ../https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/reference/voice/SYNTESISED_BRAIN_NEW_THEORY.wav
+- **local path missing** — card/11-0-A-v1.html -> ../https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/reference/voice/SYNTESISED_BRAIN_NEW_THEORY.wav
+- **local path missing** — card/12-0-A-v1.html -> ../https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/reference/voice/THE_LIMIT_IS_A_SETTING_NOT_A_WALL.wav
+- **local path missing** — card/12-0-A-v1.html -> ../https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/reference/voice/THE_LIMIT_IS_A_SETTING_NOT_A_WALL.wav
+- **local path missing** — card/7-5.html -> ../BB_C_7/7-5.png
+- **local path missing** — card/10-0-A-v2.html -> ../https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/reference/voice/SYNTESISED_MANAN_OLD_THEORY.wav
+- **local path missing** — card/10-0-A-v2.html -> ../https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/reference/voice/SYNTESISED_MANAN_OLD_THEORY.wav
+- **local path missing** — card/7-3.html -> ../BB_C_7/7-3.png
+- **local path missing** — card/7-2.html -> ../BB_C_7/7-2.png
+- **local path missing** — card/7-8.html -> ../BB_C_7/7-8.png
+- **local path missing** — card/7-1.html -> ../BB_C_7/7-1.png
+- **local path missing** — card/7-6.html -> ../BB_C_7/7-6.png
+- **local path missing** — BB_C_7/shot-7-5.html -> ../BB_C_7/7-5.png
+- **local path missing** — BB_C_7/shot-7-3.html -> ../BB_C_7/7-3.png
+- **local path missing** — BB_C_7/shot-7-4.html -> ../BB_C_7/7-4.png
+- **local path missing** — BB_C_7/shot-7-2.html -> ../BB_C_7/7-2.png
+- **local path missing** — BB_C_7/shot-7-7.html -> ../BB_C_7/7-7.png
+- **local path missing** — BB_C_7/shot-7-6.html -> ../BB_C_7/7-6.png
+- **local path missing** — BB_C_7/shot-7-1.html -> ../BB_C_7/7-1.png
+- **local path missing** — BB_C_7/shot-7-8.html -> ../BB_C_7/7-8.png
+- **live version** — catalog says v223, live serves v222. The push has not published yet, or it failed.
+- **original** — 7-1-20260903.png  200 6255421
+- **original** — 7-2-20260903.png  200 9006145
+- **original** — 7-3-20260903.png  200 10186861
+- **original** — 7-4-20260903.png  200 9698811
+- **original** — 7-5-20260903.png  200 7025145
+- **original** — 7-6-20260903.png  200 9842952
+- **original** — 7-7-20260903.png  200 9082034
+- **original** — 7-8-20260903.png  200 6082100
+- **original** — 9-1-VORTEX-UP-v1.png  200 2060708
+- **original** — 9R-1-VORTEX-DOWN-v1.png  200 4973671
+
+## 2026-09-04 18:25 — v223 — cached run
+
+356 pages, 431 remote targets, 216 originals.
+
+- published weight 73.5 MB of the 1024 MB Pages ceiling, 7%
+- 216 originals in originals.json, 978.3 MB
+- 140 rows still in drive_links.json, kept as a fallback
+
+**FAILED, 33:**
+
+- **local path missing** — card/7-7.html -> ../BB_C_7/7-7.png
+- **local path missing** — card/7-4.html -> ../BB_C_7/7-4.png
+- **local path missing** — card/11-0-A-v1.html -> ../https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/reference/voice/SYNTESISED_BRAIN_NEW_THEORY.wav
+- **local path missing** — card/11-0-A-v1.html -> ../https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/reference/voice/SYNTESISED_BRAIN_NEW_THEORY.wav
+- **local path missing** — card/12-0-A-v1.html -> ../https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/reference/voice/THE_LIMIT_IS_A_SETTING_NOT_A_WALL.wav
+- **local path missing** — card/12-0-A-v1.html -> ../https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/reference/voice/THE_LIMIT_IS_A_SETTING_NOT_A_WALL.wav
+- **local path missing** — card/7-5.html -> ../BB_C_7/7-5.png
+- **local path missing** — card/10-0-A-v2.html -> ../https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/reference/voice/SYNTESISED_MANAN_OLD_THEORY.wav
+- **local path missing** — card/10-0-A-v2.html -> ../https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/reference/voice/SYNTESISED_MANAN_OLD_THEORY.wav
+- **local path missing** — card/7-3.html -> ../BB_C_7/7-3.png
+- **local path missing** — card/7-2.html -> ../BB_C_7/7-2.png
+- **local path missing** — card/7-8.html -> ../BB_C_7/7-8.png
+- **local path missing** — card/7-1.html -> ../BB_C_7/7-1.png
+- **local path missing** — card/7-6.html -> ../BB_C_7/7-6.png
+- **local path missing** — BB_C_7/shot-7-5.html -> ../BB_C_7/7-5.png
+- **local path missing** — BB_C_7/shot-7-3.html -> ../BB_C_7/7-3.png
+- **local path missing** — BB_C_7/shot-7-4.html -> ../BB_C_7/7-4.png
+- **local path missing** — BB_C_7/shot-7-2.html -> ../BB_C_7/7-2.png
+- **local path missing** — BB_C_7/shot-7-7.html -> ../BB_C_7/7-7.png
+- **local path missing** — BB_C_7/shot-7-6.html -> ../BB_C_7/7-6.png
+- **local path missing** — BB_C_7/shot-7-1.html -> ../BB_C_7/7-1.png
+- **local path missing** — BB_C_7/shot-7-8.html -> ../BB_C_7/7-8.png
+- **live version** — catalog says v223, live serves v222. The push has not published yet, or it failed.
+- **original** — 7-1-20260903.png  200 6255421
+- **original** — 7-2-20260903.png  200 9006145
+- **original** — 7-3-20260903.png  200 10186861
+- **original** — 7-4-20260903.png  200 9698811
+- **original** — 7-5-20260903.png  200 7025145
+- **original** — 7-6-20260903.png  200 9842952
+- **original** — 7-7-20260903.png  200 9082034
+- **original** — 7-8-20260903.png  200 6082100
+- **original** — 9-1-VORTEX-UP-v1.png  200 2060708
+- **original** — 9R-1-VORTEX-DOWN-v1.png  200 4973671
+
+## 2026-09-04 18:25 — v223 — cached run
+
+356 pages, 439 remote targets, 224 originals.
+
+- published weight 73.5 MB of the 1024 MB Pages ceiling, 7%
+- 224 originals in originals.json, 1042.3 MB
+- 140 rows still in drive_links.json, kept as a fallback
+
+**FAILED, 9:**
+
+- **local path missing** — card/11-0-A-v1.html -> ../https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/reference/voice/SYNTESISED_BRAIN_NEW_THEORY.wav
+- **local path missing** — card/11-0-A-v1.html -> ../https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/reference/voice/SYNTESISED_BRAIN_NEW_THEORY.wav
+- **local path missing** — card/12-0-A-v1.html -> ../https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/reference/voice/THE_LIMIT_IS_A_SETTING_NOT_A_WALL.wav
+- **local path missing** — card/12-0-A-v1.html -> ../https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/reference/voice/THE_LIMIT_IS_A_SETTING_NOT_A_WALL.wav
+- **local path missing** — card/10-0-A-v2.html -> ../https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/reference/voice/SYNTESISED_MANAN_OLD_THEORY.wav
+- **local path missing** — card/10-0-A-v2.html -> ../https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/reference/voice/SYNTESISED_MANAN_OLD_THEORY.wav
+- **live version** — catalog says v223, live serves v222. The push has not published yet, or it failed.
+- **original** — 9-1-VORTEX-UP-v1.png  200 2060708
+- **original** — 9R-1-VORTEX-DOWN-v1.png  200 4973671
+
+## 2026-09-04 18:25 — v223 — cached run
+
+356 pages, 439 remote targets, 224 originals.
+
+- published weight 73.5 MB of the 1024 MB Pages ceiling, 7%
+- 224 originals in originals.json, 1042.3 MB
+- 140 rows still in drive_links.json, kept as a fallback
+
+**FAILED, 9:**
+
+- **local path missing** — card/11-0-A-v1.html -> ../https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/reference/voice/SYNTESISED_BRAIN_NEW_THEORY.wav
+- **local path missing** — card/11-0-A-v1.html -> ../https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/reference/voice/SYNTESISED_BRAIN_NEW_THEORY.wav
+- **local path missing** — card/12-0-A-v1.html -> ../https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/reference/voice/THE_LIMIT_IS_A_SETTING_NOT_A_WALL.wav
+- **local path missing** — card/12-0-A-v1.html -> ../https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/reference/voice/THE_LIMIT_IS_A_SETTING_NOT_A_WALL.wav
+- **local path missing** — card/10-0-A-v2.html -> ../https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/reference/voice/SYNTESISED_MANAN_OLD_THEORY.wav
+- **local path missing** — card/10-0-A-v2.html -> ../https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/reference/voice/SYNTESISED_MANAN_OLD_THEORY.wav
+- **live version** — catalog says v223, live serves v222. The push has not published yet, or it failed.
+- **original** — 9-1-VORTEX-UP-v1.png  200 2060708
+- **original** — 9R-1-VORTEX-DOWN-v1.png  200 4973671
