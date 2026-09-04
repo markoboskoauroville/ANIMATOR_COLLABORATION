@@ -2324,7 +2324,7 @@
       "kind": "keyframe",
       "shot": "19.21",
       "file": "BB_C_19/19-2-MOCKUP-v1.png",
-      "status": "proposal",
+      "status": "superseded",
       "date": "2026-09-01",
       "slug": "INT. CONTROL ROOM — WIDE, MOCKUP WITH A BOY",
       "what": "The wide of the control room with a real boy standing on the open floor at the right, photographic against the drawn room.",
@@ -2334,7 +2334,8 @@
         "phase": "Phase 10 of 15, THEY INTRODUCE EACH OTHER.",
         "journey": "MEETING THE MENTOR, late and inside the cave. The obstacle and the guide are one figure.",
         "element": "THE HAND, and SACRED SPACE. A room treated as different becomes different."
-      }
+      },
+      "note": " RETIRED 4.9.2026. It has the little brain in it. The film became serious and a small smiling brain could not hold the scene where the argument lands, so Coach Brain is a person now. The room went with him: three trackballs instead of a hundred switches, a free standing hologram instead of panels on a wall, and one chair instead of two."
     },
     {
       "kind": "keyframe",
@@ -2422,7 +2423,7 @@
       "kind": "keyframe",
       "shot": "19.41",
       "file": "BB_C_19/19-4-MOCKUP-v1.png",
-      "status": "proposal",
+      "status": "superseded",
       "date": "2026-09-01",
       "slug": "INT. CONTROL ROOM — ON MANAN, MOCKUP",
       "what": "A real boy standing on the stone floor in the middle of the reverse plate, photographic against the drawn room, with the desk end at the left and the arched door at the right.",
@@ -2432,7 +2433,8 @@
         "phase": "Phase 10 of 15, THEY INTRODUCE EACH OTHER.",
         "journey": "MEETING THE MENTOR, late and inside the cave. The obstacle and the guide are one figure.",
         "element": "THE HAND, and SACRED SPACE. A room treated as different becomes different."
-      }
+      },
+      "note": " RETIRED 4.9.2026. It has the little brain in it. The film became serious and a small smiling brain could not hold the scene where the argument lands, so Coach Brain is a person now. The room went with him: three trackballs instead of a hundred switches, a free standing hologram instead of panels on a wall, and one chair instead of two."
     },
     {
       "kind": "keyframe",
@@ -2628,25 +2630,15 @@
       "scene": 19,
       "shot": "19.40",
       "title": "Coach Brain, and the first gold",
-      "status": "accepted",
+      "status": "superseded",
       "date": "2026-09-02",
-      "note": "He turns to look at us, and on a cord at his neck hangs the key. THE FIRST GOLD IN THE FILM. Gouache over pencil, the only painted thing on the sheet. It hangs small, worn rather than displayed. Supersedes v1.",
+      "note": "He turns to look at us, and on a cord at his neck hangs the key. THE FIRST GOLD IN THE FILM. Gouache over pencil, the only painted thing on the sheet. It hangs small, worn rather than displayed. Supersedes v1. RETIRED 4.9.2026. It has the little brain in it. The film became serious and a small smiling brain could not hold the scene where the argument lands, so Coach Brain is a person now. The room went with him: three trackballs instead of a hundred switches, a free standing hologram instead of panels on a wall, and one chair instead of two.",
       "flow_pos": 12,
       "dna": {
         "phase": "Phase 10 of 15, THEY INTRODUCE EACH OTHER.",
         "journey": "MEETING THE MENTOR, late and inside the cave. The obstacle and the guide are one figure.",
         "element": "THE HAND, and SACRED SPACE. A room treated as different becomes different."
-      },
-      "dialogue": [
-        {
-          "speaker": "MANAN",
-          "line": "That was you. It was never my arm at all."
-        },
-        {
-          "speaker": "COACH",
-          "line": "It is always your arm. The permission is mine."
-        }
-      ]
+      }
     },
     {
       "file": "BB_C_14/14-8-DEDICATION-v2.png",
@@ -2933,9 +2925,9 @@
       "scene": "19",
       "shot": "19.01",
       "title": "What he sees when the door opens",
-      "status": "accepted",
+      "status": "superseded",
       "date": "2026-09-03",
-      "note": "POINT OF VIEW. We are standing in the doorway looking in, framed by the jamb on both sides and the top, and nothing of the viewer is visible: this is his eyes, per MEMORY 28g. Coach Brain has NOT turned round. He is small, absorbed, one hand on the console, completely unbothered that somebody has arrived, and that indifference is what makes him worth being impressed by. The second open door beyond him echoes the corridor without saying anything."
+      "note": "POINT OF VIEW. We are standing in the doorway looking in, framed by the jamb on both sides and the top, and nothing of the viewer is visible: this is his eyes, per MEMORY 28g. Coach Brain has NOT turned round. He is small, absorbed, one hand on the console, completely unbothered that somebody has arrived, and that indifference is what makes him worth being impressed by. The second open door beyond him echoes the corridor without saying anything. RETIRED 4.9.2026. It has the little brain in it. The film became serious and a small smiling brain could not hold the scene where the argument lands, so Coach Brain is a person now. The room went with him: three trackballs instead of a hundred switches, a free standing hologram instead of panels on a wall, and one chair instead of two."
     },
     {
       "file": "BB_C_19/19-A2-EXPECTING-v1.png",
@@ -2943,14 +2935,9 @@
       "scene": "19",
       "shot": "19.02",
       "title": "He turns, and he was expecting us",
-      "status": "accepted",
+      "status": "superseded",
       "date": "2026-09-03",
-      "dialogue": [
-        {
-          "speaker": "COACH",
-          "line": "Ah. There you are. I was expecting you."
-        }
-      ]
+      "note": " RETIRED 4.9.2026. It has the little brain in it. The film became serious and a small smiling brain could not hold the scene where the argument lands, so Coach Brain is a person now. The room went with him: three trackballs instead of a hundred switches, a free standing hologram instead of panels on a wall, and one chair instead of two."
     },
     {
       "file": "BB_C_19/19-A3-ARM-v2.png",
@@ -2958,30 +2945,9 @@
       "scene": "19",
       "shot": "19.03",
       "title": "Lift your arm. It will not come",
-      "status": "accepted",
+      "status": "superseded",
       "date": "2026-09-03",
-      "dialogue": [
-        {
-          "speaker": "COACH",
-          "line": "Before we start. Lift your right arm for me."
-        },
-        {
-          "speaker": "MANAN",
-          "line": "I'm trying."
-        },
-        {
-          "speaker": "COACH",
-          "line": "I know."
-        },
-        {
-          "speaker": "MANAN",
-          "line": "I can't. Why can't I move it?"
-        },
-        {
-          "speaker": "COACH",
-          "line": "Try now."
-        }
-      ]
+      "note": " RETIRED 4.9.2026. It has the little brain in it. The film became serious and a small smiling brain could not hold the scene where the argument lands, so Coach Brain is a person now. The room went with him: three trackballs instead of a hundred switches, a free standing hologram instead of panels on a wall, and one chair instead of two."
     },
     {
       "file": "BB_C_1/1-4-E-GLASS-v1.png",
@@ -3592,10 +3558,86 @@
       "status": "superseded",
       "date": "2026-09-04",
       "note": "An earlier version of 7-2, kept under the date it was made."
+    },
+    {
+      "file": "BB_C_19/19-1.png",
+      "kind": "keyframe",
+      "scene": "19",
+      "shot": "19.5",
+      "title": "His room",
+      "status": "accepted",
+      "date": "2026-09-04",
+      "note": "THE ROOM, AND HE IS IN IT. One chair, and he is sitting in it, on the LEFT of frame looking RIGHT, which is the screen direction this scene never crosses. The console is a colour grading surface rather than a cockpit: three big trackballs in dished rings with fluted wheels, a handful of large keys, and empty surface between them, all sized for a grown man. A wise man does not need hundreds of controls. Above it the display is a HOLOGRAM standing free in the air, no bezel and no housing, a body turning slowly in separated layers with readouts hanging beside it. That is the same body Manan has just ridden up, seen the way Coach Brain sees it.",
+      "dialogue": [
+        {
+          "speaker": "MANAN",
+          "line": "That was you. It was never my arm at all."
+        },
+        {
+          "speaker": "COACH",
+          "line": "It is always your arm. The permission is mine."
+        },
+        {
+          "speaker": "COACH",
+          "line": "Ah. There you are. I was expecting you."
+        },
+        {
+          "speaker": "COACH",
+          "line": "Before we start. Lift your right arm for me."
+        },
+        {
+          "speaker": "MANAN",
+          "line": "I'm trying."
+        },
+        {
+          "speaker": "COACH",
+          "line": "I know."
+        },
+        {
+          "speaker": "MANAN",
+          "line": "I can't. Why can't I move it?"
+        },
+        {
+          "speaker": "COACH",
+          "line": "Try now."
+        }
+      ]
+    },
+    {
+      "file": "BB_C_19/19-2.png",
+      "kind": "keyframe",
+      "scene": "19",
+      "shot": "19.6",
+      "title": "The console, and the hologram",
+      "status": "accepted",
+      "date": "2026-09-04",
+      "note": "CLOSE ON THE CONSOLE, and this is the frame the room was built from. His hands rest on two of the three trackballs, the cloak falls across the edge of the picture with its stars and ringed planets, and the hologram of the body stands in the air above the panel: skeleton, muscle and organs hanging slightly apart from one another, thin readouts floating free at different depths. Everything is made of light and nothing is framed. THE PANEL IS BIG AND ALMOST EMPTY, which says he is in command far better than a wall of switches ever did."
+    },
+    {
+      "file": "BB_C_19/19-CHARACTER.png",
+      "kind": "keyframe",
+      "scene": "19",
+      "shot": "19.98",
+      "title": "The character sheet",
+      "status": "accepted",
+      "date": "2026-09-04",
+      "note": "THE CHARACTER SHEET. Front, three quarter and profile, all at one height and one scale. The Little Prince grown up: late twenties, slight, not tall, an open face closer to a smile than to a smile, a thick mass of close curls, and the star cloak worn open over plain clothes. Reference, not a shot.",
+      "storyboard": "hide"
+    },
+    {
+      "file": "BB_C_19/19-PORTRAIT.png",
+      "kind": "keyframe",
+      "scene": "19",
+      "shot": "19.99",
+      "title": "The portrait",
+      "status": "accepted",
+      "date": "2026-09-04",
+      "note": "THE PORTRAIT, three quarter, hands open at his sides. Use this one for the face and the hair, and the sheet for the proportions. He is beautiful without being handsome and the beauty is in the openness. Nothing about him is stern and nothing is a wizard.",
+      "storyboard": "hide"
     }
   ],
   "event": "Breakthrough Junior Challenge 2026",
-  "site_version": 228,
+  "site_version": 229,
   "footage": [
     {
       "name": "Key catch",
@@ -6369,7 +6411,7 @@
       "url": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/guide/clip-9-0-WHITE-v1.mp3"
     },
     {
-      "anchor": "19-A1-ENTER-v1",
+      "anchor": "19-1",
       "label": "Coach Brain's room",
       "sec": 56.74,
       "voices": [
