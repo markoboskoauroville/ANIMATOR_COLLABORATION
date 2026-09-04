@@ -1277,7 +1277,7 @@ def bar(here, r):
          # and it was reachable only through the archive, two clicks behind a
          # page called Archive. That is the wrong place for the thing you would
          # hand somebody first.
-         '<a href="%sradiodrama.html"%s>RADIO DRAMA</a>'
+         '<a href="%sradiodrama.html"%s>MUSIC</a>'
          % (r, ' class=on' if here == 'drama' else ''),
          '<a href="%sarchive.html"%s>ARCHIVE</a>' % (r, ' class=on' if here == 'archive' else ''),
          '<span class=sp></span>',
@@ -1832,18 +1832,22 @@ for e in docs:
 # The film out loud, and the music it sits on. Its own page because the film page
 # is for looking and this page is for listening, and mixing the two made the one
 # that does the work twice as long to read.
-_rd = ['<h1>Radio drama, and the music</h1>',
-       '<p class=lede>The whole film told out loud in Croatian, and the two pieces written for it. '
-       '<b>In English and in Croatian, one file per scene.</b> Nine lines of the new '
-       'first scene are not yet recorded in Croatian, so they are here to read. '
-       'Everything can be downloaded.</p>',
-       drama_en_block(),
-       script_block(DRAMA_EN, DRAMA_EN_SCENES, 'scripten', 'THE WORDS, IN ENGLISH'),
-       drama_v7_block(),
-       script_block(DRAMA_V7, DRAMA_V7_SCENES, 'scripthr', 'RIJEČI, NA HRVATSKOM'),
+# THE DRAMA CAME OFF THIS PAGE. Baba, 4.9.2026: it described a film that no
+# longer exists. The house is vertical now, the corridor of organ rooms is gone
+# and Coach Brain is Viveka, and a recording of the old cut sitting under its own
+# tab is worse than no recording at all, because somebody will listen to it and
+# believe it. What the drama was for is done better on the film page anyway: the
+# guide cues stand in front of the frames they describe and carry the dialogue,
+# acted, so the words arrive next to the picture instead of on a page of their
+# own. This page is the music now, which is the one thing on it that was never
+# out of date.
+_rd = ['<h1>The music, written for the film</h1>',
+       '<p class=lede>The theme and the end credits, composed before the animation existed. '
+       '<b>The film told out loud now lives on the film page</b>, in front of the frames it '
+       'describes, so the words and the pictures arrive together.</p>',
        music_block(), DECK_JS]
 open(os.path.join(ROOT, 'radiodrama.html'), 'w').write(
-    page('Radio drama', ''.join(_rd), here='drama', depth=0))
+    page('The music', ''.join(_rd), here='drama', depth=0))
 
 # ---------------------------------------------------------------- dialogue page
 # The audio has its OWN page. Baba, 3.9.2026: Kristijan does not need to listen
@@ -1867,8 +1871,8 @@ if True:
     # stopped competing with the one page anybody came for. Nothing is deleted,
     # because a page that is hard to find can be found and a page that is gone
     # cannot.
-    _other = [('radiodrama.html', 'Radio drama, and the music',
-               'The whole film told out loud, and the theme and credits songs'),
+    _other = [('radiodrama.html', 'The music, written for the film',
+               'The theme and the end credits, composed before the animation'),
               ('dialogue.html', 'Dialogue and takes',
                'Every line read aloud, and Manan\u2019s own takes, with the zips'),
               ('footage.html', 'Footage', 'Every live shot, its plate and its ProRes'),
