@@ -1344,20 +1344,20 @@
     "url": "https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIGINALS/main/BB_C_7/7-DOORSHEET-20260904.png"
   },
   "7-1.png": {
-    "bytes": 6698489,
-    "sha256": "8db59ec2a23ae3376d1d65c535cf4ff1aa45359ea1f51e392bbe2f023a03f79a",
+    "bytes": 7023941,
+    "sha256": "20a47c32e1ebffb613d7dd5a2bb65b2c6db88efbac96de991ba61b218cb65e00",
     "path": "BB_C_7/7-1.png",
     "url": "https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIGINALS/main/BB_C_7/7-1.png"
   },
   "7-2.png": {
-    "bytes": 4957578,
-    "sha256": "1b032f301f823e7e522e5a3a115a482ab4f007bf0135297a7fafab26de7d8cd6",
+    "bytes": 5140017,
+    "sha256": "2835c7bfdbff8cc8e2491738170aadddce3fd43a48ddc56017330c235996f2b6",
     "path": "BB_C_7/7-2.png",
     "url": "https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIGINALS/main/BB_C_7/7-2.png"
   },
   "7-3.png": {
-    "bytes": 6239148,
-    "sha256": "1c2a0f3ef103ec730cb040a3f132e49dace7830f6445caaaa2d4445c15291e63",
+    "bytes": 5852600,
+    "sha256": "257c854da33e55bc8a1d2f167adca5357a959aea01a27950aa1957280d6b3cc1",
     "path": "BB_C_7/7-3.png",
     "url": "https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIGINALS/main/BB_C_7/7-3.png"
   },
@@ -1384,5 +1384,23 @@
     "sha256": "ef93f608418c5d278af0a07eabb04ae3794118d23bd261c5fb71850978536d60",
     "path": "BB_C_7/7-5-PLATE.png",
     "url": "https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIGINALS/main/BB_C_7/7-5-PLATE.png"
+  },
+  "7-1-20260904b.png": {
+    "bytes": 6698489,
+    "sha256": "8db59ec2a23ae3376d1d65c535cf4ff1aa45359ea1f51e392bbe2f023a03f79a",
+    "path": "BB_C_7/7-1-20260904b.png",
+    "url": "https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIGINALS/main/BB_C_7/7-1-20260904b.png"
+  },
+  "7-2-20260904b.png": {
+    "bytes": 4957578,
+    "sha256": "1b032f301f823e7e522e5a3a115a482ab4f007bf0135297a7fafab26de7d8cd6",
+    "path": "BB_C_7/7-2-20260904b.png",
+    "url": "https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIGINALS/main/BB_C_7/7-2-20260904b.png"
+  },
+  "7-3-20260904b.png": {
+    "bytes": 6239148,
+    "sha256": "1c2a0f3ef103ec730cb040a3f132e49dace7830f6445caaaa2d4445c15291e63",
+    "path": "BB_C_7/7-3-20260904b.png",
+    "url": "https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIGINALS/main/BB_C_7/7-3-20260904b.png"
   }
 }
