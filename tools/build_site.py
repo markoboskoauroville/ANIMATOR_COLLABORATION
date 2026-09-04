@@ -798,6 +798,7 @@ DRAMA = CAT.get('radio_drama', [])
 DRAMA_HR = CAT.get('radio_drama_hr', [])
 DRAMA_V3 = CAT.get('radio_drama_v3', [])
 DRAMA_V7 = CAT.get('radio_drama_v7', [])
+DRAMA_V7_SCENES = CAT.get('radio_drama_v7_scenes', [])
 MUSIC = CAT.get('music', [])
 TAKES = CAT.get('manan_takes', {})
 COACH = CAT.get('coach_takes', {})
@@ -1032,32 +1033,42 @@ def drama_v3_block(depth=0):
 
 
 def drama_v7_block(depth=0):
-    """The drama with scene one retold for the grid as it now stands.
+    """The film out loud, ONE FILE PER SCENE.
 
-    Baba, 3.9.2026. v6 stays exactly where it is and is not edited, because its
-    scene one describes a cut that no longer exists AND every line of it has a
-    recorded take attached. Editing the text in place would have left Gabrijela
-    saying one thing while the page said another, which is worse than being out
-    of date.
+    Baba, 3.9.2026, two corrections in one.
 
-    So the first twenty four lines here are new and have no take yet. They still
-    render, as text, because Kristijan needs to read the scene he is animating
-    today rather than the one that was recorded last week. Everything from the
-    bicycle onward is carried over word for word and keeps its audio, so more
-    than two thirds of the deck still plays.
+    IT MUST START AT THE BEGINNING. The first cut of v7 rewrote the whole of
+    scene one, so all twenty four opening lines lost their takes and the deck
+    began playing at part twenty five. Most of those lines had not actually
+    changed. v7 is now built by walking v6 line by line, keeping the ones that
+    still describe the cut in v6's own words so the recording still fits, and
+    writing new text only where a beat did not exist before. Three lines were
+    dropped because the new cut made them untrue: the world rubbing up out of
+    the paper in order, the freeze mid stride, and the inspection of legs then
+    face then banner.
+
+    AND NOT BY THE PARAGRAPH. Seventy seven parts is a filing system, not a
+    thing to listen to. The parts are stitched into one file per scene, ten of
+    them, and the text of each scene sits above its file so it can be read
+    while it plays. Nine lines in scene one are written and not yet recorded;
+    they show as text and the stitched file simply does not contain them.
     """
-    if not DRAMA_V7:
+    if not DRAMA_V7_SCENES:
         return ''
-    rows, silent = [], 0
-    for x in DRAMA_V7:
-        rows.append(('line', x['speaker'] + '   ' + x['text'][:110], '', 0))
-        if x.get('audio'):
-            rows.append(('take', '%02d %s' % (x['n'], x['speaker']), x['audio'], x['sec']))
-        else:
-            silent += 1
-    return deck_block('dramav7', 'THE BRAIN BRAKE, NOVA PRVA SCENA',
-                      '%d dijelova, %d snimljenih, oko sest minuta. Prvih %d, nova prva scena, '
-                      'jos ceka Gabrijelu.' % (len(DRAMA_V7), len(DRAMA_V7) - silent, silent),
+    silent = sum(1 for x in DRAMA_V7 if not x.get('audio'))
+    rows = []
+    for i, sc in enumerate(DRAMA_V7_SCENES, 1):
+        rows.append(('head', '%d.  %s' % (i, sc['title']), '', 0))
+        for x in DRAMA_V7:
+            if x.get('scene') == sc['id']:
+                mark = '' if x.get('audio') else '   [još nije snimljeno]'
+                rows.append(('line', x['speaker'] + '   ' + x['text'][:110] + mark, '', 0))
+        rows.append(('take', '%02d %s' % (i, sc['title']), sc['url'], sc['sec']))
+    total = sum(sc['sec'] for sc in DRAMA_V7_SCENES)
+    return deck_block('dramav7', 'THE BRAIN BRAKE, CIJELI FILM',
+                      '%d scena, %d minuta %d sekundi. Jedna datoteka po sceni. '
+                      'Još %d rečenica u prvoj sceni čeka Gabrijelu.'
+                      % (len(DRAMA_V7_SCENES), int(total) // 60, int(total) % 60, silent),
                       rows, 'downloads/BRAIN_BRAKE_radio_drama_HR_v7.zip', depth)
 
 
@@ -1735,9 +1746,9 @@ for e in docs:
 # that does the work twice as long to read.
 _rd = ['<h1>Radio drama, and the music</h1>',
        '<p class=lede>The whole film told out loud in Croatian, and the two pieces written for it. '
-       '<b>Listening instead of reading.</b> The new first scene is written and not yet '
-       'recorded, so it is here to read while the rest of it plays. Everything can be '
-       'downloaded: the drama as numbered parts, the music as it was composed.</p>',
+       '<b>One file per scene, not one per sentence.</b> Nine lines of the new first '
+       'scene are written and not yet recorded, so they are here to read. Everything can '
+       'be downloaded: the drama as ten scenes, the music as it was composed.</p>',
        drama_v7_block(), music_block(), DECK_JS]
 open(os.path.join(ROOT, 'radiodrama.html'), 'w').write(
     page('Radio drama', ''.join(_rd), here='drama', depth=0))

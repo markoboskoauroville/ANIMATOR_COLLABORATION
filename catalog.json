@@ -3176,7 +3176,7 @@
     }
   ],
   "event": "Breakthrough Junior Challenge 2026",
-  "site_version": 209,
+  "site_version": 210,
   "footage": [
     {
       "name": "Key catch",
@@ -4409,541 +4409,778 @@
     {
       "n": 1,
       "speaker": "NARATOR",
-      "text": "Duga cesta među stablima. Netko je na njoj, daleko, i već je dolje.",
-      "audio": "",
-      "sec": 0
+      "text": "Maratonac trči. Duga cesta, ravnomjeran korak, čovjek koji ovo radi cijeli život.",
+      "audio": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/drama_v6/01-NARATOR-4fc916.mp3",
+      "sec": 7.54,
+      "scene": "the-road",
+      "from_v6": 1
     },
     {
       "n": 2,
       "speaker": "NARATOR",
-      "text": "Njegove noge, izbliza. Klize po šljunku. Ovo nije korak, ovo je pad koji još traje.",
-      "audio": "",
-      "sec": 0
+      "text": "I onda ga gledamo kako se raspada.",
+      "audio": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/drama_v6/03-NARATOR-194017.mp3",
+      "sec": 3.02,
+      "scene": "the-road",
+      "from_v6": 3
     },
     {
       "n": 3,
       "speaker": "NARATOR",
-      "text": "I onda cijeli čovjek. Maratonac, na cesti, jer ga noge više ne drže.",
-      "audio": "",
-      "sec": 0
+      "text": "Korak mu se lomi. Ramena padaju. Glava mu visi. Noge više ne slušaju kako treba, i svaki sljedeći korak izgleda kao da bi mogao biti zadnji. Posrće. Pada. Diže se, i trči dalje, ali to više nije trčanje, to je čovjek koji se odbija zaustaviti.",
+      "audio": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/drama_v6/04-NARATOR-6ce995.mp3",
+      "sec": 21.82,
+      "scene": "the-road",
+      "from_v6": 4
     },
     {
       "n": 4,
       "speaker": "NARATOR",
-      "text": "Lice mu je prazno. Nema više ništa u njemu, i svatko tko ovo gleda zna kako to izgleda kad je gotovo.",
-      "audio": "",
-      "sec": 0
+      "text": "Prazan je. Nema više ništa u njemu. Svatko tko ovo gleda zna kako to izgleda kad je gotovo.",
+      "audio": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/drama_v6/05-NARATOR-2b74c8.mp3",
+      "sec": 8.3,
+      "scene": "the-road",
+      "from_v6": 5
     },
     {
       "n": 5,
       "speaker": "NARATOR",
-      "text": "A onda podigne glavu. Nešto je vidio.",
-      "audio": "",
-      "sec": 0
+      "text": "A onda, na kraju ceste, nešto se pojavi.",
+      "audio": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/drama_v6/06-NARATOR-278521.mp3",
+      "sec": 4.08,
+      "scene": "the-road",
+      "from_v6": 6
     },
     {
       "n": 6,
       "speaker": "NARATOR",
-      "text": "I nasmiješi se.",
-      "audio": "",
-      "sec": 0
+      "text": "I on ga vidi.",
+      "audio": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/drama_v6/08-NARATOR-9f18ff.mp3",
+      "sec": 1.94,
+      "scene": "the-road",
+      "from_v6": 8
     },
     {
       "n": 7,
       "speaker": "NARATOR",
       "text": "Traka. Natpis preko ceste. Cilj.",
-      "audio": "",
-      "sec": 0
+      "audio": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/drama_v6/07-NARATOR-448615.mp3",
+      "sec": 5.23,
+      "scene": "the-road",
+      "from_v6": 7
     },
     {
       "n": 8,
       "speaker": "NARATOR",
-      "text": "I čovjek koji sekundu prije nije imao ništa, trči.",
-      "audio": "",
-      "sec": 0
+      "text": "I čovjek koji prije pet sekundi nije imao ništa, sada sprinta. Glava gore, ramena natrag, korak kratak i brz. Sprinta prema traci brže nego što je trčao cijelu utrku.",
+      "audio": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/drama_v6/15-NARATOR-f0a1bc.mp3",
+      "sec": 13.66,
+      "scene": "the-road",
+      "from_v6": 15
     },
     {
       "n": 9,
       "speaker": "NARATOR",
       "text": "Trči, i istrči van kadra.",
       "audio": "",
-      "sec": 0
+      "sec": 0,
+      "scene": "the-road"
     },
     {
       "n": 10,
       "speaker": "NARATOR",
       "text": "Ostane prazan papir.",
       "audio": "",
-      "sec": 0
+      "sec": 0,
+      "scene": "the-road"
     },
     {
       "n": 11,
       "speaker": "NARATOR",
       "text": "Onda se na taj prazan papir vrati prizor od maloprije. Čovjek dolje na cesti, zaustavljen, kao fotografija koju je netko stavio pred nas da je pogledamo.",
       "audio": "",
-      "sec": 0
+      "sec": 0,
+      "scene": "the-road"
     },
     {
       "n": 12,
       "speaker": "NARATOR",
-      "text": "I u taj zaustavljeni kadar ušeta dječak. Manan. S povećalom u ruci, kao netko tko je upravo ušao na mjesto zločina.",
-      "audio": "",
-      "sec": 0
+      "text": "A u taj zaleđeni kadar ušeta dječak.",
+      "audio": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/drama_v6/18-NARATOR-0edbe9.mp3",
+      "sec": 3.46,
+      "scene": "the-road",
+      "from_v6": 18
     },
     {
       "n": 13,
       "speaker": "NARATOR",
-      "text": "Okrene se prema nama, da vidimo što će raditi.",
+      "text": "Manan. S povećalom u ruci, kao netko tko je upravo ušao na mjesto zločina. Okrene se prema nama, da vidimo što će raditi.",
       "audio": "",
-      "sec": 0
+      "sec": 0,
+      "scene": "the-road"
     },
     {
       "n": 14,
       "speaker": "NARATOR",
-      "text": "Pa stavi povećalo na lice. Prvo na ono prazno lice s početka. Oko poluzatvoreno pod teškom obrvom, usta otvorena, crte urezane duboko. Čovjek kojemu je gotovo.",
+      "text": "Pa stavi povećalo na lice. Prvo na ono prazno lice s početka. Oko poluzatvoreno pod teškom obrvom, usta otvorena, crte urezane duboko.",
       "audio": "",
-      "sec": 0
+      "sec": 0,
+      "scene": "the-road"
     },
     {
       "n": 15,
       "speaker": "NARATOR",
       "text": "Pa na lice iz trenutka kad je nešto vidio. Glava gore, oko širom otvoreno, obrve skupljene.",
       "audio": "",
-      "sec": 0
+      "sec": 0,
+      "scene": "the-road"
     },
     {
       "n": 16,
       "speaker": "NARATOR",
       "text": "Pa na lice poslije toga. Oko mirno, crte omekšale, osmijeh u kutu usana.",
       "audio": "",
-      "sec": 0
+      "sec": 0,
+      "scene": "the-road"
     },
     {
       "n": 17,
       "speaker": "NARATOR",
       "text": "Tri lica istog čovjeka, u razmaku od nekoliko sekundi. Nitko mu ništa nije dao između njih.",
       "audio": "",
-      "sec": 0
+      "sec": 0,
+      "scene": "the-road"
     },
     {
       "n": 18,
       "speaker": "NARATOR",
-      "text": "Onda povećalo siđe na list noge. Na mišić.",
-      "audio": "",
-      "sec": 0
+      "text": "A onda se dogodi ono što je srce ovog filma. Trenutak u kojem se nešto otpusti.",
+      "audio": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/drama_v6/09-NARATOR-d46701.mp3",
+      "sec": 6.65,
+      "scene": "the-road",
+      "from_v6": 9
     },
     {
       "n": 19,
       "speaker": "NARATOR",
-      "text": "I mišić se upali.",
-      "audio": "",
-      "sec": 0
+      "text": "Kamera ulazi u njega. Koža postaje prozirna, kao da je papir kroz koji se vidi, i pod njom se ukaže cijela građa: mišići, vlakna, tetive, sve isprepleteno i sve umorno. Mrtvo. Sivo.",
+      "audio": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/drama_v6/10-NARATOR-688428.mp3",
+      "sec": 16.34,
+      "scene": "the-road",
+      "from_v6": 10
     },
     {
       "n": 20,
       "speaker": "NARATOR",
-      "text": "Prvo jedno vlakno, kao žica koja je dobila struju. Pa cijeli list. Pa bedro. Svjetlo putuje kroz njega, mišić po mišić, kao da negdje netko jedan po jedan pušta prekidače.",
-      "audio": "",
-      "sec": 0
+      "text": "I onda se upali.",
+      "audio": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/drama_v6/11-NARATOR-14417b.mp3",
+      "sec": 2.04,
+      "scene": "the-road",
+      "from_v6": 11
     },
     {
       "n": 21,
       "speaker": "NARATOR",
-      "text": "Ono što je sekundu prije bilo sivo, sada gori.",
-      "audio": "",
-      "sec": 0
+      "text": "Prvo jedan mišić u listu, kao žica koja je dobila struju. Pa drugi, iznad njega. Pa cijelo bedro. Svjetlo putuje kroz njegovo tijelo, od stopala prema gore, mišić po mišić, kao da negdje netko jedan po jedan pušta prekidače. Ono što je sekundu prije bilo sivo, sada gori.",
+      "audio": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/drama_v6/12-NARATOR-4601bd.mp3",
+      "sec": 21.6,
+      "scene": "the-road",
+      "from_v6": 12
     },
     {
       "n": 22,
       "speaker": "NARATOR",
-      "text": "Koža se vrati. Svjetlo ostane ispod nje.",
-      "audio": "",
-      "sec": 0
+      "text": "Nije to novo gorivo. Nije mu nitko ništa dao. To je bilo tu cijelo vrijeme, samo zatvoreno, i netko je upravo odlučio otvoriti.",
+      "audio": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/drama_v6/13-NARATOR-3cc6c0.mp3",
+      "sec": 10.54,
+      "scene": "the-road",
+      "from_v6": 13
     },
     {
       "n": 23,
       "speaker": "NARATOR",
-      "text": "I čovjek otrči van kadra.",
-      "audio": "",
-      "sec": 0
+      "text": "Koža se vraća. Svjetlo ostaje ispod nje.",
+      "audio": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/drama_v6/14-NARATOR-fa9cb1.mp3",
+      "sec": 4.68,
+      "scene": "the-road",
+      "from_v6": 14
     },
     {
       "n": 24,
       "speaker": "NARATOR",
-      "text": "I opet ostane prazan papir.",
+      "text": "I čovjek otrči van kadra. Ostane prazan papir, kao i prvi put.",
       "audio": "",
-      "sec": 0
+      "sec": 0,
+      "scene": "the-road"
     },
     {
       "n": 25,
       "speaker": "NARATOR",
       "text": "Odakle mu to? Spremnik je bio prazan. Vidjeli smo da je bio prazan.",
       "audio": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/drama_v6/16-NARATOR-503ec6.mp3",
-      "sec": 6.82
+      "sec": 6.82,
+      "scene": "the-road",
+      "from_v6": 16
     },
     {
       "n": 26,
       "speaker": "NARATOR",
       "text": "Ako je gorivo bilo potrošeno, odakle sprint? A ako sprint postoji, onda gorivo nije bilo potrošeno. Netko je lagao.",
       "audio": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/drama_v6/20-NARATOR-c91554.mp3",
-      "sec": 10.42
+      "sec": 10.42,
+      "scene": "the-road",
+      "from_v6": 20
     },
     {
       "n": 27,
       "speaker": "NARATOR",
       "text": "Ovdje film dobiva svoju temu. Nije riječ o čovjeku koji trči, nego o dječaku koji želi znati zašto čovjek stane, i zašto odjednom prestane stajati.",
       "audio": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/drama_v6/21-NARATOR-aa1085.mp3",
-      "sec": 11.28
+      "sec": 11.28,
+      "scene": "the-road",
+      "from_v6": 21
     },
     {
       "n": 28,
       "speaker": "NARATOR",
       "text": "Radoznalost postaje pokus. Izvodi bicikl na ulicu i sam gura granicu, jer pitanje na kojem možeš voziti bolje je od pitanja koje možeš samo čitati.",
       "audio": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/drama_v6/22-NARATOR-0e51e4.mp3",
-      "sec": 10.51
+      "sec": 10.51,
+      "scene": "the-bicycle",
+      "from_v6": 22
     },
     {
       "n": 29,
       "speaker": "NARATOR",
       "text": "Onda u sobi, na trenažeru, s vlastitom ranijom vožnjom koja se vrti na laptopu pred njim. Utrkuje se sam sa sobom. Nema protivnika, nema sata, nitko ne gleda. Jedino što pokušava pobijediti jest ono što je njegovo vlastito tijelo napravilo prije sat vremena. Gura dok se ne sruši.",
       "audio": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/drama_v6/23-NARATOR-ab79bd.mp3",
-      "sec": 21.77
+      "sec": 21.77,
+      "scene": "the-trainer",
+      "from_v6": 23
     },
     {
       "n": 30,
       "speaker": "NARATOR",
       "text": "Zatvara oči.",
       "audio": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/drama_v6/24-NARATOR-30a5dd.mp3",
-      "sec": 2.02
+      "sec": 2.02,
+      "scene": "the-trance",
+      "from_v6": 24
     },
     {
       "n": 31,
       "speaker": "NARATOR",
       "text": "Od tog trenutka film mijenja svoja pravila i više ih ne vraća. Prije su stvari dolazile k njemu. Sada ništa ne dolazi, nego se mi krećemo. Svaka promjena mjesta je prolazak kroz površinu, i u filmu više nema nijednog reza. Ulijećemo mu u glavu dok se oči zatvaraju, kroz bijelo, i vrtlog ga podiže prema gore, izvan svijeta.",
       "audio": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/drama_v6/25-NARATOR-ea5166.mp3",
-      "sec": 24.77
+      "sec": 24.77,
+      "scene": "the-passage",
+      "from_v6": 25
     },
     {
       "n": 32,
       "speaker": "NARATOR",
       "text": "Stiže pred vrata koja već svijetle, i biva uvučen kroz njih umjesto da ušeta. Odmičemo se, i kuća se sklapa oko nas, a dok vidimo cijelu zgradu vrata su već zatvorena. To je kuća sagrađena od njegova vlastitog tijela.",
       "audio": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/drama_v6/26-NARATOR-7f2fcb.mp3",
-      "sec": 16.42
+      "sec": 16.42,
+      "scene": "the-passage",
+      "from_v6": 26
     },
     {
       "n": 33,
       "speaker": "NARATOR",
       "text": "Letimo njezinim hodnicima. Vrata nemaju imena na sebi. Imaju oblike utisnute u glinu: mišić, pluća, srce. Zaviruje u svaku sobu, i ni u jednoj nema ničega za njega.",
       "audio": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/drama_v6/27-NARATOR-543a75.mp3",
-      "sec": 15.65
+      "sec": 15.65,
+      "scene": "the-house",
+      "from_v6": 27
     },
     {
       "n": 34,
       "speaker": "NARATOR",
       "text": "Onda vrata s ključem na sebi. I ulazi.",
       "audio": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/drama_v6/28-NARATOR-7c360f.mp3",
-      "sec": 4.49
+      "sec": 4.49,
+      "scene": "the-house",
+      "from_v6": 28
     },
     {
       "n": 35,
       "speaker": "NARATOR",
       "text": "Unutra, mali mozak u stolici pred zidom punim brojčanika. I on ga je čekao.",
       "audio": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/drama_v6/29-NARATOR-6fe3c0.mp3",
-      "sec": 7.08
+      "sec": 7.08,
+      "scene": "coach-brains-room",
+      "from_v6": 29
     },
     {
       "n": 36,
       "speaker": "NARATOR",
       "text": "Coach Brain kaže.",
       "audio": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/drama_v6/30-NARATOR-5b54ac.mp3",
-      "sec": 2.16
+      "sec": 2.16,
+      "scene": "coach-brains-room",
+      "from_v6": 30
     },
     {
       "n": 37,
       "speaker": "COACH BRAIN",
       "text": "Ah. Tu si. Očekivao sam te.",
       "audio": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/drama_v6/31-COACH-1486d4.mp3",
-      "sec": 5.38
+      "sec": 5.38,
+      "scene": "coach-brains-room",
+      "from_v6": 31
     },
     {
       "n": 38,
       "speaker": "NARATOR",
       "text": "Coach Brain kaže.",
       "audio": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/drama_v6/32-NARATOR-5b54ac.mp3",
-      "sec": 2.16
+      "sec": 2.16,
+      "scene": "coach-brains-room",
+      "from_v6": 32
     },
     {
       "n": 39,
       "speaker": "COACH BRAIN",
       "text": "Prije nego počnemo. Podigni mi desnu ruku.",
       "audio": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/drama_v6/33-COACH-a833a3.mp3",
-      "sec": 4.87
+      "sec": 4.87,
+      "scene": "coach-brains-room",
+      "from_v6": 33
     },
     {
       "n": 40,
       "speaker": "NARATOR",
       "text": "Manan kaže.",
       "audio": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/drama_v6/34-NARATOR-b80f0b.mp3",
-      "sec": 1.92
+      "sec": 1.92,
+      "scene": "coach-brains-room",
+      "from_v6": 34
     },
     {
       "n": 41,
       "speaker": "MANAN",
       "text": "Pokušavam.",
       "audio": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/drama_v6/35-MANAN-2c9ac5.mp3",
-      "sec": 1.56
+      "sec": 1.56,
+      "scene": "coach-brains-room",
+      "from_v6": 35
     },
     {
       "n": 42,
       "speaker": "NARATOR",
       "text": "Coach Brain kaže.",
       "audio": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/drama_v6/36-NARATOR-5b54ac.mp3",
-      "sec": 2.16
+      "sec": 2.16,
+      "scene": "coach-brains-room",
+      "from_v6": 36
     },
     {
       "n": 43,
       "speaker": "COACH BRAIN",
       "text": "Znam.",
       "audio": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/drama_v6/37-COACH-6a9ccd.mp3",
-      "sec": 1.61
+      "sec": 1.61,
+      "scene": "coach-brains-room",
+      "from_v6": 37
     },
     {
       "n": 44,
       "speaker": "NARATOR",
       "text": "Manan kaže.",
       "audio": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/drama_v6/38-NARATOR-b80f0b.mp3",
-      "sec": 1.92
+      "sec": 1.92,
+      "scene": "coach-brains-room",
+      "from_v6": 38
     },
     {
       "n": 45,
       "speaker": "MANAN",
       "text": "Ne mogu. Zašto je ne mogu pomaknuti?",
       "audio": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/drama_v6/39-MANAN-b1f319.mp3",
-      "sec": 3.74
+      "sec": 3.74,
+      "scene": "coach-brains-room",
+      "from_v6": 39
     },
     {
       "n": 46,
       "speaker": "NARATOR",
       "text": "Coach Brain kaže.",
       "audio": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/drama_v6/40-NARATOR-5b54ac.mp3",
-      "sec": 2.16
+      "sec": 2.16,
+      "scene": "coach-brains-room",
+      "from_v6": 40
     },
     {
       "n": 47,
       "speaker": "COACH BRAIN",
       "text": "Probaj sada.",
       "audio": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/drama_v6/41-COACH-2a12fb.mp3",
-      "sec": 2.02
+      "sec": 2.02,
+      "scene": "coach-brains-room",
+      "from_v6": 41
     },
     {
       "n": 48,
       "speaker": "NARATOR",
       "text": "Manan kaže.",
       "audio": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/drama_v6/42-NARATOR-b80f0b.mp3",
-      "sec": 1.92
+      "sec": 1.92,
+      "scene": "coach-brains-room",
+      "from_v6": 42
     },
     {
       "n": 49,
       "speaker": "MANAN",
       "text": "To si bio ti. Nikada to nije ni bila moja ruka.",
       "audio": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/drama_v6/43-MANAN-fadc2c.mp3",
-      "sec": 4.32
+      "sec": 4.32,
+      "scene": "coach-brains-room",
+      "from_v6": 43
     },
     {
       "n": 50,
       "speaker": "NARATOR",
       "text": "Coach Brain kaže.",
       "audio": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/drama_v6/44-NARATOR-5b54ac.mp3",
-      "sec": 2.16
+      "sec": 2.16,
+      "scene": "coach-brains-room",
+      "from_v6": 44
     },
     {
       "n": 51,
       "speaker": "COACH BRAIN",
       "text": "Ruka je uvijek tvoja. Dopuštenje je moje.",
       "audio": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/drama_v6/45-COACH-3d44bb.mp3",
-      "sec": 4.85
+      "sec": 4.85,
+      "scene": "coach-brains-room",
+      "from_v6": 45
     },
     {
       "n": 52,
       "speaker": "NARATOR",
       "text": "Onda njih dvojica to iznose na ploče. Nijedna ploča ne dolazi gotova. Manan bijelom kredom piše ono što su ga učili, redak po redak. Stara teorija.",
       "audio": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/drama_v6/46-NARATOR-a52693.mp3",
-      "sec": 12.82
+      "sec": 12.82,
+      "scene": "the-boards",
+      "from_v6": 46
     },
     {
       "n": 53,
       "speaker": "NARATOR",
       "text": "Manan kaže.",
       "audio": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/drama_v6/47-NARATOR-b80f0b.mp3",
-      "sec": 1.92
+      "sec": 1.92,
+      "scene": "the-boards",
+      "from_v6": 47
     },
     {
       "n": 54,
       "speaker": "MANAN",
       "text": "Tisuću devetsto dvadeset treća. Hill stavlja trkače na traku i mjeri sve što rade. Njegov odgovor je jednostavan. Umor je u mišiću.",
       "audio": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/drama_v6/48-MANAN-65dcde.mp3",
-      "sec": 10.15
+      "sec": 10.15,
+      "scene": "the-boards",
+      "from_v6": 48
     },
     {
       "n": 55,
       "speaker": "NARATOR",
       "text": "Manan kaže.",
       "audio": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/drama_v6/49-NARATOR-b80f0b.mp3",
-      "sec": 1.92
+      "sec": 1.92,
+      "scene": "the-boards",
+      "from_v6": 49
     },
     {
       "n": 56,
       "speaker": "MANAN",
       "text": "Trčiš. Mišić troši svoj kisik. Gorivo se potroši. I kad spremnik pokaže prazno, tijelo stane.",
       "audio": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/drama_v6/50-MANAN-01f372.mp3",
-      "sec": 8.69
+      "sec": 8.69,
+      "scene": "the-boards",
+      "from_v6": 50
     },
     {
       "n": 57,
       "speaker": "NARATOR",
       "text": "Coach Brain odgovara na bijeloj ploči crnim markerom. Isti raspored, ista tri retka, isti mjerač, i svaka vrijednost obrnuta.",
       "audio": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/drama_v6/51-NARATOR-f77a87.mp3",
-      "sec": 10.13
+      "sec": 10.13,
+      "scene": "the-boards",
+      "from_v6": 51
     },
     {
       "n": 58,
       "speaker": "NARATOR",
       "text": "Coach Brain kaže.",
       "audio": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/drama_v6/52-NARATOR-5b54ac.mp3",
-      "sec": 2.16
+      "sec": 2.16,
+      "scene": "the-boards",
+      "from_v6": 52
     },
     {
       "n": 59,
       "speaker": "COACH BRAIN",
       "text": "Puls, dah, temperatura, voda, udaljenost. Čitam sve to, cijelo vrijeme. I postavljam jedno pitanje: možemo li nastaviti sigurno?",
       "audio": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/drama_v6/53-COACH-73fcb2.mp3",
-      "sec": 11.16
+      "sec": 11.16,
+      "scene": "the-boards",
+      "from_v6": 53
     },
     {
       "n": 60,
       "speaker": "NARATOR",
       "text": "Coach Brain kaže.",
       "audio": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/drama_v6/54-NARATOR-5b54ac.mp3",
-      "sec": 2.16
+      "sec": 2.16,
+      "scene": "the-boards",
+      "from_v6": 54
     },
     {
       "n": 61,
       "speaker": "COACH BRAIN",
       "text": "Kad odgovor počne izgledati kao ne, usporim te. Dakle ne. Umor je u mozgu, a ne u tvojim nogama. Ovdje gore. I odlučuje mnogo prije nego što je išta stvarno u opasnosti.",
       "audio": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/drama_v6/55-COACH-6dcd68.mp3",
-      "sec": 15.7
+      "sec": 15.7,
+      "scene": "the-boards",
+      "from_v6": 55
     },
     {
       "n": 62,
       "speaker": "NARATOR",
       "text": "Coach Brain kaže.",
       "audio": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/drama_v6/56-NARATOR-5b54ac.mp3",
-      "sec": 2.16
+      "sec": 2.16,
+      "scene": "the-boards",
+      "from_v6": 56
     },
     {
       "n": 63,
       "speaker": "COACH BRAIN",
       "text": "Kad te ja zaustavim, gorivo je još uvijek tu.",
       "audio": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/drama_v6/57-COACH-564d5e.mp3",
-      "sec": 3.6
+      "sec": 3.6,
+      "scene": "the-boards",
+      "from_v6": 57
     },
     {
       "n": 64,
       "speaker": "NARATOR",
       "text": "Manan kaže.",
       "audio": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/drama_v6/58-NARATOR-b80f0b.mp3",
-      "sec": 1.92
+      "sec": 1.92,
+      "scene": "the-boards",
+      "from_v6": 58
     },
     {
       "n": 65,
       "speaker": "MANAN",
       "text": "Znači zid...",
       "audio": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/drama_v6/59-MANAN-e42914.mp3",
-      "sec": 1.73
+      "sec": 1.73,
+      "scene": "the-boards",
+      "from_v6": 59
     },
     {
       "n": 66,
       "speaker": "NARATOR",
       "text": "Coach Brain kaže.",
       "audio": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/drama_v6/60-NARATOR-5b54ac.mp3",
-      "sec": 2.16
+      "sec": 2.16,
+      "scene": "the-boards",
+      "from_v6": 60
     },
     {
       "n": 67,
       "speaker": "COACH BRAIN",
       "text": "Je broj koji sam ja odabrao. Pažljivo. Da te održim na životu.",
       "audio": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/drama_v6/61-COACH-0c90a8.mp3",
-      "sec": 7.37
+      "sec": 7.37,
+      "scene": "the-boards",
+      "from_v6": 61
     },
     {
       "n": 68,
       "speaker": "NARATOR",
       "text": "Manan kaže.",
       "audio": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/drama_v6/62-NARATOR-b80f0b.mp3",
-      "sec": 1.92
+      "sec": 1.92,
+      "scene": "the-boards",
+      "from_v6": 62
     },
     {
       "n": 69,
       "speaker": "MANAN",
       "text": "Onda to može biti i drugi broj.",
       "audio": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/drama_v6/63-MANAN-d14a1c.mp3",
-      "sec": 2.59
+      "sec": 2.59,
+      "scene": "the-boards",
+      "from_v6": 63
     },
     {
       "n": 70,
       "speaker": "NARATOR",
       "text": "Dolaze do zaključka zajedno. Onda ga vrtlog nosi natrag dolje, i ključ pada s njim.",
       "audio": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/drama_v6/64-NARATOR-130cae.mp3",
-      "sec": 7.1
+      "sec": 7.1,
+      "scene": "the-fall",
+      "from_v6": 64
     },
     {
       "n": 71,
       "speaker": "NARATOR",
       "text": "Coach Brain ga pušta, i on pada kroz prazan kadar. Okreće se i raste dok dolazi, a iza njega se cijeli film vrti unatrag, tako blijedo da ga gotovo nema. Ploče, soba, kuća, i drvored dok slijeće. Sjećanja su razvučena u smjeru pada jer prolaze brzinom, ali još uvijek možeš razabrati što je svako od njih ako pogledaš. Ključ ostaje oštar, jer kamera pada s njim, i ta razlika je ono što čini da pad djeluje brzo.",
       "audio": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/drama_v6/65-NARATOR-88eae1.mp3",
-      "sec": 30.7
+      "sec": 30.7,
+      "scene": "the-fall",
+      "from_v6": 65
     },
     {
       "n": 72,
       "speaker": "NARATOR",
       "text": "Na putu prema dolje prelazi iz crteža olovkom u fotografiju, i nijedan pojedini kadar nije trenutak u kojem postaje stvaran.",
       "audio": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/drama_v6/66-NARATOR-041840.mp3",
-      "sec": 8.04
+      "sec": 8.04,
+      "scene": "the-fall",
+      "from_v6": 66
     },
     {
       "n": 73,
       "speaker": "NARATOR",
       "text": "Manan ga hvata na dnu.",
       "audio": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/drama_v6/67-NARATOR-a3e694.mp3",
-      "sec": 2.45
+      "sec": 2.45,
+      "scene": "the-fall",
+      "from_v6": 67
     },
     {
       "n": 74,
       "speaker": "NARATOR",
       "text": "Odjavna špica, od kartice do kartice, kroz oblake.",
       "audio": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/drama_v6/68-NARATOR-4154da.mp3",
-      "sec": 4.66
+      "sec": 4.66,
+      "scene": "the-credits",
+      "from_v6": 68
     },
     {
       "n": 75,
       "speaker": "NARATOR",
       "text": "I ako se sada odmakneš i pogledaš cijeli film odjednom, vidiš da je to putovanje. Prvo trči. Onda vozi. Onda leti. Uspinje se, sve više i više. A onda pada.",
       "audio": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/drama_v6/69-NARATOR-7026d1.mp3",
-      "sec": 16.1
+      "sec": 16.1,
+      "scene": "the-credits",
+      "from_v6": 69
     },
     {
       "n": 76,
       "speaker": "NARATOR",
       "text": "To je stari oblik, stariji od filma. Junak se uzdiže, junak umire, i junak se vraća s nečim što prije nije imao. Manan se vraća s ključem. I sa spoznajom da zid nije zid, nego postavka. Broj koji je netko odabrao, i koji se može promijeniti.",
       "audio": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/drama_v6/70-NARATOR-880766.mp3",
-      "sec": 20.33
+      "sec": 20.33,
+      "scene": "the-credits",
+      "from_v6": 70
     },
     {
       "n": 77,
       "speaker": "NARATOR",
       "text": "Posvećeno Gospodinu Ganeshi. Uklonitelju prepreka.",
       "audio": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/drama_v6/71-NARATOR-0fe297.mp3",
-      "sec": 5.06
+      "sec": 5.06,
+      "scene": "the-credits",
+      "from_v6": 71
+    }
+  ],
+  "radio_drama_v7_scenes": [
+    {
+      "id": "the-road",
+      "title": "Cesta",
+      "file": "01-the-road.mp3",
+      "sec": 159.41,
+      "parts": 18,
+      "silent": 9,
+      "url": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/drama_v7_scenes/01-the-road.mp3"
+    },
+    {
+      "id": "the-bicycle",
+      "title": "Bicikl",
+      "file": "02-the-bicycle.mp3",
+      "sec": 10.51,
+      "parts": 1,
+      "silent": 0,
+      "url": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/drama_v7_scenes/02-the-bicycle.mp3"
+    },
+    {
+      "id": "the-trainer",
+      "title": "Trenažer",
+      "file": "03-the-trainer.mp3",
+      "sec": 21.77,
+      "parts": 1,
+      "silent": 0,
+      "url": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/drama_v7_scenes/03-the-trainer.mp3"
+    },
+    {
+      "id": "the-trance",
+      "title": "Oči se zatvaraju",
+      "file": "04-the-trance.mp3",
+      "sec": 2.02,
+      "parts": 1,
+      "silent": 0,
+      "url": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/drama_v7_scenes/04-the-trance.mp3"
+    },
+    {
+      "id": "the-passage",
+      "title": "Prolaz",
+      "file": "05-the-passage.mp3",
+      "sec": 41.18,
+      "parts": 2,
+      "silent": 0,
+      "url": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/drama_v7_scenes/05-the-passage.mp3"
+    },
+    {
+      "id": "the-house",
+      "title": "Kuća i vrata",
+      "file": "06-the-house.mp3",
+      "sec": 20.14,
+      "parts": 2,
+      "silent": 0,
+      "url": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/drama_v7_scenes/06-the-house.mp3"
+    },
+    {
+      "id": "coach-brains-room",
+      "title": "Soba Coach Braina",
+      "file": "07-coach-brains-room.mp3",
+      "sec": 51.98,
+      "parts": 17,
+      "silent": 0,
+      "url": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/drama_v7_scenes/07-coach-brains-room.mp3"
+    },
+    {
+      "id": "the-boards",
+      "title": "Ploče",
+      "file": "08-the-boards.mp3",
+      "sec": 100.25,
+      "parts": 18,
+      "silent": 0,
+      "url": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/drama_v7_scenes/08-the-boards.mp3"
+    },
+    {
+      "id": "the-fall",
+      "title": "Zaključak i pad",
+      "file": "09-the-fall.mp3",
+      "sec": 48.29,
+      "parts": 4,
+      "silent": 0,
+      "url": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/drama_v7_scenes/09-the-fall.mp3"
+    },
+    {
+      "id": "the-credits",
+      "title": "Odjava",
+      "file": "10-the-credits.mp3",
+      "sec": 46.15,
+      "parts": 4,
+      "silent": 0,
+      "url": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/drama_v7_scenes/10-the-credits.mp3"
     }
   ]
 }
