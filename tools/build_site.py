@@ -798,6 +798,7 @@ DRAMA = CAT.get('radio_drama', [])
 DRAMA_HR = CAT.get('radio_drama_hr', [])
 DRAMA_V3 = CAT.get('radio_drama_v3', [])
 DRAMA_V6 = CAT.get('radio_drama_v6', [])
+DRAMA_V7 = CAT.get('radio_drama_v7', [])
 MUSIC = CAT.get('music', [])
 TAKES = CAT.get('manan_takes', {})
 COACH = CAT.get('coach_takes', {})
@@ -1052,6 +1053,36 @@ def drama_v6_block(depth=0):
     return deck_block('dramav6', 'THE BRAIN BRAKE, CIJELI FILM',
                       '%d dijelova, oko devet minuta. Gabrijela, Srecko, Antonin.' % len(DRAMA_V6),
                       rows, 'downloads/BRAIN_BRAKE_radio_drama_HR_v6.zip', depth)
+
+
+def drama_v7_block(depth=0):
+    """The drama with scene one retold for the grid as it now stands.
+
+    Baba, 3.9.2026. v6 stays exactly where it is and is not edited, because its
+    scene one describes a cut that no longer exists AND every line of it has a
+    recorded take attached. Editing the text in place would have left Gabrijela
+    saying one thing while the page said another, which is worse than being out
+    of date.
+
+    So the first twenty four lines here are new and have no take yet. They still
+    render, as text, because Kristijan needs to read the scene he is animating
+    today rather than the one that was recorded last week. Everything from the
+    bicycle onward is carried over word for word and keeps its audio, so more
+    than two thirds of the deck still plays.
+    """
+    if not DRAMA_V7:
+        return ''
+    rows, silent = [], 0
+    for x in DRAMA_V7:
+        rows.append(('line', x['speaker'] + '   ' + x['text'][:110], '', 0))
+        if x.get('audio'):
+            rows.append(('take', '%02d %s' % (x['n'], x['speaker']), x['audio'], x['sec']))
+        else:
+            silent += 1
+    return deck_block('dramav7', 'THE BRAIN BRAKE, NOVA PRVA SCENA',
+                      '%d dijelova. Prvih %d jos nije snimljeno, ostalo svira.'
+                      % (len(DRAMA_V7), silent),
+                      rows, '', depth)
 
 
 def music_block(depth=0):
@@ -1730,7 +1761,7 @@ _rd = ['<h1>Radio drama, and the music</h1>',
        '<p class=lede>The whole film told out loud in Croatian, and the two pieces written for it. '
        '<b>Nine minutes of listening instead of a page of reading.</b> Everything here can be '
        'downloaded: the drama as numbered parts, the music as it was composed.</p>',
-       drama_v6_block(), music_block(), DECK_JS]
+       drama_v7_block(), drama_v6_block(), music_block(), DECK_JS]
 open(os.path.join(ROOT, 'radiodrama.html'), 'w').write(
     page('Radio drama', ''.join(_rd), here='drama', depth=0))
 
