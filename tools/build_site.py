@@ -504,6 +504,29 @@ h2{font-size:19px;margin:38px 0 14px;padding-bottom:7px;border-bottom:1px solid 
 .rtph h3{margin:0;font:700 13px ui-monospace,monospace;letter-spacing:.1em;
  text-transform:uppercase;color:var(--body)}
 .rtph .st{margin-left:auto;font:600 9.5px ui-monospace,monospace;letter-spacing:.1em;color:var(--dim)}
+
+/* THE GUIDE. Baba, 3.9.2026: a play button beside every phase title, the same
+   brass disc as the number with a black triangle in it, and a bar that is not
+   there until it is playing. The bar collapses again on pause, because a row of
+   dead scrubbers down a page reads as clutter and none of them mean anything
+   while they are stopped. */
+.rtph .gp{width:26px;height:26px;border-radius:50%;background:var(--brass);border:0;
+ padding:0;cursor:pointer;flex:0 0 26px;display:flex;align-items:center;justify-content:center;
+ align-self:center}
+.rtph .gp svg{width:11px;height:11px;fill:#17150f;display:block}
+.rtph .gp[data-on="1"] svg.ic-p{display:none}
+.rtph .gp svg.ic-s{display:none}
+.rtph .gp[data-on="1"] svg.ic-s{display:block}
+.rtph .gb{flex:0 1 0;width:0;height:14px;opacity:0;overflow:hidden;cursor:pointer;
+ align-self:center;margin:0 0 0 14px;
+ transition:flex-basis .18s ease,opacity .18s ease,margin .18s ease}
+.rtph .gb[data-open="1"]{flex:1 1 auto;max-width:360px;opacity:1}
+.rtph .gb[data-open="1"]~.gt{margin-left:10px}
+.rtph .gb i{display:block;height:3px;margin-top:5px;background:var(--rule);position:relative}
+.rtph .gb i b{position:absolute;left:0;top:0;bottom:0;width:0;background:var(--brass);display:block}
+.rtph .gt{font:600 9.5px ui-monospace,monospace;letter-spacing:.1em;color:var(--dim);
+ align-self:center;opacity:0;white-space:nowrap;transition:opacity .18s ease}
+.rtph .gb[data-open="1"]~.gt{opacity:1}
 .rtrow{display:flex;flex-wrap:wrap;gap:12px;margin:12px 0 4px}
 .rtc{width:calc(25% - 9px)}
 .rtc .box{width:100%;aspect-ratio:16/9;border:1px solid var(--rule);background:var(--card);
@@ -1925,7 +1948,56 @@ _byscene = {}
 for e in _kf:
     _byscene.setdefault(str(e['shot']).split('.')[0], []).append(e)
 
+GUIDE_JS = """<script>
+/* ONE guide player for the whole page. Baba, 3.9.2026.
+   One audio element shared by every phase, so starting a second stops the first.
+   Fifteen independent players means fifteen voices at once the moment somebody
+   is impatient, and that is the only way this would ever get used.
+   The bar is not rendered flat and hidden, it is height zero and opens on play,
+   so a stopped page carries no dead scrubbers. Click anywhere in it to seek. */
+(function(){
+  var btns = [].slice.call(document.querySelectorAll('.rtph .gp'));
+  if (!btns.length) return;
+  var au = new Audio(); au.preload = 'none';
+  var now = null;
+  function mmss(s){ s = Math.max(0, s||0);
+    return String(Math.floor(s/60)).padStart(2,'0')+':'+String(Math.floor(s%60)).padStart(2,'0'); }
+  function parts(b){ var h = b.parentNode;
+    return {bar:h.querySelector('.gb'), fill:h.querySelector('.gb b'), t:h.querySelector('.gt')}; }
+  function close(b){ var p = parts(b); b.dataset.on = '0';
+    p.bar.removeAttribute('data-open'); p.fill.style.width = '0'; p.t.textContent = ''; }
+  btns.forEach(function(b){
+    b.addEventListener('click', function(){
+      if (now === b && !au.paused){ au.pause(); return; }
+      if (now === b && au.paused && au.currentTime > 0){ au.play(); b.dataset.on='1'; return; }
+      if (now && now !== b) close(now);
+      now = b; au.src = b.dataset.src; au.currentTime = 0;
+      parts(b).bar.setAttribute('data-open','1'); b.dataset.on = '1';
+      au.play().catch(function(){ close(b); now = null; });
+    });
+    var p = parts(b);
+    p.bar.addEventListener('click', function(ev){
+      if (now !== b) return;
+      var r = p.bar.getBoundingClientRect();
+      var d = au.duration || parseFloat(b.dataset.sec) || 0;
+      if (d) au.currentTime = Math.min(d, Math.max(0, (ev.clientX - r.left) / r.width * d));
+    });
+  });
+  au.addEventListener('timeupdate', function(){
+    if (!now) return;
+    var p = parts(now);
+    var d = au.duration || parseFloat(now.dataset.sec) || 0;
+    if (d) p.fill.style.width = (au.currentTime / d * 100) + '%';
+    p.t.textContent = mmss(au.currentTime) + ' / ' + mmss(d);
+  });
+  au.addEventListener('ended', function(){ if (now){ close(now); now = null; } });
+  au.addEventListener('pause', function(){ if (now) now.dataset.on = '0'; });
+})();
+</script>"""
+
+
 _fl = flow_of()
+GUIDE = {g['n']: g for g in CAT.get('flow_guide', [])}
 _done = sum(len(v) for v in _byscene.values())
 # _done is the number of frames ON THIS PAGE, which is not the number drawn and
 # never was. Two things separate them. 22 live keyframes carry storyboard=hide,
@@ -2210,8 +2282,16 @@ for e in _fl:
     if shot:  bits.append('%d shot' % len(shot))
     if ref:   bits.append('%d reference' % len(ref))
     st = ', '.join(bits) if bits else ('LIVE ACTION' if live else 'NOT DRAWN YET')
-    rt.append('<div class=rtph><span class=n>%s</span><h3>%s</h3><span class=st>%s</span></div>'
-              % (n, e.get('title', ''), st))
+    _g = GUIDE.get(n)
+    _btn = ('<button class=gp type=button data-src="%s" data-sec="%s" '
+            'title="listen to this phase" aria-label="listen to this phase">'
+            '<svg class=ic-p viewBox="0 0 24 24"><path d="M7 4l13 8-13 8z"/></svg>'
+            '<svg class=ic-s viewBox="0 0 24 24"><path d="M6 4h4v16H6zM14 4h4v16h-4z"/></svg>'
+            '</button>'
+            % (_g['url'], _g['sec'])) if _g else ''
+    _bar = '<span class=gb><i><b></b></i></span><span class=gt></span>' if _g else ''
+    rt.append('<div class=rtph><span class=n>%s</span>%s<h3>%s</h3>%s<span class=st>%s</span></div>'
+              % (n, _btn, e.get('title', ''), _bar, st))
     # A SECTION CAN EXPLAIN ITSELF. 3.9.2026: the flow entries carried notes and
     # nothing printed them, so two beats Baba had written down were invisible on
     # the page: the frame freezing while Manan walks into it with a magnifying
@@ -2438,7 +2518,8 @@ open(os.path.join(ROOT, 'footage.html'), 'w').write(
     page('Footage', ''.join(_fo), here='footage', depth=0))
 
 open(os.path.join(ROOT, 'index.html'), 'w').write(
-    page('%s, %s' % (FILM.title(), SUBTITLE), ''.join(rt), here='home', depth=0))
+    page('%s, %s' % (FILM.title(), SUBTITLE), ''.join(rt) + GUIDE_JS,
+         here='home', depth=0))
 
 # ------------------------------------------------------------- the card pages
 # One page per frame. A medium image, never the full one, the code on the left
