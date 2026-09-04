@@ -510,6 +510,22 @@ h2{font-size:19px;margin:38px 0 14px;padding-bottom:7px;border-bottom:1px solid 
    there until it is playing. The bar collapses again on pause, because a row of
    dead scrubbers down a page reads as clutter and none of them mean anything
    while they are stopped. */
+
+/* THE GUIDE CUE. Baba, 4.9.2026: a play button standing in the strip in front
+   of the frames it is talking about, so a long scene can carry several and
+   nobody has to guess which part of it the voice means. No progress bar: the
+   cue is short, it names itself, and a row of scrubbers down a page was
+   clutter. */
+.tiny .gcue{flex:0 0 auto;display:flex;align-items:center;gap:8px;border:0;cursor:pointer;
+ background:none;padding:0 6px 0 0;margin:0;align-self:center;max-width:150px;text-align:left}
+.tiny .gcue>svg{width:11px;height:11px;fill:#17150f;flex:0 0 26px;height:26px;width:26px;
+ border-radius:50%;background:var(--brass);padding:7px;box-sizing:border-box}
+.tiny .gcue svg.ic-s{display:none}
+.tiny .gcue[data-on="1"] svg.ic-p{display:none}
+.tiny .gcue[data-on="1"] svg.ic-s{display:block}
+.tiny .gcue span{font:600 9.5px/1.35 ui-monospace,monospace;letter-spacing:.08em;
+ text-transform:uppercase;color:var(--dim)}
+.tiny .gcue[data-on="1"] span{color:var(--brass)}
 .rtph .gp{width:26px;height:26px;border-radius:50%;background:var(--brass);border:0;
  padding:0;cursor:pointer;flex:0 0 26px;display:flex;align-items:center;justify-content:center;
  align-self:center}
@@ -1992,55 +2008,35 @@ LOOP_JS = """<script>
 
 
 GUIDE_JS = """<script>
-/* ONE guide player for the whole page. Baba, 3.9.2026.
-   One audio element shared by every phase, so starting a second stops the first.
-   Fifteen independent players means fifteen voices at once the moment somebody
-   is impatient, and that is the only way this would ever get used.
-   The bar is not rendered flat and hidden, it is height zero and opens on play,
-   so a stopped page carries no dead scrubbers. Click anywhere in it to seek. */
+/* ONE player for every cue on the page. Baba, 4.9.2026.
+   The cues sit in the strip in front of the frames they describe, so a scene
+   can have several and you always know which stretch the voice is about.
+   Pressing a second cue stops the first: fifteen independent players means
+   fifteen voices at once on the first impatient click. No progress bar, because
+   the cues are short and a row of dead scrubbers down the page said nothing. */
 (function(){
-  var btns = [].slice.call(document.querySelectorAll('.rtph .gp'));
-  if (!btns.length) return;
+  var cues = [].slice.call(document.querySelectorAll('.gcue'));
+  if (!cues.length) return;
   var au = new Audio(); au.preload = 'none';
   var now = null;
-  function mmss(s){ s = Math.max(0, s||0);
-    return String(Math.floor(s/60)).padStart(2,'0')+':'+String(Math.floor(s%60)).padStart(2,'0'); }
-  function parts(b){ var h = b.parentNode;
-    return {bar:h.querySelector('.gb'), fill:h.querySelector('.gb b'), t:h.querySelector('.gt')}; }
-  function close(b){ var p = parts(b); b.dataset.on = '0';
-    p.bar.removeAttribute('data-open'); p.fill.style.width = '0'; p.t.textContent = ''; }
-  btns.forEach(function(b){
-    b.addEventListener('click', function(){
-      if (now === b && !au.paused){ au.pause(); return; }
-      if (now === b && au.paused && au.currentTime > 0){ au.play(); b.dataset.on='1'; return; }
-      if (now && now !== b) close(now);
-      now = b; au.src = b.dataset.src; au.currentTime = 0;
-      parts(b).bar.setAttribute('data-open','1'); b.dataset.on = '1';
-      au.play().catch(function(){ close(b); now = null; });
-    });
-    var p = parts(b);
-    p.bar.addEventListener('click', function(ev){
-      if (now !== b) return;
-      var r = p.bar.getBoundingClientRect();
-      var d = au.duration || parseFloat(b.dataset.sec) || 0;
-      if (d) au.currentTime = Math.min(d, Math.max(0, (ev.clientX - r.left) / r.width * d));
+  function stop(){ if (now){ now.dataset.on = '0'; now = null; } }
+  cues.forEach(function(c){
+    c.addEventListener('click', function(){
+      if (now === c && !au.paused){ au.pause(); c.dataset.on = '0'; return; }
+      if (now === c && au.paused && au.currentTime > 0){ au.play(); c.dataset.on='1'; return; }
+      if (now && now !== c) now.dataset.on = '0';
+      now = c; au.src = c.dataset.src; au.currentTime = 0; c.dataset.on = '1';
+      au.play().catch(function(){ stop(); });
     });
   });
-  au.addEventListener('timeupdate', function(){
-    if (!now) return;
-    var p = parts(now);
-    var d = au.duration || parseFloat(now.dataset.sec) || 0;
-    if (d) p.fill.style.width = (au.currentTime / d * 100) + '%';
-    p.t.textContent = mmss(au.currentTime) + ' / ' + mmss(d);
-  });
-  au.addEventListener('ended', function(){ if (now){ close(now); now = null; } });
+  au.addEventListener('ended', stop);
   au.addEventListener('pause', function(){ if (now) now.dataset.on = '0'; });
 })();
 </script>"""
 
 
 _fl = flow_of()
-GUIDE = {g['n']: g for g in CAT.get('flow_guide', [])}
+GUIDE = {g['anchor']: g for g in CAT.get('flow_guide', [])}
 _done = sum(len(v) for v in _byscene.values())
 # _done is the number of frames ON THIS PAGE, which is not the number drawn and
 # never was. Two things separate them. 22 live keyframes carry storyboard=hide,
@@ -2334,30 +2330,14 @@ for e in _fl:
     if ref:   bits.append('%d reference' % len(ref))
     st = ', '.join(bits) if bits else ('LIVE ACTION' if live else 'NOT DRAWN YET')
     _g = GUIDE.get(n)
-    _who = ''
-    if _g and len(_g.get('voices') or []) > 1:
-        # A PHASE WITH DIALOGUE IS CAST. Baba, 3.9.2026: where there are lines,
-        # the characters say them rather than the narrator reporting them, in
-        # the same voices as the English drama so it is the same two people.
-        #
-        # THE CASTING IS SETTLED. DO NOT REOPEN IT. Edmund and Hugh measure
-        # close in pitch and a listening test called them the same speaker three
-        # times out of three. Baba listened to phase 10 on 3.9.2026 and approved
-        # it: they are different voices and the pitch is not the point. The
-        # measurement was wrong about what matters, and rohan was considered and
-        # not needed. Anyone reading this later and reaching for a recast is
-        # solving a problem the director has already heard and dismissed.
-        _who = ' \u00b7 acted'
-    _btn = ('<button class=gp type=button data-src="%s" data-sec="%s" '
-            'title="listen to this phase" aria-label="listen to this phase">'
-            '<svg class=ic-p viewBox="0 0 24 24"><path d="M7 4l13 8-13 8z"/></svg>'
-            '<svg class=ic-s viewBox="0 0 24 24"><path d="M6 4h4v16H6zM14 4h4v16h-4z"/></svg>'
-            '</button>'
-            % (_g['url'], _g['sec'])) if _g else ''
-    _bar = '<span class=gb><i><b></b></i></span><span class=gt></span>' if _g else ''
-    rt.append('<div class=rtph><span class=n>%s</span>%s<h3>%s</h3>%s'
-              '<span class=st>%s%s</span></div>'
-              % (n, _btn, e.get('title', ''), _bar, st, _who))
+    # THE BUTTON MOVED INTO THE STRIP. Baba, 4.9.2026: the audio belongs in
+    # front of the frames it is talking about, not in the heading, and a long
+    # scene can carry several. A clip pinned to a PHASE NUMBER drifted the
+    # moment the running order changed and he heard the freeze frame described
+    # under the bicycle. A clip pinned to a FRAME cannot drift: it names the
+    # picture it starts at, and if the picture moves the button moves with it.
+    rt.append('<div class=rtph><span class=n>%s</span><h3>%s</h3>'
+              '<span class=st>%s</span></div>' % (n, e.get('title', ''), st))
     # A SECTION CAN EXPLAIN ITSELF. 3.9.2026: the flow entries carried notes and
     # nothing printed them, so two beats Baba had written down were invisible on
     # the page: the frame freezing while Manan walks into it with a magnifying
@@ -2441,6 +2421,16 @@ for e in _fl:
                 ln += ('<div class=ln><span class=sp>%s</span>'
                        '<span class=tx>“%s”</span></div>'
                        % (html.escape(_d.get('speaker', '')), html.escape(_d.get('line', ''))))
+            _gc = GUIDE.get(b)
+            if _gc:
+                rt.append('<button class=gcue type=button data-src="%s" '
+                          'title="listen: %s" aria-label="listen: %s">'
+                          '<svg class=ic-p viewBox="0 0 24 24"><path d="M7 4l13 8-13 8z"/></svg>'
+                          '<svg class=ic-s viewBox="0 0 24 24">'
+                          '<path d="M6 4h4v16H6zM14 4h4v16h-4z"/></svg>'
+                          '<span>%s</span></button>'
+                          % (_gc['url'], html.escape(_gc['label']),
+                             html.escape(_gc['label']), html.escape(_gc['label'])))
             rt.append('<a href="card/%s.html"><img src="tiny/%s.jpg" alt="" loading=lazy>'
                       '<div class=c>%s</div>%s</a>' % (b, b, b, ln))
         rt.append('</div>')

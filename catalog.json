@@ -1676,12 +1676,12 @@
       "kind": "flow",
       "n": "2",
       "file": "flow/02-bike-out.jpg",
-      "title": "The frame freezes, and Manan walks into it",
+      "title": "He takes the question outside",
       "status": "placeholder",
       "scenes": [
         "2"
       ],
-      "note": "THE RUNNER STOPS DEAD, mid stride, and the film holds him there. Manan walks into his own frozen frame with a magnifying glass and looks the runner over, close, curious. This is the moment the film acquires its subject: not a man running, but a boy who wants to know WHY he stops. Everything after this is him feeding that curiosity.",
+      "note": "He cannot let it go, so he takes the question outside and puts it on himself. The hero plates for the road and the bicycle: what the world looks like before anybody rides through it. The last daylight in the film.",
       "flow_pos": 0
     },
     {
@@ -3464,7 +3464,7 @@
     }
   ],
   "event": "Breakthrough Junior Challenge 2026",
-  "site_version": 223,
+  "site_version": 224,
   "footage": [
     {
       "name": "Key catch",
@@ -6161,148 +6161,173 @@
   ],
   "flow_guide": [
     {
-      "n": "0",
-      "sec": 21.55,
+      "anchor": "0-0-TITLE-v1",
+      "label": "The title",
+      "sec": 18.02,
       "voices": [
         "imogen_32"
       ],
       "parts": 1,
-      "text": "Phase zero, one frame. The film's own title, drawn in its hand on cream paper, nothing else on screen. Nothing moves. Hold it long enough to read once and cut. If you animate anything at all here, let it be the last pencil stroke settling, and even that is optional. The feeling you are after is a book being opened, not a film starting.",
-      "url": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/guide/phase-0.mp3"
+      "text": "The title, one frame, drawn in the film's own hand on cream paper. Nothing moves. Hold it long enough to read once and cut. If you animate anything here let it be the last pencil stroke settling, and even that is optional. A book being opened, not a film starting.",
+      "url": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/guide/clip-0-0-TITLE-v1.mp3"
     },
     {
-      "n": "1",
-      "sec": 42.05,
+      "anchor": "1-1",
+      "label": "The run, and the collapse",
+      "sec": 28.56,
       "voices": [
         "imogen_32"
       ],
       "parts": 1,
-      "text": "Phase one, twenty four frames, and the whole argument of the film in ninety seconds. Wide on an avenue with a man already down at the far end. Cut close to his legs sliding out from under him, then the whole figure. Three faces: spent, then something seen, then a smile. The finish banner. He runs, and he runs clean out of frame and leaves the page empty. Then the collapse comes back onto that empty page and Manan walks into it with the glass. Animate the collapse heavy and the ignition light: the fall has weight, the light has none. The two empty frames are beats, not gaps, so hold them. And when the leg fires, the light travels UP through the body muscle by muscle, in order, not all at once.",
-      "url": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/guide/phase-1.mp3"
+      "text": "Scene one opens wide on an avenue with a man already down at the far end. Cut close to his legs sliding out from under him, then the whole figure. Three faces: spent, then something seen, then a smile. The finish banner. Then he runs, and he runs clean out of frame and leaves the page empty. Animate the collapse HEAVY. It has weight, and everything after the ignition has none. The empty page at one ten is a beat, not a gap, so hold it.",
+      "url": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/guide/clip-1-1.mp3"
     },
     {
-      "n": "2",
-      "sec": 25.87,
+      "anchor": "1-11",
+      "label": "Manan arrives, and inspects",
+      "sec": 34.66,
       "voices": [
         "imogen_32"
       ],
       "parts": 1,
-      "text": "Phase two. The runner stops dead mid stride and the film holds him there. This is the first time the picture admits it is a picture. Manan walks in from the side, a real photographed boy stepping into a drawing. THE ONLY THING THAT MOVES IN THIS SHOT IS THE BOY. Everything drawn stays absolutely still, and the stiller you keep it, the better he reads. Play him curious, not clever. He has not solved anything, he has only noticed that something does not add up.",
-      "url": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/guide/phase-2.mp3"
+      "text": "Now the collapse comes back onto that empty page and Manan walks into it. This is the first time the picture admits it is a picture, and THE ONLY THING THAT MOVES IN THESE FRAMES IS THE BOY. Everything drawn stays absolutely still, and the stiller you keep it the better he reads. Play him curious rather than clever: he has not solved anything, he has only noticed that something does not add up. He inspects the same three faces through the glass, and then the leg fires and the light travels UP through the body muscle by muscle, in order, not all at once. Skin returns, the light stays under it, and he runs out of frame and leaves the page empty a second time.",
+      "url": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/guide/clip-1-11.mp3"
     },
     {
-      "n": "3",
-      "sec": 19.25,
+      "anchor": "2-0-HERO-v1",
+      "label": "He takes the question outside",
+      "sec": 19.56,
       "voices": [
         "imogen_32"
       ],
       "parts": 1,
-      "text": "Phase three, the bicycle, shot for real. He is testing the limit on himself. Keep it young and slightly reckless rather than athletic, and let the cut rhythm quicken with him. This is the one stretch of the film with daylight and traffic and ordinary noise in it, and it is there so the quiet of everything after it lands harder.",
-      "url": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/guide/phase-3.mp3"
+      "text": "He cannot let it go, so he takes the question outside and puts it on himself. This phase is the hero plates for the road and the bicycle: what the world looks like before anybody rides through it. Keep it ordinary. This is the last daylight in the film and everything after it is inside his head.",
+      "url": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/guide/clip-2-0-HERO-v1.mp3"
     },
     {
-      "n": "4",
-      "sec": 19.99,
+      "anchor": "SHOT_PANA6223_00_00_14_00_G",
+      "label": "The bicycle, and the trainer",
+      "sec": 26.09,
       "voices": [
         "imogen_32"
       ],
       "parts": 1,
-      "text": "Phase four, indoors on the trainer, his own earlier ride playing back on the laptop. He is racing himself. Cut tighter and closer than the street: the room should shrink around him as it goes. Private effort turning into something obsessive. When the wall arrives, let it arrive SUDDENLY. Do not fade into it.",
-      "url": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/guide/phase-4.mp3"
+      "text": "The bicycle, shot for real. He is testing the limit on himself, because a question you can ride beats a question you can only read. Keep it young and slightly reckless rather than athletic and let the cut rhythm quicken with him. Then indoors on the trainer, racing his own earlier ride on the laptop. Cut tighter and closer than the street: the room should shrink around him. When the wall arrives, let it arrive SUDDENLY, do not fade into it.",
+      "url": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/guide/clip-SHOT_PANA6223_00_00_14_00_G.mp3"
     },
     {
-      "n": "5",
-      "sec": 24.77,
+      "anchor": "V7_5_8_eyes_closed",
+      "label": "He lets go",
+      "sec": 23.14,
       "voices": [
         "imogen_32"
       ],
       "parts": 1,
-      "text": "Phase five. He stops, breathes, and lets go. Out to white. This is the hinge of the whole film and it should feel like relief, not defeat. Slow everything down. Take the sound away BEFORE the picture goes. Let the white come up from behind him rather than washing over him. And know that this is the last cut for a long time: nothing cuts again until he comes back down.",
-      "url": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/guide/phase-5.mp3"
+      "text": "He stops, breathes, and lets go. Out to white. This is the hinge of the whole film and it should feel like relief, not defeat. Slow everything down, take the sound away BEFORE the picture goes, and let the white come up from behind him rather than washing over him. This is the last cut for a long time: nothing cuts again until he comes back down.",
+      "url": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/guide/clip-V7_5_8_eyes_closed.mp3"
     },
     {
-      "n": "6",
-      "sec": 26.86,
+      "anchor": "9-0-WHITE-v1",
+      "label": "The vortex, up",
+      "sec": 26.98,
       "voices": [
         "imogen_32"
       ],
       "parts": 1,
-      "text": "Phase six, the vortex, going up. He is carried, not falling, and one detail carries that entirely: his sweatshirt and his hair stream DOWNWARD past him, because the air is going the other way. Lose that and the shot reads as a fall. He is full colour and the world is graphite; colour is under half a per cent of the frame and all of it is him. The vortex opens, he passes, and it closes exactly as it opened.",
-      "url": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/guide/phase-6.mp3"
+      "text": "The vortex, going up. He is carried, not falling, and one detail carries that entirely: his sweatshirt and his hair stream DOWNWARD past him, because the air is going the other way. Lose that and the shot reads as a fall. He is full colour and the world is graphite; colour is under half a per cent of the frame and all of it is him. The vortex opens, he passes, and it closes exactly as it opened.",
+      "url": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/guide/clip-9-0-WHITE-v1.mp3"
     },
     {
-      "n": "7",
-      "sec": 63.67,
+      "anchor": "7-1",
+      "label": "Arriving at the house",
+      "sec": 32.28,
       "voices": [
         "imogen_32"
       ],
       "parts": 1,
-      "text": "Phase seven, thirteen frames, and it is ONE UNBROKEN MOVE from the first to the last. No cuts anywhere in it, and the camera never turns to look at him, because you are seeing it through his eyes. Frame one, the door, flat on, already open: he is expected, so it does not open for him. Frame two, he is inside and it is closing while you are already pulling back. The closing and the pull back are ONE movement, timed together. Frame three, the house, floating on cloud, with a trace of the vortex fading below it. Then the halls. Lungs, heart, muscle, sugar, fat, furnace, and every one of them is FULL: that is the job of this whole sequence, to spend real time finding nothing. The muscle at seven seven is the room that matters, so give it the longest hold. Nothing in this house is wired and nothing is attached to anything; each door has a small panel beside it and that is all. And at the end, the key door dead centre, the only door in the building with no panel at all. When it appears small at the end of the hall, DO NOT PUSH IN ON IT. Hold the speed you have held all the way through and let it simply get nearer. A push in tells the audience it matters, and this film is built on them working that out themselves.",
-      "url": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/guide/phase-7.mp3"
+      "text": "The house, and it is ONE UNBROKEN MOVE from here to the key door. No cuts anywhere in it, and the camera never turns to look at him, because you are seeing it through his eyes. The door is flat on and already open: he is expected, so it does not open for him, and that is the first thing the film says about Coach Brain. Then he is inside and it closes while you are already pulling back. The closing and the pull back are ONE movement, timed together. And then the house, floating on cloud, with a trace of the vortex fading below it. The house made that vortex. You have to look twice to see anything was turning.",
+      "url": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/guide/clip-7-1.mp3"
     },
     {
-      "n": "8",
-      "sec": 57.12,
+      "anchor": "7-4",
+      "label": "The rooms, and what he does not find",
+      "sec": 26.64,
+      "voices": [
+        "imogen_32"
+      ],
+      "parts": 1,
+      "text": "Now the rooms, and the job of this whole stretch is to spend real time FINDING NOTHING. Lungs, heart, muscle, sugar, fat, furnace, and every one of them is full. Nothing in this house is wired and nothing is attached to anything: each door has a small panel beside it and that is all. The muscle is the room that matters, so give it the longest hold. It is where he is most certain the answer will be, and it is the room that sends him to the key door.",
+      "url": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/guide/clip-7-4.mp3"
+    },
+    {
+      "anchor": "7-12",
+      "label": "The key door",
+      "sec": 24.05,
+      "voices": [
+        "imogen_32"
+      ],
+      "parts": 1,
+      "text": "The last hall, and the key door dead centre. It is the only door in the building with no panel beside it, because it is the thing that reads the house rather than a thing the house reads. When it appears small at the end of the hall, DO NOT PUSH IN ON IT. Hold the speed you have held all the way through and let it simply get nearer. A push in tells the audience it matters, and this film is built on them working that out for themselves.",
+      "url": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/guide/clip-7-12.mp3"
+    },
+    {
+      "anchor": "19-A1-ENTER-v1",
+      "label": "Coach Brain's room",
+      "sec": 56.74,
       "voices": [
         "edmund_32",
         "hugh_32",
         "imogen_32"
       ],
       "parts": 10,
-      "text": "Phase eight, Coach Brain's room. Inside, a small brain in a chair in front of a wall of dials, and he has been waiting. Screen direction is fixed here and never crosses: Coach Brain on the left looking right, Manan on the right looking left. Play him as an official who is neither villain nor friend. Patient, faintly amused, completely certain he is in the right. Ah. There you are. I was expecting you. Direction. Then he asks for something impossible, and the whole idea of the film gets done as a party trick instead of a lecture. The boy's arm must genuinely not move. Animate the effort, not the failure. Before we begin. Raise my right arm. I am trying. I know. I can't. Why can't I move it? Try now. That was you. It was never my arm at all. The arm is always yours. The permission is mine.",
-      "url": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/guide/phase-8.mp3"
+      "text": "Inside, a small brain in a chair in front of a wall of dials, and he has been waiting. Screen direction is fixed here and never crosses: Coach Brain on the left looking right, Manan on the right looking left. Play him as an official who is neither villain nor friend. Patient, faintly amused, completely certain he is in the right. Ah. There you are. I was expecting you. Direction. Then he asks for something impossible, and the whole idea of the film gets done as a party trick instead of a lecture. The boy's arm must genuinely not move. Animate the effort, not the failure. Before we begin. Raise my right arm. I am trying. I know. I can't. Why can't I move it? Try now. That was you. It was never my arm at all. The arm is always yours. The permission is mine.",
+      "url": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/guide/clip-19-A1-ENTER-v1.mp3"
     },
     {
-      "n": "9",
-      "sec": 107.3,
+      "anchor": "10-0-A-v2",
+      "label": "The boards",
+      "sec": 107.21,
       "voices": [
         "edmund_32",
         "hugh_32",
         "imogen_32"
       ],
       "parts": 15,
-      "text": "Phase nine, the boards, and this is where the argument lands. NEITHER BOARD ARRIVES FINISHED. Draw them being written, line by line, and do not cut to a completed diagram. Manan writes the old theory in white chalk on black. You run. The muscle uses up its oxygen. The fuel is spent. And when the tank reads empty, the body stops. Direction. Coach Brain answers on white with black marker: the same layout, the same three lines, the same gauge, every value reversed. Let the second board land as a REPLY, not as another diagram. Pulse, breath, temperature, water, sugar. I read all of it, the whole time. That is what every one of those panels you walked past is for. And I ask one question with it. Can we carry on safely? When the answer starts to look like no, I slow you down. Not because anything has run out. Because of where it is heading. Heading. I do not wait for the tank to empty. I watch how fast it is emptying, and I stop you while there is still enough left to get you home. So no. Fatigue is in the brain, not in your legs. Up here. And it decides long before anything is actually in danger. When I stop you, the fuel is still there. Direction. And now the corridor pays off. He answers from the rooms he walked through, so cut him wide enough that we remember he has been somewhere. It was. I saw it. The sugar cellar was full. The fat store was barely touched. The fibres were not torn. No. They never are. So the wall... Is a number I chose. Carefully. To keep you alive. Then it can be a different number.",
-      "url": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/guide/phase-9.mp3"
+      "text": "The boards, and this is where the argument lands. NEITHER BOARD ARRIVES FINISHED. Draw them being written, line by line, and do not cut to a completed diagram. Manan writes the old theory in white chalk on black. You run. The muscle uses up its oxygen. The fuel is spent. And when the tank reads empty, the body stops. Direction. Coach Brain answers on white with black marker: the same layout, the same three lines, the same gauge, every value reversed. Let the second board land as a REPLY, not as another diagram. Pulse, breath, temperature, water, sugar. I read all of it, the whole time. That is what every one of those panels you walked past is for. And I ask one question with it. Can we carry on safely? When the answer starts to look like no, I slow you down. Not because anything has run out. Because of where it is heading. Heading. I do not wait for the tank to empty. I watch how fast it is emptying, and I stop you while there is still enough left to get you home. So no. Fatigue is in the brain, not in your legs. Up here. And it decides long before anything is actually in danger. When I stop you, the fuel is still there. Direction. And now the corridor pays off. He answers from the rooms he walked through, so cut him wide enough that we remember he has been somewhere. It was. I saw it. The sugar cellar was full. The fat store was barely touched. The fibres were not torn. No. They never are. So the wall... Is a number I chose. Carefully. To keep you alive. Then it can be a different number.",
+      "url": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/guide/clip-10-0-A-v2.mp3"
     },
     {
-      "n": "10",
-      "sec": 22.75,
+      "anchor": "12-0-CONCLUSION-PLACEHOLDER",
+      "label": "The conclusion",
+      "sec": 19.34,
       "voices": [
         "imogen_32"
       ],
       "parts": 1,
-      "text": "Phase ten, the conclusion and the goodbye. This is where the film's argument lands, so keep it a conversation and not a banner. Nobody wins. The boy is not given the answer, he arrives at it himself and Coach Brain lets him. Quiet, warm, and short. This section is still one frame and it is waiting on a decision, so do not build anything on it yet.",
-      "url": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/guide/phase-10.mp3"
+      "text": "The conclusion and the goodbye. Keep it a conversation and not a banner. Nobody wins. The boy is not given the answer, he arrives at it himself and Coach Brain lets him. Quiet, warm, and short. This section is still one frame and it is waiting on a decision, so do not build on it yet.",
+      "url": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/guide/clip-12-0-CONCLUSION-PLACEHOLDER.mp3"
     },
     {
-      "n": "11",
-      "sec": 27.34,
+      "anchor": "9R-1-VORTEX-DOWN-v1",
+      "label": "The fall",
+      "sec": 27.19,
       "voices": [
         "imogen_32"
       ],
       "parts": 1,
-      "text": "Phase eleven, the vortex down, and the key falls with him. He is falling now, not carried, so the trail REVERSES: everything streams upward past him. The key turns and grows as it comes, and behind it the whole film runs backwards, so faint it is almost not there. Keep the key sharp while everything behind it smears, because the camera is falling with the key and not with the memories. That difference is the entire reason the fall reads as fast.",
-      "url": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/guide/phase-11.mp3"
+      "text": "The vortex down, and the key falls with him. He is falling now, not carried, so the trail REVERSES: everything streams upward past him. The key turns and grows as it comes, and behind it the whole film runs backwards, so faint it is almost not there. Keep the key sharp while everything behind it smears, because the camera is falling with the key and not with the memories. That difference is the entire reason the fall reads as fast.",
+      "url": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/guide/clip-9R-1-VORTEX-DOWN-v1.mp3"
     },
     {
-      "n": "12",
-      "sec": 24.82,
-      "voices": [
-        "imogen_32"
-      ],
-      "parts": 1,
-      "text": "Phase twelve, he catches it. On the way down the key crosses from a pencil drawing into a photograph, and NO SINGLE FRAME is the moment it becomes real; spread it across the fall. Coach Brain's hand and Manan's are never on screen together, on purpose, so nothing has to be composited and no lighting has to match. The key is the only gold in the film. Everything it lands in should be still.",
-      "url": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/guide/phase-12.mp3"
-    },
-    {
-      "n": "13",
+      "anchor": "15-2-A-v3",
+      "label": "He catches it",
       "sec": 23.52,
       "voices": [
         "imogen_32"
       ],
       "parts": 1,
-      "text": "Phase thirteen, credits, card to card through cloud, and then the dedication. Step back and the whole film is a journey: he runs, he rides, he flies, he climbs, and then he falls. That is the oldest shape there is. He comes back with the key, and with knowing that the wall was never a wall. It was a setting. A number somebody chose, and it can be changed.",
-      "url": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/guide/phase-13.mp3"
+      "text": "He catches it. On the way down the key crosses from a pencil drawing into a photograph, and NO SINGLE FRAME is the moment it becomes real; spread it across the fall. Coach Brain's hand and Manan's are never on screen together, on purpose, so nothing has to be composited and no lighting has to match. The key is the only gold in the film. Everything it lands in should be still.",
+      "url": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/guide/clip-15-2-A-v3.mp3"
     }
   ]
 }
