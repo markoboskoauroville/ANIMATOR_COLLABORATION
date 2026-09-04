@@ -737,7 +737,17 @@
         "phase": "Phase 11 of 15, THE TWO THEORIES, ON THE BOARD.",
         "journey": "THE ORDEAL, which in this film is comprehension. Nothing is fought.",
         "element": "LIGHT, which is what lets you see, as against GLOW, which burns and does not last."
-      }
+      },
+      "dialogue": [
+        {
+          "speaker": "MANAN",
+          "line": "Nineteen twenty three. Hill puts runners on a treadmill and measures everything they do. His answer is simple. Fatigue is in the muscle."
+        },
+        {
+          "speaker": "MANAN",
+          "line": "You run. The muscle uses up its oxygen. The fuel is spent. And when the tank reads empty, the body stops."
+        }
+      ]
     },
     {
       "kind": "keyframe",
@@ -776,7 +786,53 @@
         "phase": "Phase 11 of 15, THE TWO THEORIES, ON THE BOARD.",
         "journey": "THE ORDEAL, which in this film is comprehension. Nothing is fought.",
         "element": "LIGHT, which is what lets you see, as against GLOW, which burns and does not last."
-      }
+      },
+      "dialogue": [
+        {
+          "speaker": "COACH",
+          "line": "Pulse, breath, temperature, water, sugar. I read all of it, the whole time. That is what every one of those panels you walked past is for."
+        },
+        {
+          "speaker": "COACH",
+          "line": "And I ask one question with it. Can we carry on safely?"
+        },
+        {
+          "speaker": "COACH",
+          "line": "When the answer starts to look like no, I slow you down. Not because anything has run out. Because of where it is heading."
+        },
+        {
+          "speaker": "MANAN",
+          "line": "Heading."
+        },
+        {
+          "speaker": "COACH",
+          "line": "I do not wait for the tank to empty. I watch how fast it is emptying, and I stop you while there is still enough left to get you home. So no. Fatigue is in the brain, not in your legs. Up here. And it decides long before anything is actually in danger."
+        },
+        {
+          "speaker": "COACH",
+          "line": "When I stop you, the fuel is still there."
+        },
+        {
+          "speaker": "MANAN",
+          "line": "It was. I saw it. The sugar cellar was full. The fat store was barely touched. The fibres were not torn."
+        },
+        {
+          "speaker": "COACH",
+          "line": "No. They never are."
+        },
+        {
+          "speaker": "MANAN",
+          "line": "So the wall..."
+        },
+        {
+          "speaker": "COACH",
+          "line": "Is a number I chose. Carefully. To keep you alive."
+        },
+        {
+          "speaker": "MANAN",
+          "line": "Then it can be a different number."
+        }
+      ]
     },
     {
       "kind": "keyframe",
@@ -3267,7 +3323,7 @@
     }
   ],
   "event": "Breakthrough Junior Challenge 2026",
-  "site_version": 221,
+  "site_version": 222,
   "footage": [
     {
       "name": "Key catch",

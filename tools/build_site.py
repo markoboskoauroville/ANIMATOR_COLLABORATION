@@ -2668,6 +2668,15 @@ for _i, e in enumerate(_cards):
         cd.append('<div class=srcbox><div class=t><b>The loop on this page, 480 wide</b>'
                   '<a class=dl href="../%s" download>DOWNLOAD &nbsp;480 WIDE PROXY &nbsp;%.0f KB</a></div>'
                   '<p>%s</p></div>' % (e['file'], _pk, html.escape(e['proxy_note'])))
+    # WHAT IS SAID OVER THIS SHOT. Baba, 4.9.2026: all dialogue must be clearly
+    # seen under each shot where it appears. It was already under the thumbnails
+    # on the flow page, but lines_of was written for the card page and then never
+    # called, so the one place with room to print it in full printed nothing.
+    _dl = lines_of(e)
+    if _dl:
+        cd.append('<div class=srcbox><div class=t><b>What is said over this shot</b></div>'
+                  + _dl + '</div>')
+
     if e.get('video'):
         # A SHOT THAT MOVES IS STILL A SHOT. Baba, 3.9.2026: a loop should behave
         # like any drawn frame, so it gets a card, a note and a download in the
