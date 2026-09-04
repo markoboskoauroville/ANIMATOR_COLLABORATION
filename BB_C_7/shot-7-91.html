@@ -1,4 +1,4 @@
-<!doctype html><html lang=en><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><title>Scene 13</title><link rel=icon href="../favicon.svg" type="image/svg+xml"><link rel=icon href="../favicon-32.png" sizes="32x32"><link rel=icon href="../favicon-16.png" sizes="16x16"><link rel=apple-touch-icon href="../apple-touch-icon.png"><meta name=theme-color content="#20241f"><script>(function(){try{var t=localStorage.getItem("bbt");if(!t)t=matchMedia("(prefers-color-scheme:dark)").matches?"dark":"light";document.documentElement.dataset.t=t;}catch(e){}})();function tt(){var d=document.documentElement,n=d.dataset.t==="dark"?"light":"dark";d.dataset.t=n;try{localStorage.setItem("bbt",n);}catch(e){}}</script><style>
+<!doctype html><html lang=en><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><title>Shot 7.91</title><link rel=icon href="../favicon.svg" type="image/svg+xml"><link rel=icon href="../favicon-32.png" sizes="32x32"><link rel=icon href="../favicon-16.png" sizes="16x16"><link rel=apple-touch-icon href="../apple-touch-icon.png"><meta name=theme-color content="#20241f"><script>(function(){try{var t=localStorage.getItem("bbt");if(!t)t=matchMedia("(prefers-color-scheme:dark)").matches?"dark":"light";document.documentElement.dataset.t=t;}catch(e){}})();function tt(){var d=document.documentElement,n=d.dataset.t==="dark"?"light":"dark";d.dataset.t=n;try{localStorage.setItem("bbt",n);}catch(e){}}</script><style>
 :root{--paper:#f2ebda;--ink:#221f19;--dim:#8a8170;--rule:#cdbfa4;--brass:#9C7A31;--box:#e6dcc4;--slate:#20241f;--body:#4a453b;--card:#fff}
 html[data-t=dark]{--paper:#17150f;--ink:#ece4d2;--dim:#8d8574;--rule:#3a352b;--brass:#c9a35a;--box:#221f18;--slate:#0d0c09;--body:#c2bba9;--card:#0d0c09}
 html{background:var(--paper)}
@@ -184,9 +184,130 @@ h2{font-size:19px;margin:38px 0 14px;padding-bottom:7px;border-bottom:1px solid 
  color:var(--dim)}
 .filmfoot span{display:block;font-weight:600;font-size:9px;letter-spacing:.14em;
  padding-top:6px;color:var(--dim);opacity:.75}
+.deck{background:var(--bg);border:1px solid var(--rule);border-radius:8px;
+  padding:9px 11px;margin:0 0 8px}
+.deck.is-playing{border-color:var(--gold)}
+.deckh{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:6px}
+.deckn{font:400 10.5px/1 ui-monospace,monospace;color:var(--dim)}
+.wave{position:relative;height:40px;background:var(--panel);border:1px solid var(--rule);
+  border-radius:3px;display:flex;align-items:flex-end;gap:1px;padding:3px;overflow:hidden}
+.wave span{flex:1 1 0;background:#6B4E1E;border-radius:1px 1px 0 0;min-width:0;
+  transition:background .05s linear}
+.wave span.played{background:#F7D488}
+.cursor{position:absolute;top:0;bottom:0;width:1px;background:var(--gold);left:0;
+  pointer-events:none}
+.deckf{display:flex;align-items:center;gap:10px;margin-top:6px}
+/* 3.9.2026. The button was a 13px dark glyph on gold, which on a phone in
+   sunlight reads as nothing at all. Baba could not find it. It is bigger now
+   and the glyph is WHITE, which holds against both the gold and the glare, and
+   it gets a ring when it is playing so the deck that is running is obvious
+   from across the room. */
+.pbtn{background:var(--gold);border:0;border-radius:999px;width:42px;height:42px;
+  cursor:pointer;display:flex;align-items:center;justify-content:center;flex:none;padding:0;
+  box-shadow:0 1px 0 rgba(0,0,0,.35)}
+.pbtn svg{width:17px;height:17px;fill:#fff;display:block}
+.pbtn.on{box-shadow:0 0 0 3px rgba(232,166,75,.35)}
+.deck.is-playing .wave{border-color:var(--gold)}
+.tc{font:400 11px/1 ui-monospace,monospace;color:var(--dim)}
+.tc.rem{margin-left:auto}
+/* ONE DECK, PLAYLIST UNDER IT. Modelled on Baba's own NOVA_TV_777 player and on
+   Winamp: transport at the top, a waveform that fills as it plays, the list
+   below. Forty three separate players was the wrong shape, because only one
+   thing plays at a time. The VU meter is deliberately absent: he asked for the
+   waveform and the controls, and a meter on a review page is decoration. */
+.nova{margin:16px 0 6px;background:#0F0E0C;border:1px solid var(--rule);border-radius:10px;
+  overflow:hidden}
+.novatc{display:flex;justify-content:space-between;padding:11px 15px;
+  font:400 15px/1 ui-monospace,monospace;color:var(--gold);border-bottom:1px solid var(--rule)}
+.novatc span:last-child{color:var(--dim)}
+.novah{display:flex;align-items:center;justify-content:space-between;gap:14px;
+  padding:14px 15px;background:#171310;border-bottom:1px solid var(--rule)}
+.novah b{display:block;font:700 15px/1.25 Inter,system-ui,sans-serif;color:var(--gold);
+  letter-spacing:.01em}
+.novah span{display:block;font:400 12.5px/1.45 Inter,system-ui,sans-serif;color:var(--dim);
+  margin-top:3px}
+.mcbtn{background:#1A1A1D;border:1px solid var(--rule);border-radius:3px;color:var(--ink);
+  cursor:pointer;width:40px;height:34px;display:inline-flex;align-items:center;
+  justify-content:center;flex:0 0 auto;padding:0;text-decoration:none}
+.mcbtn svg{width:15px;height:15px;fill:currentColor;display:block}
+.mcbtn.wide{width:auto;padding:0 12px;font:600 10px/1 ui-monospace,monospace;
+  letter-spacing:.12em;color:var(--gold)}
+.mcbtn.play{width:78px;height:46px;background:var(--gold);border-color:var(--gold);flex:none}
+.mcbtn.play svg{width:20px;height:20px;fill:#fff}
+.novascrub{padding:12px 15px;background:#0B0A09}
+.wave{position:relative;height:52px;width:100%;background:#131110;
+  border:1px solid var(--rule);border-radius:3px;display:flex;align-items:flex-end;
+  gap:1px;padding:4px 3px;overflow:hidden}
+.wave span{flex:1 1 0;background:#6B4E1E;border-radius:1px 1px 0 0;min-width:0;
+  transition:background .05s linear}
+.wave span.played{background:#F7D488}
+.cursor{position:absolute;top:0;bottom:0;width:1px;background:#FFE7B0;left:0;pointer-events:none}
+.novabar{display:flex;align-items:center;gap:8px;padding:11px 15px;flex-wrap:wrap;
+  border-top:1px solid var(--rule)}
+.novastate{margin-left:auto;font:400 11px/1 ui-monospace,monospace;letter-spacing:.14em;
+  color:var(--dim)}
+.novapl{border-top:1px solid var(--rule)}
+.novaplh{display:flex;align-items:center;gap:10px;cursor:pointer;list-style:none;
+  padding:12px 15px;font:600 10.5px/1 ui-monospace,monospace;letter-spacing:.16em;
+  color:var(--dim)}
+.novaplh::-webkit-details-marker{display:none}
+.novaplh:after{content:'>';margin-left:auto;color:var(--gold);transition:transform .15s}
+.novapl[open] .novaplh:after{transform:rotate(90deg)}
+.novapb{padding:0 8px 12px;max-height:420px;overflow-y:auto}
+.plhead{font:600 9.5px/1 ui-monospace,monospace;letter-spacing:.16em;color:var(--gold);
+  text-transform:uppercase;margin:12px 0 5px;padding:0 7px}
+.plline{font-size:13.5px;color:var(--dim);margin:9px 0 3px;padding:0 7px}
+.plrow{display:flex;align-items:center;gap:10px;padding:7px 7px;border-radius:5px;cursor:pointer}
+.plrow:hover{background:#17150F}
+.plrow.on{background:#241B0D}
+.plrow.on .plnm{color:var(--gold)}
+.plno{font:400 10.5px/1 ui-monospace,monospace;color:var(--dim);width:22px;flex:none}
+.plnm{flex:1;font:400 13px/1.3 ui-monospace,monospace;color:var(--ink);min-width:0;
+  overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.plsec{font:400 10.5px/1 ui-monospace,monospace;color:var(--dim);flex:none}
+.pldl{color:var(--gold);text-decoration:none;font-size:15px;padding:2px 7px;flex:none;
+  border:1px solid var(--rule);border-radius:4px}
+.takec{font:600 10px/1 ui-monospace,monospace;color:#16110D;background:var(--gold);
+  border-radius:999px;padding:4px 8px;flex:none}
+.takecn{font:600 10px/1 ui-monospace,monospace;color:var(--dim);margin-right:7px}
+.sline{margin:5px 0 0;font-size:12.5px;line-height:1.5}
+.slw{display:block;font:600 9px/1 ui-monospace,monospace;letter-spacing:.14em;
+  color:var(--gold);text-transform:uppercase;margin-top:5px}
+.slt{display:block;color:var(--ink)}
+.dlg{margin:14px 0 4px;border-left:2px solid var(--gold);padding-left:14px}
+.dlgr{margin:0 0 14px}
+.dlgw{font:600 10px/1 ui-monospace,monospace;letter-spacing:.16em;color:var(--gold);
+  text-transform:uppercase}
+.dlgl{font-size:17px;line-height:1.5;margin:4px 0 2px;color:var(--ink)}
+.dlgd{font-size:12.5px;color:var(--dim);font-style:italic;margin-bottom:6px}
+.dlga{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.dlga audio{height:32px;max-width:260px}
+.dlgs{font:400 11px/1 ui-monospace,monospace;color:var(--dim)}
+.soon{font:600 10px/1 ui-monospace,monospace;letter-spacing:.12em;color:var(--dim);
+  border:1px solid var(--rule);border-radius:6px;padding:6px 10px}
 .twoup{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:14px 0 6px}
 @media(max-width:760px){.twoup{grid-template-columns:1fr}}
 .twoup .srcbox{margin:0}
+.idb{margin:22px 0}
+.idh{font:600 10px/1 ui-monospace,monospace;letter-spacing:.16em;color:var(--gold);
+  text-transform:uppercase;margin-bottom:9px}
+.idc{font-size:14.5px;line-height:1.62}
+.idc pre{white-space:pre-wrap;background:var(--box);border:1px solid var(--rule);
+  border-radius:9px;padding:13px 15px;font:400 12.5px/1.55 ui-monospace,monospace;
+  overflow-x:auto;margin:0}
+.idrefs{display:flex;gap:11px;flex-wrap:wrap}
+.idrefs a{display:block;width:150px}
+.idrefs img{width:100%;border-radius:7px;border:1px solid var(--rule);display:block}
+.idrefs span{display:block;font:400 10px/1.4 ui-monospace,monospace;color:var(--dim);
+  margin-top:5px;word-break:break-all}
+.rej{display:flex;gap:13px;flex-wrap:wrap}
+.rej figure{margin:0;width:190px}
+.rej img{width:100%;border-radius:7px;border:1px solid var(--rule);display:block;
+  filter:grayscale(.35) opacity(.82)}
+.rej figcaption{font:400 10.5px/1.45 ui-monospace,monospace;color:var(--dim);margin-top:5px}
+.rejtag{display:inline-block;font:600 9px/1 ui-monospace,monospace;letter-spacing:.12em;
+  color:var(--dim);border:1px solid var(--rule);border-radius:5px;padding:4px 7px;
+  margin-bottom:4px}
 .srcbox{margin:16px 0 6px;padding:13px 16px;background:var(--box);
  border-left:3px solid var(--brass)}
 .srcbox .t{display:flex;justify-content:space-between;align-items:baseline;gap:12px}
@@ -288,6 +409,29 @@ h2{font-size:19px;margin:38px 0 14px;padding-bottom:7px;border-bottom:1px solid 
 .rtph h3{margin:0;font:700 13px ui-monospace,monospace;letter-spacing:.1em;
  text-transform:uppercase;color:var(--body)}
 .rtph .st{margin-left:auto;font:600 9.5px ui-monospace,monospace;letter-spacing:.1em;color:var(--dim)}
+
+/* THE GUIDE. Baba, 3.9.2026: a play button beside every phase title, the same
+   brass disc as the number with a black triangle in it, and a bar that is not
+   there until it is playing. The bar collapses again on pause, because a row of
+   dead scrubbers down a page reads as clutter and none of them mean anything
+   while they are stopped. */
+.rtph .gp{width:26px;height:26px;border-radius:50%;background:var(--brass);border:0;
+ padding:0;cursor:pointer;flex:0 0 26px;display:flex;align-items:center;justify-content:center;
+ align-self:center}
+.rtph .gp svg{width:11px;height:11px;fill:#17150f;display:block}
+.rtph .gp[data-on="1"] svg.ic-p{display:none}
+.rtph .gp svg.ic-s{display:none}
+.rtph .gp[data-on="1"] svg.ic-s{display:block}
+.rtph .gb{flex:0 1 0;width:0;height:14px;opacity:0;overflow:hidden;cursor:pointer;
+ align-self:center;margin:0 0 0 14px;
+ transition:flex-basis .18s ease,opacity .18s ease,margin .18s ease}
+.rtph .gb[data-open="1"]{flex:1 1 auto;max-width:360px;opacity:1}
+.rtph .gb[data-open="1"]~.gt{margin-left:10px}
+.rtph .gb i{display:block;height:3px;margin-top:5px;background:var(--rule);position:relative}
+.rtph .gb i b{position:absolute;left:0;top:0;bottom:0;width:0;background:var(--brass);display:block}
+.rtph .gt{font:600 9.5px ui-monospace,monospace;letter-spacing:.1em;color:var(--dim);
+ align-self:center;opacity:0;white-space:nowrap;transition:opacity .18s ease}
+.rtph .gb[data-open="1"]~.gt{opacity:1}
 .rtrow{display:flex;flex-wrap:wrap;gap:12px;margin:12px 0 4px}
 .rtc{width:calc(25% - 9px)}
 .rtc .box{width:100%;aspect-ratio:16/9;border:1px solid var(--rule);background:var(--card);
@@ -378,9 +522,9 @@ h2{font-size:19px;margin:38px 0 14px;padding-bottom:7px;border-bottom:1px solid 
 .gate .rem input{margin:0;width:auto;padding:0;border:0;background:none;accent-color:var(--brass)}
 @media(max-width:1100px){.cell{width:33.333%}}
 @media(max-width:640px){.cell{width:50%}.wrap{padding:20px 14px 50px}}
-</style></head><body><div id=app style="display:block"><div class=bar><a class=home href="../index.html">HOME</a><a href="../BB_C_0/index.html">SC0</a><a href="../BB_C_1/index.html">SC1</a><a href="../BB_C_2/index.html">SC2</a><a href="../BB_C_3/index.html">SC3</a><a href="../BB_C_4/index.html">SC4</a><a href="../BB_C_5/index.html">SC5</a><a href="../BB_C_6/index.html">SC6</a><a href="../BB_C_7/index.html">SC7</a><a href="../BB_C_8/index.html">SC8</a><a href="../BB_C_10/index.html">SC10</a><a href="../BB_C_11/index.html">SC11</a><a href="../BB_C_12/index.html">SC12</a><a href="../BB_C_13/index.html" class=on>SC13</a><a href="../BB_C_14/index.html">SC14</a><a href="../BB_C_16/index.html">SC16</a><a href="../BB_C_17/index.html">SC17</a><a href="../BB_C_18/index.html">SC18</a><a href="../BB_C_19/index.html">SC19</a><span class=sp></span><span class=vb>V9 DRAFT</span><a href="../footage.html">FOOTAGE</a><a href="../assets.html">ASSETS</a><a href="../brainstorm.html">BRAINSTORM</a><a href="../breakdown.html">BREAKDOWN</a><a href="../documentation.html">DOCUMENTATION</a><a href="../archive.html">ARH</a><span class=sp></span><a class=drive href="https://drive.google.com/drive/folders/1INASz6hT4OUQo4UrpT62rMJaF24Amnuu" target=_blank rel=noopener>GDRIVE &nearr;</a><span class=sitev title="site version">v153</span><button class=th id=th onclick="tt()" title="light or dark">&#9681;</button></div><div class=wrap><h1>Scene 13 &nbsp;<span style="color:#8a8170;font-weight:400">The key</span></h1><div class=ask><b>Breakdowns are made on request.</b> A frame is delivered flat unless you ask for it to be split into background and foreground, because most frames do not need it and splitting one takes real time. Tick the ones you want and press the button at the bottom. Marko gets an email and does them.</div><h2>Shots</h2><p class=lede>Nothing here yet.</p>
+</style></head><body><div id=app style="display:block"><div class=bar><a class=home href="../index.html">THE FILM</a><a href="../radiodrama.html">RADIO DRAMA</a><a href="../archive.html">ARCHIVE</a><span class=sp></span><span class=vb>V9 DRAFT</span><span class=sitev title="site version">v221</span><button class=th id=th onclick="tt()" title="light or dark">&#9681;</button></div><div class=wrap><p class=crumb><a href="index.html">scene 7</a> -&gt; shot 7.91 -&gt; key frame</p><h1>Shot 7.91 &nbsp;<span style="color:#8a8170;font-weight:400">The house of the body, and the key door</span></h1><div class=ask><b>This is where you ask for things.</b> Tick a key frame for a breakdown into background and foreground, or for a change, say what needs to change, and press the button at the bottom. Marko gets an email.</div><p class=lede>1 key frame in this shot. The one marked <b>represents the shot</b> on the scene page.</p><div class=row><div class=cell><a href="https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIGINALS/main/BB_C_7/7-1-20260828.png"><img src="../mid/7-1-20260828.jpg" alt=""></a><div class=meta><span class=fid>7-1-20260828.png</span><span class=kf>represents the shot</span><span class=tag style="background:#8a8170">superseded</span><p class=note>Superseded by v2. Iron sill, riveted frame and rectangular flagstones, built before the house exterior existed. ARCHIVED 3.9.2026 as an earlier 7-1. Iron sill, riveted frame, rectangular flagstones, drawn before the house exterior existed, so the door belonged to a different building. Its name before was 7-0-A-v1.</p><label class=pick><input type=checkbox class=pk data-k="breakdown" data-f="7-1-20260828.png" onchange="upd()"> need a breakdown</label><label class=pick><input type=checkbox class=pk data-k="modification" data-f="7-1-20260828.png" onchange="upd()"> need a modification</label><textarea class=say data-f="7-1-20260828.png" oninput="upd()" rows=3 placeholder="what needs to change?"></textarea></div></div></div><p style="margin-top:30px"><a href="index.html">&larr; back to scene 7</a></p>
 <div class=prev id=prev>
-  <h3>email composer &nbsp;·&nbsp; scene 13<span class=gap></span><button class=x id=x onclick="shut()" title="close">CLOSE &times;</button></h3>
+  <h3>email composer &nbsp;·&nbsp; shot 7.91<span class=gap></span><button class=x id=x onclick="shut()" title="close">CLOSE &times;</button></h3>
   <pre id=pv></pre>
   <div class=acts>
     <a class=who id=who href="#" title="open this in your mail app">
@@ -456,7 +600,7 @@ function upd(){
   var subj=[];
   if(b.length) subj.push('breakdown '+b.map(function(x){return x.dataset.f;}).join(', '));
   if(m.length) subj.push('modification '+m.map(function(x){return x.dataset.f;}).join(', '));
-  var subject='Scene 13 request: '+subj.join('; ');
+  var subject='Shot 7.91 request: '+subj.join('; ');
   var href='mailto:marko.bosko@auroville.community?subject='+encodeURIComponent(subject)
     +'&body='+encodeURIComponent(text()+NL+NL+location.href);
 

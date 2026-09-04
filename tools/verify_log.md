@@ -509,3 +509,106 @@
 - **local path missing** — card/10-0-A-v2.html -> ../https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/reference/voice/SYNTESISED_MANAN_OLD_THEORY.wav
 - **original** — 9-1-VORTEX-UP-v1.png  200 2060708
 - **original** — 9R-1-VORTEX-DOWN-v1.png  200 4973671
+
+## 2026-09-04 14:56 — v221 — cached run
+
+327 pages, 435 remote targets, 210 originals.
+
+- published weight 70.0 MB of the 1024 MB Pages ceiling, 7%
+- 210 originals in originals.json, 949.1 MB
+- 140 rows still in drive_links.json, kept as a fallback
+
+**FAILED, 26:**
+
+- **local path missing** — BB_C_17/shot-17-0.html -> ../mid/17-0-A-v2.jpg
+- **local path missing** — card/11-0-A-v1.html -> ../https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/reference/voice/SYNTESISED_BRAIN_NEW_THEORY.wav
+- **local path missing** — card/11-0-A-v1.html -> ../https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/reference/voice/SYNTESISED_BRAIN_NEW_THEORY.wav
+- **local path missing** — card/12-0-A-v1.html -> ../https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/reference/voice/THE_LIMIT_IS_A_SETTING_NOT_A_WALL.wav
+- **local path missing** — card/12-0-A-v1.html -> ../https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/reference/voice/THE_LIMIT_IS_A_SETTING_NOT_A_WALL.wav
+- **local path missing** — card/10-0-A-v2.html -> ../https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/reference/voice/SYNTESISED_MANAN_OLD_THEORY.wav
+- **local path missing** — card/10-0-A-v2.html -> ../https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/reference/voice/SYNTESISED_MANAN_OLD_THEORY.wav
+- **local path missing** — BB_C_7/index.html -> shot-7-0.html
+- **local path missing** — BB_C_7/index.html -> ../tiny/7-0-A-v2.jpg
+- **local path missing** — BB_C_7/index.html -> shot-7-0.html
+- **local path missing** — BB_C_7/index.html -> ../tiny/7-0-A-v1.jpg
+- **local path missing** — BB_C_7/index.html -> ../tiny/7-1-A-v1.jpg
+- **local path missing** — BB_C_7/shot-7-1.html -> ../mid/7-1-A-v1.jpg
+- **local path missing** — BB_C_8/shot-8-1.html -> ../mid/8-1-A-v2.jpg
+- **local path missing** — BB_C_8/shot-8-1.html -> ../mid/8-1-A-v3.jpg
+- **local path missing** — BB_C_8/shot-8-3.html -> ../mid/8-3-MUSCLE-v1.jpg
+- **local path missing** — BB_C_8/shot-8-6.html -> ../mid/8-6-HEART-v1.jpg
+- **local path missing** — BB_C_8/shot-8-4.html -> ../mid/8-4-MUSCLE-v1.jpg
+- **local path missing** — BB_C_8/shot-8-0.html -> ../mid/8-0-A-v4.jpg
+- **local path missing** — BB_C_8/shot-8-0.html -> ../mid/8-0-A-v5.jpg
+- **local path missing** — BB_C_8/shot-8-2.html -> ../mid/8-2-A-v3.jpg
+- **local path missing** — BB_C_18/shot-18-0.html -> ../mid/18-0-A-v5.jpg
+- **local path missing** — BB_C_18/shot-18-0.html -> ../mid/18-0-A-v6.jpg
+- **live version** — catalog says v221, live serves v220. The push has not published yet, or it failed.
+- **original** — 9-1-VORTEX-UP-v1.png  200 2060708
+- **original** — 9R-1-VORTEX-DOWN-v1.png  200 4973671
+
+## 2026-09-04 14:56 — v221 — cached run
+
+329 pages, 425 remote targets, 210 originals.
+
+- published weight 70.1 MB of the 1024 MB Pages ceiling, 7%
+- 210 originals in originals.json, 949.1 MB
+- 140 rows still in drive_links.json, kept as a fallback
+
+**FAILED, 12:**
+
+- **local path missing** — BB_C_13/index.html -> ../BB_C_8/index.html
+- **local path missing** — BB_C_13/index.html -> ../BB_C_17/index.html
+- **local path missing** — BB_C_13/index.html -> ../BB_C_18/index.html
+- **local path missing** — card/11-0-A-v1.html -> ../https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/reference/voice/SYNTESISED_BRAIN_NEW_THEORY.wav
+- **local path missing** — card/11-0-A-v1.html -> ../https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/reference/voice/SYNTESISED_BRAIN_NEW_THEORY.wav
+- **local path missing** — card/12-0-A-v1.html -> ../https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/reference/voice/THE_LIMIT_IS_A_SETTING_NOT_A_WALL.wav
+- **local path missing** — card/12-0-A-v1.html -> ../https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/reference/voice/THE_LIMIT_IS_A_SETTING_NOT_A_WALL.wav
+- **local path missing** — card/10-0-A-v2.html -> ../https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/reference/voice/SYNTESISED_MANAN_OLD_THEORY.wav
+- **local path missing** — card/10-0-A-v2.html -> ../https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/reference/voice/SYNTESISED_MANAN_OLD_THEORY.wav
+- **live version** — catalog says v221, live serves v220. The push has not published yet, or it failed.
+- **original** — 9-1-VORTEX-UP-v1.png  200 2060708
+- **original** — 9R-1-VORTEX-DOWN-v1.png  200 4973671
+
+## 2026-09-04 14:56 — v221 — cached run
+
+329 pages, 425 remote targets, 210 originals.
+
+- published weight 70.1 MB of the 1024 MB Pages ceiling, 7%
+- 210 originals in originals.json, 949.1 MB
+- 140 rows still in drive_links.json, kept as a fallback
+
+**FAILED, 12:**
+
+- **local path missing** — BB_C_13/index.html -> ../BB_C_8/index.html
+- **local path missing** — BB_C_13/index.html -> ../BB_C_17/index.html
+- **local path missing** — BB_C_13/index.html -> ../BB_C_18/index.html
+- **local path missing** — card/11-0-A-v1.html -> ../https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/reference/voice/SYNTESISED_BRAIN_NEW_THEORY.wav
+- **local path missing** — card/11-0-A-v1.html -> ../https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/reference/voice/SYNTESISED_BRAIN_NEW_THEORY.wav
+- **local path missing** — card/12-0-A-v1.html -> ../https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/reference/voice/THE_LIMIT_IS_A_SETTING_NOT_A_WALL.wav
+- **local path missing** — card/12-0-A-v1.html -> ../https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/reference/voice/THE_LIMIT_IS_A_SETTING_NOT_A_WALL.wav
+- **local path missing** — card/10-0-A-v2.html -> ../https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/reference/voice/SYNTESISED_MANAN_OLD_THEORY.wav
+- **local path missing** — card/10-0-A-v2.html -> ../https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/reference/voice/SYNTESISED_MANAN_OLD_THEORY.wav
+- **live version** — catalog says v221, live serves v220. The push has not published yet, or it failed.
+- **original** — 9-1-VORTEX-UP-v1.png  200 2060708
+- **original** — 9R-1-VORTEX-DOWN-v1.png  200 4973671
+
+## 2026-09-04 14:57 — v221 — cached run
+
+328 pages, 425 remote targets, 210 originals.
+
+- published weight 70.1 MB of the 1024 MB Pages ceiling, 7%
+- 210 originals in originals.json, 949.1 MB
+- 140 rows still in drive_links.json, kept as a fallback
+
+**FAILED, 9:**
+
+- **local path missing** — card/11-0-A-v1.html -> ../https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/reference/voice/SYNTESISED_BRAIN_NEW_THEORY.wav
+- **local path missing** — card/11-0-A-v1.html -> ../https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/reference/voice/SYNTESISED_BRAIN_NEW_THEORY.wav
+- **local path missing** — card/12-0-A-v1.html -> ../https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/reference/voice/THE_LIMIT_IS_A_SETTING_NOT_A_WALL.wav
+- **local path missing** — card/12-0-A-v1.html -> ../https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/reference/voice/THE_LIMIT_IS_A_SETTING_NOT_A_WALL.wav
+- **local path missing** — card/10-0-A-v2.html -> ../https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/reference/voice/SYNTESISED_MANAN_OLD_THEORY.wav
+- **local path missing** — card/10-0-A-v2.html -> ../https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/reference/voice/SYNTESISED_MANAN_OLD_THEORY.wav
+- **live version** — catalog says v221, live serves v220. The push has not published yet, or it failed.
+- **original** — 9-1-VORTEX-UP-v1.png  200 2060708
+- **original** — 9R-1-VORTEX-DOWN-v1.png  200 4973671

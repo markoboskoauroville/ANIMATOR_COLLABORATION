@@ -14,16 +14,14 @@
     "6": "The trance",
     "9": "The vortex, up",
     "16": "The house of the body",
-    "17": "The front door",
-    "8": "The halls and the doors",
-    "18": "The key door",
     "19": "Coach Brain’s room",
     "10": "The old theory, on the board",
     "11": "The new theory, and the key",
     "12": "It is a setting, not a wall",
     "9R": "The vortex, down",
     "15": "He lets the key go, and Manan picks it up",
-    "14": "Credits, and the dedication"
+    "14": "Credits, and the dedication",
+    "7": "The house of the body, and the key door"
   },
   "entries": [
     {
@@ -686,16 +684,17 @@
     },
     {
       "kind": "keyframe",
-      "shot": "7.0",
-      "file": "BB_C_7/7-0-A-v1.png",
+      "shot": "7.91",
+      "file": "BB_C_7/7-1-20260828.png",
       "representative": true,
       "status": "superseded",
       "date": "2026-08-28",
-      "note": "Superseded by v2. Iron sill, riveted frame and rectangular flagstones, built before the house exterior existed.",
+      "note": "Superseded by v2. Iron sill, riveted frame and rectangular flagstones, built before the house exterior existed. ARCHIVED 3.9.2026 as an earlier 7-1. Iron sill, riveted frame, rectangular flagstones, drawn before the house exterior existed, so the door belonged to a different building. Its name before was 7-0-A-v1.",
       "slug": "INT. THE BODY — THE THRESHOLD",
       "what": "The open doorway fills the frame. Flagstones run to the iron sill and beyond it the paper is blank.",
       "why": "The crossing itself. One dark line with drawn floor behind it and nothing beyond, which is what lets the next frame be empty without reading as a cut to nothing.",
-      "flow_pos": 999
+      "flow_pos": 999,
+      "scene": "7"
     },
     {
       "kind": "keyframe",
@@ -850,12 +849,13 @@
     },
     {
       "kind": "keyframe",
-      "shot": "7.1",
-      "file": "BB_C_7/7-1-A-v1.png",
+      "shot": "7.92",
+      "file": "BB_C_7/7-1-20260830.png",
       "status": "superseded",
       "date": "2026-08-30",
-      "note": "Rejected at 17 percent ink. It kept the whole doorway and just widened the blank centre, because the threshold was the reference and the reference decides the form. THE FIX WAS TO START FROM AN ALMOST EMPTY FRAME instead: v2 was built from an almost empty plate by removing the figure, and it worked first time. Emptying a full drawing does not work; subtracting one thing from an empty one does.",
-      "flow_pos": 999
+      "note": "Rejected at 17 percent ink. It kept the whole doorway and just widened the blank centre, because the threshold was the reference and the reference decides the form. THE FIX WAS TO START FROM AN ALMOST EMPTY FRAME instead: v2 was built from an almost empty plate by removing the figure, and it worked first time. Emptying a full drawing does not work; subtracting one thing from an empty one does. ARCHIVED 3.9.2026 as an earlier 7-1. Rejected at 17 per cent ink: it kept the whole doorway and widened the blank centre, because the threshold was the reference and the reference decides the form. The fix was to start from an almost empty frame instead. Its name before was 7-1-A-v1.",
+      "flow_pos": 999,
+      "scene": "7"
     },
     {
       "kind": "keyframe",
@@ -1314,8 +1314,8 @@
     },
     {
       "kind": "keyframe",
-      "shot": "8.0",
-      "file": "BB_C_8/8-0-A-v4.png",
+      "shot": "7.93",
+      "file": "BB_C_7/7-2-20260831.png",
       "representative": true,
       "status": "superseded",
       "date": "2026-08-31",
@@ -1327,12 +1327,14 @@
         "phase": "Phase 8 of 15, THE HOUSE OF THE BODY.",
         "journey": "THE ROAD OF TESTS. Three wrong rooms, each saying no, none of them the thing that stopped him.",
         "element": "EARTH and the body. Walls you could put a hand on."
-      }
+      },
+      "scene": "7",
+      "note": " ARCHIVED 3.9.2026 as an earlier 7-2. Its name before was 8-0-A-v4."
     },
     {
       "kind": "keyframe",
-      "shot": "8.1",
-      "file": "BB_C_8/8-1-A-v2.png",
+      "shot": "7.94",
+      "file": "BB_C_7/7-3-20260831.png",
       "status": "superseded",
       "date": "2026-08-31",
       "slug": "INT. THE BODY — THE PUMP HALL",
@@ -1343,13 +1345,15 @@
         "phase": "Phase 8 of 15, THE HOUSE OF THE BODY.",
         "journey": "THE ROAD OF TESTS. Three wrong rooms, each saying no, none of them the thing that stopped him.",
         "element": "EARTH and the body. Walls you could put a hand on."
-      }
+      },
+      "scene": "7",
+      "note": " ARCHIVED 3.9.2026 as an earlier 7-3. Its name before was 8-1-A-v2."
     },
     {
       "kind": "keyframe",
-      "shot": "8.2",
-      "file": "BB_C_8/8-2-A-v3.png",
-      "status": "proposal",
+      "shot": "7.4",
+      "file": "BB_C_7/7-4.png",
+      "status": "accepted",
       "date": "2026-08-31",
       "slug": "INT. THE BODY — THE BELLOWS",
       "what": "A vaulted hall with a vast bellows of soft pleated skin between two pale plates, held by slender bowed columns, a rounded tube leaving its top.",
@@ -1359,7 +1363,10 @@
         "phase": "Phase 8 of 15, THE HOUSE OF THE BODY.",
         "journey": "THE ROAD OF TESTS. Three wrong rooms, each saying no, none of them the thing that stopped him.",
         "element": "EARTH and the body. Walls you could put a hand on."
-      }
+      },
+      "scene": "7",
+      "title": "The lung hall",
+      "note": "THE LUNGS, as ribs and tubing overhead. He looks into every room he passes and in none of them is there anything for him. That is the point of this stretch: the film has to spend real time finding nothing before the key door means anything. Its name before the reset was 8-2-A-v3."
     },
     {
       "kind": "keyframe",
@@ -1393,22 +1400,25 @@
     },
     {
       "kind": "keyframe",
-      "shot": "7.0",
-      "file": "BB_C_7/7-0-A-v2.png",
+      "shot": "7.1",
+      "file": "BB_C_7/7-1.png",
       "representative": true,
-      "status": "proposal",
+      "status": "accepted",
       "date": "2026-08-31",
       "slug": "INT. THE BODY — THE THRESHOLD",
       "what": "The doorway very close, filling the frame. Grown stone, arched and wider at the bottom, edges rounded over. Soft irregular slabs run up to a low rounded lip of a sill, and beyond it the paper is blank.",
       "why": "REBUILT 31.8.2026 in the language of the house. THE SILL IS STILL ONE DARK LINE and that is the whole point: drawn floor behind it, nothing beyond, which is what lets the next frame be bare paper without reading as a cut to nothing. Measured, the middle of the frame is 100 percent unmarked paper. The flanking doors dropped out and the walls sweep in instead, which is better: fewer objects competing with the opening and the curve pulls the eye through.",
-      "flow_pos": 999
+      "flow_pos": 999,
+      "scene": "7",
+      "title": "He is at the door",
+      "note": "HE IS AT THE DOOR, AND THE DOOR IS GIVING OFF LIGHT. The first frame of the house and the only one with no architecture in it yet: a doorway blown almost to white, the sill and the jamb the only things holding a shape. It is built from an almost empty plate on purpose. The version before it kept the whole doorway and just widened the blank centre, and it read as a drawing of a door rather than as light. He does not walk through this, he is PULLED through it. Its name before the reset was 7-0-A-v2."
     },
     {
       "kind": "keyframe",
-      "shot": "17.0",
-      "file": "BB_C_17/17-0-A-v2.png",
+      "shot": "7.96",
+      "file": "BB_C_7/7-cut-20260831.png",
       "representative": true,
-      "status": "proposal",
+      "status": "superseded",
       "date": "2026-08-31",
       "slug": "EXT. THE HOUSE — THE FRONT DOOR OPENS",
       "what": "The doorway close and filling the frame. Two smooth stone leaves swung back almost flat against the opening, and light pouring out of the gap as bare unmarked paper, spilling forward onto the paving.",
@@ -1418,12 +1428,14 @@
         "phase": "Phase 8 of 15, THE HOUSE OF THE BODY.",
         "journey": "THE ROAD OF TESTS. Three wrong rooms, each saying no, none of them the thing that stopped him.",
         "element": "EARTH and the body. Walls you could put a hand on."
-      }
+      },
+      "scene": "7",
+      "note": " CUT 3.9.2026, Baba: extra. A plain door in a wall with nothing pressed into it, standing between the heart hall and the key door and saying nothing that 7-8 does not say better. Kept, not deleted, and it is the only file here whose name says cut rather than a date alone. Its name before was 17-0-A-v2."
     },
     {
       "kind": "keyframe",
-      "shot": "18.0",
-      "file": "BB_C_18/18-0-A-v5.png",
+      "shot": "7.95",
+      "file": "BB_C_7/7-8-20260831.png",
       "representative": true,
       "status": "superseded",
       "date": "2026-08-31",
@@ -1435,7 +1447,9 @@
         "phase": "Phase 9 of 15, HE SEES THE KEY, AND GOES IN.",
         "journey": "APPROACH TO THE INMOST CAVE. He can read the door, and he knows.",
         "element": "THRESHOLD, the one the book says films waste."
-      }
+      },
+      "scene": "7",
+      "note": " ARCHIVED 3.9.2026 as an earlier 7-8. Its name before was 18-0-A-v5."
     },
     {
       "kind": "keyframe",
@@ -1666,31 +1680,17 @@
       "kind": "flow",
       "n": "7",
       "file": "flow/07-the-front-door.jpg",
-      "title": "The house of the body",
+      "title": "The house of the body, and the key door",
       "status": "placeholder",
       "scenes": [
-        "16",
-        "17",
-        "8"
+        "7"
       ],
-      "note": "The light fades and he is standing in front of the door, and the door is giving off light too. He opens it and goes in, and only then do we see the building he is inside: the corridor of named doors, the rooms behind them, the threshold at the far end. Organic architecture in the manner of Gaudi throughout.",
+      "note": "The light fades and he is at a door that is already giving off light, and he is pulled through it rather than walking in. Only then does the building assemble around us: halls of organ doors with shapes pressed into the clay and no written names, and nothing behind any of them for him. Then the key, small at the end of a hall, and then the key door filling the frame. ONE UNBROKEN MOVE, seen through his own eyes, with no cut anywhere in it.",
       "flow_pos": 0
     },
     {
       "kind": "flow",
       "n": "8",
-      "file": "flow/08-ganesha.jpg",
-      "title": "He sees the key, and goes in",
-      "status": "placeholder",
-      "scenes": [
-        "18"
-      ],
-      "note": "A second door, bone, with a plate reading COACH BRAIN. He opens it the same way he opened the first and goes in. What happened? I pulled the brakes on you.",
-      "flow_pos": 0
-    },
-    {
-      "kind": "flow",
-      "n": "9",
       "file": "flow/09-brain-room.jpg",
       "title": "They introduce each other",
       "status": "placeholder",
@@ -1702,7 +1702,7 @@
     },
     {
       "kind": "flow",
-      "n": "10",
+      "n": "9",
       "file": "flow/10-the-skull-door.jpg",
       "title": "The two theories, on the board",
       "status": "placeholder",
@@ -1715,7 +1715,7 @@
     },
     {
       "kind": "flow",
-      "n": "11",
+      "n": "10",
       "file": "flow/11-new-theory.jpg",
       "title": "The conclusion, and goodbye",
       "status": "placeholder",
@@ -1727,7 +1727,7 @@
     },
     {
       "kind": "flow",
-      "n": "12",
+      "n": "11",
       "file": "flow/12-conclusion.jpg",
       "title": "The vortex down, and the key falls with him",
       "status": "placeholder",
@@ -2441,14 +2441,14 @@
       }
     },
     {
-      "file": "BB_C_8/8-0-A-v5.png",
+      "file": "BB_C_7/7-2.png",
       "kind": "keyframe",
-      "scene": 8,
-      "shot": "8.0",
-      "title": "The corridor, the doors carry shapes",
-      "status": "proposal",
+      "scene": "7",
+      "shot": "7.2",
+      "title": "The corridor",
+      "status": "accepted",
       "date": "2026-09-02",
-      "note": "The written plaques are gone. Each door swells outward into the shape of what is behind it, moulded in the same white clay as the door. A word excludes anybody who does not read English and does not survive translation; a raised shape is read by the body. This is the frame that teaches the audience to read the doors, so everything after it depends on it. Supersedes v4.",
+      "note": "AND ONLY NOW DO WE SEE WHERE HE IS. The camera keeps moving and the building assembles around it: a corridor of doors running away from us, organic architecture in the manner of Gaudi, bone and cartilage rather than brick. The door he came through is already shut behind us and is never shown again. Its name before the reset was 8-0-A-v5.",
       "flow_pos": 10,
       "dna": {
         "phase": "Phase 8 of 15, THE HOUSE OF THE BODY.",
@@ -2470,14 +2470,14 @@
       "meaning": "THE FRAME THAT TEACHES THE AUDIENCE TO READ. Nothing is explained here and everything is taught. Six doors carry six shapes and no word appears anywhere, so by the time the audience reaches a door with a key on it they already know what that means and nobody had to tell them.\n\nThe written plaques were removed for the reason in WINNING_FILM: a word excludes anybody who does not read English and does not survive translation. A shape raised in clay is read by the body.\n\nIt also establishes the house as ordinary and working. This is not a ruin and not a nightmare. The floor is worn down the middle by long use, and the long use is his own."
     },
     {
-      "file": "BB_C_8/8-3-MUSCLE-v1.png",
+      "file": "BB_C_7/7-5.png",
       "kind": "keyframe",
-      "scene": 8,
-      "shot": "8.3",
+      "scene": "7",
+      "shot": "7.5",
       "title": "The muscle door",
-      "status": "proposal",
+      "status": "accepted",
       "date": "2026-09-02",
-      "note": "A bundle of fibres raised in the clay, and the door standing a hand’s width open because he has already tried it. Beyond the gap, soft darkness with nothing legible in it.",
+      "note": "CLOSE ON ONE DOOR. A muscle, pressed into the clay, in the only close look the halls get. It is here so the audience learns to read the shapes, which is what makes the key on 7-8 land without a word being said. Its name before the reset was 8-3-MUSCLE-v1.",
       "flow_pos": 10,
       "dna": {
         "phase": "Phase 8 of 15, THE HOUSE OF THE BODY.",
@@ -2486,14 +2486,14 @@
       }
     },
     {
-      "file": "BB_C_8/8-4-MUSCLE-v1.png",
+      "file": "BB_C_7/7-6.png",
       "kind": "keyframe",
-      "scene": 8,
-      "shot": "8.4",
-      "title": "The muscle hall, the lung door beyond",
-      "status": "proposal",
+      "scene": "7",
+      "shot": "7.6",
+      "title": "The muscle hall",
+      "status": "accepted",
       "date": "2026-09-02",
-      "note": "Tendon and cord running the length of the room, calm and slack rather than straining. This is the part of him that had been shouting all afternoon and it has nothing to say. The next door is visible at the far end of the same frame, because there is no cut anywhere after phase 5 and every transition is a passage through a surface.",
+      "note": "BACK OUT AND MOVING AGAIN. The hall runs long and the perspective deepens: the same corridor, further in, and still nothing for him. Its name before the reset was 8-4-MUSCLE-v1.",
       "flow_pos": 10,
       "dna": {
         "phase": "Phase 8 of 15, THE HOUSE OF THE BODY.",
@@ -2502,14 +2502,14 @@
       }
     },
     {
-      "file": "BB_C_8/8-1-A-v3.png",
+      "file": "BB_C_7/7-3.png",
       "kind": "keyframe",
-      "scene": 8,
-      "shot": "8.1",
-      "title": "The bellows hall, the heart door beyond",
-      "status": "proposal",
+      "scene": "7",
+      "shot": "7.3",
+      "title": "The bellows hall",
+      "status": "accepted",
       "date": "2026-09-02",
-      "note": "The hall as it was, with the heart door added at the vanishing point. Supersedes v2.",
+      "note": "THE FIRST ORGAN. A hall of bellows, and a heart door small at the far end. The doors carry SHAPES PRESSED INTO THE CLAY and never written names, because a name would make this a diagram and it is a body. Its name before the reset was 8-1-A-v3.",
       "flow_pos": 10,
       "dna": {
         "phase": "Phase 8 of 15, THE HOUSE OF THE BODY.",
@@ -2518,14 +2518,14 @@
       }
     },
     {
-      "file": "BB_C_8/8-6-HEART-v1.png",
+      "file": "BB_C_7/7-7.png",
       "kind": "keyframe",
-      "scene": 8,
-      "shot": "8.6",
+      "scene": "7",
+      "shot": "7.7",
       "title": "The heart hall, and the key door",
-      "status": "proposal",
+      "status": "accepted",
       "date": "2026-09-02",
-      "note": "The last of the wrong rooms. Chambered and patient rather than urgent. At the vanishing point, a door carrying a key in clay: the first sight of the answer, at the smallest scale it will ever have.",
+      "note": "THE KEY IS VISIBLE AT LAST, small, at the end of the hall. Do not push in on it. The camera carries on at the same speed it has held all the way through, and the key simply gets nearer, because a push in would tell the audience it matters and the whole film is built on them working that out themselves. Its name before the reset was 8-6-HEART-v1.",
       "flow_pos": 10,
       "dna": {
         "phase": "Phase 8 of 15, THE HOUSE OF THE BODY.",
@@ -2534,14 +2534,14 @@
       }
     },
     {
-      "file": "BB_C_18/18-0-A-v6.png",
+      "file": "BB_C_7/7-8.png",
       "kind": "keyframe",
-      "scene": 18,
-      "shot": "18.0",
-      "title": "The key door",
-      "status": "proposal",
+      "scene": "7",
+      "shot": "7.8",
+      "title": "The key door, close",
+      "status": "accepted",
       "date": "2026-09-02",
-      "note": "COACH BRAIN is gone. A key raised in the clay running the whole height of the door, white on white, part of the door rather than attached to it. By now the audience has learnt to read the bumps, so nobody has to be told. Supersedes v5.",
+      "note": "AND THERE IT IS. The key pressed into the clay, filling the frame, the same handling as every other door so nothing announces it. He opens it exactly as he opened the first one. This is the last frame before Coach Brain, and the last thing in the film that is only architecture. Its name before the reset was 18-0-A-v6.",
       "flow_pos": 11,
       "dna": {
         "phase": "Phase 9 of 15, HE SEES THE KEY, AND GOES IN.",
@@ -2697,7 +2697,7 @@
     },
     {
       "kind": "flow",
-      "n": "13",
+      "n": "12",
       "file": "flow/13.jpg",
       "status": "placeholder",
       "note": "",
@@ -2708,7 +2708,7 @@
     },
     {
       "kind": "flow",
-      "n": "14",
+      "n": "13",
       "file": "flow/14.jpg",
       "status": "placeholder",
       "note": "",
@@ -3267,7 +3267,7 @@
     }
   ],
   "event": "Breakthrough Junior Challenge 2026",
-  "site_version": 220,
+  "site_version": 221,
   "footage": [
     {
       "name": "Key catch",
@@ -6035,26 +6035,16 @@
     },
     {
       "n": "7",
-      "sec": 27.0,
+      "sec": 61.32,
       "voices": [
         "imogen_32"
       ],
       "parts": 1,
-      "text": "The light fades and he is at a door that is already giving off light. He is pulled through rather than walking in. Only after that do we pull back and see the building, and by then the door is shut. It is a house built out of his own body. The corridor doors carry shapes pressed into clay, a muscle, a pair of lungs, a heart, and no written names anywhere. This is one unbroken move through his own eyes: no cuts, no shot reverse, and the camera never turns to look at him.",
+      "text": "Seven and eight were one flow and are one now. He arrives at a lit door, goes through it, moves down the halls past the organ doors and reaches the key door, and there is no cut anywhere in it. Shoot it as one unbroken move through his own eyes: the camera never turns to look at him and never stops. He does not walk through the first door, he is pulled through it, and only after that does the building assemble around the camera. Halls of organ doors, bone and cartilage rather than brick, in the manner of Gaudi. The doors carry shapes pressed into the clay and never written names, because a name would make this a diagram and it is a body. One close look at a muscle door teaches the audience to read the shapes, which is what makes the key land later without a word. He looks into every room and in none of them is there anything for him, and the film has to spend real time finding nothing before the key means anything. Then the key, small, at the end of a hall. Do not push in on it. Hold the speed you have held all the way through and simply let it get nearer, because a push in tells the audience it matters and this whole film is built on them working that out for themselves.",
       "url": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/guide/phase-7.mp3"
     },
     {
       "n": "8",
-      "sec": 17.14,
-      "voices": [
-        "imogen_32"
-      ],
-      "parts": 1,
-      "text": "A second door, bone coloured, with a plate on it. He opens it the same way he opened the first and goes in. Keep the handling identical to the front door so the two rhyme. The feeling is arrival rather than suspense. He is expected, and on some level he already knows it.",
-      "url": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/guide/phase-8.mp3"
-    },
-    {
-      "n": "9",
       "sec": 53.28,
       "voices": [
         "edmund_32",
@@ -6063,10 +6053,10 @@
       ],
       "parts": 11,
       "text": "Inside, a small brain in a chair in front of a wall of dials, and he has been waiting. Ah. There you are. I was expecting you. Play Coach Brain as an official who is neither villain nor friend: patient, faintly amused, completely certain he is in the right. Then he asks for something impossible. Before we begin. Raise my right arm. I am trying. I know. I can't. Why can't I move it? Try now. That was you. It was never my arm at all. The arm is always yours. The permission is mine. That is the whole idea of the film done as a party trick rather than a lecture. Screen direction is fixed here and never crosses: Coach Brain on the left looking right, Manan on the right looking left.",
-      "url": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/guide/phase-9.mp3"
+      "url": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/guide/phase-8.mp3"
     },
     {
-      "n": "10",
+      "n": "9",
       "sec": 59.26,
       "voices": [
         "edmund_32",
@@ -6075,47 +6065,47 @@
       ],
       "parts": 9,
       "text": "The two theories go up on boards, and neither board arrives finished. Manan writes the old one in white chalk, line by line. You run. The muscle uses up its oxygen. The fuel is spent. And when the tank reads empty, the body stops. Coach Brain answers on white with black marker. The same layout, the same three lines, the same gauge, and every value reversed. When the answer starts to look like no, I slow you down. So, no. Fatigue is in the brain, not in your legs. Up here. And it decides long before anything is actually in danger. When I stop you, the fuel is still there. So the wall... Is a number I chose. Carefully. To keep you alive. Then it can be a different number. Draw them being written rather than cutting to them done. It is an argument, so let the second board land as a reply and not as a diagram.",
-      "url": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/guide/phase-10.mp3"
+      "url": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/guide/phase-9.mp3"
     },
     {
-      "n": "11",
+      "n": "10",
       "sec": 20.57,
       "voices": [
         "imogen_32"
       ],
       "parts": 1,
       "text": "They reach the conclusion together and he says goodbye. This is where the film's argument lands, so let it be a conversation and not a banner. Nobody wins. The boy is not given the answer, he gets there himself, and Coach Brain lets him. Quiet, warm, and short. This section is still one frame and is waiting on a decision.",
-      "url": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/guide/phase-11.mp3"
+      "url": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/guide/phase-10.mp3"
     },
     {
-      "n": "12",
+      "n": "11",
       "sec": 23.62,
       "voices": [
         "imogen_32"
       ],
       "parts": 1,
       "text": "The vortex down, and the key falls with him. Falling now, not carried, so the trail reverses: everything streams upward past him. The key turns and grows as it comes, and behind it the whole film runs backwards so faint it is almost not there. The key stays sharp because the camera falls with it, and that difference is the entire reason the fall reads as fast.",
-      "url": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/guide/phase-12.mp3"
+      "url": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/guide/phase-11.mp3"
     },
     {
-      "n": "13",
+      "n": "12",
       "sec": 22.2,
       "voices": [
         "imogen_32"
       ],
       "parts": 1,
       "text": "He catches it at the bottom. On the way down the key crosses from a pencil drawing into a photograph, and no single frame is the moment it becomes real. Coach Brain's hand and Manan's are never on screen together, on purpose, so nothing has to be composited and the lighting never has to match. The key is the only gold in the film. Everything it lands in should be still.",
-      "url": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/guide/phase-13.mp3"
+      "url": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/guide/phase-12.mp3"
     },
     {
-      "n": "14",
+      "n": "13",
       "sec": 24.67,
       "voices": [
         "imogen_32"
       ],
       "parts": 1,
       "text": "Credits, card to card, through cloud. Then the dedication. If you step back and look at the whole film at once it is a journey: he runs, he rides, he flies, he climbs, and then he falls, which is the oldest shape there is. He comes back with the key, and with knowing that the wall was never a wall. It was a setting. A number somebody chose, and it can be changed.",
-      "url": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/guide/phase-14.mp3"
+      "url": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/guide/phase-13.mp3"
     }
   ]
 }

@@ -184,9 +184,130 @@ h2{font-size:19px;margin:38px 0 14px;padding-bottom:7px;border-bottom:1px solid 
  color:var(--dim)}
 .filmfoot span{display:block;font-weight:600;font-size:9px;letter-spacing:.14em;
  padding-top:6px;color:var(--dim);opacity:.75}
+.deck{background:var(--bg);border:1px solid var(--rule);border-radius:8px;
+  padding:9px 11px;margin:0 0 8px}
+.deck.is-playing{border-color:var(--gold)}
+.deckh{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:6px}
+.deckn{font:400 10.5px/1 ui-monospace,monospace;color:var(--dim)}
+.wave{position:relative;height:40px;background:var(--panel);border:1px solid var(--rule);
+  border-radius:3px;display:flex;align-items:flex-end;gap:1px;padding:3px;overflow:hidden}
+.wave span{flex:1 1 0;background:#6B4E1E;border-radius:1px 1px 0 0;min-width:0;
+  transition:background .05s linear}
+.wave span.played{background:#F7D488}
+.cursor{position:absolute;top:0;bottom:0;width:1px;background:var(--gold);left:0;
+  pointer-events:none}
+.deckf{display:flex;align-items:center;gap:10px;margin-top:6px}
+/* 3.9.2026. The button was a 13px dark glyph on gold, which on a phone in
+   sunlight reads as nothing at all. Baba could not find it. It is bigger now
+   and the glyph is WHITE, which holds against both the gold and the glare, and
+   it gets a ring when it is playing so the deck that is running is obvious
+   from across the room. */
+.pbtn{background:var(--gold);border:0;border-radius:999px;width:42px;height:42px;
+  cursor:pointer;display:flex;align-items:center;justify-content:center;flex:none;padding:0;
+  box-shadow:0 1px 0 rgba(0,0,0,.35)}
+.pbtn svg{width:17px;height:17px;fill:#fff;display:block}
+.pbtn.on{box-shadow:0 0 0 3px rgba(232,166,75,.35)}
+.deck.is-playing .wave{border-color:var(--gold)}
+.tc{font:400 11px/1 ui-monospace,monospace;color:var(--dim)}
+.tc.rem{margin-left:auto}
+/* ONE DECK, PLAYLIST UNDER IT. Modelled on Baba's own NOVA_TV_777 player and on
+   Winamp: transport at the top, a waveform that fills as it plays, the list
+   below. Forty three separate players was the wrong shape, because only one
+   thing plays at a time. The VU meter is deliberately absent: he asked for the
+   waveform and the controls, and a meter on a review page is decoration. */
+.nova{margin:16px 0 6px;background:#0F0E0C;border:1px solid var(--rule);border-radius:10px;
+  overflow:hidden}
+.novatc{display:flex;justify-content:space-between;padding:11px 15px;
+  font:400 15px/1 ui-monospace,monospace;color:var(--gold);border-bottom:1px solid var(--rule)}
+.novatc span:last-child{color:var(--dim)}
+.novah{display:flex;align-items:center;justify-content:space-between;gap:14px;
+  padding:14px 15px;background:#171310;border-bottom:1px solid var(--rule)}
+.novah b{display:block;font:700 15px/1.25 Inter,system-ui,sans-serif;color:var(--gold);
+  letter-spacing:.01em}
+.novah span{display:block;font:400 12.5px/1.45 Inter,system-ui,sans-serif;color:var(--dim);
+  margin-top:3px}
+.mcbtn{background:#1A1A1D;border:1px solid var(--rule);border-radius:3px;color:var(--ink);
+  cursor:pointer;width:40px;height:34px;display:inline-flex;align-items:center;
+  justify-content:center;flex:0 0 auto;padding:0;text-decoration:none}
+.mcbtn svg{width:15px;height:15px;fill:currentColor;display:block}
+.mcbtn.wide{width:auto;padding:0 12px;font:600 10px/1 ui-monospace,monospace;
+  letter-spacing:.12em;color:var(--gold)}
+.mcbtn.play{width:78px;height:46px;background:var(--gold);border-color:var(--gold);flex:none}
+.mcbtn.play svg{width:20px;height:20px;fill:#fff}
+.novascrub{padding:12px 15px;background:#0B0A09}
+.wave{position:relative;height:52px;width:100%;background:#131110;
+  border:1px solid var(--rule);border-radius:3px;display:flex;align-items:flex-end;
+  gap:1px;padding:4px 3px;overflow:hidden}
+.wave span{flex:1 1 0;background:#6B4E1E;border-radius:1px 1px 0 0;min-width:0;
+  transition:background .05s linear}
+.wave span.played{background:#F7D488}
+.cursor{position:absolute;top:0;bottom:0;width:1px;background:#FFE7B0;left:0;pointer-events:none}
+.novabar{display:flex;align-items:center;gap:8px;padding:11px 15px;flex-wrap:wrap;
+  border-top:1px solid var(--rule)}
+.novastate{margin-left:auto;font:400 11px/1 ui-monospace,monospace;letter-spacing:.14em;
+  color:var(--dim)}
+.novapl{border-top:1px solid var(--rule)}
+.novaplh{display:flex;align-items:center;gap:10px;cursor:pointer;list-style:none;
+  padding:12px 15px;font:600 10.5px/1 ui-monospace,monospace;letter-spacing:.16em;
+  color:var(--dim)}
+.novaplh::-webkit-details-marker{display:none}
+.novaplh:after{content:'>';margin-left:auto;color:var(--gold);transition:transform .15s}
+.novapl[open] .novaplh:after{transform:rotate(90deg)}
+.novapb{padding:0 8px 12px;max-height:420px;overflow-y:auto}
+.plhead{font:600 9.5px/1 ui-monospace,monospace;letter-spacing:.16em;color:var(--gold);
+  text-transform:uppercase;margin:12px 0 5px;padding:0 7px}
+.plline{font-size:13.5px;color:var(--dim);margin:9px 0 3px;padding:0 7px}
+.plrow{display:flex;align-items:center;gap:10px;padding:7px 7px;border-radius:5px;cursor:pointer}
+.plrow:hover{background:#17150F}
+.plrow.on{background:#241B0D}
+.plrow.on .plnm{color:var(--gold)}
+.plno{font:400 10.5px/1 ui-monospace,monospace;color:var(--dim);width:22px;flex:none}
+.plnm{flex:1;font:400 13px/1.3 ui-monospace,monospace;color:var(--ink);min-width:0;
+  overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.plsec{font:400 10.5px/1 ui-monospace,monospace;color:var(--dim);flex:none}
+.pldl{color:var(--gold);text-decoration:none;font-size:15px;padding:2px 7px;flex:none;
+  border:1px solid var(--rule);border-radius:4px}
+.takec{font:600 10px/1 ui-monospace,monospace;color:#16110D;background:var(--gold);
+  border-radius:999px;padding:4px 8px;flex:none}
+.takecn{font:600 10px/1 ui-monospace,monospace;color:var(--dim);margin-right:7px}
+.sline{margin:5px 0 0;font-size:12.5px;line-height:1.5}
+.slw{display:block;font:600 9px/1 ui-monospace,monospace;letter-spacing:.14em;
+  color:var(--gold);text-transform:uppercase;margin-top:5px}
+.slt{display:block;color:var(--ink)}
+.dlg{margin:14px 0 4px;border-left:2px solid var(--gold);padding-left:14px}
+.dlgr{margin:0 0 14px}
+.dlgw{font:600 10px/1 ui-monospace,monospace;letter-spacing:.16em;color:var(--gold);
+  text-transform:uppercase}
+.dlgl{font-size:17px;line-height:1.5;margin:4px 0 2px;color:var(--ink)}
+.dlgd{font-size:12.5px;color:var(--dim);font-style:italic;margin-bottom:6px}
+.dlga{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.dlga audio{height:32px;max-width:260px}
+.dlgs{font:400 11px/1 ui-monospace,monospace;color:var(--dim)}
+.soon{font:600 10px/1 ui-monospace,monospace;letter-spacing:.12em;color:var(--dim);
+  border:1px solid var(--rule);border-radius:6px;padding:6px 10px}
 .twoup{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:14px 0 6px}
 @media(max-width:760px){.twoup{grid-template-columns:1fr}}
 .twoup .srcbox{margin:0}
+.idb{margin:22px 0}
+.idh{font:600 10px/1 ui-monospace,monospace;letter-spacing:.16em;color:var(--gold);
+  text-transform:uppercase;margin-bottom:9px}
+.idc{font-size:14.5px;line-height:1.62}
+.idc pre{white-space:pre-wrap;background:var(--box);border:1px solid var(--rule);
+  border-radius:9px;padding:13px 15px;font:400 12.5px/1.55 ui-monospace,monospace;
+  overflow-x:auto;margin:0}
+.idrefs{display:flex;gap:11px;flex-wrap:wrap}
+.idrefs a{display:block;width:150px}
+.idrefs img{width:100%;border-radius:7px;border:1px solid var(--rule);display:block}
+.idrefs span{display:block;font:400 10px/1.4 ui-monospace,monospace;color:var(--dim);
+  margin-top:5px;word-break:break-all}
+.rej{display:flex;gap:13px;flex-wrap:wrap}
+.rej figure{margin:0;width:190px}
+.rej img{width:100%;border-radius:7px;border:1px solid var(--rule);display:block;
+  filter:grayscale(.35) opacity(.82)}
+.rej figcaption{font:400 10.5px/1.45 ui-monospace,monospace;color:var(--dim);margin-top:5px}
+.rejtag{display:inline-block;font:600 9px/1 ui-monospace,monospace;letter-spacing:.12em;
+  color:var(--dim);border:1px solid var(--rule);border-radius:5px;padding:4px 7px;
+  margin-bottom:4px}
 .srcbox{margin:16px 0 6px;padding:13px 16px;background:var(--box);
  border-left:3px solid var(--brass)}
 .srcbox .t{display:flex;justify-content:space-between;align-items:baseline;gap:12px}
@@ -288,6 +409,29 @@ h2{font-size:19px;margin:38px 0 14px;padding-bottom:7px;border-bottom:1px solid 
 .rtph h3{margin:0;font:700 13px ui-monospace,monospace;letter-spacing:.1em;
  text-transform:uppercase;color:var(--body)}
 .rtph .st{margin-left:auto;font:600 9.5px ui-monospace,monospace;letter-spacing:.1em;color:var(--dim)}
+
+/* THE GUIDE. Baba, 3.9.2026: a play button beside every phase title, the same
+   brass disc as the number with a black triangle in it, and a bar that is not
+   there until it is playing. The bar collapses again on pause, because a row of
+   dead scrubbers down a page reads as clutter and none of them mean anything
+   while they are stopped. */
+.rtph .gp{width:26px;height:26px;border-radius:50%;background:var(--brass);border:0;
+ padding:0;cursor:pointer;flex:0 0 26px;display:flex;align-items:center;justify-content:center;
+ align-self:center}
+.rtph .gp svg{width:11px;height:11px;fill:#17150f;display:block}
+.rtph .gp[data-on="1"] svg.ic-p{display:none}
+.rtph .gp svg.ic-s{display:none}
+.rtph .gp[data-on="1"] svg.ic-s{display:block}
+.rtph .gb{flex:0 1 0;width:0;height:14px;opacity:0;overflow:hidden;cursor:pointer;
+ align-self:center;margin:0 0 0 14px;
+ transition:flex-basis .18s ease,opacity .18s ease,margin .18s ease}
+.rtph .gb[data-open="1"]{flex:1 1 auto;max-width:360px;opacity:1}
+.rtph .gb[data-open="1"]~.gt{margin-left:10px}
+.rtph .gb i{display:block;height:3px;margin-top:5px;background:var(--rule);position:relative}
+.rtph .gb i b{position:absolute;left:0;top:0;bottom:0;width:0;background:var(--brass);display:block}
+.rtph .gt{font:600 9.5px ui-monospace,monospace;letter-spacing:.1em;color:var(--dim);
+ align-self:center;opacity:0;white-space:nowrap;transition:opacity .18s ease}
+.rtph .gb[data-open="1"]~.gt{opacity:1}
 .rtrow{display:flex;flex-wrap:wrap;gap:12px;margin:12px 0 4px}
 .rtc{width:calc(25% - 9px)}
 .rtc .box{width:100%;aspect-ratio:16/9;border:1px solid var(--rule);background:var(--card);
@@ -378,7 +522,7 @@ h2{font-size:19px;margin:38px 0 14px;padding-bottom:7px;border-bottom:1px solid 
 .gate .rem input{margin:0;width:auto;padding:0;border:0;background:none;accent-color:var(--brass)}
 @media(max-width:1100px){.cell{width:33.333%}}
 @media(max-width:640px){.cell{width:50%}.wrap{padding:20px 14px 50px}}
-</style></head><body><div id=app style="display:block"><div class=bar><a class=home href="../index.html">HOME</a><a href="../BB_C_0/index.html">SC0</a><a href="../BB_C_1/index.html">SC1</a><a href="../BB_C_2/index.html">SC2</a><a href="../BB_C_3/index.html">SC3</a><a href="../BB_C_4/index.html">SC4</a><a href="../BB_C_5/index.html">SC5</a><a href="../BB_C_6/index.html">SC6</a><a href="../BB_C_7/index.html" class=on>SC7</a><a href="../BB_C_8/index.html">SC8</a><a href="../BB_C_10/index.html">SC10</a><a href="../BB_C_11/index.html">SC11</a><a href="../BB_C_12/index.html">SC12</a><a href="../BB_C_13/index.html">SC13</a><a href="../BB_C_14/index.html">SC14</a><a href="../BB_C_16/index.html">SC16</a><a href="../BB_C_17/index.html">SC17</a><a href="../BB_C_18/index.html">SC18</a><a href="../BB_C_19/index.html">SC19</a><span class=sp></span><span class=vb>V9 DRAFT</span><a href="../footage.html">FOOTAGE</a><a href="../assets.html">ASSETS</a><a href="../brainstorm.html">BRAINSTORM</a><a href="../breakdown.html">BREAKDOWN</a><a href="../documentation.html">DOCUMENTATION</a><a href="../archive.html">ARH</a><span class=sp></span><a class=drive href="https://drive.google.com/drive/folders/1INASz6hT4OUQo4UrpT62rMJaF24Amnuu" target=_blank rel=noopener>GDRIVE &nearr;</a><span class=sitev title="site version">v153</span><button class=th id=th onclick="tt()" title="light or dark">&#9681;</button></div><div class=wrap><h1>Scene 7 &nbsp;<span style="color:#8a8170;font-weight:400">The verdict</span></h1><h2>Storyboard</h2><p class=lede>The whole scene in order, 1 frames across 2 shots, read left to right like a silent film. This is the scene. Everything below it is the breakdown: the sheets, the frame and the shots opened one at a time. Click any frame to open the shot it belongs to.</p><div class=seq><a href="shot-7-0.html"><img src="../tiny/7-0-A-v2.jpg" alt="" loading=lazy><div class=cap><b>7.0</b><span>7-0-A-v2</span></div></a></div><div class=ask><b>Breakdowns are made on request.</b> A frame is delivered flat unless you ask for it to be split into background and foreground, because most frames do not need it and splitting one takes real time. Tick the ones you want and press the button at the bottom. Marko gets an email and does them.</div><h2>Shots</h2><p class=lede>2 shots. One picture stands for each shot. Click it to open the shot and see every key frame in it, and to ask for a breakdown or a change.</p><div class="row shot"><div class=cell><a class=open href="shot-7-0.html"><img src="../tiny/7-0-A-v1.jpg" alt=""><div class=meta><span class=fid>shot 7.0</span><span class=kf>2 key frames</span><span class=tag style="background:#8a8170">superseded</span><p class=note>Superseded by v2. Iron sill, riveted frame and rectangular flagstones, built before the house exterior existed.</p><span class=bd>Open the shot &rarr;</span></div></a></div><div class=cell><a class=open href="shot-7-1.html"><img src="../tiny/7-1-A-v1.jpg" alt=""><div class=meta><span class=fid>shot 7.1</span><span class=kf>1 key frame</span><span class=tag style="background:#8a8170">superseded</span><p class=note>Rejected at 17 percent ink. It kept the whole doorway and just widened the blank centre, because the threshold was the reference and the reference decides the form. THE FIX WAS TO START FROM AN ALMOST EMPTY FRAME instead: v2 was built from the Ganesha plate by removing the figure, and it worked first time. Emptying a full drawing does not work; subtracting one thing from an empty one does.</p><span class=bd>Open the shot &rarr;</span></div></a></div></div>
+</style></head><body><div id=app style="display:block"><div class=bar><a class=home href="../index.html">THE FILM</a><a href="../radiodrama.html">RADIO DRAMA</a><a href="../archive.html">ARCHIVE</a><span class=sp></span><span class=vb>V9 DRAFT</span><span class=sitev title="site version">v221</span><button class=th id=th onclick="tt()" title="light or dark">&#9681;</button></div><div class=wrap><h1>Scene 7 &nbsp;<span style="color:#8a8170;font-weight:400">The house of the body, and the key door</span></h1><h2>Storyboard</h2><p class=lede>The whole scene in order, 8 frames across 14 shots, read left to right like a silent film. This is the scene. Everything below it is the breakdown: the sheets, the frame and the shots opened one at a time. Click any frame to open the shot it belongs to.</p><div class=seq><a href="shot-7-1.html"><img src="../tiny/7-1.jpg" alt="" loading=lazy><div class=cap><b>7.1</b><span>7-1</span></div></a><div class=brk></div><a href="shot-7-2.html"><img src="../tiny/7-2.jpg" alt="" loading=lazy><div class=cap><b>7.2</b><span>7-2</span></div></a><div class=brk></div><a href="shot-7-3.html"><img src="../tiny/7-3.jpg" alt="" loading=lazy><div class=cap><b>7.3</b><span>7-3</span></div></a><div class=brk></div><a href="shot-7-4.html"><img src="../tiny/7-4.jpg" alt="" loading=lazy><div class=cap><b>7.4</b><span>7-4</span></div></a><div class=brk></div><a href="shot-7-5.html"><img src="../tiny/7-5.jpg" alt="" loading=lazy><div class=cap><b>7.5</b><span>7-5</span></div></a><div class=brk></div><a href="shot-7-6.html"><img src="../tiny/7-6.jpg" alt="" loading=lazy><div class=cap><b>7.6</b><span>7-6</span></div></a><div class=brk></div><a href="shot-7-7.html"><img src="../tiny/7-7.jpg" alt="" loading=lazy><div class=cap><b>7.7</b><span>7-7</span></div></a><div class=brk></div><a href="shot-7-8.html"><img src="../tiny/7-8.jpg" alt="" loading=lazy><div class=cap><b>7.8</b><span>7-8</span></div></a></div><div class=ask><b>Breakdowns are made on request.</b> A frame is delivered flat unless you ask for it to be split into background and foreground, because most frames do not need it and splitting one takes real time. Tick the ones you want and press the button at the bottom. Marko gets an email and does them.</div><h2>Shots</h2><p class=lede>14 shots. One picture stands for each shot. Click it to open the shot and see every key frame in it, and to ask for a breakdown or a change.</p><div class="row shot"><div class=cell><a class=open href="shot-7-1.html"><img src="../tiny/7-1.jpg" alt=""><div class=meta><span class=fid>shot 7.1</span><span class=kf>1 key frame</span><span class=tag style="background:#3d6b4a">accepted</span><p class=note>HE IS AT THE DOOR, AND THE DOOR IS GIVING OFF LIGHT. The first frame of the house and the only one with no architecture in it yet: a doorway blown almost to white, the sill and the jamb the only things holding a shape. It is built from an almost empty plate on purpose. The version before it kept the whole doorway and just widened the blank centre, and it read as a drawing of a door rather than as light. He does not walk through this, he is PULLED through it. Its name before the reset was 7-0-A-v2.</p><span class=bd>Open the shot &rarr;</span></div></a></div><div class=cell><a class=open href="shot-7-2.html"><img src="../tiny/7-2.jpg" alt=""><div class=meta><span class=fid>shot 7.2</span><span class=kf>1 key frame</span><span class=tag style="background:#3d6b4a">accepted</span><p class=note>AND ONLY NOW DO WE SEE WHERE HE IS. The camera keeps moving and the building assembles around it: a corridor of doors running away from us, organic architecture in the manner of Gaudi, bone and cartilage rather than brick. The door he came through is already shut behind us and is never shown again. Its name before the reset was 8-0-A-v5.</p><span class=bd>Open the shot &rarr;</span></div></a></div><div class=cell><a class=open href="shot-7-3.html"><img src="../tiny/7-3.jpg" alt=""><div class=meta><span class=fid>shot 7.3</span><span class=kf>1 key frame</span><span class=tag style="background:#3d6b4a">accepted</span><p class=note>THE FIRST ORGAN. A hall of bellows, and a heart door small at the far end. The doors carry SHAPES PRESSED INTO THE CLAY and never written names, because a name would make this a diagram and it is a body. Its name before the reset was 8-1-A-v3.</p><span class=bd>Open the shot &rarr;</span></div></a></div><div class=cell><a class=open href="shot-7-4.html"><img src="../tiny/7-4.jpg" alt=""><div class=meta><span class=fid>shot 7.4</span><span class=kf>1 key frame</span><span class=tag style="background:#3d6b4a">accepted</span><p class=note>THE LUNGS, as ribs and tubing overhead. He looks into every room he passes and in none of them is there anything for him. That is the point of this stretch: the film has to spend real time finding nothing before the key door means anything. Its name before the reset was 8-2-A-v3.</p><span class=bd>Open the shot &rarr;</span></div></a></div><div class=cell><a class=open href="shot-7-5.html"><img src="../tiny/7-5.jpg" alt=""><div class=meta><span class=fid>shot 7.5</span><span class=kf>1 key frame</span><span class=tag style="background:#3d6b4a">accepted</span><p class=note>CLOSE ON ONE DOOR. A muscle, pressed into the clay, in the only close look the halls get. It is here so the audience learns to read the shapes, which is what makes the key on 7-8 land without a word being said. Its name before the reset was 8-3-MUSCLE-v1.</p><span class=bd>Open the shot &rarr;</span></div></a></div></div><div class="row shot"><div class=cell><a class=open href="shot-7-6.html"><img src="../tiny/7-6.jpg" alt=""><div class=meta><span class=fid>shot 7.6</span><span class=kf>1 key frame</span><span class=tag style="background:#3d6b4a">accepted</span><p class=note>BACK OUT AND MOVING AGAIN. The hall runs long and the perspective deepens: the same corridor, further in, and still nothing for him. Its name before the reset was 8-4-MUSCLE-v1.</p><span class=bd>Open the shot &rarr;</span></div></a></div><div class=cell><a class=open href="shot-7-7.html"><img src="../tiny/7-7.jpg" alt=""><div class=meta><span class=fid>shot 7.7</span><span class=kf>1 key frame</span><span class=tag style="background:#3d6b4a">accepted</span><p class=note>THE KEY IS VISIBLE AT LAST, small, at the end of the hall. Do not push in on it. The camera carries on at the same speed it has held all the way through, and the key simply gets nearer, because a push in would tell the audience it matters and the whole film is built on them working that out themselves. Its name before the reset was 8-6-HEART-v1.</p><span class=bd>Open the shot &rarr;</span></div></a></div><div class=cell><a class=open href="shot-7-8.html"><img src="../tiny/7-8.jpg" alt=""><div class=meta><span class=fid>shot 7.8</span><span class=kf>1 key frame</span><span class=tag style="background:#3d6b4a">accepted</span><p class=note>AND THERE IT IS. The key pressed into the clay, filling the frame, the same handling as every other door so nothing announces it. He opens it exactly as he opened the first one. This is the last frame before Coach Brain, and the last thing in the film that is only architecture. Its name before the reset was 18-0-A-v6.</p><span class=bd>Open the shot &rarr;</span></div></a></div><div class=cell><a class=open href="shot-7-91.html"><img src="../tiny/7-1-20260828.jpg" alt=""><div class=meta><span class=fid>shot 7.91</span><span class=kf>1 key frame</span><span class=tag style="background:#8a8170">superseded</span><p class=note>Superseded by v2. Iron sill, riveted frame and rectangular flagstones, built before the house exterior existed. ARCHIVED 3.9.2026 as an earlier 7-1. Iron sill, riveted frame, rectangular flagstones, drawn before the house exterior existed, so the door belonged to a different building. Its name before was 7-0-A-v1.</p><span class=bd>Open the shot &rarr;</span></div></a></div><div class=cell><a class=open href="shot-7-92.html"><img src="../tiny/7-1-20260830.jpg" alt=""><div class=meta><span class=fid>shot 7.92</span><span class=kf>1 key frame</span><span class=tag style="background:#8a8170">superseded</span><p class=note>Rejected at 17 percent ink. It kept the whole doorway and just widened the blank centre, because the threshold was the reference and the reference decides the form. THE FIX WAS TO START FROM AN ALMOST EMPTY FRAME instead: v2 was built from an almost empty plate by removing the figure, and it worked first time. Emptying a full drawing does not work; subtracting one thing from an empty one does. ARCHIVED 3.9.2026 as an earlier 7-1. Rejected at 17 per cent ink: it kept the whole doorway and widened the blank centre, because the threshold was the reference and the reference decides the form. The fix was to start from an almost empty frame instead. Its name before was 7-1-A-v1.</p><span class=bd>Open the shot &rarr;</span></div></a></div></div><div class="row shot"><div class=cell><a class=open href="shot-7-93.html"><img src="../tiny/7-2-20260831.jpg" alt=""><div class=meta><span class=fid>shot 7.93</span><span class=kf>1 key frame</span><span class=tag style="background:#8a8170">superseded</span><p class=note> ARCHIVED 3.9.2026 as an earlier 7-2. Its name before was 8-0-A-v4.</p><span class=bd>Open the shot &rarr;</span></div></a></div><div class=cell><a class=open href="shot-7-94.html"><img src="../tiny/7-3-20260831.jpg" alt=""><div class=meta><span class=fid>shot 7.94</span><span class=kf>1 key frame</span><span class=tag style="background:#8a8170">superseded</span><p class=note> ARCHIVED 3.9.2026 as an earlier 7-3. Its name before was 8-1-A-v2.</p><span class=bd>Open the shot &rarr;</span></div></a></div><div class=cell><a class=open href="shot-7-95.html"><img src="../tiny/7-8-20260831.jpg" alt=""><div class=meta><span class=fid>shot 7.95</span><span class=kf>1 key frame</span><span class=tag style="background:#8a8170">superseded</span><p class=note> ARCHIVED 3.9.2026 as an earlier 7-8. Its name before was 18-0-A-v5.</p><span class=bd>Open the shot &rarr;</span></div></a></div><div class=cell><a class=open href="shot-7-96.html"><img src="../tiny/7-cut-20260831.jpg" alt=""><div class=meta><span class=fid>shot 7.96</span><span class=kf>1 key frame</span><span class=tag style="background:#8a8170">superseded</span><p class=note> CUT 3.9.2026, Baba: extra. A plain door in a wall with nothing pressed into it, standing between the heart hall and the key door and saying nothing that 7-8 does not say better. Kept, not deleted, and it is the only file here whose name says cut rather than a date alone. Its name before was 17-0-A-v2.</p><span class=bd>Open the shot &rarr;</span></div></a></div></div>
 <div class=prev id=prev>
   <h3>email composer &nbsp;·&nbsp; scene 7<span class=gap></span><button class=x id=x onclick="shut()" title="close">CLOSE &times;</button></h3>
   <pre id=pv></pre>
