@@ -2175,12 +2175,14 @@ def theories_strip(prefix=''):
                  'board and the middle one is shown here.', prefix)
 
 
-ARRIVAL = [
-    ('BB_C_16/live/16-1-MOCKUP-v1.png', 'he is at the door'),
-    (('mp4', 'clips/in-front-of-door-loop.mp4'), 'in front of the door'),
-    ('BB_C_16/16-1-A-v1.png', 'the door open'),
-    ('BB_C_16/16-0-A-v1.png', 'the door shut'),
-]
+# THE ARRIVAL STRIP IS GONE. Baba, 4.9.2026: it showed the horizontal house,
+# he is at the door, the door open, the door shut, and every one of those was
+# replaced when the house went vertical. He arrives through the hip now. The
+# frames were superseded in the catalogue but this list named them by PATH, so
+# they kept printing on the front page regardless of their status, which is what
+# a hardcoded list always does. The loop it also carried is a catalogued frame
+# with a shot number now and appears at the end of the scene like any other.
+ARRIVAL = []
 
 
 def strip(items, lede, prefix=''):

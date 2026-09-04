@@ -1356,7 +1356,7 @@
       "shot": "16.0",
       "file": "BB_C_16/16-0-A-v1.png",
       "representative": true,
-      "status": "proposal",
+      "status": "superseded",
       "date": "2026-08-31",
       "slug": "EXT. THE HOUSE OF THE BODY — DAY",
       "what": "The front of a building where nothing is straight. Bone columns bowed narrow at the middle, a roofline of melted stone, windows set deep under heavy brows, one broad low opening with a curved sill, and a single heavy door at ground level.",
@@ -1366,7 +1366,8 @@
         "phase": "Phase 8 of 15, THE HOUSE OF THE BODY.",
         "journey": "THE ROAD OF TESTS. Three wrong rooms, each saying no, none of them the thing that stopped him.",
         "element": "EARTH and the body. Walls you could put a hand on."
-      }
+      },
+      "note": " OUT 4.9.2026, Baba: outdated. It was he is at the door from the horizontal version of the house, and the vertical version replaced it. He arrives through the hip now, not through a front door on a facade."
     },
     {
       "kind": "keyframe",
@@ -1830,7 +1831,7 @@
       "shot": "16.1",
       "file": "BB_C_16/16-1-A-v1.png",
       "representative": true,
-      "status": "proposal",
+      "status": "superseded",
       "date": "2026-08-31",
       "slug": "EXT. THE HOUSE — THE DOOR OPEN",
       "what": "The whole building with the front door open and light pouring out of it as bare unmarked paper, spilling forward onto the paving.",
@@ -1840,7 +1841,8 @@
         "phase": "Phase 8 of 15, THE HOUSE OF THE BODY.",
         "journey": "THE ROAD OF TESTS. Three wrong rooms, each saying no, none of them the thing that stopped him.",
         "element": "EARTH and the body. Walls you could put a hand on."
-      }
+      },
+      "note": " OUT 4.9.2026, Baba: outdated. It was the door open from the horizontal version of the house, and the vertical version replaced it. He arrives through the hip now, not through a front door on a facade."
     },
     {
       "kind": "keyframe",
@@ -1886,7 +1888,7 @@
       "kind": "keyframe",
       "shot": "16.2",
       "file": "BB_C_16/live/16-1-MOCKUP-v1.png",
-      "status": "proposal",
+      "status": "superseded",
       "date": "2026-08-31",
       "slug": "EXT. THE HOUSE — HE IS AT THE DOOR",
       "what": "Manan standing in the lit doorway, seen from behind, hand raised to the door. He is 80 percent of the height of the opening.",
@@ -1908,7 +1910,8 @@
         "phase": "Phase 8 of 15, THE HOUSE OF THE BODY.",
         "journey": "THE ROAD OF TESTS. Three wrong rooms, each saying no, none of them the thing that stopped him.",
         "element": "EARTH and the body. Walls you could put a hand on."
-      }
+      },
+      "note": " OUT 4.9.2026, Baba: outdated. It was the door shut from the horizontal version of the house, and the vertical version replaced it. He arrives through the hip now, not through a front door on a facade."
     },
     {
       "kind": "keyframe",
@@ -3309,7 +3312,7 @@
       "date": "2026-09-03",
       "video": true,
       "sec": 8.88,
-      "note": "IN FRONT OF THE DOOR. Live action, on the storyboard like any drawn frame. The loop is 480 wide; the ProRes with alpha on Drive is what gets composited. DOWNLOAD FULL SIZE GOES TO THE MASTER, not to the proxy. The button used to offer the 63 KB loop as the full size, which is the opposite of true: the proxy is 480 wide and the master is 3840 by 2160. The resolution comes from the stills of this same take in BB_C_15/live, which are all 3840 by 2160.",
+      "note": "IN FRONT OF THE DOOR. Live action, on the storyboard like any drawn frame. The loop is 480 wide; the ProRes with alpha on Drive is what gets composited. DOWNLOAD FULL SIZE GOES TO THE MASTER, not to the proxy. The button used to offer the 63 KB loop as the full size, which is the opposite of true: the proxy is 480 wide and the master is 3840 by 2160. The resolution comes from the stills of this same take in BB_C_15/live, which are all 3840 by 2160. MOVED TO THE END OF THE SCENE 4.9.2026, Baba. It is the last frame in the grid now rather than a reference above it, because it is live action of the thing the scene has just arrived at.",
       "source": [
         {
           "name": "ProRes master, with alpha",
@@ -3319,7 +3322,9 @@
       ],
       "full": "https://drive.google.com/drive/folders/1ph36NxPciUB5Y4s_IiowDotmjk2ciFZ4",
       "full_label": "PRORES WITH ALPHA &nbsp;3840 &times; 2160",
-      "proxy_note": "The loop on this page is a 480 wide proxy so the storyboard stays light. It is not the deliverable and must never be composited."
+      "proxy_note": "The loop on this page is a 480 wide proxy so the storyboard stays light. It is not the deliverable and must never be composited.",
+      "scene": "7",
+      "shot": "7.7"
     },
     {
       "file": "BB_C_7/7-1-20260904.png",
@@ -3506,10 +3511,17 @@
       "kind": "keyframe",
       "scene": "7",
       "shot": "7.5",
-      "title": "It opens by itself",
+      "title": "It opens by itself, and he is in front of it",
       "status": "accepted",
       "date": "2026-09-04",
-      "note": "IT OPENS BY ITSELF AND HE DOES NOT TOUCH IT. The panels slide apart and what is behind is pure white with no detail in it, so bright that it BLOOMS: the light spills past the opening, washes over the inner edges of the panels and eats the hard edges of the arch away. The brightness is the subject of the frame. Same door, same key, same stone, and the only change is that it is open."
+      "note": "IT OPENS BY ITSELF AND HE DOES NOT TOUCH IT, and he is standing in it. The panels slide apart and what is behind is pure white with no detail in it, so bright that it BLOOMS: the light spills past the opening, washes over the inner edges of the panels and eats the hard edges of the arch away. He is a dark shape against it. THIS IS A COMPOSED SHOT: the boy is keyed in from the live action, so the empty door is kept beside it as the plate. He is composited from the 480 wide proxy here, which is enough to show the intent; the real composite is made in post from the ProRes.",
+      "plates": [
+        {
+          "file": "7-5-PLATE.png",
+          "label": "Background plate, no live action",
+          "note": "The same frame with nobody in it. This is what the ProRes is laid over."
+        }
+      ]
     },
     {
       "file": "BB_C_7/7-6.png",
@@ -3523,7 +3535,7 @@
     }
   ],
   "event": "Breakthrough Junior Challenge 2026",
-  "site_version": 225,
+  "site_version": 226,
   "footage": [
     {
       "name": "Key catch",
