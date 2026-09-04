@@ -2839,7 +2839,24 @@
       "title": "He is carried up",
       "status": "accepted",
       "date": "2026-09-03",
-      "note": "APPROVED BY BABA 3.9.2026. MANAN IS FULL COLOUR AND THE WORLD IS GRAPHITE, and those are the only two colours in the film with the gold key. Head and lifted arm highest and pointing at the throat, feet trailing below, sweatshirt and hair streaming DOWNWARD because he is rising and the air is going past him the other way. That trail is the only thing separating rising from falling. Colour measures 0.37 per cent of the frame, all of it him. Layers CLOUD and MANAN are generated separately rather than keyed, in BB_C_9/layers."
+      "note": "APPROVED BY BABA 3.9.2026. MANAN IS FULL COLOUR AND THE WORLD IS GRAPHITE, and those are the only two colours in the film with the gold key. Head and lifted arm highest and pointing at the throat, feet trailing below, sweatshirt and hair streaming DOWNWARD because he is rising and the air is going past him the other way. That trail is the only thing separating rising from falling. Colour measures 0.37 per cent of the frame, all of it him. Layers CLOUD and MANAN are generated separately rather than keyed, in BB_C_9/layers.",
+      "plates": [
+        {
+          "file": "9-2-RISING-v2_CLOUD.png",
+          "label": "Clean plate, no live action",
+          "note": "The vortex with nobody in it. This one was never keyed: the cloud and the boy were generated as separate layers in the first place, which is why the plate is exact and not a repair."
+        },
+        {
+          "file": "9-2-RISING-v2_MANAN_ALPHA.png",
+          "label": "Actor isolated, real alpha channel",
+          "note": "RGBA, transparent, nothing to key. The image model cannot write an alpha channel, so this was not generated: the matte was measured. The bright half of him came from the MANAN layer and the dark half, trousers, shoes and hair, from where the finished frame is darker than the cloud plate, because black on black is invisible and black on pale paper is not. Then holes filled, edge softened, and his colour taken off the plate rather than off the black backing so the fringe is not dark."
+        },
+        {
+          "file": "9-2-RISING-v2_MANAN_GREEN.png",
+          "label": "Actor isolated, on green",
+          "note": "The same matte over pure green, 0 255 0, for keying in After Effects if the alpha version is not wanted. Use the alpha one where you can: it is the same pixels with none of the spill."
+        }
+      ]
     },
     {
       "file": "BB_C_9R/9R-2-FALLING-v1.png",
@@ -3113,10 +3130,13 @@
       "status": "accepted",
       "date": "2026-09-03",
       "note": "MANAN WALKS IN, AND WHAT HE WALKS IN ON IS THE COLLAPSE. The boy steps into the drawn world beside the runner, magnifying glass up. The film's first crossing of its two worlds: anything real is a photograph, anything thought is a pencil drawing, and here they stand in one frame on one ground line, with the boy the taller of the two so he is the subject and the drawing is the thing being looked at. SUPERSEDES 1-5-v1, which had the runner mid sprint. magnifying-glass.md section 4: every inspection happens to ONE body in ONE pose, 1-6-COLLAPSE-v1, and a different runner in a different pose reads as a different scene however good the drawing is. BUILT FROM APPROVED MATERIAL, NOT FROM WORDS. The collapse was cut out of 1-6-COLLAPSE-v1 and composited onto the plate, and that composite was the single reference for the 2K render, so neither the boy nor the runner was invented. FILED AS 1-12, 3.9.2026, in the reset that gave scene one its final names. Before the reset it was 1-5-v3, and every name mentioned in this note is a pre reset name.",
-      "clean_plate": {
-        "file": "1-12-CLEAN-v1.png",
-        "note": "The same frame with the boy taken out of it. The drawn world, the ink border and the collapse are exactly as delivered; only Manan, his shadow and the ground he stood on are gone. Built by wiping the photographed figure and rebuilding the paper under him, so nothing drawn was touched or redrawn."
-      }
+      "plates": [
+        {
+          "file": "1-12-CLEAN-v1.png",
+          "note": "The same frame with the boy taken out of it. The drawn world, the ink border and the collapse are exactly as delivered; only Manan, his shadow and the ground he stood on are gone. Built by wiping the photographed figure and rebuilding the paper under him, so nothing drawn was touched or redrawn.",
+          "label": "Clean plate, no live action"
+        }
+      ]
     },
     {
       "file": "BB_C_1/1-13.png",
@@ -3127,10 +3147,13 @@
       "status": "accepted",
       "date": "2026-09-03",
       "note": "HE TURNS TO US. Pushed in, and the drawing behind him is the SAME picture nearer: the head and shoulders of 1-6-COLLAPSE-v1, head tipped back, face up, mouth open. He is inspecting one image at two distances, which is what makes 1.10 and 1.11 one action rather than two shots. The drawing is pale and much fainter than he is, so the drawn world recedes exactly as the real one takes over. SUPERSEDES 1-6-v1, which carried an unrelated profile head of the old man. Same method as 1-5-v3: composite first, then render from that composite as the single reference. FILED AS 1-13, 3.9.2026, in the reset that gave scene one its final names. Before the reset it was 1-6-v3, and every name mentioned in this note is a pre reset name.",
-      "clean_plate": {
-        "file": "1-13-CLEAN-v1.png",
-        "note": "The same frame with the boy, his hand, the brass glass and his shadow taken out. He was standing on the bottom border and covering most of the wall, so the border was rebuilt across the gap and the wall relit evenly. The pale drawing of the runner is unchanged in size, place and weight."
-      }
+      "plates": [
+        {
+          "file": "1-13-CLEAN-v1.png",
+          "note": "The same frame with the boy, his hand, the brass glass and his shadow taken out. He was standing on the bottom border and covering most of the wall, so the border was rebuilt across the gap and the wall relit evenly. The pale drawing of the runner is unchanged in size, place and weight.",
+          "label": "Clean plate, no live action"
+        }
+      ]
     },
     {
       "file": "BB_C_1/1-9.png",
@@ -3184,7 +3207,7 @@
     }
   ],
   "event": "Breakthrough Junior Challenge 2026",
-  "site_version": 214,
+  "site_version": 215,
   "footage": [
     {
       "name": "Key catch",

@@ -1240,5 +1240,23 @@
     "sha256": "e0933305f22c8e045d027ef184959120c5c624137a4950ee28ab685da4d77f15",
     "path": "BB_C_1/1-13-CLEAN-v1.png",
     "url": "https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIGINALS/main/BB_C_1/1-13-CLEAN-v1.png"
+  },
+  "9-2-RISING-v2_CLOUD.png": {
+    "bytes": 2093547,
+    "sha256": "39c1f90c81d6f8609c66589e4b806f8b034049c59c2792dcc41988be63eb6a3b",
+    "path": "BB_C_9/layers/9-2-RISING-v2_CLOUD.png",
+    "url": "https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIGINALS/main/BB_C_9/layers/9-2-RISING-v2_CLOUD.png"
+  },
+  "9-2-RISING-v2_MANAN_ALPHA.png": {
+    "bytes": 672547,
+    "sha256": "1e81d4a10b44a6ffeb151d6dcf48a85ab9eaa2aae8cb8ebd3419500ec242223c",
+    "path": "BB_C_9/layers/9-2-RISING-v2_MANAN_ALPHA.png",
+    "url": "https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIGINALS/main/BB_C_9/layers/9-2-RISING-v2_MANAN_ALPHA.png"
+  },
+  "9-2-RISING-v2_MANAN_GREEN.png": {
+    "bytes": 579390,
+    "sha256": "735f178719ca1ef329df08b7b0890e761313959b11daa44e473e1e8c678cd789",
+    "path": "BB_C_9/layers/9-2-RISING-v2_MANAN_GREEN.png",
+    "url": "https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIGINALS/main/BB_C_9/layers/9-2-RISING-v2_MANAN_GREEN.png"
   }
 }
