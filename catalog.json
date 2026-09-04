@@ -3176,7 +3176,7 @@
     }
   ],
   "event": "Breakthrough Junior Challenge 2026",
-  "site_version": 211,
+  "site_version": 212,
   "footage": [
     {
       "name": "Key catch",
@@ -4725,31 +4725,24 @@
       "n": 37,
       "speaker": "COACH BRAIN",
       "text": "Ah. Tu si. Očekivao sam te.",
-      "audio": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/drama_v6/31-COACH-1486d4.mp3",
-      "sec": 5.38,
+      "audio": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/drama_hr_cb/9ace2224ab5a2805.mp3",
+      "sec": 3.34,
       "scene": "coach-brains-room",
-      "from_v6": 31
+      "from_v6": 31,
+      "voice": "michal"
     },
     {
       "n": 38,
-      "speaker": "NARATOR",
-      "text": "Coach Brain kaže.",
-      "audio": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/drama_v6/32-NARATOR-5b54ac.mp3",
-      "sec": 2.16,
+      "speaker": "COACH BRAIN",
+      "text": "Prije nego počnemo. Podigni mi desnu ruku.",
+      "audio": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/drama_hr_cb/cb1b9fb1e0035c16.mp3",
+      "sec": 3.89,
       "scene": "coach-brains-room",
-      "from_v6": 32
+      "from_v6": 33,
+      "voice": "michal"
     },
     {
       "n": 39,
-      "speaker": "COACH BRAIN",
-      "text": "Prije nego počnemo. Podigni mi desnu ruku.",
-      "audio": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/drama_v6/33-COACH-a833a3.mp3",
-      "sec": 4.87,
-      "scene": "coach-brains-room",
-      "from_v6": 33
-    },
-    {
-      "n": 40,
       "speaker": "NARATOR",
       "text": "Manan kaže.",
       "audio": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/drama_v6/34-NARATOR-b80f0b.mp3",
@@ -4758,7 +4751,7 @@
       "from_v6": 34
     },
     {
-      "n": 41,
+      "n": 40,
       "speaker": "MANAN",
       "text": "Pokušavam.",
       "audio": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/drama_v6/35-MANAN-2c9ac5.mp3",
@@ -4767,7 +4760,7 @@
       "from_v6": 35
     },
     {
-      "n": 42,
+      "n": 41,
       "speaker": "NARATOR",
       "text": "Coach Brain kaže.",
       "audio": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/drama_v6/36-NARATOR-5b54ac.mp3",
@@ -4776,16 +4769,17 @@
       "from_v6": 36
     },
     {
-      "n": 43,
+      "n": 42,
       "speaker": "COACH BRAIN",
       "text": "Znam.",
-      "audio": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/drama_v6/37-COACH-6a9ccd.mp3",
-      "sec": 1.61,
+      "audio": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/drama_hr_cb/94438f08056f13fa.mp3",
+      "sec": 0.7,
       "scene": "coach-brains-room",
-      "from_v6": 37
+      "from_v6": 37,
+      "voice": "michal"
     },
     {
-      "n": 44,
+      "n": 43,
       "speaker": "NARATOR",
       "text": "Manan kaže.",
       "audio": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/drama_v6/38-NARATOR-b80f0b.mp3",
@@ -4794,7 +4788,7 @@
       "from_v6": 38
     },
     {
-      "n": 45,
+      "n": 44,
       "speaker": "MANAN",
       "text": "Ne mogu. Zašto je ne mogu pomaknuti?",
       "audio": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/drama_v6/39-MANAN-b1f319.mp3",
@@ -4803,7 +4797,7 @@
       "from_v6": 39
     },
     {
-      "n": 46,
+      "n": 45,
       "speaker": "NARATOR",
       "text": "Coach Brain kaže.",
       "audio": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/drama_v6/40-NARATOR-5b54ac.mp3",
@@ -4812,16 +4806,17 @@
       "from_v6": 40
     },
     {
-      "n": 47,
+      "n": 46,
       "speaker": "COACH BRAIN",
       "text": "Probaj sada.",
-      "audio": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/drama_v6/41-COACH-2a12fb.mp3",
-      "sec": 2.02,
+      "audio": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/drama_hr_cb/c2e8ab3e95319a06.mp3",
+      "sec": 1.2,
       "scene": "coach-brains-room",
-      "from_v6": 41
+      "from_v6": 41,
+      "voice": "michal"
     },
     {
-      "n": 48,
+      "n": 47,
       "speaker": "NARATOR",
       "text": "Manan kaže.",
       "audio": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/drama_v6/42-NARATOR-b80f0b.mp3",
@@ -4830,7 +4825,7 @@
       "from_v6": 42
     },
     {
-      "n": 49,
+      "n": 48,
       "speaker": "MANAN",
       "text": "To si bio ti. Nikada to nije ni bila moja ruka.",
       "audio": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/drama_v6/43-MANAN-fadc2c.mp3",
@@ -4839,7 +4834,7 @@
       "from_v6": 43
     },
     {
-      "n": 50,
+      "n": 49,
       "speaker": "NARATOR",
       "text": "Coach Brain kaže.",
       "audio": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/drama_v6/44-NARATOR-5b54ac.mp3",
@@ -4848,16 +4843,17 @@
       "from_v6": 44
     },
     {
-      "n": 51,
+      "n": 50,
       "speaker": "COACH BRAIN",
       "text": "Ruka je uvijek tvoja. Dopuštenje je moje.",
-      "audio": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/drama_v6/45-COACH-3d44bb.mp3",
-      "sec": 4.85,
+      "audio": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/drama_hr_cb/ac3f17188b674795.mp3",
+      "sec": 3.17,
       "scene": "coach-brains-room",
-      "from_v6": 45
+      "from_v6": 45,
+      "voice": "michal"
     },
     {
-      "n": 52,
+      "n": 51,
       "speaker": "NARATOR",
       "text": "Onda njih dvojica to iznose na ploče. Nijedna ploča ne dolazi gotova. Manan bijelom kredom piše ono što su ga učili, redak po redak. Stara teorija.",
       "audio": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/drama_v6/46-NARATOR-a52693.mp3",
@@ -4866,7 +4862,7 @@
       "from_v6": 46
     },
     {
-      "n": 53,
+      "n": 52,
       "speaker": "NARATOR",
       "text": "Manan kaže.",
       "audio": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/drama_v6/47-NARATOR-b80f0b.mp3",
@@ -4875,7 +4871,7 @@
       "from_v6": 47
     },
     {
-      "n": 54,
+      "n": 53,
       "speaker": "MANAN",
       "text": "Tisuću devetsto dvadeset treća. Hill stavlja trkače na traku i mjeri sve što rade. Njegov odgovor je jednostavan. Umor je u mišiću.",
       "audio": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/drama_v6/48-MANAN-65dcde.mp3",
@@ -4884,16 +4880,7 @@
       "from_v6": 48
     },
     {
-      "n": 55,
-      "speaker": "NARATOR",
-      "text": "Manan kaže.",
-      "audio": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/drama_v6/49-NARATOR-b80f0b.mp3",
-      "sec": 1.92,
-      "scene": "the-boards",
-      "from_v6": 49
-    },
-    {
-      "n": 56,
+      "n": 54,
       "speaker": "MANAN",
       "text": "Trčiš. Mišić troši svoj kisik. Gorivo se potroši. I kad spremnik pokaže prazno, tijelo stane.",
       "audio": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/drama_v6/50-MANAN-01f372.mp3",
@@ -4902,7 +4889,7 @@
       "from_v6": 50
     },
     {
-      "n": 57,
+      "n": 55,
       "speaker": "NARATOR",
       "text": "Coach Brain odgovara na bijeloj ploči crnim markerom. Isti raspored, ista tri retka, isti mjerač, i svaka vrijednost obrnuta.",
       "audio": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/drama_v6/51-NARATOR-f77a87.mp3",
@@ -4911,7 +4898,7 @@
       "from_v6": 51
     },
     {
-      "n": 58,
+      "n": 56,
       "speaker": "NARATOR",
       "text": "Coach Brain kaže.",
       "audio": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/drama_v6/52-NARATOR-5b54ac.mp3",
@@ -4920,52 +4907,37 @@
       "from_v6": 52
     },
     {
-      "n": 59,
+      "n": 57,
       "speaker": "COACH BRAIN",
       "text": "Puls, dah, temperatura, voda, udaljenost. Čitam sve to, cijelo vrijeme. I postavljam jedno pitanje: možemo li nastaviti sigurno?",
-      "audio": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/drama_v6/53-COACH-73fcb2.mp3",
-      "sec": 11.16,
+      "audio": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/drama_hr_cb/c16ddda3572e3943.mp3",
+      "sec": 9.43,
       "scene": "the-boards",
-      "from_v6": 53
+      "from_v6": 53,
+      "voice": "michal"
+    },
+    {
+      "n": 58,
+      "speaker": "COACH BRAIN",
+      "text": "Kad odgovor počne izgledati kao ne, usporim te. Dakle ne. Umor je u mozgu, a ne u tvojim nogama. Ovdje gore. I odlučuje mnogo prije nego što je išta stvarno u opasnosti.",
+      "audio": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/drama_hr_cb/7408881ff46ba230.mp3",
+      "sec": 11.52,
+      "scene": "the-boards",
+      "from_v6": 55,
+      "voice": "michal"
+    },
+    {
+      "n": 59,
+      "speaker": "COACH BRAIN",
+      "text": "Kad te ja zaustavim, gorivo je još uvijek tu.",
+      "audio": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/drama_hr_cb/01ae2dd723f0f784.mp3",
+      "sec": 2.86,
+      "scene": "the-boards",
+      "from_v6": 57,
+      "voice": "michal"
     },
     {
       "n": 60,
-      "speaker": "NARATOR",
-      "text": "Coach Brain kaže.",
-      "audio": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/drama_v6/54-NARATOR-5b54ac.mp3",
-      "sec": 2.16,
-      "scene": "the-boards",
-      "from_v6": 54
-    },
-    {
-      "n": 61,
-      "speaker": "COACH BRAIN",
-      "text": "Kad odgovor počne izgledati kao ne, usporim te. Dakle ne. Umor je u mozgu, a ne u tvojim nogama. Ovdje gore. I odlučuje mnogo prije nego što je išta stvarno u opasnosti.",
-      "audio": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/drama_v6/55-COACH-6dcd68.mp3",
-      "sec": 15.7,
-      "scene": "the-boards",
-      "from_v6": 55
-    },
-    {
-      "n": 62,
-      "speaker": "NARATOR",
-      "text": "Coach Brain kaže.",
-      "audio": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/drama_v6/56-NARATOR-5b54ac.mp3",
-      "sec": 2.16,
-      "scene": "the-boards",
-      "from_v6": 56
-    },
-    {
-      "n": 63,
-      "speaker": "COACH BRAIN",
-      "text": "Kad te ja zaustavim, gorivo je još uvijek tu.",
-      "audio": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/drama_v6/57-COACH-564d5e.mp3",
-      "sec": 3.6,
-      "scene": "the-boards",
-      "from_v6": 57
-    },
-    {
-      "n": 64,
       "speaker": "NARATOR",
       "text": "Manan kaže.",
       "audio": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/drama_v6/58-NARATOR-b80f0b.mp3",
@@ -4974,7 +4946,7 @@
       "from_v6": 58
     },
     {
-      "n": 65,
+      "n": 61,
       "speaker": "MANAN",
       "text": "Znači zid...",
       "audio": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/drama_v6/59-MANAN-e42914.mp3",
@@ -4983,7 +4955,7 @@
       "from_v6": 59
     },
     {
-      "n": 66,
+      "n": 62,
       "speaker": "NARATOR",
       "text": "Coach Brain kaže.",
       "audio": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/drama_v6/60-NARATOR-5b54ac.mp3",
@@ -4992,16 +4964,17 @@
       "from_v6": 60
     },
     {
-      "n": 67,
+      "n": 63,
       "speaker": "COACH BRAIN",
       "text": "Je broj koji sam ja odabrao. Pažljivo. Da te održim na životu.",
-      "audio": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/drama_v6/61-COACH-0c90a8.mp3",
-      "sec": 7.37,
+      "audio": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/drama_hr_cb/72a93073ca9df2f8.mp3",
+      "sec": 4.54,
       "scene": "the-boards",
-      "from_v6": 61
+      "from_v6": 61,
+      "voice": "michal"
     },
     {
-      "n": 68,
+      "n": 64,
       "speaker": "NARATOR",
       "text": "Manan kaže.",
       "audio": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/drama_v6/62-NARATOR-b80f0b.mp3",
@@ -5010,7 +4983,7 @@
       "from_v6": 62
     },
     {
-      "n": 69,
+      "n": 65,
       "speaker": "MANAN",
       "text": "Onda to može biti i drugi broj.",
       "audio": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/drama_v6/63-MANAN-d14a1c.mp3",
@@ -5019,7 +4992,7 @@
       "from_v6": 63
     },
     {
-      "n": 70,
+      "n": 66,
       "speaker": "NARATOR",
       "text": "Dolaze do zaključka zajedno. Onda ga vrtlog nosi natrag dolje, i ključ pada s njim.",
       "audio": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/drama_v6/64-NARATOR-130cae.mp3",
@@ -5028,7 +5001,7 @@
       "from_v6": 64
     },
     {
-      "n": 71,
+      "n": 67,
       "speaker": "NARATOR",
       "text": "Coach Brain ga pušta, i on pada kroz prazan kadar. Okreće se i raste dok dolazi, a iza njega se cijeli film vrti unatrag, tako blijedo da ga gotovo nema. Ploče, soba, kuća, i drvored dok slijeće. Sjećanja su razvučena u smjeru pada jer prolaze brzinom, ali još uvijek možeš razabrati što je svako od njih ako pogledaš. Ključ ostaje oštar, jer kamera pada s njim, i ta razlika je ono što čini da pad djeluje brzo.",
       "audio": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/drama_v6/65-NARATOR-88eae1.mp3",
@@ -5037,7 +5010,7 @@
       "from_v6": 65
     },
     {
-      "n": 72,
+      "n": 68,
       "speaker": "NARATOR",
       "text": "Na putu prema dolje prelazi iz crteža olovkom u fotografiju, i nijedan pojedini kadar nije trenutak u kojem postaje stvaran.",
       "audio": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/drama_v6/66-NARATOR-041840.mp3",
@@ -5046,7 +5019,7 @@
       "from_v6": 66
     },
     {
-      "n": 73,
+      "n": 69,
       "speaker": "NARATOR",
       "text": "Manan ga hvata na dnu.",
       "audio": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/drama_v6/67-NARATOR-a3e694.mp3",
@@ -5055,7 +5028,7 @@
       "from_v6": 67
     },
     {
-      "n": 74,
+      "n": 70,
       "speaker": "NARATOR",
       "text": "Odjavna špica, od kartice do kartice, kroz oblake.",
       "audio": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/drama_v6/68-NARATOR-4154da.mp3",
@@ -5064,7 +5037,7 @@
       "from_v6": 68
     },
     {
-      "n": 75,
+      "n": 71,
       "speaker": "NARATOR",
       "text": "I ako se sada odmakneš i pogledaš cijeli film odjednom, vidiš da je to putovanje. Prvo trči. Onda vozi. Onda leti. Uspinje se, sve više i više. A onda pada.",
       "audio": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/drama_v6/69-NARATOR-7026d1.mp3",
@@ -5073,7 +5046,7 @@
       "from_v6": 69
     },
     {
-      "n": 76,
+      "n": 72,
       "speaker": "NARATOR",
       "text": "To je stari oblik, stariji od filma. Junak se uzdiže, junak umire, i junak se vraća s nečim što prije nije imao. Manan se vraća s ključem. I sa spoznajom da zid nije zid, nego postavka. Broj koji je netko odabrao, i koji se može promijeniti.",
       "audio": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/drama_v6/70-NARATOR-880766.mp3",
@@ -5082,7 +5055,7 @@
       "from_v6": 70
     },
     {
-      "n": 77,
+      "n": 73,
       "speaker": "NARATOR",
       "text": "Posvećeno Gospodinu Ganeshi. Uklonitelju prepreka.",
       "audio": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/drama_v6/71-NARATOR-0fe297.mp3",
@@ -5150,8 +5123,8 @@
       "id": "coach-brains-room",
       "title": "Soba Coach Braina",
       "file": "07-coach-brains-room.mp3",
-      "sec": 51.98,
-      "parts": 17,
+      "sec": 43.39,
+      "parts": 16,
       "silent": 0,
       "url": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/drama_v7_scenes/07-coach-brains-room.mp3"
     },
@@ -5159,8 +5132,8 @@
       "id": "the-boards",
       "title": "Ploče",
       "file": "08-the-boards.mp3",
-      "sec": 100.25,
-      "parts": 18,
+      "sec": 84.53,
+      "parts": 15,
       "silent": 0,
       "url": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/drama_v7_scenes/08-the-boards.mp3"
     },
@@ -5519,15 +5492,6 @@
     },
     {
       "n": 38,
-      "speaker": "NARRATOR",
-      "text": "Coach Brain says.",
-      "scene": "coach-brains-room",
-      "voice": "beatrice_32",
-      "sec": 1.44,
-      "file": "565cdd76b7b84592.mp3"
-    },
-    {
-      "n": 39,
       "speaker": "COACH BRAIN",
       "text": "Before we begin. Raise my right arm.",
       "scene": "coach-brains-room",
@@ -5536,7 +5500,7 @@
       "file": "6a9651d224d9eb26.mp3"
     },
     {
-      "n": 40,
+      "n": 39,
       "speaker": "NARRATOR",
       "text": "Manan says.",
       "scene": "coach-brains-room",
@@ -5545,7 +5509,7 @@
       "file": "08c83a736c7a2504.mp3"
     },
     {
-      "n": 41,
+      "n": 40,
       "speaker": "MANAN",
       "text": "I am trying.",
       "scene": "coach-brains-room",
@@ -5554,7 +5518,7 @@
       "file": "2f768dd77e9e5e62.mp3"
     },
     {
-      "n": 42,
+      "n": 41,
       "speaker": "NARRATOR",
       "text": "Coach Brain says.",
       "scene": "coach-brains-room",
@@ -5563,7 +5527,7 @@
       "file": "565cdd76b7b84592.mp3"
     },
     {
-      "n": 43,
+      "n": 42,
       "speaker": "COACH BRAIN",
       "text": "I know.",
       "scene": "coach-brains-room",
@@ -5572,7 +5536,7 @@
       "file": "39f8adbd37695d89.mp3"
     },
     {
-      "n": 44,
+      "n": 43,
       "speaker": "NARRATOR",
       "text": "Manan says.",
       "scene": "coach-brains-room",
@@ -5581,7 +5545,7 @@
       "file": "08c83a736c7a2504.mp3"
     },
     {
-      "n": 45,
+      "n": 44,
       "speaker": "MANAN",
       "text": "I can't. Why can't I move it?",
       "scene": "coach-brains-room",
@@ -5590,7 +5554,7 @@
       "file": "22a80df03aaacf55.mp3"
     },
     {
-      "n": 46,
+      "n": 45,
       "speaker": "NARRATOR",
       "text": "Coach Brain says.",
       "scene": "coach-brains-room",
@@ -5599,7 +5563,7 @@
       "file": "565cdd76b7b84592.mp3"
     },
     {
-      "n": 47,
+      "n": 46,
       "speaker": "COACH BRAIN",
       "text": "Try now.",
       "scene": "coach-brains-room",
@@ -5608,7 +5572,7 @@
       "file": "4aae06bea9ca7e51.mp3"
     },
     {
-      "n": 48,
+      "n": 47,
       "speaker": "NARRATOR",
       "text": "Manan says.",
       "scene": "coach-brains-room",
@@ -5617,7 +5581,7 @@
       "file": "08c83a736c7a2504.mp3"
     },
     {
-      "n": 49,
+      "n": 48,
       "speaker": "MANAN",
       "text": "That was you. It was never my arm at all.",
       "scene": "coach-brains-room",
@@ -5626,7 +5590,7 @@
       "file": "08efa45b8cc428ba.mp3"
     },
     {
-      "n": 50,
+      "n": 49,
       "speaker": "NARRATOR",
       "text": "Coach Brain says.",
       "scene": "coach-brains-room",
@@ -5635,7 +5599,7 @@
       "file": "565cdd76b7b84592.mp3"
     },
     {
-      "n": 51,
+      "n": 50,
       "speaker": "COACH BRAIN",
       "text": "The arm is always yours. The permission is mine.",
       "scene": "coach-brains-room",
@@ -5644,7 +5608,7 @@
       "file": "062f4f361403235c.mp3"
     },
     {
-      "n": 52,
+      "n": 51,
       "speaker": "NARRATOR",
       "text": "Then the two of them take it to the boards. Neither board arrives finished. Manan writes what he was taught in white chalk, line by line. The old theory.",
       "scene": "the-boards",
@@ -5653,7 +5617,7 @@
       "file": "f21a6a2be2d5acde.mp3"
     },
     {
-      "n": 53,
+      "n": 52,
       "speaker": "NARRATOR",
       "text": "Manan says.",
       "scene": "the-boards",
@@ -5662,7 +5626,7 @@
       "file": "08c83a736c7a2504.mp3"
     },
     {
-      "n": 54,
+      "n": 53,
       "speaker": "MANAN",
       "text": "Nineteen twenty three. Hill puts runners on a treadmill and measures everything they do. His answer is simple. Fatigue is in the muscle.",
       "scene": "the-boards",
@@ -5671,16 +5635,7 @@
       "file": "d6075a407b5b9dd6.mp3"
     },
     {
-      "n": 55,
-      "speaker": "NARRATOR",
-      "text": "Manan says.",
-      "scene": "the-boards",
-      "voice": "beatrice_32",
-      "sec": 1.01,
-      "file": "08c83a736c7a2504.mp3"
-    },
-    {
-      "n": 56,
+      "n": 54,
       "speaker": "MANAN",
       "text": "You run. The muscle uses up its oxygen. The fuel is spent. And when the tank reads empty, the body stops.",
       "scene": "the-boards",
@@ -5689,7 +5644,7 @@
       "file": "05203fc3da97cee2.mp3"
     },
     {
-      "n": 57,
+      "n": 55,
       "speaker": "NARRATOR",
       "text": "Coach Brain answers on the white board in black marker. The same layout, the same three lines, the same gauge, and every value reversed.",
       "scene": "the-boards",
@@ -5698,7 +5653,7 @@
       "file": "409ba9c831d9cd18.mp3"
     },
     {
-      "n": 58,
+      "n": 56,
       "speaker": "NARRATOR",
       "text": "Coach Brain says.",
       "scene": "the-boards",
@@ -5707,7 +5662,7 @@
       "file": "565cdd76b7b84592.mp3"
     },
     {
-      "n": 59,
+      "n": 57,
       "speaker": "COACH BRAIN",
       "text": "Pulse, breath, temperature, water, distance. I read all of it, the whole time. And I ask one question: can we carry on safely?",
       "scene": "the-boards",
@@ -5716,22 +5671,40 @@
       "file": "f135f57c1a8a1520.mp3"
     },
     {
-      "n": 60,
-      "speaker": "NARRATOR",
-      "text": "Coach Brain says.",
-      "scene": "the-boards",
-      "voice": "beatrice_32",
-      "sec": 1.44,
-      "file": "565cdd76b7b84592.mp3"
-    },
-    {
-      "n": 61,
+      "n": 58,
       "speaker": "COACH BRAIN",
       "text": "When the answer starts to look like no, I slow you down. So, no. Fatigue is in the brain, not in your legs. Up here. And it decides long before anything is actually in danger.",
       "scene": "the-boards",
       "voice": "hugh_32",
       "sec": 12.6,
       "file": "c6aa332911798214.mp3"
+    },
+    {
+      "n": 59,
+      "speaker": "COACH BRAIN",
+      "text": "When I stop you, the fuel is still there.",
+      "scene": "the-boards",
+      "voice": "hugh_32",
+      "sec": 3.0,
+      "file": "9e1e947178aed691.mp3"
+    },
+    {
+      "n": 60,
+      "speaker": "NARRATOR",
+      "text": "Manan says.",
+      "scene": "the-boards",
+      "voice": "beatrice_32",
+      "sec": 1.01,
+      "file": "08c83a736c7a2504.mp3"
+    },
+    {
+      "n": 61,
+      "speaker": "MANAN",
+      "text": "So the wall...",
+      "scene": "the-boards",
+      "voice": "edmund_32",
+      "sec": 1.25,
+      "file": "959e15305114dade.mp3"
     },
     {
       "n": 62,
@@ -5745,11 +5718,11 @@
     {
       "n": 63,
       "speaker": "COACH BRAIN",
-      "text": "When I stop you, the fuel is still there.",
+      "text": "Is a number I chose. Carefully. To keep you alive.",
       "scene": "the-boards",
       "voice": "hugh_32",
-      "sec": 3.0,
-      "file": "9e1e947178aed691.mp3"
+      "sec": 4.08,
+      "file": "8320a361a8eab84b.mp3"
     },
     {
       "n": 64,
@@ -5763,42 +5736,6 @@
     {
       "n": 65,
       "speaker": "MANAN",
-      "text": "So the wall...",
-      "scene": "the-boards",
-      "voice": "edmund_32",
-      "sec": 1.25,
-      "file": "959e15305114dade.mp3"
-    },
-    {
-      "n": 66,
-      "speaker": "NARRATOR",
-      "text": "Coach Brain says.",
-      "scene": "the-boards",
-      "voice": "beatrice_32",
-      "sec": 1.44,
-      "file": "565cdd76b7b84592.mp3"
-    },
-    {
-      "n": 67,
-      "speaker": "COACH BRAIN",
-      "text": "Is a number I chose. Carefully. To keep you alive.",
-      "scene": "the-boards",
-      "voice": "hugh_32",
-      "sec": 4.08,
-      "file": "8320a361a8eab84b.mp3"
-    },
-    {
-      "n": 68,
-      "speaker": "NARRATOR",
-      "text": "Manan says.",
-      "scene": "the-boards",
-      "voice": "beatrice_32",
-      "sec": 1.01,
-      "file": "08c83a736c7a2504.mp3"
-    },
-    {
-      "n": 69,
-      "speaker": "MANAN",
       "text": "Then it can be a different number.",
       "scene": "the-boards",
       "voice": "edmund_32",
@@ -5806,7 +5743,7 @@
       "file": "49cbddc87054575f.mp3"
     },
     {
-      "n": 70,
+      "n": 66,
       "speaker": "NARRATOR",
       "text": "They come to the conclusion together. Then the vortex carries him back down, and the key falls with him.",
       "scene": "the-fall",
@@ -5815,7 +5752,7 @@
       "file": "e66a2ee93c537ce8.mp3"
     },
     {
-      "n": 71,
+      "n": 67,
       "speaker": "NARRATOR",
       "text": "Coach Brain lets it go, and it falls through an empty frame. It turns and grows as it comes, and behind it the whole film runs backwards, so faint it is almost not there. The boards, the room, the house, and the avenue of trees as it lands. The memories are stretched in the direction of the fall because they are passing at speed, but you can still make out what each one is if you look. The key stays sharp, because the camera is falling with it, and that difference is what makes the fall feel fast.",
       "scene": "the-fall",
@@ -5824,7 +5761,7 @@
       "file": "1b8ee19e86dc0741.mp3"
     },
     {
-      "n": 72,
+      "n": 68,
       "speaker": "NARRATOR",
       "text": "On the way down it crosses from a pencil drawing into a photograph, and no single frame is the moment it becomes real.",
       "scene": "the-fall",
@@ -5833,7 +5770,7 @@
       "file": "f93d12d63c3b6cfe.mp3"
     },
     {
-      "n": 73,
+      "n": 69,
       "speaker": "NARRATOR",
       "text": "Manan catches it at the bottom.",
       "scene": "the-fall",
@@ -5842,7 +5779,7 @@
       "file": "5f636ef75a5623ab.mp3"
     },
     {
-      "n": 74,
+      "n": 70,
       "speaker": "NARRATOR",
       "text": "End credits, card to card, through cloud.",
       "scene": "the-credits",
@@ -5851,7 +5788,7 @@
       "file": "3b125221cc1b6c82.mp3"
     },
     {
-      "n": 75,
+      "n": 71,
       "speaker": "NARRATOR",
       "text": "And if you step back now and look at the whole film at once, you see that it is a journey. First he runs. Then he rides. Then he flies. He climbs, higher and higher. And then he falls.",
       "scene": "the-credits",
@@ -5860,7 +5797,7 @@
       "file": "f8ca9aa579ebe9ef.mp3"
     },
     {
-      "n": 76,
+      "n": 72,
       "speaker": "NARRATOR",
       "text": "That is an old shape, older than film. The hero rises, the hero dies, and the hero comes back with something he did not have before. Manan comes back with a key. And with knowing that the wall is not a wall. It is a setting. A number somebody chose, and it can be changed.",
       "scene": "the-credits",
@@ -5869,7 +5806,7 @@
       "file": "ab7c058885a50bdb.mp3"
     },
     {
-      "n": 77,
+      "n": 73,
       "speaker": "NARRATOR",
       "text": "Dedicated to Lord Ganesha. Remover of obstacles.",
       "scene": "the-credits",
@@ -5885,6 +5822,7 @@
       "file": "01-the-road.mp3",
       "sec": 198.24,
       "parts": 27,
+      "silent": 0,
       "url": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/drama_en_scenes/01-the-road.mp3"
     },
     {
@@ -5893,6 +5831,7 @@
       "file": "02-the-bicycle.mp3",
       "sec": 12.22,
       "parts": 1,
+      "silent": 0,
       "url": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/drama_en_scenes/02-the-bicycle.mp3"
     },
     {
@@ -5901,6 +5840,7 @@
       "file": "03-the-trainer.mp3",
       "sec": 17.59,
       "parts": 1,
+      "silent": 0,
       "url": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/drama_en_scenes/03-the-trainer.mp3"
     },
     {
@@ -5909,6 +5849,7 @@
       "file": "04-the-trance.mp3",
       "sec": 1.44,
       "parts": 1,
+      "silent": 0,
       "url": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/drama_en_scenes/04-the-trance.mp3"
     },
     {
@@ -5917,6 +5858,7 @@
       "file": "05-the-passage.mp3",
       "sec": 37.54,
       "parts": 2,
+      "silent": 0,
       "url": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/drama_en_scenes/05-the-passage.mp3"
     },
     {
@@ -5925,22 +5867,25 @@
       "file": "06-the-house.mp3",
       "sec": 17.71,
       "parts": 2,
+      "silent": 0,
       "url": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/drama_en_scenes/06-the-house.mp3"
     },
     {
       "id": "coach-brains-room",
       "title": "Coach Brain's room",
       "file": "07-coach-brains-room.mp3",
-      "sec": 36.12,
-      "parts": 17,
+      "sec": 34.68,
+      "parts": 16,
+      "silent": 0,
       "url": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/drama_en_scenes/07-coach-brains-room.mp3"
     },
     {
       "id": "the-boards",
       "title": "The boards",
       "file": "08-the-boards.mp3",
-      "sec": 80.45,
-      "parts": 18,
+      "sec": 76.56,
+      "parts": 15,
+      "silent": 0,
       "url": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/drama_en_scenes/08-the-boards.mp3"
     },
     {
@@ -5949,6 +5894,7 @@
       "file": "09-the-fall.mp3",
       "sec": 43.92,
       "parts": 4,
+      "silent": 0,
       "url": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/drama_en_scenes/09-the-fall.mp3"
     },
     {
@@ -5957,6 +5903,7 @@
       "file": "10-the-credits.mp3",
       "sec": 41.11,
       "parts": 4,
+      "silent": 0,
       "url": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/drama_en_scenes/10-the-credits.mp3"
     }
   ]

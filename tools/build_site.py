@@ -1068,8 +1068,9 @@ def drama_v7_block(depth=0):
         rows.append(('take', '%02d %s' % (i, sc['title']), sc['url'], sc['sec']))
     total = sum(sc['sec'] for sc in DRAMA_V7_SCENES)
     return deck_block('dramav7', 'THE BRAIN BRAKE, CIJELI FILM',
-                      '%d scena, %d minuta %d sekundi. Jedna datoteka po sceni. '
-                      'Još %d rečenica u prvoj sceni čeka Gabrijelu.'
+                      '%d scena, %d minuta %d sekundi. Jedna datoteka po sceni. Gabrijela pripovijeda, '
+                      'Srecko je Manan, Coach Brain je nov. Još %d rečenica u prvoj '
+                      'sceni čeka Gabrijelu.'
                       % (len(DRAMA_V7_SCENES), int(total) // 60, int(total) % 60, silent),
                       rows, 'downloads/BRAIN_BRAKE_radio_drama_HR_v7.zip', depth)
 
