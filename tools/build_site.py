@@ -808,7 +808,7 @@ def dialogue_for(shot_id, depth=0):
         a = x.get('audio')
         if a:
             o.append('<div class=dlga><audio controls preload=none src="%s%s"></audio>'
-                     '<a class=dl href="%s%s" download>MP3 &darr;</a>'
+                     '<a class=dl href="%s%s" download>DOWNLOAD &nbsp;MP3</a>'
                      '<span class=dlgs>%s s</span></div>'
                      % (r, a, r, a, x.get('sec', '')))
         o.append('</div>')
@@ -877,7 +877,7 @@ def deck_block(uid, title, sub, rows, zipfile_, depth=0):
          '%s'
          '<span class="novastate nv-state">READY</span></div>'
          % (('<a class="mcbtn wide" href="%s" download title="all of them, zipped">'
-             'ZIP &darr;</a>' % aud(zipfile_)) if zipfile_ else ''),
+             'DOWNLOAD &nbsp;ZIP</a>' % aud(zipfile_)) if zipfile_ else ''),
          '<details class=novapl><summary class=novaplh>'
          '<span class=takec>%d</span>PLAYLIST</summary><div class=novapb>' % len(takes)]
     i = 0
@@ -2201,7 +2201,7 @@ def strip(items, lede, prefix=''):
             # separate link, because that is what gets composited, not this.
             drive = CLIP_SOURCE.get(f[1], '')
             dl = ('<a class=pr href="%s" target=_blank rel=noopener '
-                  'onclick="event.stopPropagation()">PRORES &nearr;</a>' % drive) if drive else ''
+                  'onclick="event.stopPropagation()">DOWNLOAD PRORES &nearr;</a>' % drive) if drive else ''
             _cb = os.path.basename(f[1]).rsplit('.', 1)[0]
             _card = '%scard/%s.html' % (prefix, _cb)
             _open = ('<a class=vid href="%s">' % _card) if os.path.exists(
@@ -2393,8 +2393,8 @@ for e in _fl:
     if n == '13' and os.path.exists(os.path.join(ROOT, 'assets3d', 'brain_break_key.obj')):
         rt.append(
             '<div class=srcbox><div class=t><b>The key in 3D</b>'
-            '<span><a class=dl href="assets3d/brain_break_key_blender.py" download>SCRIPT</a>&nbsp;'
-            '<a class=dl href="assets3d/brain_break_key.obj" download>OBJ</a></span></div>'
+            '<span><a class=dl href="assets3d/brain_break_key_blender.py" download>DOWNLOAD SCRIPT</a>&nbsp;'
+            '<a class=dl href="assets3d/brain_break_key.obj" download>DOWNLOAD OBJ</a></span></div>'
             '<p>The real key modelled from the photographs, one mesh with two materials: slot 0 '
             'polished brass, slot 1 flat drawn cream. The mesh never changes, only the surface, so '
             'the key crosses from the drawn world to the real one without a vertex moving. '
@@ -2463,9 +2463,9 @@ _as = ['<h1>ASSETS</h1>']
 if os.path.exists(os.path.join(ROOT, 'assets3d', 'brain_brake_vortex.py')):
     _as.append(
         '<div class=srcbox><div class=t><b>The passage, a vortex of keys, for Blender</b>'
-        '<span><a class=dl href="assets3d/brain_brake_vortex.py" download>SCRIPT</a>&nbsp;'
-        '<a class=dl href="assets3d/brain_brake_vortex_guide.obj" download>GUIDE OBJ</a>&nbsp;'
-        '<a class=dl href="assets3d/brain_brake_vortex_source.py" download>SOURCE</a></span></div>'
+        '<span><a class=dl href="assets3d/brain_brake_vortex.py" download>DOWNLOAD SCRIPT</a>&nbsp;'
+        '<a class=dl href="assets3d/brain_brake_vortex_guide.obj" download>DOWNLOAD GUIDE OBJ</a>&nbsp;'
+        '<a class=dl href="assets3d/brain_brake_vortex_source.py" download>DOWNLOAD SOURCE</a></span></div>'
         '<p><b>Put the script, the guide and <code>brain_break_key.obj</code> in one folder, open '
         'Blender, Scripting tab, Run.</b> You get 432 keys laid along the spiral as linked '
         'instances of the one key mesh, the funnel as a wireframe guide that is hidden in render, '
@@ -2495,9 +2495,9 @@ if os.path.exists(os.path.join(ROOT, 'assets3d', 'brain_brake_vortex.py')):
 if os.path.exists(os.path.join(ROOT, 'assets3d', 'brain_break_key.obj')):
     _as.append(
         '<div class=srcbox><div class=t><b>The key in 3D, for Blender</b>'
-        '<span><a class=dl href="assets3d/brain_break_key_blender.py" download>SCRIPT</a>&nbsp;'
-        '<a class=dl href="assets3d/brain_break_key.obj" download>OBJ</a>&nbsp;'
-        '<a class=dl href="assets3d/brain_break_key_source.py" download>SOURCE</a></span></div>'
+        '<span><a class=dl href="assets3d/brain_break_key_blender.py" download>DOWNLOAD SCRIPT</a>&nbsp;'
+        '<a class=dl href="assets3d/brain_break_key.obj" download>DOWNLOAD OBJ</a>&nbsp;'
+        '<a class=dl href="assets3d/brain_break_key_source.py" download>DOWNLOAD SOURCE</a></span></div>'
         '<img src="%s" alt="" style="width:100%%;max-width:900px;display:block;margin:12px 0 8px;'
         'border:1px solid var(--rule)">'
         '<p>The real key modelled from the photographs: 110 mm long, 26 mm head, clover hole cut '
@@ -2519,8 +2519,8 @@ if os.path.exists(os.path.join(ROOT, 'assets3d', 'brain_break_key.obj')):
 if os.path.exists(os.path.join(ROOT, 'font', 'brain_break.ttf')):
     _as.append(
         '<div class=srcbox><div class=t><b>Brain Brake, the film\u2019s own font</b>'
-        '<span><a class=dl href="font/brain_break.ttf" download>TTF</a>&nbsp;'
-        '<a class=dl href="font/brain_break.otf" download>OTF</a></span></div>'
+        '<span><a class=dl href="font/brain_break.ttf" download>DOWNLOAD TTF</a>&nbsp;'
+        '<a class=dl href="font/brain_break.otf" download>DOWNLOAD OTF</a></span></div>'
         '<img src="%s" alt="" style="width:100%%;max-width:900px;display:block;margin:12px 0 8px;'
         'border:1px solid var(--rule)">'
         '<p>The hand lettering of the film, traced from a specimen sheet and built into a font so '
@@ -2574,7 +2574,7 @@ _fo = ['<h1>FOOTAGE</h1>',
        'from that, never from the stills on this site: those are previews.</p>']
 for _f in (CAT.get('footage') or []):
     _fo.append('<div class=srcbox><div class=t><b>%s</b>'
-               '<a class=dl href="%s" target=_blank rel=noopener>OPEN ON DRIVE &nearr;</a></div>'
+               '<a class=dl href="%s" target=_blank rel=noopener>DOWNLOAD ON DRIVE &nearr;</a></div>'
                '<p><b>%s</b>%s</p><p>%s</p><p style="color:var(--dim)">%s</p></div>'
                % (_f['name'], _f['url'],
                   ('Phase %s, %s. ' % (_f['phase'], _f['phase_title'])) if _f.get('phase')
@@ -2653,17 +2653,20 @@ for _i, e in enumerate(_cards):
     # 2160. A frame carrying full_label says what its master actually is, in
     # place of a byte count that would either read 0.0 MB or describe the wrong
     # file entirely.
-    _size = e.get('full_label') or (
-        ('%.0f KB' % (mb * 1024)) if 0 < mb < 1 else ('%.1f MB' % mb))
+    # DOWNLOAD, then WHAT it is, then the measurement. Every button on the site
+    # is that shape now, so a frame says FULL SIZE and a clip says PRORES, and
+    # nobody has to work out which of two buttons is the real file.
+    _size = e.get('full_label') or ('FULL SIZE &nbsp;' + (
+        ('%.0f KB' % (mb * 1024)) if 0 < mb < 1 else ('%.1f MB' % mb)))
     _ext = '' if e.get('full_label') else ' download'
     cd = ['<div class=cardhead><span class=code>%s</span>'
-          '<a class=dl href="%s"%s>DOWNLOAD FULL SIZE &nbsp;%s</a></div>'
+          '<a class=dl href="%s"%s>DOWNLOAD &nbsp;%s</a></div>'
           % (b.upper(), _href, _ext, _size)]
     if e.get('proxy_note'):
         _p = os.path.join(ROOT, e['file'])
         _pk = (os.path.getsize(_p) if os.path.exists(_p) else 0) / 1024.0
         cd.append('<div class=srcbox><div class=t><b>The loop on this page, 480 wide</b>'
-                  '<a class=dl href="../%s" download>PROXY &nbsp;%.0f KB</a></div>'
+                  '<a class=dl href="../%s" download>DOWNLOAD &nbsp;480 WIDE PROXY &nbsp;%.0f KB</a></div>'
                   '<p>%s</p></div>' % (e['file'], _pk, html.escape(e['proxy_note'])))
     if e.get('video'):
         # A SHOT THAT MOVES IS STILL A SHOT. Baba, 3.9.2026: a loop should behave
@@ -2721,13 +2724,13 @@ for _i, e in enumerate(_cards):
                                             'CHARACTER_SHEET_COACH')):
         cd.append(
             '<div class=srcbox><div class=t><b>The key in 3D</b>'
-            '<span><a class=dl href="../assets3d/brain_break_key_blender.py" download>SCRIPT</a>'
-            '&nbsp;<a class=dl href="../assets3d/brain_break_key.obj" download>OBJ</a></span></div>'
+            '<span><a class=dl href="../assets3d/brain_break_key_blender.py" download>DOWNLOAD SCRIPT</a>'
+            '&nbsp;<a class=dl href="../assets3d/brain_break_key.obj" download>DOWNLOAD OBJ</a></span></div>'
             '<p>The same key as a mesh, with a brass material and a drawn one. Both files in one '
             'folder, open Blender, Scripting tab, Run.</p></div>')
     for src in (e.get('source') or []):
         cd.append('<div class=srcbox><div class=t><b>%s</b>'
-                  '<a class=dl href="%s" target=_blank rel=noopener>OPEN ON DRIVE &nearr;</a></div>'
+                  '<a class=dl href="%s" target=_blank rel=noopener>DOWNLOAD ON DRIVE &nearr;</a></div>'
                   '<p>%s</p></div>'
                   % (src.get('name', 'source footage'), src['url'], src.get('note', '')))
 
@@ -2735,7 +2738,7 @@ for _i, e in enumerate(_cards):
         amb = size_of(a['file']) / 1048576.0
         cd.append('<div class=aud><div class=t><b>%s</b>'
                   '<span>%.1f s &nbsp;&middot;&nbsp; '
-                  '<a class=dl href="../%s" download title="download the wav">&darr; %.1f MB</a>'
+                  '<a class=dl href="../%s" download title="download the wav">DOWNLOAD &nbsp;WAV &nbsp;%.1f MB</a>'
                   '</span></div>'
                   '<audio controls preload=none src="../%s"></audio></div>'
                   % (a.get('name', 'reference voice'), a.get('secs', 0), a['file'], amb, a['file']))
@@ -2750,7 +2753,8 @@ for _i, e in enumerate(_cards):
             lmb = os.path.getsize(os.path.join(ROOT, L['file'])) / 1048576.0
             cd.append('<div class=l><img src="../mid/%s.jpg" alt="">'
                       '<div class=n><span>%s</span>'
-                      '<a class=dl href="../%s" download>DOWNLOAD %.1f MB</a></div></div>'
+                      '<a class=dl href="../%s" download>DOWNLOAD &nbsp;LAYER '
+                      '&nbsp;%.1f MB</a></div></div>'
                       % (lb, L.get('name', lb).upper(), L['file'], lmb))
         cd.append('</div>')
 
