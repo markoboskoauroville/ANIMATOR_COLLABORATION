@@ -2339,6 +2339,14 @@ for e in _fl:
         # A PHASE WITH DIALOGUE IS CAST. Baba, 3.9.2026: where there are lines,
         # the characters say them rather than the narrator reporting them, in
         # the same voices as the English drama so it is the same two people.
+        #
+        # THE CASTING IS SETTLED. DO NOT REOPEN IT. Edmund and Hugh measure
+        # close in pitch and a listening test called them the same speaker three
+        # times out of three. Baba listened to phase 10 on 3.9.2026 and approved
+        # it: they are different voices and the pitch is not the point. The
+        # measurement was wrong about what matters, and rohan was considered and
+        # not needed. Anyone reading this later and reaching for a recast is
+        # solving a problem the director has already heard and dismissed.
         _who = ' \u00b7 acted'
     _btn = ('<button class=gp type=button data-src="%s" data-sec="%s" '
             'title="listen to this phase" aria-label="listen to this phase">'
