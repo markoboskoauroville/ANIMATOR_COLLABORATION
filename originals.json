@@ -1344,14 +1344,14 @@
     "url": "https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIGINALS/main/BB_C_7/7-DOORSHEET-20260904.png"
   },
   "7-1.png": {
-    "bytes": 7023941,
-    "sha256": "20a47c32e1ebffb613d7dd5a2bb65b2c6db88efbac96de991ba61b218cb65e00",
+    "bytes": 7827544,
+    "sha256": "9c1e2cdf14d3f2f1fe6f86b636c4f501e2f63c2e4a571276f10b1d9c26fbbdcf",
     "path": "BB_C_7/7-1.png",
     "url": "https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIGINALS/main/BB_C_7/7-1.png"
   },
   "7-2.png": {
-    "bytes": 5140017,
-    "sha256": "2835c7bfdbff8cc8e2491738170aadddce3fd43a48ddc56017330c235996f2b6",
+    "bytes": 5226299,
+    "sha256": "5cf02794013caa833ada184c5e0ed5a6a6845113f098377527f3729214578da4",
     "path": "BB_C_7/7-2.png",
     "url": "https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIGINALS/main/BB_C_7/7-2.png"
   },
@@ -1402,5 +1402,23 @@
     "sha256": "1c2a0f3ef103ec730cb040a3f132e49dace7830f6445caaaa2d4445c15291e63",
     "path": "BB_C_7/7-3-20260904b.png",
     "url": "https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIGINALS/main/BB_C_7/7-3-20260904b.png"
+  },
+  "7-1-20260904c.png": {
+    "bytes": 7023941,
+    "sha256": "20a47c32e1ebffb613d7dd5a2bb65b2c6db88efbac96de991ba61b218cb65e00",
+    "path": "BB_C_7/7-1-20260904c.png",
+    "url": "https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIGINALS/main/BB_C_7/7-1-20260904c.png"
+  },
+  "7-2-20260904c.png": {
+    "bytes": 5140017,
+    "sha256": "2835c7bfdbff8cc8e2491738170aadddce3fd43a48ddc56017330c235996f2b6",
+    "path": "BB_C_7/7-2-20260904c.png",
+    "url": "https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIGINALS/main/BB_C_7/7-2-20260904c.png"
+  },
+  "7-2-20260904d.png": {
+    "bytes": 4983910,
+    "sha256": "8e764c3dece5957205c8ffbf5c5ba4199d11c51406406ccb09f6fea9befd5d0a",
+    "path": "BB_C_7/7-2-20260904d.png",
+    "url": "https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIGINALS/main/BB_C_7/7-2-20260904d.png"
   }
 }
