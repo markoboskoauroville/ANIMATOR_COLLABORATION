@@ -3213,14 +3213,17 @@
       "date": "2026-09-03",
       "video": true,
       "sec": 8.64,
-      "note": "THE CATCH, TAKE ONE. Shot rather than drawn, and it belongs on the storyboard exactly like a drawn frame: its own card, its own download, its own note. The loop here is 480 wide so the page stays light. THE PRORES WITH ALPHA IS WHAT GETS COMPOSITED, not this: the alpha is already cut, so the hand drops onto the drawn world with nothing to key.",
+      "note": "THE CATCH, TAKE ONE. Shot rather than drawn, and it belongs on the storyboard exactly like a drawn frame: its own card, its own download, its own note. The loop here is 480 wide so the page stays light. THE PRORES WITH ALPHA IS WHAT GETS COMPOSITED, not this: the alpha is already cut, so the hand drops onto the drawn world with nothing to key. DOWNLOAD FULL SIZE GOES TO THE MASTER, not to the proxy. The button used to offer the 63 KB loop as the full size, which is the opposite of true: the proxy is 480 wide and the master is 3840 by 2160. The resolution comes from the stills of this same take in BB_C_15/live, which are all 3840 by 2160.",
       "source": [
         {
           "name": "ProRes master, with alpha",
           "url": "https://drive.google.com/drive/folders/1YGb_z7OCrLSUX7JagNpynXbu1fAK2wNu",
           "note": "The full resolution take with its alpha already cut. This is what goes in the timeline; the loop on this page is a 480 wide proxy."
         }
-      ]
+      ],
+      "full": "https://drive.google.com/drive/folders/1YGb_z7OCrLSUX7JagNpynXbu1fAK2wNu",
+      "full_label": "PRORES WITH ALPHA &nbsp;3840 &times; 2160",
+      "proxy_note": "The loop on this page is a 480 wide proxy so the storyboard stays light. It is not the deliverable and must never be composited."
     },
     {
       "file": "clips/key-catch-2-loop.mp4",
@@ -3230,14 +3233,17 @@
       "date": "2026-09-03",
       "video": true,
       "sec": 33.36,
-      "note": "THE CATCH, TAKE TWO. Both takes belong here side by side so the choice between them is made by looking rather than by remembering that a second one was shot. Four times longer than take one, which is why it was the one that stopped looping on a phone: a browser will quietly give up on a long autoplaying clip where it will carry a short one forever. It is kept running by script now rather than by the loop attribute alone. THE PRORES MASTER IS THE ONE TO COMPOSITE.",
+      "note": "THE CATCH, TAKE TWO. Both takes belong here side by side so the choice between them is made by looking rather than by remembering that a second one was shot. Four times longer than take one, which is why it was the one that stopped looping on a phone: a browser will quietly give up on a long autoplaying clip where it will carry a short one forever. It is kept running by script now rather than by the loop attribute alone. DOWNLOAD FULL SIZE GOES TO THE MASTER, not to the proxy. The button used to offer the 63 KB loop as the full size, which is the opposite of true: the proxy is 480 wide and the master is 3840 by 2160. The resolution comes from the stills of this same take in BB_C_15/live, which are all 3840 by 2160.",
       "source": [
         {
           "name": "ProRes master, with alpha",
           "url": "https://drive.google.com/file/d/1HkTXJx_yDQ2k3grS7m7rI3gzeV7Ixztr/view",
           "note": "The full resolution take with its alpha already cut. This is what goes in the timeline; the loop on this page is a 480 wide proxy."
         }
-      ]
+      ],
+      "full": "https://drive.google.com/file/d/1HkTXJx_yDQ2k3grS7m7rI3gzeV7Ixztr/view?usp=drive_link",
+      "full_label": "PRORES &nbsp;03 KEY CATCH_2.mov &nbsp;3840 &times; 2160 &nbsp;1.1 GB",
+      "proxy_note": "The loop on this page is a 480 wide proxy so the storyboard stays light. It is not the deliverable and must never be composited."
     },
     {
       "file": "clips/in-front-of-door-loop.mp4",
@@ -3247,18 +3253,21 @@
       "date": "2026-09-03",
       "video": true,
       "sec": 8.88,
-      "note": "IN FRONT OF THE DOOR. Live action, on the storyboard like any drawn frame. The loop is 480 wide; the ProRes with alpha on Drive is what gets composited.",
+      "note": "IN FRONT OF THE DOOR. Live action, on the storyboard like any drawn frame. The loop is 480 wide; the ProRes with alpha on Drive is what gets composited. DOWNLOAD FULL SIZE GOES TO THE MASTER, not to the proxy. The button used to offer the 63 KB loop as the full size, which is the opposite of true: the proxy is 480 wide and the master is 3840 by 2160. The resolution comes from the stills of this same take in BB_C_15/live, which are all 3840 by 2160.",
       "source": [
         {
           "name": "ProRes master, with alpha",
           "url": "https://drive.google.com/drive/folders/1ph36NxPciUB5Y4s_IiowDotmjk2ciFZ4",
           "note": "The full resolution take with its alpha already cut. This is what goes in the timeline; the loop on this page is a 480 wide proxy."
         }
-      ]
+      ],
+      "full": "https://drive.google.com/drive/folders/1ph36NxPciUB5Y4s_IiowDotmjk2ciFZ4",
+      "full_label": "PRORES WITH ALPHA &nbsp;3840 &times; 2160",
+      "proxy_note": "The loop on this page is a 480 wide proxy so the storyboard stays light. It is not the deliverable and must never be composited."
     }
   ],
   "event": "Breakthrough Junior Challenge 2026",
-  "site_version": 218,
+  "site_version": 219,
   "footage": [
     {
       "name": "Key catch",

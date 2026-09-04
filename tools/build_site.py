@@ -2647,10 +2647,24 @@ for _i, e in enumerate(_cards):
         _href = '../' + e['file']
         _p = os.path.join(ROOT, e['file'])
         mb = (os.path.getsize(_p) if os.path.exists(_p) else 0) / 1048576.0
-    _size = ('%.0f KB' % (mb * 1024)) if 0 < mb < 1 else ('%.1f MB' % mb)
+    # WHAT THE BUTTON PROMISES HAS TO BE TRUE. Baba, 3.9.2026: a video card was
+    # offering DOWNLOAD FULL SIZE 63 KB, and 63 KB is the 480 wide proxy that
+    # loops on the page. The full size is the ProRes master on Drive, 3840 by
+    # 2160. A frame carrying full_label says what its master actually is, in
+    # place of a byte count that would either read 0.0 MB or describe the wrong
+    # file entirely.
+    _size = e.get('full_label') or (
+        ('%.0f KB' % (mb * 1024)) if 0 < mb < 1 else ('%.1f MB' % mb))
+    _ext = '' if e.get('full_label') else ' download'
     cd = ['<div class=cardhead><span class=code>%s</span>'
-          '<a class=dl href="%s" download>DOWNLOAD FULL SIZE &nbsp;%s</a></div>'
-          % (b.upper(), _href, _size)]
+          '<a class=dl href="%s"%s>DOWNLOAD FULL SIZE &nbsp;%s</a></div>'
+          % (b.upper(), _href, _ext, _size)]
+    if e.get('proxy_note'):
+        _p = os.path.join(ROOT, e['file'])
+        _pk = (os.path.getsize(_p) if os.path.exists(_p) else 0) / 1024.0
+        cd.append('<div class=srcbox><div class=t><b>The loop on this page, 480 wide</b>'
+                  '<a class=dl href="../%s" download>PROXY &nbsp;%.0f KB</a></div>'
+                  '<p>%s</p></div>' % (e['file'], _pk, html.escape(e['proxy_note'])))
     if e.get('video'):
         # A SHOT THAT MOVES IS STILL A SHOT. Baba, 3.9.2026: a loop should behave
         # like any drawn frame, so it gets a card, a note and a download in the
