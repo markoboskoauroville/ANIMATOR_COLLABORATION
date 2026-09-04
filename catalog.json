@@ -3112,7 +3112,11 @@
       "title": "Manan walks in",
       "status": "accepted",
       "date": "2026-09-03",
-      "note": "MANAN WALKS IN, AND WHAT HE WALKS IN ON IS THE COLLAPSE. The boy steps into the drawn world beside the runner, magnifying glass up. The film's first crossing of its two worlds: anything real is a photograph, anything thought is a pencil drawing, and here they stand in one frame on one ground line, with the boy the taller of the two so he is the subject and the drawing is the thing being looked at. SUPERSEDES 1-5-v1, which had the runner mid sprint. magnifying-glass.md section 4: every inspection happens to ONE body in ONE pose, 1-6-COLLAPSE-v1, and a different runner in a different pose reads as a different scene however good the drawing is. BUILT FROM APPROVED MATERIAL, NOT FROM WORDS. The collapse was cut out of 1-6-COLLAPSE-v1 and composited onto the plate, and that composite was the single reference for the 2K render, so neither the boy nor the runner was invented. FILED AS 1-12, 3.9.2026, in the reset that gave scene one its final names. Before the reset it was 1-5-v3, and every name mentioned in this note is a pre reset name."
+      "note": "MANAN WALKS IN, AND WHAT HE WALKS IN ON IS THE COLLAPSE. The boy steps into the drawn world beside the runner, magnifying glass up. The film's first crossing of its two worlds: anything real is a photograph, anything thought is a pencil drawing, and here they stand in one frame on one ground line, with the boy the taller of the two so he is the subject and the drawing is the thing being looked at. SUPERSEDES 1-5-v1, which had the runner mid sprint. magnifying-glass.md section 4: every inspection happens to ONE body in ONE pose, 1-6-COLLAPSE-v1, and a different runner in a different pose reads as a different scene however good the drawing is. BUILT FROM APPROVED MATERIAL, NOT FROM WORDS. The collapse was cut out of 1-6-COLLAPSE-v1 and composited onto the plate, and that composite was the single reference for the 2K render, so neither the boy nor the runner was invented. FILED AS 1-12, 3.9.2026, in the reset that gave scene one its final names. Before the reset it was 1-5-v3, and every name mentioned in this note is a pre reset name.",
+      "clean_plate": {
+        "file": "1-12-CLEAN-v1.png",
+        "note": "The same frame with the boy taken out of it. The drawn world, the ink border and the collapse are exactly as delivered; only Manan, his shadow and the ground he stood on are gone. Built by wiping the photographed figure and rebuilding the paper under him, so nothing drawn was touched or redrawn."
+      }
     },
     {
       "file": "BB_C_1/1-13.png",
@@ -3122,7 +3126,11 @@
       "title": "He turns to us",
       "status": "accepted",
       "date": "2026-09-03",
-      "note": "HE TURNS TO US. Pushed in, and the drawing behind him is the SAME picture nearer: the head and shoulders of 1-6-COLLAPSE-v1, head tipped back, face up, mouth open. He is inspecting one image at two distances, which is what makes 1.10 and 1.11 one action rather than two shots. The drawing is pale and much fainter than he is, so the drawn world recedes exactly as the real one takes over. SUPERSEDES 1-6-v1, which carried an unrelated profile head of the old man. Same method as 1-5-v3: composite first, then render from that composite as the single reference. FILED AS 1-13, 3.9.2026, in the reset that gave scene one its final names. Before the reset it was 1-6-v3, and every name mentioned in this note is a pre reset name."
+      "note": "HE TURNS TO US. Pushed in, and the drawing behind him is the SAME picture nearer: the head and shoulders of 1-6-COLLAPSE-v1, head tipped back, face up, mouth open. He is inspecting one image at two distances, which is what makes 1.10 and 1.11 one action rather than two shots. The drawing is pale and much fainter than he is, so the drawn world recedes exactly as the real one takes over. SUPERSEDES 1-6-v1, which carried an unrelated profile head of the old man. Same method as 1-5-v3: composite first, then render from that composite as the single reference. FILED AS 1-13, 3.9.2026, in the reset that gave scene one its final names. Before the reset it was 1-6-v3, and every name mentioned in this note is a pre reset name.",
+      "clean_plate": {
+        "file": "1-13-CLEAN-v1.png",
+        "note": "The same frame with the boy, his hand, the brass glass and his shadow taken out. He was standing on the bottom border and covering most of the wall, so the border was rebuilt across the gap and the wall relit evenly. The pale drawing of the runner is unchanged in size, place and weight."
+      }
     },
     {
       "file": "BB_C_1/1-9.png",
@@ -3176,7 +3184,7 @@
     }
   ],
   "event": "Breakthrough Junior Challenge 2026",
-  "site_version": 213,
+  "site_version": 214,
   "footage": [
     {
       "name": "Key catch",

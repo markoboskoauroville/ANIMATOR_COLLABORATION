@@ -2525,6 +2525,23 @@ for _i, e in enumerate(_cards):
             'EVERYTHING ELSE IS WAITING ON NEHA AND MUST NOT BE USED AS IS.</span></div>'
             % CREDITS_TEXT)
 
+    # THE CLEAN PLATE. Baba, 3.9.2026: the compositing animator needs the frame
+    # with the live action taken out, so he can lay the real Manan over the top
+    # of it. It goes on the card beside the frame it belongs to rather than in
+    # a folder somewhere, because a plate that has to be hunted for gets
+    # rebuilt by hand instead.
+    _cp = e.get('clean_plate')
+    if _cp:
+        _cpb = _cp['file'].rsplit('.', 1)[0]
+        _cpo = ORIGINALS.get(_cp['file']) or {}
+        _cph = _cpo.get('url') or ('../BB_C_1/' + _cp['file'])
+        _cpmb = _cpo.get('bytes', 0) / 1048576.0
+        cd.append('<div class=srcbox><div class=t><b>Clean plate, no live action</b>'
+                  '<a class=dl href="%s" download>DOWNLOAD FULL SIZE &nbsp;%.1f MB</a></div>'
+                  '<p>%s</p></div>'
+                  % (_cph, _cpmb, html.escape(_cp.get('note', ''))))
+        cd.append('<img class=cardimg src="../mid/%s.jpg" alt="">' % _cpb)
+
     if any(k in e.get('file', '') for k in ('FALL', '15-1-A', '15-2-A', 'OBJECT_SHEET_KEY',
                                             'CHARACTER_SHEET_COACH')):
         cd.append(
