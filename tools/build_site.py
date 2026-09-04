@@ -2121,54 +2121,17 @@ LASTSHOT = [
 # the boards do not appear whole, they are written line by line. Six states
 # each, and they are the phase: two finished boards on their own show none of
 # the argument being made.
-THEORIES = [
-    ('BB_C_10/10-0-BUILD-0.png', 'blackboard, empty'),
-    ('BB_C_10/10-0-BUILD-2.png', 'the old theory, building'),
-    ('BB_C_10/10-0-A-v2.png', 'the old theory'),
-    (None, 'CUT'),
-    ('BB_C_11/11-0-BUILD-0.png', 'whiteboard, empty'),
-    ('BB_C_11/11-0-BUILD-2.png', 'the answer, building'),
-    ('BB_C_11/11-0-A-v1.png', 'the new theory'),
-]
-
-
-THEORY_LINES = {
-    'BB_C_10/10-0-BUILD-2.png': [
-        ('MANAN', 'Nineteen twenty three. Hill puts runners on a treadmill and measures '
-                  'everything they do. His answer is simple.'),
-        ('MANAN', 'Fatigue is in the muscle.')],
-    'BB_C_10/10-0-A-v2.png': [
-        ('MANAN', 'You run. The muscle burns through its oxygen. The fuel runs out.'),
-        ('MANAN', 'And when the tank reads empty, the body stops.'),
-        ('VIVEKA', 'And when you collapsed on that road. Was the tank empty?'),
-        ('MANAN', 'No. There was some left.'),
-        ('VIVEKA', 'There is always some left.')],
-    'BB_C_11/11-0-BUILD-2.png': [
-        ('VIVEKA', 'Heart rate, breath, temperature, water, distance. I read all of it, '
-                  'all the time.'),
-        ('VIVEKA', 'And I ask one question: can we keep going safely?')],
-    'BB_C_11/11-0-A-v1.png': [
-        ('VIVEKA', 'When the answer starts to look like no, I slow you down. So no. Fatigue '
-                  'is in the brain, not in your legs. Up here.'),
-        ('VIVEKA', 'It decides when to stop. When I stop you, the fuel is still there.'),
-        ('MANAN', 'So the wall...'),
-        ('VIVEKA', 'Is a number I chose. Carefully. To keep you alive.'),
-        ('MANAN', 'Then it can be a different number.'),
-        ('VIVEKA', 'Now you understand what I do.')],
-}
-
-
-def theory_lines(f):
-    """The words said over a board, under the board."""
-    rows = THEORY_LINES.get(f)
-    if not rows:
-        return ''
-    o = []
-    for who, line in rows:
-        o.append('<div class=ln><span class=sp>%s</span>'
-                 '<span class=tx>\u201c%s\u201d</span></div>'
-                 % (who, html.escape(line)))
-    return ''.join(o)
+# THE THEORIES STRIP IS GONE. Baba, 4.9.2026: the boards are retired. Manan
+# never writes anything; he thinks it and Viveka visualises it on the hologram
+# that was already standing in the room. Two chalk boards in a room with a
+# holographic display was one idea too many.
+#
+# This list named the frames BY PATH and the strip kept printing them after they
+# were superseded, exactly like the arrival strip this afternoon and the COACH
+# labels an hour ago. FIFTH TIME TODAY. A hardcoded literal does not know that
+# anything has been retired, and the verifier is the only thing that catches it.
+THEORIES = []
+THEORY_LINES = {}
 
 
 def theories_strip(prefix=''):
@@ -2365,9 +2328,6 @@ for e in _fl:
     # belong to section 10, which is called THE TWO THEORIES, ON THE BOARD. The
     # same fault as the key strip and the credits filter: behaviour nailed to a
     # section NUMBER while the running order moved underneath it.
-    if n == '10':
-        rt.append(theories_strip())
-        in_strip = {f for f, _ in THEORIES if isinstance(f, str)}
     if n == '13':
         # Baba, 31.8.2026: this phase shows the strip and nothing else.
         # 2.9.2026: it is section 13 now, 'He catches it'. It was pinned to 11,

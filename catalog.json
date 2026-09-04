@@ -719,9 +719,9 @@
       "shot": "10.0",
       "file": "BB_C_10/10-0-A-v2.png",
       "representative": true,
-      "status": "proposal",
+      "status": "superseded",
       "date": "2026-08-30",
-      "note": "THE OLD THEORY. Manan's board, and only his. The arm, the fuel gauge at EMPTY, and three lines each underlined: FATIGUE IS IN THE MUSCLE, THE FUEL RUNS OUT, THE BODY STOPS. This is the 1923 answer he arrives with, having read it in a book. BLACKBOARD AND WHITE CHALK ON PURPOSE: Viveka answers on a whiteboard in black marker, and the reversal of surface and mark is what the audience feels before they follow the argument. The chalk draws itself as he speaks, RSA Animate style, so the board is never revealed finished. THIS IS THE FINISHED BOARD. An attempt to fill the lower right with a collapsed runner was rejected, so the empty stretch stays empty and the chalk simply stops there.",
+      "note": "THE OLD THEORY. Manan's board, and only his. The arm, the fuel gauge at EMPTY, and three lines each underlined: FATIGUE IS IN THE MUSCLE, THE FUEL RUNS OUT, THE BODY STOPS. This is the 1923 answer he arrives with, having read it in a book. BLACKBOARD AND WHITE CHALK ON PURPOSE: Viveka answers on a whiteboard in black marker, and the reversal of surface and mark is what the audience feels before they follow the argument. The chalk draws itself as he speaks, RSA Animate style, so the board is never revealed finished. THIS IS THE FINISHED BOARD. An attempt to fill the lower right with a collapsed runner was rejected, so the empty stretch stays empty and the chalk simply stops there. RETIRED 4.9.2026. The boards are gone. Manan never writes anything: he thinks it and Viveka visualises it on the hologram that was already standing in the room, and then answers by visualising his own. Two chalk boards in a room with a holographic display was one idea too many.",
       "slug": "INT. CONTROL ROOM — THE BLACKBOARD",
       "what": "The arm, the gauge at EMPTY, three underlined lines of chalk.",
       "why": "The 1923 answer Manan arrives with. Blackboard and white chalk on purpose: Viveka answers on a whiteboard in black marker, and the reversal is felt before the argument is followed.",
@@ -737,17 +737,7 @@
         "phase": "Phase 11 of 15, THE TWO THEORIES, ON THE BOARD.",
         "journey": "THE ORDEAL, which in this film is comprehension. Nothing is fought.",
         "element": "LIGHT, which is what lets you see, as against GLOW, which burns and does not last."
-      },
-      "dialogue": [
-        {
-          "speaker": "MANAN",
-          "line": "Nineteen twenty three. Hill puts runners on a treadmill and measures everything they do. His answer is simple. Fatigue is in the muscle."
-        },
-        {
-          "speaker": "MANAN",
-          "line": "You run. The muscle uses up its oxygen. The fuel is spent. And when the tank reads empty, the body stops."
-        }
-      ]
+      }
     },
     {
       "kind": "keyframe",
@@ -768,9 +758,9 @@
       "shot": "11.0",
       "file": "BB_C_11/11-0-A-v1.png",
       "representative": true,
-      "status": "proposal",
+      "status": "superseded",
       "date": "2026-08-30",
-      "note": "THE NEW THEORY. Viveka's answer, and THE INVERSION IS THE POINT: same layout, same three lines, same gauge as shot 10, with every value reversed. Blackboard and white chalk becomes whiteboard and black marker. Measured, mean luminance 135 against 226. THE GAUGE CARRIES THE ARGUMENT: the same instrument in both frames with the needle moved from EMPTY to FULL says the fuel was always there without a word being spoken. Cut one to the other and the audience understands before they have read the sentences. The lower right is left empty in both, because the marker is still going while he talks.",
+      "note": "THE NEW THEORY. Viveka's answer, and THE INVERSION IS THE POINT: same layout, same three lines, same gauge as shot 10, with every value reversed. Blackboard and white chalk becomes whiteboard and black marker. Measured, mean luminance 135 against 226. THE GAUGE CARRIES THE ARGUMENT: the same instrument in both frames with the needle moved from EMPTY to FULL says the fuel was always there without a word being spoken. Cut one to the other and the audience understands before they have read the sentences. The lower right is left empty in both, because the marker is still going while he talks. RETIRED 4.9.2026. The boards are gone. Manan never writes anything: he thinks it and Viveka visualises it on the hologram that was already standing in the room, and then answers by visualising his own. Two chalk boards in a room with a holographic display was one idea too many.",
       "slug": "INT. CONTROL ROOM — THE WHITEBOARD",
       "what": "The brain, the gauge at FULL, three lines in black marker.",
       "why": "THE INVERSION. Same layout, same three lines, same instrument, every value reversed. The gauge needle moving from EMPTY to FULL says the fuel was always there without a word.",
@@ -786,53 +776,7 @@
         "phase": "Phase 11 of 15, THE TWO THEORIES, ON THE BOARD.",
         "journey": "THE ORDEAL, which in this film is comprehension. Nothing is fought.",
         "element": "LIGHT, which is what lets you see, as against GLOW, which burns and does not last."
-      },
-      "dialogue": [
-        {
-          "speaker": "VIVEKA",
-          "line": "Pulse, breath, temperature, water, sugar. I read all of it, the whole time. That is what every one of those panels you walked past is for."
-        },
-        {
-          "speaker": "VIVEKA",
-          "line": "And I ask one question with it. Can we carry on safely?"
-        },
-        {
-          "speaker": "VIVEKA",
-          "line": "When the answer starts to look like no, I slow you down. Not because anything has run out. Because of where it is heading."
-        },
-        {
-          "speaker": "MANAN",
-          "line": "Heading."
-        },
-        {
-          "speaker": "VIVEKA",
-          "line": "I do not wait for the tank to empty. I watch how fast it is emptying, and I stop you while there is still enough left to get you home. So no. Fatigue is in the brain, not in your legs. Up here. And it decides long before anything is actually in danger."
-        },
-        {
-          "speaker": "VIVEKA",
-          "line": "When I stop you, the fuel is still there."
-        },
-        {
-          "speaker": "MANAN",
-          "line": "It was. I saw it. The sugar cellar was full. The fat store was barely touched. The fibres were not torn."
-        },
-        {
-          "speaker": "VIVEKA",
-          "line": "No. They never are."
-        },
-        {
-          "speaker": "MANAN",
-          "line": "So the wall..."
-        },
-        {
-          "speaker": "VIVEKA",
-          "line": "Is a number I chose. Carefully. To keep you alive."
-        },
-        {
-          "speaker": "MANAN",
-          "line": "Then it can be a different number."
-        }
-      ]
+      }
     },
     {
       "kind": "keyframe",
@@ -982,10 +926,9 @@
       "kind": "keyframe",
       "shot": "10.0",
       "file": "BB_C_10/build/10-0-BUILD-0.png",
-      "storyboard": "hide",
-      "status": "reference",
+      "status": "superseded",
       "date": "2026-08-30",
-      "note": "BOARD BUILD STATE 0 of 5. Shows: bare board. These are for the animatic: cut from one to the next in time with the voice so the chalk appears as Manan says the words. SUBTRACTED from the finished board rather than generated, so every state registers to the pixel. There are faint horizontal ghosts on the bare states where the chalk was; they do not read in motion at 5 to 7 frames a second and were left rather than chased.",
+      "note": "BOARD BUILD STATE 0 of 5. Shows: bare board. These are for the animatic: cut from one to the next in time with the voice so the chalk appears as Manan says the words. SUBTRACTED from the finished board rather than generated, so every state registers to the pixel. There are faint horizontal ghosts on the bare states where the chalk was; they do not read in motion at 5 to 7 frames a second and were left rather than chased. RETIRED 4.9.2026. The boards are gone. Manan never writes anything: he thinks it and Viveka visualises it on the hologram that was already standing in the room, and then answers by visualising his own. Two chalk boards in a room with a holographic display was one idea too many.",
       "flow_pos": 13,
       "dna": {
         "phase": "Phase 11 of 15, THE TWO THEORIES, ON THE BOARD.",
@@ -997,10 +940,9 @@
       "kind": "keyframe",
       "shot": "10.0",
       "file": "BB_C_10/build/10-0-BUILD-1.png",
-      "storyboard": "hide",
-      "status": "reference",
+      "status": "superseded",
       "date": "2026-08-30",
-      "note": "BOARD BUILD STATE 1 of 5. Shows: the arm. These are for the animatic: cut from one to the next in time with the voice so the chalk appears as Manan says the words. SUBTRACTED from the finished board rather than generated, so every state registers to the pixel. There are faint horizontal ghosts on the bare states where the chalk was; they do not read in motion at 5 to 7 frames a second and were left rather than chased.",
+      "note": "BOARD BUILD STATE 1 of 5. Shows: the arm. These are for the animatic: cut from one to the next in time with the voice so the chalk appears as Manan says the words. SUBTRACTED from the finished board rather than generated, so every state registers to the pixel. There are faint horizontal ghosts on the bare states where the chalk was; they do not read in motion at 5 to 7 frames a second and were left rather than chased. RETIRED 4.9.2026. The boards are gone. Manan never writes anything: he thinks it and Viveka visualises it on the hologram that was already standing in the room, and then answers by visualising his own. Two chalk boards in a room with a holographic display was one idea too many.",
       "flow_pos": 13,
       "dna": {
         "phase": "Phase 11 of 15, THE TWO THEORIES, ON THE BOARD.",
@@ -1012,10 +954,9 @@
       "kind": "keyframe",
       "shot": "10.0",
       "file": "BB_C_10/build/10-0-BUILD-2.png",
-      "storyboard": "hide",
-      "status": "reference",
+      "status": "superseded",
       "date": "2026-08-30",
-      "note": "BOARD BUILD STATE 2 of 5. Shows: + FATIGUE IS IN THE MUSCLE. These are for the animatic: cut from one to the next in time with the voice so the chalk appears as Manan says the words. SUBTRACTED from the finished board rather than generated, so every state registers to the pixel. There are faint horizontal ghosts on the bare states where the chalk was; they do not read in motion at 5 to 7 frames a second and were left rather than chased.",
+      "note": "BOARD BUILD STATE 2 of 5. Shows: + FATIGUE IS IN THE MUSCLE. These are for the animatic: cut from one to the next in time with the voice so the chalk appears as Manan says the words. SUBTRACTED from the finished board rather than generated, so every state registers to the pixel. There are faint horizontal ghosts on the bare states where the chalk was; they do not read in motion at 5 to 7 frames a second and were left rather than chased. RETIRED 4.9.2026. The boards are gone. Manan never writes anything: he thinks it and Viveka visualises it on the hologram that was already standing in the room, and then answers by visualising his own. Two chalk boards in a room with a holographic display was one idea too many.",
       "flow_pos": 13,
       "dna": {
         "phase": "Phase 11 of 15, THE TWO THEORIES, ON THE BOARD.",
@@ -1027,10 +968,9 @@
       "kind": "keyframe",
       "shot": "10.0",
       "file": "BB_C_10/build/10-0-BUILD-3.png",
-      "storyboard": "hide",
-      "status": "reference",
+      "status": "superseded",
       "date": "2026-08-30",
-      "note": "BOARD BUILD STATE 3 of 5. Shows: + THE FUEL RUNS OUT. These are for the animatic: cut from one to the next in time with the voice so the chalk appears as Manan says the words. SUBTRACTED from the finished board rather than generated, so every state registers to the pixel. There are faint horizontal ghosts on the bare states where the chalk was; they do not read in motion at 5 to 7 frames a second and were left rather than chased.",
+      "note": "BOARD BUILD STATE 3 of 5. Shows: + THE FUEL RUNS OUT. These are for the animatic: cut from one to the next in time with the voice so the chalk appears as Manan says the words. SUBTRACTED from the finished board rather than generated, so every state registers to the pixel. There are faint horizontal ghosts on the bare states where the chalk was; they do not read in motion at 5 to 7 frames a second and were left rather than chased. RETIRED 4.9.2026. The boards are gone. Manan never writes anything: he thinks it and Viveka visualises it on the hologram that was already standing in the room, and then answers by visualising his own. Two chalk boards in a room with a holographic display was one idea too many.",
       "flow_pos": 13,
       "dna": {
         "phase": "Phase 11 of 15, THE TWO THEORIES, ON THE BOARD.",
@@ -1042,10 +982,9 @@
       "kind": "keyframe",
       "shot": "10.0",
       "file": "BB_C_10/build/10-0-BUILD-4.png",
-      "storyboard": "hide",
-      "status": "reference",
+      "status": "superseded",
       "date": "2026-08-30",
-      "note": "BOARD BUILD STATE 4 of 5. Shows: + the gauge at EMPTY. These are for the animatic: cut from one to the next in time with the voice so the chalk appears as Manan says the words. SUBTRACTED from the finished board rather than generated, so every state registers to the pixel. There are faint horizontal ghosts on the bare states where the chalk was; they do not read in motion at 5 to 7 frames a second and were left rather than chased.",
+      "note": "BOARD BUILD STATE 4 of 5. Shows: + the gauge at EMPTY. These are for the animatic: cut from one to the next in time with the voice so the chalk appears as Manan says the words. SUBTRACTED from the finished board rather than generated, so every state registers to the pixel. There are faint horizontal ghosts on the bare states where the chalk was; they do not read in motion at 5 to 7 frames a second and were left rather than chased. RETIRED 4.9.2026. The boards are gone. Manan never writes anything: he thinks it and Viveka visualises it on the hologram that was already standing in the room, and then answers by visualising his own. Two chalk boards in a room with a holographic display was one idea too many.",
       "flow_pos": 13,
       "dna": {
         "phase": "Phase 11 of 15, THE TWO THEORIES, ON THE BOARD.",
@@ -1057,10 +996,9 @@
       "kind": "keyframe",
       "shot": "10.0",
       "file": "BB_C_10/build/10-0-BUILD-5.png",
-      "storyboard": "hide",
-      "status": "reference",
+      "status": "superseded",
       "date": "2026-08-30",
-      "note": "BOARD BUILD STATE 5 of 5. Shows: + THE BODY STOPS. These are for the animatic: cut from one to the next in time with the voice so the chalk appears as Manan says the words. SUBTRACTED from the finished board rather than generated, so every state registers to the pixel. There are faint horizontal ghosts on the bare states where the chalk was; they do not read in motion at 5 to 7 frames a second and were left rather than chased.",
+      "note": "BOARD BUILD STATE 5 of 5. Shows: + THE BODY STOPS. These are for the animatic: cut from one to the next in time with the voice so the chalk appears as Manan says the words. SUBTRACTED from the finished board rather than generated, so every state registers to the pixel. There are faint horizontal ghosts on the bare states where the chalk was; they do not read in motion at 5 to 7 frames a second and were left rather than chased. RETIRED 4.9.2026. The boards are gone. Manan never writes anything: he thinks it and Viveka visualises it on the hologram that was already standing in the room, and then answers by visualising his own. Two chalk boards in a room with a holographic display was one idea too many.",
       "flow_pos": 13,
       "dna": {
         "phase": "Phase 11 of 15, THE TWO THEORIES, ON THE BOARD.",
@@ -1072,10 +1010,9 @@
       "kind": "keyframe",
       "shot": "11.0",
       "file": "BB_C_11/build/11-0-BUILD-0.png",
-      "storyboard": "hide",
-      "status": "reference",
+      "status": "superseded",
       "date": "2026-08-30",
-      "note": "WHITEBOARD BUILD STATE 0 of 5. Shows: bare whiteboard. Cut from one to the next in time with Viveka speaking, so the marker appears as he says the words. Subtracted from the finished board so every state registers to the pixel, and the whiteboard erases perfectly clean because the surface is plain.",
+      "note": "WHITEBOARD BUILD STATE 0 of 5. Shows: bare whiteboard. Cut from one to the next in time with Viveka speaking, so the marker appears as he says the words. Subtracted from the finished board so every state registers to the pixel, and the whiteboard erases perfectly clean because the surface is plain. RETIRED 4.9.2026. The boards are gone. Manan never writes anything: he thinks it and Viveka visualises it on the hologram that was already standing in the room, and then answers by visualising his own. Two chalk boards in a room with a holographic display was one idea too many.",
       "flow_pos": 14,
       "dna": {
         "phase": "Phase 11 of 15, THE TWO THEORIES, ON THE BOARD.",
@@ -1087,10 +1024,9 @@
       "kind": "keyframe",
       "shot": "11.0",
       "file": "BB_C_11/build/11-0-BUILD-1.png",
-      "storyboard": "hide",
-      "status": "reference",
+      "status": "superseded",
       "date": "2026-08-30",
-      "note": "WHITEBOARD BUILD STATE 1 of 5. Shows: the brain. Cut from one to the next in time with Viveka speaking, so the marker appears as he says the words. Subtracted from the finished board so every state registers to the pixel, and the whiteboard erases perfectly clean because the surface is plain.",
+      "note": "WHITEBOARD BUILD STATE 1 of 5. Shows: the brain. Cut from one to the next in time with Viveka speaking, so the marker appears as he says the words. Subtracted from the finished board so every state registers to the pixel, and the whiteboard erases perfectly clean because the surface is plain. RETIRED 4.9.2026. The boards are gone. Manan never writes anything: he thinks it and Viveka visualises it on the hologram that was already standing in the room, and then answers by visualising his own. Two chalk boards in a room with a holographic display was one idea too many.",
       "flow_pos": 14,
       "dna": {
         "phase": "Phase 11 of 15, THE TWO THEORIES, ON THE BOARD.",
@@ -1102,10 +1038,9 @@
       "kind": "keyframe",
       "shot": "11.0",
       "file": "BB_C_11/build/11-0-BUILD-2.png",
-      "storyboard": "hide",
-      "status": "reference",
+      "status": "superseded",
       "date": "2026-08-30",
-      "note": "WHITEBOARD BUILD STATE 2 of 5. Shows: + FATIGUE IS IN THE BRAIN. Cut from one to the next in time with Viveka speaking, so the marker appears as he says the words. Subtracted from the finished board so every state registers to the pixel, and the whiteboard erases perfectly clean because the surface is plain.",
+      "note": "WHITEBOARD BUILD STATE 2 of 5. Shows: + FATIGUE IS IN THE BRAIN. Cut from one to the next in time with Viveka speaking, so the marker appears as he says the words. Subtracted from the finished board so every state registers to the pixel, and the whiteboard erases perfectly clean because the surface is plain. RETIRED 4.9.2026. The boards are gone. Manan never writes anything: he thinks it and Viveka visualises it on the hologram that was already standing in the room, and then answers by visualising his own. Two chalk boards in a room with a holographic display was one idea too many.",
       "flow_pos": 14,
       "dna": {
         "phase": "Phase 11 of 15, THE TWO THEORIES, ON THE BOARD.",
@@ -1117,10 +1052,9 @@
       "kind": "keyframe",
       "shot": "11.0",
       "file": "BB_C_11/build/11-0-BUILD-3.png",
-      "storyboard": "hide",
-      "status": "reference",
+      "status": "superseded",
       "date": "2026-08-30",
-      "note": "WHITEBOARD BUILD STATE 3 of 5. Shows: + IT DECIDES WHEN TO STOP. Cut from one to the next in time with Viveka speaking, so the marker appears as he says the words. Subtracted from the finished board so every state registers to the pixel, and the whiteboard erases perfectly clean because the surface is plain.",
+      "note": "WHITEBOARD BUILD STATE 3 of 5. Shows: + IT DECIDES WHEN TO STOP. Cut from one to the next in time with Viveka speaking, so the marker appears as he says the words. Subtracted from the finished board so every state registers to the pixel, and the whiteboard erases perfectly clean because the surface is plain. RETIRED 4.9.2026. The boards are gone. Manan never writes anything: he thinks it and Viveka visualises it on the hologram that was already standing in the room, and then answers by visualising his own. Two chalk boards in a room with a holographic display was one idea too many.",
       "flow_pos": 14,
       "dna": {
         "phase": "Phase 11 of 15, THE TWO THEORIES, ON THE BOARD.",
@@ -1132,10 +1066,9 @@
       "kind": "keyframe",
       "shot": "11.0",
       "file": "BB_C_11/build/11-0-BUILD-4.png",
-      "storyboard": "hide",
-      "status": "reference",
+      "status": "superseded",
       "date": "2026-08-30",
-      "note": "WHITEBOARD BUILD STATE 4 of 5. Shows: + the gauge at FULL. Cut from one to the next in time with Viveka speaking, so the marker appears as he says the words. Subtracted from the finished board so every state registers to the pixel, and the whiteboard erases perfectly clean because the surface is plain.",
+      "note": "WHITEBOARD BUILD STATE 4 of 5. Shows: + the gauge at FULL. Cut from one to the next in time with Viveka speaking, so the marker appears as he says the words. Subtracted from the finished board so every state registers to the pixel, and the whiteboard erases perfectly clean because the surface is plain. RETIRED 4.9.2026. The boards are gone. Manan never writes anything: he thinks it and Viveka visualises it on the hologram that was already standing in the room, and then answers by visualising his own. Two chalk boards in a room with a holographic display was one idea too many.",
       "flow_pos": 14,
       "dna": {
         "phase": "Phase 11 of 15, THE TWO THEORIES, ON THE BOARD.",
@@ -1147,10 +1080,9 @@
       "kind": "keyframe",
       "shot": "11.0",
       "file": "BB_C_11/build/11-0-BUILD-5.png",
-      "storyboard": "hide",
-      "status": "reference",
+      "status": "superseded",
       "date": "2026-08-30",
-      "note": "WHITEBOARD BUILD STATE 5 of 5. Shows: + THE FUEL IS STILL THERE. Cut from one to the next in time with Viveka speaking, so the marker appears as he says the words. Subtracted from the finished board so every state registers to the pixel, and the whiteboard erases perfectly clean because the surface is plain.",
+      "note": "WHITEBOARD BUILD STATE 5 of 5. Shows: + THE FUEL IS STILL THERE. Cut from one to the next in time with Viveka speaking, so the marker appears as he says the words. Subtracted from the finished board so every state registers to the pixel, and the whiteboard erases perfectly clean because the surface is plain. RETIRED 4.9.2026. The boards are gone. Manan never writes anything: he thinks it and Viveka visualises it on the hologram that was already standing in the room, and then answers by visualising his own. Two chalk boards in a room with a holographic display was one idea too many.",
       "flow_pos": 14,
       "dna": {
         "phase": "Phase 11 of 15, THE TWO THEORIES, ON THE BOARD.",
@@ -1749,30 +1681,17 @@
       "kind": "flow",
       "n": "8",
       "file": "flow/09-brain-room.jpg",
-      "title": "They introduce each other",
+      "title": "They introduce each other, and the two theories",
       "status": "placeholder",
       "scenes": [
         "19"
       ],
-      "note": "Manan explains what he read on a blackboard in white chalk. Viveka answers on a whiteboard in black marker. Same layout, same three lines, same gauge, every value reversed.",
+      "note": "Inside, one room and one chair and a man who has been expecting him. He asks for something impossible and the whole idea of the film gets done as a party trick. Then the two theories, on the hologram that is already standing in the room: Manan never writes anything, he thinks it and Viveka visualises it, and then Viveka answers in the same places with every value reversed.",
       "flow_pos": 0
     },
     {
       "kind": "flow",
       "n": "9",
-      "file": "flow/10-the-skull-door.jpg",
-      "title": "The two theories, on the board",
-      "status": "placeholder",
-      "scenes": [
-        "10",
-        "11"
-      ],
-      "note": "We fly at the banner reading THE LIMIT IS A SETTING and pass through it into white. Manan says the line while we are flying.",
-      "flow_pos": 0
-    },
-    {
-      "kind": "flow",
-      "n": "10",
       "file": "flow/11-new-theory.jpg",
       "title": "The conclusion, and goodbye",
       "status": "placeholder",
@@ -1784,7 +1703,7 @@
     },
     {
       "kind": "flow",
-      "n": "11",
+      "n": "10",
       "file": "flow/12-conclusion.jpg",
       "title": "The vortex down, and the key falls with him",
       "status": "placeholder",
@@ -2407,7 +2326,7 @@
       "kind": "keyframe",
       "shot": "10.1",
       "file": "BB_C_10/10-1-MOCKUP-v1.png",
-      "status": "proposal",
+      "status": "superseded",
       "date": "2026-09-01",
       "slug": "INT. — AT THE BLACKBOARD, MOCKUP",
       "what": "A real boy standing at the left of the blackboard with chalk in his hand, back to us, clear of the writing.",
@@ -2417,7 +2336,8 @@
         "phase": "Phase 11 of 15, THE TWO THEORIES, ON THE BOARD.",
         "journey": "THE ORDEAL, which in this film is comprehension. Nothing is fought.",
         "element": "LIGHT, which is what lets you see, as against GLOW, which burns and does not last."
-      }
+      },
+      "note": " RETIRED 4.9.2026. The boards are gone. Manan never writes anything: he thinks it and Viveka visualises it on the hologram that was already standing in the room, and then answers by visualising his own. Two chalk boards in a room with a holographic display was one idea too many."
     },
     {
       "kind": "keyframe",
@@ -2748,7 +2668,7 @@
     },
     {
       "kind": "flow",
-      "n": "12",
+      "n": "11",
       "file": "flow/13.jpg",
       "status": "placeholder",
       "note": "",
@@ -2759,7 +2679,7 @@
     },
     {
       "kind": "flow",
-      "n": "13",
+      "n": "12",
       "file": "flow/14.jpg",
       "status": "placeholder",
       "note": "",
@@ -3634,10 +3554,86 @@
       "date": "2026-09-04",
       "note": "THE PORTRAIT, three quarter, hands open at his sides. Use this one for the face and the hair, and the sheet for the proportions. He is beautiful without being handsome and the beauty is in the openness. Nothing about him is stern and nothing is a wizard.",
       "storyboard": "hide"
+    },
+    {
+      "file": "BB_C_19/19-3.png",
+      "kind": "keyframe",
+      "scene": "19",
+      "shot": "19.7",
+      "title": "Manan's theory, visualised",
+      "status": "accepted",
+      "date": "2026-09-04",
+      "note": "HE NEVER WRITES IT DOWN. He thinks it and VIVEKA VISUALISES IT, because Viveka can read him, which is why there is no board in this room and never was. The hologram shows the old theory as somebody else's idea being displayed rather than Viveka's own: the standing body with ONE LEG MUSCLE LIT and everything else dim, the gauge hard over at empty, the line falling away to nothing. Fatigue is in the muscle, the fuel is spent, the tank reads empty. NO WRITING ANYWHERE: the argument is made in pictures because the dialogue carries every word already.",
+      "dialogue": [
+        {
+          "speaker": "MANAN",
+          "line": "Nineteen twenty three. Hill puts runners on a treadmill and measures everything they do. His answer is simple. Fatigue is in the muscle."
+        },
+        {
+          "speaker": "MANAN",
+          "line": "You run. The muscle uses up its oxygen. The fuel is spent. And when the tank reads empty, the body stops."
+        }
+      ]
+    },
+    {
+      "file": "BB_C_19/19-4.png",
+      "kind": "keyframe",
+      "scene": "19",
+      "shot": "19.8",
+      "title": "Viveka answers, in the same places",
+      "status": "accepted",
+      "date": "2026-09-04",
+      "note": "AND HIS ANSWER IN THE SAME PLACES, WHICH IS THE WHOLE POINT OF THE PAIR. The identical arrangement with every value reversed: the head lit and the leg dim, the same gauge in the same corner with the needle still well up, the same line levelling off deliberately part way down instead of collapsing. Fatigue is in the brain, and when he stops you the fuel is still there. Nothing about the layout may move between the two frames; the rhyme is the argument.",
+      "dialogue": [
+        {
+          "speaker": "VIVEKA",
+          "line": "Pulse, breath, temperature, water, sugar. I read all of it, the whole time. That is what every one of those panels you walked past is for."
+        },
+        {
+          "speaker": "VIVEKA",
+          "line": "And I ask one question with it. Can we carry on safely?"
+        },
+        {
+          "speaker": "VIVEKA",
+          "line": "When the answer starts to look like no, I slow you down. Not because anything has run out. Because of where it is heading."
+        },
+        {
+          "speaker": "MANAN",
+          "line": "Heading."
+        },
+        {
+          "speaker": "VIVEKA",
+          "line": "I do not wait for the tank to empty. I watch how fast it is emptying, and I stop you while there is still enough left to get you home. So no. Fatigue is in the brain, not in your legs. Up here. And it decides long before anything is actually in danger."
+        },
+        {
+          "speaker": "VIVEKA",
+          "line": "When I stop you, the fuel is still there."
+        },
+        {
+          "speaker": "MANAN",
+          "line": "It was. I saw it. The sugar cellar was full. The fat store was barely touched. The fibres were not torn."
+        },
+        {
+          "speaker": "VIVEKA",
+          "line": "No. They never are."
+        },
+        {
+          "speaker": "MANAN",
+          "line": "So the wall..."
+        },
+        {
+          "speaker": "VIVEKA",
+          "line": "Is a number I chose. Carefully. To keep you alive."
+        },
+        {
+          "speaker": "MANAN",
+          "line": "Then it can be a different number."
+        }
+      ]
     }
   ],
   "event": "Breakthrough Junior Challenge 2026",
-  "site_version": 234,
+  "site_version": 235,
   "footage": [
     {
       "name": "Key catch",
@@ -6431,17 +6427,17 @@
       "url": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/guide/clip-19-1.mp3"
     },
     {
-      "anchor": "10-0-A-v2",
-      "label": "The boards",
-      "sec": 107.28,
+      "anchor": "19-3",
+      "label": "The two theories",
+      "sec": 157.03,
       "voices": [
         "edmund_32",
         "hugh_32",
         "imogen_32"
       ],
-      "parts": 15,
-      "text": "The boards, and this is where the argument lands. NEITHER BOARD ARRIVES FINISHED. Draw them being written, line by line, and do not cut to a completed diagram. Manan writes the old theory in white chalk on black. You run. The muscle uses up its oxygen. The fuel is spent. And when the tank reads empty, the body stops. Direction. Viveka answers on white with black marker: the same layout, the same three lines, the same gauge, every value reversed. Let the second board land as a REPLY, not as another diagram. Pulse, breath, temperature, water, sugar. I read all of it, the whole time. That is what every one of those panels you walked past is for. And I ask one question with it. Can we carry on safely? When the answer starts to look like no, I slow you down. Not because anything has run out. Because of where it is heading. Heading. I do not wait for the tank to empty. I watch how fast it is emptying, and I stop you while there is still enough left to get you home. So no. Fatigue is in the brain, not in your legs. Up here. And it decides long before anything is actually in danger. When I stop you, the fuel is still there. Direction. And now the corridor pays off. He answers from the rooms he walked through, so cut him wide enough that we remember he has been somewhere. It was. I saw it. The sugar cellar was full. The fat store was barely touched. The fibres were not torn. No. They never are. So the wall... Is a number I chose. Carefully. To keep you alive. Then it can be a different number.",
-      "url": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/guide/clip-10-0-A-v2.mp3"
+      "parts": 16,
+      "text": "There is no board in this room and there never was. MANAN NEVER WRITES ANYTHING DOWN. He thinks it, and Viveka visualises it on the hologram that has been standing over the console since he walked in, because Viveka can read him. Then Viveka answers by visualising his own. That is why the chalk and the marker are gone: two boards in a room with a holographic display was one idea too many, and the display was already there. You run. The muscle uses up its oxygen. The fuel is spent. And when the tank reads empty, the body stops. Direction. His idea comes up in the air as somebody else's: the body turning, ONE LEG MUSCLE LIT and everything else dim, the gauge hard over at empty, the line falling away to nothing. Then Viveka answers, and here is the rule that matters more than anything else in the scene. THE SECOND DISPLAY IS THE FIRST ONE WITH EVERY VALUE REVERSED. Same layout, same three elements in the same places, the same gauge in the same corner. The head lit and the leg dim. The needle still well up. The same line, but levelling off deliberately instead of collapsing. Do not move anything between the two, because the rhyme IS the argument. Pulse, breath, temperature, water, sugar. I read all of it, the whole time. That is what every one of those panels you walked past is for. And I ask one question with it. Can we carry on safely? When the answer starts to look like no, I slow you down. Not because anything has run out. Because of where it is heading. Heading. I do not wait for the tank to empty. I watch how fast it is emptying, and I stop you while there is still enough left to get you home. So no. Fatigue is in the brain, not in your legs. Up here. And it decides long before anything is actually in danger. When I stop you, the fuel is still there. Direction. And now the climb pays off. He answers from the rooms he passed on the way up, so hold him wide enough that we remember he has been somewhere. It was. I saw it. The sugar cellar was full. The fat store was barely touched. The fibres were not torn. No. They never are. So the wall... Is a number I chose. Carefully. To keep you alive. Then it can be a different number. Neither display carries a single word, on purpose. The boards had to be READ, which meant translating them. The holograms argue in pictures, a body, a lit part, a gauge and a line, and the dialogue carries every word already. Nothing is lost and it needs no second version.",
+      "url": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/guide/clip-19-3.mp3"
     },
     {
       "anchor": "12-0-CONCLUSION-PLACEHOLDER",
