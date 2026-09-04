@@ -797,7 +797,6 @@ def dialogue_for(shot_id, depth=0):
 DRAMA = CAT.get('radio_drama', [])
 DRAMA_HR = CAT.get('radio_drama_hr', [])
 DRAMA_V3 = CAT.get('radio_drama_v3', [])
-DRAMA_V6 = CAT.get('radio_drama_v6', [])
 DRAMA_V7 = CAT.get('radio_drama_v7', [])
 MUSIC = CAT.get('music', [])
 TAKES = CAT.get('manan_takes', {})
@@ -1032,29 +1031,6 @@ def drama_v3_block(depth=0):
 
 
 
-def drama_v6_block(depth=0):
-    """THE radio drama. The film told out loud, in Croatian.
-
-    Baba is dyslexic and short sighted, so a page of prose is the slowest way for
-    him to check whether the film is understood. This is not a convenience: it is
-    the difference between checking the thing and not checking it. Kristijan gets
-    the same benefit, because a film explained aloud in nine minutes lands harder
-    than a page he skims.
-
-    Gabrijela narrates, Srecko is Manan, Antonin is Coach Brain. The narrator
-    names the speaker before every line, so nobody has to work out who is who.
-    """
-    if not DRAMA_V6:
-        return ''
-    rows = []
-    for x in DRAMA_V6:
-        rows.append(('line', x['speaker'] + '   ' + x['text'][:110], '', 0))
-        rows.append(('take', '%02d %s' % (x['n'], x['speaker']), x['audio'], x['sec']))
-    return deck_block('dramav6', 'THE BRAIN BRAKE, CIJELI FILM',
-                      '%d dijelova, oko devet minuta. Gabrijela, Srecko, Antonin.' % len(DRAMA_V6),
-                      rows, 'downloads/BRAIN_BRAKE_radio_drama_HR_v6.zip', depth)
-
-
 def drama_v7_block(depth=0):
     """The drama with scene one retold for the grid as it now stands.
 
@@ -1080,9 +1056,9 @@ def drama_v7_block(depth=0):
         else:
             silent += 1
     return deck_block('dramav7', 'THE BRAIN BRAKE, NOVA PRVA SCENA',
-                      '%d dijelova. Prvih %d jos nije snimljeno, ostalo svira.'
-                      % (len(DRAMA_V7), silent),
-                      rows, '', depth)
+                      '%d dijelova, %d snimljenih, oko sest minuta. Prvih %d, nova prva scena, '
+                      'jos ceka Gabrijelu.' % (len(DRAMA_V7), len(DRAMA_V7) - silent, silent),
+                      rows, 'downloads/BRAIN_BRAKE_radio_drama_HR_v7.zip', depth)
 
 
 def music_block(depth=0):
@@ -1759,9 +1735,10 @@ for e in docs:
 # that does the work twice as long to read.
 _rd = ['<h1>Radio drama, and the music</h1>',
        '<p class=lede>The whole film told out loud in Croatian, and the two pieces written for it. '
-       '<b>Nine minutes of listening instead of a page of reading.</b> Everything here can be '
+       '<b>Listening instead of reading.</b> The new first scene is written and not yet '
+       'recorded, so it is here to read while the rest of it plays. Everything can be '
        'downloaded: the drama as numbered parts, the music as it was composed.</p>',
-       drama_v7_block(), drama_v6_block(), music_block(), DECK_JS]
+       drama_v7_block(), music_block(), DECK_JS]
 open(os.path.join(ROOT, 'radiodrama.html'), 'w').write(
     page('Radio drama', ''.join(_rd), here='drama', depth=0))
 
