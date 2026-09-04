@@ -799,6 +799,8 @@ DRAMA_HR = CAT.get('radio_drama_hr', [])
 DRAMA_V3 = CAT.get('radio_drama_v3', [])
 DRAMA_V7 = CAT.get('radio_drama_v7', [])
 DRAMA_V7_SCENES = CAT.get('radio_drama_v7_scenes', [])
+DRAMA_EN = CAT.get('radio_drama_en', [])
+DRAMA_EN_SCENES = CAT.get('radio_drama_en_scenes', [])
 MUSIC = CAT.get('music', [])
 TAKES = CAT.get('manan_takes', {})
 COACH = CAT.get('coach_takes', {})
@@ -1070,6 +1072,37 @@ def drama_v7_block(depth=0):
                       'Još %d rečenica u prvoj sceni čeka Gabrijelu.'
                       % (len(DRAMA_V7_SCENES), int(total) // 60, int(total) % 60, silent),
                       rows, 'downloads/BRAIN_BRAKE_radio_drama_HR_v7.zip', depth)
+
+
+def drama_en_block(depth=0):
+    """The same film out loud in English, so it travels.
+
+    Baba, 3.9.2026. The Croatian drama is for Baba and Kristijan. This one is
+    for everybody else the film has to reach, and the Breakthrough Junior
+    Challenge is judged in English.
+
+    Line for line with the Croatian, same seventy seven parts, same ten scenes,
+    so the two can be laid side by side. Voiced on Speechify across all twenty
+    one keys: Beatrice narrates, which is the same seat that reads the book, and
+    Edmund and Hugh are Manan and Coach Brain. Three British voices so the accent
+    does not wander mid scene, and the narrator names the speaker before every
+    line exactly as the Croatian does.
+    """
+    if not DRAMA_EN_SCENES:
+        return ''
+    rows = []
+    for i, sc in enumerate(DRAMA_EN_SCENES, 1):
+        rows.append(('head', '%d.  %s' % (i, sc['title']), '', 0))
+        for x in DRAMA_EN:
+            if x.get('scene') == sc['id']:
+                rows.append(('line', x['speaker'] + '   ' + x['text'][:110], '', 0))
+        rows.append(('take', '%02d %s' % (i, sc['title']), sc['url'], sc['sec']))
+    total = sum(sc['sec'] for sc in DRAMA_EN_SCENES)
+    return deck_block('dramaen', 'THE BRAIN BRAKE, THE WHOLE FILM IN ENGLISH',
+                      '%d scenes, %d minutes %d seconds. One file per scene. '
+                      'Beatrice narrates, Edmund is Manan, Hugh is Coach Brain.'
+                      % (len(DRAMA_EN_SCENES), int(total) // 60, int(total) % 60),
+                      rows, 'downloads/BRAIN_BRAKE_radio_drama_EN.zip', depth)
 
 
 def music_block(depth=0):
@@ -1746,10 +1779,10 @@ for e in docs:
 # that does the work twice as long to read.
 _rd = ['<h1>Radio drama, and the music</h1>',
        '<p class=lede>The whole film told out loud in Croatian, and the two pieces written for it. '
-       '<b>One file per scene, not one per sentence.</b> Nine lines of the new first '
-       'scene are written and not yet recorded, so they are here to read. Everything can '
-       'be downloaded: the drama as ten scenes, the music as it was composed.</p>',
-       drama_v7_block(), music_block(), DECK_JS]
+       '<b>In English and in Croatian, one file per scene.</b> Nine lines of the new '
+       'first scene are not yet recorded in Croatian, so they are here to read. '
+       'Everything can be downloaded.</p>',
+       drama_en_block(), drama_v7_block(), music_block(), DECK_JS]
 open(os.path.join(ROOT, 'radiodrama.html'), 'w').write(
     page('Radio drama', ''.join(_rd), here='drama', depth=0))
 
