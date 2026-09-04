@@ -1296,10 +1296,11 @@ def page(title, body, here=None, depth=0):
             # the film's full name sits at the foot of every page, so the subtitle
             # travels with the work wherever a page is opened or printed
             '<p class=filmfoot>%s<br><span>%s &nbsp;&middot;&nbsp; %s</span></p>'
-            '</div></div></body></html>'
+            '</div></div>%s</body></html>'
             % (title, r, r, r, r, CSS, GATE if GATED else '',
                'none' if GATED else 'block', bar(here, r), body,
-               FILM, SUBTITLE, EVENT))
+               FILM, SUBTITLE, EVENT,
+               LOOP_JS if '<video' in body else ''))
 
 
 import re
@@ -1940,13 +1941,55 @@ def scenes_of(e):
 # placeholder and a real footage composite. Baba's rule, 30.8.2026: the generated
 # boy stands in on the front page because it reads finished at a glance, and the
 # real footage lives on the scene and breakdown pages where the work is done.
+# A SHOT NUMBER IS WHAT PUTS A FRAME ON THE STORYBOARD. 3.9.2026: the three
+# video loops were catalogued as keyframes so they would get cards and downloads
+# like any drawn shot, and they carry no shot number because their place on the
+# page is inside the last shot strip. Without this the grouping raised KeyError
+# on the first one and the whole build stopped.
 _kf = [e for e in ENTRIES if e.get('kind') == 'keyframe'
        and e.get('status') != 'superseded'
+       and e.get('shot')
        and not e.get('storyboard') == 'hide']
 _kf.sort(key=lambda e: shot_key(e.get('shot', '0')))
 _byscene = {}
 for e in _kf:
     _byscene.setdefault(str(e['shot']).split('.')[0], []).append(e)
+
+LOOP_JS = """<script>
+/* KEEP THE LOOPS LOOPING. Baba, 3.9.2026: take two ran on the desktop and
+   stopped on the phone. Both clips are faststart h264 with no audio track and
+   identical markup, so the file was not the difference; the length was. Take one
+   is nine seconds and take two is thirty three, and a browser will carry a short
+   autoplaying clip forever while it quietly gives up on a long one, especially
+   on battery. The loop attribute is a request, not a guarantee.
+   So: start when it scrolls into view, restart by hand when it ends, and try
+   again on the first tap if autoplay was refused outright. */
+(function(){
+  var vs = [].slice.call(document.querySelectorAll('video[loop]'));
+  if (!vs.length) return;
+  function go(v){ var p = v.play(); if (p && p.catch) p.catch(function(){}); }
+  vs.forEach(function(v){
+    v.addEventListener('ended', function(){ v.currentTime = 0; go(v); });
+    v.addEventListener('pause', function(){
+      if (!v.ended && !v.dataset.held && v.readyState > 2) go(v); });
+    v.addEventListener('stalled', function(){ go(v); });
+  });
+  if ('IntersectionObserver' in window){
+    var io = new IntersectionObserver(function(es){
+      es.forEach(function(e){
+        if (e.isIntersecting){ e.target.dataset.held = ''; go(e.target); }
+        else { e.target.dataset.held = '1'; e.target.pause(); }
+      });
+    }, {rootMargin: '200px'});
+    vs.forEach(function(v){ io.observe(v); });
+  } else { vs.forEach(go); }
+  document.addEventListener('touchstart', function once(){
+    vs.forEach(function(v){ if (v.paused && !v.dataset.held) go(v); });
+    document.removeEventListener('touchstart', once);
+  }, {passive: true});
+})();
+</script>"""
+
 
 GUIDE_JS = """<script>
 /* ONE guide player for the whole page. Baba, 3.9.2026.
@@ -2049,6 +2092,11 @@ CLIP_SOURCE = {
         'https://drive.google.com/drive/folders/1YGb_z7OCrLSUX7JagNpynXbu1fAK2wNu',
     'clips/in-front-of-door-loop.mp4':
         'https://drive.google.com/drive/folders/1ph36NxPciUB5Y4s_IiowDotmjk2ciFZ4',
+    # 3.9.2026. Take two's master is a FILE and not a folder, which is why it
+    # was never added here and why that loop was the only one on the site with
+    # no download beside it.
+    'clips/key-catch-2-loop.mp4':
+        'https://drive.google.com/file/d/1HkTXJx_yDQ2k3grS7m7rI3gzeV7Ixztr/view',
 }
 
 
@@ -2154,14 +2202,17 @@ def strip(items, lede, prefix=''):
             drive = CLIP_SOURCE.get(f[1], '')
             dl = ('<a class=pr href="%s" target=_blank rel=noopener '
                   'onclick="event.stopPropagation()">PRORES &nearr;</a>' % drive) if drive else ''
-            out.append('<div class=f><div class=vid onclick="var v=this.firstElementChild;'
-                       '(v.requestFullscreen||v.webkitEnterFullscreen||v.webkitRequestFullscreen)'
-                       '.call(v);v.controls=true;">'
+            _cb = os.path.basename(f[1]).rsplit('.', 1)[0]
+            _card = '%scard/%s.html' % (prefix, _cb)
+            _open = ('<a class=vid href="%s">' % _card) if os.path.exists(
+                os.path.join(ROOT, 'mid', _cb + '.jpg')) else '<span class=vid>'
+            _shut = '</a>' if _open.startswith('<a') else '</span>'
+            out.append('<div class=f>%s'
                        '<video src="%s%s" autoplay muted loop playsinline preload=metadata '
-                       'disablepictureinpicture></video>'
-                       '<span class=lbl>LOOP</span></div>'
+                       'poster="%stiny/%s.jpg" disablepictureinpicture></video>'
+                       '<span class=lbl>LOOP</span>%s'
                        '<div class=n>%s%s</div></div>'
-                       % (prefix, f[1], label.upper(), dl))
+                       % (_open, prefix, f[1], prefix, _cb, _shut, label.upper(), dl))
             continue
         if isinstance(f, tuple) and f[0] == 'yt':
             vid = f[1]
@@ -2581,10 +2632,19 @@ for _i, e in enumerate(_cards):
         _href = '../' + e['file']
         _p = os.path.join(ROOT, e['file'])
         mb = (os.path.getsize(_p) if os.path.exists(_p) else 0) / 1048576.0
+    _size = ('%.0f KB' % (mb * 1024)) if 0 < mb < 1 else ('%.1f MB' % mb)
     cd = ['<div class=cardhead><span class=code>%s</span>'
-          '<a class=dl href="%s" download>DOWNLOAD FULL SIZE &nbsp;%.1f MB</a></div>'
-          % (b.upper(), _href, mb)]
-    cd.append('<img class=cardimg src="../mid/%s.jpg" alt="">' % b)
+          '<a class=dl href="%s" download>DOWNLOAD FULL SIZE &nbsp;%s</a></div>'
+          % (b.upper(), _href, _size)]
+    if e.get('video'):
+        # A SHOT THAT MOVES IS STILL A SHOT. Baba, 3.9.2026: a loop should behave
+        # like any drawn frame, so it gets a card, a note and a download in the
+        # same places. The poster is a frame lifted out of the clip, so the box
+        # is never empty while it loads.
+        cd.append('<video class=cardimg src="../%s" autoplay muted loop playsinline '
+                  'controls poster="../mid/%s.jpg"></video>' % (e['file'], b))
+    else:
+        cd.append('<img class=cardimg src="../mid/%s.jpg" alt="">' % b)
     if e.get('slug'):
         cd.append('<div class=slug>%s</div>' % e['slug'])
     if e.get('what'):

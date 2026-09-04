@@ -3204,10 +3204,61 @@
       "status": "accepted",
       "date": "2026-09-03",
       "note": "INSPECTION 3 OF 3. The glass on 1-1-v18: the eye clear and easy, a faint smile at the corner of the mouth, the deep lines of the first face softened out, the jaw loose. The end of the face sequence, and the calf and the ignition follow it. BUILT, NOT DESCRIBED. The brass rim and handle were cut out of 1-6-COLLAPSE-GLASS-v1 as a transparent sprite, so the glass in all three inspection frames is the approved object rather than a described one. The drawing was placed on the page small and the SAME drawing magnified inside the circle, then the lens laid over it, and that composite was the single reference for the 2K render. The lens enlarges what is already there and nothing was handed to it separately. FILED AS 1-16, 3.9.2026, in the reset that gave scene one its final names. Before the reset it was 1-1-v18-GLASS-v2, and every name mentioned in this note is a pre reset name."
+    },
+    {
+      "file": "clips/key-catch-loop.mp4",
+      "kind": "keyframe",
+      "title": "He catches it, take one",
+      "status": "accepted",
+      "date": "2026-09-03",
+      "video": true,
+      "sec": 8.64,
+      "note": "THE CATCH, TAKE ONE. Shot rather than drawn, and it belongs on the storyboard exactly like a drawn frame: its own card, its own download, its own note. The loop here is 480 wide so the page stays light. THE PRORES WITH ALPHA IS WHAT GETS COMPOSITED, not this: the alpha is already cut, so the hand drops onto the drawn world with nothing to key.",
+      "source": [
+        {
+          "name": "ProRes master, with alpha",
+          "url": "https://drive.google.com/drive/folders/1YGb_z7OCrLSUX7JagNpynXbu1fAK2wNu",
+          "note": "The full resolution take with its alpha already cut. This is what goes in the timeline; the loop on this page is a 480 wide proxy."
+        }
+      ]
+    },
+    {
+      "file": "clips/key-catch-2-loop.mp4",
+      "kind": "keyframe",
+      "title": "He catches it, take two",
+      "status": "accepted",
+      "date": "2026-09-03",
+      "video": true,
+      "sec": 33.36,
+      "note": "THE CATCH, TAKE TWO. Both takes belong here side by side so the choice between them is made by looking rather than by remembering that a second one was shot. Four times longer than take one, which is why it was the one that stopped looping on a phone: a browser will quietly give up on a long autoplaying clip where it will carry a short one forever. It is kept running by script now rather than by the loop attribute alone. THE PRORES MASTER IS THE ONE TO COMPOSITE.",
+      "source": [
+        {
+          "name": "ProRes master, with alpha",
+          "url": "https://drive.google.com/file/d/1HkTXJx_yDQ2k3grS7m7rI3gzeV7Ixztr/view",
+          "note": "The full resolution take with its alpha already cut. This is what goes in the timeline; the loop on this page is a 480 wide proxy."
+        }
+      ]
+    },
+    {
+      "file": "clips/in-front-of-door-loop.mp4",
+      "kind": "keyframe",
+      "title": "In front of the door",
+      "status": "accepted",
+      "date": "2026-09-03",
+      "video": true,
+      "sec": 8.88,
+      "note": "IN FRONT OF THE DOOR. Live action, on the storyboard like any drawn frame. The loop is 480 wide; the ProRes with alpha on Drive is what gets composited.",
+      "source": [
+        {
+          "name": "ProRes master, with alpha",
+          "url": "https://drive.google.com/drive/folders/1ph36NxPciUB5Y4s_IiowDotmjk2ciFZ4",
+          "note": "The full resolution take with its alpha already cut. This is what goes in the timeline; the loop on this page is a 480 wide proxy."
+        }
+      ]
     }
   ],
   "event": "Breakthrough Junior Challenge 2026",
-  "site_version": 216,
+  "site_version": 217,
   "footage": [
     {
       "name": "Key catch",
