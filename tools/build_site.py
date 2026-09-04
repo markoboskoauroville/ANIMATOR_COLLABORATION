@@ -2136,21 +2136,21 @@ THEORY_LINES = {
     'BB_C_10/10-0-A-v2.png': [
         ('MANAN', 'You run. The muscle burns through its oxygen. The fuel runs out.'),
         ('MANAN', 'And when the tank reads empty, the body stops.'),
-        ('COACH', 'And when you collapsed on that road. Was the tank empty?'),
+        ('VIVEKA', 'And when you collapsed on that road. Was the tank empty?'),
         ('MANAN', 'No. There was some left.'),
-        ('COACH', 'There is always some left.')],
+        ('VIVEKA', 'There is always some left.')],
     'BB_C_11/11-0-BUILD-2.png': [
-        ('COACH', 'Heart rate, breath, temperature, water, distance. I read all of it, '
+        ('VIVEKA', 'Heart rate, breath, temperature, water, distance. I read all of it, '
                   'all the time.'),
-        ('COACH', 'And I ask one question: can we keep going safely?')],
+        ('VIVEKA', 'And I ask one question: can we keep going safely?')],
     'BB_C_11/11-0-A-v1.png': [
-        ('COACH', 'When the answer starts to look like no, I slow you down. So no. Fatigue '
+        ('VIVEKA', 'When the answer starts to look like no, I slow you down. So no. Fatigue '
                   'is in the brain, not in your legs. Up here.'),
-        ('COACH', 'It decides when to stop. When I stop you, the fuel is still there.'),
+        ('VIVEKA', 'It decides when to stop. When I stop you, the fuel is still there.'),
         ('MANAN', 'So the wall...'),
-        ('COACH', 'Is a number I chose. Carefully. To keep you alive.'),
+        ('VIVEKA', 'Is a number I chose. Carefully. To keep you alive.'),
         ('MANAN', 'Then it can be a different number.'),
-        ('COACH', 'Now you understand what I do.')],
+        ('VIVEKA', 'Now you understand what I do.')],
 }
 
 
