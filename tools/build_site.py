@@ -2334,6 +2334,12 @@ for e in _fl:
     if ref:   bits.append('%d reference' % len(ref))
     st = ', '.join(bits) if bits else ('LIVE ACTION' if live else 'NOT DRAWN YET')
     _g = GUIDE.get(n)
+    _who = ''
+    if _g and len(_g.get('voices') or []) > 1:
+        # A PHASE WITH DIALOGUE IS CAST. Baba, 3.9.2026: where there are lines,
+        # the characters say them rather than the narrator reporting them, in
+        # the same voices as the English drama so it is the same two people.
+        _who = ' \u00b7 acted'
     _btn = ('<button class=gp type=button data-src="%s" data-sec="%s" '
             'title="listen to this phase" aria-label="listen to this phase">'
             '<svg class=ic-p viewBox="0 0 24 24"><path d="M7 4l13 8-13 8z"/></svg>'
@@ -2341,8 +2347,9 @@ for e in _fl:
             '</button>'
             % (_g['url'], _g['sec'])) if _g else ''
     _bar = '<span class=gb><i><b></b></i></span><span class=gt></span>' if _g else ''
-    rt.append('<div class=rtph><span class=n>%s</span>%s<h3>%s</h3>%s<span class=st>%s</span></div>'
-              % (n, _btn, e.get('title', ''), _bar, st))
+    rt.append('<div class=rtph><span class=n>%s</span>%s<h3>%s</h3>%s'
+              '<span class=st>%s%s</span></div>'
+              % (n, _btn, e.get('title', ''), _bar, st, _who))
     # A SECTION CAN EXPLAIN ITSELF. 3.9.2026: the flow entries carried notes and
     # nothing printed them, so two beats Baba had written down were invisible on
     # the page: the frame freezing while Manan walks into it with a magnifying
