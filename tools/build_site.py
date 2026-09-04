@@ -1005,7 +1005,7 @@ def drama_block(depth=0):
     Listening is not a convenience here, it is the difference between checking
     the thing and not checking it.
 
-    Narrator, Manan and Coach Brain on separate voices so the exchange in the
+    Narrator, Manan and Viveka on separate voices so the exchange in the
     control room plays as an exchange rather than as one person reading both
     halves of it.
     """
@@ -1052,7 +1052,7 @@ def drama_v3_block(depth=0):
     V2 and it matters: the film opens on somebody who has done this all his life,
     which is what makes the limit worth asking about.
 
-    AND THE TWO HANDS PASSAGE IS OUT. Why Coach Brain's hand and Manan's never
+    AND THE TWO HANDS PASSAGE IS OUT. Why Viveka's hand and Manan's never
     share a frame is a note about how the film is made, not part of the film.
     Explaining the craft inside the story breaks it.
 
@@ -1127,7 +1127,7 @@ def drama_v7_block(depth=0):
     total = sum(sc['sec'] for sc in DRAMA_V7_SCENES)
     return deck_block('dramav7', 'THE BRAIN BRAKE, CIJELI FILM',
                       '%d scena, %d minuta %d sekundi. Jedna datoteka po sceni. Gabrijela pripovijeda, '
-                      'Srecko je Manan, Coach Brain je nov. Još %d rečenica u prvoj '
+                      'Srecko je Manan, Viveka je nov. Još %d rečenica u prvoj '
                       'sceni čeka Gabrijelu.'
                       % (len(DRAMA_V7_SCENES), int(total) // 60, int(total) % 60, silent),
                       rows, 'downloads/BRAIN_BRAKE_radio_drama_HR_v7.zip', depth)
@@ -1143,7 +1143,7 @@ def drama_en_block(depth=0):
     Line for line with the Croatian, same seventy seven parts, same ten scenes,
     so the two can be laid side by side. Voiced on Speechify across all twenty
     one keys: Beatrice narrates, which is the same seat that reads the book, and
-    Edmund and Hugh are Manan and Coach Brain. Three British voices so the accent
+    Edmund and Hugh are Manan and Viveka. Three British voices so the accent
     does not wander mid scene, and the narrator names the speaker before every
     line exactly as the Croatian does.
     """
@@ -1154,7 +1154,7 @@ def drama_en_block(depth=0):
     total = sum(sc['sec'] for sc in DRAMA_EN_SCENES)
     return deck_block('dramaen', 'THE BRAIN BRAKE, THE WHOLE FILM IN ENGLISH',
                       '%d scenes, %d minutes %d seconds. One file per scene. '
-                      'Beatrice narrates, Edmund is Manan, Hugh is Coach Brain.'
+                      'Beatrice narrates, Edmund is Manan, Hugh is Viveka.'
                       % (len(DRAMA_EN_SCENES), int(total) // 60, int(total) % 60),
                       rows, 'downloads/BRAIN_BRAKE_radio_drama_EN.zip', depth)
 
@@ -1180,7 +1180,7 @@ def music_block(depth=0):
 def takes_block(depth=0):
     rows = []
     for who, table in (('MANAN, THE OLD THEORY', TAKES),
-                       ('MANAN AS COACH BRAIN', COACH)):
+                       ('MANAN AS VIVEKA', COACH)):
         if not table:
             continue
         rows.append(('head', who, '', 0))
@@ -1194,7 +1194,7 @@ def takes_block(depth=0):
                              t['file'], t.get('sec', 0)))
     n = len([x for x in rows if x[0] == 'take'])
     return deck_block('takes', 'THE RECORDED PERFORMANCE',
-                      '%d takes. Manan, and Manan as Coach Brain.' % n,
+                      '%d takes. Manan, and Manan as Viveka.' % n,
                       rows, 'downloads/BRAIN_BRAKE_takes.zip', depth)
 
 
@@ -2170,7 +2170,7 @@ def theory_lines(f):
 def theories_strip(prefix=''):
     return strip(THEORIES,
                  'Neither board arrives finished. Manan writes what he read, line by line, in white '
-                 'chalk. Coach Brain answers on the whiteboard in black marker: same layout, same '
+                 'chalk. Viveka answers on the whiteboard in black marker: same layout, same '
                  'three lines, same gauge, every value reversed. Six build states exist for each '
                  'board and the middle one is shown here.', prefix)
 
@@ -2246,14 +2246,14 @@ def arrival_strip(prefix=''):
 
 def lastshot_strip(prefix=''):
     return strip(LASTSHOT,
-                 'Coach Brain lets the key go and it falls through an empty frame. '
+                 'Viveka lets the key go and it falls through an empty frame. '
                  'His hand and Manan\u2019s are never on screen together, so nothing is composited '
                  'and the lighting difference between the drawing and the footage does not matter. '
                  'The key falls out of the sky, turning and growing, and the whole film replays behind it in '
        'reverse, so faint it is almost not there: the boards, the room, the house, and the avenue as '
        'it lands. It crosses from pencil to photograph on the way down, so no single frame is the '
        'moment it becomes real. THERE IS NO CUT ANYWHERE IN THIS. The camera never stops following '
-       'the key. Coach Brain\u2019s hand leaves the top of the fall and Manan\u2019s arrives at the '
+       'the key. Viveka\u2019s hand leaves the top of the fall and Manan\u2019s arrives at the '
        'bottom of it, and the two of them never share a frame because a whole journey lies between '
        'them.', prefix)
 
@@ -2313,7 +2313,7 @@ for e in _fl:
     frames.sort(key=lambda f: shot_key(f.get('shot', '0')))
     live = n in ('2', '4', '5')
     # phases 8 and 11 both draw on scene 6, so its frames are split between them:
-    # the corridor and the rooms are the journey, the control room is Coach Brain.
+    # the corridor and the rooms are the journey, the control room is Viveka.
     # every shot number is unique again as of 31.8.2026, so no phase needs to
     # filter another phase's frames out of a shared folder
     # a phase whose frames are all photographs says so: calling footage "drawn"
@@ -2368,7 +2368,7 @@ for e in _fl:
         # Baba, 31.8.2026: this phase shows the strip and nothing else.
         # 2.9.2026: it is section 13 now, 'He catches it'. It was pinned to 11,
         # which is the conclusion, so the whole key sequence was printing under
-        # Coach Brain's goodbye. The other
+        # Viveka's goodbye. The other
         # live stills and drawn attempts are still on their card pages.
         rt.append(lastshot_strip())
         frames = []
@@ -2476,7 +2476,7 @@ if os.path.exists(os.path.join(ROOT, 'assets3d', 'brain_brake_vortex.py')):
         'found, and Manan has not found the key yet when he goes through the passage. The script '
         'assigns a third material, <b>KEY_PENCIL</b>, flat paper white with no specular and a '
         'Freestyle outline, and deliberately uses neither the brass slot nor the drawn cream one. '
-        'The first gold is the key at Coach Brain\u2019s neck and the last is the key falling.</p>'
+        'The first gold is the key at Viveka\u2019s neck and the last is the key falling.</p>'
         '<p style="color:var(--dim)">Four numbers at the top of the script control everything: '
         '<code>MOUTH_R</code>, <code>TURNS</code>, <code>DEPTH</code>, <code>KEYS_PER_TURN</code>. '
         'Reach for <code>KEYS_PER_TURN</code> first: raise it until the wall reads solid at your '
@@ -2882,7 +2882,7 @@ for _i, e in enumerate(_cards):
     #
     # Instruments come from the ELEMENT, which is why the DNA is above this and
     # not below it. Air is breath instruments, bansuri and low flutes. Water is
-    # anything poured or bowed. The crown, at Coach Brain, is crystal, bells and
+    # anything poured or bowed. The crown, at Viveka, is crystal, bells and
     # chime, because that is what the top of the head sounds like. A frame's
     # element decides what plays; a frame's stage in the journey decides how much
     # of it plays.

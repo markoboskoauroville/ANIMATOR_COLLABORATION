@@ -14,7 +14,7 @@
     "6": "The trance",
     "9": "The vortex, up",
     "16": "The house of the body",
-    "19": "Coach Brain’s room",
+    "19": "Viveka's room",
     "10": "The old theory, on the board",
     "11": "The new theory, and the key",
     "12": "It is a setting, not a wall",
@@ -126,7 +126,7 @@
       "title": "Ganesha — the remover of obstacles",
       "status": "superseded",
       "date": "2026-08-28",
-      "note": "The film was shot in India and this is its thank you. In Hindu tradition Ganesha removes obstacles, and removing an obstacle is the entire subject of this film: the brake is not a wall, it is a setting, and it can be lifted. He sits on top of Coach Brain's console, the mixer of all human energies, with a few small oil lamps beside him, Tamil Nadu in feeling. He is never lit specially, never cut to and never mentioned. Anyone who knows will see him. SUPERSEDED 2.9.2026. There is no Ganesha in the story. The passage is a cloud vortex and he appears only on the dedication card at the very end, unannounced, which is what makes it a gift rather than a theme.",
+      "note": "The film was shot in India and this is its thank you. In Hindu tradition Ganesha removes obstacles, and removing an obstacle is the entire subject of this film: the brake is not a wall, it is a setting, and it can be lifted. He sits on top of Viveka's console, the mixer of all human energies, with a few small oil lamps beside him, Tamil Nadu in feeling. He is never lit specially, never cut to and never mentioned. Anyone who knows will see him. SUPERSEDED 2.9.2026. There is no Ganesha in the story. The passage is a cloud vortex and he appears only on the dedication card at the very end, unannounced, which is what makes it a gift rather than a theme.",
       "prefer": [
         "glossary/ganesha-drawn*.jpg",
         "glossary/ganesha-drawn*.png",
@@ -243,7 +243,7 @@
       "title": "Alive",
       "status": "reference",
       "date": "2026-08-28",
-      "note": "The muscle activation, and nothing else, ever. Fully smooth. It happens three times in the film and it is the same sequence copy pasted each time: the runner seeing the finish line, Manan on the bicycle, and Coach Brain naming the limit."
+      "note": "The muscle activation, and nothing else, ever. Fully smooth. It happens three times in the film and it is the same sequence copy pasted each time: the runner seeing the finish line, Manan on the bicycle, and Viveka naming the limit."
     },
     {
       "kind": "keyframe",
@@ -301,7 +301,7 @@
       "representative": true,
       "status": "accepted",
       "date": "2026-08-28",
-      "note": "KEY FRAME 1 of 4 of THE MUSCLE ACTIVATION. Deep inside a muscle, closer than any eye could get. One single fibre ignites and throws a hard star of light across the dark field; every other fibre is still unlit. THE DARKEST FRAME IN THE FILM, mean luminance 152 against about 240 everywhere else, and that darkness is what makes the light mean something. THIS SEQUENCE RUNS AT 25 FRAMES A SECOND, fully smooth, against 2 to 7 everywhere else. IT IS USED THREE TIMES IN THE FILM, the same files each time: here when the runner sees the finish line, again when Manan tries the bicycle, and again when Coach Brain names the limit. Never remake it for the other two, or the recognition dies. FILED AS 1-19, 3.9.2026, in the reset that gave scene one its final names. Before the reset it was 1-2c-1-v1, and every name mentioned in this note is a pre reset name.",
+      "note": "KEY FRAME 1 of 4 of THE MUSCLE ACTIVATION. Deep inside a muscle, closer than any eye could get. One single fibre ignites and throws a hard star of light across the dark field; every other fibre is still unlit. THE DARKEST FRAME IN THE FILM, mean luminance 152 against about 240 everywhere else, and that darkness is what makes the light mean something. THIS SEQUENCE RUNS AT 25 FRAMES A SECOND, fully smooth, against 2 to 7 everywhere else. IT IS USED THREE TIMES IN THE FILM, the same files each time: here when the runner sees the finish line, again when Manan tries the bicycle, and again when Viveka names the limit. Never remake it for the other two, or the recognition dies. FILED AS 1-19, 3.9.2026, in the reset that gave scene one its final names. Before the reset it was 1-2c-1-v1, and every name mentioned in this note is a pre reset name.",
       "slug": "INT. MUSCLE — MICROSCOPIC",
       "what": "One fibre ignites in a dark field of packed fibres and throws a hard star of light.",
       "why": "THE DARKEST FRAME IN THE FILM, and that darkness is what makes the light mean something. A small flame that could go out is more affecting than a lit room.",
@@ -539,7 +539,7 @@
       "note": "Superseded by 8-0-A-v4. Brick, rivets and iron doors, built before the house exterior existed. A factory interior behind a living facade.",
       "slug": "INT. THE BODY — CORRIDOR",
       "what": "A corridor of riveted doors, each with a name, and at the end one door standing open with light pouring out.",
-      "why": "The doors are Coach Brain’s own sensor list. Walking past them sets up a line he has not said yet, so when he says it the audience recognises rather than learns. He enters three or four; the rest going by is what says the body is bigger than what we see.",
+      "why": "The doors are Viveka’s own sensor list. Walking past them sets up a line he has not said yet, so when he says it the audience recognises rather than learns. He enters three or four; the rest going by is what says the body is bigger than what we see.",
       "flow_pos": 6
     },
     {
@@ -575,17 +575,17 @@
       "representative": true,
       "status": "proposal",
       "date": "2026-08-28",
-      "note": "THE CONTROL ROOM, the end of the corridor and the deepest room in the body. A plain rectangular room, flat ceiling, square corners, worn flagstones, and the corridor door standing open on the right with the light still coming through it. THE WALLS ARE SMOOTHED GREY CLAY with shallow winding grooves pressed into them, low and quiet, with long calm stretches between: brainish, not a brain. v1 tried full relief on walls and ceiling and came back a cave. The chair is empty on purpose, this is the room before Coach Brain turns around. GANESHA IS NOT IN THIS FRAME. He is a hand's height in a room sized shot and three attempts failed to hold him, so he lives on the object sheet instead and gets composited.",
+      "note": "THE CONTROL ROOM, the end of the corridor and the deepest room in the body. A plain rectangular room, flat ceiling, square corners, worn flagstones, and the corridor door standing open on the right with the light still coming through it. THE WALLS ARE SMOOTHED GREY CLAY with shallow winding grooves pressed into them, low and quiet, with long calm stretches between: brainish, not a brain. v1 tried full relief on walls and ceiling and came back a cave. The chair is empty on purpose, this is the room before Viveka turns around. GANESHA IS NOT IN THIS FRAME. He is a hand's height in a room sized shot and three attempts failed to hold him, so he lives on the object sheet instead and gets composited.",
       "slug": "INT. THE BODY — THE CONTROL ROOM",
       "what": "A plain room at the end of the corridor. A long curved console, an empty chair turned away, the corridor door still open on the right.",
-      "why": "The chair is empty on purpose: this is the room before Coach Brain turns around. Clay walls with shallow grooves, brainish rather than a brain.",
+      "why": "The chair is empty on purpose: this is the room before Viveka turns around. Clay walls with shallow grooves, brainish rather than a brain.",
       "flow_pos": 6
     },
     {
       "frame": "6",
       "file": "reference/OBJECT_SHEET_DESK-v1.png",
       "kind": "sheet",
-      "title": "Coach Brain's console",
+      "title": "Viveka's console",
       "status": "superseded",
       "date": "2026-08-28",
       "note": "Superseded 31.8.2026. Shows the riveted iron console. The desk is now grown stone, see 11-0-A-v3, and this sheet would send an animator the wrong way.",
@@ -595,7 +595,7 @@
       "frame": "6",
       "file": "reference/OBJECT_SHEET_CHAIR-v1.png",
       "kind": "sheet",
-      "title": "Coach Brain's chair",
+      "title": "Viveka's chair",
       "status": "superseded",
       "date": "2026-08-28",
       "note": "Superseded 31.8.2026. Shows the wooden panelled chair. The chair is now a smooth shell on a single stem.",
@@ -629,7 +629,7 @@
       "status": "superseded",
       "date": "2026-08-28",
       "note": "Superseded by 11-0-A-v3. Riveted iron desk and a square screen frame, built before the house exterior existed.",
-      "slug": "INT. CONTROL ROOM — COACH BRAIN AT THE DESK",
+      "slug": "INT. CONTROL ROOM — VIVEKA AT THE DESK",
       "what": "The same room with the character seated in the chair, turned to face the room, one hand raised.",
       "why": "He is small in a big room on purpose: the body is larger than the thing running it. MANAN IS NOT DRAWN HERE. This is the plate he is keyed into.",
       "flow_pos": 6
@@ -638,7 +638,7 @@
       "kind": "style",
       "after": "10",
       "title": "Style reference — RSA Animate, Cognitive Media",
-      "note": "THIS IS THE STYLE FOR BOTH THEORY SECTIONS. RSA Animate, drawn by Andrew Park at Cognitive Media. A hand draws the argument on the board while the voice explains it, in real time, and the drawing spreads sideways across the surface instead of being cut to when finished. That live scribing is exactly what we want: Manan's chalk drawing itself as he speaks, then Coach Brain answering on the whiteboard in black marker. Watch how the hand stays in frame, how pictures and words share one surface, and how the camera drifts across the board rather than cutting. These four were chosen for subject as well as style: the brain, motivation, belief changing outcome, and perception. The most viewed RSA Animates are about economics and education, which look right but say nothing to this film.",
+      "note": "THIS IS THE STYLE FOR BOTH THEORY SECTIONS. RSA Animate, drawn by Andrew Park at Cognitive Media. A hand draws the argument on the board while the voice explains it, in real time, and the drawing spreads sideways across the surface instead of being cut to when finished. That live scribing is exactly what we want: Manan's chalk drawing itself as he speaks, then Viveka answering on the whiteboard in black marker. Watch how the hand stays in frame, how pictures and words share one surface, and how the camera drifts across the board rather than cutting. These four were chosen for subject as well as style: the brain, motivation, belief changing outcome, and perception. The most viewed RSA Animates are about economics and education, which look right but say nothing to this film.",
       "videos": [
         {
           "id": "dFs9WO2B8uI",
@@ -662,7 +662,7 @@
       "kind": "style",
       "after": "11",
       "title": "Style reference — RSA Animate, Cognitive Media",
-      "note": "THIS IS THE STYLE FOR BOTH THEORY SECTIONS. RSA Animate, drawn by Andrew Park at Cognitive Media. A hand draws the argument on the board while the voice explains it, in real time, and the drawing spreads sideways across the surface instead of being cut to when finished. That live scribing is exactly what we want: Manan's chalk drawing itself as he speaks, then Coach Brain answering on the whiteboard in black marker. Watch how the hand stays in frame, how pictures and words share one surface, and how the camera drifts across the board rather than cutting. These four were chosen for subject as well as style: the brain, motivation, belief changing outcome, and perception. The most viewed RSA Animates are about economics and education, which look right but say nothing to this film.",
+      "note": "THIS IS THE STYLE FOR BOTH THEORY SECTIONS. RSA Animate, drawn by Andrew Park at Cognitive Media. A hand draws the argument on the board while the voice explains it, in real time, and the drawing spreads sideways across the surface instead of being cut to when finished. That live scribing is exactly what we want: Manan's chalk drawing itself as he speaks, then Viveka answering on the whiteboard in black marker. Watch how the hand stays in frame, how pictures and words share one surface, and how the camera drifts across the board rather than cutting. These four were chosen for subject as well as style: the brain, motivation, belief changing outcome, and perception. The most viewed RSA Animates are about economics and education, which look right but say nothing to this film.",
       "videos": [
         {
           "id": "dFs9WO2B8uI",
@@ -721,10 +721,10 @@
       "representative": true,
       "status": "proposal",
       "date": "2026-08-30",
-      "note": "THE OLD THEORY. Manan's board, and only his. The arm, the fuel gauge at EMPTY, and three lines each underlined: FATIGUE IS IN THE MUSCLE, THE FUEL RUNS OUT, THE BODY STOPS. This is the 1923 answer he arrives with, having read it in a book. BLACKBOARD AND WHITE CHALK ON PURPOSE: Coach Brain answers on a whiteboard in black marker, and the reversal of surface and mark is what the audience feels before they follow the argument. The chalk draws itself as he speaks, RSA Animate style, so the board is never revealed finished. THIS IS THE FINISHED BOARD. An attempt to fill the lower right with a collapsed runner was rejected, so the empty stretch stays empty and the chalk simply stops there.",
+      "note": "THE OLD THEORY. Manan's board, and only his. The arm, the fuel gauge at EMPTY, and three lines each underlined: FATIGUE IS IN THE MUSCLE, THE FUEL RUNS OUT, THE BODY STOPS. This is the 1923 answer he arrives with, having read it in a book. BLACKBOARD AND WHITE CHALK ON PURPOSE: Viveka answers on a whiteboard in black marker, and the reversal of surface and mark is what the audience feels before they follow the argument. The chalk draws itself as he speaks, RSA Animate style, so the board is never revealed finished. THIS IS THE FINISHED BOARD. An attempt to fill the lower right with a collapsed runner was rejected, so the empty stretch stays empty and the chalk simply stops there.",
       "slug": "INT. CONTROL ROOM — THE BLACKBOARD",
       "what": "The arm, the gauge at EMPTY, three underlined lines of chalk.",
-      "why": "The 1923 answer Manan arrives with. Blackboard and white chalk on purpose: Coach Brain answers on a whiteboard in black marker, and the reversal is felt before the argument is followed.",
+      "why": "The 1923 answer Manan arrives with. Blackboard and white chalk on purpose: Viveka answers on a whiteboard in black marker, and the reversal is felt before the argument is followed.",
       "audio": [
         {
           "file": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/reference/voice/SYNTESISED_MANAN_OLD_THEORY.wav",
@@ -770,14 +770,14 @@
       "representative": true,
       "status": "proposal",
       "date": "2026-08-30",
-      "note": "THE NEW THEORY. Coach Brain's answer, and THE INVERSION IS THE POINT: same layout, same three lines, same gauge as shot 10, with every value reversed. Blackboard and white chalk becomes whiteboard and black marker. Measured, mean luminance 135 against 226. THE GAUGE CARRIES THE ARGUMENT: the same instrument in both frames with the needle moved from EMPTY to FULL says the fuel was always there without a word being spoken. Cut one to the other and the audience understands before they have read the sentences. The lower right is left empty in both, because the marker is still going while he talks.",
+      "note": "THE NEW THEORY. Viveka's answer, and THE INVERSION IS THE POINT: same layout, same three lines, same gauge as shot 10, with every value reversed. Blackboard and white chalk becomes whiteboard and black marker. Measured, mean luminance 135 against 226. THE GAUGE CARRIES THE ARGUMENT: the same instrument in both frames with the needle moved from EMPTY to FULL says the fuel was always there without a word being spoken. Cut one to the other and the audience understands before they have read the sentences. The lower right is left empty in both, because the marker is still going while he talks.",
       "slug": "INT. CONTROL ROOM — THE WHITEBOARD",
       "what": "The brain, the gauge at FULL, three lines in black marker.",
       "why": "THE INVERSION. Same layout, same three lines, same instrument, every value reversed. The gauge needle moving from EMPTY to FULL says the fuel was always there without a word.",
       "audio": [
         {
           "file": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/reference/voice/SYNTESISED_BRAIN_NEW_THEORY.wav",
-          "name": "Coach Brain, the new theory",
+          "name": "Viveka, the new theory",
           "secs": 34.96
         }
       ],
@@ -789,15 +789,15 @@
       },
       "dialogue": [
         {
-          "speaker": "COACH",
+          "speaker": "VIVEKA",
           "line": "Pulse, breath, temperature, water, sugar. I read all of it, the whole time. That is what every one of those panels you walked past is for."
         },
         {
-          "speaker": "COACH",
+          "speaker": "VIVEKA",
           "line": "And I ask one question with it. Can we carry on safely?"
         },
         {
-          "speaker": "COACH",
+          "speaker": "VIVEKA",
           "line": "When the answer starts to look like no, I slow you down. Not because anything has run out. Because of where it is heading."
         },
         {
@@ -805,11 +805,11 @@
           "line": "Heading."
         },
         {
-          "speaker": "COACH",
+          "speaker": "VIVEKA",
           "line": "I do not wait for the tank to empty. I watch how fast it is emptying, and I stop you while there is still enough left to get you home. So no. Fatigue is in the brain, not in your legs. Up here. And it decides long before anything is actually in danger."
         },
         {
-          "speaker": "COACH",
+          "speaker": "VIVEKA",
           "line": "When I stop you, the fuel is still there."
         },
         {
@@ -817,7 +817,7 @@
           "line": "It was. I saw it. The sugar cellar was full. The fat store was barely touched. The fibres were not torn."
         },
         {
-          "speaker": "COACH",
+          "speaker": "VIVEKA",
           "line": "No. They never are."
         },
         {
@@ -825,7 +825,7 @@
           "line": "So the wall..."
         },
         {
-          "speaker": "COACH",
+          "speaker": "VIVEKA",
           "line": "Is a number I chose. Carefully. To keep you alive."
         },
         {
@@ -841,7 +841,7 @@
       "representative": true,
       "status": "superseded",
       "date": "2026-08-30",
-      "note": "THE ENDCARD, and the film's closing rhyme. The finish banner from shot 1.2b, which was tiny between the trees and unreadable, is now the whole frame with the sentence on it: THE LIMIT IS A SETTING, NOT A WALL. The object that opened the film closes it. 4 percent ink, everything else bare paper. CUT 2.9.2026. The banner fly through is out. The conclusion is reached in conversation between Manan and Coach Brain, not delivered on a banner the camera flies through.",
+      "note": "THE ENDCARD, and the film's closing rhyme. The finish banner from shot 1.2b, which was tiny between the trees and unreadable, is now the whole frame with the sentence on it: THE LIMIT IS A SETTING, NOT A WALL. The object that opened the film closes it. 4 percent ink, everything else bare paper. CUT 2.9.2026. The banner fly through is out. The conclusion is reached in conversation between Manan and Viveka, not delivered on a banner the camera flies through.",
       "slug": "EXT. CREAM VOID — THE FLY THROUGH",
       "what": "The banner with the sentence on it, seen close and straight on. The camera flies at it and passes through into white.",
       "why": "NO LONGER THE ENDCARD. Changed 31.8.2026. Manan says the line while we are flying, the move is the same as the rise through the vortex, and we go through into white. The key follows it, then white again, then black. The sentence is stated, then permission is handed over, then nothing.",
@@ -952,7 +952,7 @@
       "representative": true,
       "status": "superseded",
       "date": "2026-08-30",
-      "note": "MANAN'S SIDE OF THE ROOM, AND IT IS A PLATE. Same control room as 6.3 from a new angle: console away on the left, screens above it, the closed riveted door on the right. THE WHOLE RIGHT HALF IS OPEN FLAGSTONE WITH NOTHING ON IT, because that is where Manan is keyed in from the grey backdrop footage, walking in through that door. He is never drawn. The chair is gone because Coach Brain is not in this shot yet: Manan arrives, asks what happened, and the answer comes after. SUPERSEDED 3.9.2026. It carried dialogue from an earlier version of the meeting. The scene now runs: he arrives, Coach Brain turns and greets him, he is asked to lift his arm and cannot, a lever moves and it comes back, and ONLY THEN the board.",
+      "note": "MANAN'S SIDE OF THE ROOM, AND IT IS A PLATE. Same control room as 6.3 from a new angle: console away on the left, screens above it, the closed riveted door on the right. THE WHOLE RIGHT HALF IS OPEN FLAGSTONE WITH NOTHING ON IT, because that is where Manan is keyed in from the grey backdrop footage, walking in through that door. He is never drawn. The chair is gone because Viveka is not in this shot yet: Manan arrives, asks what happened, and the answer comes after. SUPERSEDED 3.9.2026. It carried dialogue from an earlier version of the meeting. The scene now runs: he arrives, Viveka turns and greets him, he is asked to lift his arm and cannot, a lever moves and it comes back, and ONLY THEN the board.",
       "slug": "INT. CONTROL ROOM — MANAN’S SIDE",
       "what": "The room from a new angle. Console away on the left, the closed door on the right, and the whole right half open flagstone.",
       "why": "A PLATE. The empty floor is where Manan is keyed in from the grey backdrop footage, walking in through that door. He is never drawn.",
@@ -1075,7 +1075,7 @@
       "storyboard": "hide",
       "status": "reference",
       "date": "2026-08-30",
-      "note": "WHITEBOARD BUILD STATE 0 of 5. Shows: bare whiteboard. Cut from one to the next in time with Coach Brain speaking, so the marker appears as he says the words. Subtracted from the finished board so every state registers to the pixel, and the whiteboard erases perfectly clean because the surface is plain.",
+      "note": "WHITEBOARD BUILD STATE 0 of 5. Shows: bare whiteboard. Cut from one to the next in time with Viveka speaking, so the marker appears as he says the words. Subtracted from the finished board so every state registers to the pixel, and the whiteboard erases perfectly clean because the surface is plain.",
       "flow_pos": 14,
       "dna": {
         "phase": "Phase 11 of 15, THE TWO THEORIES, ON THE BOARD.",
@@ -1090,7 +1090,7 @@
       "storyboard": "hide",
       "status": "reference",
       "date": "2026-08-30",
-      "note": "WHITEBOARD BUILD STATE 1 of 5. Shows: the brain. Cut from one to the next in time with Coach Brain speaking, so the marker appears as he says the words. Subtracted from the finished board so every state registers to the pixel, and the whiteboard erases perfectly clean because the surface is plain.",
+      "note": "WHITEBOARD BUILD STATE 1 of 5. Shows: the brain. Cut from one to the next in time with Viveka speaking, so the marker appears as he says the words. Subtracted from the finished board so every state registers to the pixel, and the whiteboard erases perfectly clean because the surface is plain.",
       "flow_pos": 14,
       "dna": {
         "phase": "Phase 11 of 15, THE TWO THEORIES, ON THE BOARD.",
@@ -1105,7 +1105,7 @@
       "storyboard": "hide",
       "status": "reference",
       "date": "2026-08-30",
-      "note": "WHITEBOARD BUILD STATE 2 of 5. Shows: + FATIGUE IS IN THE BRAIN. Cut from one to the next in time with Coach Brain speaking, so the marker appears as he says the words. Subtracted from the finished board so every state registers to the pixel, and the whiteboard erases perfectly clean because the surface is plain.",
+      "note": "WHITEBOARD BUILD STATE 2 of 5. Shows: + FATIGUE IS IN THE BRAIN. Cut from one to the next in time with Viveka speaking, so the marker appears as he says the words. Subtracted from the finished board so every state registers to the pixel, and the whiteboard erases perfectly clean because the surface is plain.",
       "flow_pos": 14,
       "dna": {
         "phase": "Phase 11 of 15, THE TWO THEORIES, ON THE BOARD.",
@@ -1120,7 +1120,7 @@
       "storyboard": "hide",
       "status": "reference",
       "date": "2026-08-30",
-      "note": "WHITEBOARD BUILD STATE 3 of 5. Shows: + IT DECIDES WHEN TO STOP. Cut from one to the next in time with Coach Brain speaking, so the marker appears as he says the words. Subtracted from the finished board so every state registers to the pixel, and the whiteboard erases perfectly clean because the surface is plain.",
+      "note": "WHITEBOARD BUILD STATE 3 of 5. Shows: + IT DECIDES WHEN TO STOP. Cut from one to the next in time with Viveka speaking, so the marker appears as he says the words. Subtracted from the finished board so every state registers to the pixel, and the whiteboard erases perfectly clean because the surface is plain.",
       "flow_pos": 14,
       "dna": {
         "phase": "Phase 11 of 15, THE TWO THEORIES, ON THE BOARD.",
@@ -1135,7 +1135,7 @@
       "storyboard": "hide",
       "status": "reference",
       "date": "2026-08-30",
-      "note": "WHITEBOARD BUILD STATE 4 of 5. Shows: + the gauge at FULL. Cut from one to the next in time with Coach Brain speaking, so the marker appears as he says the words. Subtracted from the finished board so every state registers to the pixel, and the whiteboard erases perfectly clean because the surface is plain.",
+      "note": "WHITEBOARD BUILD STATE 4 of 5. Shows: + the gauge at FULL. Cut from one to the next in time with Viveka speaking, so the marker appears as he says the words. Subtracted from the finished board so every state registers to the pixel, and the whiteboard erases perfectly clean because the surface is plain.",
       "flow_pos": 14,
       "dna": {
         "phase": "Phase 11 of 15, THE TWO THEORIES, ON THE BOARD.",
@@ -1150,7 +1150,7 @@
       "storyboard": "hide",
       "status": "reference",
       "date": "2026-08-30",
-      "note": "WHITEBOARD BUILD STATE 5 of 5. Shows: + THE FUEL IS STILL THERE. Cut from one to the next in time with Coach Brain speaking, so the marker appears as he says the words. Subtracted from the finished board so every state registers to the pixel, and the whiteboard erases perfectly clean because the surface is plain.",
+      "note": "WHITEBOARD BUILD STATE 5 of 5. Shows: + THE FUEL IS STILL THERE. Cut from one to the next in time with Viveka speaking, so the marker appears as he says the words. Subtracted from the finished board so every state registers to the pixel, and the whiteboard erases perfectly clean because the surface is plain.",
       "flow_pos": 14,
       "dna": {
         "phase": "Phase 11 of 15, THE TWO THEORIES, ON THE BOARD.",
@@ -1162,7 +1162,7 @@
       "frame": "6",
       "file": "reference/CHARACTER_SHEET_COACH_BRAIN-v2.png",
       "kind": "sheet",
-      "title": "Coach Brain",
+      "title": "Viveka",
       "status": "superseded",
       "date": "2026-08-30",
       "note": "Superseded by v4. Carried a generic modern key, not the real object on the live set.",
@@ -1378,7 +1378,7 @@
       "date": "2026-08-31",
       "slug": "INT. THE BODY — THE CORRIDOR",
       "what": "A vaulted corridor where nothing is straight. Walls swelling at the base, bone columns narrow at their middles, soft irregular stone underfoot, and at the far end one door standing open with light washing everything to bare paper.",
-      "why": "REBUILT 31.8.2026 in the language of the house. The first version was brick and riveted iron, a factory interior behind a living facade, and the two contradicted each other. Shaped more like a throat than a hallway. The plaques carry Coach Brain's own sensor list, so walking past them sets up a line he has not said yet.",
+      "why": "REBUILT 31.8.2026 in the language of the house. The first version was brick and riveted iron, a factory interior behind a living facade, and the two contradicted each other. Shaped more like a throat than a hallway. The plaques carry Viveka's own sensor list, so walking past them sets up a line he has not said yet.",
       "flow_pos": 10,
       "dna": {
         "phase": "Phase 8 of 15, THE HOUSE OF THE BODY.",
@@ -1396,7 +1396,7 @@
       "date": "2026-08-31",
       "slug": "INT. THE BODY — THE PUMP HALL",
       "what": "A vaulted hall with one great smooth vessel standing in it, swelling at the base and narrow at the waist, with rounded tubes leaving it in both directions.",
-      "why": "REBUILT 31.8.2026 in the language of the house. THE WALLS ARE UNCHANGED and were never the problem: domed muscular chambers with fibrous cords stretched across the hollows. Only the built things changed, and the instruction that did the work was no rivet, bolt, flange or straight edge anywhere. TWO THINGS DID NOT LAND: the pressure gauges vanished into the wall relief, and the floor kept rectangular flagstones instead of soft irregular stone. Accepted at two seconds on screen; the gauges belong with Coach Brain anyway.",
+      "why": "REBUILT 31.8.2026 in the language of the house. THE WALLS ARE UNCHANGED and were never the problem: domed muscular chambers with fibrous cords stretched across the hollows. Only the built things changed, and the instruction that did the work was no rivet, bolt, flange or straight edge anywhere. TWO THINGS DID NOT LAND: the pressure gauges vanished into the wall relief, and the floor kept rectangular flagstones instead of soft irregular stone. Accepted at two seconds on screen; the gauges belong with Viveka anyway.",
       "flow_pos": 10,
       "dna": {
         "phase": "Phase 8 of 15, THE HOUSE OF THE BODY.",
@@ -1433,9 +1433,9 @@
       "status": "superseded",
       "date": "2026-08-31",
       "slug": "INT. THE BODY — THE CONTROL ROOM",
-      "what": "Coach Brain seated at a long desk that grows out of the floor on a swelling base, its dials sunk into shallow hollows, the screens in an irregular cluster of rounded openings in the wall, the door arched and soft panelled.",
+      "what": "Viveka seated at a long desk that grows out of the floor on a swelling base, its dials sunk into shallow hollows, the screens in an irregular cluster of rounded openings in the wall, the door arched and soft panelled.",
       "why": "REBUILT 31.8.2026 in the language of the house, and it is the deepest room in the body. The clay walls with their shallow winding grooves are unchanged and were always right. THE SCREENS AS CELLS are the detail that matters: the last piece of machinery becomes part of the body. The floor kept rectangular slabs despite being asked three times across three frames; it barely reads and was left.",
-      "speaker": "COACH BRAIN",
+      "speaker": "VIVEKA",
       "line": "You found me. Took you long enough.",
       "linestate": "to record",
       "flow_pos": 12,
@@ -1449,7 +1449,7 @@
       "frame": "11",
       "file": "reference/OBJECT_SHEET_DESK-v3.png",
       "kind": "sheet",
-      "title": "Coach Brain's desk and chair",
+      "title": "Viveka's desk and chair",
       "status": "reference",
       "date": "2026-08-31",
       "note": "Four views of the grown desk and its chair: front, three quarter, side, rear. THE SIDE VIEW IS THE USEFUL ONE, it shows the desk and the floor as a single continuous curve, which is what you need to redraw it from any angle. Dials and levers sit down in shallow hollows, never bolted onto a panel, and nothing has a rivet, bolt, flange or straight edge. The chair is a shell on a single stem. ONE DIFFERENCE FROM THE ROOM: this sheet draws the screens as part of the console. In the room they are cell-like openings in the clay wall behind it. Keep them in the wall.",
@@ -1497,7 +1497,7 @@
       "status": "superseded",
       "date": "2026-08-31",
       "slug": "INT. THE BODY — THE SKULL DOOR",
-      "what": "A closed stone door at the end of a short passage. A softly domed top, one shallow oval push plate on the right at hand height, and an oval plaque at eye height reading COACH BRAIN.",
+      "what": "A closed stone door at the end of a short passage. A softly domed top, one shallow oval push plate on the right at hand height, and an oval plaque at eye height reading VIVEKA.",
       "why": "THE SECOND DOOR HE OPENS, and it rhymes with the front door rather than repeating it. A skull is suggested by the dome alone and never drawn: no teeth, no jaw, no sockets. Anyone who has walked the corridor will feel it, nobody is told. THE PLAQUE IS THE ONLY PLACE IN THE FILM THE CHARACTER IS NAMED IN WRITING, and it arrives before he does. The push plate sits where a hand falls and the plaque where an eye falls, because the building is strange but not inconvenient.",
       "flow_pos": 11,
       "dna": {
@@ -1533,7 +1533,7 @@
       "status": "superseded",
       "date": "2026-08-31",
       "slug": "INSERT — THE HAND BEGINS TO OPEN",
-      "what": "The same hand, now wearing Coach Brain's tracksuit cuff with the stripe running off the left edge. The fingers have uncurled halfway and the gold key is clearly visible, still resting in the hand.",
+      "what": "The same hand, now wearing Viveka's tracksuit cuff with the stripe running off the left edge. The fingers have uncurled halfway and the gold key is clearly visible, still resting in the hand.",
       "why": "PHASE 2 OF 4. The cuff is how we know whose hand it is; the body stays out of frame. Caught in the middle of releasing, neither open nor closed.",
       "note": "Superseded by v2, which has the real key and the tracksuit cuff.",
       "storyboard": "hide",
@@ -1569,7 +1569,7 @@
       "date": "2026-08-31",
       "slug": "INSERT — THE KEY ALONE",
       "what": "Bare paper edge to edge with one small gold key near the middle, tumbling as it falls. Nothing else in the frame at all: no hand, no arm, no shadow, no ground.",
-      "why": "PHASE 4 OF 4, and the last drawn frame in the film. Ink measures 0.43 percent. After everything the film has built it comes down to one small object falling through empty space with nobody holding it, which is the argument in a single frame. THE FRAME AFTER THIS ONE IS NOT DRAWN AND MUST NOT BE: Manan's real hand comes in from below and closes on the key, keyed over this same bare paper. Coach Brain's hand is gone by then. Manan's fist stays and the film fades out on it, so the last image is a boy holding something, alone.",
+      "why": "PHASE 4 OF 4, and the last drawn frame in the film. Ink measures 0.43 percent. After everything the film has built it comes down to one small object falling through empty space with nobody holding it, which is the argument in a single frame. THE FRAME AFTER THIS ONE IS NOT DRAWN AND MUST NOT BE: Manan's real hand comes in from below and closes on the key, keyed over this same bare paper. Viveka's hand is gone by then. Manan's fist stays and the film fades out on it, so the last image is a boy holding something, alone.",
       "note": "Superseded by the FALL sequence. Old modern key.",
       "flow_pos": 17,
       "dna": {
@@ -1586,7 +1586,7 @@
       "date": "2026-08-31",
       "slug": "EXT. — MANAN’S HAND ARRIVES",
       "what": "His open palm comes into frame from below, empty.",
-      "why": "CUT. Coach Brain is gone. This is real footage and it is where the film returns to the world. THE TWO HANDS ARE NEVER IN THE SAME FRAME. Coach Brain drops the key, it falls through an empty frame, and we cut to Manan catching it. So there is nothing to composite and the lighting difference between the drawn hand and the footage does not matter: they are never side by side.",
+      "why": "CUT. Viveka is gone. This is real footage and it is where the film returns to the world. THE TWO HANDS ARE NEVER IN THE SAME FRAME. Viveka drops the key, it falls through an empty frame, and we cut to Manan catching it. So there is nothing to composite and the lighting difference between the drawn hand and the footage does not matter: they are never side by side.",
       "source": [
         {
           "name": "The footage, with alpha",
@@ -1610,7 +1610,7 @@
       "date": "2026-08-31",
       "slug": "EXT. — THE KEY LANDS",
       "what": "The key is in his open palm, still, caught.",
-      "why": "The real key, shot with the real hand. Nothing composited and nothing drawn. THE TWO HANDS ARE NEVER IN THE SAME FRAME. Coach Brain drops the key, it falls through an empty frame, and we cut to Manan catching it. So there is nothing to composite and the lighting difference between the drawn hand and the footage does not matter: they are never side by side.",
+      "why": "The real key, shot with the real hand. Nothing composited and nothing drawn. THE TWO HANDS ARE NEVER IN THE SAME FRAME. Viveka drops the key, it falls through an empty frame, and we cut to Manan catching it. So there is nothing to composite and the lighting difference between the drawn hand and the footage does not matter: they are never side by side.",
       "source": [
         {
           "name": "The footage, with alpha",
@@ -1634,7 +1634,7 @@
       "date": "2026-08-31",
       "slug": "EXT. — THE HAND CLOSES",
       "what": "The fingers curl toward a grip.",
-      "why": "THE LAST IMAGE. Fade out as he closes. Ending mid action is stronger than landing on a finished fist, and it means no frame has to be invented. THE TWO HANDS ARE NEVER IN THE SAME FRAME. Coach Brain drops the key, it falls through an empty frame, and we cut to Manan catching it. So there is nothing to composite and the lighting difference between the drawn hand and the footage does not matter: they are never side by side.",
+      "why": "THE LAST IMAGE. Fade out as he closes. Ending mid action is stronger than landing on a finished fist, and it means no frame has to be invented. THE TWO HANDS ARE NEVER IN THE SAME FRAME. Viveka drops the key, it falls through an empty frame, and we cut to Manan catching it. So there is nothing to composite and the lighting difference between the drawn hand and the footage does not matter: they are never side by side.",
       "source": [
         {
           "name": "The footage, with alpha",
@@ -1754,7 +1754,7 @@
       "scenes": [
         "19"
       ],
-      "note": "Manan explains what he read on a blackboard in white chalk. Coach Brain answers on a whiteboard in black marker. Same layout, same three lines, same gauge, every value reversed.",
+      "note": "Manan explains what he read on a blackboard in white chalk. Viveka answers on a whiteboard in black marker. Same layout, same three lines, same gauge, every value reversed.",
       "flow_pos": 0
     },
     {
@@ -1779,7 +1779,7 @@
       "scenes": [
         "12"
       ],
-      "note": "Coach Brain lets the key go, it falls through an empty frame, and we cut to Manan catching it. THE END.",
+      "note": "Viveka lets the key go, it falls through an empty frame, and we cut to Manan catching it. THE END.",
       "flow_pos": 0
     },
     {
@@ -1921,8 +1921,8 @@
       "status": "superseded",
       "date": "2026-08-31",
       "slug": "INT. CONTROL ROOM — WIDE, THE TWO OF THEM",
-      "what": "The room from further back and to the left. Coach Brain at the desk on the LEFT, turned right round to face out into the room, one hand lifted mid gesture. The right half is open floor with the door beyond it.",
-      "why": "THE WIDE, AND THE FIRST OF THE THREE SETUPS. It fixes the screen direction for everything that follows: COACH BRAIN IS ON THE LEFT AND LOOKS RIGHT, MANAN IS ON THE RIGHT AND LOOKS LEFT. Both singles must obey that or the two of them will appear to be looking away from each other. IT IS A PLATE. The clear floor on the right is where Manan is keyed in; he is a photograph and is never drawn. Coach Brain is already turned toward that space with his hand moving, so the moment the composite happens they read as talking.",
+      "what": "The room from further back and to the left. Viveka at the desk on the LEFT, turned right round to face out into the room, one hand lifted mid gesture. The right half is open floor with the door beyond it.",
+      "why": "THE WIDE, AND THE FIRST OF THE THREE SETUPS. It fixes the screen direction for everything that follows: VIVEKA IS ON THE LEFT AND LOOKS RIGHT, MANAN IS ON THE RIGHT AND LOOKS LEFT. Both singles must obey that or the two of them will appear to be looking away from each other. IT IS A PLATE. The clear floor on the right is where Manan is keyed in; he is a photograph and is never drawn. Viveka is already turned toward that space with his hand moving, so the moment the composite happens they read as talking.",
       "linestate": "to record",
       "flow_pos": 12,
       "dna": {
@@ -1930,7 +1930,7 @@
         "journey": "MEETING THE MENTOR, late and inside the cave. The obstacle and the guide are one figure.",
         "element": "THE HAND, and SACRED SPACE. A room treated as different becomes different."
       },
-      "note": "SUPERSEDED 3.9.2026. It carried dialogue from an earlier version of the meeting. The scene now runs: he arrives, Coach Brain turns and greets him, he is asked to lift his arm and cannot, a lever moves and it comes back, and ONLY THEN the board."
+      "note": "SUPERSEDED 3.9.2026. It carried dialogue from an earlier version of the meeting. The scene now runs: he arrives, Viveka turns and greets him, he is asked to lift his arm and cannot, a lever moves and it comes back, and ONLY THEN the board."
     },
     {
       "kind": "keyframe",
@@ -1938,7 +1938,7 @@
       "file": "BB_C_19/19-3-A-v4.png",
       "status": "superseded",
       "date": "2026-08-31",
-      "slug": "INT. CONTROL ROOM — ON COACH BRAIN",
+      "slug": "INT. CONTROL ROOM — ON VIVEKA",
       "what": "His single. Seated in the shell chair on the left, three quarter, the gold key on its chain, the desk and clay wall behind. The right half is empty room.",
       "why": "THE SECOND OF THE THREE DIALOGUE SETUPS, and the only one that needs nothing keyed. He is on the LEFT and looking RIGHT, which is the screen direction the wide fixed. He is a little more frontal than asked for and the smile is broad, which suits the line he is saying. THE RIGHT HALF IS EMPTY ROOM AND MUST STAY EMPTY: three earlier attempts either drew Manan there or lost the character, and this is the one that did neither.",
       "linestate": "to record",
@@ -1948,7 +1948,7 @@
         "journey": "MEETING THE MENTOR, late and inside the cave. The obstacle and the guide are one figure.",
         "element": "THE HAND, and SACRED SPACE. A room treated as different becomes different."
       },
-      "note": "SUPERSEDED 3.9.2026. It carried dialogue from an earlier version of the meeting. The scene now runs: he arrives, Coach Brain turns and greets him, he is asked to lift his arm and cannot, a lever moves and it comes back, and ONLY THEN the board."
+      "note": "SUPERSEDED 3.9.2026. It carried dialogue from an earlier version of the meeting. The scene now runs: he arrives, Viveka turns and greets him, he is asked to lift his arm and cannot, a lever moves and it comes back, and ONLY THEN the board."
     },
     {
       "kind": "keyframe",
@@ -1958,7 +1958,7 @@
       "date": "2026-08-31",
       "slug": "INT. CONTROL ROOM — ON MANAN, PLATE",
       "what": "The room from the reverse side. The near end of the desk at the far left, the clay wall across the middle, the arched door at the right, and empty floor across the whole width. Camera at a standing person's chest height.",
-      "why": "THE THIRD OF THE THREE DIALOGUE SETUPS AND A PURE PLATE. Nobody is drawn in it. MANAN IS KEYED INTO THE MIDDLE OF THE FLOOR, standing, LOOKING LEFT toward Coach Brain, which is the screen direction the wide fixed. It came back clean first time because the prompt said the room was empty and gave no reason. The attempt before it explained that the space was where somebody would be standing, and the model drew them.",
+      "why": "THE THIRD OF THE THREE DIALOGUE SETUPS AND A PURE PLATE. Nobody is drawn in it. MANAN IS KEYED INTO THE MIDDLE OF THE FLOOR, standing, LOOKING LEFT toward Viveka, which is the screen direction the wide fixed. It came back clean first time because the prompt said the room was empty and gave no reason. The attempt before it explained that the space was where somebody would be standing, and the model drew them.",
       "linestate": "recorded, PANA6308",
       "flow_pos": 12,
       "dna": {
@@ -1966,7 +1966,7 @@
         "journey": "MEETING THE MENTOR, late and inside the cave. The obstacle and the guide are one figure.",
         "element": "THE HAND, and SACRED SPACE. A room treated as different becomes different."
       },
-      "note": "SUPERSEDED 3.9.2026. It carried dialogue from an earlier version of the meeting. The scene now runs: he arrives, Coach Brain turns and greets him, he is asked to lift his arm and cannot, a lever moves and it comes back, and ONLY THEN the board."
+      "note": "SUPERSEDED 3.9.2026. It carried dialogue from an earlier version of the meeting. The scene now runs: he arrives, Viveka turns and greets him, he is asked to lift his arm and cannot, a lever moves and it comes back, and ONLY THEN the board."
     },
     {
       "kind": "keyframe",
@@ -2225,17 +2225,17 @@
       "title": "The key",
       "status": "reference",
       "date": "2026-09-01",
-      "note": "THIS IS THE KEY, AND IT IS A REAL OBJECT ON THE LIVE SET. Four views: full side, tilted three quarter, head detail, bit end profile. A long round shaft; at one end a flat round disc with a three lobed clover hole and the number 5 stamped near its edge; a collar of three raised rings where head meets shaft; at the other end a flat rectangular bit with three square teeth. EVERY DRAWN KEY IN THE FILM MUST MATCH THIS. The earlier frames drew a modern flat key and are all wrong: the Coach Brain character sheet, and the four hand phases 15-1 through 15-4. The point of matching it exactly is that the drawn key and the real key are the same object, so the cross dissolve from drawing to photograph in the last shot lands on itself rather than on something similar. Photographs in reference/key/.",
+      "note": "THIS IS THE KEY, AND IT IS A REAL OBJECT ON THE LIVE SET. Four views: full side, tilted three quarter, head detail, bit end profile. A long round shaft; at one end a flat round disc with a three lobed clover hole and the number 5 stamped near its edge; a collar of three raised rings where head meets shaft; at the other end a flat rectangular bit with three square teeth. EVERY DRAWN KEY IN THE FILM MUST MATCH THIS. The earlier frames drew a modern flat key and are all wrong: the Viveka character sheet, and the four hand phases 15-1 through 15-4. The point of matching it exactly is that the drawn key and the real key are the same object, so the cross dissolve from drawing to photograph in the last shot lands on itself rather than on something similar. Photographs in reference/key/.",
       "flow_pos": 0
     },
     {
       "frame": "11",
       "file": "reference/CHARACTER_SHEET_COACH_BRAIN-v4.png",
       "kind": "sheet",
-      "title": "Coach Brain",
+      "title": "Viveka",
       "status": "reference",
       "date": "2026-09-01",
-      "note": "THIS IS COACH BRAIN. Four views: front, three quarter, side, rear. A brain for a head with no neck, two small eyes and a wide simple smile, zipped tracksuit with a stripe down each sleeve and leg, mitten hands, white trainers, about desk height. HE WEARS THE REAL KEY, the object photographed on the live set: round head with a three lobed clover hole, three ring collar, shaft, toothed bit. See reference/OBJECT_SHEET_KEY-v2.png. It hangs small, about the size of one of his eyes, and IT IS GOLD AND THE ONLY COLOUR IN THE FILM. The chain stays pencil grey right up to the ring. He wears the thing he later hands over, which is why the key frame lands: he has been carrying it the whole time.",
+      "note": "THIS IS VIVEKA. Four views: front, three quarter, side, rear. A brain for a head with no neck, two small eyes and a wide simple smile, zipped tracksuit with a stripe down each sleeve and leg, mitten hands, white trainers, about desk height. HE WEARS THE REAL KEY, the object photographed on the live set: round head with a three lobed clover hole, three ring collar, shaft, toothed bit. See reference/OBJECT_SHEET_KEY-v2.png. It hangs small, about the size of one of his eyes, and IT IS GOLD AND THE ONLY COLOUR IN THE FILM. The chain stays pencil grey right up to the ring. He wears the thing he later hands over, which is why the key frame lands: he has been carrying it the whole time.",
       "flow_pos": 0
     },
     {
@@ -2246,7 +2246,7 @@
       "date": "2026-09-01",
       "slug": "EXT. SKY — THE KEY FALLS, 1 OF 6",
       "what": "Cloud along the top, and the key small and tilted head down in the empty paper below it, with a great deal of bare sheet under it to fall into.",
-      "why": "FIRST OF THE FALL. It spans about a twelfth of the frame width here and grows all the way down, because Coach Brain is desk height and Manan is life size: the same object, simply getting nearer. It turns, grows and crosses from pencil to photograph together. GOLD ADDED IN THE CONTAINER, no coin: it came back drawn in the same pale pencil as the clouds, and on a sheet this empty the one coloured thing is the only thing the eye has.",
+      "why": "FIRST OF THE FALL. It spans about a twelfth of the frame width here and grows all the way down, because Viveka is desk height and Manan is life size: the same object, simply getting nearer. It turns, grows and crosses from pencil to photograph together. GOLD ADDED IN THE CONTAINER, no coin: it came back drawn in the same pale pencil as the clouds, and on a sheet this empty the one coloured thing is the only thing the eye has.",
       "note": "Off the strip 1.9.2026: measured 0.00 percent colour, so the key was never made gold. v2 was generated to fix it and never reached the repository.",
       "storyboard": "hide",
       "flow_pos": 17,
@@ -2312,7 +2312,7 @@
       "date": "2026-09-01",
       "slug": "END CREDITS — THE LOOK",
       "what": "A finished credit card: cloud in the four corners and along the bottom, the centre clear bare paper, the credit in the film’s own hand.",
-      "why": "THIS IS WHAT THE CREDITS LOOK LIKE. The centre stays open because the camera flies through it, card to card, and the clouds must never cross the lettering. The lobed cloud shapes rhyme with Coach Brain’s head, which is never pointed at. Only Aurovenkatesh, Jagan and Pushparaj are confirmed names.",
+      "why": "THIS IS WHAT THE CREDITS LOOK LIKE. The centre stays open because the camera flies through it, card to card, and the clouds must never cross the lettering. The lobed cloud shapes rhyme with Viveka’s head, which is never pointed at. Only Aurovenkatesh, Jagan and Pushparaj are confirmed names.",
       "flow_pos": 18,
       "dna": {
         "phase": "Phase 15 of 15, CREDITS, AND THE DEDICATION.",
@@ -2328,14 +2328,14 @@
       "date": "2026-09-01",
       "slug": "INT. CONTROL ROOM — WIDE, MOCKUP WITH A BOY",
       "what": "The wide of the control room with a real boy standing on the open floor at the right, photographic against the drawn room.",
-      "why": "A MOCKUP FOR COMPOSITING, NOT A FRAME OF THE FILM. The boy is generated and is not Manan: he is here so the scale, the standing position and the eyeline can be seen at a glance. In the film Manan is a photograph of the real boy keyed into this plate. ONE THING IS WRONG IN IT AND IS LEFT WRONG: he faces away toward the door instead of left toward Coach Brain. The screen direction the wide fixed is Coach Brain on the left looking right, Manan on the right looking left. Use the position, not the eyeline.",
+      "why": "A MOCKUP FOR COMPOSITING, NOT A FRAME OF THE FILM. The boy is generated and is not Manan: he is here so the scale, the standing position and the eyeline can be seen at a glance. In the film Manan is a photograph of the real boy keyed into this plate. ONE THING IS WRONG IN IT AND IS LEFT WRONG: he faces away toward the door instead of left toward Viveka. The screen direction the wide fixed is Viveka on the left looking right, Manan on the right looking left. Use the position, not the eyeline.",
       "flow_pos": 12,
       "dna": {
         "phase": "Phase 10 of 15, THEY INTRODUCE EACH OTHER.",
         "journey": "MEETING THE MENTOR, late and inside the cave. The obstacle and the guide are one figure.",
         "element": "THE HAND, and SACRED SPACE. A room treated as different becomes different."
       },
-      "note": " RETIRED 4.9.2026. It has the little brain in it. The film became serious and a small smiling brain could not hold the scene where the argument lands, so Coach Brain is a person now. The room went with him: three trackballs instead of a hundred switches, a free standing hologram instead of panels on a wall, and one chair instead of two."
+      "note": " RETIRED 4.9.2026. It has the little brain in it. The film became serious and a small smiling brain could not hold the scene where the argument lands, so Viveka is a person now. The room went with him: three trackballs instead of a hundred switches, a free standing hologram instead of panels on a wall, and one chair instead of two."
     },
     {
       "kind": "keyframe",
@@ -2344,7 +2344,7 @@
       "status": "superseded",
       "date": "2026-09-01",
       "slug": "INT. — THE HAND TURNS OVER",
-      "what": "Coach Brain's hand tilting, the tracksuit cuff clear at the wrist, the key sliding head down across the fingers.",
+      "what": "Viveka's hand tilting, the tracksuit cuff clear at the wrist, the key sliding head down across the fingers.",
       "why": "SECOND OF THREE: OFFERING, TURNING, FALLING. The key is drawn in pencil here and is gold in the film. It came back grey twice and the reason is now known: a small coloured object inside a large pencil drawing is drawn in pencil, because the surrounding style wins. Colouring it in the container failed too, four attempts, because the key touches the fingers and no threshold separates them. COLOUR IT IN THE COMPOSITE.",
       "note": "Superseded by v2. The key came back in pencil, and four attempts to tint it in the container failed because it touches the fingers. Tinting is banned as of 1.9.2026: if the gold is missing the prompt was wrong and the frame is regenerated.",
       "flow_pos": 17,
@@ -2378,7 +2378,7 @@
       "status": "proposal",
       "date": "2026-09-01",
       "slug": "INT. — THE HAND TURNS OVER",
-      "what": "Coach Brain's hand tilting, the ribbed tracksuit cuff at the wrist, the painted gold key sliding head down across the opening fingers.",
+      "what": "Viveka's hand tilting, the ribbed tracksuit cuff at the wrist, the painted gold key sliding head down across the opening fingers.",
       "why": "SECOND OF THREE: OFFERING, TURNING, LETTING GO. THE GOLD LANDED HERE AND THE METHOD IS RECORDED. Two earlier attempts came back in pencil because every sentence described a pencil drawing and one sentence asked for colour, so the drawing won. The prompt that worked names the two materials as separate things, calls the key PAINTED rather than coloured, gives three tones instead of one, states the contrast as the point of the picture, and puts all of it first rather than last. See modules/imgtoimg.md.",
       "flow_pos": 17,
       "dna": {
@@ -2427,14 +2427,14 @@
       "date": "2026-09-01",
       "slug": "INT. CONTROL ROOM — ON MANAN, MOCKUP",
       "what": "A real boy standing on the stone floor in the middle of the reverse plate, photographic against the drawn room, with the desk end at the left and the arched door at the right.",
-      "why": "A MOCKUP FOR COMPOSITING, NOT A FRAME OF THE FILM. The boy is generated and is not Manan. The position, the scale and the way he stands on the floor are all correct and are what to take from it. The visible cut out edge around him is useful rather than a fault: it reads unmistakably as a photograph laid onto a drawing, which is exactly what the composite is. THE EYELINE IS WRONG AND IS LEFT WRONG. He looks toward the right of frame. The desk is at frame left, so Coach Brain is off frame LEFT and Manan must look LEFT. This is the third mockup to get the eyeline backwards. The direction was fixed by the wide 19-2-A-v1: COACH BRAIN ON THE LEFT LOOKING RIGHT, MANAN ON THE RIGHT LOOKING LEFT. Use the position, not the eyeline.",
+      "why": "A MOCKUP FOR COMPOSITING, NOT A FRAME OF THE FILM. The boy is generated and is not Manan. The position, the scale and the way he stands on the floor are all correct and are what to take from it. The visible cut out edge around him is useful rather than a fault: it reads unmistakably as a photograph laid onto a drawing, which is exactly what the composite is. THE EYELINE IS WRONG AND IS LEFT WRONG. He looks toward the right of frame. The desk is at frame left, so Viveka is off frame LEFT and Manan must look LEFT. This is the third mockup to get the eyeline backwards. The direction was fixed by the wide 19-2-A-v1: VIVEKA ON THE LEFT LOOKING RIGHT, MANAN ON THE RIGHT LOOKING LEFT. Use the position, not the eyeline.",
       "flow_pos": 12,
       "dna": {
         "phase": "Phase 10 of 15, THEY INTRODUCE EACH OTHER.",
         "journey": "MEETING THE MENTOR, late and inside the cave. The obstacle and the guide are one figure.",
         "element": "THE HAND, and SACRED SPACE. A room treated as different becomes different."
       },
-      "note": " RETIRED 4.9.2026. It has the little brain in it. The film became serious and a small smiling brain could not hold the scene where the argument lands, so Coach Brain is a person now. The room went with him: three trackballs instead of a hundred switches, a free standing hologram instead of panels on a wall, and one chair instead of two."
+      "note": " RETIRED 4.9.2026. It has the little brain in it. The film became serious and a small smiling brain could not hold the scene where the argument lands, so Viveka is a person now. The room went with him: three trackballs instead of a hundred switches, a free standing hologram instead of panels on a wall, and one chair instead of two."
     },
     {
       "kind": "keyframe",
@@ -2446,7 +2446,7 @@
       "what": "The same banner drawing seen much closer: a few pencil letters filling the frame, cut off by its edges, the sketched weave between them, flat even paper.",
       "why": "THE FLY THROUGH IS A SCALE MOVE ON ONE DRAWING AND NOTHING ELSE. Close up and wide are the same banner: no relighting, no cast shadow, no depth of field, no photographic fabric. As though somebody held a magnifying glass over one part of the same sheet. THE CLOTH NEVER TEARS. We pass through by cutting to white, as at every other crossing in the film. Two earlier attempts are kept: one split the cloth open, the other rendered it as a photograph.",
       "flow_pos": 15,
-      "note": "CUT 2.9.2026. The banner fly through is out. The conclusion is reached in conversation between Manan and Coach Brain, not delivered on a banner the camera flies through.",
+      "note": "CUT 2.9.2026. The banner fly through is out. The conclusion is reached in conversation between Manan and Viveka, not delivered on a banner the camera flies through.",
       "dna": {
         "phase": "Phase 12 of 15, THE CONCLUSION, AND GOODBYE.",
         "journey": "THE REWARD. Given rather than seized, which is why the goodbye matters.",
@@ -2602,7 +2602,7 @@
       "title": "The key door, close",
       "status": "superseded",
       "date": "2026-09-02",
-      "note": "AND THERE IT IS. The key pressed into the clay, filling the frame, the same handling as every other door so nothing announces it. He opens it exactly as he opened the first one. This is the last frame before Coach Brain, and the last thing in the film that is only architecture. Its name before the reset was 18-0-A-v6. ARCHIVED 4.9.2026. It was 7-8, drawn before the house had a design: hinged wooden doors, organs chosen because a body has organs, and cables on the ceiling. All three are gone.",
+      "note": "AND THERE IT IS. The key pressed into the clay, filling the frame, the same handling as every other door so nothing announces it. He opens it exactly as he opened the first one. This is the last frame before Viveka, and the last thing in the film that is only architecture. Its name before the reset was 18-0-A-v6. ARCHIVED 4.9.2026. It was 7-8, drawn before the house had a design: hinged wooden doors, organs chosen because a body has organs, and cables on the ceiling. All three are gone.",
       "flow_pos": 11,
       "dna": {
         "phase": "Phase 9 of 15, HE SEES THE KEY, AND GOES IN.",
@@ -2622,17 +2622,17 @@
         "shot": "everything drops away except a single sustained note and room tone. no percussion, no melody, no movement. a very long decay, then near silence.",
         "why": "SPACE, which the book says is what is left when the others stop, and should not be filled. The ordeal is comprehension, so the loudest thing here is the absence of everything else."
       },
-      "meaning": "THE CONFIRMATION, NOT THE SURPRISE. By now the audience can read the doors, so this one does not startle them, it satisfies them. That is a better feeling and a rarer one.\n\nCOACH BRAIN came off the door for this. A name would have told us who; a key tells us what, and what is the thing he came for. He does not know yet that the two are the same.\n\nIt is also the last frame of the approach. Everything before it is searching and everything after it is meeting."
+      "meaning": "THE CONFIRMATION, NOT THE SURPRISE. By now the audience can read the doors, so this one does not startle them, it satisfies them. That is a better feeling and a rarer one.\n\nVIVEKA came off the door for this. A name would have told us who; a key tells us what, and what is the thing he came for. He does not know yet that the two are the same.\n\nIt is also the last frame of the approach. Everything before it is searching and everything after it is meeting."
     },
     {
       "file": "BB_C_19/19-0-A-v2.png",
       "kind": "keyframe",
       "scene": 19,
       "shot": "19.40",
-      "title": "Coach Brain, and the first gold",
+      "title": "Viveka, and the first gold",
       "status": "superseded",
       "date": "2026-09-02",
-      "note": "He turns to look at us, and on a cord at his neck hangs the key. THE FIRST GOLD IN THE FILM. Gouache over pencil, the only painted thing on the sheet. It hangs small, worn rather than displayed. Supersedes v1. RETIRED 4.9.2026. It has the little brain in it. The film became serious and a small smiling brain could not hold the scene where the argument lands, so Coach Brain is a person now. The room went with him: three trackballs instead of a hundred switches, a free standing hologram instead of panels on a wall, and one chair instead of two.",
+      "note": "He turns to look at us, and on a cord at his neck hangs the key. THE FIRST GOLD IN THE FILM. Gouache over pencil, the only painted thing on the sheet. It hangs small, worn rather than displayed. Supersedes v1. RETIRED 4.9.2026. It has the little brain in it. The film became serious and a small smiling brain could not hold the scene where the argument lands, so Viveka is a person now. The room went with him: three trackballs instead of a hundred switches, a free standing hologram instead of panels on a wall, and one chair instead of two.",
       "flow_pos": 12,
       "dna": {
         "phase": "Phase 10 of 15, THEY INTRODUCE EACH OTHER.",
@@ -2728,7 +2728,7 @@
       "title": "The vortex, down",
       "status": "superseded",
       "date": "2026-09-02",
-      "note": "NOT DRAWN YET. THE SECOND VORTEX, AND THIS ONE GOES DOWN. He arrived by rising; he leaves by falling, after Coach Brain has explained the theory and let the key go. Same throat, same strands of keys, same water, and the direction of travel reversed: his clothes and hair now pull UPWARD because he is going down, which is the only thing that tells the audience which way he is moving. Up on the way in, down on the way back, and that symmetry is the shape of the whole second half.",
+      "note": "NOT DRAWN YET. THE SECOND VORTEX, AND THIS ONE GOES DOWN. He arrived by rising; he leaves by falling, after Viveka has explained the theory and let the key go. Same throat, same strands of keys, same water, and the direction of travel reversed: his clothes and hair now pull UPWARD because he is going down, which is the only thing that tells the audience which way he is moving. Up on the way in, down on the way back, and that symmetry is the shape of the whole second half.",
       "flow_pos": 16,
       "dna": {
         "phase": "Phase 13 of 15, THE VORTEX DOWN, AND THE KEY FALLS WITH HIM.",
@@ -2791,7 +2791,7 @@
       "title": "The key falls with him",
       "status": "placeholder",
       "date": "2026-09-02",
-      "note": "NOT DRAWN YET. As the vortex takes him down, Coach Brain lets the key go and it falls with him. One beat, not two: the giving and the descent are the same moment.",
+      "note": "NOT DRAWN YET. As the vortex takes him down, Viveka lets the key go and it falls with him. One beat, not two: the giving and the descent are the same moment.",
       "dna": {
         "phase": "Phase 13 of 15, THE VORTEX DOWN, AND THE KEY FALLS WITH HIM.",
         "journey": "THE ROAD BACK. He leaves with something, and leaving is its own difficulty.",
@@ -2811,7 +2811,7 @@
         "https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIGINALS/main/BB_C_9/9-1-GANESHA-v1.png"
       ],
       "prompt": "A hand drawn pencil study on warm cream paper, the same graphite and the same sheet as the reference. Grey graphite only. There is no colour anywhere.\n\nA soft vortex of cloud, seen from below. It rises away from us and turns as it goes, narrowing to a small pale throat high in the upper part of the frame, slightly off centre. It is drawn the way cloud is drawn: long soft strokes made with the side of the pencil, smudged and blended, edges that dissolve rather than end. Light and airy, mostly bare paper, gentle rather than violent.\n\nThe frame is otherwise empty. No keys of any kind. No person, no figure, no lettering, no border, no architecture, no floor, no objects of any kind carried in the cloud.",
-      "meaning": "THE DOOR OUT OF THE WORLD. The first frame of the second half, and the first thing the audience sees after his eyes close. It does two jobs at once: it convinces them the film has changed, and it explains nothing.\n\nIt carries no information on purpose. Nothing to read, no object, no symbol, nothing that could be a clue. Three earlier versions built the vortex out of keys and every one failed for the same reason: a tunnel made of keys tells the audience what he is looking for before he knows it himself, so the film says the word out loud long before he reaches the key door.\n\nEmotionally it is gentle. Not a storm, and he is not in danger. He is being taken, not wrecked, and that softness is what makes the house of the body afterwards read as somewhere he belongs rather than somewhere he has crashed.\n\nIt moves the film forward by changing its grammar. Before it, things arrive by frottage. After it, nothing arrives and we travel through surfaces instead. This is the hinge, and it is why there is no cut anywhere after it.\n\nThe same vortex returns near the end, going down, when Coach Brain lets the key go. Rising into it and falling out of it is the shape of the whole second half.",
+      "meaning": "THE DOOR OUT OF THE WORLD. The first frame of the second half, and the first thing the audience sees after his eyes close. It does two jobs at once: it convinces them the film has changed, and it explains nothing.\n\nIt carries no information on purpose. Nothing to read, no object, no symbol, nothing that could be a clue. Three earlier versions built the vortex out of keys and every one failed for the same reason: a tunnel made of keys tells the audience what he is looking for before he knows it himself, so the film says the word out loud long before he reaches the key door.\n\nEmotionally it is gentle. Not a storm, and he is not in danger. He is being taken, not wrecked, and that softness is what makes the house of the body afterwards read as somewhere he belongs rather than somewhere he has crashed.\n\nIt moves the film forward by changing its grammar. Before it, things arrive by frottage. After it, nothing arrives and we travel through surfaces instead. This is the hinge, and it is why there is no cut anywhere after it.\n\nThe same vortex returns near the end, going down, when Viveka lets the key go. Rising into it and falling out of it is the shape of the whole second half.",
       "dna": {
         "element": "WATER, in its cloud form. WINNING_FILM calls water the only element that is both the danger and the cure, and that is exactly the ambiguity this frame needs: it is taking him somewhere he did not ask to go, and it is the only way he gets there. Cloud is water with the weight taken out, which is why it lifts rather than drowns. THRESHOLD is the second element here and it is the one the book says films waste: this is not a door, it is the line under it.",
         "symbol": "The turn itself. A spiral says a thing is being drawn toward a centre rather than travelling in a line, and the book notes that the same shape turns up in shells, storms and seed heads, so nobody has to be taught it. It is never explained on screen and never mentioned. Anyone who feels it, feels it.",
@@ -2840,7 +2840,7 @@
       ],
       "prompt": "No prompt. This image was not generated. It is 9-1-VORTEX-UP-v1 rotated 180 degrees in the container, as a placeholder with the right shape.",
       "dna": {
-        "phase": "Phase 12 of 15, THE VORTEX DOWN. After Coach Brain has explained it and let the key go, and before Manan catches it.",
+        "phase": "Phase 12 of 15, THE VORTEX DOWN. After Viveka has explained it and let the key go, and before Manan catches it.",
         "journey": "THE ROAD BACK. He leaves with something, and leaving is its own difficulty. The film rhymes here on purpose: he rose into the vortex and he falls out of it, and that symmetry is the shape of the whole second half.",
         "element": "WATER as cloud, and THRESHOLD again, crossed the other way.",
         "symbol": "The same turn, reversed. Nothing new is introduced on the way home.",
@@ -2927,7 +2927,7 @@
       "title": "What he sees when the door opens",
       "status": "superseded",
       "date": "2026-09-03",
-      "note": "POINT OF VIEW. We are standing in the doorway looking in, framed by the jamb on both sides and the top, and nothing of the viewer is visible: this is his eyes, per MEMORY 28g. Coach Brain has NOT turned round. He is small, absorbed, one hand on the console, completely unbothered that somebody has arrived, and that indifference is what makes him worth being impressed by. The second open door beyond him echoes the corridor without saying anything. RETIRED 4.9.2026. It has the little brain in it. The film became serious and a small smiling brain could not hold the scene where the argument lands, so Coach Brain is a person now. The room went with him: three trackballs instead of a hundred switches, a free standing hologram instead of panels on a wall, and one chair instead of two."
+      "note": "POINT OF VIEW. We are standing in the doorway looking in, framed by the jamb on both sides and the top, and nothing of the viewer is visible: this is his eyes, per MEMORY 28g. Viveka has NOT turned round. He is small, absorbed, one hand on the console, completely unbothered that somebody has arrived, and that indifference is what makes him worth being impressed by. The second open door beyond him echoes the corridor without saying anything. RETIRED 4.9.2026. It has the little brain in it. The film became serious and a small smiling brain could not hold the scene where the argument lands, so Viveka is a person now. The room went with him: three trackballs instead of a hundred switches, a free standing hologram instead of panels on a wall, and one chair instead of two."
     },
     {
       "file": "BB_C_19/19-A2-EXPECTING-v1.png",
@@ -2937,7 +2937,7 @@
       "title": "He turns, and he was expecting us",
       "status": "superseded",
       "date": "2026-09-03",
-      "note": " RETIRED 4.9.2026. It has the little brain in it. The film became serious and a small smiling brain could not hold the scene where the argument lands, so Coach Brain is a person now. The room went with him: three trackballs instead of a hundred switches, a free standing hologram instead of panels on a wall, and one chair instead of two."
+      "note": " RETIRED 4.9.2026. It has the little brain in it. The film became serious and a small smiling brain could not hold the scene where the argument lands, so Viveka is a person now. The room went with him: three trackballs instead of a hundred switches, a free standing hologram instead of panels on a wall, and one chair instead of two."
     },
     {
       "file": "BB_C_19/19-A3-ARM-v2.png",
@@ -2947,7 +2947,7 @@
       "title": "Lift your arm. It will not come",
       "status": "superseded",
       "date": "2026-09-03",
-      "note": " RETIRED 4.9.2026. It has the little brain in it. The film became serious and a small smiling brain could not hold the scene where the argument lands, so Coach Brain is a person now. The room went with him: three trackballs instead of a hundred switches, a free standing hologram instead of panels on a wall, and one chair instead of two."
+      "note": " RETIRED 4.9.2026. It has the little brain in it. The film became serious and a small smiling brain could not hold the scene where the argument lands, so Viveka is a person now. The room went with him: three trackballs instead of a hundred switches, a free standing hologram instead of panels on a wall, and one chair instead of two."
     },
     {
       "file": "BB_C_1/1-4-E-GLASS-v1.png",
@@ -3300,7 +3300,7 @@
       "title": "He is at the door",
       "status": "superseded",
       "date": "2026-09-04",
-      "note": "HE IS AT THE DOOR, AND IT IS ALREADY OPEN. Coach Brain knew he was coming, so the door does not open for him: it was open before he arrived, and that is the first thing the film says about the brain. Drawn FLAT ON, the camera exactly opposite and level, no angle, the way you see a door when you are standing right in front of it. Cropped out of 7-2 and redrawn larger so the stone is literally the same wall rather than a matching one. ARCHIVED 4.9.2026 when the house went vertical. It belonged to the corridor version, where he walked past rooms; a body is not a hallway with rooms off it, so he rides one lift up the spine instead and the six frame version replaced all thirteen."
+      "note": "HE IS AT THE DOOR, AND IT IS ALREADY OPEN. Viveka knew he was coming, so the door does not open for him: it was open before he arrived, and that is the first thing the film says about the brain. Drawn FLAT ON, the camera exactly opposite and level, no angle, the way you see a door when you are standing right in front of it. Cropped out of 7-2 and redrawn larger so the stone is literally the same wall rather than a matching one. ARCHIVED 4.9.2026 when the house went vertical. It belonged to the corridor version, where he walked past rooms; a body is not a hallway with rooms off it, so he rides one lift up the spine instead and the six frame version replaced all thirteen."
     },
     {
       "file": "BB_C_7/7-2-20260904.png",
@@ -3497,7 +3497,7 @@
       "title": "And it closes behind him",
       "status": "accepted",
       "date": "2026-09-04",
-      "note": "AND IT CLOSES BEHIND HIM. This is 7-4 AGAIN, the identical picture returning, because the door shuts on exactly the frame it opened from and a repeat says that better than a variation would. A separate file because every asset keeps a unique name, the same way 1-0-C-v2 and 1-6-COLLAPSE-v1 are one drawing at two points in scene one. After this we are inside, and Coach Brain's room does not change."
+      "note": "AND IT CLOSES BEHIND HIM. This is 7-4 AGAIN, the identical picture returning, because the door shuts on exactly the frame it opened from and a repeat says that better than a variation would. A separate file because every asset keeps a unique name, the same way 1-0-C-v2 and 1-6-COLLAPSE-v1 are one drawing at two points in scene one. After this we are inside, and Viveka's room does not change."
     },
     {
       "file": "BB_C_7/7-1.png",
@@ -3567,22 +3567,22 @@
       "title": "His room",
       "status": "accepted",
       "date": "2026-09-04",
-      "note": "THE ROOM, AND HE IS IN IT. One chair, and he is sitting in it, on the LEFT of frame looking RIGHT, which is the screen direction this scene never crosses. The console is a colour grading surface rather than a cockpit: three big trackballs in dished rings with fluted wheels, a handful of large keys, and empty surface between them, all sized for a grown man. A wise man does not need hundreds of controls. Above it the display is a HOLOGRAM standing free in the air, no bezel and no housing, a body turning slowly in separated layers with readouts hanging beside it. That is the same body Manan has just ridden up, seen the way Coach Brain sees it.",
+      "note": "THE ROOM, AND HE IS IN IT. One chair, and he is sitting in it, on the LEFT of frame looking RIGHT, which is the screen direction this scene never crosses. The console is a colour grading surface rather than a cockpit: three big trackballs in dished rings with fluted wheels, a handful of large keys, and empty surface between them, all sized for a grown man. A wise man does not need hundreds of controls. Above it the display is a HOLOGRAM standing free in the air, no bezel and no housing, a body turning slowly in separated layers with readouts hanging beside it. That is the same body Manan has just ridden up, seen the way Viveka sees it.",
       "dialogue": [
         {
           "speaker": "MANAN",
           "line": "That was you. It was never my arm at all."
         },
         {
-          "speaker": "COACH",
+          "speaker": "VIVEKA",
           "line": "It is always your arm. The permission is mine."
         },
         {
-          "speaker": "COACH",
+          "speaker": "VIVEKA",
           "line": "Ah. There you are. I was expecting you."
         },
         {
-          "speaker": "COACH",
+          "speaker": "VIVEKA",
           "line": "Before we start. Lift your right arm for me."
         },
         {
@@ -3590,7 +3590,7 @@
           "line": "I'm trying."
         },
         {
-          "speaker": "COACH",
+          "speaker": "VIVEKA",
           "line": "I know."
         },
         {
@@ -3598,7 +3598,7 @@
           "line": "I can't. Why can't I move it?"
         },
         {
-          "speaker": "COACH",
+          "speaker": "VIVEKA",
           "line": "Try now."
         }
       ]
@@ -3637,7 +3637,7 @@
     }
   ],
   "event": "Breakthrough Junior Challenge 2026",
-  "site_version": 229,
+  "site_version": 230,
   "footage": [
     {
       "name": "Key catch",
@@ -3646,7 +3646,7 @@
       "url": "https://drive.google.com/drive/folders/1YGb_z7OCrLSUX7JagNpynXbu1fAK2wNu",
       "codec": "ProRes 4444 with alpha",
       "what": "Manan's hand entering from below, the key landing in his open palm, and his fist closing on it. Shot against black so it keys clean.",
-      "use": "The last three beats of the film. Coach Brain's hand is drawn and never appears in the same frame, so nothing has to match."
+      "use": "The last three beats of the film. Viveka's hand is drawn and never appears in the same frame, so nothing has to match."
     },
     {
       "name": "In front of the door",
@@ -3694,7 +3694,7 @@
       "use": "For the fall. The key turns, grows and crosses from pencil to photograph on the way down. Same mesh throughout, only the material changes. On the ASSETS page."
     }
   ],
-  "flight_note": "FROM PHASE 5 ONWARD THE FILM DOES NOT CUT, IT FLIES. Think of an aeroplane going through cloud: you do not arrive by cutting, you arrive by passing through something. We fly in toward his head as his eyes close, pass into white, rise through the vortex, arrive at the door, and he is drawn through it rather than walking in. Then we fly backwards and the house assembles around what we have just entered, fly on through the rooms, and land at the skull door. The landing is the only stop, because the conversation needs stillness. Then we fly at the banner and through it, and the key is given in the white on the other side. The credits fly too, card to card, through cloud. IF A BEAT SEEMS TO NEED A CUT, LOOK AGAIN: there is nearly always a surface to pass through, and there is no exception anywhere. The key falls the whole way and the camera never leaves it. Coach Brain's hand and Manan's never share a frame because an entire descent lies between them, which is better than a cut: a cut is a decision the audience can feel, a fall is one they take with the object. THE MEMORIES BEHIND THE FALL ARE MOTION BLURRED, streaked vertically in the direction of the fall, because they are passing at speed. Not so much that they become mush: you must still be able to make out what each one is if you look for it. THE KEY STAYS SHARP, because the camera is travelling with it, and that difference between the sharp key and the streaked world is what makes the fall read as fast.",
+  "flight_note": "FROM PHASE 5 ONWARD THE FILM DOES NOT CUT, IT FLIES. Think of an aeroplane going through cloud: you do not arrive by cutting, you arrive by passing through something. We fly in toward his head as his eyes close, pass into white, rise through the vortex, arrive at the door, and he is drawn through it rather than walking in. Then we fly backwards and the house assembles around what we have just entered, fly on through the rooms, and land at the skull door. The landing is the only stop, because the conversation needs stillness. Then we fly at the banner and through it, and the key is given in the white on the other side. The credits fly too, card to card, through cloud. IF A BEAT SEEMS TO NEED A CUT, LOOK AGAIN: there is nearly always a surface to pass through, and there is no exception anywhere. The key falls the whole way and the camera never leaves it. Viveka's hand and Manan's never share a frame because an entire descent lies between them, which is better than a cut: a cut is a decision the audience can feel, a fall is one they take with the object. THE MEMORIES BEHIND THE FALL ARE MOTION BLURRED, streaked vertically in the direction of the fall, because they are passing at speed. Not so much that they become mush: you must still be able to make out what each one is if you look for it. THE KEY STAYS SHARP, because the camera is travelling with it, and that difference between the sharp key and the streaked world is what makes the fall read as fast.",
   "rubbing_note": "THE FIRST HALF DOES NOT GET DRAWN ON SCREEN, IT SURFACES. Think of a coin under a sheet of paper and a pencil rubbed across it until the shape comes through. Parts arrive one at a time and in an order that is a law, not a preference: WHAT SUPPORTS COMES FIRST. NATURE IS BUILT BEFORE ANYBODY STANDS IN IT. The road first, because without the road there are no trees beside it. Then the trees. Then the shoes standing on the road, then the legs, and last of all the man. A shoe cannot appear before the road it stands on. Ground before figure, and the thing he stands on before the thing that stands. Each part comes up out of blank paper in a few frames and then simply is. USE IT ONLY TO OPEN A SCENE. It is how the drawn world comes into existence, so it happens once at the start and then stops; from the next frame on, the animation is ordinary. It returns exactly once more, on the first frame of the muscle sequence, because that is a second world being entered. Anywhere else it becomes decoration and stops meaning anything. It is cheap to make, which is the point: a few frames of an image resolving is a filter and a mask, not drawn inbetweens. SO THE FILM HAS ONE GRAMMAR PER HALF. Before he closes his eyes, things arrive: the world is manifested out of paper. After he closes his eyes, nothing arrives and we move instead: every transition is a passage through a surface. One is the world coming to him, the other is him going through the world.",
   "flow": [
     {
@@ -3747,7 +3747,7 @@
     },
     {
       "phase": "19",
-      "title": "Coach Brain’s room"
+      "title": "Viveka's room"
     },
     {
       "phase": "10",
@@ -4289,14 +4289,14 @@
     },
     {
       "n": 9,
-      "speaker": "COACH BRAIN",
+      "speaker": "VIVEKA",
       "text": "Ah. There you are. I was expecting you.",
       "audio": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/drama/09-COACH.mp3",
       "sec": 3.82
     },
     {
       "n": 10,
-      "speaker": "COACH BRAIN",
+      "speaker": "VIVEKA",
       "text": "Before we start. Lift your right arm for me.",
       "audio": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/drama/10-COACH.mp3",
       "sec": 3.19
@@ -4310,7 +4310,7 @@
     },
     {
       "n": 12,
-      "speaker": "COACH BRAIN",
+      "speaker": "VIVEKA",
       "text": "I know.",
       "audio": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/drama/12-COACH.mp3",
       "sec": 0.84
@@ -4324,7 +4324,7 @@
     },
     {
       "n": 14,
-      "speaker": "COACH BRAIN",
+      "speaker": "VIVEKA",
       "text": "Try now.",
       "audio": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/drama/14-COACH.mp3",
       "sec": 1.01
@@ -4338,7 +4338,7 @@
     },
     {
       "n": 16,
-      "speaker": "COACH BRAIN",
+      "speaker": "VIVEKA",
       "text": "It is always your arm. The permission is mine.",
       "audio": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/drama/16-COACH.mp3",
       "sec": 4.13
@@ -4346,7 +4346,7 @@
     {
       "n": 17,
       "speaker": "NARRATOR",
-      "text": "Then the two of them put it on the boards. Neither board arrives finished. Manan writes what he was taught, in white chalk, line by line: the old theory. Coach Brain answers on the whiteboard in black marker. The same layout, the same three lines, the same gauge, and every single value reversed.",
+      "text": "Then the two of them put it on the boards. Neither board arrives finished. Manan writes what he was taught, in white chalk, line by line: the old theory. Viveka answers on the whiteboard in black marker. The same layout, the same three lines, the same gauge, and every single value reversed.",
       "audio": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/drama/17-NARRATOR.mp3",
       "sec": 18.77
     },
@@ -4360,7 +4360,7 @@
     {
       "n": 19,
       "speaker": "NARRATOR",
-      "text": "Coach Brain lets it go, and it falls through an empty frame. It turns and it grows as it comes, and behind it the whole film replays in reverse, so faint it is almost not there: the boards, the room, the house, and the avenue as it lands. The memories are streaked in the direction of the fall because they are passing at speed, but you can still make out what each one is if you look. The key stays sharp, because the camera is falling with it, and that difference is what makes the fall feel fast.",
+      "text": "Viveka lets it go, and it falls through an empty frame. It turns and it grows as it comes, and behind it the whole film replays in reverse, so faint it is almost not there: the boards, the room, the house, and the avenue as it lands. The memories are streaked in the direction of the fall because they are passing at speed, but you can still make out what each one is if you look. The key stays sharp, because the camera is falling with it, and that difference is what makes the fall feel fast.",
       "audio": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/drama/19-NARRATOR.mp3",
       "sec": 25.25
     },
@@ -4452,14 +4452,14 @@
     },
     {
       "n": 9,
-      "speaker": "COACH BRAIN",
+      "speaker": "VIVEKA",
       "text": "Ah. Tu si. Očekivao sam te.",
       "audio": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/drama_hr/09-COACH.mp3",
       "sec": 3.38
     },
     {
       "n": 10,
-      "speaker": "COACH BRAIN",
+      "speaker": "VIVEKA",
       "text": "Prije nego počnemo. Podigni mi desnu ruku.",
       "audio": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/drama_hr/10-COACH.mp3",
       "sec": 2.95
@@ -4473,7 +4473,7 @@
     },
     {
       "n": 12,
-      "speaker": "COACH BRAIN",
+      "speaker": "VIVEKA",
       "text": "Znam.",
       "audio": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/drama_hr/12-COACH.mp3",
       "sec": 0.6
@@ -4487,7 +4487,7 @@
     },
     {
       "n": 14,
-      "speaker": "COACH BRAIN",
+      "speaker": "VIVEKA",
       "text": "Probaj sada.",
       "audio": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/drama_hr/14-COACH.mp3",
       "sec": 1.8
@@ -4501,7 +4501,7 @@
     },
     {
       "n": 16,
-      "speaker": "COACH BRAIN",
+      "speaker": "VIVEKA",
       "text": "Ruka je uvijek tvoja. Dopuštenje je moje.",
       "audio": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/drama_hr/16-COACH.mp3",
       "sec": 3.89
@@ -4530,27 +4530,27 @@
     {
       "n": 20,
       "speaker": "NARATOR",
-      "text": "Coach Brain odgovara na bijeloj ploči crnim markerom. Isti raspored, ista tri retka, isti mjerač, i svaka vrijednost obrnuta.",
+      "text": "Viveka odgovara na bijeloj ploči crnim markerom. Isti raspored, ista tri retka, isti mjerač, i svaka vrijednost obrnuta.",
       "audio": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/drama_hr/20-NARATOR.mp3",
       "sec": 7.66
     },
     {
       "n": 21,
-      "speaker": "COACH BRAIN",
+      "speaker": "VIVEKA",
       "text": "Puls, dah, temperatura, voda, udaljenost. Čitam sve to, cijelo vrijeme. I postavljam jedno pitanje: možemo li nastaviti sigurno?",
       "audio": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/drama_hr/21-COACH.mp3",
       "sec": 8.88
     },
     {
       "n": 22,
-      "speaker": "COACH BRAIN",
+      "speaker": "VIVEKA",
       "text": "Kad odgovor počne izgledati kao ne, usporim te. Dakle ne. Umor je u mozgu, a ne u tvojim nogama. Ovdje gore. I odlučuje mnogo prije nego što je išta stvarno u opasnosti.",
       "audio": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/drama_hr/22-COACH.mp3",
       "sec": 11.23
     },
     {
       "n": 23,
-      "speaker": "COACH BRAIN",
+      "speaker": "VIVEKA",
       "text": "Kad te ja zaustavim, gorivo je još uvijek tu.",
       "audio": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/drama_hr/23-COACH.mp3",
       "sec": 3.46
@@ -4564,7 +4564,7 @@
     },
     {
       "n": 25,
-      "speaker": "COACH BRAIN",
+      "speaker": "VIVEKA",
       "text": "Je broj koji sam ja odabrao. Pažljivo. Da te održim na životu.",
       "audio": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/drama_hr/25-COACH.mp3",
       "sec": 4.99
@@ -4586,7 +4586,7 @@
     {
       "n": 28,
       "speaker": "NARATOR",
-      "text": "Coach Brain ga pušta, i on pada kroz prazan kadar. Okreće se i raste dok dolazi, a iza njega se cijeli film vrti unatrag, tako blijedo da ga gotovo nema. Ploče, soba, kuća, i drvored dok slijeće. Sjećanja su razvučena u smjeru pada jer prolaze brzinom, ali još uvijek možeš razabrati što je svako od njih ako pogledaš. Ključ ostaje oštar, jer kamera pada s njim, i ta razlika je ono što čini da pad djeluje brzo.",
+      "text": "Viveka ga pušta, i on pada kroz prazan kadar. Okreće se i raste dok dolazi, a iza njega se cijeli film vrti unatrag, tako blijedo da ga gotovo nema. Ploče, soba, kuća, i drvored dok slijeće. Sjećanja su razvučena u smjeru pada jer prolaze brzinom, ali još uvijek možeš razabrati što je svako od njih ako pogledaš. Ključ ostaje oštar, jer kamera pada s njim, i ta razlika je ono što čini da pad djeluje brzo.",
       "audio": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/drama_hr/28-NARATOR.mp3",
       "sec": 25.18
     },
@@ -4685,14 +4685,14 @@
     },
     {
       "n": 9,
-      "speaker": "COACH BRAIN",
+      "speaker": "VIVEKA",
       "text": "Ah. Tu si. Očekivao sam te.",
       "audio": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/drama_v3/09-COACH.mp3",
       "sec": 4.99
     },
     {
       "n": 10,
-      "speaker": "COACH BRAIN",
+      "speaker": "VIVEKA",
       "text": "Prije nego počnemo. Podigni mi desnu ruku.",
       "audio": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/drama_v3/10-COACH.mp3",
       "sec": 4.51
@@ -4706,7 +4706,7 @@
     },
     {
       "n": 12,
-      "speaker": "COACH BRAIN",
+      "speaker": "VIVEKA",
       "text": "Znam.",
       "audio": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/drama_v3/12-COACH.mp3",
       "sec": 1.51
@@ -4720,7 +4720,7 @@
     },
     {
       "n": 14,
-      "speaker": "COACH BRAIN",
+      "speaker": "VIVEKA",
       "text": "Probaj sada.",
       "audio": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/drama_v3/14-COACH.mp3",
       "sec": 1.87
@@ -4734,7 +4734,7 @@
     },
     {
       "n": 16,
-      "speaker": "COACH BRAIN",
+      "speaker": "VIVEKA",
       "text": "Ruka je uvijek tvoja. Dopuštenje je moje.",
       "audio": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/drama_v3/16-COACH.mp3",
       "sec": 4.54
@@ -4763,27 +4763,27 @@
     {
       "n": 20,
       "speaker": "NARATOR",
-      "text": "Coach Brain odgovara na bijeloj ploči crnim markerom. Isti raspored, ista tri retka, isti mjerač, i svaka vrijednost obrnuta.",
+      "text": "Viveka odgovara na bijeloj ploči crnim markerom. Isti raspored, ista tri retka, isti mjerač, i svaka vrijednost obrnuta.",
       "audio": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/drama_v3/20-NARATOR.mp3",
       "sec": 10.13
     },
     {
       "n": 21,
-      "speaker": "COACH BRAIN",
+      "speaker": "VIVEKA",
       "text": "Puls, dah, temperatura, voda, udaljenost. Čitam sve to, cijelo vrijeme. I postavljam jedno pitanje: možemo li nastaviti sigurno?",
       "audio": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/drama_v3/21-COACH.mp3",
       "sec": 12.1
     },
     {
       "n": 22,
-      "speaker": "COACH BRAIN",
+      "speaker": "VIVEKA",
       "text": "Kad odgovor počne izgledati kao ne, usporim te. Dakle ne. Umor je u mozgu, a ne u tvojim nogama. Ovdje gore. I odlučuje mnogo prije nego što je išta stvarno u opasnosti.",
       "audio": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/drama_v3/22-COACH.mp3",
       "sec": 15.82
     },
     {
       "n": 23,
-      "speaker": "COACH BRAIN",
+      "speaker": "VIVEKA",
       "text": "Kad te ja zaustavim, gorivo je još uvijek tu.",
       "audio": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/drama_v3/23-COACH.mp3",
       "sec": 3.74
@@ -4797,7 +4797,7 @@
     },
     {
       "n": 25,
-      "speaker": "COACH BRAIN",
+      "speaker": "VIVEKA",
       "text": "Je broj koji sam ja odabrao. Pažljivo. Da te održim na životu.",
       "audio": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/drama_v3/25-COACH.mp3",
       "sec": 6.7
@@ -4819,7 +4819,7 @@
     {
       "n": 28,
       "speaker": "NARATOR",
-      "text": "Coach Brain ga pušta, i on pada kroz prazan kadar. Okreće se i raste dok dolazi, a iza njega se cijeli film vrti unatrag, tako blijedo da ga gotovo nema. Ploče, soba, kuća, i drvored dok slijeće. Sjećanja su razvučena u smjeru pada jer prolaze brzinom, ali još uvijek možeš razabrati što je svako od njih ako pogledaš. Ključ ostaje oštar, jer kamera pada s njim, i ta razlika je ono što čini da pad djeluje brzo.",
+      "text": "Viveka ga pušta, i on pada kroz prazan kadar. Okreće se i raste dok dolazi, a iza njega se cijeli film vrti unatrag, tako blijedo da ga gotovo nema. Ploče, soba, kuća, i drvored dok slijeće. Sjećanja su razvučena u smjeru pada jer prolaze brzinom, ali još uvijek možeš razabrati što je svako od njih ako pogledaš. Ključ ostaje oštar, jer kamera pada s njim, i ta razlika je ono što čini da pad djeluje brzo.",
       "audio": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/drama_v3/28-NARATOR.mp3",
       "sec": 30.7
     },
@@ -5170,35 +5170,36 @@
       "text": "Unutra, mali mozak u stolici pred zidom punim brojčanika. I on ga je čekao.",
       "audio": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/drama_v6/29-NARATOR-6fe3c0.mp3",
       "sec": 7.08,
-      "scene": "coach-brains-room",
+      "scene": "vivekas-room",
       "from_v6": 29
     },
     {
       "n": 36,
       "speaker": "NARATOR",
-      "text": "Coach Brain kaže.",
-      "audio": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/drama_v6/30-NARATOR-5b54ac.mp3",
-      "sec": 2.16,
-      "scene": "coach-brains-room",
-      "from_v6": 30
+      "text": "Viveka kaže.",
+      "audio": "",
+      "sec": 0,
+      "scene": "vivekas-room",
+      "from_v6": 30,
+      "awaiting": "Gabrijela"
     },
     {
       "n": 37,
-      "speaker": "COACH BRAIN",
+      "speaker": "VIVEKA",
       "text": "Ah. Tu si. Očekivao sam te.",
       "audio": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/drama_hr_cb/9ace2224ab5a2805.mp3",
       "sec": 3.34,
-      "scene": "coach-brains-room",
+      "scene": "vivekas-room",
       "from_v6": 31,
       "voice": "michal"
     },
     {
       "n": 38,
-      "speaker": "COACH BRAIN",
+      "speaker": "VIVEKA",
       "text": "Prije nego počnemo. Podigni mi desnu ruku.",
       "audio": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/drama_hr_cb/cb1b9fb1e0035c16.mp3",
       "sec": 3.89,
-      "scene": "coach-brains-room",
+      "scene": "vivekas-room",
       "from_v6": 33,
       "voice": "michal"
     },
@@ -5208,7 +5209,7 @@
       "text": "Manan kaže.",
       "audio": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/drama_v6/34-NARATOR-b80f0b.mp3",
       "sec": 1.92,
-      "scene": "coach-brains-room",
+      "scene": "vivekas-room",
       "from_v6": 34
     },
     {
@@ -5217,25 +5218,26 @@
       "text": "Pokušavam.",
       "audio": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/drama_v6/35-MANAN-2c9ac5.mp3",
       "sec": 1.56,
-      "scene": "coach-brains-room",
+      "scene": "vivekas-room",
       "from_v6": 35
     },
     {
       "n": 41,
       "speaker": "NARATOR",
-      "text": "Coach Brain kaže.",
-      "audio": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/drama_v6/36-NARATOR-5b54ac.mp3",
-      "sec": 2.16,
-      "scene": "coach-brains-room",
-      "from_v6": 36
+      "text": "Viveka kaže.",
+      "audio": "",
+      "sec": 0,
+      "scene": "vivekas-room",
+      "from_v6": 36,
+      "awaiting": "Gabrijela"
     },
     {
       "n": 42,
-      "speaker": "COACH BRAIN",
+      "speaker": "VIVEKA",
       "text": "Znam.",
       "audio": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/drama_hr_cb/94438f08056f13fa.mp3",
       "sec": 0.7,
-      "scene": "coach-brains-room",
+      "scene": "vivekas-room",
       "from_v6": 37,
       "voice": "michal"
     },
@@ -5245,7 +5247,7 @@
       "text": "Manan kaže.",
       "audio": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/drama_v6/38-NARATOR-b80f0b.mp3",
       "sec": 1.92,
-      "scene": "coach-brains-room",
+      "scene": "vivekas-room",
       "from_v6": 38
     },
     {
@@ -5254,25 +5256,26 @@
       "text": "Ne mogu. Zašto je ne mogu pomaknuti?",
       "audio": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/drama_v6/39-MANAN-b1f319.mp3",
       "sec": 3.74,
-      "scene": "coach-brains-room",
+      "scene": "vivekas-room",
       "from_v6": 39
     },
     {
       "n": 45,
       "speaker": "NARATOR",
-      "text": "Coach Brain kaže.",
-      "audio": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/drama_v6/40-NARATOR-5b54ac.mp3",
-      "sec": 2.16,
-      "scene": "coach-brains-room",
-      "from_v6": 40
+      "text": "Viveka kaže.",
+      "audio": "",
+      "sec": 0,
+      "scene": "vivekas-room",
+      "from_v6": 40,
+      "awaiting": "Gabrijela"
     },
     {
       "n": 46,
-      "speaker": "COACH BRAIN",
+      "speaker": "VIVEKA",
       "text": "Probaj sada.",
       "audio": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/drama_hr_cb/c2e8ab3e95319a06.mp3",
       "sec": 1.2,
-      "scene": "coach-brains-room",
+      "scene": "vivekas-room",
       "from_v6": 41,
       "voice": "michal"
     },
@@ -5282,7 +5285,7 @@
       "text": "Manan kaže.",
       "audio": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/drama_v6/42-NARATOR-b80f0b.mp3",
       "sec": 1.92,
-      "scene": "coach-brains-room",
+      "scene": "vivekas-room",
       "from_v6": 42
     },
     {
@@ -5291,25 +5294,26 @@
       "text": "To si bio ti. Nikada to nije ni bila moja ruka.",
       "audio": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/drama_v6/43-MANAN-fadc2c.mp3",
       "sec": 4.32,
-      "scene": "coach-brains-room",
+      "scene": "vivekas-room",
       "from_v6": 43
     },
     {
       "n": 49,
       "speaker": "NARATOR",
-      "text": "Coach Brain kaže.",
-      "audio": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/drama_v6/44-NARATOR-5b54ac.mp3",
-      "sec": 2.16,
-      "scene": "coach-brains-room",
-      "from_v6": 44
+      "text": "Viveka kaže.",
+      "audio": "",
+      "sec": 0,
+      "scene": "vivekas-room",
+      "from_v6": 44,
+      "awaiting": "Gabrijela"
     },
     {
       "n": 50,
-      "speaker": "COACH BRAIN",
+      "speaker": "VIVEKA",
       "text": "Ruka je uvijek tvoja. Dopuštenje je moje.",
       "audio": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/drama_hr_cb/ac3f17188b674795.mp3",
       "sec": 3.17,
-      "scene": "coach-brains-room",
+      "scene": "vivekas-room",
       "from_v6": 45,
       "voice": "michal"
     },
@@ -5343,15 +5347,16 @@
     {
       "n": 54,
       "speaker": "NARATOR",
-      "text": "Coach Brain odgovara na bijeloj ploči crnim markerom. Isti raspored, ista tri retka, isti mjerač, i svaka vrijednost obrnuta.",
-      "audio": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/drama_v6/51-NARATOR-f77a87.mp3",
-      "sec": 10.13,
+      "text": "Viveka odgovara na bijeloj ploči crnim markerom. Isti raspored, ista tri retka, isti mjerač, i svaka vrijednost obrnuta.",
+      "audio": "",
+      "sec": 0,
       "scene": "the-boards",
-      "from_v6": 51
+      "from_v6": 51,
+      "awaiting": "Gabrijela"
     },
     {
       "n": 55,
-      "speaker": "COACH BRAIN",
+      "speaker": "VIVEKA",
       "text": "Puls, dah, temperatura, voda, udaljenost. Čitam sve to, cijelo vrijeme. I postavljam jedno pitanje: možemo li nastaviti sigurno?",
       "audio": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/drama_hr_cb/c16ddda3572e3943.mp3",
       "sec": 9.43,
@@ -5361,7 +5366,7 @@
     },
     {
       "n": 56,
-      "speaker": "COACH BRAIN",
+      "speaker": "VIVEKA",
       "text": "Kad odgovor počne izgledati kao ne, usporim te. Dakle ne. Umor je u mozgu, a ne u tvojim nogama. Ovdje gore. I odlučuje mnogo prije nego što je išta stvarno u opasnosti.",
       "audio": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/drama_hr_cb/7408881ff46ba230.mp3",
       "sec": 11.52,
@@ -5371,7 +5376,7 @@
     },
     {
       "n": 57,
-      "speaker": "COACH BRAIN",
+      "speaker": "VIVEKA",
       "text": "Kad te ja zaustavim, gorivo je još uvijek tu.",
       "audio": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/drama_hr_cb/01ae2dd723f0f784.mp3",
       "sec": 2.86,
@@ -5400,15 +5405,16 @@
     {
       "n": 60,
       "speaker": "NARATOR",
-      "text": "Coach Brain kaže.",
-      "audio": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/drama_v6/60-NARATOR-5b54ac.mp3",
-      "sec": 2.16,
+      "text": "Viveka kaže.",
+      "audio": "",
+      "sec": 0,
       "scene": "the-boards",
-      "from_v6": 60
+      "from_v6": 60,
+      "awaiting": "Gabrijela"
     },
     {
       "n": 61,
-      "speaker": "COACH BRAIN",
+      "speaker": "VIVEKA",
       "text": "Je broj koji sam ja odabrao. Pažljivo. Da te održim na životu.",
       "audio": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/drama_hr_cb/72a93073ca9df2f8.mp3",
       "sec": 4.54,
@@ -5446,11 +5452,12 @@
     {
       "n": 65,
       "speaker": "NARATOR",
-      "text": "Coach Brain ga pušta, i on pada kroz prazan kadar. Okreće se i raste dok dolazi, a iza njega se cijeli film vrti unatrag, tako blijedo da ga gotovo nema. Ploče, soba, kuća, i drvored dok slijeće. Sjećanja su razvučena u smjeru pada jer prolaze brzinom, ali još uvijek možeš razabrati što je svako od njih ako pogledaš. Ključ ostaje oštar, jer kamera pada s njim, i ta razlika je ono što čini da pad djeluje brzo.",
-      "audio": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/drama_v6/65-NARATOR-88eae1.mp3",
-      "sec": 30.7,
+      "text": "Viveka ga pušta, i on pada kroz prazan kadar. Okreće se i raste dok dolazi, a iza njega se cijeli film vrti unatrag, tako blijedo da ga gotovo nema. Ploče, soba, kuća, i drvored dok slijeće. Sjećanja su razvučena u smjeru pada jer prolaze brzinom, ali još uvijek možeš razabrati što je svako od njih ako pogledaš. Ključ ostaje oštar, jer kamera pada s njim, i ta razlika je ono što čini da pad djeluje brzo.",
+      "audio": "",
+      "sec": 0,
       "scene": "the-fall",
-      "from_v6": 65
+      "from_v6": 65,
+      "awaiting": "Gabrijela"
     },
     {
       "n": 66,
@@ -5563,30 +5570,30 @@
       "url": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/drama_v7_scenes/06-the-house.mp3"
     },
     {
-      "id": "coach-brains-room",
-      "title": "Soba Coach Braina",
-      "file": "07-coach-brains-room.mp3",
-      "sec": 43.39,
-      "parts": 16,
-      "silent": 0,
-      "url": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/drama_v7_scenes/07-coach-brains-room.mp3"
+      "id": "vivekas-room",
+      "title": "Vivekina soba",
+      "file": "07-vivekas-room.mp3",
+      "sec": 34.75,
+      "parts": 12,
+      "silent": 4,
+      "url": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/drama_v7_scenes/07-vivekas-room.mp3"
     },
     {
       "id": "the-boards",
       "title": "Ploče",
       "file": "08-the-boards.mp3",
-      "sec": 80.45,
-      "parts": 13,
-      "silent": 0,
+      "sec": 68.16,
+      "parts": 11,
+      "silent": 2,
       "url": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/drama_v7_scenes/08-the-boards.mp3"
     },
     {
       "id": "the-fall",
       "title": "Zaključak i pad",
       "file": "09-the-fall.mp3",
-      "sec": 48.29,
-      "parts": 4,
-      "silent": 0,
+      "sec": 17.59,
+      "parts": 3,
+      "silent": 1,
       "url": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/drama_v7_scenes/09-the-fall.mp3"
     },
     {
@@ -5910,7 +5917,7 @@
       "n": 35,
       "speaker": "NARRATOR",
       "text": "Inside, a small brain in a chair in front of a wall of dials. And he has been expecting him.",
-      "scene": "coach-brains-room",
+      "scene": "vivekas-room",
       "voice": "beatrice_32",
       "sec": 6.84,
       "file": "4d3b1c8c269de121.mp3"
@@ -5918,26 +5925,26 @@
     {
       "n": 36,
       "speaker": "NARRATOR",
-      "text": "Coach Brain says.",
-      "scene": "coach-brains-room",
+      "text": "Viveka says.",
+      "scene": "vivekas-room",
       "voice": "beatrice_32",
-      "sec": 1.44,
-      "file": "565cdd76b7b84592.mp3"
+      "sec": 1.2,
+      "file": "aac4a0607eea2e23.mp3"
     },
     {
       "n": 37,
-      "speaker": "COACH BRAIN",
+      "speaker": "VIVEKA",
       "text": "Ah. There you are. I was expecting you.",
-      "scene": "coach-brains-room",
+      "scene": "vivekas-room",
       "voice": "hugh_32",
       "sec": 3.22,
       "file": "0412f9bbf6c2dcc1.mp3"
     },
     {
       "n": 38,
-      "speaker": "COACH BRAIN",
+      "speaker": "VIVEKA",
       "text": "Before we begin. Raise my right arm.",
-      "scene": "coach-brains-room",
+      "scene": "vivekas-room",
       "voice": "hugh_32",
       "sec": 2.93,
       "file": "6a9651d224d9eb26.mp3"
@@ -5946,7 +5953,7 @@
       "n": 39,
       "speaker": "NARRATOR",
       "text": "Manan says.",
-      "scene": "coach-brains-room",
+      "scene": "vivekas-room",
       "voice": "beatrice_32",
       "sec": 1.01,
       "file": "08c83a736c7a2504.mp3"
@@ -5955,7 +5962,7 @@
       "n": 40,
       "speaker": "MANAN",
       "text": "I am trying.",
-      "scene": "coach-brains-room",
+      "scene": "vivekas-room",
       "voice": "edmund_32",
       "sec": 1.3,
       "file": "2f768dd77e9e5e62.mp3"
@@ -5963,17 +5970,17 @@
     {
       "n": 41,
       "speaker": "NARRATOR",
-      "text": "Coach Brain says.",
-      "scene": "coach-brains-room",
+      "text": "Viveka says.",
+      "scene": "vivekas-room",
       "voice": "beatrice_32",
-      "sec": 1.44,
-      "file": "565cdd76b7b84592.mp3"
+      "sec": 1.2,
+      "file": "aac4a0607eea2e23.mp3"
     },
     {
       "n": 42,
-      "speaker": "COACH BRAIN",
+      "speaker": "VIVEKA",
       "text": "I know.",
-      "scene": "coach-brains-room",
+      "scene": "vivekas-room",
       "voice": "hugh_32",
       "sec": 0.91,
       "file": "39f8adbd37695d89.mp3"
@@ -5982,7 +5989,7 @@
       "n": 43,
       "speaker": "NARRATOR",
       "text": "Manan says.",
-      "scene": "coach-brains-room",
+      "scene": "vivekas-room",
       "voice": "beatrice_32",
       "sec": 1.01,
       "file": "08c83a736c7a2504.mp3"
@@ -5991,7 +5998,7 @@
       "n": 44,
       "speaker": "MANAN",
       "text": "I can't. Why can't I move it?",
-      "scene": "coach-brains-room",
+      "scene": "vivekas-room",
       "voice": "edmund_32",
       "sec": 2.45,
       "file": "22a80df03aaacf55.mp3"
@@ -5999,17 +6006,17 @@
     {
       "n": 45,
       "speaker": "NARRATOR",
-      "text": "Coach Brain says.",
-      "scene": "coach-brains-room",
+      "text": "Viveka says.",
+      "scene": "vivekas-room",
       "voice": "beatrice_32",
-      "sec": 1.44,
-      "file": "565cdd76b7b84592.mp3"
+      "sec": 1.2,
+      "file": "aac4a0607eea2e23.mp3"
     },
     {
       "n": 46,
-      "speaker": "COACH BRAIN",
+      "speaker": "VIVEKA",
       "text": "Try now.",
-      "scene": "coach-brains-room",
+      "scene": "vivekas-room",
       "voice": "hugh_32",
       "sec": 0.79,
       "file": "4aae06bea9ca7e51.mp3"
@@ -6018,7 +6025,7 @@
       "n": 47,
       "speaker": "NARRATOR",
       "text": "Manan says.",
-      "scene": "coach-brains-room",
+      "scene": "vivekas-room",
       "voice": "beatrice_32",
       "sec": 1.01,
       "file": "08c83a736c7a2504.mp3"
@@ -6027,7 +6034,7 @@
       "n": 48,
       "speaker": "MANAN",
       "text": "That was you. It was never my arm at all.",
-      "scene": "coach-brains-room",
+      "scene": "vivekas-room",
       "voice": "edmund_32",
       "sec": 3.26,
       "file": "08efa45b8cc428ba.mp3"
@@ -6035,17 +6042,17 @@
     {
       "n": 49,
       "speaker": "NARRATOR",
-      "text": "Coach Brain says.",
-      "scene": "coach-brains-room",
+      "text": "Viveka says.",
+      "scene": "vivekas-room",
       "voice": "beatrice_32",
-      "sec": 1.44,
-      "file": "565cdd76b7b84592.mp3"
+      "sec": 1.2,
+      "file": "aac4a0607eea2e23.mp3"
     },
     {
       "n": 50,
-      "speaker": "COACH BRAIN",
+      "speaker": "VIVEKA",
       "text": "The arm is always yours. The permission is mine.",
-      "scene": "coach-brains-room",
+      "scene": "vivekas-room",
       "voice": "hugh_32",
       "sec": 4.2,
       "file": "062f4f361403235c.mp3"
@@ -6080,15 +6087,15 @@
     {
       "n": 54,
       "speaker": "NARRATOR",
-      "text": "Coach Brain answers on the white board in black marker. The same layout, the same three lines, the same gauge, and every value reversed.",
+      "text": "Viveka answers on the white board in black marker. The same layout, the same three lines, the same gauge, and every value reversed.",
       "scene": "the-boards",
       "voice": "beatrice_32",
-      "sec": 10.01,
-      "file": "409ba9c831d9cd18.mp3"
+      "sec": 10.51,
+      "file": "955070f414cb1aa6.mp3"
     },
     {
       "n": 55,
-      "speaker": "COACH BRAIN",
+      "speaker": "VIVEKA",
       "text": "Pulse, breath, temperature, water, distance. I read all of it, the whole time. And I ask one question: can we carry on safely?",
       "scene": "the-boards",
       "voice": "hugh_32",
@@ -6097,7 +6104,7 @@
     },
     {
       "n": 56,
-      "speaker": "COACH BRAIN",
+      "speaker": "VIVEKA",
       "text": "When the answer starts to look like no, I slow you down. So, no. Fatigue is in the brain, not in your legs. Up here. And it decides long before anything is actually in danger.",
       "scene": "the-boards",
       "voice": "hugh_32",
@@ -6106,7 +6113,7 @@
     },
     {
       "n": 57,
-      "speaker": "COACH BRAIN",
+      "speaker": "VIVEKA",
       "text": "When I stop you, the fuel is still there.",
       "scene": "the-boards",
       "voice": "hugh_32",
@@ -6134,15 +6141,15 @@
     {
       "n": 60,
       "speaker": "NARRATOR",
-      "text": "Coach Brain says.",
+      "text": "Viveka says.",
       "scene": "the-boards",
       "voice": "beatrice_32",
-      "sec": 1.44,
-      "file": "565cdd76b7b84592.mp3"
+      "sec": 1.2,
+      "file": "aac4a0607eea2e23.mp3"
     },
     {
       "n": 61,
-      "speaker": "COACH BRAIN",
+      "speaker": "VIVEKA",
       "text": "Is a number I chose. Carefully. To keep you alive.",
       "scene": "the-boards",
       "voice": "hugh_32",
@@ -6179,11 +6186,11 @@
     {
       "n": 65,
       "speaker": "NARRATOR",
-      "text": "Coach Brain lets it go, and it falls through an empty frame. It turns and grows as it comes, and behind it the whole film runs backwards, so faint it is almost not there. The boards, the room, the house, and the avenue of trees as it lands. The memories are stretched in the direction of the fall because they are passing at speed, but you can still make out what each one is if you look. The key stays sharp, because the camera is falling with it, and that difference is what makes the fall feel fast.",
+      "text": "Viveka lets it go, and it falls through an empty frame. It turns and grows as it comes, and behind it the whole film runs backwards, so faint it is almost not there. The boards, the room, the house, and the avenue of trees as it lands. The memories are stretched in the direction of the fall because they are passing at speed, but you can still make out what each one is if you look. The key stays sharp, because the camera is falling with it, and that difference is what makes the fall feel fast.",
       "scene": "the-fall",
       "voice": "beatrice_32",
-      "sec": 27.79,
-      "file": "1b8ee19e86dc0741.mp3"
+      "sec": 27.24,
+      "file": "e0def603a8815d1a.mp3"
     },
     {
       "n": 66,
@@ -6296,19 +6303,19 @@
       "url": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/drama_en_scenes/06-the-house.mp3"
     },
     {
-      "id": "coach-brains-room",
-      "title": "Coach Brain's room",
-      "file": "07-coach-brains-room.mp3",
-      "sec": 34.68,
+      "id": "vivekas-room",
+      "title": "Viveka's room",
+      "file": "07-vivekas-room.mp3",
+      "sec": 33.72,
       "parts": 16,
       "silent": 0,
-      "url": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/drama_en_scenes/07-coach-brains-room.mp3"
+      "url": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/drama_en_scenes/07-vivekas-room.mp3"
     },
     {
       "id": "the-boards",
       "title": "The boards",
       "file": "08-the-boards.mp3",
-      "sec": 74.11,
+      "sec": 74.38,
       "parts": 13,
       "silent": 0,
       "url": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/drama_en_scenes/08-the-boards.mp3"
@@ -6317,7 +6324,7 @@
       "id": "the-fall",
       "title": "The conclusion and the fall",
       "file": "09-the-fall.mp3",
-      "sec": 43.92,
+      "sec": 43.37,
       "parts": 4,
       "silent": 0,
       "url": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/drama_en_scenes/09-the-fall.mp3"
@@ -6412,39 +6419,39 @@
     },
     {
       "anchor": "19-1",
-      "label": "Coach Brain's room",
-      "sec": 56.74,
+      "label": "Viveka's room",
+      "sec": 55.51,
       "voices": [
         "edmund_32",
         "hugh_32",
         "imogen_32"
       ],
       "parts": 10,
-      "text": "Inside, a small brain in a chair in front of a wall of dials, and he has been waiting. Screen direction is fixed here and never crosses: Coach Brain on the left looking right, Manan on the right looking left. Play him as an official who is neither villain nor friend. Patient, faintly amused, completely certain he is in the right. Ah. There you are. I was expecting you. Direction. Then he asks for something impossible, and the whole idea of the film gets done as a party trick instead of a lecture. The boy's arm must genuinely not move. Animate the effort, not the failure. Before we begin. Raise my right arm. I am trying. I know. I can't. Why can't I move it? Try now. That was you. It was never my arm at all. The arm is always yours. The permission is mine.",
+      "text": "Inside, a small brain in a chair in front of a wall of dials, and he has been waiting. Screen direction is fixed here and never crosses: Viveka on the left looking right, Manan on the right looking left. Play him as an official who is neither villain nor friend. Patient, faintly amused, completely certain he is in the right. Ah. There you are. I was expecting you. Direction. Then he asks for something impossible, and the whole idea of the film gets done as a party trick instead of a lecture. The boy's arm must genuinely not move. Animate the effort, not the failure. Before we begin. Raise my right arm. I am trying. I know. I can't. Why can't I move it? Try now. That was you. It was never my arm at all. The arm is always yours. The permission is mine.",
       "url": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/guide/clip-19-A1-ENTER-v1.mp3"
     },
     {
       "anchor": "10-0-A-v2",
       "label": "The boards",
-      "sec": 107.21,
+      "sec": 107.28,
       "voices": [
         "edmund_32",
         "hugh_32",
         "imogen_32"
       ],
       "parts": 15,
-      "text": "The boards, and this is where the argument lands. NEITHER BOARD ARRIVES FINISHED. Draw them being written, line by line, and do not cut to a completed diagram. Manan writes the old theory in white chalk on black. You run. The muscle uses up its oxygen. The fuel is spent. And when the tank reads empty, the body stops. Direction. Coach Brain answers on white with black marker: the same layout, the same three lines, the same gauge, every value reversed. Let the second board land as a REPLY, not as another diagram. Pulse, breath, temperature, water, sugar. I read all of it, the whole time. That is what every one of those panels you walked past is for. And I ask one question with it. Can we carry on safely? When the answer starts to look like no, I slow you down. Not because anything has run out. Because of where it is heading. Heading. I do not wait for the tank to empty. I watch how fast it is emptying, and I stop you while there is still enough left to get you home. So no. Fatigue is in the brain, not in your legs. Up here. And it decides long before anything is actually in danger. When I stop you, the fuel is still there. Direction. And now the corridor pays off. He answers from the rooms he walked through, so cut him wide enough that we remember he has been somewhere. It was. I saw it. The sugar cellar was full. The fat store was barely touched. The fibres were not torn. No. They never are. So the wall... Is a number I chose. Carefully. To keep you alive. Then it can be a different number.",
+      "text": "The boards, and this is where the argument lands. NEITHER BOARD ARRIVES FINISHED. Draw them being written, line by line, and do not cut to a completed diagram. Manan writes the old theory in white chalk on black. You run. The muscle uses up its oxygen. The fuel is spent. And when the tank reads empty, the body stops. Direction. Viveka answers on white with black marker: the same layout, the same three lines, the same gauge, every value reversed. Let the second board land as a REPLY, not as another diagram. Pulse, breath, temperature, water, sugar. I read all of it, the whole time. That is what every one of those panels you walked past is for. And I ask one question with it. Can we carry on safely? When the answer starts to look like no, I slow you down. Not because anything has run out. Because of where it is heading. Heading. I do not wait for the tank to empty. I watch how fast it is emptying, and I stop you while there is still enough left to get you home. So no. Fatigue is in the brain, not in your legs. Up here. And it decides long before anything is actually in danger. When I stop you, the fuel is still there. Direction. And now the corridor pays off. He answers from the rooms he walked through, so cut him wide enough that we remember he has been somewhere. It was. I saw it. The sugar cellar was full. The fat store was barely touched. The fibres were not torn. No. They never are. So the wall... Is a number I chose. Carefully. To keep you alive. Then it can be a different number.",
       "url": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/guide/clip-10-0-A-v2.mp3"
     },
     {
       "anchor": "12-0-CONCLUSION-PLACEHOLDER",
       "label": "The conclusion",
-      "sec": 19.34,
+      "sec": 19.73,
       "voices": [
         "imogen_32"
       ],
       "parts": 1,
-      "text": "The conclusion and the goodbye. Keep it a conversation and not a banner. Nobody wins. The boy is not given the answer, he arrives at it himself and Coach Brain lets him. Quiet, warm, and short. This section is still one frame and it is waiting on a decision, so do not build on it yet.",
+      "text": "The conclusion and the goodbye. Keep it a conversation and not a banner. Nobody wins. The boy is not given the answer, he arrives at it himself and Viveka lets him. Quiet, warm, and short. This section is still one frame and it is waiting on a decision, so do not build on it yet.",
       "url": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/guide/clip-12-0-CONCLUSION-PLACEHOLDER.mp3"
     },
     {
@@ -6461,12 +6468,12 @@
     {
       "anchor": "15-2-A-v3",
       "label": "He catches it",
-      "sec": 23.52,
+      "sec": 24.29,
       "voices": [
         "imogen_32"
       ],
       "parts": 1,
-      "text": "He catches it. On the way down the key crosses from a pencil drawing into a photograph, and NO SINGLE FRAME is the moment it becomes real; spread it across the fall. Coach Brain's hand and Manan's are never on screen together, on purpose, so nothing has to be composited and no lighting has to match. The key is the only gold in the film. Everything it lands in should be still.",
+      "text": "He catches it. On the way down the key crosses from a pencil drawing into a photograph, and NO SINGLE FRAME is the moment it becomes real; spread it across the fall. Viveka's hand and Manan's are never on screen together, on purpose, so nothing has to be composited and no lighting has to match. The key is the only gold in the film. Everything it lands in should be still.",
       "url": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/guide/clip-15-2-A-v3.mp3"
     },
     {
