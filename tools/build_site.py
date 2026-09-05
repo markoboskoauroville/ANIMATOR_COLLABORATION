@@ -1299,6 +1299,11 @@ def bar(here, r):
          # hand somebody first.
          '<a href="%sradiodrama.html"%s>MUSIC</a>'
          % (r, ' class=on' if here == 'drama' else ''),
+         # 4.9.2026: the sheets are what an animator opens BEFORE drawing
+         # anything, and they were scattered across scene folders with
+         # storyboard=hide, reachable only by knowing they existed.
+         '<a href="%ssheets.html"%s>SHEETS</a>'
+         % (r, ' class=on' if here == 'sheets' else ''),
          '<a href="%sarchive.html"%s>ARCHIVE</a>' % (r, ' class=on' if here == 'archive' else ''),
          '<span class=sp></span>',
          ('<span class=vb>%s</span>' % VERSION) if VERSION else '',
@@ -2900,6 +2905,70 @@ for _i, e in enumerate(_cards):
 
     open(os.path.join(ROOT, 'card', b + '.html'), 'w').write(
         page(b, ''.join(cd), here='home', depth=1))
+
+# ---------------------------------------------------------------------------
+# THE SHEETS PAGE. Baba, 4.9.2026: characters and props, in one place, at the
+# top of the site.
+#
+# A sheet is what somebody opens BEFORE drawing anything: the turnaround that
+# says what a character looks like from three sides, the prop sheet that says
+# what an object does when it turns. They were scattered across scene folders
+# with storyboard=hide, which kept them off the storyboard correctly and also
+# made them unfindable unless you already knew they existed.
+#
+# Live sheets first, retired ones after, because a retired sheet is still the
+# reason a design looks the way it does and deleting it loses the argument.
+_SHEETS = [
+    ('CHARACTERS', [
+        ('19-CHARACTER.png', 'Viveka, front, three quarter and profile'),
+        ('19-PORTRAIT.png', 'Viveka, the portrait'),
+        ('19-CHARACTER-KEY.png', 'Viveka wears the key'),
+        ('CHARACTER_SHEET_RUNNER-v1.jpg', 'The marathon runner'),
+        ('CHARACTER_SHEET_RUNNER_FACE-v2.png', 'The runner, the face'),
+    ]),
+    ('PROPS', [
+        ('KEY-SHEET-ANGLES.png', 'The key, twelve angles'),
+        ('KEY-SHEET-TUMBLE.png', 'The key, nine steps of a tumble'),
+        ('OBJECT_SHEET_KEY-v2.png', 'The key, the first study'),
+        ('OBJECT_SHEET_DESK-v3.png', 'The desk'),
+        ('OBJECT_SHEET_WALL-v2.png', 'The wall'),
+    ]),
+    ('RETIRED, AND KEPT', [
+        ('7-DOORSHEET-20260904.png', 'The door, closed, half, open'),
+        ('CHARACTER_SHEET_COACH_BRAIN-v4.png', 'Coach Brain, before he was a man'),
+        ('19-CHARACTER-nokey-20260904.png', 'Viveka before he wore the key'),
+        ('OBJECT_SHEET_CHAIR-v1.png', 'The chair'),
+    ]),
+]
+
+
+def sheets_page():
+    o = ['<h1>Characters and props</h1>',
+         '<p class=lede>The turnarounds and the object studies, which is what you open BEFORE '
+         'drawing anything. <b>A sheet says what a thing looks like from every side, so nobody '
+         'has to guess twice.</b> Live sheets first; retired ones are kept underneath, because a '
+         'retired sheet is still the reason a design looks the way it does.</p>']
+    for title, items in _SHEETS:
+        rows = []
+        for f, what in items:
+            b = f.rsplit('.', 1)[0].replace(' ', '_')
+            if not os.path.exists(os.path.join(ROOT, 'mid', b + '.jpg')):
+                continue
+            card = 'card/%s.html' % b
+            href = card if os.path.exists(os.path.join(ROOT, card)) else (
+                (ORIGINALS.get(f) or {}).get('url', '#'))
+            rows.append('<div class=f><a href="%s"><img src="tiny/%s.jpg" alt="" loading=lazy>'
+                        '</a><div class=n>%s</div></div>' % (href, b, html.escape(what)))
+        if rows:
+            o.append('<div class=rtph><span class=n>&#9679;</span><h3>%s</h3>'
+                     '<span class=st>%d sheets</span></div>' % (title, len(rows)))
+            o.append('<div class=tiny>' + ''.join(rows) + '</div>')
+    return ''.join(o)
+
+
+open(os.path.join(ROOT, 'sheets.html'), 'w').write(
+    page('Characters and props', sheets_page(), here='sheets', depth=0))
+
 print('  %d card pages, %d on the storyboard walk' % (len(_cards), len(_order)))
 
 # ------------------------------------------------- sweep this build's own litter
