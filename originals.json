@@ -1564,5 +1564,29 @@
     "sha256": "f76e51041b4347083460ddd5fc8dc7b050aedd284b2429aabc71cc69614feacb",
     "path": "BB_C_9R/FILMSTRIP-PLATE.png",
     "url": "https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIGINALS/main/BB_C_9R/FILMSTRIP-PLATE.png"
+  },
+  "9R-0-WHITE.png": {
+    "bytes": 369407,
+    "sha256": "a63a6326eaf6f77857e6e8af9fa687582d4d2314644c91fd76a4b567750731a1",
+    "path": "BB_C_9R/9R-0-WHITE.png",
+    "url": "https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIGINALS/main/BB_C_9R/9R-0-WHITE.png"
+  },
+  "9R-1-VORTEX-DOWN.png": {
+    "bytes": 2875690,
+    "sha256": "e05018ce161ee8afa26cf53ce42817daa414f4f2c21c144d655a778180405669",
+    "path": "BB_C_9R/9R-1-VORTEX-DOWN.png",
+    "url": "https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIGINALS/main/BB_C_9R/9R-1-VORTEX-DOWN.png"
+  },
+  "9R-2-FALLING.png": {
+    "bytes": 4938800,
+    "sha256": "2d099f852a3b299840b2c918e682b5815867b42635cdde4efa05c5ba42ec0b9e",
+    "path": "BB_C_9R/9R-2-FALLING.png",
+    "url": "https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIGINALS/main/BB_C_9R/9R-2-FALLING.png"
+  },
+  "9R-3-WHITE.png": {
+    "bytes": 369407,
+    "sha256": "a63a6326eaf6f77857e6e8af9fa687582d4d2314644c91fd76a4b567750731a1",
+    "path": "BB_C_9R/9R-3-WHITE.png",
+    "url": "https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIGINALS/main/BB_C_9R/9R-3-WHITE.png"
   }
 }
