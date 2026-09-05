@@ -3832,7 +3832,7 @@
     }
   ],
   "event": "Breakthrough Junior Challenge 2026",
-  "site_version": 243,
+  "site_version": 244,
   "footage": [
     {
       "name": "Key catch",
@@ -6693,5 +6693,32 @@
       "text": "The lift cannot go past the chest, so the neck is climbed. Seven cervical vertebrae, anatomically correct, nothing built on them, and the gaps between the transverse processes are the only handholds. This is the only effort in the whole journey and it lands immediately below the door of the man who decides what he is allowed to do. Then three frames on that door and TWO OF THEM ARE THE SAME PICTURE. Closed. Open, by itself, with the light behind it so bright it blooms past the edges and eats the arch away, and he does not touch it. Then closed again, exactly the frame it opened from. Hold each of the three; the repeat is the point and a variation would spoil it.",
       "url": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/guide/clip-7-3.mp3"
     }
-  ]
+  ],
+  "sound": {
+    "about": "Scratch track sources for sound design, from myNoise. Every entry has been LISTENED TO before it was put here: a name that sounds right and turns out wrong is worse than an empty list. Click through, play, and take what fits. These are for a SCRATCH TRACK, for learning the shape of the film and cutting to it. myNoise soundscapes are licensed for personal listening, so nothing here ships in a published film without asking Stephane Pigeon first.",
+    "phases": {},
+    "keywords": [],
+    "sources": [
+      {
+        "name": "myNoise, the full index",
+        "url": "https://mynoise.net/noiseMachines.php",
+        "note": "Every generator, searchable by keyword. The place to start."
+      },
+      {
+        "name": "Morning Forest",
+        "url": "https://mynoise.net/NoiseMachines/belgianForestSoundscapeGenerator.php",
+        "note": "Background wind, distant creek, forest stream, morning howls. Presets include Morning Veil and Quietude."
+      },
+      {
+        "name": "Woodland Echoes",
+        "url": "https://mynoise.net/NoiseMachines/northAmericaForestSoundscape.php",
+        "note": "Forest lake, rainy forest, WINDY FOREST, woodland stream."
+      },
+      {
+        "name": "Between Land and Sea",
+        "url": "https://mynoise.net/NoiseMachines/betweenLandSeaRelaxingSoundscape.php",
+        "note": "Coastal winds, singing trees, eucalyptus forest, garden meditation."
+      }
+    ]
+  }
 }

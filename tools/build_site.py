@@ -1304,6 +1304,8 @@ def bar(here, r):
          # storyboard=hide, reachable only by knowing they existed.
          '<a href="%ssheets.html"%s>SHEETS</a>'
          % (r, ' class=on' if here == 'sheets' else ''),
+         '<a href="%ssound.html"%s>SOUND</a>'
+         % (r, ' class=on' if here == 'sound' else ''),
          '<a href="%sarchive.html"%s>ARCHIVE</a>' % (r, ' class=on' if here == 'archive' else ''),
          '<span class=sp></span>',
          ('<span class=vb>%s</span>' % VERSION) if VERSION else '',
@@ -2968,6 +2970,72 @@ def sheets_page():
 
 open(os.path.join(ROOT, 'sheets.html'), 'w').write(
     page('Characters and props', sheets_page(), here='sheets', depth=0))
+
+
+# ---------------------------------------------------------------------------
+# THE SOUND PAGE. Baba, 5.9.2026: the scratch track lives on the site, so the
+# sound choices are one click away instead of a list in a chat.
+#
+# DATA FIRST. Entries live in catalog.json under 'sound' and this page is
+# generated from them, the same as everything else here. Claude Code adds what
+# he has listened to; he never edits HTML.
+#
+# EVERY ENTRY HAS BEEN HEARD. A generator whose name sounds right and turns out
+# wrong is worse than an empty list, because somebody trusts it and cuts to it.
+SOUND = CAT.get('sound', {})
+
+
+def sound_page():
+    o = ['<h1>Sound</h1>',
+         '<p class=lede>%s</p>' % html.escape(SOUND.get('about', ''))]
+    ph = SOUND.get('phases') or {}
+    if ph:
+        for n in sorted(ph, key=lambda x: (len(x), x)):
+            items = ph[n]
+            title = next((e.get('title', '') for e in ENTRIES
+                          if e.get('kind') == 'flow' and str(e.get('n')) == str(n)), '')
+            o.append('<div class=rtph><span class=n>%s</span><h3>%s</h3>'
+                     '<span class=st>%d sounds</span></div>' % (n, html.escape(title), len(items)))
+            o.append('<div class=lay>')
+            for it in items:
+                o.append('<div class=l><div class=n><span>'
+                         '<a href="%s" target=_blank rel=noopener>%s</a>%s</span>'
+                         '<span class=t>%s</span></div></div>'
+                         % (it.get('url', '#'), html.escape(it.get('name', '')),
+                            (' &middot; ' + html.escape(it['preset'])) if it.get('preset') else '',
+                            html.escape(it.get('why', ''))))
+            o.append('</div>')
+    else:
+        o.append('<div class=srcbox><div class=t><b>Nothing chosen yet</b></div>'
+                 '<p>The listening pass has not been done. Sounds appear here one phase at a time, '
+                 'each one played before it is listed.</p></div>')
+    kw = SOUND.get('keywords') or []
+    if kw:
+        o.append('<div class=rtph><span class=n>&#9679;</span><h3>NOT AN AI, THE COMBINATIONS THAT '
+                 'WORKED</h3><span class=st>%d</span></div>' % len(kw))
+        o.append('<div class=lay>')
+        for k in kw:
+            o.append('<div class=l><div class=n><span>%s</span><span class=t>%s</span></div></div>'
+                     % (html.escape(' &middot; '.join(k.get('words', []))),
+                        html.escape(k.get('why', ''))))
+        o.append('</div>')
+    src = SOUND.get('sources') or []
+    if src:
+        o.append('<div class=rtph><span class=n>&#9679;</span><h3>WHERE THESE COME FROM</h3>'
+                 '<span class=st>%d</span></div>' % len(src))
+        o.append('<div class=lay>')
+        for sname in src:
+            o.append('<div class=l><div class=n><span>'
+                     '<a href="%s" target=_blank rel=noopener>%s</a></span>'
+                     '<span class=t>%s</span></div></div>'
+                     % (sname.get('url', '#'), html.escape(sname.get('name', '')),
+                        html.escape(sname.get('note', ''))))
+        o.append('</div>')
+    return ''.join(o)
+
+
+open(os.path.join(ROOT, 'sound.html'), 'w').write(
+    page('Sound', sound_page(), here='sound', depth=0))
 
 print('  %d card pages, %d on the storyboard walk' % (len(_cards), len(_order)))
 
