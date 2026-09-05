@@ -3705,10 +3705,82 @@
       "date": "2026-09-04",
       "storyboard": "hide",
       "note": "HE DOES NOT HAND IT OVER, HE DROPS IT. The hand comes in from the left, the fingers just opening, the key already tipping out of true so it reads as falling rather than hanging. YOU KNOW WHOSE HAND IT IS WITHOUT A FACE: a real amount of the star cloak is in frame, and the old version showed a piece of tracksuit. NOTHING TRAILS FROM THE HAND. An earlier version had a loose cord and it pulled the eye somewhere that meant nothing; nothing in this film is corded or strung. Behind everything is empty white, because the wall of memories is built up separately."
+    },
+    {
+      "file": "BB_C_15/KEY-FALL-1.png",
+      "kind": "keyframe",
+      "scene": "15",
+      "shot": "15.93",
+      "title": "Falling, bow high",
+      "status": "accepted",
+      "date": "2026-09-04",
+      "note": "FALLING, PHASE ONE. Tipped away from us with the bow high and the bit swinging up, foreshortened so the bow is an oval, turning clockwise. ON PURE WHITE and nothing else, because the wall of memories is built up separately in the compositor and this frame is only the key. GOLD: the world is graphite and this is the only gold in the film."
+    },
+    {
+      "file": "BB_C_15/KEY-FALL-2.png",
+      "kind": "keyframe",
+      "scene": "15",
+      "shot": "15.94",
+      "title": "Falling, edge on",
+      "status": "accepted",
+      "date": "2026-09-04",
+      "note": "FALLING, PHASE TWO. Rolled right over onto its side and caught almost EDGE ON, nearly a line at a steep diagonal with the clover only just readable. This is the phase that sells the tumble, because a key that never goes edge on is a key on a turntable."
+    },
+    {
+      "file": "BB_C_15/KEY-FALL-3.png",
+      "kind": "keyframe",
+      "scene": "15",
+      "shot": "15.95",
+      "title": "Falling, bit first",
+      "status": "accepted",
+      "date": "2026-09-04",
+      "note": "FALLING, PHASE THREE. Tumbling towards us BIT FIRST, the toothed bit large and near, the bow small and far behind, steeply foreshortened down its own length. NOT ONE OF THE THREE IS UPRIGHT AND FLAT TO THE CAMERA, which is what went wrong in the first attempt: square to the lens it reads as hung, not dropped."
+    },
+    {
+      "file": "BB_C_19/19-CHARACTER-KEY.png",
+      "kind": "keyframe",
+      "scene": "19",
+      "shot": "19.97",
+      "title": "He wears the key",
+      "status": "accepted",
+      "date": "2026-09-04",
+      "note": "HE WEARS IT. On a fine plain cord at his chest, over the plain cloth under the star cloak, and it is the only colour in the frame. Reference for the character rather than a shot: this is how the key is on him from the moment Manan walks in, so the audience has seen it long before it means anything. He never touches it until the line that gives it away.",
+      "storyboard": "hide"
+    },
+    {
+      "file": "BB_C_19/19-5.png",
+      "kind": "keyframe",
+      "scene": "19",
+      "shot": "19.9",
+      "title": "The key is permission",
+      "status": "accepted",
+      "date": "2026-09-04",
+      "note": "THE FOURTH LINE ARRIVES ALONE, and it is the only line the display says that nobody speaks first: THE KEY IS PERMISSION. It comes after \"then it can be a different number\", brighter than the three above it because it has only just landed. AND HE LIFTS THE REAL ONE OFF HIS NECK on that beat. This is the frame where the figurative key and the gold one become the same object, which is the whole reason the word has been circling the scene. The key is GOLD and is the only colour in the picture.",
+      "plates": [
+        {
+          "file": "19-5-PLATE.png",
+          "label": "Empty display, no writing",
+          "note": "The identical frame with all four lines removed and nothing put in their place, the gold key still held up. Animate the four lines on one at a time; nothing else moves."
+        }
+      ],
+      "dialogue": [
+        {
+          "speaker": "VIVEKA",
+          "line": "That is the key."
+        },
+        {
+          "speaker": "MANAN",
+          "line": "The permission."
+        },
+        {
+          "speaker": "VIVEKA",
+          "line": "You will not always have me to ask."
+        }
+      ]
     }
   ],
   "event": "Breakthrough Junior Challenge 2026",
-  "site_version": 237,
+  "site_version": 238,
   "footage": [
     {
       "name": "Key catch",
