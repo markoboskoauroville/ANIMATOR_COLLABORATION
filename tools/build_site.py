@@ -516,6 +516,18 @@ h2{font-size:19px;margin:38px 0 14px;padding-bottom:7px;border-bottom:1px solid 
    nobody has to guess which part of it the voice means. No progress bar: the
    cue is short, it names itself, and a row of scrubbers down a page was
    clutter. */
+
+/* THE SOLO ROW. Baba, 5.9.2026: he wanted myNoise nested inside this page and
+   stepped through with arrows. It cannot be framed, x-frame-options is
+   SAMEORIGIN, so the links target a NAMED window instead: the first click opens
+   it, every later click reuses the same one. Second screen, same behaviour. */
+.solorow{display:flex;flex-wrap:wrap;gap:6px;align-items:center;margin:10px 0 18px}
+.sbtn{display:inline-flex;align-items:center;justify-content:center;min-width:34px;height:30px;
+ padding:0 10px;border:1px solid var(--rule);border-radius:4px;background:none;cursor:pointer;
+ font:600 10px ui-monospace,monospace;letter-spacing:.08em;color:var(--dim);text-decoration:none}
+.sbtn:hover,.sbtn.on{background:var(--brass);border-color:var(--brass);color:#17150f}
+.sbtn.nav{margin-left:8px;font-size:12px}
+.kw{margin-left:auto;font:600 10px ui-monospace,monospace;letter-spacing:.1em;color:var(--brass)}
 .tiny .gcue{flex:0 0 auto;display:flex;align-items:center;gap:8px;border:0;cursor:pointer;
  background:none;padding:0 6px 0 0;margin:0;align-self:center;max-width:150px;text-align:left}
 .tiny .gcue>svg{width:11px;height:11px;fill:#17150f;flex:0 0 26px;height:26px;width:26px;
@@ -2982,56 +2994,115 @@ open(os.path.join(ROOT, 'sheets.html'), 'w').write(
 #
 # EVERY ENTRY HAS BEEN HEARD. A generator whose name sounds right and turns out
 # wrong is worse than an empty list, because somebody trusts it and cuts to it.
+SOUND_JS = """<script>
+/* Arrow through the ten sliders without touching a URL. The links already carry
+   the solo, so the arrows just click the next one and remember where you are
+   per scene. Everything lands in the window named mynoise, so it never spawns
+   tabs. */
+(function(){
+  document.querySelectorAll('.solorow').forEach(function(row){
+    var solos = [].slice.call(row.querySelectorAll('.solo'));
+    var at = -1;
+    function go(i){
+      if (!solos.length) return;
+      at = (i + solos.length) % solos.length;
+      solos.forEach(function(s, j){ s.classList.toggle('on', j === at); });
+      window.open(solos[at].href, 'mynoise');
+    }
+    solos.forEach(function(s, j){
+      s.addEventListener('click', function(){ at = j;
+        solos.forEach(function(x, k){ x.classList.toggle('on', k === j); }); });
+    });
+    row.querySelectorAll('.nav').forEach(function(b){
+      b.addEventListener('click', function(){ go(at + (+b.dataset.d)); });
+    });
+  });
+})();
+</script>"""
+
+
 SOUND = CAT.get('sound', {})
+
+
+def _solo(level_index, m, title):
+    """One custom.php URL with a single slider at full and the rest at zero.
+
+    l= is TEN two digit slider levels. 99 is full, 00 is off. So soloing is a
+    string, not a drag: the whole recording session is ten URLs and one m=
+    string, and m= is the mix, so keeping it makes any scene reproducible.
+    """
+    lv = ['00'] * 10
+    if level_index is not None:
+        lv[level_index] = '99'
+    elif level_index is None:
+        lv = ['50'] * 10
+    return ('https://mynoise.net/NoiseMachines/custom.php?l=%s00&orig=k&m=%s&title=%s'
+            % (''.join(lv), m, urllib.parse.quote(title)))
+
+
+def _all(level, m, title):
+    return ('https://mynoise.net/NoiseMachines/custom.php?l=%s00&orig=k&m=%s&title=%s'
+            % (level * 10, m, urllib.parse.quote(title)))
 
 
 def sound_page():
     o = ['<h1>Sound</h1>',
          '<p class=lede>%s</p>' % html.escape(SOUND.get('about', ''))]
+
+    kw = {str(k['phase']): k for k in (SOUND.get('keywords') or [])}
+    demo = SOUND.get('demo') or {}
     ph = SOUND.get('phases') or {}
-    if ph:
-        for n in sorted(ph, key=lambda x: (len(x), x)):
-            items = ph[n]
-            title = next((e.get('title', '') for e in ENTRIES
-                          if e.get('kind') == 'flow' and str(e.get('n')) == str(n)), '')
-            o.append('<div class=rtph><span class=n>%s</span><h3>%s</h3>'
-                     '<span class=st>%d sounds</span></div>' % (n, html.escape(title), len(items)))
-            o.append('<div class=lay>')
-            for it in items:
-                o.append('<div class=l><div class=n><span>'
-                         '<a href="%s" target=_blank rel=noopener>%s</a>%s</span>'
-                         '<span class=t>%s</span></div></div>'
-                         % (it.get('url', '#'), html.escape(it.get('name', '')),
-                            (' &middot; ' + html.escape(it['preset'])) if it.get('preset') else '',
-                            html.escape(it.get('why', ''))))
-            o.append('</div>')
-    else:
-        o.append('<div class=srcbox><div class=t><b>Nothing chosen yet</b></div>'
-                 '<p>The listening pass has not been done. Sounds appear here one phase at a time, '
-                 'each one played before it is listed.</p></div>')
-    kw = SOUND.get('keywords') or []
-    if kw:
-        o.append('<div class=rtph><span class=n>&#9679;</span><h3>NOT AN AI, THE COMBINATIONS THAT '
-                 'WORKED</h3><span class=st>%d</span></div>' % len(kw))
-        o.append('<div class=lay>')
-        for k in kw:
-            o.append('<div class=l><div class=n><span>%s</span><span class=t>%s</span></div></div>'
-                     % (html.escape(' &middot; '.join(k.get('words', []))),
-                        html.escape(k.get('why', ''))))
-        o.append('</div>')
+
+    for e in sorted([x for x in ENTRIES if x.get('kind') == 'flow'],
+                    key=lambda x: int(x['n'])):
+        n = str(e['n'])
+        k = kw.get(n)
+        if not k and n not in ph:
+            continue
+        o.append('<div class=rtph><span class=n>%s</span><h3>%s</h3>'
+                 '<span class=st>%s</span></div>'
+                 % (n, html.escape(e.get('title', '')),
+                    'mix ready' if (ph.get(n) or (demo.get('phase') == n)) else 'no mix yet'))
+        if k:
+            o.append('<div class=srcbox><div class=t><b>Keywords</b>'
+                     '<span class=kw>%s</span></div>'
+                     '<p>Type these three into the Not an AI box, press Surprise Me, and the mix '
+                     'comes back in the address bar. If they are wrong, try: <b>%s</b></p></div>'
+                     % (' &nbsp;&middot;&nbsp; '.join(html.escape(w) for w in k['words']),
+                        ' &middot; '.join(html.escape(w) for w in k.get('alt', []))))
+        mix = (ph.get(n) or {}).get('mix') or (demo if demo.get('phase') == n else None)
+        if mix:
+            m, title = mix['m'], mix.get('title', 'scene ' + n)
+            btns = ['<a class=sbtn target=mynoise href="%s">ALL UP</a>' % _all('99', m, title),
+                    '<a class=sbtn target=mynoise href="%s">HALF</a>' % _all('50', m, title)]
+            for i in range(10):
+                btns.append('<a class="sbtn solo" target=mynoise href="%s">%d</a>'
+                            % (_solo(i, m, title), i + 1))
+            o.append('<div class=solorow data-scene="%s">%s'
+                     '<button class="sbtn nav" type=button data-d="-1">&#9664;</button>'
+                     '<button class="sbtn nav" type=button data-d="1">&#9654;</button>'
+                     '</div>' % (n, ''.join(btns)))
+            if demo.get('phase') == n and not ph.get(n):
+                o.append('<p class=lede style="opacity:.7">%s</p>'
+                         % html.escape(demo.get('note', '')))
+        for it in (ph.get(n, {}).get('sounds') or []):
+            o.append('<div class=l><div class=n><span>'
+                     '<a href="%s" target=mynoise>%s</a></span><span class=t>%s</span></div></div>'
+                     % (it.get('url', '#'), html.escape(it.get('name', '')),
+                        html.escape(it.get('why', ''))))
+
     src = SOUND.get('sources') or []
     if src:
         o.append('<div class=rtph><span class=n>&#9679;</span><h3>WHERE THESE COME FROM</h3>'
                  '<span class=st>%d</span></div>' % len(src))
         o.append('<div class=lay>')
-        for sname in src:
-            o.append('<div class=l><div class=n><span>'
-                     '<a href="%s" target=_blank rel=noopener>%s</a></span>'
+        for sn in src:
+            o.append('<div class=l><div class=n><span><a href="%s" target=mynoise>%s</a></span>'
                      '<span class=t>%s</span></div></div>'
-                     % (sname.get('url', '#'), html.escape(sname.get('name', '')),
-                        html.escape(sname.get('note', ''))))
+                     % (sn.get('url', '#'), html.escape(sn.get('name', '')),
+                        html.escape(sn.get('note', ''))))
         o.append('</div>')
-    return ''.join(o)
+    return ''.join(o) + SOUND_JS
 
 
 open(os.path.join(ROOT, 'sound.html'), 'w').write(

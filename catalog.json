@@ -3860,7 +3860,7 @@
     }
   ],
   "event": "Breakthrough Junior Challenge 2026",
-  "site_version": 248,
+  "site_version": 249,
   "footage": [
     {
       "name": "Key catch",
@@ -6723,9 +6723,179 @@
     }
   ],
   "sound": {
-    "about": "Scratch track sources for sound design, from myNoise. Every entry has been LISTENED TO before it was put here: a name that sounds right and turns out wrong is worse than an empty list. Click through, play, and take what fits. These are for a SCRATCH TRACK, for learning the shape of the film and cutting to it. myNoise soundscapes are licensed for personal listening, so nothing here ships in a published film without asking Stephane Pigeon first.",
+    "about": "Scratch track sources for sound design, from myNoise. THE LINKS DRIVE A SECOND WINDOW: click one and myNoise opens in a window called mynoise, and every later click reuses that same window instead of opening tabs. Put it on your other screen and drive it from here. Soloing is done by the link, not by dragging: the arrows step through the ten sliders one at a time. myNoise cannot be embedded in a frame here, it sends x-frame-options SAMEORIGIN, so a second window is as close as the browser allows and it behaves the same. These are for a SCRATCH track; myNoise is licensed for personal listening and nothing from it ships without asking Stephane Pigeon.",
     "phases": {},
-    "keywords": [],
+    "keywords": [
+      {
+        "phase": "0",
+        "words": [
+          "paper",
+          "hush",
+          "dawn"
+        ],
+        "alt": [
+          "held",
+          "blank",
+          "air"
+        ]
+      },
+      {
+        "phase": "1",
+        "words": [
+          "avenue",
+          "morning",
+          "gravel"
+        ],
+        "alt": [
+          "poplar",
+          "lark",
+          "distance"
+        ]
+      },
+      {
+        "phase": "2",
+        "words": [
+          "asphalt",
+          "suburb",
+          "noon"
+        ],
+        "alt": [
+          "kerb",
+          "errand",
+          "haze"
+        ]
+      },
+      {
+        "phase": "3",
+        "words": [
+          "spokes",
+          "slipstream",
+          "descent"
+        ],
+        "alt": [
+          "chain",
+          "gust",
+          "tarmac"
+        ]
+      },
+      {
+        "phase": "4",
+        "words": [
+          "flywheel",
+          "lungs",
+          "fluorescent"
+        ],
+        "alt": [
+          "cellar",
+          "effort",
+          "hum"
+        ]
+      },
+      {
+        "phase": "5",
+        "words": [
+          "release",
+          "white",
+          "undertow"
+        ],
+        "alt": [
+          "letting",
+          "dissolve",
+          "low"
+        ]
+      },
+      {
+        "phase": "6",
+        "words": [
+          "updraught",
+          "linen",
+          "spiral"
+        ],
+        "alt": [
+          "thermal",
+          "carried",
+          "column"
+        ]
+      },
+      {
+        "phase": "7",
+        "words": [
+          "marrow",
+          "corridor",
+          "pulse"
+        ],
+        "alt": [
+          "cartilage",
+          "boiler",
+          "vault"
+        ]
+      },
+      {
+        "phase": "8",
+        "words": [
+          "observatory",
+          "stillness",
+          "dial"
+        ],
+        "alt": [
+          "vellum",
+          "attention",
+          "vacuum"
+        ]
+      },
+      {
+        "phase": "9",
+        "words": [
+          "consent",
+          "quiet",
+          "dusk"
+        ],
+        "alt": [
+          "agreement",
+          "room",
+          "settle"
+        ]
+      },
+      {
+        "phase": "10",
+        "words": [
+          "projector",
+          "reversal",
+          "gilt"
+        ],
+        "alt": [
+          "sprocket",
+          "backwards",
+          "bell"
+        ]
+      },
+      {
+        "phase": "11",
+        "words": [
+          "palm",
+          "contact",
+          "arrest"
+        ],
+        "alt": [
+          "caught",
+          "weight",
+          "hush"
+        ]
+      },
+      {
+        "phase": "12",
+        "words": [
+          "cumulus",
+          "gratitude",
+          "bronze"
+        ],
+        "alt": [
+          "cloud",
+          "dedication",
+          "temple"
+        ]
+      }
+    ],
     "sources": [
       {
         "name": "myNoise, the full index",
@@ -6747,6 +6917,12 @@
         "url": "https://mynoise.net/NoiseMachines/betweenLandSeaRelaxingSoundscape.php",
         "note": "Coastal winds, singing trees, eucalyptus forest, garden meditation."
       }
-    ]
+    ],
+    "demo": {
+      "phase": "7",
+      "title": "Cool Marrow Chrysalis",
+      "m": "ELGREY0~TORLEY60~ENLIA1~US505~CHAPELVOICES6~DUDUK6~MODULAR6~CIRCUITRHYTHM7~ENLIA7~BLUE7",
+      "note": "Baba's own keyword mix, here so the solo buttons can be tried before any scene has a real one. Marrow is the right word for the inside of a body that is also a building."
+    }
   }
 }
