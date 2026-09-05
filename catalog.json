@@ -3563,7 +3563,7 @@
       "title": "Manan's theory, visualised",
       "status": "accepted",
       "date": "2026-09-04",
-      "note": "HE NEVER WRITES IT DOWN. He thinks it and VIVEKA VISUALISES IT, because Viveka can read him, which is why there is no board in this room and never was. The hologram shows the old theory as somebody else's idea being displayed rather than Viveka's own: the standing body with ONE LEG MUSCLE LIT and everything else dim, the gauge hard over at empty, the line falling away to nothing. Fatigue is in the muscle, the fuel is spent, the tank reads empty. NO WRITING ANYWHERE: the argument is made in pictures because the dialogue carries every word already.",
+      "note": "MANAN NEVER WRITES ANYTHING. He thinks it and Viveka puts it in the air, because Viveka can read him.\n\nIT IS A BOARD IN A NEW MEDIUM. The three lines hold the CENTRE of the display and the pictures are pushed to the edges: the body at the far left, the gauge at the far right, and nothing else floating anywhere, because a board has one thing on it at a time.\n\nTHE LINES ARE:  FATIGUE IS IN THE MUSCLE / THE FUEL IS SPENT / THE TANK IS EMPTY\n\nTHEY DO NOT ARRIVE TOGETHER. Each line appears under the line being spoken, the way a highlighter runs across a sentence in a book, so the display fills as the argument is made and the third line lands on the last word. That is why an EMPTY PLATE ships with this frame: the display with the body and the gauge in place and no writing at all, so the lines can be animated in one at a time. Read the left board down and then the right and you have the whole film.",
       "dialogue": [
         {
           "speaker": "MANAN",
@@ -3572,6 +3572,13 @@
         {
           "speaker": "MANAN",
           "line": "You run. The muscle uses up its oxygen. The fuel is spent. And when the tank reads empty, the body stops."
+        }
+      ],
+      "plates": [
+        {
+          "file": "19-3-PLATE.png",
+          "label": "Empty display, no writing",
+          "note": "The identical frame with the three lines removed and nothing put in their place. Animate the lines onto this one at a time; nothing else moves by a hair."
         }
       ]
     },
@@ -3583,7 +3590,7 @@
       "title": "Viveka answers, in the same places",
       "status": "accepted",
       "date": "2026-09-04",
-      "note": "AND HIS ANSWER IN THE SAME PLACES, WHICH IS THE WHOLE POINT OF THE PAIR. The identical arrangement with every value reversed: the head lit and the leg dim, the same gauge in the same corner with the needle still well up, the same line levelling off deliberately part way down instead of collapsing. Fatigue is in the brain, and when he stops you the fuel is still there. Nothing about the layout may move between the two frames; the rhyme is the argument.",
+      "note": "HIS ANSWER, THE SAME BOARD WITH EVERY VALUE REVERSED.\n\nIT IS A BOARD IN A NEW MEDIUM. The three lines hold the CENTRE of the display and the pictures are pushed to the edges: the body at the far left, the gauge at the far right, and nothing else floating anywhere, because a board has one thing on it at a time.\n\nTHE LINES ARE:  FATIGUE IS IN THE BRAIN / THE FUEL IS STILL THERE / THE WALL IS A NUMBER\n\nTHEY DO NOT ARRIVE TOGETHER. Each line appears under the line being spoken, the way a highlighter runs across a sentence in a book, so the display fills as the argument is made and the third line lands on the last word. That is why an EMPTY PLATE ships with this frame: the display with the body and the gauge in place and no writing at all, so the lines can be animated in one at a time. Read the left board down and then the right and you have the whole film.",
       "dialogue": [
         {
           "speaker": "VIVEKA",
@@ -3629,11 +3636,38 @@
           "speaker": "MANAN",
           "line": "Then it can be a different number."
         }
+      ],
+      "plates": [
+        {
+          "file": "19-4-PLATE.png",
+          "label": "Empty display, no writing",
+          "note": "The identical frame with the three lines removed and nothing put in their place. Animate the lines onto this one at a time; nothing else moves by a hair."
+        }
       ]
+    },
+    {
+      "file": "BB_C_19/19-3-20260904.png",
+      "kind": "keyframe",
+      "scene": "19",
+      "shot": "19.7a",
+      "title": "",
+      "status": "superseded",
+      "date": "2026-09-04",
+      "note": "The wordless version, before the display became a board again."
+    },
+    {
+      "file": "BB_C_19/19-4-20260904.png",
+      "kind": "keyframe",
+      "scene": "19",
+      "shot": "19.8a",
+      "title": "",
+      "status": "superseded",
+      "date": "2026-09-04",
+      "note": "The wordless version, before the display became a board again."
     }
   ],
   "event": "Breakthrough Junior Challenge 2026",
-  "site_version": 235,
+  "site_version": 236,
   "footage": [
     {
       "name": "Key catch",
@@ -6429,14 +6463,14 @@
     {
       "anchor": "19-3",
       "label": "The two theories",
-      "sec": 157.03,
+      "sec": 177.17,
       "voices": [
         "edmund_32",
         "hugh_32",
         "imogen_32"
       ],
       "parts": 16,
-      "text": "There is no board in this room and there never was. MANAN NEVER WRITES ANYTHING DOWN. He thinks it, and Viveka visualises it on the hologram that has been standing over the console since he walked in, because Viveka can read him. Then Viveka answers by visualising his own. That is why the chalk and the marker are gone: two boards in a room with a holographic display was one idea too many, and the display was already there. You run. The muscle uses up its oxygen. The fuel is spent. And when the tank reads empty, the body stops. Direction. His idea comes up in the air as somebody else's: the body turning, ONE LEG MUSCLE LIT and everything else dim, the gauge hard over at empty, the line falling away to nothing. Then Viveka answers, and here is the rule that matters more than anything else in the scene. THE SECOND DISPLAY IS THE FIRST ONE WITH EVERY VALUE REVERSED. Same layout, same three elements in the same places, the same gauge in the same corner. The head lit and the leg dim. The needle still well up. The same line, but levelling off deliberately instead of collapsing. Do not move anything between the two, because the rhyme IS the argument. Pulse, breath, temperature, water, sugar. I read all of it, the whole time. That is what every one of those panels you walked past is for. And I ask one question with it. Can we carry on safely? When the answer starts to look like no, I slow you down. Not because anything has run out. Because of where it is heading. Heading. I do not wait for the tank to empty. I watch how fast it is emptying, and I stop you while there is still enough left to get you home. So no. Fatigue is in the brain, not in your legs. Up here. And it decides long before anything is actually in danger. When I stop you, the fuel is still there. Direction. And now the climb pays off. He answers from the rooms he passed on the way up, so hold him wide enough that we remember he has been somewhere. It was. I saw it. The sugar cellar was full. The fat store was barely touched. The fibres were not torn. No. They never are. So the wall... Is a number I chose. Carefully. To keep you alive. Then it can be a different number. Neither display carries a single word, on purpose. The boards had to be READ, which meant translating them. The holograms argue in pictures, a body, a lit part, a gauge and a line, and the dialogue carries every word already. Nothing is lost and it needs no second version.",
+      "text": "There is no board in this room and there never was. MANAN NEVER WRITES ANYTHING DOWN. He thinks it, and Viveka visualises it on the hologram that has been standing over the console since he walked in, because Viveka can read him. Then Viveka answers by visualising his own. That is why the chalk and the marker are gone: two boards in a room with a holographic display was one idea too many, and the display was already there. You run. The muscle uses up its oxygen. The fuel is spent. And when the tank reads empty, the body stops. Direction. His idea comes up in the air as somebody else's: the body turning, ONE LEG MUSCLE LIT and everything else dim, the gauge hard over at empty, the line falling away to nothing. Then Viveka answers, and here is the rule that matters more than anything else in the scene. THE SECOND DISPLAY IS THE FIRST ONE WITH EVERY VALUE REVERSED. Same layout, same three elements in the same places, the same gauge in the same corner. The head lit and the leg dim. The needle still well up. The same line, but levelling off deliberately instead of collapsing. Do not move anything between the two, because the rhyme IS the argument. Pulse, breath, temperature, water, sugar. I read all of it, the whole time. That is what every one of those panels you walked past is for. And I ask one question with it. Can we carry on safely? When the answer starts to look like no, I slow you down. Not because anything has run out. Because of where it is heading. Heading. I do not wait for the tank to empty. I watch how fast it is emptying, and I stop you while there is still enough left to get you home. So no. Fatigue is in the brain, not in your legs. Up here. And it decides long before anything is actually in danger. When I stop you, the fuel is still there. Direction. And now the climb pays off. He answers from the rooms he passed on the way up, so hold him wide enough that we remember he has been somewhere. It was. I saw it. The sugar cellar was full. The fat store was barely touched. The fibres were not torn. No. They never are. So the wall... Is a number I chose. Carefully. To keep you alive. Then it can be a different number. Neither display is bare. They are BOARDS, in a new medium: three short lines of light hold the centre of each one and the pictures are pushed to the edges, the body at the far left and the gauge at the far right, because a board has one thing on it at a time. And the lines DO NOT ARRIVE TOGETHER. Each one appears under the line being spoken, the way a highlighter runs across a sentence in a book, so the display fills as the argument is made and the third line lands on the last word. An empty plate ships with each frame for exactly that: the display with nothing written on it, so you can bring the lines on one at a time. Read the left board down and then the right and you have the whole film.",
       "url": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/guide/clip-19-3.mp3"
     },
     {

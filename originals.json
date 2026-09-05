@@ -1446,15 +1446,39 @@
     "url": "https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIGINALS/main/BB_C_19/19-PORTRAIT.png"
   },
   "19-3.png": {
-    "bytes": 6339474,
-    "sha256": "2cf273587071941dbc00f776cb3f729a87eb4dc76c167dd14af3e9c4031a86c4",
+    "bytes": 6298390,
+    "sha256": "1c30723dfb99d202c298a2349a2f63e0460ef2efab1958af2cb220e2bc01a51a",
     "path": "BB_C_19/19-3.png",
     "url": "https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIGINALS/main/BB_C_19/19-3.png"
   },
   "19-4.png": {
-    "bytes": 6299942,
-    "sha256": "7cd8267c8dc63a4d19c5af9f91d9e18267c3253a220751b1d9be6d6b7e7f7a69",
+    "bytes": 6472864,
+    "sha256": "58b7283fc3fb5a6634296c832244684515e90b2a3195ac3290ee59167c062f65",
     "path": "BB_C_19/19-4.png",
     "url": "https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIGINALS/main/BB_C_19/19-4.png"
+  },
+  "19-3-PLATE.png": {
+    "bytes": 6193464,
+    "sha256": "c8cccfbf0d3e2335d864f4a08496405b05f858f73f0bf7886e6d23dffb5bd838",
+    "path": "BB_C_19/19-3-PLATE.png",
+    "url": "https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIGINALS/main/BB_C_19/19-3-PLATE.png"
+  },
+  "19-4-PLATE.png": {
+    "bytes": 6227968,
+    "sha256": "82635ca9930217ff851707d75c4bb841a63ffa25c2c3a998a9f575ebf544c7c2",
+    "path": "BB_C_19/19-4-PLATE.png",
+    "url": "https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIGINALS/main/BB_C_19/19-4-PLATE.png"
+  },
+  "19-3-20260904.png": {
+    "bytes": 6339474,
+    "sha256": "2cf273587071941dbc00f776cb3f729a87eb4dc76c167dd14af3e9c4031a86c4",
+    "path": "BB_C_19/19-3-20260904.png",
+    "url": "https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIGINALS/main/BB_C_19/19-3-20260904.png"
+  },
+  "19-4-20260904.png": {
+    "bytes": 6299942,
+    "sha256": "7cd8267c8dc63a4d19c5af9f91d9e18267c3253a220751b1d9be6d6b7e7f7a69",
+    "path": "BB_C_19/19-4-20260904.png",
+    "url": "https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIGINALS/main/BB_C_19/19-4-20260904.png"
   }
 }
