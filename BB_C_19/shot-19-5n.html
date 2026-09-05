@@ -443,6 +443,33 @@ h2{font-size:19px;margin:38px 0 14px;padding-bottom:7px;border-bottom:1px solid 
  text-transform:uppercase;color:var(--dim);padding-top:5px}
 .sheetgrid .sh:hover span{color:var(--brass)}
 @media(max-width:900px){.sheetgrid{grid-template-columns:1fr}}
+
+/* THE DIALOGUE BLOCK. A third picture, two thirds words, speaker top left, and
+   one copy button per speech. Selecting text on a phone is miserable and this
+   page exists so nobody has to. */
+.dlg{border:1px solid var(--rule);border-radius:5px;margin:0 0 12px;overflow:hidden;
+ background:var(--card)}
+.dlg .dh{display:flex;align-items:center;gap:10px;padding:7px 10px;
+ border-bottom:1px solid var(--rule)}
+.dlg .who{font:700 10px ui-monospace,monospace;letter-spacing:.14em;color:var(--brass)}
+.dlg .frm{font:600 9px ui-monospace,monospace;letter-spacing:.08em;color:var(--dim)}
+.dlg .cp{margin-left:auto;border:1px solid var(--rule);border-radius:4px;background:none;
+ cursor:pointer;padding:4px 11px;font:600 9px ui-monospace,monospace;letter-spacing:.1em;
+ color:var(--dim)}
+.dlg .cp:hover{background:var(--brass);border-color:var(--brass);color:#17150f}
+.dlg .cp.done{background:var(--brass);border-color:var(--brass);color:#17150f}
+.dlg .db{display:grid;grid-template-columns:1fr 2fr;gap:14px;padding:12px}
+.dlg .dpic img{width:100%;display:block;border:1px solid var(--rule)}
+.dlg .dtx p{margin:0 0 9px;font-size:15px;line-height:1.5;color:var(--body)}
+.dlg .dtx p:last-child{margin:0}
+
+.dlg .ttl{font-size:12px;color:var(--dim)}
+.dlg .dtx .sp{border-top:1px solid var(--rule);padding:9px 0 4px}
+.dlg .dtx .sp:first-child{border-top:0;padding-top:0}
+.dlg .dtx .spn{display:flex;align-items:center;gap:10px;margin-bottom:5px}
+.dlg .dtx .spn .cp{margin-left:auto;padding:2px 8px;font-size:8px}
+.dlg .dpic img{max-height:250px;object-fit:cover}
+@media(max-width:700px){.dlg .db{grid-template-columns:1fr}}
 .solorow{display:flex;flex-wrap:wrap;gap:6px;align-items:center;margin:10px 0 18px}
 .sbtn{display:inline-flex;align-items:center;justify-content:center;min-width:34px;height:30px;
  padding:0 10px;border:1px solid var(--rule);border-radius:4px;background:none;cursor:pointer;
@@ -567,7 +594,7 @@ h2{font-size:19px;margin:38px 0 14px;padding-bottom:7px;border-bottom:1px solid 
 .gate .rem input{margin:0;width:auto;padding:0;border:0;background:none;accent-color:var(--brass)}
 @media(max-width:1100px){.cell{width:33.333%}}
 @media(max-width:640px){.cell{width:50%}.wrap{padding:20px 14px 50px}}
-</style></head><body><div id=app style="display:block"><div class=bar><a class=home href="../index.html">THE FILM</a><a href="../radiodrama.html">MUSIC</a><a href="../sheets.html">SHEETS</a><a href="../sound.html">SOUND</a><a href="../archive.html">ARCHIVE</a><span class=sp></span><span class=vb>V9 DRAFT</span><span class=sitev title="site version">v255</span><button class=th id=th onclick="tt()" title="light or dark">&#9681;</button></div><div class=wrap><p class=crumb><a href="index.html">scene 19</a> -&gt; shot 19.5n -&gt; key frame</p><h1>Shot 19.5n &nbsp;<span style="color:#8a8170;font-weight:400">Viveka's room</span></h1><div class=ask><b>This is where you ask for things.</b> Tick a key frame for a breakdown into background and foreground, or for a change, say what needs to change, and press the button at the bottom. Marko gets an email.</div><p class=lede>1 key frame in this shot. The one marked <b>represents the shot</b> on the scene page.</p><div class=row><div class=cell><a href="https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIGINALS/main/BB_C_19/19-1-nokey-20260904.png"><img src="../mid/19-1-nokey-20260904.jpg" alt=""></a><div class=meta><span class=fid>19-1-nokey-20260904.png</span><span class=kf>represents the shot</span><span class=tag style="background:#8a8170">superseded</span><p class=note>The version without the key round his neck, before the scan of 4.9.2026.</p><label class=pick><input type=checkbox class=pk data-k="breakdown" data-f="19-1-nokey-20260904.png" onchange="upd()"> need a breakdown</label><label class=pick><input type=checkbox class=pk data-k="modification" data-f="19-1-nokey-20260904.png" onchange="upd()"> need a modification</label><textarea class=say data-f="19-1-nokey-20260904.png" oninput="upd()" rows=3 placeholder="what needs to change?"></textarea></div></div></div><p style="margin-top:30px"><a href="index.html">&larr; back to scene 19</a></p>
+</style></head><body><div id=app style="display:block"><div class=bar><a class=home href="../index.html">THE FILM</a><a href="../radiodrama.html">MUSIC</a><a href="../sheets.html">SHEETS</a><a href="../sound.html">SOUND</a><a href="../dialogue.html">DIALOGUE</a><a href="../archive.html">ARCHIVE</a><span class=sp></span><span class=vb>V9 DRAFT</span><span class=sitev title="site version">v256</span><button class=th id=th onclick="tt()" title="light or dark">&#9681;</button></div><div class=wrap><p class=crumb><a href="index.html">scene 19</a> -&gt; shot 19.5n -&gt; key frame</p><h1>Shot 19.5n &nbsp;<span style="color:#8a8170;font-weight:400">Viveka's room</span></h1><div class=ask><b>This is where you ask for things.</b> Tick a key frame for a breakdown into background and foreground, or for a change, say what needs to change, and press the button at the bottom. Marko gets an email.</div><p class=lede>1 key frame in this shot. The one marked <b>represents the shot</b> on the scene page.</p><div class=row><div class=cell><a href="https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIGINALS/main/BB_C_19/19-1-nokey-20260904.png"><img src="../mid/19-1-nokey-20260904.jpg" alt=""></a><div class=meta><span class=fid>19-1-nokey-20260904.png</span><span class=kf>represents the shot</span><span class=tag style="background:#8a8170">superseded</span><p class=note>The version without the key round his neck, before the scan of 4.9.2026.</p><label class=pick><input type=checkbox class=pk data-k="breakdown" data-f="19-1-nokey-20260904.png" onchange="upd()"> need a breakdown</label><label class=pick><input type=checkbox class=pk data-k="modification" data-f="19-1-nokey-20260904.png" onchange="upd()"> need a modification</label><textarea class=say data-f="19-1-nokey-20260904.png" oninput="upd()" rows=3 placeholder="what needs to change?"></textarea></div></div></div><p style="margin-top:30px"><a href="index.html">&larr; back to scene 19</a></p>
 <div class=prev id=prev>
   <h3>email composer &nbsp;·&nbsp; shot 19.5n<span class=gap></span><button class=x id=x onclick="shut()" title="close">CLOSE &times;</button></h3>
   <pre id=pv></pre>

@@ -538,6 +538,33 @@ h2{font-size:19px;margin:38px 0 14px;padding-bottom:7px;border-bottom:1px solid 
  text-transform:uppercase;color:var(--dim);padding-top:5px}
 .sheetgrid .sh:hover span{color:var(--brass)}
 @media(max-width:900px){.sheetgrid{grid-template-columns:1fr}}
+
+/* THE DIALOGUE BLOCK. A third picture, two thirds words, speaker top left, and
+   one copy button per speech. Selecting text on a phone is miserable and this
+   page exists so nobody has to. */
+.dlg{border:1px solid var(--rule);border-radius:5px;margin:0 0 12px;overflow:hidden;
+ background:var(--card)}
+.dlg .dh{display:flex;align-items:center;gap:10px;padding:7px 10px;
+ border-bottom:1px solid var(--rule)}
+.dlg .who{font:700 10px ui-monospace,monospace;letter-spacing:.14em;color:var(--brass)}
+.dlg .frm{font:600 9px ui-monospace,monospace;letter-spacing:.08em;color:var(--dim)}
+.dlg .cp{margin-left:auto;border:1px solid var(--rule);border-radius:4px;background:none;
+ cursor:pointer;padding:4px 11px;font:600 9px ui-monospace,monospace;letter-spacing:.1em;
+ color:var(--dim)}
+.dlg .cp:hover{background:var(--brass);border-color:var(--brass);color:#17150f}
+.dlg .cp.done{background:var(--brass);border-color:var(--brass);color:#17150f}
+.dlg .db{display:grid;grid-template-columns:1fr 2fr;gap:14px;padding:12px}
+.dlg .dpic img{width:100%;display:block;border:1px solid var(--rule)}
+.dlg .dtx p{margin:0 0 9px;font-size:15px;line-height:1.5;color:var(--body)}
+.dlg .dtx p:last-child{margin:0}
+
+.dlg .ttl{font-size:12px;color:var(--dim)}
+.dlg .dtx .sp{border-top:1px solid var(--rule);padding:9px 0 4px}
+.dlg .dtx .sp:first-child{border-top:0;padding-top:0}
+.dlg .dtx .spn{display:flex;align-items:center;gap:10px;margin-bottom:5px}
+.dlg .dtx .spn .cp{margin-left:auto;padding:2px 8px;font-size:8px}
+.dlg .dpic img{max-height:250px;object-fit:cover}
+@media(max-width:700px){.dlg .db{grid-template-columns:1fr}}
 .solorow{display:flex;flex-wrap:wrap;gap:6px;align-items:center;margin:10px 0 18px}
 .sbtn{display:inline-flex;align-items:center;justify-content:center;min-width:34px;height:30px;
  padding:0 10px;border:1px solid var(--rule);border-radius:4px;background:none;cursor:pointer;
@@ -1335,6 +1362,8 @@ def bar(here, r):
          % (r, ' class=on' if here == 'sheets' else ''),
          '<a href="%ssound.html"%s>SOUND</a>'
          % (r, ' class=on' if here == 'sound' else ''),
+         '<a href="%sdialogue.html"%s>DIALOGUE</a>'
+         % (r, ' class=on' if here == 'dialogue' else ''),
          '<a href="%sarchive.html"%s>ARCHIVE</a>' % (r, ' class=on' if here == 'archive' else ''),
          '<span class=sp></span>',
          ('<span class=vb>%s</span>' % VERSION) if VERSION else '',
@@ -3033,6 +3062,33 @@ SOUND_JS = """<script>
 </script>"""
 
 
+DIALOGUE_JS = """<script>
+/* Copy the whole speech, and say so. The text is on the button as a data
+   attribute so nothing has to be scraped out of the DOM and no selection is
+   involved. execCommand is the fallback for browsers without the clipboard API
+   or without a secure context. */
+document.querySelectorAll('.cp').forEach(function(b){
+  b.addEventListener('click', function(){
+    var t = b.dataset.t;
+    function done(){
+      var old = b.textContent; b.textContent = 'COPIED'; b.classList.add('done');
+      setTimeout(function(){ b.textContent = old; b.classList.remove('done'); }, 1400);
+    }
+    if (navigator.clipboard && window.isSecureContext) {
+      navigator.clipboard.writeText(t).then(done, fallback);
+    } else { fallback(); }
+    function fallback(){
+      var a = document.createElement('textarea');
+      a.value = t; a.style.position = 'fixed'; a.style.opacity = '0';
+      document.body.appendChild(a); a.select();
+      try { document.execCommand('copy'); done(); } catch(e) {}
+      document.body.removeChild(a);
+    }
+  });
+});
+</script>"""
+
+
 SOUND = CAT.get('sound', {})
 
 
@@ -3131,6 +3187,69 @@ def sound_page():
 
 open(os.path.join(ROOT, 'sound.html'), 'w').write(
     page('Sound', sound_page(), here='sound', depth=0))
+
+
+# ---------------------------------------------------------------------------
+# THE DIALOGUE PAGE. Baba, 5.9.2026: he needs to copy lines into other apps and
+# selecting text on a phone is miserable.
+#
+# ONE BLOCK PER SPEAKER RUN. Consecutive lines by the same character are one
+# block with one copy button, because that is the unit somebody actually pastes:
+# a whole speech, not a sentence. A new block starts the moment the speaker
+# changes.
+#
+# The frame the lines play over is beside them at a third of the width, so it is
+# obvious which moment is being copied. Grouped by scene, in film order.
+def dialogue_page():
+    o = ['<h1>Dialogue</h1>',
+         '<p class=lede>Every spoken line, grouped by who says it, with the frame it plays over. '
+         '<b>Press COPY and the whole speech goes to the clipboard</b>, ready to paste. Consecutive '
+         'lines by one character are one block, because that is what you actually paste.</p>']
+    rows = [e for e in ENTRIES
+            if e.get('dialogue') and e.get('status') == 'accepted']
+    rows.sort(key=shot_key)
+    scenes = {}
+    for e in rows:
+        scenes.setdefault(str(e.get('scene', '')), []).append(e)
+    for sc in sorted(scenes, key=lambda x: (len(x), x)):
+        title = SCENES.get(sc, '')
+        n = sum(len(e['dialogue']) for e in scenes[sc])
+        o.append('<div class=rtph><span class=n>%s</span><h3>%s</h3>'
+                 '<span class=st>%d lines</span></div>'
+                 % (html.escape(sc), html.escape(title), n))
+        for e in scenes[sc]:
+            b = os.path.basename(e['file']).rsplit('.', 1)[0]
+            runs, cur = [], None
+            for d in e['dialogue']:
+                if cur is None or d['speaker'] != cur['who']:
+                    cur = {'who': d['speaker'], 'lines': []}
+                    runs.append(cur)
+                cur['lines'].append(d['line'])
+            # THE PICTURE APPEARS ONCE PER FRAME, not once per speech. Repeating
+            # it under every line pushed one exchange down three screens and
+            # gave a two word answer a full size still.
+            whole = '\n\n'.join('%s\n%s' % (r['who'], '\n'.join(r['lines'])) for r in runs)
+            speech = []
+            for r in runs:
+                speech.append('<div class=sp>'
+                              '<div class=spn><span class=who>%s</span>'
+                              '<button class=cp type=button data-t="%s">COPY</button></div>%s</div>'
+                              % (html.escape(r['who']), html.escape('\n'.join(r['lines'])),
+                                 ''.join('<p>%s</p>' % html.escape(l) for l in r['lines'])))
+            o.append('<div class=dlg>'
+                     '<div class=dh><span class=frm>%s</span>'
+                     '<span class=ttl>%s</span>'
+                     '<button class=cp type=button data-t="%s">COPY THE WHOLE SCENE</button></div>'
+                     '<div class=db><a class=dpic href="card/%s.html">'
+                     '<img src="mid/%s.jpg" alt="" loading=lazy></a>'
+                     '<div class=dtx>%s</div></div></div>'
+                     % (html.escape(b), html.escape(e.get('title', '')),
+                        html.escape(whole), b, b, ''.join(speech)))
+    return ''.join(o) + DIALOGUE_JS
+
+
+open(os.path.join(ROOT, 'dialogue.html'), 'w').write(
+    page('Dialogue', dialogue_page(), here='dialogue', depth=0))
 
 print('  %d card pages, %d on the storyboard walk' % (len(_cards), len(_order)))
 
