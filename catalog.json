@@ -3860,7 +3860,7 @@
     }
   ],
   "event": "Breakthrough Junior Challenge 2026",
-  "site_version": 250,
+  "site_version": 251,
   "footage": [
     {
       "name": "Key catch",
@@ -6724,7 +6724,165 @@
   ],
   "sound": {
     "about": "Scratch track sources for sound design, from myNoise. THE LINKS DRIVE A SECOND WINDOW: click one and myNoise opens in a window called mynoise, and every later click reuses that same window instead of opening tabs. Put it on your other screen and drive it from here. Soloing is done by the link, not by dragging: the arrows step through the ten sliders one at a time. myNoise cannot be embedded in a frame here, it sends x-frame-options SAMEORIGIN, so a second window is as close as the browser allows and it behaves the same. These are for a SCRATCH track; myNoise is licensed for personal listening and nothing from it ships without asking Stephane Pigeon.",
-    "phases": {},
+    "phases": {
+      "0": {
+        "sounds": [
+          {
+            "name": "Anamnesis",
+            "url": "https://mynoise.net/NoiseMachines/anamnesisSoundscapeGenerator.php",
+            "why": "a held, unplaceable float. The film starting before you noticed."
+          }
+        ]
+      },
+      "1": {
+        "sounds": [
+          {
+            "name": "Morning Forest",
+            "url": "https://mynoise.net/NoiseMachines/belgianForestSoundscapeGenerator.php",
+            "why": "birds and wind under the avenue, so the collapse lands in an ordinary morning"
+          },
+          {
+            "name": "Woodland Echoes",
+            "url": "https://mynoise.net/NoiseMachines/northAmericaForestSoundscape.php",
+            "why": "the windy forest preset, for the trees over the road"
+          },
+          {
+            "name": "Traffic Noise",
+            "url": "https://mynoise.net/NoiseMachines/trafficNoiseGenerator.php",
+            "why": "one road a long way off, kept almost inaudible"
+          }
+        ]
+      },
+      "2": {
+        "sounds": [
+          {
+            "name": "Traffic Noise",
+            "url": "https://mynoise.net/NoiseMachines/trafficNoiseGenerator.php",
+            "why": "suburban daylight, the last ordinary place in the film"
+          },
+          {
+            "name": "Autumn Walk",
+            "url": "https://mynoise.net/NoiseMachines/autumnWalkSoundscapeGenerator.php",
+            "why": "open air and footsteps, if the road is too bare on its own"
+          }
+        ]
+      },
+      "3": {
+        "sounds": [
+          {
+            "name": "Wind",
+            "url": "https://mynoise.net/NoiseMachines/windNoiseGenerator.php",
+            "why": "air past the ears on the bicycle. Nothing else drives this scene"
+          }
+        ]
+      },
+      "4": {
+        "sounds": [
+          {
+            "name": "Fan Noise",
+            "url": "https://mynoise.net/NoiseMachines/fanNoiseGenerator.php",
+            "why": "the trainer and the laptop, and the room shrinking around him"
+          },
+          {
+            "name": "Data Center",
+            "url": "https://mynoise.net/NoiseMachines/dataCenterNoiseGenerator.php",
+            "why": "machine hum under the breath, which is the lead instrument here"
+          }
+        ]
+      },
+      "5": {
+        "sounds": [
+          {
+            "name": "Oblivion",
+            "url": "https://mynoise.net/NoiseMachines/oblivionSoundscapeGenerator.php",
+            "why": "the sound leaves before the picture does. A release, not an event"
+          }
+        ]
+      },
+      "6": {
+        "sounds": [
+          {
+            "name": "Wind",
+            "url": "https://mynoise.net/NoiseMachines/windNoiseGenerator.php",
+            "why": "rising air as he is carried. No howl: it is not violent"
+          },
+          {
+            "name": "Waterfall",
+            "url": "https://mynoise.net/NoiseMachines/waterfallNoiseGenerator.php",
+            "why": "a wide moving body of sound if the wind alone is too thin"
+          }
+        ]
+      },
+      "7": {
+        "sounds": [
+          {
+            "name": "In Utero",
+            "url": "https://mynoise.net/NoiseMachines/inUteroSoundGenerator.php",
+            "why": "the pulse of the body, far off and felt rather than heard"
+          },
+          {
+            "name": "Data Center",
+            "url": "https://mynoise.net/NoiseMachines/dataCenterNoiseGenerator.php",
+            "why": "the machinery of a house that is working properly"
+          },
+          {
+            "name": "Cave Water",
+            "url": "https://mynoise.net/NoiseMachines/caveWaterNoiseGenerator.php",
+            "why": "stone and water, used sparingly. No drips and no horror"
+          }
+        ]
+      },
+      "8": {
+        "sounds": [
+          {
+            "name": "Data Center",
+            "url": "https://mynoise.net/NoiseMachines/dataCenterNoiseGenerator.php",
+            "why": "a very low equipment tone. Near silence, so the dialogue carries it"
+          }
+        ]
+      },
+      "9": {
+        "sounds": [
+          {
+            "name": "Anamnesis",
+            "url": "https://mynoise.net/NoiseMachines/anamnesisSoundscapeGenerator.php",
+            "why": "the same room, thinner. Nothing new arrives"
+          }
+        ]
+      },
+      "10": {
+        "sounds": [
+          {
+            "name": "Rain Noise",
+            "url": "https://mynoise.net/NoiseMachines/rainNoiseGenerator.php",
+            "why": "texture for the film strip racing past, shaped down to almost nothing"
+          },
+          {
+            "name": "Anamnesis",
+            "url": "https://mynoise.net/NoiseMachines/anamnesisSoundscapeGenerator.php",
+            "why": "the film running backwards behind the key"
+          }
+        ]
+      },
+      "11": {
+        "sounds": [
+          {
+            "name": "Anamnesis",
+            "url": "https://mynoise.net/NoiseMachines/anamnesisSoundscapeGenerator.php",
+            "why": "stillness. The quietest moment in the film"
+          }
+        ]
+      },
+      "12": {
+        "sounds": [
+          {
+            "name": "Autumn Walk",
+            "url": "https://mynoise.net/NoiseMachines/autumnWalkSoundscapeGenerator.php",
+            "why": "cloud under the end credits, if anything at all"
+          }
+        ]
+      }
+    },
     "keywords": [
       {
         "phase": "0",
@@ -6900,22 +7058,77 @@
       {
         "name": "myNoise, the full index",
         "url": "https://mynoise.net/noiseMachines.php",
-        "note": "Every generator, searchable by keyword. The place to start."
+        "note": "Every generator, searchable. Single words match; long phrases do not."
+      },
+      {
+        "name": "Anamnesis",
+        "url": "https://mynoise.net/NoiseMachines/anamnesisSoundscapeGenerator.php",
+        "note": "verified 5.9.2026"
+      },
+      {
+        "name": "Autumn Walk",
+        "url": "https://mynoise.net/NoiseMachines/autumnWalkSoundscapeGenerator.php",
+        "note": "verified 5.9.2026"
+      },
+      {
+        "name": "Cave Water",
+        "url": "https://mynoise.net/NoiseMachines/caveWaterNoiseGenerator.php",
+        "note": "verified 5.9.2026"
+      },
+      {
+        "name": "Data Center",
+        "url": "https://mynoise.net/NoiseMachines/dataCenterNoiseGenerator.php",
+        "note": "verified 5.9.2026"
+      },
+      {
+        "name": "Fan Noise",
+        "url": "https://mynoise.net/NoiseMachines/fanNoiseGenerator.php",
+        "note": "verified 5.9.2026"
+      },
+      {
+        "name": "In Utero",
+        "url": "https://mynoise.net/NoiseMachines/inUteroSoundGenerator.php",
+        "note": "verified 5.9.2026"
       },
       {
         "name": "Morning Forest",
         "url": "https://mynoise.net/NoiseMachines/belgianForestSoundscapeGenerator.php",
-        "note": "Background wind, distant creek, forest stream, morning howls. Presets include Morning Veil and Quietude."
+        "note": "verified 5.9.2026"
+      },
+      {
+        "name": "Oblivion",
+        "url": "https://mynoise.net/NoiseMachines/oblivionSoundscapeGenerator.php",
+        "note": "verified 5.9.2026"
+      },
+      {
+        "name": "Pebble Beach",
+        "url": "https://mynoise.net/NoiseMachines/pebbleBeachNoiseGenerator.php",
+        "note": "verified 5.9.2026"
+      },
+      {
+        "name": "Rain Noise",
+        "url": "https://mynoise.net/NoiseMachines/rainNoiseGenerator.php",
+        "note": "verified 5.9.2026"
+      },
+      {
+        "name": "Traffic Noise",
+        "url": "https://mynoise.net/NoiseMachines/trafficNoiseGenerator.php",
+        "note": "verified 5.9.2026"
+      },
+      {
+        "name": "Waterfall",
+        "url": "https://mynoise.net/NoiseMachines/waterfallNoiseGenerator.php",
+        "note": "verified 5.9.2026"
+      },
+      {
+        "name": "Wind",
+        "url": "https://mynoise.net/NoiseMachines/windNoiseGenerator.php",
+        "note": "verified 5.9.2026"
       },
       {
         "name": "Woodland Echoes",
         "url": "https://mynoise.net/NoiseMachines/northAmericaForestSoundscape.php",
-        "note": "Forest lake, rainy forest, WINDY FOREST, woodland stream."
-      },
-      {
-        "name": "Between Land and Sea",
-        "url": "https://mynoise.net/NoiseMachines/betweenLandSeaRelaxingSoundscape.php",
-        "note": "Coastal winds, singing trees, eucalyptus forest, garden meditation."
+        "note": "verified 5.9.2026"
       }
     ],
     "demo": {

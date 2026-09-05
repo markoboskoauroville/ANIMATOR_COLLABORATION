@@ -3103,10 +3103,22 @@ def sound_page():
                 o.append('<p class=lede style="opacity:.7">%s</p>'
                          % html.escape(demo.get('note', '')))
         for it in (ph.get(n, {}).get('sounds') or []):
-            o.append('<div class=l><div class=n><span>'
-                     '<a href="%s" target=mynoise>%s</a></span><span class=t>%s</span></div></div>'
-                     % (it.get('url', '#'), html.escape(it.get('name', '')),
-                        html.escape(it.get('why', ''))))
+            u = it.get('url', '#')
+            j = '&' if '?' in u else '?'
+            o.append('<div class=srcbox><div class=t><b>%s</b></div><p>%s</p>'
+                     '<div class=solorow>' % (html.escape(it.get('name', '')),
+                                              html.escape(it.get('why', ''))))
+            o.append('<a class=sbtn target=mynoise href="%s%sl=%s00">ALL UP</a>'
+                     % (u, j, '99' * 10))
+            o.append('<a class=sbtn target=mynoise href="%s%sl=%s00">HALF</a>'
+                     % (u, j, '50' * 10))
+            for i in range(10):
+                lv = ['00'] * 10; lv[i] = '99'
+                o.append('<a class="sbtn solo" target=mynoise href="%s%sl=%s00">%d</a>'
+                         % (u, j, ''.join(lv), i + 1))
+            o.append('<button class="sbtn nav" type=button data-d="-1">&#9664;</button>'
+                     '<button class="sbtn nav" type=button data-d="1">&#9654;</button>'
+                     '</div></div>')
 
     src = SOUND.get('sources') or []
     if src:
