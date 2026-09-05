@@ -3493,7 +3493,7 @@
       "title": "His room",
       "status": "accepted",
       "date": "2026-09-04",
-      "note": "THE ROOM, AND HE IS IN IT. One chair, and he is sitting in it, on the LEFT of frame looking RIGHT, which is the screen direction this scene never crosses. The console is a colour grading surface rather than a cockpit: three big trackballs in dished rings with fluted wheels, a handful of large keys, and empty surface between them, all sized for a grown man. A wise man does not need hundreds of controls. Above it the display is a HOLOGRAM standing free in the air, no bezel and no housing, a body turning slowly in separated layers with readouts hanging beside it. That is the same body Manan has just ridden up, seen the way Viveka sees it.",
+      "note": "THE ROOM, AND HE IS IN IT. One chair, and he is sitting in it, on the LEFT of frame looking RIGHT, which is the screen direction this scene never crosses. The console is a colour grading surface rather than a cockpit: three big trackballs in dished rings with fluted wheels, a handful of large keys, and empty surface between them, all sized for a grown man. A wise man does not need hundreds of controls. Above it the display is a HOLOGRAM standing free in the air, no bezel and no housing, a body turning slowly in separated layers with readouts hanging beside it. That is the same body Manan has just ridden up, seen the way Viveka sees it. HE WEARS THE KEY. Added 4.9.2026 after a scan of every published frame: he is in the film wearing it from the moment Manan walks in, so the audience has seen it long before it means anything, and three frames still had him without it. The key is GOLD and is the only colour in the picture.",
       "dialogue": [
         {
           "speaker": "VIVEKA",
@@ -3547,7 +3547,7 @@
       "title": "The character sheet",
       "status": "accepted",
       "date": "2026-09-04",
-      "note": "THE CHARACTER SHEET. Front, three quarter and profile, all at one height and one scale. The Little Prince grown up: late twenties, slight, not tall, an open face closer to a smile than to a smile, a thick mass of close curls, and the star cloak worn open over plain clothes. Reference, not a shot.",
+      "note": "THE CHARACTER SHEET. Front, three quarter and profile, all at one height and one scale. The Little Prince grown up: late twenties, slight, not tall, an open face closer to a smile than to a smile, a thick mass of close curls, and the star cloak worn open over plain clothes. Reference, not a shot. HE WEARS THE KEY. Added 4.9.2026 after a scan of every published frame: he is in the film wearing it from the moment Manan walks in, so the audience has seen it long before it means anything, and three frames still had him without it. The key is GOLD and is the only colour in the picture.",
       "storyboard": "hide"
     },
     {
@@ -3558,7 +3558,7 @@
       "title": "The portrait",
       "status": "accepted",
       "date": "2026-09-04",
-      "note": "THE PORTRAIT, three quarter, hands open at his sides. Use this one for the face and the hair, and the sheet for the proportions. He is beautiful without being handsome and the beauty is in the openness. Nothing about him is stern and nothing is a wizard.",
+      "note": "THE PORTRAIT, three quarter, hands open at his sides. Use this one for the face and the hair, and the sheet for the proportions. He is beautiful without being handsome and the beauty is in the openness. Nothing about him is stern and nothing is a wizard. HE WEARS THE KEY. Added 4.9.2026 after a scan of every published frame: he is in the film wearing it from the moment Manan walks in, so the audience has seen it long before it means anything, and three frames still had him without it. The key is GOLD and is the only colour in the picture.",
       "storyboard": "hide"
     },
     {
@@ -3782,10 +3782,43 @@
           "line": "You will not always have me to ask."
         }
       ]
+    },
+    {
+      "file": "BB_C_19/19-1-nokey-20260904.png",
+      "kind": "keyframe",
+      "scene": "19",
+      "shot": "19.5n",
+      "title": "",
+      "status": "superseded",
+      "date": "2026-09-04",
+      "storyboard": "hide",
+      "note": "The version without the key round his neck, before the scan of 4.9.2026."
+    },
+    {
+      "file": "BB_C_19/19-CHARACTER-nokey-20260904.png",
+      "kind": "keyframe",
+      "scene": "19",
+      "shot": "19.98n",
+      "title": "",
+      "status": "superseded",
+      "date": "2026-09-04",
+      "storyboard": "hide",
+      "note": "The version without the key round his neck, before the scan of 4.9.2026."
+    },
+    {
+      "file": "BB_C_19/19-PORTRAIT-nokey-20260904.png",
+      "kind": "keyframe",
+      "scene": "19",
+      "shot": "19.99n",
+      "title": "",
+      "status": "superseded",
+      "date": "2026-09-04",
+      "storyboard": "hide",
+      "note": "The version without the key round his neck, before the scan of 4.9.2026."
     }
   ],
   "event": "Breakthrough Junior Challenge 2026",
-  "site_version": 241,
+  "site_version": 242,
   "footage": [
     {
       "name": "Key catch",

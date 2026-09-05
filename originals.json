@@ -1422,8 +1422,8 @@
     "url": "https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIGINALS/main/BB_C_7/7-2-20260904d.png"
   },
   "19-1.png": {
-    "bytes": 6458923,
-    "sha256": "2a47eb01908ffdc7f93adbec9089a0cf4a0a8cbc5cb8a4902237b6ddeff215a2",
+    "bytes": 6291250,
+    "sha256": "23dcd283d65430f0ec347ea5699346bd50bb412d03113689271c8f94d1ccfa69",
     "path": "BB_C_19/19-1.png",
     "url": "https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIGINALS/main/BB_C_19/19-1.png"
   },
@@ -1434,14 +1434,14 @@
     "url": "https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIGINALS/main/BB_C_19/19-2.png"
   },
   "19-CHARACTER.png": {
-    "bytes": 6066343,
-    "sha256": "c43722a6d9e74f3da1a09a46eab3fc7e89c7a51b6c988d1910f50b065794371f",
+    "bytes": 6095283,
+    "sha256": "b2accfccbc0aeaec254bacd5ddf47c4391606cf99ed5537a37aad6a1821c2a6b",
     "path": "BB_C_19/19-CHARACTER.png",
     "url": "https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIGINALS/main/BB_C_19/19-CHARACTER.png"
   },
   "19-PORTRAIT.png": {
-    "bytes": 5377819,
-    "sha256": "6284e4c4a9dc24a5a2efabe9cbdce62924787d2e4da4eb1dec3c48a199a9bb1c",
+    "bytes": 4897807,
+    "sha256": "fe03cfe58a21eba042b6d6b53551a95c082cfe547e52e9799189f14b9d2100d7",
     "path": "BB_C_19/19-PORTRAIT.png",
     "url": "https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIGINALS/main/BB_C_19/19-PORTRAIT.png"
   },
@@ -1534,5 +1534,23 @@
     "sha256": "96f590f255c0220eebe752669342dc3c8a5cc5deb0792f2e0f50e458422bb904",
     "path": "BB_C_19/19-5-PLATE.png",
     "url": "https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIGINALS/main/BB_C_19/19-5-PLATE.png"
+  },
+  "19-1-nokey-20260904.png": {
+    "bytes": 6458923,
+    "sha256": "2a47eb01908ffdc7f93adbec9089a0cf4a0a8cbc5cb8a4902237b6ddeff215a2",
+    "path": "BB_C_19/19-1-nokey-20260904.png",
+    "url": "https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIGINALS/main/BB_C_19/19-1-nokey-20260904.png"
+  },
+  "19-CHARACTER-nokey-20260904.png": {
+    "bytes": 6066343,
+    "sha256": "c43722a6d9e74f3da1a09a46eab3fc7e89c7a51b6c988d1910f50b065794371f",
+    "path": "BB_C_19/19-CHARACTER-nokey-20260904.png",
+    "url": "https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIGINALS/main/BB_C_19/19-CHARACTER-nokey-20260904.png"
+  },
+  "19-PORTRAIT-nokey-20260904.png": {
+    "bytes": 5377819,
+    "sha256": "6284e4c4a9dc24a5a2efabe9cbdce62924787d2e4da4eb1dec3c48a199a9bb1c",
+    "path": "BB_C_19/19-PORTRAIT-nokey-20260904.png",
+    "url": "https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIGINALS/main/BB_C_19/19-PORTRAIT-nokey-20260904.png"
   }
 }
