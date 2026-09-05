@@ -1480,5 +1480,23 @@
     "sha256": "7cd8267c8dc63a4d19c5af9f91d9e18267c3253a220751b1d9be6d6b7e7f7a69",
     "path": "BB_C_19/19-4-20260904.png",
     "url": "https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIGINALS/main/BB_C_19/19-4-20260904.png"
+  },
+  "KEY-SHEET-ANGLES.png": {
+    "bytes": 4924324,
+    "sha256": "c2c1c58399fd00280a303a160cb7071c6aa522e8a9908b3000a7cdb40b745ec9",
+    "path": "BB_C_15/KEY-SHEET-ANGLES.png",
+    "url": "https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIGINALS/main/BB_C_15/KEY-SHEET-ANGLES.png"
+  },
+  "KEY-SHEET-TUMBLE.png": {
+    "bytes": 4664197,
+    "sha256": "5310b2bb0db96d7a35991911df13d0df3ffc375fdf3497fc0677ccd16d8f3ed9",
+    "path": "BB_C_15/KEY-SHEET-TUMBLE.png",
+    "url": "https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIGINALS/main/BB_C_15/KEY-SHEET-TUMBLE.png"
+  },
+  "KEY-RELEASE.png": {
+    "bytes": 6864783,
+    "sha256": "ecf771fb41480c00661ec5b5bade29067cb1ddda805ce0203fe3ff99b7699d5e",
+    "path": "BB_C_15/KEY-RELEASE.png",
+    "url": "https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIGINALS/main/BB_C_15/KEY-RELEASE.png"
   }
 }

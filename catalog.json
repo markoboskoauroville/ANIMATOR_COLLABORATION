@@ -3490,24 +3490,16 @@
       "note": "THE ROOM, AND HE IS IN IT. One chair, and he is sitting in it, on the LEFT of frame looking RIGHT, which is the screen direction this scene never crosses. The console is a colour grading surface rather than a cockpit: three big trackballs in dished rings with fluted wheels, a handful of large keys, and empty surface between them, all sized for a grown man. A wise man does not need hundreds of controls. Above it the display is a HOLOGRAM standing free in the air, no bezel and no housing, a body turning slowly in separated layers with readouts hanging beside it. That is the same body Manan has just ridden up, seen the way Viveka sees it.",
       "dialogue": [
         {
-          "speaker": "MANAN",
-          "line": "That was you. It was never my arm at all."
-        },
-        {
-          "speaker": "VIVEKA",
-          "line": "It is always your arm. The permission is mine."
-        },
-        {
           "speaker": "VIVEKA",
           "line": "Ah. There you are. I was expecting you."
         },
         {
           "speaker": "VIVEKA",
-          "line": "Before we start. Lift your right arm for me."
+          "line": "Before we begin. Raise my right arm."
         },
         {
           "speaker": "MANAN",
-          "line": "I'm trying."
+          "line": "I am trying."
         },
         {
           "speaker": "VIVEKA",
@@ -3520,6 +3512,14 @@
         {
           "speaker": "VIVEKA",
           "line": "Try now."
+        },
+        {
+          "speaker": "MANAN",
+          "line": "That was you. It was never my arm at all."
+        },
+        {
+          "speaker": "VIVEKA",
+          "line": "The arm is always yours. The permission is mine. And the permission is the key."
         }
       ]
     },
@@ -3590,7 +3590,7 @@
       "title": "Viveka answers, in the same places",
       "status": "accepted",
       "date": "2026-09-04",
-      "note": "HIS ANSWER, THE SAME BOARD WITH EVERY VALUE REVERSED.\n\nIT IS A BOARD IN A NEW MEDIUM. The three lines hold the CENTRE of the display and the pictures are pushed to the edges: the body at the far left, the gauge at the far right, and nothing else floating anywhere, because a board has one thing on it at a time.\n\nTHE LINES ARE:  FATIGUE IS IN THE BRAIN / THE FUEL IS STILL THERE / THE WALL IS A NUMBER\n\nTHEY DO NOT ARRIVE TOGETHER. Each line appears under the line being spoken, the way a highlighter runs across a sentence in a book, so the display fills as the argument is made and the third line lands on the last word. That is why an EMPTY PLATE ships with this frame: the display with the body and the gauge in place and no writing at all, so the lines can be animated in one at a time. Read the left board down and then the right and you have the whole film.",
+      "note": "HIS ANSWER, THE SAME BOARD WITH EVERY VALUE REVERSED.\n\nIT IS A BOARD IN A NEW MEDIUM. The three lines hold the CENTRE of the display and the pictures are pushed to the edges: the body at the far left, the gauge at the far right, and nothing else floating anywhere, because a board has one thing on it at a time.\n\nTHE LINES ARE:  FATIGUE IS IN THE BRAIN / THE FUEL IS STILL THERE / THE WALL IS A NUMBER\n\nTHEY DO NOT ARRIVE TOGETHER. Each line appears under the line being spoken, the way a highlighter runs across a sentence in a book, so the display fills as the argument is made and the third line lands on the last word. That is why an EMPTY PLATE ships with this frame: the display with the body and the gauge in place and no writing at all, so the lines can be animated in one at a time. Read the left board down and then the right and you have the whole film.\n\nA FOURTH LINE IS OWED HERE AND IS NOT DRAWN YET. Baba, 4.9.2026: the display should carry the word once itself. After \"Then it can be a different number\", one more line arrives under the other three and it reads THE KEY IS PERMISSION. That is the moment the figurative key and the gold one become the same object, and it is the line Viveka says out loud a beat later while lifting the real key off his neck. Frame not generated: the paid key ran out of credits.",
       "dialogue": [
         {
           "speaker": "VIVEKA",
@@ -3602,11 +3602,7 @@
         },
         {
           "speaker": "VIVEKA",
-          "line": "When the answer starts to look like no, I slow you down. Not because anything has run out. Because of where it is heading."
-        },
-        {
-          "speaker": "MANAN",
-          "line": "Heading."
+          "line": "The key is not how much is left in you. The key is how fast it is going."
         },
         {
           "speaker": "VIVEKA",
@@ -3635,6 +3631,18 @@
         {
           "speaker": "MANAN",
           "line": "Then it can be a different number."
+        },
+        {
+          "speaker": "VIVEKA",
+          "line": "That is the key."
+        },
+        {
+          "speaker": "MANAN",
+          "line": "The permission."
+        },
+        {
+          "speaker": "VIVEKA",
+          "line": "You will not always have me to ask."
         }
       ],
       "plates": [
@@ -3664,10 +3672,43 @@
       "status": "superseded",
       "date": "2026-09-04",
       "note": "The wordless version, before the display became a board again."
+    },
+    {
+      "file": "BB_C_15/KEY-SHEET-ANGLES.png",
+      "kind": "keyframe",
+      "scene": "15",
+      "shot": "15.90",
+      "title": "The key, twelve angles",
+      "status": "accepted",
+      "date": "2026-09-04",
+      "storyboard": "hide",
+      "note": "THE PROP SHEET. Twelve studies of the key in twelve angles in three dimensions: front, back, edge on so it is almost a line, foreshortened away, foreshortened towards, rolled on its side, down the shank, from below, and three quarters from both corners. NOT ONE IS UPRIGHT AND FLAT TO THE CAMERA, because a key square to the lens looks hung and not dropped, which is exactly what went wrong in the first fall. THE KEY IS GOLD: the world is graphite and this is the only gold in the film."
+    },
+    {
+      "file": "BB_C_15/KEY-SHEET-TUMBLE.png",
+      "kind": "keyframe",
+      "scene": "15",
+      "shot": "15.91",
+      "title": "The key, nine steps of a tumble",
+      "status": "accepted",
+      "date": "2026-09-04",
+      "storyboard": "hide",
+      "note": "THE TUMBLE SHEET. Nine studies read as one continuous fall, rotating on TWO axes at once, spinning on its own length while turning end over end. Give this to the model when a falling frame is needed, so it has a real turn to interpolate rather than a pose to copy. Crop ONE study out before using it as a reference: handing over the whole sheet makes the model reproduce the grid, ghost keys and all."
+    },
+    {
+      "file": "BB_C_15/KEY-RELEASE.png",
+      "kind": "keyframe",
+      "scene": "15",
+      "shot": "15.92",
+      "title": "His hand lets it go",
+      "status": "accepted",
+      "date": "2026-09-04",
+      "storyboard": "hide",
+      "note": "HE DOES NOT HAND IT OVER, HE DROPS IT. The hand comes in from the left, the fingers just opening, the key already tipping out of true so it reads as falling rather than hanging. YOU KNOW WHOSE HAND IT IS WITHOUT A FACE: a real amount of the star cloak is in frame, and the old version showed a piece of tracksuit. NOTHING TRAILS FROM THE HAND. An earlier version had a loose cord and it pulled the eye somewhere that meant nothing; nothing in this film is corded or strung. Behind everything is empty white, because the wall of memories is built up separately."
     }
   ],
   "event": "Breakthrough Junior Challenge 2026",
-  "site_version": 236,
+  "site_version": 237,
   "footage": [
     {
       "name": "Key catch",
@@ -6450,14 +6491,14 @@
     {
       "anchor": "19-1",
       "label": "Viveka's room",
-      "sec": 119.42,
+      "sec": 194.28,
       "voices": [
         "edmund_32",
         "hugh_32",
         "imogen_32"
       ],
-      "parts": 11,
-      "text": "The lift opens and he is in the head. One room, one chair, and a man in it who has been expecting him. THIS IS NOT THE LITTLE BRAIN ANY MORE. Viveka is the Little Prince grown up: late twenties, slight, not tall, an open face closer to a smile than to a smile, and a thick mass of close curls that will remind you of the convolutions of a brain if you let it, though it is only hair. His cloak carries the night sky, small stars and faint constellations and a few ringed planets worked into the weave, because the pineal gland is the portal to the cosmos and the cloak is where the film says so. Play him KIND and play him the most powerful thing in the building, and do not let either cancel the other. Nothing stern, nothing grand, and nothing like a wizard. The room says the same thing the man does. A wise man does not need hundreds of controls, so the console is three big trackballs in dished rings, a handful of large keys, and empty surface between them, all sized for a grown man's hands. Above it the display is a HOLOGRAM standing free in the air with no frame and no housing: a body turning slowly in separated layers, skeleton, muscle, organs, skin, with thin readouts hanging beside it. That is the same body Manan has just ridden up, seen the way Viveka sees it. ONE CHAIR. There used to be two and it was an error nobody questioned for weeks. Screen direction is fixed and never crosses: Viveka on the LEFT looking RIGHT, Manan on the RIGHT looking LEFT. Ah. There you are. I was expecting you. Direction. Then he asks for something impossible, and the whole idea of the film gets done as a party trick instead of a lecture. The boy's arm must genuinely not move. Animate the EFFORT, not the failure. Before we begin. Raise my right arm. I am trying. I know. I can't. Why can't I move it? Try now. That was you. It was never my arm at all. The arm is always yours. The permission is mine.",
+      "parts": 28,
+      "text": "The lift opens and he is in the head. One room, one chair, and a man who has been expecting him. Viveka is the Little Prince grown up: late twenties, slight, an open face, and a thick mass of close curls that will remind you of the convolutions of a brain if you let it, though it is only hair. His cloak carries the night sky. AND HE WEARS THE KEY, on a fine cord at his chest, the only gold in the entire film. Play him kind and play him the most powerful thing in the building, and do not let either cancel the other. A wise man does not need hundreds of controls, so the console is three big trackballs and empty surface between them. Above it a hologram stands free in the air: the body turning in separated layers, which is the same body he has just ridden up. ONE chair. Viveka on the left looking right, Manan on the right looking left, and that never crosses. Ah. There you are. I was expecting you. Before we begin. Raise my right arm. I am trying. I know. I can't. Why can't I move it? Try now. That was you. It was never my arm at all. The arm is always yours. The permission is mine. And the permission is the key. Direction. Now the theories, and Manan never writes anything: he thinks it and Viveka puts it in the air, because Viveka can read him. Nineteen twenty three. Hill puts runners on a treadmill and measures everything they do. His answer is simple. Fatigue is in the muscle. You run. The muscle uses up its oxygen. The fuel is spent. And when the tank reads empty, the body stops. Direction. Then the answer, in the same places with every value reversed, and LISTEN FOR THE WORD. Viveka keeps pointing at a key he has not shown yet. Pulse, breath, temperature, water, sugar. I read all of it, the whole time. That is what every one of those panels you walked past is for. And I ask one question with it. Can we carry on safely? The key is not how much is left in you. The key is how fast it is going. I do not wait for the tank to empty. I watch how fast it is emptying, and I stop you while there is still enough left to get you home. So no. Fatigue is in the brain, not in your legs. Up here. And it decides long before anything is actually in danger. When I stop you, the fuel is still there. It was. I saw it. The sugar cellar was full. The fat store was barely touched. The fibres were not torn. No. They never are. So the wall... Is a number I chose. Carefully. To keep you alive. Then it can be a different number. That is the key. The permission. You will not always have me to ask. And on THAT line he lifts the real one off his neck. The word has been circling the whole scene and now it lands on an object: the permission and the key are the same thing, and the only gold in the film is about to fall. A fourth line is owed on the display at that moment, reading THE KEY IS PERMISSION, and it is not drawn yet.",
       "url": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/guide/clip-19-1.mp3"
     },
     {
