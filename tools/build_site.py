@@ -1159,6 +1159,26 @@ def drama_en_block(depth=0):
                       rows, 'downloads/BRAIN_BRAKE_radio_drama_EN.zip', depth)
 
 
+def dialogue_wav_block(depth=0):
+    """EVERY SPOKEN LINE, AS AUDIO, FOUR VOICES PER CHARACTER.
+
+    Baba, 4.9.2026: he chooses the voice in the edit room, not here. So every
+    line exists four times over and the note says the one thing that matters
+    about using it: take a folder WHOLE. A character who changes voice between
+    sentences is two characters.
+    """
+    z = ('https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/'
+         'main/downloads/BRAIN_BRAKE_DIALOGUE_WAV.zip')
+    return ('<div class=srcbox><div class=t><b>Every spoken line, 48k wav</b>'
+            '<a class=dl href="%s">DOWNLOAD &nbsp;ZIP &nbsp;26 MB</a></div>'
+            '<p>Twenty three lines, ninety two files, numbered in film order. FOUR VOICES PER '
+            'CHARACTER so the edit room chooses: Manan as edmund, archie, rohan or chase, and '
+            'Viveka as hugh, dominic, alec or joe. Listen to the same line in all four folders and '
+            'then take that folder whole; a character who changes voice between sentences is two '
+            'characters. Manan\u2019s first two lines are already shot in his own voice, so those '
+            'wavs are a comparison and not a replacement.</p></div>' % z)
+
+
 def music_block(depth=0):
     """The two pieces written for the film.
 
@@ -1845,7 +1865,7 @@ _rd = ['<h1>The music, written for the film</h1>',
        '<p class=lede>The theme and the end credits, composed before the animation existed. '
        '<b>The film told out loud now lives on the film page</b>, in front of the frames it '
        'describes, so the words and the pictures arrive together.</p>',
-       music_block(), DECK_JS]
+       dialogue_wav_block(), music_block(), DECK_JS]
 open(os.path.join(ROOT, 'radiodrama.html'), 'w').write(
     page('The music', ''.join(_rd), here='drama', depth=0))
 
