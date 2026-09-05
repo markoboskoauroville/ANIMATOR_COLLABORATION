@@ -2314,7 +2314,7 @@
       "kind": "keyframe",
       "shot": "15.15",
       "file": "BB_C_15/15-1-B-v2.png",
-      "status": "proposal",
+      "status": "superseded",
       "date": "2026-09-01",
       "slug": "INT. — THE HAND TURNS OVER",
       "what": "Viveka's hand tilting, the ribbed tracksuit cuff at the wrist, the painted gold key sliding head down across the opening fingers.",
@@ -2324,13 +2324,14 @@
         "phase": "Phase 14 of 15, HE CATCHES IT.",
         "journey": "RESURRECTION. His hand closes on a real object and the change is proved.",
         "element": "THE HAND, closing. The most complete sentence a film can make without words."
-      }
+      },
+      "note": " RETIRED 5.9.2026. THE HAND IS COACH BRAIN’S. A ribbed tracksuit cuff, which is what the character wore before he became Viveka, and it is the one thing in the frame that tells you whose hand it is. KEY-RELEASE replaced it: the same beat with a real amount of the star cloak in frame instead. Kept, because the drawing of the key leaving the fingers is still good and it is the reference for the hand shape."
     },
     {
       "kind": "keyframe",
       "shot": "15.2",
       "file": "BB_C_15/15-2-A-v3.png",
-      "status": "proposal",
+      "status": "superseded",
       "date": "2026-09-01",
       "slug": "INT. — HE LETS IT GO",
       "what": "The hand open and relaxed, palm turned down, the ribbed tracksuit cuff at the wrist, and the painted gold key falling clear of the fingers into empty paper.",
@@ -2340,7 +2341,8 @@
         "phase": "Phase 14 of 15, HE CATCHES IT.",
         "journey": "RESURRECTION. His hand closes on a real object and the change is proved.",
         "element": "THE HAND, closing. The most complete sentence a film can make without words."
-      }
+      },
+      "note": " RETIRED 5.9.2026. THE HAND IS COACH BRAIN’S. A ribbed tracksuit cuff, which is what the character wore before he became Viveka, and it is the one thing in the frame that tells you whose hand it is. KEY-RELEASE replaced it: the same beat with a real amount of the star cloak in frame instead. Kept, because the drawing of the key leaving the fingers is still good and it is the reference for the hand shape."
     },
     {
       "kind": "keyframe",
@@ -3190,7 +3192,9 @@
       ],
       "full": "https://drive.google.com/drive/folders/1YGb_z7OCrLSUX7JagNpynXbu1fAK2wNu",
       "full_label": "PRORES WITH ALPHA &nbsp;3840 &times; 2160",
-      "proxy_note": "The loop on this page is a 480 wide proxy so the storyboard stays light. It is not the deliverable and must never be composited."
+      "proxy_note": "The loop on this page is a 480 wide proxy so the storyboard stays light. It is not the deliverable and must never be composited.",
+      "scene": "15",
+      "shot": "15.21"
     },
     {
       "file": "clips/key-catch-2-loop.mp4",
@@ -3210,7 +3214,9 @@
       ],
       "full": "https://drive.google.com/file/d/1HkTXJx_yDQ2k3grS7m7rI3gzeV7Ixztr/view?usp=drive_link",
       "full_label": "PRORES &nbsp;03 KEY CATCH_2.mov &nbsp;3840 &times; 2160 &nbsp;1.1 GB",
-      "proxy_note": "The loop on this page is a 480 wide proxy so the storyboard stays light. It is not the deliverable and must never be composited."
+      "proxy_note": "The loop on this page is a 480 wide proxy so the storyboard stays light. It is not the deliverable and must never be composited.",
+      "scene": "15",
+      "shot": "15.22"
     },
     {
       "file": "clips/in-front-of-door-loop.mp4",
@@ -3854,7 +3860,7 @@
     }
   ],
   "event": "Breakthrough Junior Challenge 2026",
-  "site_version": 247,
+  "site_version": 248,
   "footage": [
     {
       "name": "Key catch",
