@@ -521,6 +521,23 @@ h2{font-size:19px;margin:38px 0 14px;padding-bottom:7px;border-bottom:1px solid 
    stepped through with arrows. It cannot be framed, x-frame-options is
    SAMEORIGIN, so the links target a NAMED window instead: the first click opens
    it, every later click reuses the same one. Second screen, same behaviour. */
+
+/* SHEETS ARE FOR LOOKING AT. Baba, 5.9.2026: they rendered 44 pixels wide,
+   because the markup reused the storyboard strip's classes and `.tiny a` is
+   25% of its parent, so a sheet became a thumbnail of a thumbnail. A page whose
+   whole job is showing reference art has to SHOW it: fill the width, big cells,
+   caption small and underneath, nothing else competing. Twelve key angles at
+   forty four pixels is not a reference, it is a decoration. */
+.sheetgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(420px,1fr));
+ gap:14px;margin:14px 0 26px}
+.sheetgrid .sh{display:block;text-decoration:none;color:inherit}
+.sheetgrid .sh img{width:100%;display:block;border:1px solid var(--rule);
+ background:var(--card)}
+.sheetgrid .sh:hover img{border-color:var(--brass)}
+.sheetgrid .sh span{display:block;font:600 9.5px ui-monospace,monospace;letter-spacing:.08em;
+ text-transform:uppercase;color:var(--dim);padding-top:5px}
+.sheetgrid .sh:hover span{color:var(--brass)}
+@media(max-width:900px){.sheetgrid{grid-template-columns:1fr}}
 .solorow{display:flex;flex-wrap:wrap;gap:6px;align-items:center;margin:10px 0 18px}
 .sbtn{display:inline-flex;align-items:center;justify-content:center;min-width:34px;height:30px;
  padding:0 10px;border:1px solid var(--rule);border-radius:4px;background:none;cursor:pointer;
@@ -2971,12 +2988,12 @@ def sheets_page():
             card = 'card/%s.html' % b
             href = card if os.path.exists(os.path.join(ROOT, card)) else (
                 (ORIGINALS.get(f) or {}).get('url', '#'))
-            rows.append('<div class=f><a href="%s"><img src="tiny/%s.jpg" alt="" loading=lazy>'
-                        '</a><div class=n>%s</div></div>' % (href, b, html.escape(what)))
+            rows.append('<a class=sh href="%s"><img src="mid/%s.jpg" alt="" loading=lazy>'
+                        '<span>%s</span></a>' % (href, b, html.escape(what)))
         if rows:
             o.append('<div class=rtph><span class=n>&#9679;</span><h3>%s</h3>'
                      '<span class=st>%d sheets</span></div>' % (title, len(rows)))
-            o.append('<div class=tiny>' + ''.join(rows) + '</div>')
+            o.append('<div class=sheetgrid>' + ''.join(rows) + '</div>')
     return ''.join(o)
 
 
