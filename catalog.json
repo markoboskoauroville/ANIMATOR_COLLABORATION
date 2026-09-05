@@ -1705,12 +1705,12 @@
       "kind": "flow",
       "n": "10",
       "file": "flow/12-conclusion.jpg",
-      "title": "The vortex down, and the key falls with him",
+      "title": "He lets the key go, and it falls",
       "status": "placeholder",
       "scenes": [
         "9R"
       ],
-      "note": "Seven classical cards, in the longer version only.",
+      "note": "Viveka lifts the key off his neck and drops it, and you know whose hand it is without a face because a real amount of the star cloak is in frame. Then it falls, and the key is GOLD, the only colour in the whole film. Three phases of the tumble are drawn on PURE WHITE with nothing behind them, because the wall it falls in front of is built up separately: the film’s own moments, faded in one at a time on cream, running backwards. Every phase and the whole wall stack are on the shot cards.",
       "flow_pos": 0
     },
     {
@@ -2166,7 +2166,7 @@
       "slug": "EXT. SKY — THE KEY FALLS, 1 OF 6",
       "what": "Cloud along the top, and the key small and tilted head down in the empty paper below it, with a great deal of bare sheet under it to fall into.",
       "why": "FIRST OF THE FALL. It spans about a twelfth of the frame width here and grows all the way down, because Viveka is desk height and Manan is life size: the same object, simply getting nearer. It turns, grows and crosses from pencil to photograph together. GOLD ADDED IN THE CONTAINER, no coin: it came back drawn in the same pale pencil as the clouds, and on a sheet this empty the one coloured thing is the only thing the eye has.",
-      "note": "Off the strip 1.9.2026: measured 0.00 percent colour, so the key was never made gold. v2 was generated to fix it and never reached the repository.",
+      "note": "Off the strip 1.9.2026: measured 0.00 percent colour, so the key was never made gold. v2 was generated to fix it and never reached the repository. OFF THE STORYBOARD 4.9.2026. An earlier attempt at the fall, kept because it is still the reference for how the memories smear behind the key. The key itself is redrawn: gold, and never upright and flat to the camera.",
       "storyboard": "hide",
       "flow_pos": 17,
       "dna": {
@@ -2189,7 +2189,9 @@
         "phase": "Phase 14 of 15, HE CATCHES IT.",
         "journey": "RESURRECTION. His hand closes on a real object and the change is proved.",
         "element": "THE HAND, closing. The most complete sentence a film can make without words."
-      }
+      },
+      "storyboard": "hide",
+      "note": " OFF THE STORYBOARD 4.9.2026. An earlier attempt at the fall, kept because it is still the reference for how the memories smear behind the key. The key itself is redrawn: gold, and never upright and flat to the camera."
     },
     {
       "kind": "keyframe",
@@ -2205,7 +2207,9 @@
         "phase": "Phase 14 of 15, HE CATCHES IT.",
         "journey": "RESURRECTION. His hand closes on a real object and the change is proved.",
         "element": "THE HAND, closing. The most complete sentence a film can make without words."
-      }
+      },
+      "storyboard": "hide",
+      "note": " OFF THE STORYBOARD 4.9.2026. An earlier attempt at the fall, kept because it is still the reference for how the memories smear behind the key. The key itself is redrawn: gold, and never upright and flat to the camera."
     },
     {
       "kind": "keyframe",
@@ -2221,7 +2225,9 @@
         "phase": "Phase 14 of 15, HE CATCHES IT.",
         "journey": "RESURRECTION. His hand closes on a real object and the change is proved.",
         "element": "THE HAND, closing. The most complete sentence a film can make without words."
-      }
+      },
+      "storyboard": "hide",
+      "note": " OFF THE STORYBOARD 4.9.2026. An earlier attempt at the fall, kept because it is still the reference for how the memories smear behind the key. The key itself is redrawn: gold, and never upright and flat to the camera."
     },
     {
       "kind": "keyframe",
@@ -2709,9 +2715,9 @@
       "scene": "9R",
       "shot": "9R.2",
       "title": "The key falls with him",
-      "status": "placeholder",
+      "status": "superseded",
       "date": "2026-09-02",
-      "note": "NOT DRAWN YET. As the vortex takes him down, Viveka lets the key go and it falls with him. One beat, not two: the giving and the descent are the same moment.",
+      "note": "NOT DRAWN YET. As the vortex takes him down, Viveka lets the key go and it falls with him. One beat, not two: the giving and the descent are the same moment. ANSWERED 4.9.2026. The key falling is drawn: he lets it go with the star cloak in frame, then three phases of the tumble on pure white. The placeholder held this slot for weeks.",
       "dna": {
         "phase": "Phase 13 of 15, THE VORTEX DOWN, AND THE KEY FALLS WITH HIM.",
         "journey": "THE ROAD BACK. He leaves with something, and leaving is its own difficulty.",
@@ -3698,29 +3704,28 @@
     {
       "file": "BB_C_15/KEY-RELEASE.png",
       "kind": "keyframe",
-      "scene": "15",
-      "shot": "15.92",
-      "title": "His hand lets it go",
+      "scene": "9R",
+      "shot": "9R.25",
+      "title": "He lets it go",
       "status": "accepted",
       "date": "2026-09-04",
-      "storyboard": "hide",
       "note": "HE DOES NOT HAND IT OVER, HE DROPS IT. The hand comes in from the left, the fingers just opening, the key already tipping out of true so it reads as falling rather than hanging. YOU KNOW WHOSE HAND IT IS WITHOUT A FACE: a real amount of the star cloak is in frame, and the old version showed a piece of tracksuit. NOTHING TRAILS FROM THE HAND. An earlier version had a loose cord and it pulled the eye somewhere that meant nothing; nothing in this film is corded or strung. Behind everything is empty white, because the wall of memories is built up separately."
     },
     {
       "file": "BB_C_15/KEY-FALL-1.png",
       "kind": "keyframe",
-      "scene": "15",
-      "shot": "15.93",
+      "scene": "9R",
+      "shot": "9R.31",
       "title": "Falling, bow high",
       "status": "accepted",
       "date": "2026-09-04",
-      "note": "FALLING, PHASE ONE. Tipped away from us with the bow high and the bit swinging up, foreshortened so the bow is an oval, turning clockwise. ON PURE WHITE and nothing else, because the wall of memories is built up separately in the compositor and this frame is only the key. GOLD: the world is graphite and this is the only gold in the film."
+      "note": "FALLING, PHASE ONE. Tipped away from us with the bow high and the bit swinging up, foreshortened so the bow is an oval, turning clockwise. ON PURE WHITE and nothing else, because the wall of memories is built up separately in the compositor and this frame is only the key. GOLD: the world is graphite and this is the only gold in the film.\n\nTHE WALL IT FALLS IN FRONT OF, DEEPEST FIRST. The film runs backwards behind the key, so the stack is the film in reverse. Each layer is one of the film’s own frames, faded in on cream, all at the same tone so they read as one surface, and the whole wall moves upward while the key stays sharp:\n\n  19-5   the key is permission      ok\n  19-4   the answer                 ok\n  19-3   the old theory             ok\n  19-1   Viveka's room              ok\n  7-6    the door closes            ok\n  7-3    the lift reaches the head  ok\n  7-2    the body revealed          ok\n  7-1    the hip                    ok\n  1-24   the empty page             ok\n  1-16   the face, changed          ok\n  1-14   the face, spent            ok\n  1-11   Manan walks in             ok\n  1-7    the finish                 ok\n  1-3    he goes down               NOT FOUND under this name\n  1-1    the avenue                 NOT FOUND under this name\n\nStitch them in After Effects one atop another. The last two are under different names since the scene one reset and need mapping before the stack is built."
     },
     {
       "file": "BB_C_15/KEY-FALL-2.png",
       "kind": "keyframe",
-      "scene": "15",
-      "shot": "15.94",
+      "scene": "9R",
+      "shot": "9R.32",
       "title": "Falling, edge on",
       "status": "accepted",
       "date": "2026-09-04",
@@ -3729,8 +3734,8 @@
     {
       "file": "BB_C_15/KEY-FALL-3.png",
       "kind": "keyframe",
-      "scene": "15",
-      "shot": "15.95",
+      "scene": "9R",
+      "shot": "9R.33",
       "title": "Falling, bit first",
       "status": "accepted",
       "date": "2026-09-04",
@@ -3780,7 +3785,7 @@
     }
   ],
   "event": "Breakthrough Junior Challenge 2026",
-  "site_version": 239,
+  "site_version": 241,
   "footage": [
     {
       "name": "Key catch",
@@ -6599,13 +6604,13 @@
     },
     {
       "anchor": "9R-1-VORTEX-DOWN-v1",
-      "label": "The fall",
-      "sec": 27.19,
+      "label": "He lets it go, and it falls",
+      "sec": 70.46,
       "voices": [
         "imogen_32"
       ],
       "parts": 1,
-      "text": "The vortex down, and the key falls with him. He is falling now, not carried, so the trail REVERSES: everything streams upward past him. The key turns and grows as it comes, and behind it the whole film runs backwards, so faint it is almost not there. Keep the key sharp while everything behind it smears, because the camera is falling with the key and not with the memories. That difference is the entire reason the fall reads as fast.",
+      "text": "The vortex down, and the key falls with him. He is falling now, not carried, so the trail REVERSES: everything streams upward past him.\n\nAnd now the key itself, which is the only gold in the entire film. Viveka lifts it off his neck and lets it go, and you know whose hand it is without seeing a face, because a real amount of the star cloak is in frame. Nothing trails from his fingers.\n\nThree phases of the tumble are drawn on PURE WHITE with nothing behind them at all. That is deliberate: the wall it falls in front of is built up separately, out of the film's own moments faded in one at a time on cream, running backwards, deepest first. The stack is listed on the shot card.\n\nTWO RULES FOR THE FALL. The key is never upright and never flat to the camera; square to the lens it reads as hung and not dropped, and it must turn on two axes at once, spinning on its own length while tumbling end over end. There is a prop sheet of twelve angles and a tumble sheet of nine steps to work from, and if you hand a sheet to the model, crop ONE study out of it first or you get the whole grid back with ghost keys around the subject.\n\nAnd keep the key SHARP while everything behind it smears, because the camera is falling with the key and not with the memories. That difference is the entire reason the fall reads as fast.",
       "url": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/guide/clip-9R-1-VORTEX-DOWN-v1.mp3"
     },
     {
