@@ -2949,39 +2949,34 @@ for _i, e in enumerate(_cards):
 #
 # Live sheets first, retired ones after, because a retired sheet is still the
 # reason a design looks the way it does and deleting it loses the argument.
-_SHEETS = [
-    ('CHARACTERS', [
-        ('19-CHARACTER.png', 'Viveka, front, three quarter and profile'),
-        ('19-PORTRAIT.png', 'Viveka, the portrait'),
-        ('19-CHARACTER-KEY.png', 'Viveka wears the key'),
-        ('CHARACTER_SHEET_RUNNER-v1.jpg', 'The marathon runner'),
-        ('CHARACTER_SHEET_RUNNER_FACE-v2.png', 'The runner, the face'),
-    ]),
-    ('PROPS', [
-        ('KEY-SHEET-ANGLES.png', 'The key, twelve angles'),
-        ('KEY-SHEET-TUMBLE.png', 'The key, nine steps of a tumble'),
-        ('OBJECT_SHEET_KEY-v2.png', 'The key, the first study'),
-        ('OBJECT_SHEET_DESK-v3.png', 'The desk'),
-        ('OBJECT_SHEET_WALL-v2.png', 'The wall'),
-    ]),
-    ('RETIRED, AND KEPT', [
-        ('7-DOORSHEET-20260904.png', 'The door, closed, half, open'),
-        ('CHARACTER_SHEET_COACH_BRAIN-v4.png', 'Coach Brain, before he was a man'),
-        ('19-CHARACTER-nokey-20260904.png', 'Viveka before he wore the key'),
-        ('OBJECT_SHEET_CHAIR-v1.png', 'The chair'),
-    ]),
-]
+# THE SHEETS COME FROM THE CATALOGUE NOW. Baba, 5.9.2026: the page was showing
+# Coach Brain, his desk, his wall of switches and his chair, all of which belong
+# to a character and a room that no longer exist. It was a hardcoded list, so
+# retiring a sheet in the catalogue changed nothing here. Sixth time today that
+# a literal outlived what it pointed at.
+#
+# A SHEET SHOWS ONLY WHILE IT IS LIVE. Superseded ones are not listed at all,
+# not even under a "retired" heading: this page is what somebody opens before
+# drawing, and an outdated turnaround on it is worse than a missing one because
+# it will get used.
+_SHEETS = [(g['group'], g['files']) for g in CAT.get('sheets', [])]
 
 
 def sheets_page():
     o = ['<h1>Characters and props</h1>',
          '<p class=lede>The turnarounds and the object studies, which is what you open BEFORE '
          'drawing anything. <b>A sheet says what a thing looks like from every side, so nobody '
-         'has to guess twice.</b> Live sheets first; retired ones are kept underneath, because a '
-         'retired sheet is still the reason a design looks the way it does.</p>']
+         'has to guess twice.</b> Only sheets that are in the film are here. A retired one is '
+         'still in the archive with the reason it went, but it is not on this page, because an '
+         'outdated turnaround gets used.</p>']
     for title, items in _SHEETS:
         rows = []
-        for f, what in items:
+        for f in items:
+            ent = next((x for x in ENTRIES
+                        if os.path.basename(x.get('file', '')) == f), None)
+            if not ent or ent.get('status') == 'superseded':
+                continue
+            what = ent.get('title') or f
             b = f.rsplit('.', 1)[0].replace(' ', '_')
             if not os.path.exists(os.path.join(ROOT, 'mid', b + '.jpg')):
                 continue
