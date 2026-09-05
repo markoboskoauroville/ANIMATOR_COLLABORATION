@@ -1552,5 +1552,17 @@
     "sha256": "6284e4c4a9dc24a5a2efabe9cbdce62924787d2e4da4eb1dec3c48a199a9bb1c",
     "path": "BB_C_19/19-PORTRAIT-nokey-20260904.png",
     "url": "https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIGINALS/main/BB_C_19/19-PORTRAIT-nokey-20260904.png"
+  },
+  "FILMSTRIP.png": {
+    "bytes": 12944020,
+    "sha256": "6899a81187c05284aedf4c51d7768bf1a79e3c2aa77d899390ae36cea941dabf",
+    "path": "BB_C_9R/FILMSTRIP.png",
+    "url": "https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIGINALS/main/BB_C_9R/FILMSTRIP.png"
+  },
+  "FILMSTRIP-PLATE.png": {
+    "bytes": 3018721,
+    "sha256": "f76e51041b4347083460ddd5fc8dc7b050aedd284b2429aabc71cc69614feacb",
+    "path": "BB_C_9R/FILMSTRIP-PLATE.png",
+    "url": "https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIGINALS/main/BB_C_9R/FILMSTRIP-PLATE.png"
   }
 }
