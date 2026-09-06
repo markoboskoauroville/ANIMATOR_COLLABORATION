@@ -3937,7 +3937,7 @@
     }
   ],
   "event": "Breakthrough Junior Challenge 2026",
-  "site_version": 271,
+  "site_version": 272,
   "footage": [
     {
       "name": "Key catch",
@@ -7244,25 +7244,20 @@
   },
   "kbrojka": [
     {
-      "file": "3-BRAIN_BRAKE_kadrovi_HR-V3.pdf",
-      "date": "6.9.2026",
-      "size": "1.1 MB",
-      "url": "https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIGINALS/main/DOCS/3-BRAIN_BRAKE_kadrovi_HR-V3.pdf",
-      "what": "Povećalo pojednostavljeno: nema više priče o slojevima. Slika stoji, povećalo se njiše kao u ruci, a u 1-17 slika ispod oživi. To je iznenađenje."
-    },
-    {
-      "file": "2-BRAIN_BRAKE_kadrovi_HR-V2.pdf",
-      "date": "6.9.2026",
-      "size": "1.1 MB",
-      "url": "https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIGINALS/main/DOCS/2-BRAIN_BRAKE_kadrovi_HR-V2.pdf",
-      "what": "Razine animacije: slika stoji i miču se samo detalji, pa se otvara do pune animacije. Zamjenjuje priču o broju sličica. Povećalo ide u tri sloja."
-    },
-    {
       "file": "1-BRAIN_BRAKE_kadrovi_HR-V1.pdf",
       "date": "5.9.2026",
       "size": "633 KB",
       "url": "https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIGINALS/main/DOCS/1-BRAIN_BRAKE_kadrovi_HR-V1.pdf",
-      "what": "Prve bilješke na renderima, kadar po kadar, Babinim riječima."
+      "what": "Prvi nacrt. Bilješke na renderima, kadar po kadar, Babinim riječima. Ovdje je zato da se vidi odakle je krenulo.",
+      "role": "first"
+    },
+    {
+      "file": "3-BRAIN_BRAKE_kadrovi_HR-V3.pdf",
+      "date": "6.9.2026",
+      "size": "1.1 MB",
+      "url": "https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIGINALS/main/DOCS/3-BRAIN_BRAKE_kadrovi_HR-V3.pdf",
+      "what": "Razine animacije: slika stoji i miču se samo detalji, pa se otvara do pune animacije. Povećalo se njiše kao u ruci, a u 1-17 slika ispod oživi. RADI PO OVOME.",
+      "role": "current"
     }
   ]
 }

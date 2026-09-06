@@ -575,6 +575,18 @@ h2{font-size:19px;margin:38px 0 14px;padding-bottom:7px;border-bottom:1px solid 
  font:600 11px/1 ui-monospace,monospace;letter-spacing:.1em;
  margin:0 6px 0 0;text-decoration:none;align-self:center;display:inline-block}
 .bar a.arc:hover,.bar a.arc.on{color:var(--brass);border-color:var(--brass)}
+
+/* K_BROJKA. Two documents, and the current one has to be unmistakable: on a
+   page of instructions the wrong download costs a scene. */
+.kdoc{border:1px solid var(--rule);border-radius:5px;padding:14px 16px;margin:0 0 14px;
+ background:var(--card)}
+.kdoc.kcur{border-color:var(--brass);border-width:2px;background:var(--card)}
+.kdoc .kh{display:flex;align-items:center;gap:10px;margin-bottom:7px}
+.kdoc .kr{font:700 9px ui-monospace,monospace;letter-spacing:.14em;color:var(--dim)}
+.kdoc.kcur .kr{color:#17150f;background:var(--brass);border-radius:3px;padding:3px 8px}
+.kdoc .kd{margin-left:auto;font:600 9px ui-monospace,monospace;color:var(--dim)}
+.kdoc .kn{font:600 12px ui-monospace,monospace;color:var(--body);margin-bottom:6px}
+.kdoc p{margin:0 0 11px;font-size:13.5px;line-height:1.5;color:var(--dim)}
 .cur{font:700 8px ui-monospace,monospace;letter-spacing:.12em;color:#17150f;
  background:var(--brass);border-radius:3px;padding:2px 6px;margin-left:8px}
 .kitrow{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 10px}
@@ -3421,25 +3433,32 @@ open(os.path.join(ROOT, 'credits.html'), 'w').write(
 # log: every version, newest first, with the date and what changed in it, so
 # there is never a question about which one is current.
 def kbrojka_page():
+    """Only the first draft and the current one.
+
+    Baba, 6.9.2026: a middle version on this page is a trap. Somebody downloads
+    it, animates to an instruction that was already replaced, and the film comes
+    back wrong. The versions in between still exist in the repository; they are
+    simply not offered here.
+    """
     docs = CAT.get('kbrojka', [])
     o = ['<h1>K_BROJKA</h1>',
-         '<p class=lede>Every instruction document sent to Kristijan, newest first. '
-         '<b>The top one is the current one.</b> Older versions are kept because they say what was '
-         'asked for at the time, which is sometimes the only way to work out why a shot looks the '
-         'way it does.</p>']
+         '<p class=lede>The instruction documents for Kristijan. <b>Two only: where it started, '
+         'and what to work from today.</b> The versions in between are not here on purpose, so '
+         'nobody can pick one up by mistake and animate to an instruction that has already been '
+         'replaced.</p>']
     if not docs:
         o.append('<div class=srcbox><div class=t><b>Nothing here yet</b></div></div>')
         return ''.join(o)
-    o.append('<div class=lay>')
-    for i, d in enumerate(docs):
-        o.append('<div class=l><div class=n>'
-                 '<span><a class=dl href="%s">DOWNLOAD&nbsp;&nbsp;%s</a>%s</span>'
-                 '<span class=t><b>%s</b> &nbsp;&middot;&nbsp; %s &nbsp;&middot;&nbsp; %s</span>'
-                 '</div></div>'
-                 % (d['url'], html.escape(d['size']),
-                    ' <span class=cur>CURRENT</span>' if i == 0 else '',
-                    html.escape(d['file']), html.escape(d['date']), html.escape(d['what'])))
-    o.append('</div>')
+    for d in docs:
+        cur = d.get('role') == 'current'
+        o.append('<div class="kdoc%s"><div class=kh><span class=kr>%s</span>%s</div>'
+                 '<div class=kn>%s</div><p>%s</p>'
+                 '<a class=dl href="%s">DOWNLOAD&nbsp;&nbsp;%s</a></div>'
+                 % (' kcur' if cur else '',
+                    'WORK FROM THIS ONE' if cur else 'WHERE IT STARTED',
+                    '<span class=kd>%s</span>' % html.escape(d['date']),
+                    html.escape(d['file']), html.escape(d['what']),
+                    d['url'], html.escape(d['size'])))
     return ''.join(o)
 
 
