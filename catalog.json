@@ -3937,7 +3937,7 @@
     }
   ],
   "event": "Breakthrough Junior Challenge 2026",
-  "site_version": 281,
+  "site_version": 282,
   "footage": [
     {
       "name": "Key catch",
@@ -7237,7 +7237,7 @@
     "flight_note": {
       "slug": "prose-second-half",
       "label": "How the film moves",
-      "sec": 67.55,
+      "sec": 81.06,
       "parts": 1,
       "url": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/guide/clip-prose-second-half.mp3"
     }
