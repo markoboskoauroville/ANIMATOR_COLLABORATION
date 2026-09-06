@@ -2377,8 +2377,12 @@ def _prose(key, title, body):
     return '<div class=flight><b>%s</b>%s<p>%s</p></div>' % (title, cue, body)
 
 
-_flight = _prose('rubbing_note', 'How the first half arrives', CAT.get('rubbing_note', ''))
-_flight += _prose('flight_note', 'How the second half moves', CAT.get('flight_note', ''))
+# THE FIRST HALF RULE IS GONE. Baba, 6.9.2026: the frottage is out. The film is
+# being simplified and sped up, so nothing surfaces out of the paper any more,
+# nothing is drawn in stages, and there is no stroboscopic stutter and no
+# posterisation of time. The paragraph described a technique nobody is using,
+# which is worse than no paragraph.
+_flight = _prose('flight_note', 'How the film moves', CAT.get('flight_note', ''))
 rt = [_mast, '<h1>THE BRAIN BRAKE ANIMATIC</h1>', _flight,
       '<p class=lede>The whole film as a storyboard, in order. <b>%d frames drawn, %d holding as '
       'placeholders, %d keyframes live in all.</b> The count here is lower than the last because a '
