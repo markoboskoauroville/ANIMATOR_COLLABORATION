@@ -558,6 +558,8 @@ h2{font-size:19px;margin:38px 0 14px;padding-bottom:7px;border-bottom:1px solid 
 .dlg .dtx p{margin:0 0 9px;font-size:15px;line-height:1.5;color:var(--body)}
 .dlg .dtx p:last-child{margin:0}
 
+.dlg .shot{font:700 8px ui-monospace,monospace;letter-spacing:.12em;
+ color:#5a7a4a;border:1px solid #5a7a4a;border-radius:3px;padding:1px 5px}
 .dlg .ttl{font-size:12px;color:var(--dim)}
 .dlg .dtx .sp{border-top:1px solid var(--rule);padding:9px 0 4px}
 .dlg .dtx .sp:first-child{border-top:0;padding-top:0}
@@ -565,6 +567,14 @@ h2{font-size:19px;margin:38px 0 14px;padding-bottom:7px;border-bottom:1px solid 
 .dlg .dtx .spn .cp{margin-left:auto;padding:2px 8px;font-size:8px}
 .dlg .dpic img{max-height:250px;object-fit:cover}
 @media(max-width:700px){.dlg .db{grid-template-columns:1fr}}
+
+/* ARC. Baba, 6.9.2026: the archive is a back room, not a section of the film,
+   so it sits with the badges rather than in the run of pages. Three letters is
+   enough for something you go to on purpose. */
+.bar a.arc{font:600 9px ui-monospace,monospace;letter-spacing:.16em;color:var(--dim);
+ border:1px solid var(--rule);border-radius:3px;padding:3px 6px;margin-left:10px;
+ text-decoration:none}
+.bar a.arc:hover,.bar a.arc.on{color:var(--brass);border-color:var(--brass)}
 .kitrow{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 10px}
 .solorow{display:flex;flex-wrap:wrap;gap:6px;align-items:center;margin:10px 0 18px}
 .sbtn{display:inline-flex;align-items:center;justify-content:center;min-width:34px;height:30px;
@@ -1365,9 +1375,14 @@ def bar(here, r):
          % (r, ' class=on' if here == 'sound' else ''),
          '<a href="%sdialogue.html"%s>DIALOGUE</a>'
          % (r, ' class=on' if here == 'dialogue' else ''),
-         '<a href="%sarchive.html"%s>ARCHIVE</a>' % (r, ' class=on' if here == 'archive' else ''),
+         # 6.9.2026: credits come LAST in the bar because they come last in the
+         # film.
+         '<a href="%scredits.html"%s>CREDITS</a>'
+         % (r, ' class=on' if here == 'credits' else ''),
          '<span class=sp></span>',
          ('<span class=vb>%s</span>' % VERSION) if VERSION else '',
+         '<a class="arc%s" href="%sarchive.html" title="the archive">ARC</a>'
+         % (' on' if here == 'archive' else '', r),
          '<span class=sitev title="site version">v%d</span>' % SITEV,
          '<button class=th id=th onclick="tt()" title="light or dark">&#9681;</button>',
          '</div>']
@@ -3271,7 +3286,7 @@ def dialogue_page():
             runs, cur = [], None
             for d in e['dialogue']:
                 if cur is None or d['speaker'] != cur['who']:
-                    cur = {'who': d['speaker'], 'lines': []}
+                    cur = {'who': d['speaker'], 'lines': [], 'shot': d.get('shot')}
                     runs.append(cur)
                 cur['lines'].append(d['line'])
             # THE PICTURE APPEARS ONCE PER FRAME, not once per speech. Repeating
@@ -3281,9 +3296,11 @@ def dialogue_page():
             speech = []
             for r in runs:
                 speech.append('<div class=sp>'
-                              '<div class=spn><span class=who>%s</span>'
+                              '<div class=spn><span class=who>%s</span>%s'
                               '<button class=cp type=button data-t="%s">COPY</button></div>%s</div>'
-                              % (html.escape(r['who']), html.escape('\n'.join(r['lines'])),
+                              % (html.escape(r['who']),
+                                 '<span class=shot>ALREADY SHOT</span>' if r.get('shot') else '',
+                                 html.escape('\n'.join(r['lines'])),
                                  ''.join('<p>%s</p>' % html.escape(l) for l in r['lines'])))
             o.append('<div class=dlg>'
                      '<div class=dh><span class=frm>%s</span>'
@@ -3299,6 +3316,67 @@ def dialogue_page():
 
 open(os.path.join(ROOT, 'dialogue.html'), 'w').write(
     page('Dialogue', dialogue_page(), here='dialogue', depth=0))
+
+
+# ---------------------------------------------------------------------------
+# THE CREDITS PAGE. Baba, 6.9.2026: everything needed to set a credit card, on
+# one page, rather than buried on a shot card.
+def credits_page():
+    kit = ('https://raw.githubusercontent.com/markoboskoauroville/'
+           'BRAIN_BRAKE_ORIGINALS/main/BB_C_14/BRAIN_BRAKE_CREDITS_KIT.zip')
+    o = ['<h1>Credits</h1>',
+         '<p class=lede>Everything needed to set a credit card. <b>The centre of every plate is '
+         'bare on purpose</b>: the camera flies through it, card to card, so the clouds must never '
+         'cross the lettering. The title card has no clouds at all, because the film has not '
+         'reached the sky when the title is on screen.</p>',
+         '<div class=kitrow>'
+         '<a class=dl href="%s">DOWNLOAD&nbsp;THE&nbsp;WHOLE&nbsp;KIT&nbsp;&nbsp;24&nbsp;MB</a>'
+         '<a class=dl href="font/brain_break.ttf" download>DOWNLOAD&nbsp;TTF</a>'
+         '<a class=dl href="font/brain_break.otf" download>DOWNLOAD&nbsp;OTF</a></div>' % kit]
+
+    def row(title, items, note=''):
+        f = []
+        for n, w in items:
+            if not os.path.exists(os.path.join(ROOT, 'mid', n + '.jpg')):
+                continue
+            href = ('card/%s.html' % n) if os.path.exists(
+                os.path.join(ROOT, 'card', n + '.html')) else (
+                (ORIGINALS.get(n + '.png') or {}).get('url', '#'))
+            f.append('<a class=sh href="%s"><img src="mid/%s.jpg" alt="" loading=lazy>'
+                     '<span>%s</span></a>' % (href, n, html.escape(w)))
+        if not f:
+            return
+        o.append('<div class=rtph><span class=n>&#9679;</span><h3>%s</h3>'
+                 '<span class=st>%d</span></div>' % (title, len(f)))
+        if note:
+            o.append('<p class=lede>%s</p>' % note)
+        o.append('<div class=sheetgrid>%s</div>' % ''.join(f))
+
+    row('THE THREE FIXED CARDS',
+        [('14-0-TITLE', 'First, the title. No clouds'),
+         ('14-1-CREDITS-v2', 'A finished credit card, the look'),
+         ('14-8-DEDICATION-v2', 'Last, the dedication')],
+        'The film opens on the title and Ganesha closes it. Nothing comes after Ganesha.')
+    row('THE EMPTY PLATES',
+        [('CREDITS-PLATE-%d' % i, 'Plate %d' % i) for i in range(1, 6)],
+        'Five formations so no two cards in a row look alike. Cycle them, and set the credit in '
+        'the clear middle.')
+    row('THE FONT',
+        [('FONT_SPECIMEN', 'Brain Brake, both cases'),
+         ('FONT_SHEET-v1', 'The capitals, as drawn'),
+         ('FONT_SHEET_LOWER-v1', 'The lowercase, as drawn')],
+        'Sixty eight glyphs, capitals and lowercase, in TTF and OTF.')
+    o.append('<div class=creds><div class=hd><b>The credits as text</b>'
+             '<button class=dl onclick="var t=this.parentNode.nextElementSibling;'
+             't.select();document.execCommand(\'copy\');this.textContent=\'COPIED\';">'
+             'COPY</button></div><textarea readonly spellcheck=false>%s</textarea>'
+             '<span class=warn>PLACEHOLDER. ONLY AUROVENKATESH, JAGAN AND PUSHPARAJ ARE '
+             'CONFIRMED.</span></div>' % CREDITS_TEXT)
+    return ''.join(o)
+
+
+open(os.path.join(ROOT, 'credits.html'), 'w').write(
+    page('Credits', credits_page(), here='credits', depth=0))
 
 print('  %d card pages, %d on the storyboard walk' % (len(_cards), len(_order)))
 

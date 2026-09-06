@@ -2984,7 +2984,24 @@
       "title": "The calf, through the glass",
       "status": "accepted",
       "date": "2026-09-03",
-      "note": "INSPECTION FIVE, AND THE LAST ONE IN THE FILM. Glass on the camera lens as always, but CENTRED ON THE CALF rather than beside it, which is what finally made the leg align: with the lens on the leg, magnifying about the lens centre and magnifying about the leg’s own axis become the same thing, so the leg runs unbroken from the shorts, through the circle, out into the ankle and the shoe. Three times up: one calf fills the lens, each fibre a separate line, the two bellies of the muscle broad and modelled, and the light burning where they meet. It stops reading as a leg with muscles in it and starts reading as the machinery itself. Nothing new is invented inside the lens, per modules/magnifying-glass.md. FILED AS 1-17, 3.9.2026, in the reset that gave scene one its final names. Before the reset it was 1-7-RECOVERY-GLASS-v8, and every name mentioned in this note is a pre reset name."
+      "note": "INSPECTION FIVE, AND THE LAST ONE IN THE FILM. Glass on the camera lens as always, but CENTRED ON THE CALF rather than beside it, which is what finally made the leg align: with the lens on the leg, magnifying about the lens centre and magnifying about the leg’s own axis become the same thing, so the leg runs unbroken from the shorts, through the circle, out into the ankle and the shoe. Three times up: one calf fills the lens, each fibre a separate line, the two bellies of the muscle broad and modelled, and the light burning where they meet. It stops reading as a leg with muscles in it and starts reading as the machinery itself. Nothing new is invented inside the lens, per modules/magnifying-glass.md. FILED AS 1-17, 3.9.2026, in the reset that gave scene one its final names. Before the reset it was 1-7-RECOVERY-GLASS-v8, and every name mentioned in this note is a pre reset name. HE SPEAKS HERE, AND IT IS ALREADY SHOT. These are Manan’s own recorded lines, M1 to M5, live footage in his own voice. They were only listed against 19-3, where he says the same theory to Viveka, so the dialogue page showed him silent through the whole first scene.",
+      "dialogue": [
+        {
+          "speaker": "MANAN",
+          "line": "You run, the muscle burns through its oxygen.",
+          "shot": true
+        },
+        {
+          "speaker": "MANAN",
+          "line": "The fuel runs out.",
+          "shot": true
+        },
+        {
+          "speaker": "MANAN",
+          "line": "And when the tank reads empty, the body stops.",
+          "shot": true
+        }
+      ]
     },
     {
       "file": "BB_C_1/1-18.png",
@@ -3096,12 +3113,24 @@
       "title": "Manan walks in",
       "status": "accepted",
       "date": "2026-09-03",
-      "note": "MANAN WALKS IN, AND WHAT HE WALKS IN ON IS THE COLLAPSE. The boy steps into the drawn world beside the runner, magnifying glass up. The film's first crossing of its two worlds: anything real is a photograph, anything thought is a pencil drawing, and here they stand in one frame on one ground line, with the boy the taller of the two so he is the subject and the drawing is the thing being looked at. SUPERSEDES 1-5-v1, which had the runner mid sprint. magnifying-glass.md section 4: every inspection happens to ONE body in ONE pose, 1-6-COLLAPSE-v1, and a different runner in a different pose reads as a different scene however good the drawing is. BUILT FROM APPROVED MATERIAL, NOT FROM WORDS. The collapse was cut out of 1-6-COLLAPSE-v1 and composited onto the plate, and that composite was the single reference for the 2K render, so neither the boy nor the runner was invented. FILED AS 1-12, 3.9.2026, in the reset that gave scene one its final names. Before the reset it was 1-5-v3, and every name mentioned in this note is a pre reset name.",
+      "note": "MANAN WALKS IN, AND WHAT HE WALKS IN ON IS THE COLLAPSE. The boy steps into the drawn world beside the runner, magnifying glass up. The film's first crossing of its two worlds: anything real is a photograph, anything thought is a pencil drawing, and here they stand in one frame on one ground line, with the boy the taller of the two so he is the subject and the drawing is the thing being looked at. SUPERSEDES 1-5-v1, which had the runner mid sprint. magnifying-glass.md section 4: every inspection happens to ONE body in ONE pose, 1-6-COLLAPSE-v1, and a different runner in a different pose reads as a different scene however good the drawing is. BUILT FROM APPROVED MATERIAL, NOT FROM WORDS. The collapse was cut out of 1-6-COLLAPSE-v1 and composited onto the plate, and that composite was the single reference for the 2K render, so neither the boy nor the runner was invented. FILED AS 1-12, 3.9.2026, in the reset that gave scene one its final names. Before the reset it was 1-5-v3, and every name mentioned in this note is a pre reset name. HE SPEAKS HERE, AND IT IS ALREADY SHOT. These are Manan’s own recorded lines, M1 to M5, live footage in his own voice. They were only listed against 19-3, where he says the same theory to Viveka, so the dialogue page showed him silent through the whole first scene.",
       "plates": [
         {
           "file": "1-12-CLEAN-v1.png",
           "note": "The same frame with the boy taken out of it. The drawn world, the ink border and the collapse are exactly as delivered; only Manan, his shadow and the ground he stood on are gone. Built by wiping the photographed figure and rebuilding the paper under him, so nothing drawn was touched or redrawn.",
           "label": "Clean plate, no live action"
+        }
+      ],
+      "dialogue": [
+        {
+          "speaker": "MANAN",
+          "line": "1923, A.V. Hill puts runners on a treadmill and measures everything they do.",
+          "shot": true
+        },
+        {
+          "speaker": "MANAN",
+          "line": "Fatigue is in the muscle.",
+          "shot": true
         }
       ]
     },
@@ -3908,7 +3937,7 @@
     }
   ],
   "event": "Breakthrough Junior Challenge 2026",
-  "site_version": 261,
+  "site_version": 262,
   "footage": [
     {
       "name": "Key catch",

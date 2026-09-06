@@ -822,8 +822,8 @@
     "url": "https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIGINALS/main/DOCS/FONT_SHEET-v1.png"
   },
   "FONT_SPECIMEN.png": {
-    "bytes": 38200,
-    "sha256": "8839c83ad086f192224b3974bd6138f7f5f931d5ce2c5ce82f70d0b40304186c",
+    "bytes": 81896,
+    "sha256": "909b6a0ccc3bc0454da11316125244458d5a93c8cc30787bc8a53ca27eddb77b",
     "path": "DOCS/FONT_SPECIMEN.png",
     "url": "https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIGINALS/main/DOCS/FONT_SPECIMEN.png"
   },
@@ -2014,5 +2014,41 @@
     "sha256": "a63a6326eaf6f77857e6e8af9fa687582d4d2314644c91fd76a4b567750731a1",
     "path": "BB_C_9R/9R-3-WHITE-ungraded-20260906.png",
     "url": "https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIGINALS/main/BB_C_9R/9R-3-WHITE-ungraded-20260906.png"
+  },
+  "CREDITS-PLATE-1.png": {
+    "bytes": 3502349,
+    "sha256": "98b0cec112673dba9af6640c4e08520609d69e557ff12e33607f981216dcb936",
+    "path": "BB_C_14/CREDITS-PLATE-1.png",
+    "url": "https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIGINALS/main/BB_C_14/CREDITS-PLATE-1.png"
+  },
+  "CREDITS-PLATE-2.png": {
+    "bytes": 3228395,
+    "sha256": "a36ddba47fbb03c7a054024a00a012e3df43a8765ddfe7baf2c20f2d3ca113c7",
+    "path": "BB_C_14/CREDITS-PLATE-2.png",
+    "url": "https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIGINALS/main/BB_C_14/CREDITS-PLATE-2.png"
+  },
+  "CREDITS-PLATE-3.png": {
+    "bytes": 3567609,
+    "sha256": "ce3457017f9aef7999fb53ac1bdc9cd920df3a46a3a84d50030004c49b2f2685",
+    "path": "BB_C_14/CREDITS-PLATE-3.png",
+    "url": "https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIGINALS/main/BB_C_14/CREDITS-PLATE-3.png"
+  },
+  "CREDITS-PLATE-4.png": {
+    "bytes": 3948827,
+    "sha256": "26a520a3fbbedcf132a6be75459f27ff5086e96fe87f3fd567ad96c5883b0620",
+    "path": "BB_C_14/CREDITS-PLATE-4.png",
+    "url": "https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIGINALS/main/BB_C_14/CREDITS-PLATE-4.png"
+  },
+  "CREDITS-PLATE-5.png": {
+    "bytes": 3621052,
+    "sha256": "fddbddc780d4e3c3e2c4b5147e3b9e079420fc2baa53ac01190f2bb64abe7956",
+    "path": "BB_C_14/CREDITS-PLATE-5.png",
+    "url": "https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIGINALS/main/BB_C_14/CREDITS-PLATE-5.png"
+  },
+  "FONT_SHEET_LOWER-v1.png": {
+    "bytes": 1399228,
+    "sha256": "55844292c0ff9c961fc23d03f0ec19d13ad7d245302448ed4a9c18c31ae688c5",
+    "path": "DOCS/FONT_SHEET_LOWER-v1.png",
+    "url": "https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIGINALS/main/DOCS/FONT_SHEET_LOWER-v1.png"
   }
 }
