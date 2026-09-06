@@ -3433,32 +3433,24 @@ open(os.path.join(ROOT, 'credits.html'), 'w').write(
 # log: every version, newest first, with the date and what changed in it, so
 # there is never a question about which one is current.
 def kbrojka_page():
-    """Only the first draft and the current one.
+    """The current document first, the first draft under it. Nothing else.
 
-    Baba, 6.9.2026: a middle version on this page is a trap. Somebody downloads
-    it, animates to an instruction that was already replaced, and the film comes
-    back wrong. The versions in between still exist in the repository; they are
-    simply not offered here.
+    Baba, 6.9.2026: no explanation at the top. Whoever opens this page wants the
+    document, so the newest one is the first thing on the screen and the first
+    draft sits below it for reference.
     """
-    docs = CAT.get('kbrojka', [])
-    o = ['<h1>K_BROJKA</h1>',
-         '<p class=lede>The instruction documents for Kristijan. <b>Two only: where it started, '
-         'and what to work from today.</b> The versions in between are not here on purpose, so '
-         'nobody can pick one up by mistake and animate to an instruction that has already been '
-         'replaced.</p>']
-    if not docs:
-        o.append('<div class=srcbox><div class=t><b>Nothing here yet</b></div></div>')
-        return ''.join(o)
+    docs = sorted(CAT.get('kbrojka', []), key=lambda d: d.get('role') != 'current')
+    o = ['<h1>K_BROJKA</h1>']
     for d in docs:
         cur = d.get('role') == 'current'
-        o.append('<div class="kdoc%s"><div class=kh><span class=kr>%s</span>%s</div>'
+        o.append('<div class="kdoc%s"><div class=kh><span class=kr>%s</span>'
+                 '<span class=kd>%s</span></div>'
                  '<div class=kn>%s</div><p>%s</p>'
                  '<a class=dl href="%s">DOWNLOAD&nbsp;&nbsp;%s</a></div>'
                  % (' kcur' if cur else '',
                     'WORK FROM THIS ONE' if cur else 'WHERE IT STARTED',
-                    '<span class=kd>%s</span>' % html.escape(d['date']),
-                    html.escape(d['file']), html.escape(d['what']),
-                    d['url'], html.escape(d['size'])))
+                    html.escape(d['date']), html.escape(d['file']),
+                    html.escape(d['what']), d['url'], html.escape(d['size'])))
     return ''.join(o)
 
 
