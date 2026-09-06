@@ -2556,7 +2556,7 @@ for e in _fl:
                        if os.path.basename(x.get('file', '')).rsplit('.', 1)[0] == b), None)
             if _e and _e.get('video'):
                 rt.append('<a class=vloop href="card/%s.html">'
-                          '<video src="%s" autoplay muted loop playsinline preload=metadata '
+                          '<video src="%s" autoplay muted loop playsinline '
                           'poster="tiny/%s.jpg" disablepictureinpicture></video>'
                           '<span class=lbl>LOOP</span>'
                           '<div class=c>%s</div>%s</a>' % (b, _e['file'], b, b, ln))
