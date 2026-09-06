@@ -1258,8 +1258,8 @@ def dialogue_wav_block(depth=0):
     z = ('https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/'
          'main/downloads/BRAIN_BRAKE_DIALOGUE_WAV.zip')
     return ('<div class=srcbox><div class=t><b>Every spoken line, 48k wav</b>'
-            '<a class=dl href="%s">DOWNLOAD &nbsp;ZIP &nbsp;26 MB</a></div>'
-            '<p>Twenty three lines, ninety two files, numbered in film order. FOUR VOICES PER '
+            '<a class=dl href="%s">DOWNLOAD &nbsp;ZIP &nbsp;30 MB</a></div>'
+            '<p>Twenty eight lines, one hundred and twelve files, numbered in film order. FOUR VOICES PER '
             'CHARACTER so the edit room chooses: Manan as edmund, archie, rohan or chase, and '
             'Viveka as hugh, dominic, alec or joe. Listen to the same line in all four folders and '
             'then take that folder whole; a character who changes voice between sentences is two '
