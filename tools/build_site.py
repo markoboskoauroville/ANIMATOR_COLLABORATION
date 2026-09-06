@@ -1385,8 +1385,6 @@ def bar(here, r):
          # and it was reachable only through the archive, two clicks behind a
          # page called Archive. That is the wrong place for the thing you would
          # hand somebody first.
-         '<a href="%sradiodrama.html"%s>MUSIC</a>'
-         % (r, ' class=on' if here == 'drama' else ''),
          # 4.9.2026: the sheets are what an animator opens BEFORE drawing
          # anything, and they were scattered across scene folders with
          # storyboard=hide, reachable only by knowing they existed.
@@ -3225,6 +3223,14 @@ def _all(level, m, title):
 
 def sound_page():
     o = ['<h1>Sound</h1>',
+         '<div class=rtph><span class=n>&#9679;</span><h3>THE MUSIC, WRITTEN FOR THE FILM</h3>'
+         '<span class=st>composed before the animation</span></div>',
+         music_block(),
+         '<div class=rtph><span class=n>&#9679;</span><h3>EVERY SPOKEN LINE</h3>'
+         '<span class=st>four voices per character</span></div>',
+         dialogue_wav_block(),
+         '<div class=rtph><span class=n>&#9679;</span><h3>THE SCRATCH TRACK</h3>'
+         '<span class=st>myNoise</span></div>',
          '<p class=lede>%s</p>' % html.escape(SOUND.get('about', ''))]
 
     kw = {str(k['phase']): k for k in (SOUND.get('keywords') or [])}
