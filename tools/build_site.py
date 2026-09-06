@@ -1487,8 +1487,17 @@ def rejected_takes(e):
 
 
 def idcard_block(title, body, dim=False):
-    return ('<div class=idb><div class=idh>%s</div><div class=idc%s>%s</div></div>'
-            % (title, ' style="color:var(--dim)"' if dim else '', body))
+    """One block of the ID card, or NOTHING AT ALL if there is nothing to say.
+
+    Baba, 6.9.2026: what we do not have, we do not mention. Pages were printing
+    a run of headings each followed by "Not recorded", which reads as content,
+    scrolls like content, and hides the sections that are actually filled in.
+    An empty section is absent.
+    """
+    if dim or not (body or '').strip():
+        return ''
+    return ('<div class=idb><div class=idh>%s</div><div class=idc>%s</div></div>'
+            % (title, body))
 
 
 def full_link(path, prefix=''):
@@ -2735,6 +2744,23 @@ for _i, e in enumerate(_cards):
                   'left clear, the Ganesha dedication that ends the film, and the font. The centre '
                   'is bare on purpose: the camera flies through it card to card, so the clouds must '
                   'never cross the lettering.</p>' % _kit)
+
+    if str(e.get('shot', '')).startswith('14.'):
+        _fam = [('14-0-TITLE', 'FIRST, the title'),
+                ('14-1-CREDITS-v2', 'THE CREDIT CARDS, the look'),
+                ('14-8-DEDICATION-v2', 'LAST, the dedication')]
+        _f = []
+        for _n, _w in _fam:
+            if not os.path.exists(os.path.join(ROOT, 'mid', _n + '.jpg')):
+                continue
+            _f.append('<a class=sh href="%s.html"><img src="../mid/%s.jpg" alt="" loading=lazy>'
+                      '<span>%s</span></a>' % (_n, _n, html.escape(_w)))
+        if _f:
+            cd.append('<h2>The three fixed cards</h2>'
+                      '<p class=lede>One design, three moments: the film opens on the title, the '
+                      'credits are set on the plates, and Ganesha closes it. Same clouds, same '
+                      'clear middle, same hand, so they read as one family.</p>'
+                      '<div class=sheetgrid>%s</div>' % ''.join(_f))
 
     if e.get('video'):
         # A SHOT THAT MOVES IS STILL A SHOT. Baba, 3.9.2026: a loop should behave
