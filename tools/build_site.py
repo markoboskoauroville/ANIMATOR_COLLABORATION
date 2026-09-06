@@ -528,6 +528,14 @@ h2{font-size:19px;margin:38px 0 14px;padding-bottom:7px;border-bottom:1px solid 
    whole job is showing reference art has to SHOW it: fill the width, big cells,
    caption small and underneath, nothing else competing. Twelve key angles at
    forty four pixels is not a reference, it is a decoration. */
+
+/* A LOOPING THUMBNAIL. Same box as a still so the strip does not reflow, with a
+   quiet LOOP badge so it is obvious the thing is moving on purpose. */
+.tiny a.vloop{position:relative}
+.tiny a.vloop video{width:100%;display:block;border:1px solid var(--rule);background:var(--card)}
+.tiny a.vloop:hover video{border-color:var(--brass)}
+.tiny a.vloop .lbl{position:absolute;top:5px;left:5px;font:700 7px ui-monospace,monospace;
+ letter-spacing:.14em;background:var(--brass);color:#17150f;border-radius:2px;padding:2px 5px}
 .sheetgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(420px,1fr));
  gap:14px;margin:14px 0 26px}
 .sheetgrid .sh{display:block;text-decoration:none;color:inherit}
@@ -537,7 +545,15 @@ h2{font-size:19px;margin:38px 0 14px;padding-bottom:7px;border-bottom:1px solid 
 .sheetgrid .sh span{display:block;font:600 9.5px ui-monospace,monospace;letter-spacing:.08em;
  text-transform:uppercase;color:var(--dim);padding-top:5px}
 .sheetgrid .sh:hover span{color:var(--brass)}
-@media(max-width:900px){.sheetgrid{grid-template-columns:1fr}}
+@media(max-width:900px){
+/* A LOOPING THUMBNAIL. Same box as a still so the strip does not reflow, with a
+   quiet LOOP badge so it is obvious the thing is moving on purpose. */
+.tiny a.vloop{position:relative}
+.tiny a.vloop video{width:100%;display:block;border:1px solid var(--rule);background:var(--card)}
+.tiny a.vloop:hover video{border-color:var(--brass)}
+.tiny a.vloop .lbl{position:absolute;top:5px;left:5px;font:700 7px ui-monospace,monospace;
+ letter-spacing:.14em;background:var(--brass);color:#17150f;border-radius:2px;padding:2px 5px}
+.sheetgrid{grid-template-columns:1fr}}
 
 /* THE DIALOGUE BLOCK. A third picture, two thirds words, speaker top left, and
    one copy button per speech. Selecting text on a phone is miserable and this
@@ -2536,8 +2552,17 @@ for e in _fl:
                           '<span>%s</span></button>'
                           % (_gc['url'], html.escape(_gc['label']),
                              html.escape(_gc['label']), html.escape(_gc['label'])))
-            rt.append('<a href="card/%s.html"><img src="tiny/%s.jpg" alt="" loading=lazy>'
-                      '<div class=c>%s</div>%s</a>' % (b, b, b, ln))
+            _e = next((x for x in ENTRIES
+                       if os.path.basename(x.get('file', '')).rsplit('.', 1)[0] == b), None)
+            if _e and _e.get('video'):
+                rt.append('<a class=vloop href="card/%s.html">'
+                          '<video src="%s" autoplay muted loop playsinline preload=metadata '
+                          'poster="tiny/%s.jpg" disablepictureinpicture></video>'
+                          '<span class=lbl>LOOP</span>'
+                          '<div class=c>%s</div>%s</a>' % (b, _e['file'], b, b, ln))
+            else:
+                rt.append('<a href="card/%s.html"><img src="tiny/%s.jpg" alt="" loading=lazy>'
+                          '<div class=c>%s</div>%s</a>' % (b, b, b, ln))
         rt.append('</div>')
     elif not (n == '11'):
         rt.append('<div class=tiny>')

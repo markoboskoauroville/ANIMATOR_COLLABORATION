@@ -3934,10 +3934,25 @@
       "status": "accepted",
       "date": "2026-09-06",
       "note": "THE TITLE OF THE FILM, ON BARE PAPER. NO CLOUDS: the film has not reached the sky when the title is on screen, so it is nothing but paper and the two lines. The clouds arrive later, with the credits, and that is the difference between the first card and the last ones. THE BRAIN BRAKE large, The Central Governor Theory a third the height beneath it, in the film’s own hand. Graded to the film’s paper, 255/243/224."
+    },
+    {
+      "file": "clips/3-1-BICYCLE-loop.mp4",
+      "kind": "keyframe",
+      "scene": "3",
+      "shot": "3.1",
+      "title": "The bicycle, the finished edit",
+      "status": "accepted",
+      "date": "2026-09-06",
+      "video": true,
+      "sec": 32.55,
+      "full": "https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIGINALS/main/BB_C_3/3-1-BICYCLE.mp4",
+      "full_label": "THE&nbsp;EDIT &nbsp;1920 &times; 1080 &nbsp;26&nbsp;MB",
+      "proxy_note": "The loop on the storyboard is a 480 wide silent proxy so the page stays light. The edit itself is the download above, with its sound.",
+      "note": "THE FINISHED EDIT OF THIS SEGMENT. Thirty two and a half seconds, cut, and treated as done rather than as material. Everything else in this phase is a still or a plate; this is what those stills become.\n\nON THE STORYBOARD IT LOOPS SILENTLY AND SMALL, because a page of thumbnails should read at a glance and a soundtrack starting by itself is an ambush. The sound is here, on its own card, where somebody has chosen to listen.\n\nThe music for it is written and measured separately: a 3/4 and a 6/8 version, both ending on one deep stroke at the cut to black."
     }
   ],
   "event": "Breakthrough Junior Challenge 2026",
-  "site_version": 287,
+  "site_version": 288,
   "footage": [
     {
       "name": "Key catch",
