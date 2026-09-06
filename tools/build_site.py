@@ -1388,8 +1388,8 @@ def bar(here, r):
          # film.
          '<a href="%scredits.html"%s>CREDITS</a>'
          % (r, ' class=on' if here == 'credits' else ''),
-         '<a href="%skbroeke.html"%s>K_BROEKE</a>'
-         % (r, ' class=on' if here == 'kbroeke' else ''),
+         '<a href="%skbrojka.html"%s>K_BROJKA</a>'
+         % (r, ' class=on' if here == 'kbrojka' else ''),
          '<span class=sp></span>',
          ('<span class=vb>%s</span>' % VERSION) if VERSION else '',
          '<a class="arc%s" href="%sarchive.html" title="arhiva">ARH</a>'
@@ -3414,14 +3414,15 @@ open(os.path.join(ROOT, 'credits.html'), 'w').write(
 
 
 # ---------------------------------------------------------------------------
-# K_BROEKE. Baba, 6.9.2026: the documents sent to Kristijan, in one place.
+# K_BROJKA. Baba, 6.9.2026: the documents sent to Kristijan, in one place.
+# Spelled K_BROJKA. I had it as K_BROEKE from the dictation and it was wrong.
 #
 # A PDF handed over in a chat is lost the moment the chat scrolls. This is the
 # log: every version, newest first, with the date and what changed in it, so
 # there is never a question about which one is current.
-def kbroeke_page():
-    docs = CAT.get('kbroeke', [])
-    o = ['<h1>K_BROEKE</h1>',
+def kbrojka_page():
+    docs = CAT.get('kbrojka', [])
+    o = ['<h1>K_BROJKA</h1>',
          '<p class=lede>Every instruction document sent to Kristijan, newest first. '
          '<b>The top one is the current one.</b> Older versions are kept because they say what was '
          'asked for at the time, which is sometimes the only way to work out why a shot looks the '
@@ -3442,8 +3443,8 @@ def kbroeke_page():
     return ''.join(o)
 
 
-open(os.path.join(ROOT, 'kbroeke.html'), 'w').write(
-    page('K_BROEKE', kbroeke_page(), here='kbroeke', depth=0))
+open(os.path.join(ROOT, 'kbrojka.html'), 'w').write(
+    page('K_BROJKA', kbrojka_page(), here='kbrojka', depth=0))
 
 print('  %d card pages, %d on the storyboard walk' % (len(_cards), len(_order)))
 
