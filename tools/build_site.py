@@ -565,6 +565,7 @@ h2{font-size:19px;margin:38px 0 14px;padding-bottom:7px;border-bottom:1px solid 
 .dlg .dtx .spn .cp{margin-left:auto;padding:2px 8px;font-size:8px}
 .dlg .dpic img{max-height:250px;object-fit:cover}
 @media(max-width:700px){.dlg .db{grid-template-columns:1fr}}
+.kitrow{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 10px}
 .solorow{display:flex;flex-wrap:wrap;gap:6px;align-items:center;margin:10px 0 18px}
 .sbtn{display:inline-flex;align-items:center;justify-content:center;min-width:34px;height:30px;
  padding:0 10px;border:1px solid var(--rule);border-radius:4px;background:none;cursor:pointer;
@@ -2718,6 +2719,23 @@ for _i, e in enumerate(_cards):
         cd.append('<div class=srcbox><div class=t><b>What is said over this shot</b></div>'
                   + _dl + '</div>')
 
+    # THE CREDITS KIT, AT THE TOP where the downloads are. Everything somebody
+    # needs to set a credit card in one file: the example, five empty plates
+    # with the centres clear, the dedication that ends the film, and the font.
+    if str(e.get('shot', '')).startswith('14.'):
+        _kit = ('https://raw.githubusercontent.com/markoboskoauroville/'
+                'BRAIN_BRAKE_ORIGINALS/main/BB_C_14/BRAIN_BRAKE_CREDITS_KIT.zip')
+        cd.insert(0, '<div class=kitrow>'
+                  '<a class=dl href="%s">DOWNLOAD&nbsp;THE&nbsp;CREDITS&nbsp;KIT&nbsp;&nbsp;21&nbsp;MB</a>'
+                  '<a class=dl href="../font/brain_break.ttf" download>DOWNLOAD&nbsp;TTF</a>'
+                  '<a class=dl href="../font/brain_break.otf" download>DOWNLOAD&nbsp;OTF</a>'
+                  '</div>'
+                  '<p class=note style="color:var(--dim)">The kit holds a finished card as the '
+                  'target, FIVE EMPTY PLATES with five different cloud formations and their centres '
+                  'left clear, the Ganesha dedication that ends the film, and the font. The centre '
+                  'is bare on purpose: the camera flies through it card to card, so the clouds must '
+                  'never cross the lettering.</p>' % _kit)
+
     if e.get('video'):
         # A SHOT THAT MOVES IS STILL A SHOT. Baba, 3.9.2026: a loop should behave
         # like any drawn frame, so it gets a card, a note and a download in the
@@ -2735,18 +2753,6 @@ for _i, e in enumerate(_cards):
         cd.append('<p class=note>%s</p>' % e['why'])
     cd.append('<p class=note style="color:var(--dim)">%s</p>' % e.get('note', ''))
 
-    # the credits text lives here, one level down, not in the flow. See
-    # modules/design-language.md: a flow view stays pictures and words.
-    if str(e.get('shot', '')).startswith('14.'):
-        cd.append(
-            '<div class=creds><div class=hd><b>The credits as text</b>'
-            '<button class=dl onclick="var t=this.parentNode.nextElementSibling;'
-            't.select();document.execCommand(\'copy\');this.textContent=\'COPIED\';">'
-            'COPY</button></div>'
-            '<textarea readonly spellcheck=false>%s</textarea>'
-            '<span class=warn>PLACEHOLDER. ONLY AUROVENKATESH, JAGAN AND PUSHPARAJ ARE CONFIRMED. '
-            'EVERYTHING ELSE IS WAITING ON NEHA AND MUST NOT BE USED AS IS.</span></div>'
-            % CREDITS_TEXT)
 
     # THE PLATES. Baba, 3.9.2026: the compositing animator needs the frame with
     # the live action taken out so he can lay the real Manan over the top, and
@@ -2962,6 +2968,20 @@ for _i, e in enumerate(_cards):
               'Not written yet. This frame needs its meaning set down: where it sits in the film, '
               'what it carries, how it moves the story on, and what it is doing to the audience. '
               'Ask before animating it rather than guessing from the picture.', dim=not _mn))
+
+    # THE CREDITS TEXT IS THE LAST THING ON THE PAGE. Baba, 6.9.2026: it is what
+    # you reach for last, and it is still a placeholder, so it should not sit
+    # above the kit and the plates.
+    if str(e.get('shot', '')).startswith('14.'):
+        cd.append(
+            '<div class=creds><div class=hd><b>The credits as text</b>'
+            '<button class=dl onclick="var t=this.parentNode.nextElementSibling;'
+            't.select();document.execCommand(\'copy\');this.textContent=\'COPIED\';">'
+            'COPY</button></div>'
+            '<textarea readonly spellcheck=false>%s</textarea>'
+            '<span class=warn>PLACEHOLDER. ONLY AUROVENKATESH, JAGAN AND PUSHPARAJ ARE CONFIRMED. '
+            'EVERYTHING ELSE IS WAITING ON NEHA AND MUST NOT BE USED AS IS.</span></div>'
+            % CREDITS_TEXT)
 
     open(os.path.join(ROOT, 'card', b + '.html'), 'w').write(
         page(b, ''.join(cd), here='home', depth=1))
