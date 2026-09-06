@@ -365,12 +365,6 @@
     "path": "BB_C_14/14-1-CLOUD-v1.png",
     "url": "https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIGINALS/main/BB_C_14/14-1-CLOUD-v1.png"
   },
-  "14-1-CREDITS-v1.png": {
-    "bytes": 39506,
-    "sha256": "251e9cf7b69397fbd4790f6a42c6a48de007f67010e0f8e242a3ac020c3f864e",
-    "path": "BB_C_14/14-1-CREDITS-v1.png",
-    "url": "https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIGINALS/main/BB_C_14/14-1-CREDITS-v1.png"
-  },
   "14-1-CREDITS-v2.png": {
     "bytes": 1958150,
     "sha256": "1e7f82fc2529e8c0dac58a6a57be5817eab88ecbab179383f94efd4067741d7f",
@@ -1588,5 +1582,17 @@
     "sha256": "a63a6326eaf6f77857e6e8af9fa687582d4d2314644c91fd76a4b567750731a1",
     "path": "BB_C_9R/9R-3-WHITE.png",
     "url": "https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIGINALS/main/BB_C_9R/9R-3-WHITE.png"
+  },
+  "14-0-TITLE.png": {
+    "bytes": 3798887,
+    "sha256": "9eecc8ccb5229ae5415232085fda399f890491d13dc6da029a562d022709c7ac",
+    "path": "BB_C_14/14-0-TITLE.png",
+    "url": "https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIGINALS/main/BB_C_14/14-0-TITLE.png"
+  },
+  "14-1-CREDITS-MOCKUP-v1.png": {
+    "bytes": 39506,
+    "sha256": "251e9cf7b69397fbd4790f6a42c6a48de007f67010e0f8e242a3ac020c3f864e",
+    "path": "DOCS/14-1-CREDITS-MOCKUP-v1.png",
+    "url": "https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIGINALS/main/DOCS/14-1-CREDITS-MOCKUP-v1.png"
   }
 }

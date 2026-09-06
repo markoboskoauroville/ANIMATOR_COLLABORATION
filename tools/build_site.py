@@ -2726,11 +2726,11 @@ for _i, e in enumerate(_cards):
         _kit = ('https://raw.githubusercontent.com/markoboskoauroville/'
                 'BRAIN_BRAKE_ORIGINALS/main/BB_C_14/BRAIN_BRAKE_CREDITS_KIT.zip')
         cd.insert(0, '<div class=kitrow>'
-                  '<a class=dl href="%s">DOWNLOAD&nbsp;THE&nbsp;CREDITS&nbsp;KIT&nbsp;&nbsp;21&nbsp;MB</a>'
+                  '<a class=dl href="%s">DOWNLOAD&nbsp;THE&nbsp;CREDITS&nbsp;KIT&nbsp;&nbsp;24&nbsp;MB</a>'
                   '<a class=dl href="../font/brain_break.ttf" download>DOWNLOAD&nbsp;TTF</a>'
                   '<a class=dl href="../font/brain_break.otf" download>DOWNLOAD&nbsp;OTF</a>'
                   '</div>'
-                  '<p class=note style="color:var(--dim)">The kit holds a finished card as the '
+                  '<p class=note style="color:var(--dim)">The kit holds the TITLE CARD, a finished credit card as the '
                   'target, FIVE EMPTY PLATES with five different cloud formations and their centres '
                   'left clear, the Ganesha dedication that ends the film, and the font. The centre '
                   'is bare on purpose: the camera flies through it card to card, so the clouds must '
