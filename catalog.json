@@ -3993,7 +3993,7 @@
     }
   ],
   "event": "Breakthrough Junior Challenge 2026",
-  "site_version": 266,
+  "site_version": 267,
   "footage": [
     {
       "name": "Key catch",
@@ -7297,5 +7297,21 @@
       "parts": 1,
       "url": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/guide/clip-prose-second-half.mp3"
     }
-  }
+  },
+  "kbroeke": [
+    {
+      "file": "2-BRAIN_BRAKE_kadrovi_HR-V2.pdf",
+      "date": "6.9.2026",
+      "size": "1.1 MB",
+      "url": "https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIGINALS/main/DOCS/2-BRAIN_BRAKE_kadrovi_HR-V2.pdf",
+      "what": "Razine animacije: slika stoji i miču se samo detalji, pa se otvara do pune animacije. Zamjenjuje priču o broju sličica. Povećalo ide u tri sloja."
+    },
+    {
+      "file": "1-BRAIN_BRAKE_kadrovi_HR-V1.pdf",
+      "date": "5.9.2026",
+      "size": "633 KB",
+      "url": "https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIGINALS/main/DOCS/1-BRAIN_BRAKE_kadrovi_HR-V1.pdf",
+      "what": "Prve bilješke na renderima, kadar po kadar, Babinim riječima."
+    }
+  ]
 }

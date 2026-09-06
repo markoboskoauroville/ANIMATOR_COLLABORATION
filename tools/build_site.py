@@ -571,10 +571,12 @@ h2{font-size:19px;margin:38px 0 14px;padding-bottom:7px;border-bottom:1px solid 
 /* ARC. Baba, 6.9.2026: the archive is a back room, not a section of the film,
    so it sits with the badges rather than in the run of pages. Three letters is
    enough for something you go to on purpose. */
-.bar a.arc{font:600 9px ui-monospace,monospace;letter-spacing:.16em;color:var(--dim);
- border:1px solid var(--rule);border-radius:3px;padding:3px 6px;margin-left:10px;
- text-decoration:none}
+.bar a.arc{color:var(--dim);border:1px solid #4a4436;border-radius:2px;padding:3px 7px;
+ font:600 11px/1 ui-monospace,monospace;letter-spacing:.1em;
+ margin:0 6px 0 0;text-decoration:none;align-self:center;display:inline-block}
 .bar a.arc:hover,.bar a.arc.on{color:var(--brass);border-color:var(--brass)}
+.cur{font:700 8px ui-monospace,monospace;letter-spacing:.12em;color:#17150f;
+ background:var(--brass);border-radius:3px;padding:2px 6px;margin-left:8px}
 .kitrow{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 10px}
 .solorow{display:flex;flex-wrap:wrap;gap:6px;align-items:center;margin:10px 0 18px}
 .sbtn{display:inline-flex;align-items:center;justify-content:center;min-width:34px;height:30px;
@@ -1386,9 +1388,11 @@ def bar(here, r):
          # film.
          '<a href="%scredits.html"%s>CREDITS</a>'
          % (r, ' class=on' if here == 'credits' else ''),
+         '<a href="%skbroeke.html"%s>K_BROEKE</a>'
+         % (r, ' class=on' if here == 'kbroeke' else ''),
          '<span class=sp></span>',
          ('<span class=vb>%s</span>' % VERSION) if VERSION else '',
-         '<a class="arc%s" href="%sarchive.html" title="the archive">ARC</a>'
+         '<a class="arc%s" href="%sarchive.html" title="arhiva">ARH</a>'
          % (' on' if here == 'archive' else '', r),
          '<span class=sitev title="site version">v%d</span>' % SITEV,
          '<button class=th id=th onclick="tt()" title="light or dark">&#9681;</button>',
@@ -3407,6 +3411,39 @@ def credits_page():
 
 open(os.path.join(ROOT, 'credits.html'), 'w').write(
     page('Credits', credits_page(), here='credits', depth=0))
+
+
+# ---------------------------------------------------------------------------
+# K_BROEKE. Baba, 6.9.2026: the documents sent to Kristijan, in one place.
+#
+# A PDF handed over in a chat is lost the moment the chat scrolls. This is the
+# log: every version, newest first, with the date and what changed in it, so
+# there is never a question about which one is current.
+def kbroeke_page():
+    docs = CAT.get('kbroeke', [])
+    o = ['<h1>K_BROEKE</h1>',
+         '<p class=lede>Every instruction document sent to Kristijan, newest first. '
+         '<b>The top one is the current one.</b> Older versions are kept because they say what was '
+         'asked for at the time, which is sometimes the only way to work out why a shot looks the '
+         'way it does.</p>']
+    if not docs:
+        o.append('<div class=srcbox><div class=t><b>Nothing here yet</b></div></div>')
+        return ''.join(o)
+    o.append('<div class=lay>')
+    for i, d in enumerate(docs):
+        o.append('<div class=l><div class=n>'
+                 '<span><a class=dl href="%s">DOWNLOAD&nbsp;&nbsp;%s</a>%s</span>'
+                 '<span class=t><b>%s</b> &nbsp;&middot;&nbsp; %s &nbsp;&middot;&nbsp; %s</span>'
+                 '</div></div>'
+                 % (d['url'], html.escape(d['size']),
+                    ' <span class=cur>CURRENT</span>' if i == 0 else '',
+                    html.escape(d['file']), html.escape(d['date']), html.escape(d['what'])))
+    o.append('</div>')
+    return ''.join(o)
+
+
+open(os.path.join(ROOT, 'kbroeke.html'), 'w').write(
+    page('K_BROEKE', kbroeke_page(), here='kbroeke', depth=0))
 
 print('  %d card pages, %d on the storyboard walk' % (len(_cards), len(_order)))
 
