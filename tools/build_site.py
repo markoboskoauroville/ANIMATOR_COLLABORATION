@@ -2854,8 +2854,10 @@ for _i, e in enumerate(_cards):
         # like any drawn frame, so it gets a card, a note and a download in the
         # same places. The poster is a frame lifted out of the clip, so the box
         # is never empty while it loads.
-        cd.append('<video class=cardimg src="../%s" autoplay muted loop playsinline '
-                  'controls poster="../mid/%s.jpg"></video>' % (e['file'], b))
+        _f = e.get('full') or ''
+        _src = _f if _f.lower().endswith(('.mp4', '.mov', '.webm')) else ('../' + e['file'])
+        cd.append('<video class=cardimg src="%s" controls playsinline preload=metadata '
+                  'poster="../mid/%s.jpg"></video>' % (_src, b))
     else:
         cd.append('<img class=cardimg src="../mid/%s.jpg" alt="">' % b)
     if e.get('slug'):
