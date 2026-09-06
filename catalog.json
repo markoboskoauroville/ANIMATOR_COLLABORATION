@@ -1115,7 +1115,7 @@
       "representative": true,
       "status": "proposal",
       "date": "2026-08-30",
-      "note": "KEY FRAME 1 of 3. THE FILM OPENS HERE. He is tiny and alone in a corridor of trees, the road running away to nothing. Same avenue and viewpoint as shot 1.2b on purpose: this is the place before there is anything to see in it. The figure carries the collapse pose from V7 shot 1.2, so the wide and the close say the same thing. FILED AS 1-1, 3.9.2026, in the reset that gave scene one its final names. Before the reset it was 1-0-A-v2, and every name mentioned in this note is a pre reset name. HOW IT MOVES. ONE DETAIL MOVES. The picture stands still and you choose which one or two things live. Everything else is a drawing.",
+      "note": "KEY FRAME 1 of 3. THE FILM OPENS HERE. He is tiny and alone in a corridor of trees, the road running away to nothing. Same avenue and viewpoint as shot 1.2b on purpose: this is the place before there is anything to see in it. The figure carries the collapse pose from V7 shot 1.2, so the wide and the close say the same thing. FILED AS 1-1, 3.9.2026, in the reset that gave scene one its final names. Before the reset it was 1-0-A-v2, and every name mentioned in this note is a pre reset name. HOW IT MOVES. ANIMATE ONLY DETAILS. 1-1 TO 1-3 ARE ONE GROUP: the picture stands and one or two details live, everything else is a drawing, and YOU CHOOSE WHICH DETAIL MOVES. This is how the film opens and the pace we enter the story at. Reference: SC01_OPEN_02_I2V_00001.mp4, where it is hit exactly.",
       "slug": "EXT. AVENUE OF TREES — DAY — WIDE",
       "what": "The film opens here. A road running away to nothing between two rows of trunks, and one man far down it, folded over. He is small enough that the road is the subject and he is an incident in it.",
       "why": "Loneliness, and distance without end. The same avenue returns in 1-2b with a finish line in it, so this frame is the place before there is anything to see. That is what makes the banner land later.",
@@ -3937,7 +3937,7 @@
     }
   ],
   "event": "Breakthrough Junior Challenge 2026",
-  "site_version": 282,
+  "site_version": 283,
   "footage": [
     {
       "name": "Key catch",
@@ -7252,12 +7252,12 @@
       "role": "first"
     },
     {
-      "file": "12-BRAIN_BRAKE_kadrovi_HR-V12.pdf",
+      "file": "13-BRAIN_BRAKE_kadrovi_HR-V13.pdf",
       "date": "6.9.2026",
       "size": "1.2 MB",
-      "url": "https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIGINALS/main/DOCS/12-BRAIN_BRAKE_kadrovi_HR-V12.pdf",
+      "url": "https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIGINALS/main/DOCS/13-BRAIN_BRAKE_kadrovi_HR-V13.pdf",
       "role": "current",
-      "what": "Razine animacije. Otvara se od jednog detalja do pune animacije, zamrzne se kad Manan uđe, pa u 1-17 noga oživi i puna animacija ide do kraja scene. RADI PO OVOME."
+      "what": "Razine animacije, u tri grupe: 1-1 do 1-3 samo detalji, 1-4 do 1-6 mješavina stilova, od 1-11 sve zamrznuto osim Manana i povećala. RADI PO OVOME."
     }
   ]
 }
