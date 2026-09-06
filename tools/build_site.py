@@ -2751,15 +2751,18 @@ for _i, e in enumerate(_cards):
                 ('14-8-DEDICATION-v2', 'LAST, the dedication')]
         _f = []
         for _n, _w in _fam:
+            if _n == b:                      # the card you are already on
+                continue
             if not os.path.exists(os.path.join(ROOT, 'mid', _n + '.jpg')):
                 continue
             _f.append('<a class=sh href="%s.html"><img src="../mid/%s.jpg" alt="" loading=lazy>'
                       '<span>%s</span></a>' % (_n, _n, html.escape(_w)))
         if _f:
-            cd.append('<h2>The three fixed cards</h2>'
+            cd.append('<h2>The other fixed cards</h2>'
                       '<p class=lede>One design, three moments: the film opens on the title, the '
-                      'credits are set on the plates, and Ganesha closes it. Same clouds, same '
-                      'clear middle, same hand, so they read as one family.</p>'
+                      'credits are set on the plates, and Ganesha closes it. The title is on BARE '
+                      'paper, because the film has not reached the sky yet; the clouds arrive with '
+                      'the credits.</p>'
                       '<div class=sheetgrid>%s</div>' % ''.join(_f))
 
     if e.get('video'):
