@@ -1963,7 +1963,7 @@
       "kind": "keyframe",
       "shot": "2.0",
       "file": "BB_C_2/ref/V7_5_5_road.jpg",
-      "status": "placeholder",
+      "status": "superseded",
       "date": "2026-08-31",
       "slug": "EXT. ROAD — DAY",
       "what": "He rides on a real road, small against it.",
@@ -1972,7 +1972,8 @@
       "dna": {
         "phase": "Phase 3 of 15, THE BICYCLE.",
         "journey": "REFUSAL, of a kind. He does not turn back, he argues. He tests the limit rather than obeying it."
-      }
+      },
+      "note": "ANSWERED 6.9.2026 by the finished bicycle edit. This was a still standing in for the ride outside; the segment is cut now and the cut is the shot."
     },
     {
       "kind": "keyframe",
@@ -2400,7 +2401,7 @@
       "shot": "2.0",
       "representative": true,
       "file": "BB_C_2/2-0-HERO-v1.png",
-      "status": "proposal",
+      "status": "superseded",
       "date": "2026-09-01",
       "slug": "EXT. ROAD — HE TRIES IT HIMSELF",
       "what": "A boy riding a bicycle on an empty tree lined road in low warm late afternoon light, long shadows across the tarmac, riding steadily rather than straining.",
@@ -2409,7 +2410,8 @@
       "dna": {
         "phase": "Phase 3 of 15, THE BICYCLE.",
         "journey": "REFUSAL, of a kind. He does not turn back, he argues. He tests the limit rather than obeying it."
-      }
+      },
+      "note": "ANSWERED 6.9.2026 by the finished bicycle edit. This was a still standing in for the ride outside; the segment is cut now and the cut is the shot."
     },
     {
       "kind": "keyframe",
@@ -3938,8 +3940,8 @@
     {
       "file": "clips/3-1-BICYCLE-loop.mp4",
       "kind": "keyframe",
-      "scene": "3",
-      "shot": "3.1",
+      "scene": "2",
+      "shot": "2.0",
       "title": "The bicycle, the finished edit",
       "status": "accepted",
       "date": "2026-09-06",
@@ -3952,7 +3954,7 @@
     }
   ],
   "event": "Breakthrough Junior Challenge 2026",
-  "site_version": 289,
+  "site_version": 290,
   "footage": [
     {
       "name": "Key catch",
