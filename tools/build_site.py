@@ -2795,6 +2795,21 @@ for _i, e in enumerate(_cards):
                       'the credits.</p>'
                       '<div class=sheetgrid>%s</div>' % ''.join(_f))
 
+    # LAYERS THAT DO NOT EXIST YET. Baba, 6.9.2026: the magnifying glass has to
+    # move on its own while the drawing underneath stays still, which cannot be
+    # done from one flat frame. Saying WHICH layers are needed, on the card, is
+    # what stops somebody animating the whole frame instead.
+    _pn = e.get('plates_needed') or []
+    if _pn:
+        cd.append('<h2>The layers this shot needs</h2>'
+                  '<p class=lede>Not made yet. The glass moves and the drawing does not, so it '
+                  'cannot come from one flat frame.</p><div class=lay>')
+        for _p in _pn:
+            cd.append('<div class=l><div class=n><span>%s</span>'
+                      '<span class=t>%s</span></div></div>'
+                      % (html.escape(_p['label']), html.escape(_p.get('note', ''))))
+        cd.append('</div>')
+
     if e.get('video'):
         # A SHOT THAT MOVES IS STILL A SHOT. Baba, 3.9.2026: a loop should behave
         # like any drawn frame, so it gets a card, a note and a download in the
