@@ -583,16 +583,23 @@ h2{font-size:19px;margin:38px 0 14px;padding-bottom:7px;border-bottom:1px solid 
 .sbtn:hover,.sbtn.on{background:var(--brass);border-color:var(--brass);color:#17150f}
 .sbtn.nav{margin-left:8px;font-size:12px}
 .kw{margin-left:auto;font:600 10px ui-monospace,monospace;letter-spacing:.1em;color:var(--brass)}
-.tiny .gcue{flex:0 0 auto;display:flex;align-items:center;gap:8px;border:0;cursor:pointer;
+
+/* LISTEN, ON A LONG PARAGRAPH. Baba, 6.9.2026: fourteen hundred characters is a
+   lot to read on a phone, so the paragraph reads itself. It reads LITERALLY:
+   the same words that are on the page, so what you hear and what you see never
+   drift apart. */
+.flight .pcue{margin:2px 0 10px;max-width:none}
+.flight .pcue span{font-size:9px}
+.gcue{flex:0 0 auto;display:flex;align-items:center;gap:8px;border:0;cursor:pointer;
  background:none;padding:0 6px 0 0;margin:0;align-self:center;max-width:150px;text-align:left}
-.tiny .gcue>svg{width:11px;height:11px;fill:#17150f;flex:0 0 26px;height:26px;width:26px;
+.gcue>svg{width:11px;height:11px;fill:#17150f;flex:0 0 26px;height:26px;width:26px;
  border-radius:50%;background:var(--brass);padding:7px;box-sizing:border-box}
-.tiny .gcue svg.ic-s{display:none}
-.tiny .gcue[data-on="1"] svg.ic-p{display:none}
-.tiny .gcue[data-on="1"] svg.ic-s{display:block}
-.tiny .gcue span{font:600 9.5px/1.35 ui-monospace,monospace;letter-spacing:.08em;
+.gcue svg.ic-s{display:none}
+.gcue[data-on="1"] svg.ic-p{display:none}
+.gcue[data-on="1"] svg.ic-s{display:block}
+.gcue span{font:600 9.5px/1.35 ui-monospace,monospace;letter-spacing:.08em;
  text-transform:uppercase;color:var(--dim)}
-.tiny .gcue[data-on="1"] span{color:var(--brass)}
+.gcue[data-on="1"] span{color:var(--brass)}
 .rtph .gp{width:26px;height:26px;border-radius:50%;background:var(--brass);border:0;
  padding:0;cursor:pointer;flex:0 0 26px;display:flex;align-items:center;justify-content:center;
  align-self:center}
@@ -1981,7 +1988,12 @@ if True:
     # stopped competing with the one page anybody came for. Nothing is deleted,
     # because a page that is hard to find can be found and a page that is gone
     # cannot.
-    _other = [('radiodrama.html', 'The music, written for the film',
+    _other = [('https://markoboskoauroville.github.io/BRAIN_BRAKE_BOOK/',
+               'Brain Brake, the book',
+               'The book the film was made from, 3106 words in fourteen chapters. Off the film '
+               'page 6.9.2026: it is not part of the work any more, but it is where the rooms and '
+               'the reasons were written down first'),
+              ('radiodrama.html', 'The music, written for the film',
                'The theme and the end credits, composed before the animation'),
               ('dialogue.html', 'Dialogue and takes',
                'Every line read aloud, and Manan\u2019s own takes, with the zips'),
@@ -1997,9 +2009,13 @@ if True:
          'here so it can be found when it is wanted.</p>',
          '<div class=arcg>THE OTHER PAGES</div>', '<div class=arc>']
     for _h, _n, _d in _other:
-        if os.path.exists(os.path.join(ROOT, _h)):
-            a.append('<div class=arcr><a href="%s">%s</a>'
-                     '<span class=d>%s</span><span class=z>page</span></div>' % (_h, _n, _d))
+        off = _h.startswith('http')
+        if not off and not os.path.exists(os.path.join(ROOT, _h)):
+            continue
+        a.append('<div class=arcr><a href="%s"%s>%s</a>'
+                 '<span class=d>%s</span><span class=z>%s</span></div>'
+                 % (_h, ' target=_blank rel=noopener' if off else '', _n, _d,
+                    'site' if off else 'page'))
     for _n in sorted(SCENES, key=lambda x: (len(str(x)), str(x))):
         _h = 'BB_C_%s/index.html' % _n
         if os.path.exists(os.path.join(ROOT, _h)):
@@ -2342,10 +2358,27 @@ if os.path.exists(os.path.join(ROOT, _titlecard)):
              '<img src="%s" alt="%s, %s"></a>'
              '<div class=sub>%s &nbsp;&middot;&nbsp; %s</div></div>'
              % (small(_titlecard), FILM, SUBTITLE, SUBTITLE, EVENT))
-_flight = ('<div class=flight><b>How the first half arrives</b><p>%s</p></div>'
-           % CAT.get('rubbing_note', '')) if CAT.get('rubbing_note') else ''
-_flight += ('<div class=flight><b>How the second half moves</b><p>%s</p></div>'
-            % CAT.get('flight_note', '')) if CAT.get('flight_note') else ''
+_PA = CAT.get('prose_audio', {})
+
+
+def _prose(key, title, body):
+    if not body:
+        return ''
+    a = _PA.get(key)
+    cue = ''
+    if a:
+        cue = ('<button class="gcue pcue" type=button data-src="%s" '
+               'title="listen" aria-label="listen: %s">'
+               '<svg class=ic-p viewBox="0 0 24 24"><path d="M7 4l13 8-13 8z"/></svg>'
+               '<svg class=ic-s viewBox="0 0 24 24">'
+               '<path d="M6 4h4v16H6zM14 4h4v16h-4z"/></svg>'
+               '<span>LISTEN &nbsp;%d:%02d</span></button>'
+               % (a['url'], html.escape(title), int(a['sec']) // 60, int(a['sec']) % 60))
+    return '<div class=flight><b>%s</b>%s<p>%s</p></div>' % (title, cue, body)
+
+
+_flight = _prose('rubbing_note', 'How the first half arrives', CAT.get('rubbing_note', ''))
+_flight += _prose('flight_note', 'How the second half moves', CAT.get('flight_note', ''))
 rt = [_mast, '<h1>THE BRAIN BRAKE ANIMATIC</h1>', _flight,
       '<p class=lede>The whole film as a storyboard, in order. <b>%d frames drawn, %d holding as '
       'placeholders, %d keyframes live in all.</b> The count here is lower than the last because a '
@@ -2355,32 +2388,10 @@ rt = [_mast, '<h1>THE BRAIN BRAKE ANIMATIC</h1>', _flight,
       'it is current the moment anything is filed. Everything we have collected for each phase, '
       'kept and abandoned, is on <a href="brainstorm.html">brainstorm</a>.</p>'
       % (_drawn, _holding, _live_kf),
-      # THE TWO DOCUMENTS, AT THE TOP, BESIDE THE TITLE. 2.9.2026. Anybody
-      # arriving here wants one of two things: to understand the film, or to
-      # animate it. One box each, before a single frame, so neither has to
-      # scroll to find their own door.
-      '<div class=twoup>'
-      '<div class=srcbox><div class=t><b>The animator read through</b>'
-      # 2.9.2026. NOT OFFERED WHILE IT IS OUT OF DATE. The running order was
-      # rewritten five times today and the read through still carries the old
-      # one, so downloading it would hand Kristijan a document that quietly
-      # contradicts the page he is looking at. A file that is wrong is worse
-      # than a file that is missing, because he cannot tell which to believe.
-      '<span class=soon>COMING</span></div>'
-      '<p><b>Every frame in order, with what it is, what it means and HOW IT MOVES:</b> the zoom, '
-      'the push, the frottage, the passage through the surface. Made to print and mark up.</p>'
-      '<p style="color:var(--dim)"><b>Not ready to download.</b> The running order changed today '
-      'and this document has not caught up, so it is held back rather than handed over wrong. '
-      'This page is the live one and is always current.</p>'
-      '</div>'
-      '<div class=srcbox><div class=t><b>Brain Brake, the book</b>'
-      '<span><a class=dl href="https://markoboskoauroville.github.io/BRAIN_BRAKE_BOOK/" '
-      'target=_blank rel=noopener>READ &nearr;</a></span></div>'
-      '<p>The book the film was made from, written as though it came first. '
-      '<b>%d words, fourteen chapters</b>, rooms described that the camera only passes and reasons '
-      'given that two minutes can only imply. It reads itself aloud in two voices, about sixteen '
-      'minutes, remembers where you stopped, and can follow the voice word by word on the page.</p>'
-      '</div></div>' % 3106,
+      # THE TWO DOCUMENT BOXES ARE GONE. Baba, 6.9.2026: the animator read
+      # through is not being made, and the book is not part of the work any
+      # more. Both are still reachable from the archive; they are just not the
+      # first thing anybody meets on the film page.
       '<div class=rtsheet>']
 for e in _fl:
     n = str(e.get('n', ''))

@@ -3937,7 +3937,7 @@
     }
   ],
   "event": "Breakthrough Junior Challenge 2026",
-  "site_version": 262,
+  "site_version": 263,
   "footage": [
     {
       "name": "Key catch",
@@ -7233,5 +7233,21 @@
         "KEY-SHEET-TUMBLE.png"
       ]
     }
-  ]
+  ],
+  "prose_audio": {
+    "rubbing_note": {
+      "slug": "prose-first-half",
+      "label": "How the first half arrives",
+      "sec": 85.0,
+      "parts": 1,
+      "url": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/guide/clip-prose-first-half.mp3"
+    },
+    "flight_note": {
+      "slug": "prose-second-half",
+      "label": "How the second half moves",
+      "sec": 79.05,
+      "parts": 1,
+      "url": "https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/voice/guide/clip-prose-second-half.mp3"
+    }
+  }
 }
