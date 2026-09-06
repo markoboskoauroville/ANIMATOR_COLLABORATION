@@ -2984,7 +2984,7 @@
       "title": "The calf, through the glass",
       "status": "accepted",
       "date": "2026-09-03",
-      "note": "INSPECTION FIVE, AND THE LAST ONE IN THE FILM. Glass on the camera lens as always, but CENTRED ON THE CALF rather than beside it, which is what finally made the leg align: with the lens on the leg, magnifying about the lens centre and magnifying about the leg’s own axis become the same thing, so the leg runs unbroken from the shorts, through the circle, out into the ankle and the shoe. Three times up: one calf fills the lens, each fibre a separate line, the two bellies of the muscle broad and modelled, and the light burning where they meet. It stops reading as a leg with muscles in it and starts reading as the machinery itself. Nothing new is invented inside the lens, per modules/magnifying-glass.md. FILED AS 1-17, 3.9.2026, in the reset that gave scene one its final names. Before the reset it was 1-7-RECOVERY-GLASS-v8, and every name mentioned in this note is a pre reset name. HE SPEAKS HERE, AND IT IS ALREADY SHOT. These are Manan’s own recorded lines, M1 to M5, live footage in his own voice. They were only listed against 19-3, where he says the same theory to Viveka, so the dialogue page showed him silent through the whole first scene. HOW IT MOVES. AND HERE THE STILL PICTURE COMES ALIVE. The glass still wobbles, but now the image under it starts to move. That is the surprise, and it only works because everything really was standing still until now. Full animation from here.",
+      "note": "INSPECTION FIVE, AND THE LAST ONE IN THE FILM. Glass on the camera lens as always, but CENTRED ON THE CALF rather than beside it, which is what finally made the leg align: with the lens on the leg, magnifying about the lens centre and magnifying about the leg’s own axis become the same thing, so the leg runs unbroken from the shorts, through the circle, out into the ankle and the shoe. Three times up: one calf fills the lens, each fibre a separate line, the two bellies of the muscle broad and modelled, and the light burning where they meet. It stops reading as a leg with muscles in it and starts reading as the machinery itself. Nothing new is invented inside the lens, per modules/magnifying-glass.md. FILED AS 1-17, 3.9.2026, in the reset that gave scene one its final names. Before the reset it was 1-7-RECOVERY-GLASS-v8, and every name mentioned in this note is a pre reset name. HE SPEAKS HERE, AND IT IS ALREADY SHOT. These are Manan’s own recorded lines, M1 to M5, live footage in his own voice. They were only listed against 19-3, where he says the same theory to Viveka, so the dialogue page showed him silent through the whole first scene. HOW IT MOVES. THIS IS WHERE THE STILL PICTURE COMES ALIVE. The glass still wobbles, and inside the leg movement announces itself and then opens into full animation. It only works because everything really was standing still until now. Full animation from here to the end of the scene.",
       "dialogue": [
         {
           "speaker": "MANAN",
@@ -3937,7 +3937,7 @@
     }
   ],
   "event": "Breakthrough Junior Challenge 2026",
-  "site_version": 280,
+  "site_version": 281,
   "footage": [
     {
       "name": "Key catch",
@@ -3994,7 +3994,7 @@
       "use": "For the fall. The key turns, grows and crosses from pencil to photograph on the way down. Same mesh throughout, only the material changes. On the ASSETS page."
     }
   ],
-  "flight_note": "<b>THE FILM STARTS ALMOST STILL AND OPENS OUT.</b> The picture stands and one or two details live: pebbles, a leg, a tree, and then just the chest, so we watch him breathe and that is the only movement in the frame. Then it widens. The breath changes because he is less tired, the transition turns smooth, a real camera zooms when he sees the finish, and by the time he runs it is twenty five frames a second all the way. WHAT CHANGES THROUGH THE SCENE IS HOW MUCH OF THE FRAME IS ALIVE.\n\nWhen the boy walks into the stopped picture he arrives as live action. The drawing stands still and the magnifying glass wobbles in his hand, as though somebody is really holding it. Then at 1-17 the picture under the glass comes alive, which is the surprise the whole stretch was built for.\n\n<b>PROGRESS OF MOVEMENT THROUGH THE FILM.</b> Movement goes from hard to easy. Running is effort, and it is the hardest thing in the film. The bicycle is lighter. The vortex carries him up. The lift carries him to the top of the body. The vortex carries him back down. And at the end he puts out a hand and the key falls into it. EVERYTHING OPENS. If a shot looks like it is straining, it is probably wrong.",
+  "flight_note": "<b>THE FILM STARTS ALMOST STILL AND OPENS OUT.</b> The picture stands and one or two details live: pebbles, a leg, a tree, and then just the chest, so we watch him breathe and that is the only movement in the frame. Then it widens. The breath changes because he is less tired, the transition turns smooth, a real camera zooms when he sees the finish, and by the time he runs it is twenty five frames a second all the way. WHAT CHANGES THROUGH THE SCENE IS HOW MUCH OF THE FRAME IS ALIVE: from one detail, through more and more movement, to full animation. Then everything stops again when Manan walks in, and holds until 1-17, where movement announces itself inside the leg and opens into full animation. From that moment it stays full to the end of the scene.\n\nWhen the boy walks into the stopped picture he arrives as live action. The drawing stands still and the magnifying glass wobbles in his hand, as though somebody is really holding it. Then at 1-17 the picture under the glass comes alive, which is the surprise the whole stretch was built for.\n\n<b>PROGRESS OF MOVEMENT THROUGH THE FILM.</b> Movement goes from hard to easy. Running is effort, and it is the hardest thing in the film. The bicycle is lighter. The vortex carries him up. The lift carries him to the top of the body. The vortex carries him back down. And at the end he puts out a hand and the key falls into it. EVERYTHING OPENS. If a shot looks like it is straining, it is probably wrong.",
   "flow": [
     {
       "phase": "0",
@@ -7252,12 +7252,12 @@
       "role": "first"
     },
     {
-      "file": "11-BRAIN_BRAKE_kadrovi_HR-V11.pdf",
+      "file": "12-BRAIN_BRAKE_kadrovi_HR-V12.pdf",
       "date": "6.9.2026",
       "size": "1.2 MB",
-      "url": "https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIGINALS/main/DOCS/11-BRAIN_BRAKE_kadrovi_HR-V11.pdf",
+      "url": "https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIGINALS/main/DOCS/12-BRAIN_BRAKE_kadrovi_HR-V12.pdf",
       "role": "current",
-      "what": "Razine animacije. 1-4 do 1-6 su jedna grupa, mješavina stilova kao najava pune animacije. Od 1-11 je sve zamrznuto osim Manana i povećala. RADI PO OVOME."
+      "what": "Razine animacije. Otvara se od jednog detalja do pune animacije, zamrzne se kad Manan uđe, pa u 1-17 noga oživi i puna animacija ide do kraja scene. RADI PO OVOME."
     }
   ]
 }
