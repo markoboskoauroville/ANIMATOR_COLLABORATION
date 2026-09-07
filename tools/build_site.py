@@ -3355,7 +3355,8 @@ def dialogue_page():
          '<b>Press COPY and the whole speech goes to the clipboard</b>, ready to paste. Consecutive '
          'lines by one character are one block, because that is what you actually paste.</p>']
     rows = [e for e in ENTRIES
-            if e.get('dialogue') and e.get('status') == 'accepted']
+            if e.get('dialogue')
+            and e.get('status') in ('accepted', 'proposal', 'placeholder')]
     rows.sort(key=shot_key)
     scenes = {}
     for e in rows:

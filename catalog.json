@@ -9,8 +9,8 @@
     "1": "The runner",
     "2": "The bicycle",
     "3": "Testing where the limit is",
-    "4": "Tired, and the wall",
-    "5": "His eyes close",
+    "4": "He races himself",
+    "5": "He closes his eyes",
     "6": "The trance",
     "9": "The vortex, up",
     "16": "The house of the body",
@@ -2048,7 +2048,31 @@
       "dna": {
         "phase": "Phase 5 of 15, TIRED, AND THE WALL.",
         "journey": "THE CALL becoming undeniable. The wall is the thing he will later find was never a wall."
-      }
+      },
+      "dialogue": [
+        {
+          "speaker": "MANAN (V.O.)",
+          "line": "That's me. An hour ago."
+        },
+        {
+          "speaker": "MANAN (V.O.)",
+          "line": "He doesn't know I'm coming."
+        },
+        {
+          "speaker": "MANAN (V.O.)",
+          "line": "I've watched the other one forty times. A man with nothing left. And then more."
+        },
+        {
+          "speaker": "MANAN (V.O.)",
+          "line": "Nothing left, and then MORE."
+        },
+        {
+          "speaker": "MANAN (V.O.)",
+          "line": "So it is in there somewhere. And if it is in him, it is in me."
+        }
+      ],
+      "note": "VOICEOVER, INSIDE HIS HEAD. His mouth does not move and nobody else hears it. Said while he is still fresh and still winning, which is why it can be light. HE NEVER SAYS WHAT HE IS TESTING: \"if it is in him, it is in me\" is the whole reason he is on the bicycle, and the audience assembles the rest. Saying the experiment out loud would make him a narrator; saying what he WANTS keeps him a boy.",
+      "scene": "4"
     },
     {
       "kind": "keyframe",
@@ -2096,7 +2120,31 @@
       "dna": {
         "phase": "Phase 6 of 15, HE CLOSES HIS EYES.",
         "journey": "APPROACH TO THE THRESHOLD. The last frame of the ordinary world."
-      }
+      },
+      "dialogue": [
+        {
+          "speaker": "MANAN (V.O.)",
+          "line": "My legs are fine. Nothing hurts. Nothing is torn."
+        },
+        {
+          "speaker": "MANAN (V.O.)",
+          "line": "I'm just done."
+        },
+        {
+          "speaker": "MANAN (V.O.)",
+          "line": "And I didn't decide that."
+        },
+        {
+          "speaker": "MANAN (V.O.)",
+          "line": "Something in me said no, and it wasn't my legs."
+        },
+        {
+          "speaker": "MANAN (V.O.)",
+          "line": "So I want to know who said it."
+        }
+      ],
+      "note": "FLAT, NOT DRAMATIC. He is out of breath and he has just noticed something: PUZZLED BEATS DEVASTATED. No self-pity anywhere. He is not upset that he failed, he is annoyed that something overruled him and would not say why, and that difference is what makes the second half of the film possible.\n\nTHE TURN IS ONE WORD, \"DECIDED\". Everything before it is legs and lungs. \"And I didn’t decide that\" is where the film changes subject from the body to whoever is running it, and it lands as a complaint rather than a theory.\n\nAND THE LAST LINE IS A QUESTION, NOT A CONCLUSION. \"So I want to know who said it\" is the door the vortex opens three shots later. He is not looking for a place, he is looking for a person, and he finds one.",
+      "scene": "5"
     },
     {
       "kind": "keyframe",
@@ -2415,7 +2463,7 @@
     },
     {
       "kind": "keyframe",
-      "shot": "4.0",
+      "shot": "4.2",
       "representative": true,
       "file": "BB_C_4/4-0-HERO-v1.png",
       "status": "proposal",
@@ -2427,7 +2475,19 @@
       "dna": {
         "phase": "Phase 5 of 15, TIRED, AND THE WALL.",
         "journey": "THE CALL becoming undeniable. The wall is the thing he will later find was never a wall."
-      }
+      },
+      "dialogue": [
+        {
+          "speaker": "MANAN (V.O.)",
+          "line": "Come on."
+        },
+        {
+          "speaker": "MANAN (V.O.)",
+          "line": "Come on."
+        }
+      ],
+      "note": "THE TWO \"COME ON\"S ARE THE WHOLE EFFORT, and they are different. The first is encouragement. The second is arguing with somebody. Put them far apart and let the picture do the work between them. Then silence.",
+      "scene": "4"
     },
     {
       "kind": "keyframe",
@@ -3954,7 +4014,7 @@
     }
   ],
   "event": "Breakthrough Junior Challenge 2026",
-  "site_version": 292,
+  "site_version": 293,
   "footage": [
     {
       "name": "Key catch",
