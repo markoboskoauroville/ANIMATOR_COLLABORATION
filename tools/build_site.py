@@ -2426,6 +2426,12 @@ rt = [_mast, '<h1>THE BRAIN BRAKE ANIMATIC</h1>', _flight,
       # through is not being made, and the book is not part of the work any
       # more. Both are still reachable from the archive; they are just not the
       # first thing anybody meets on the film page.
+      '<div class=allassets>'
+      '<a class=dl href="' + DRIVE_FOLDER + '" target=_blank rel=noopener>'
+      'DOWNLOAD&nbsp;ALL&nbsp;ASSETS&nbsp;&nbsp;377&nbsp;MB</a>'
+      '<span>Every live frame at full resolution, in one zip, in folders by phase, each with an '
+      '_ABOUT.txt saying what the phase is and what is in it. Ninety nine frames. Retired frames '
+      'are NOT in it, so nothing in there is the wrong version.</span></div>',
       '<div class=rtsheet>']
 for e in _fl:
     n = str(e.get('n', ''))
