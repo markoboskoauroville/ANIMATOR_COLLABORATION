@@ -479,6 +479,20 @@ h2{font-size:19px;margin:38px 0 14px;padding-bottom:7px;border-bottom:1px solid 
 @media(max-width:600px){.tiny a{width:calc(33.333% - 6px)}}
 .cardhead{display:flex;justify-content:space-between;align-items:baseline;gap:16px;
  padding-bottom:8px;border-bottom:1px solid var(--rule);margin-bottom:16px}
+
+/* THE LAYERS OF A SHOT, IN ONE ROW. The download sits ABOVE each picture, so
+   the thing you press is next to the thing you are looking at rather than
+   under a paragraph you have to read first. */
+.laygrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+ gap:14px;margin:0 0 22px}
+.laycell{border:1px solid var(--rule);border-radius:5px;padding:10px;background:var(--card);
+ display:flex;flex-direction:column;gap:8px}
+.laycell .dl{align-self:flex-start;font-size:8px;padding:4px 8px}
+.laycell img{width:100%;display:block;border:1px solid var(--rule)}
+.laycell .lt b{display:block;font:700 10px ui-monospace,monospace;letter-spacing:.1em;
+ color:var(--brass);margin-bottom:4px}
+.laycell .lt span{font-size:12px;line-height:1.45;color:var(--dim)}
+@media(max-width:620px){.laygrid{grid-template-columns:1fr}}
 .cardhead .layhint{font:700 9px ui-monospace,monospace;letter-spacing:.14em;color:var(--dim)}
 .cardhead .code{font:700 15px ui-monospace,monospace;letter-spacing:.1em;color:var(--brass)}
 .dl{font:600 10px ui-monospace,monospace;letter-spacing:.12em;color:#17150f;
@@ -2851,7 +2865,7 @@ for _i, e in enumerate(_cards):
     _ext = '' if e.get('full_label') else ' download'
     if e.get('plates'):
         cd = ['<div class=cardhead><span class=code>%s</span>'
-              '<span class=layhint>TWO LAYERS BELOW</span></div>' % b.upper()]
+              '<span class=layhint>LAYERS AND COMPOSITE BELOW</span></div>' % b.upper()]
     else:
         cd = ['<div class=cardhead><span class=code>%s</span>'
               '<a class=dl href="%s"%s>DOWNLOAD &nbsp;%s</a></div>'
@@ -2933,9 +2947,7 @@ for _i, e in enumerate(_cards):
         cd.append('<video class=cardimg src="%s" controls playsinline preload=metadata '
                   'poster="../mid/%s.jpg"></video>' % (_src, b))
     elif e.get('plates'):
-        # the plate is the drawing; the composite is on the storyboard already
-        cd.append('<img class=cardimg src="../mid/%s.jpg" alt="">'
-                  % e['plates'][0]['file'].rsplit('.', 1)[0])
+        pass          # the layers are drawn as a row below, see laygrid
     else:
         cd.append('<img class=cardimg src="../mid/%s.jpg" alt="">' % b)
     if e.get('slug'):
@@ -2957,17 +2969,31 @@ for _i, e in enumerate(_cards):
     # with alpha, actor on green. Each one is shown under the frame with its own
     # full size download, and the note says how it was made, since a matte you
     # cannot trust is worse than no matte.
-    for _cp in (e.get('plates') or []):
-        _cpb = _cp['file'].rsplit('.', 1)[0]
-        _cpo = ORIGINALS.get(_cp['file']) or {}
-        _cph = _cpo.get('url') or ('../' + _cpo.get('path', 'BB_C_1/' + _cp['file']))
-        _cpmb = _cpo.get('bytes', 0) / 1048576.0
-        cd.append('<div class=srcbox><div class=t><b>%s</b>'
-                  '<a class=dl href="%s" download>DOWNLOAD FULL SIZE &nbsp;%.1f MB</a></div>'
-                  '<p>%s</p></div>'
-                  % (html.escape(_cp.get('label', 'Plate')), _cph, _cpmb,
-                     html.escape(_cp.get('note', ''))))
-        cd.append('<img class=cardimg src="../mid/%s.jpg" alt="">' % _cpb)
+    # THE LAYERS, SIDE BY SIDE, EACH WITH ITS DOWNLOAD ABOVE IT.
+    _lay = list(e.get('plates') or [])
+    if _lay:
+        _cells = []
+        # the composite goes in the row too, at the end: the layers are what you
+        # build, and it is what they build into
+        _co = ORIGINALS.get(os.path.basename(e['file'])) or {}
+        _rows = _lay + ([{'file': os.path.basename(e['file']),
+                          'label': 'The composite',
+                          'note': 'The two layers together, as it appears on the storyboard.'}]
+                        if _co else [])
+        for _cp in _rows:
+            _cpb = _cp['file'].rsplit('.', 1)[0]
+            _cpo = ORIGINALS.get(_cp['file']) or {}
+            _cph = _cpo.get('url') or ('../' + _cpo.get('path', 'BB_C_1/' + _cp['file']))
+            _cpmb = _cpo.get('bytes', 0) / 1048576.0
+            _cells.append(
+                '<div class=laycell>'
+                '<a class=dl href="%s" download>DOWNLOAD&nbsp;FULL&nbsp;RESOLUTION'
+                '&nbsp;&nbsp;%.1f&nbsp;MB</a>'
+                '<img src="../mid/%s.jpg" alt="" loading=lazy>'
+                '<div class=lt><b>%s</b>%s</div></div>'
+                % (_cph, _cpmb, _cpb, html.escape(_cp.get('label', 'Plate')),
+                   ('<span>%s</span>' % html.escape(_cp['note'])) if _cp.get('note') else ''))
+        cd.append('<div class=laygrid>%s</div>' % ''.join(_cells))
 
     if any(k in e.get('file', '') for k in ('FALL', '15-1-A', '15-2-A', 'OBJECT_SHEET_KEY',
                                             'CHARACTER_SHEET_COACH')):
