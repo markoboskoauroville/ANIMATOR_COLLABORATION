@@ -1426,7 +1426,63 @@ def bar(here, r):
     return ''.join(o)
 
 
-def page(title, body, here=None, depth=0):
+SCROLL_MEMORY = """<script>
+/* WHERE YOU WERE, WHEN YOU COME BACK. Baba, 8.9.2026: a hard reload on a page
+   this long throws you back to the top, and finding the frame you were looking
+   at again costs more than the reload saved.
+
+   Two things make this harder than it sounds.
+
+   THE PAGE GROWS AFTER IT LOADS. Thumbnails are lazy, so the document is short
+   at first and gets taller as pictures arrive. Restoring once, immediately,
+   lands in the wrong place. So the restore is attempted repeatedly for a couple
+   of seconds and gives up the moment the target is reachable and held.
+
+   THE BROWSER TRIES TOO, and its guess is based on the short version of the
+   page. history.scrollRestoration='manual' takes it out of the argument. */
+(function(){
+  var KEY = 'bb:y:' + location.pathname;
+  var store;
+  try { store = window.localStorage; } catch (e) { return; }   // private mode
+  if (!store) return;
+
+  if ('scrollRestoration' in history) history.scrollRestoration = 'manual';
+
+  var want = parseInt(store.getItem(KEY) || '0', 10);
+  var settled = false;
+
+  /* the moment the reader scrolls on purpose, stop trying to move them */
+  function surrender(){ settled = true; }
+  window.addEventListener('wheel', surrender, {passive:true, once:true});
+  window.addEventListener('touchstart', surrender, {passive:true, once:true});
+  window.addEventListener('keydown', surrender, {once:true});
+
+  if (want > 40) {
+    var until = Date.now() + 2500;
+    (function tryIt(){
+      if (settled || Date.now() > until) return;
+      var max = document.documentElement.scrollHeight - window.innerHeight;
+      if (max >= want) {
+        window.scrollTo(0, want);
+        if (Math.abs(window.scrollY - want) < 4) { settled = true; return; }
+      }
+      requestAnimationFrame(tryIt);
+    })();
+  }
+
+  var t = null;
+  window.addEventListener('scroll', function(){
+    if (t) return;
+    t = setTimeout(function(){
+      t = null;
+      try { store.setItem(KEY, String(Math.round(window.scrollY))); } catch (e) {}
+    }, 250);
+  }, {passive:true});
+})();
+</script>"""
+
+
+def _page_raw(title, body, here=None, depth=0):
     r = '../' * depth
     return ('<!doctype html><html lang=en><head><meta charset=utf-8>'
             '<meta name=viewport content="width=device-width,initial-scale=1">'
@@ -1458,6 +1514,13 @@ def page(title, body, here=None, depth=0):
 
 
 import re
+
+
+
+def page(title, body, here=None, depth=0):
+    """Every page, plus the scroll memory injected before </body>."""
+    return _page_raw(title, body, here=here, depth=depth).replace(
+        '</body>', SCROLL_MEMORY + '</body>')
 
 
 def ver(e):

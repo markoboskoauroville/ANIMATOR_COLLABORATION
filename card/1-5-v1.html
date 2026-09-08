@@ -642,4 +642,57 @@ h2{font-size:19px;margin:38px 0 14px;padding-bottom:7px;border-bottom:1px solid 
 .gate .rem input{margin:0;width:auto;padding:0;border:0;background:none;accent-color:var(--brass)}
 @media(max-width:1100px){.cell{width:33.333%}}
 @media(max-width:640px){.cell{width:50%}.wrap{padding:20px 14px 50px}}
-</style></head><body><div id=app style="display:block"><div class=bar><a class=home href="../index.html" class=on>THE FILM</a><a href="../sheets.html">SHEETS</a><a href="../sound.html">SOUND</a><a href="../dialogue.html">DIALOGUE</a><a href="../credits.html">CREDITS</a><a href="../kbrojka.html">K_BROJKA</a><span class=sp></span><span class=vb>V9 DRAFT</span><a class="arc" href="../archive.html" title="arhiva">ARH</a><span class=sitev title="site version">v296</span><button class=th id=th onclick="tt()" title="light or dark">&#9681;</button></div><div class=wrap><div class=cardhead><span class=code>1-5-V1</span><a class=dl href="../BB_C_1/1-5-v1.jpg" download>DOWNLOAD &nbsp;FULL SIZE &nbsp;1.2 MB</a></div><img class=cardimg src="../mid/1-5-v1.jpg" alt=""><div class=slug>EXT. CREAM VOID — THE TWO WORLDS MEET</div><p class=note>The runner is still going and a boy steps into the drawn world beside him, magnifying glass up.</p><p class=note>The film’s first crossing: anything real is a photograph, anything thought is a pencil drawing, and here they stand in one frame. Both on the same ground line, and the runner is the smaller of the two, which makes the boy the subject and the runner the thing being examined.</p><p class=note style="color:var(--dim)">MANAN WALKS IN. The runner is still going and the boy steps into the drawn world beside him, magnifying glass up. The film's first crossing of its two worlds: anything real is a photograph, anything thought is a pencil drawing, and here they stand in one frame. Both figures are on the same ground line and the runner is the smaller of the two, which is what makes the boy the subject and the runner the thing being examined. SUPERSEDED 3.9.2026 by 1-5-v3. The runner in it was mid sprint, not the collapse.</p><p class=lede style="margin-top:26px"><a href="../index.html">all frames</a></p><div class=idb><div class=idh>The DNA of this frame</div><div class=idc><p><b style="color:var(--gold)">Phase.</b> Phase 2 of 15, THE RUNNER.</p><p><b style="color:var(--gold)">Hero’s journey.</b> THE ORDINARY WORLD, and inside it THE CALL. A boy on an ordinary road, and a question that will not leave him alone.</p></div></div><p class=filmfoot>THE BRAIN BRAKE<br><span>The Central Governor Theory &nbsp;&middot;&nbsp; Breakthrough Junior Challenge 2026</span></p></div></div></body></html>
+</style></head><body><div id=app style="display:block"><div class=bar><a class=home href="../index.html" class=on>THE FILM</a><a href="../sheets.html">SHEETS</a><a href="../sound.html">SOUND</a><a href="../dialogue.html">DIALOGUE</a><a href="../credits.html">CREDITS</a><a href="../kbrojka.html">K_BROJKA</a><span class=sp></span><span class=vb>V9 DRAFT</span><a class="arc" href="../archive.html" title="arhiva">ARH</a><span class=sitev title="site version">v297</span><button class=th id=th onclick="tt()" title="light or dark">&#9681;</button></div><div class=wrap><div class=cardhead><span class=code>1-5-V1</span><a class=dl href="../BB_C_1/1-5-v1.jpg" download>DOWNLOAD &nbsp;FULL SIZE &nbsp;1.2 MB</a></div><img class=cardimg src="../mid/1-5-v1.jpg" alt=""><div class=slug>EXT. CREAM VOID — THE TWO WORLDS MEET</div><p class=note>The runner is still going and a boy steps into the drawn world beside him, magnifying glass up.</p><p class=note>The film’s first crossing: anything real is a photograph, anything thought is a pencil drawing, and here they stand in one frame. Both on the same ground line, and the runner is the smaller of the two, which makes the boy the subject and the runner the thing being examined.</p><p class=note style="color:var(--dim)">MANAN WALKS IN. The runner is still going and the boy steps into the drawn world beside him, magnifying glass up. The film's first crossing of its two worlds: anything real is a photograph, anything thought is a pencil drawing, and here they stand in one frame. Both figures are on the same ground line and the runner is the smaller of the two, which is what makes the boy the subject and the runner the thing being examined. SUPERSEDED 3.9.2026 by 1-5-v3. The runner in it was mid sprint, not the collapse.</p><p class=lede style="margin-top:26px"><a href="../index.html">all frames</a></p><div class=idb><div class=idh>The DNA of this frame</div><div class=idc><p><b style="color:var(--gold)">Phase.</b> Phase 2 of 15, THE RUNNER.</p><p><b style="color:var(--gold)">Hero’s journey.</b> THE ORDINARY WORLD, and inside it THE CALL. A boy on an ordinary road, and a question that will not leave him alone.</p></div></div><p class=filmfoot>THE BRAIN BRAKE<br><span>The Central Governor Theory &nbsp;&middot;&nbsp; Breakthrough Junior Challenge 2026</span></p></div></div><script>
+/* WHERE YOU WERE, WHEN YOU COME BACK. Baba, 8.9.2026: a hard reload on a page
+   this long throws you back to the top, and finding the frame you were looking
+   at again costs more than the reload saved.
+
+   Two things make this harder than it sounds.
+
+   THE PAGE GROWS AFTER IT LOADS. Thumbnails are lazy, so the document is short
+   at first and gets taller as pictures arrive. Restoring once, immediately,
+   lands in the wrong place. So the restore is attempted repeatedly for a couple
+   of seconds and gives up the moment the target is reachable and held.
+
+   THE BROWSER TRIES TOO, and its guess is based on the short version of the
+   page. history.scrollRestoration='manual' takes it out of the argument. */
+(function(){
+  var KEY = 'bb:y:' + location.pathname;
+  var store;
+  try { store = window.localStorage; } catch (e) { return; }   // private mode
+  if (!store) return;
+
+  if ('scrollRestoration' in history) history.scrollRestoration = 'manual';
+
+  var want = parseInt(store.getItem(KEY) || '0', 10);
+  var settled = false;
+
+  /* the moment the reader scrolls on purpose, stop trying to move them */
+  function surrender(){ settled = true; }
+  window.addEventListener('wheel', surrender, {passive:true, once:true});
+  window.addEventListener('touchstart', surrender, {passive:true, once:true});
+  window.addEventListener('keydown', surrender, {once:true});
+
+  if (want > 40) {
+    var until = Date.now() + 2500;
+    (function tryIt(){
+      if (settled || Date.now() > until) return;
+      var max = document.documentElement.scrollHeight - window.innerHeight;
+      if (max >= want) {
+        window.scrollTo(0, want);
+        if (Math.abs(window.scrollY - want) < 4) { settled = true; return; }
+      }
+      requestAnimationFrame(tryIt);
+    })();
+  }
+
+  var t = null;
+  window.addEventListener('scroll', function(){
+    if (t) return;
+    t = setTimeout(function(){
+      t = null;
+      try { store.setItem(KEY, String(Math.round(window.scrollY))); } catch (e) {}
+    }, 250);
+  }, {passive:true});
+})();
+</script></body></html>
