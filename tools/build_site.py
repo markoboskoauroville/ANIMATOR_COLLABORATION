@@ -3441,7 +3441,12 @@ def dialogue_page():
             # THE PICTURE APPEARS ONCE PER FRAME, not once per speech. Repeating
             # it under every line pushed one exchange down three screens and
             # gave a two word answer a full size still.
-            whole = '\n\n'.join('%s\n%s' % (r['who'], '\n'.join(r['lines'])) for r in runs)
+            _voices = {r['who'] for r in runs}
+            if len(_voices) > 1:
+                whole = '\n\n'.join('%s\n%s' % (r['who'], '\n'.join(r['lines']))
+                                     for r in runs)
+            else:
+                whole = '\n\n'.join('\n'.join(r['lines']) for r in runs)
             speech = []
             for r in runs:
                 speech.append('<div class=sp>'
