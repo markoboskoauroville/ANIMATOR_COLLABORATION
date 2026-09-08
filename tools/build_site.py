@@ -479,6 +479,7 @@ h2{font-size:19px;margin:38px 0 14px;padding-bottom:7px;border-bottom:1px solid 
 @media(max-width:600px){.tiny a{width:calc(33.333% - 6px)}}
 .cardhead{display:flex;justify-content:space-between;align-items:baseline;gap:16px;
  padding-bottom:8px;border-bottom:1px solid var(--rule);margin-bottom:16px}
+.cardhead .layhint{font:700 9px ui-monospace,monospace;letter-spacing:.14em;color:var(--dim)}
 .cardhead .code{font:700 15px ui-monospace,monospace;letter-spacing:.1em;color:var(--brass)}
 .dl{font:600 10px ui-monospace,monospace;letter-spacing:.12em;color:#17150f;
  background:var(--brass);border-radius:3px;padding:8px 15px;text-decoration:none;white-space:nowrap}
@@ -2848,9 +2849,13 @@ for _i, e in enumerate(_cards):
     _size = e.get('full_label') or ('FULL SIZE &nbsp;' + (
         ('%.0f KB' % (mb * 1024)) if 0 < mb < 1 else ('%.1f MB' % mb)))
     _ext = '' if e.get('full_label') else ' download'
-    cd = ['<div class=cardhead><span class=code>%s</span>'
-          '<a class=dl href="%s"%s>DOWNLOAD &nbsp;%s</a></div>'
-          % (b.upper(), _href, _ext, _size)]
+    if e.get('plates'):
+        cd = ['<div class=cardhead><span class=code>%s</span>'
+              '<span class=layhint>TWO LAYERS BELOW</span></div>' % b.upper()]
+    else:
+        cd = ['<div class=cardhead><span class=code>%s</span>'
+              '<a class=dl href="%s"%s>DOWNLOAD &nbsp;%s</a></div>'
+              % (b.upper(), _href, _ext, _size)]
     if e.get('proxy_note'):
         _p = os.path.join(ROOT, e['file'])
         _pk = (os.path.getsize(_p) if os.path.exists(_p) else 0) / 1024.0
@@ -2927,6 +2932,10 @@ for _i, e in enumerate(_cards):
         _src = _f if _f.lower().endswith(('.mp4', '.mov', '.webm')) else ('../' + e['file'])
         cd.append('<video class=cardimg src="%s" controls playsinline preload=metadata '
                   'poster="../mid/%s.jpg"></video>' % (_src, b))
+    elif e.get('plates'):
+        # the plate is the drawing; the composite is on the storyboard already
+        cd.append('<img class=cardimg src="../mid/%s.jpg" alt="">'
+                  % e['plates'][0]['file'].rsplit('.', 1)[0])
     else:
         cd.append('<img class=cardimg src="../mid/%s.jpg" alt="">' % b)
     if e.get('slug'):
