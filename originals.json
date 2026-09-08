@@ -1938,20 +1938,20 @@
     "url": "https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIGINALS/main/BB_C_9/SC4-5.png"
   },
   "SC5-1.png": {
-    "bytes": 7978665,
-    "sha256": "43db7b8ea999705ddfb8dc66df1a0d717a15716f53db48d676482546cab39f52",
+    "bytes": 8337195,
+    "sha256": "b7731e0f6fa0c58290b953825e987da38930e84c4a76a60f4ef87ecbd3f46a7d",
     "path": "BB_C_7/SC5-1.png",
     "url": "https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIGINALS/main/BB_C_7/SC5-1.png"
   },
   "SC5-2.png": {
-    "bytes": 5421975,
-    "sha256": "c17b077528cbd9ceafb2c569310e4440e9013fd98fd838d6eedfd6bbd2ae88b2",
+    "bytes": 5252008,
+    "sha256": "94f207ca491084b4779baaf53b1531338929d871a5dd3789f1aec2d07b8f7296",
     "path": "BB_C_7/SC5-2.png",
     "url": "https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIGINALS/main/BB_C_7/SC5-2.png"
   },
   "SC5-3.png": {
-    "bytes": 6174910,
-    "sha256": "68ccecffaa2e273570c8ea937b37414a726f910dd65567bc3449a368a5e13a37",
+    "bytes": 6488339,
+    "sha256": "b4cf8487d9890d6573ac4067188bd54d0b8c1258f8be507b0f5b05e344ecd866",
     "path": "BB_C_7/SC5-3.png",
     "url": "https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIGINALS/main/BB_C_7/SC5-3.png"
   },
@@ -2086,5 +2086,29 @@
     "sha256": "551bdc21bb5bc63b5b28e0bc3cdfd2c2bb74fb303f1e812631aace7bc7b20354",
     "path": "BB_C_14/SC10-3.png",
     "url": "https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIGINALS/main/BB_C_14/SC10-3.png"
+  },
+  "SC5-1-PLATE.png": {
+    "bytes": 8327724,
+    "sha256": "a8ee09d05b266fcd0bc609f118bdd330a8ead5ec07e87363a353b6331d4f84a6",
+    "path": "BB_C_7/plates/SC5-1-PLATE.png",
+    "url": "https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIGINALS/main/BB_C_7/plates/SC5-1-PLATE.png"
+  },
+  "SC5-2-PLATE.png": {
+    "bytes": 5257254,
+    "sha256": "38b8b012dea0f65f99b97f22ea2e66b18abcf715320b06c63097b69f89ce6e60",
+    "path": "BB_C_7/plates/SC5-2-PLATE.png",
+    "url": "https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIGINALS/main/BB_C_7/plates/SC5-2-PLATE.png"
+  },
+  "SC5-3-PLATE.png": {
+    "bytes": 6483117,
+    "sha256": "4c8e3af93420cb1a2c4fec7c2e921c33995ce8eeb334ef15d4882933bd758a61",
+    "path": "BB_C_7/plates/SC5-3-PLATE.png",
+    "url": "https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIGINALS/main/BB_C_7/plates/SC5-3-PLATE.png"
+  },
+  "MANAN-LIFT-TRANSPARENT.png": {
+    "bytes": 3569082,
+    "sha256": "db18bac97004faa8be1e4d5a21f17e8a18926d6eeee93e93728303b35ff7e64e",
+    "path": "BB_C_7/plates/MANAN-LIFT-TRANSPARENT.png",
+    "url": "https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIGINALS/main/BB_C_7/plates/MANAN-LIFT-TRANSPARENT.png"
   }
 }
