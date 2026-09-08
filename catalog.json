@@ -3511,11 +3511,23 @@
       "kind": "keyframe",
       "scene": "7",
       "shot": "7.4",
-      "title": "The door, open",
+      "title": "He stands in the open door",
       "status": "accepted",
       "date": "2026-09-04",
-      "note": "THE DOOR IS FULLY OPEN, both leaves flat back, and it opened by itself. Light comes OUT of the room and lies on the stone of the frame, because it is brighter inside than in the corridor. Warm and soft, not a flare.\n\nTHROUGH THE OPENING IS THE ROOM WE SEE FOR THE REST OF THE FILM, and it must be that room and no other: the same curved console, the same row of round dials, the same chair, the same grown stone. Viveka sits with his back three quarters to us in the star cloak, working, not turned towards the door.\n\nTWO DISPLAYS, AND THE SMALL ONE IS THE POINT. The large one carries a standing human body, which is what he is watching. A small one below and beside it carries a boy standing in a lit doorway, seen from behind and above as a camera would see him. It is quiet and easy to miss. HE ALREADY KNOWS MANAN IS THERE. That is why the door opens by itself, and why the first thing he says is that he was expecting him.",
-      "id": "7-4"
+      "note": "HE IS IN THE DOORWAY, back to us, looking in. Both leaves stand wide and the light comes OUT of the room and lies on the stone of the frame. Through the opening is the room we see for the rest of the film, and it must be that room and no other: the same curved console, the same chair, the same grown stone. VIVEKA HAS NOT TURNED ROUND. He is at the console in the star cloak, working, and he already knows the boy is there.\n\nTWO LAYERS, BOTH ON THIS CARD. The drawn plate with no figure, and the boy on a real alpha channel at full size. Recombine them, or move him, without asking for the drawing again.",
+      "id": "7-4",
+      "plates": [
+        {
+          "file": "SC5-4-PLATE.png",
+          "label": "The empty doorway, no Manan",
+          "note": "The drawing on its own. Composite your own figure or move this one."
+        },
+        {
+          "file": "MANAN-DOOR-TRANSPARENT.png",
+          "label": "Manan from behind, transparent, full size",
+          "note": "The boy on a real alpha channel at full resolution, seen from behind with his head slightly down. This is the exact figure standing in the doorway above."
+        }
+      ]
     },
     {
       "file": "BB_C_7/SC5-5.png",
@@ -4110,7 +4122,7 @@
     }
   ],
   "event": "Breakthrough Junior Challenge 2026",
-  "site_version": 298,
+  "site_version": 299,
   "footage": [
     {
       "name": "Key catch",

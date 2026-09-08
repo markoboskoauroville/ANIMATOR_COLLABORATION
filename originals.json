@@ -1956,8 +1956,8 @@
     "url": "https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIGINALS/main/BB_C_7/SC5-3.png"
   },
   "SC5-4.png": {
-    "bytes": 7254907,
-    "sha256": "8cf472fa789349dc95fdd368c84242a1bda25f4f6503d95b520f6127952ec800",
+    "bytes": 7135252,
+    "sha256": "f813ee134b6d3df9dcaf5f6c23153aa609c138327e75851c055cecce2874e994",
     "path": "BB_C_7/SC5-4.png",
     "url": "https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIGINALS/main/BB_C_7/SC5-4.png"
   },
@@ -2110,5 +2110,17 @@
     "sha256": "db18bac97004faa8be1e4d5a21f17e8a18926d6eeee93e93728303b35ff7e64e",
     "path": "BB_C_7/plates/MANAN-LIFT-TRANSPARENT.png",
     "url": "https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIGINALS/main/BB_C_7/plates/MANAN-LIFT-TRANSPARENT.png"
+  },
+  "SC5-4-PLATE.png": {
+    "bytes": 7254907,
+    "sha256": "8cf472fa789349dc95fdd368c84242a1bda25f4f6503d95b520f6127952ec800",
+    "path": "BB_C_7/plates/SC5-4-PLATE.png",
+    "url": "https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIGINALS/main/BB_C_7/plates/SC5-4-PLATE.png"
+  },
+  "MANAN-DOOR-TRANSPARENT.png": {
+    "bytes": 3749578,
+    "sha256": "86fdc612cf4b2e4600c8db030bbe5ab8d11a843dbc3f11d401782d729af50ab6",
+    "path": "BB_C_7/plates/MANAN-DOOR-TRANSPARENT.png",
+    "url": "https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIGINALS/main/BB_C_7/plates/MANAN-DOOR-TRANSPARENT.png"
   }
 }
