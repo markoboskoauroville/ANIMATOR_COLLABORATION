@@ -252,7 +252,7 @@
     {
       "kind": "keyframe",
       "shot": "1.4",
-      "file": "BB_C_1/1-4.png",
+      "file": "BB_C_1/SC1-4.png",
       "representative": true,
       "status": "proposal",
       "date": "2026-08-28",
@@ -264,12 +264,14 @@
       "dna": {
         "phase": "Phase 2 of 15, THE RUNNER.",
         "journey": "THE ORDINARY WORLD, and inside it THE CALL. A boy on an ordinary road, and a question that will not leave him alone."
-      }
+      },
+      "scene": "1",
+      "id": "1-4"
     },
     {
       "kind": "keyframe",
       "shot": "1.5",
-      "file": "BB_C_1/1-5.png",
+      "file": "BB_C_1/SC1-5.png",
       "status": "proposal",
       "date": "2026-08-28",
       "note": "KEY FRAME 2 of 3. The neck straightening, the chin off the chest, the eyes coming up off the ground to the middle distance. Still breathing hard. This is the middle of the move and the audience does not yet know why he is rising. FILED AS 1-5, 3.9.2026, in the reset that gave scene one its final names. Before the reset it was 1-1-v15, and every name mentioned in this note is a pre reset name. HOW IT MOVES. FREEZES, THEN FULL AGAIN. It holds for a few moments with only the chest moving, and he breathes differently because he is less tired. Then the face changes again in full animation. Part of the 1-4 to 1-6 group.",
@@ -280,12 +282,14 @@
       "dna": {
         "phase": "Phase 2 of 15, THE RUNNER.",
         "journey": "THE ORDINARY WORLD, and inside it THE CALL. A boy on an ordinary road, and a question that will not leave him alone."
-      }
+      },
+      "scene": "1",
+      "id": "1-5"
     },
     {
       "kind": "keyframe",
       "shot": "1.6",
-      "file": "BB_C_1/1-6.png",
+      "file": "BB_C_1/SC1-6.png",
       "status": "proposal",
       "date": "2026-08-28",
       "note": "KEY FRAME 3 of 3. He has seen it. The whole face relaxes: brow smooth, eyes resting easy on something far ahead and out of frame, the corners of the mouth just lifted. Relief arriving, not shock. End the shot here and cut. The audience asks why he changed, and shot 1.2b answers. He is looking OUT of frame on purpose: if he looked at us the cut would not work. FILED AS 1-6, 3.9.2026, in the reset that gave scene one its final names. Before the reset it was 1-1-v18, and every name mentioned in this note is a pre reset name. HOW IT MOVES. FULL ANIMATION. Less heavy breathing, and the transition behaves like real life. The last of the 1-4 to 1-6 group.",
@@ -296,12 +300,14 @@
       "dna": {
         "phase": "Phase 2 of 15, THE RUNNER.",
         "journey": "THE ORDINARY WORLD, and inside it THE CALL. A boy on an ordinary road, and a question that will not leave him alone."
-      }
+      },
+      "scene": "1",
+      "id": "1-6"
     },
     {
       "kind": "keyframe",
       "shot": "1.19",
-      "file": "BB_C_1/1-19.png",
+      "file": "BB_C_1/SC1-19.png",
       "representative": true,
       "status": "accepted",
       "date": "2026-08-28",
@@ -313,12 +319,14 @@
       "dna": {
         "phase": "Phase 2 of 15, THE RUNNER.",
         "journey": "THE ORDINARY WORLD, and inside it THE CALL. A boy on an ordinary road, and a question that will not leave him alone."
-      }
+      },
+      "scene": "1",
+      "id": "1-19"
     },
     {
       "kind": "keyframe",
       "shot": "1.20",
-      "file": "BB_C_1/1-20.png",
+      "file": "BB_C_1/SC1-20.png",
       "status": "accepted",
       "date": "2026-08-28",
       "note": "KEY FRAME 2 of 4 of the muscle activation. The fire spreads. A dozen ignition points along the same fibres, the fibres beneath them gone pale, the darkness pushed out to the corners. Same diagonal and same hand as key frame 1 on purpose: it has to read as recruitment spreading through one muscle, not as a cut to somewhere new. Measured escalation from key frame 1: mean luminance 152 to 185, bright pixels 16 percent to 33 percent. The light roughly doubles at each of the four beats. FILED AS 1-20, 3.9.2026, in the reset that gave scene one its final names. Before the reset it was 1-2c-2-v1, and every name mentioned in this note is a pre reset name. HOW IT MOVES. Several points ignite at once now, across the whole muscle.",
@@ -329,7 +337,9 @@
       "dna": {
         "phase": "Phase 2 of 15, THE RUNNER.",
         "journey": "THE ORDINARY WORLD, and inside it THE CALL. A boy on an ordinary road, and a question that will not leave him alone."
-      }
+      },
+      "scene": "1",
+      "id": "1-20"
     },
     {
       "kind": "keyframe",
@@ -350,7 +360,7 @@
     {
       "kind": "keyframe",
       "shot": "1.21",
-      "file": "BB_C_1/1-21.png",
+      "file": "BB_C_1/SC1-21.png",
       "status": "accepted",
       "date": "2026-08-28",
       "note": "KEY FRAME 4 of 4 of the muscle activation. The whole body, flayed, every muscle alight, caught pushing off into the sprint. The end of the sequence and the peak of the light. DISSOLVE FROM HERE INTO 1-3-A: the two frames are registered on purpose so the skin fades on with nothing moving. Mean pixel difference between them is 9.7 of 255. FILED AS 1-21, 3.9.2026, in the reset that gave scene one its final names. Before the reset it was 1-2c-4-v1, and every name mentioned in this note is a pre reset name. HOW IT MOVES. The runner runs and the muscle layer shows. The face is not finished yet.",
@@ -361,12 +371,14 @@
       "dna": {
         "phase": "Phase 2 of 15, THE RUNNER.",
         "journey": "THE ORDINARY WORLD, and inside it THE CALL. A boy on an ordinary road, and a question that will not leave him alone."
-      }
+      },
+      "scene": "1",
+      "id": "1-21"
     },
     {
       "kind": "keyframe",
       "shot": "1.8",
-      "file": "BB_C_1/1-8.png",
+      "file": "BB_C_1/SC1-8.png",
       "status": "proposal",
       "date": "2026-08-28",
       "note": "PHASE 1 of the run. Same pose, size and position as the last muscle frame, with skin and clothing on: the far end of a DISSOLVE, not a cut. Mean pixel difference between the two is 9.7 of 255. From here the strobe has dropped and the animation runs at 8 to 10 frames a second. FILED AS 1-8, 3.9.2026, in the reset that gave scene one its final names. Before the reset it was 1-3-A-v1, and every name mentioned in this note is a pre reset name. HOW IT MOVES. FULL ANIMATION, full frame rate.",
@@ -377,7 +389,9 @@
       "dna": {
         "phase": "Phase 2 of 15, THE RUNNER.",
         "journey": "THE ORDINARY WORLD, and inside it THE CALL. A boy on an ordinary road, and a question that will not leave him alone."
-      }
+      },
+      "scene": "1",
+      "id": "1-8"
     },
     {
       "kind": "keyframe",
@@ -1111,7 +1125,7 @@
     {
       "kind": "keyframe",
       "shot": "1.1",
-      "file": "BB_C_1/1-1.png",
+      "file": "BB_C_1/SC1-1.png",
       "representative": true,
       "status": "proposal",
       "date": "2026-08-30",
@@ -1123,12 +1137,14 @@
       "dna": {
         "phase": "Phase 2 of 15, THE RUNNER.",
         "journey": "THE ORDINARY WORLD, and inside it THE CALL. A boy on an ordinary road, and a question that will not leave him alone."
-      }
+      },
+      "scene": "1",
+      "id": "1-1"
     },
     {
       "kind": "keyframe",
       "shot": "1.3",
-      "file": "BB_C_1/1-3.png",
+      "file": "BB_C_1/SC1-3.png",
       "status": "proposal",
       "date": "2026-08-30",
       "note": "KEY FRAME 3 of 3, AND HALF OF THE FILM'S BOOKEND. His legs have gone from under him and he is falling backwards, one leg folded beneath him, arms dead at his sides, head tipped back. THE POSE COMES FROM V7 SHOT 1.2 at Baba's instruction, replacing an invented crouch that read as neither running nor collapsing. Cut against shot 1.3 phase 1 at the far end of the scene: same man, same frame, one destroyed and one fresh. FILED AS 1-3, 3.9.2026, in the reset that gave scene one its final names. Before the reset it was 1-0-C-v2, and every name mentioned in this note is a pre reset name. HOW IT MOVES. ONLY THE CHEST. Everything frozen; we watch him breathe and that is the only movement in the frame.",
@@ -1139,12 +1155,14 @@
       "dna": {
         "phase": "Phase 2 of 15, THE RUNNER.",
         "journey": "THE ORDINARY WORLD, and inside it THE CALL. A boy on an ordinary road, and a question that will not leave him alone."
-      }
+      },
+      "scene": "1",
+      "id": "1-3"
     },
     {
       "kind": "keyframe",
       "shot": "0.0",
-      "file": "BB_C_0/0-0-TITLE-v1.png",
+      "file": "BB_C_0/SC0-1.png",
       "representative": true,
       "status": "proposal",
       "date": "2026-08-31",
@@ -1156,7 +1174,9 @@
       "dna": {
         "phase": "Phase 1 of 15, TITLE.",
         "journey": "BEFORE THE JOURNEY. The world has not started moving yet."
-      }
+      },
+      "scene": "0",
+      "id": "0-0-TITLE-v1"
     },
     {
       "kind": "keyframe",
@@ -1571,7 +1591,7 @@
     {
       "kind": "keyframe",
       "shot": "15.7",
-      "file": "BB_C_15/live/PANA6270_11_46_40_11.png",
+      "file": "BB_C_15/live/SC9-1.png",
       "status": "proposal",
       "date": "2026-08-31",
       "slug": "EXT. — THE HAND CLOSES",
@@ -1589,7 +1609,9 @@
         "phase": "Phase 14 of 15, HE CATCHES IT.",
         "journey": "RESURRECTION. His hand closes on a real object and the change is proved.",
         "element": "THE HAND, closing. The most complete sentence a film can make without words."
-      }
+      },
+      "scene": "15",
+      "id": "PANA6270_11_46_40_11"
     },
     {
       "kind": "flow",
@@ -1704,7 +1726,7 @@
     {
       "kind": "keyframe",
       "shot": "9.0",
-      "file": "BB_C_9/9-0-WHITE-v1.png",
+      "file": "BB_C_9/SC4-1.png",
       "status": "proposal",
       "date": "2026-08-31",
       "slug": "INT. THE LIGHT — BEFORE",
@@ -1715,12 +1737,14 @@
         "phase": "Phase 7 of 15, THE VORTEX, UP.",
         "journey": "CROSSING THE THRESHOLD. Not the door, the line under it. Point of no return.",
         "element": "WATER as cloud, and THRESHOLD."
-      }
+      },
+      "scene": "9",
+      "id": "9-0-WHITE-v1"
     },
     {
       "kind": "keyframe",
       "shot": "9.3",
-      "file": "BB_C_9/9-3-WHITE-v1.png",
+      "file": "BB_C_9/SC4-5.png",
       "status": "proposal",
       "date": "2026-08-31",
       "slug": "INT. THE LIGHT — AFTER",
@@ -1731,7 +1755,9 @@
         "phase": "Phase 7 of 15, THE VORTEX, UP.",
         "journey": "CROSSING THE THRESHOLD. Not the door, the line under it. Point of no return.",
         "element": "WATER as cloud, and THRESHOLD."
-      }
+      },
+      "scene": "9",
+      "id": "9-3-WHITE-v1"
     },
     {
       "kind": "keyframe",
@@ -2073,7 +2099,7 @@
     {
       "kind": "keyframe",
       "shot": "5.0",
-      "file": "BB_C_5/ref/V7_5_8_eyes_closed.jpg",
+      "file": "BB_C_5/ref/SC3-2.jpg",
       "status": "placeholder",
       "date": "2026-08-31",
       "slug": "INT. ROOM — EYES CLOSED",
@@ -2107,7 +2133,8 @@
         }
       ],
       "note": "FLAT, NOT DRAMATIC. He is out of breath and he has just noticed something: PUZZLED BEATS DEVASTATED. No self-pity anywhere. He is not upset that he failed, he is annoyed that something overruled him and would not say why, and that difference is what makes the second half of the film possible.\n\nTHE TURN IS ONE WORD, \"DECIDED\". Everything before it is legs and lungs. \"And I didn’t decide that\" is where the film changes subject from the body to whoever is running it, and it lands as a complaint rather than a theory.\n\nAND THE LAST LINE IS A QUESTION, NOT A CONCLUSION. \"So I want to know who said it\" is the door the vortex opens three shots later. He is not looking for a place, he is looking for a person, and he finds one.",
-      "scene": "5"
+      "scene": "5",
+      "id": "V7_5_8_eyes_closed"
     },
     {
       "kind": "keyframe",
@@ -2258,7 +2285,7 @@
     {
       "kind": "keyframe",
       "shot": "14.1",
-      "file": "BB_C_14/14-1-CREDITS-v2.png",
+      "file": "BB_C_14/SC10-2.png",
       "status": "proposal",
       "date": "2026-09-01",
       "slug": "END CREDITS — THE LOOK",
@@ -2269,7 +2296,9 @@
         "phase": "Phase 15 of 15, CREDITS, AND THE DEDICATION.",
         "journey": "RETURN WITH THE ELIXIR. What he brings back works for the audience too.",
         "element": "ASH. What is left, carrying the whole history of the fire."
-      }
+      },
+      "scene": "14",
+      "id": "14-1-CREDITS-v2"
     },
     {
       "kind": "keyframe",
@@ -2446,7 +2475,7 @@
       "kind": "keyframe",
       "shot": "5.0",
       "representative": true,
-      "file": "BB_C_5/5-0-HERO-v1.png",
+      "file": "BB_C_5/SC3-3.png",
       "status": "proposal",
       "date": "2026-09-01",
       "slug": "INT. ROOM — HE CLOSES HIS EYES",
@@ -2456,7 +2485,9 @@
       "dna": {
         "phase": "Phase 6 of 15, HE CLOSES HIS EYES.",
         "journey": "APPROACH TO THE THRESHOLD. The last frame of the ordinary world."
-      }
+      },
+      "scene": "5",
+      "id": "5-0-HERO-v1"
     },
     {
       "file": "BB_C_7/7-2-20260903.png",
@@ -2598,9 +2629,9 @@
       }
     },
     {
-      "file": "BB_C_14/14-8-DEDICATION-v2.png",
+      "file": "BB_C_14/SC10-3.png",
       "kind": "keyframe",
-      "scene": 14,
+      "scene": "14",
       "shot": "14.8",
       "title": "Dedicated to Lord Ganesha",
       "status": "proposal",
@@ -2611,7 +2642,8 @@
         "phase": "Phase 15 of 15, CREDITS, AND THE DEDICATION.",
         "journey": "RETURN WITH THE ELIXIR. What he brings back works for the audience too.",
         "element": "ASH. What is left, carrying the whole history of the fire."
-      }
+      },
+      "id": "14-8-DEDICATION-v2"
     },
     {
       "file": "BB_C_9/9-1-VORTEX-v2.png",
@@ -2726,7 +2758,7 @@
       ]
     },
     {
-      "file": "BB_C_12/12-0-CONCLUSION-PLACEHOLDER.png",
+      "file": "BB_C_12/SC7-1.png",
       "kind": "keyframe",
       "scene": "12",
       "shot": "12.0",
@@ -2738,7 +2770,8 @@
         "phase": "Phase 12 of 15, THE CONCLUSION, AND GOODBYE.",
         "journey": "THE REWARD. Given rather than seized, which is why the goodbye matters.",
         "element": "THE HAND, open. Giving and surrendering at once."
-      }
+      },
+      "id": "12-0-CONCLUSION-PLACEHOLDER"
     },
     {
       "file": "BB_C_9R/9R-2-KEY-FALLS-PLACEHOLDER.png",
@@ -2756,7 +2789,7 @@
       }
     },
     {
-      "file": "BB_C_9/9-1-VORTEX-UP-v1.png",
+      "file": "BB_C_9/SC4-2.png",
       "kind": "keyframe",
       "scene": "9",
       "shot": "9.1",
@@ -2781,7 +2814,8 @@
         "scene": "instrumental, no vocals, no percussion. slow ambient raga drone in a single unhurried key, tanpura and a low sustained cello holding one note underneath. gentle, weightless, unresolved. nothing arrives and nothing lands. 60 bpm, feels slower.",
         "shot": "the same drone, and above it ONE bansuri flute alone. solo, breathy, unaccompanied, long phrases with audible breath between them, rising and circling rather than going anywhere. no other instrument enters. no percussion at all. the flute is the only thing moving.",
         "why": "Air, because this is cloud, and the breath instruments are what air sounds like. The bansuri plays alone because he is alone in it and because a solo has no ground under it, which is the feeling of the floor going out. The drone continues from the scene bed so the music does not restart when the picture changes; only the instrumentation does. Percussion stays out until he arrives in the house, so that the first heartbeat in the film is the heart hall."
-      }
+      },
+      "id": "9-1-VORTEX-UP-v1"
     },
     {
       "file": "BB_C_9R/9R-1-VORTEX-DOWN-v1.png",
@@ -2812,7 +2846,7 @@
       "meaning": "THE WAY HOME. He has what he came for and the film has to get him back without inventing a new idea, so it uses the shape it already built. Rising was the loss of ground; falling is the return of it. The key falls beside him rather than in his hand, because the catch has to be his own action and not a delivery."
     },
     {
-      "file": "BB_C_9/9-1-VORTEX-UP-v3.png",
+      "file": "BB_C_9/SC4-3.png",
       "kind": "keyframe",
       "scene": "9",
       "shot": "9.1",
@@ -2837,10 +2871,11 @@
         "shot": "the same drone, and above it ONE bansuri flute alone. solo, breathy, unaccompanied, long phrases with audible breath between them, rising and circling rather than going anywhere. no other instrument enters. no percussion at all.",
         "why": "AIR, because this is cloud, and breath instruments are what air sounds like. The bansuri plays alone because a solo has no ground under it, which is the feeling of the floor going out. Percussion stays out until the heart hall, so the first heartbeat in the film is a heart."
       },
-      "meaning": "THE DOOR OUT OF THE WORLD. The first frame of the second half, and it does two things at once: it convinces the audience the film has changed, and it explains nothing.\n\nIt carries no information on purpose. Nothing to read, no object, no symbol, nothing that could be a clue. Four earlier versions built the vortex out of keys and every one failed for the same reason: a tunnel made of keys tells the audience what he is looking for before he knows it himself, so the film would say the word long before he reaches the key door.\n\nEmotionally it is gentle. Not a storm, and he is not in danger. He is being taken, not wrecked, and that softness is what makes the house of the body afterwards read as somewhere he belongs rather than somewhere he has crashed.\n\nIt moves the film forward by changing its grammar, and the same vortex returns near the end going down. Rising into it and falling out of it is the shape of the whole second half."
+      "meaning": "THE DOOR OUT OF THE WORLD. The first frame of the second half, and it does two things at once: it convinces the audience the film has changed, and it explains nothing.\n\nIt carries no information on purpose. Nothing to read, no object, no symbol, nothing that could be a clue. Four earlier versions built the vortex out of keys and every one failed for the same reason: a tunnel made of keys tells the audience what he is looking for before he knows it himself, so the film would say the word long before he reaches the key door.\n\nEmotionally it is gentle. Not a storm, and he is not in danger. He is being taken, not wrecked, and that softness is what makes the house of the body afterwards read as somewhere he belongs rather than somewhere he has crashed.\n\nIt moves the film forward by changing its grammar, and the same vortex returns near the end going down. Rising into it and falling out of it is the shape of the whole second half.",
+      "id": "9-1-VORTEX-UP-v3"
     },
     {
-      "file": "BB_C_9/9-2-RISING-v2.png",
+      "file": "BB_C_9/SC4-4.png",
       "kind": "keyframe",
       "scene": "9",
       "shot": "9.2",
@@ -2864,7 +2899,8 @@
           "label": "Actor isolated, on green",
           "note": "The same matte over pure green, 0 255 0, for keying in After Effects if the alpha version is not wanted. Use the alpha one where you can: it is the same pixels with none of the spill."
         }
-      ]
+      ],
+      "id": "9-2-RISING-v2"
     },
     {
       "file": "BB_C_9R/9R-2-FALLING-v1.png",
@@ -2940,14 +2976,15 @@
       "storyboard": "hide"
     },
     {
-      "file": "BB_C_1/1-11.png",
+      "file": "BB_C_1/SC1-11.png",
       "kind": "keyframe",
       "scene": "1",
       "shot": "1.11",
       "title": "He goes down",
       "status": "accepted",
       "date": "2026-09-03",
-      "note": "The collapse. Caught mid fall, leaning back, one arm hanging, both legs sliding out from under him, head tipped up and mouth open. He is empty, and everybody watching knows what empty looks like. This is the frame the whole film has to earn, because what happens thirty seconds later contradicts it. FILED AS 1-11, 3.9.2026, in the reset that gave scene one its final names. Before the reset it was 1-6-COLLAPSE-v1, and every name mentioned in this note is a pre reset name. HOW IT MOVES. FROM 1-11 TO 1-17 EVERYTHING IS FROZEN, except two things: the LIVE ACTION of Manan, composited in, and the CLOSE-UP OF THE MAGNIFYING GLASS. The wobble on the glass must be VERY SUBTLE and must never draw attention to itself. It has to behave as if somebody is holding it in their hand, not as if a computer were pushing it around. If you notice the movement, it is too big."
+      "note": "The collapse. Caught mid fall, leaning back, one arm hanging, both legs sliding out from under him, head tipped up and mouth open. He is empty, and everybody watching knows what empty looks like. This is the frame the whole film has to earn, because what happens thirty seconds later contradicts it. FILED AS 1-11, 3.9.2026, in the reset that gave scene one its final names. Before the reset it was 1-6-COLLAPSE-v1, and every name mentioned in this note is a pre reset name. HOW IT MOVES. FROM 1-11 TO 1-17 EVERYTHING IS FROZEN, except two things: the LIVE ACTION of Manan, composited in, and the CLOSE-UP OF THE MAGNIFYING GLASS. The wobble on the glass must be VERY SUBTLE and must never draw attention to itself. It has to behave as if somebody is holding it in their hand, not as if a computer were pushing it around. If you notice the movement, it is too big.",
+      "id": "1-11"
     },
     {
       "file": "BB_C_1/1-6-COLLAPSE-GLASS-v1.png",
@@ -2992,7 +3029,7 @@
       "note": "INSPECTION FIVE, AND THE DOORWAY. The glass is on the camera lens as always, and it simply makes the open calf larger: the same fibres, the same tendon, the same spark, only vast, with the rays pushing out through the graphite and bowing toward the brass. Nothing new inside the lens. This is the last inspection in the film. After it the glass is gone and the release takes the whole frame: the light travels up through him muscle by muscle, and it is not new fuel, it was there the whole time and somebody has just decided to open it."
     },
     {
-      "file": "BB_C_1/1-17.png",
+      "file": "BB_C_1/SC1-17.png",
       "kind": "keyframe",
       "scene": "1",
       "shot": "1.17",
@@ -3016,17 +3053,19 @@
           "line": "And when the tank reads empty, the body stops.",
           "shot": true
         }
-      ]
+      ],
+      "id": "1-17"
     },
     {
-      "file": "BB_C_1/1-18.png",
+      "file": "BB_C_1/SC1-18.png",
       "kind": "keyframe",
       "scene": "1",
       "shot": "1.18",
       "title": "Ignition",
       "status": "accepted",
       "date": "2026-09-03",
-      "note": "THE FRAME IMMEDIATELY AFTER THE GLASS, and the first of the release. We are inside the muscle now: dense diagonal graphite fibres filling the whole frame, and a white star bursting at the centre with long rays driving out along them. THE GLASS IS GONE and it does not come back: it took us in and the sequence takes over. What follows is the light travelling up through him foot to hip, muscle by muscle, as though somebody is throwing switches one at a time. AND IT IS NOT NEW FUEL. Nobody gave him anything. It was there the whole time, closed, and somebody has just decided to open it. FILED AS 1-18, 3.9.2026, in the reset that gave scene one its final names. Before the reset it was 1-8-IGNITION-v2, and every name mentioned in this note is a pre reset name. HOW IT MOVES. FROM 1-18 TO THE END OF THE SCENE IT IS FULL ANIMATION, full frame rate, and that is not repeated on each frame from here. IN THIS SHOT: light ignites inside the muscle. One point, strong, through the fibres."
+      "note": "THE FRAME IMMEDIATELY AFTER THE GLASS, and the first of the release. We are inside the muscle now: dense diagonal graphite fibres filling the whole frame, and a white star bursting at the centre with long rays driving out along them. THE GLASS IS GONE and it does not come back: it took us in and the sequence takes over. What follows is the light travelling up through him foot to hip, muscle by muscle, as though somebody is throwing switches one at a time. AND IT IS NOT NEW FUEL. Nobody gave him anything. It was there the whole time, closed, and somebody has just decided to open it. FILED AS 1-18, 3.9.2026, in the reset that gave scene one its final names. Before the reset it was 1-8-IGNITION-v2, and every name mentioned in this note is a pre reset name. HOW IT MOVES. FROM 1-18 TO THE END OF THE SCENE IT IS FULL ANIMATION, full frame rate, and that is not repeated on each frame from here. IN THIS SHOT: light ignites inside the muscle. One point, strong, through the fibres.",
+      "id": "1-18"
     },
     {
       "file": "BB_C_1/1-7-RECOVERY-OPEN-v2.png",
@@ -3071,57 +3110,62 @@
       "storyboard": "hide"
     },
     {
-      "file": "BB_C_1/1-7.png",
+      "file": "BB_C_1/SC1-7.png",
       "kind": "keyframe",
       "scene": "1",
       "shot": "1.7",
       "title": "The finish, close",
       "status": "accepted",
       "date": "2026-09-03",
-      "note": "THE FINISH LINE, CLOSE, AND IT DID NOT EXIST BEFORE. Every other finish frame is the same wide avenue with the banner far away, and the only close view of it was inside the magnifying glass, which belongs to Manan and to a later part of the scene. Made by Baba's staged method: the banner cropped out of 1-5-FINISH-v1 and redrawn sharp at full size in the same hand. FINISH is the only lettering in the frame. This is what he sees when he looks up, before he runs. FILED AS 1-7, 3.9.2026, in the reset that gave scene one its final names. Before the reset it was 1-2b-CLOSE-v1, and every name mentioned in this note is a pre reset name. HOW IT MOVES. A SMOOTH ZOOM, as though a real camera were doing it, twenty five frames a second. This is an announcement too: it tells the audience the next shot is going to be full, normal movement."
+      "note": "THE FINISH LINE, CLOSE, AND IT DID NOT EXIST BEFORE. Every other finish frame is the same wide avenue with the banner far away, and the only close view of it was inside the magnifying glass, which belongs to Manan and to a later part of the scene. Made by Baba's staged method: the banner cropped out of 1-5-FINISH-v1 and redrawn sharp at full size in the same hand. FINISH is the only lettering in the frame. This is what he sees when he looks up, before he runs. FILED AS 1-7, 3.9.2026, in the reset that gave scene one its final names. Before the reset it was 1-2b-CLOSE-v1, and every name mentioned in this note is a pre reset name. HOW IT MOVES. A SMOOTH ZOOM, as though a real camera were doing it, twenty five frames a second. This is an announcement too: it tells the audience the next shot is going to be full, normal movement.",
+      "id": "1-7"
     },
     {
-      "file": "BB_C_1/1-22.png",
+      "file": "BB_C_1/SC1-22.png",
       "kind": "keyframe",
       "scene": "1",
       "shot": "1.22",
       "title": "He becomes real",
       "status": "accepted",
       "date": "2026-09-03",
-      "note": "THE CHANGE. The flayed figure of 1-2c-4 closing back into a man, in the same drive pose so the two register and one can dissolve into the other. The front half is skin, vest, shorts and a shoe; the trailing leg, the back of the hip and the trailing forearm are still open muscle and the rear foot is still bare. The two states do not meet at an edge, the fibres settle into skin across the middle of him. GENERATED TWICE. The first run used 1-2c-4 as its reference, and because that figure has no face the model invented one: a young man, the wrong person entirely. Run again against 1-3-B-v5, single reference, and the marathon runner came back with his own face. One reference, and make it the one that carries the thing you need. FILED AS 1-22, 3.9.2026, in the reset that gave scene one its final names. Before the reset it was 1-2c-5-v2, and every name mentioned in this note is a pre reset name. HOW IT MOVES. The same runner, now with a face and a vest. He has become a real man."
+      "note": "THE CHANGE. The flayed figure of 1-2c-4 closing back into a man, in the same drive pose so the two register and one can dissolve into the other. The front half is skin, vest, shorts and a shoe; the trailing leg, the back of the hip and the trailing forearm are still open muscle and the rear foot is still bare. The two states do not meet at an edge, the fibres settle into skin across the middle of him. GENERATED TWICE. The first run used 1-2c-4 as its reference, and because that figure has no face the model invented one: a young man, the wrong person entirely. Run again against 1-3-B-v5, single reference, and the marathon runner came back with his own face. One reference, and make it the one that carries the thing you need. FILED AS 1-22, 3.9.2026, in the reset that gave scene one its final names. Before the reset it was 1-2c-5-v2, and every name mentioned in this note is a pre reset name. HOW IT MOVES. The same runner, now with a face and a vest. He has become a real man.",
+      "id": "1-22"
     },
     {
-      "file": "BB_C_1/1-23.png",
+      "file": "BB_C_1/SC1-23.png",
       "kind": "keyframe",
       "scene": "1",
       "shot": "1.23",
       "title": "He runs out",
       "status": "accepted",
       "date": "2026-09-03",
-      "note": "HE LEAVES. Only the trailing leg, the lower back, one shoulder and the trailing arm still in shot, the rest of him already past the right edge, speed strokes thinning away to the left across empty paper. The last thing with a body in it. FILED AS 1-23, 3.9.2026, in the reset that gave scene one its final names. Before the reset it was 1-2c-6-v1, and every name mentioned in this note is a pre reset name. HOW IT MOVES. He runs out of frame, leaving only part of the body at the edge."
+      "note": "HE LEAVES. Only the trailing leg, the lower back, one shoulder and the trailing arm still in shot, the rest of him already past the right edge, speed strokes thinning away to the left across empty paper. The last thing with a body in it. FILED AS 1-23, 3.9.2026, in the reset that gave scene one its final names. Before the reset it was 1-2c-6-v1, and every name mentioned in this note is a pre reset name. HOW IT MOVES. He runs out of frame, leaving only part of the body at the edge.",
+      "id": "1-23"
     },
     {
-      "file": "BB_C_1/1-24.png",
+      "file": "BB_C_1/SC1-24.png",
       "kind": "keyframe",
       "scene": "1",
       "shot": "1.24",
       "title": "Nothing",
       "status": "accepted",
       "date": "2026-09-03",
-      "note": "THE END OF THE SCENE. Bare paper and nothing standing in it. NOT GENERATED. The tone and the grain were measured off a clean corner of 1-2c-4-v1 and rebuilt, so this is the film's own paper rather than an invented white. Cream and not white on purpose: the white belongs to the trance, and scene one has not left the drawn world yet. FILED AS 1-24, 3.9.2026, in the reset that gave scene one its final names. Before the reset it was 1-2c-7-v1, and every name mentioned in this note is a pre reset name."
+      "note": "THE END OF THE SCENE. Bare paper and nothing standing in it. NOT GENERATED. The tone and the grain were measured off a clean corner of 1-2c-4-v1 and rebuilt, so this is the film's own paper rather than an invented white. Cream and not white on purpose: the white belongs to the trance, and scene one has not left the drawn world yet. FILED AS 1-24, 3.9.2026, in the reset that gave scene one its final names. Before the reset it was 1-2c-7-v1, and every name mentioned in this note is a pre reset name.",
+      "id": "1-24"
     },
     {
-      "file": "BB_C_1/1-2.png",
+      "file": "BB_C_1/SC1-2.png",
       "kind": "keyframe",
       "scene": "1",
       "shot": "1.2",
       "title": "The legs, going down",
       "status": "accepted",
       "date": "2026-09-03",
-      "note": "THE LEGS, IN THE POSITION HE ACTUALLY FALLS IN. Shot two of the opening, between the wide and the figure, so the first three shots are one instant at three sizes. NOT DRAWN FROM A DESCRIPTION. The region of 1-0-C-v2 from the shorts hem down to both shoes was cropped out and redrawn sharp at full size, single reference, which is why it matches by construction rather than by resemblance: same knee bend, same near foot rolled onto the outside edge of the shoe, same far foot planted, same thin flat heeled shoes. His hand hangs into the left of the frame because it is inside the crop. SUPERSEDES 1-0-B-v1, which had him mid stride in modern trainers and could not sit beside the man it was supposed to belong to. The ground is even cream corner to corner: the two frames before it came back with a warm vignette, and asking for the flat ground in the prompt fixed it. FILED AS 1-2, 3.9.2026, in the reset that gave scene one its final names. Before the reset it was 1-0-B-v2, and every name mentioned in this note is a pre reset name. HOW IT MOVES. APPROVED AS IT IS. In frame: legs, shoes, one hand and loose stones on the road. The stones and the dust under the shoes move. Nothing else."
+      "note": "THE LEGS, IN THE POSITION HE ACTUALLY FALLS IN. Shot two of the opening, between the wide and the figure, so the first three shots are one instant at three sizes. NOT DRAWN FROM A DESCRIPTION. The region of 1-0-C-v2 from the shorts hem down to both shoes was cropped out and redrawn sharp at full size, single reference, which is why it matches by construction rather than by resemblance: same knee bend, same near foot rolled onto the outside edge of the shoe, same far foot planted, same thin flat heeled shoes. His hand hangs into the left of the frame because it is inside the crop. SUPERSEDES 1-0-B-v1, which had him mid stride in modern trainers and could not sit beside the man it was supposed to belong to. The ground is even cream corner to corner: the two frames before it came back with a warm vignette, and asking for the flat ground in the prompt fixed it. FILED AS 1-2, 3.9.2026, in the reset that gave scene one its final names. Before the reset it was 1-0-B-v2, and every name mentioned in this note is a pre reset name. HOW IT MOVES. APPROVED AS IT IS. In frame: legs, shoes, one hand and loose stones on the road. The stones and the dust under the shoes move. Nothing else.",
+      "id": "1-2"
     },
     {
-      "file": "BB_C_1/1-12.png",
+      "file": "BB_C_1/SC1-12.png",
       "kind": "keyframe",
       "scene": "1",
       "shot": "1.12",
@@ -3147,10 +3191,11 @@
           "line": "Fatigue is in the muscle.",
           "shot": true
         }
-      ]
+      ],
+      "id": "1-12"
     },
     {
-      "file": "BB_C_1/1-13.png",
+      "file": "BB_C_1/SC1-13.png",
       "kind": "keyframe",
       "scene": "1",
       "shot": "1.13",
@@ -3164,60 +3209,66 @@
           "note": "The same frame with the boy, his hand, the brass glass and his shadow taken out. He was standing on the bottom border and covering most of the wall, so the border was rebuilt across the gap and the wall relit evenly. The pale drawing of the runner is unchanged in size, place and weight.",
           "label": "Clean plate, no live action"
         }
-      ]
+      ],
+      "id": "1-13"
     },
     {
-      "file": "BB_C_1/1-9.png",
+      "file": "BB_C_1/SC1-9.png",
       "kind": "keyframe",
       "scene": "1",
       "shot": "1.9",
       "title": "He runs out",
       "status": "accepted",
       "date": "2026-09-03",
-      "note": "HE LEAVES THE PAGE. Only the trailing leg, the lower back, one shoulder and the trailing arm still in shot, the rest of him already past the right edge, strokes thinning away to the left. THE FIRST RUN NOW ENDS THE SAME SHAPE AS THE RELEASE: he runs, he runs out, the page empties. The release does it in four, 1.17 to 1.23, with the muscle and the change in front of it. Same ending twice is the rhyme and it is deliberate. SUPERSEDES 1-3-B-v5, which was a second frame of him running hard and had nowhere to go. Rendered against 1-2c-6-v1 as the single reference so the two exits register: measured 6.6 of 255 apart. SEPARATE FILE ON PURPOSE. Baba, 3.9.2026: every asset keeps a unique name even where two frames carry the same picture, because the scene gets renamed in order when it is finished and the names alone have to rebuild the grid. FILED AS 1-9, 3.9.2026, in the reset that gave scene one its final names. Before the reset it was 1-3-B-v6, and every name mentioned in this note is a pre reset name. HOW IT MOVES. FULL ANIMATION, full frame rate."
+      "note": "HE LEAVES THE PAGE. Only the trailing leg, the lower back, one shoulder and the trailing arm still in shot, the rest of him already past the right edge, strokes thinning away to the left. THE FIRST RUN NOW ENDS THE SAME SHAPE AS THE RELEASE: he runs, he runs out, the page empties. The release does it in four, 1.17 to 1.23, with the muscle and the change in front of it. Same ending twice is the rhyme and it is deliberate. SUPERSEDES 1-3-B-v5, which was a second frame of him running hard and had nowhere to go. Rendered against 1-2c-6-v1 as the single reference so the two exits register: measured 6.6 of 255 apart. SEPARATE FILE ON PURPOSE. Baba, 3.9.2026: every asset keeps a unique name even where two frames carry the same picture, because the scene gets renamed in order when it is finished and the names alone have to rebuild the grid. FILED AS 1-9, 3.9.2026, in the reset that gave scene one its final names. Before the reset it was 1-3-B-v6, and every name mentioned in this note is a pre reset name. HOW IT MOVES. FULL ANIMATION, full frame rate.",
+      "id": "1-9"
     },
     {
-      "file": "BB_C_1/1-10.png",
+      "file": "BB_C_1/SC1-10.png",
       "kind": "keyframe",
       "scene": "1",
       "shot": "1.10",
       "title": "Nothing",
       "status": "accepted",
       "date": "2026-09-03",
-      "note": "THE PAGE, EMPTY, BEFORE THE COLLAPSE COMES BACK ONTO IT. The runner has gone and what is left is bare paper, which is what Manan will walk into two shots later. NOT GENERATED and not a copy: the tone and the grain were measured off a clean corner of 1-2c-4-v1 and built in the container, with its own grain, so it is a distinct file from 1-2c-7-v1 while being the same paper. Cream and not white: the white belongs to the trance and scene one has not left the drawn world yet. FILED AS 1-10, 3.9.2026, in the reset that gave scene one its final names. Before the reset it was 1-3-C-v1, and every name mentioned in this note is a pre reset name. HOW IT MOVES. FULL ANIMATION, full frame rate."
+      "note": "THE PAGE, EMPTY, BEFORE THE COLLAPSE COMES BACK ONTO IT. The runner has gone and what is left is bare paper, which is what Manan will walk into two shots later. NOT GENERATED and not a copy: the tone and the grain were measured off a clean corner of 1-2c-4-v1 and built in the container, with its own grain, so it is a distinct file from 1-2c-7-v1 while being the same paper. Cream and not white: the white belongs to the trance and scene one has not left the drawn world yet. FILED AS 1-10, 3.9.2026, in the reset that gave scene one its final names. Before the reset it was 1-3-C-v1, and every name mentioned in this note is a pre reset name. HOW IT MOVES. FULL ANIMATION, full frame rate.",
+      "id": "1-10"
     },
     {
-      "file": "BB_C_1/1-14.png",
+      "file": "BB_C_1/SC1-14.png",
       "kind": "keyframe",
       "scene": "1",
       "shot": "1.14",
       "title": "The tired face, inspected",
       "status": "accepted",
       "date": "2026-09-03",
-      "note": "INSPECTION 1 OF 3. The glass on 1-1-v11, the face he wore before he saw anything: the eye heavy and half shut under a heavy brow, the mouth open, the lines cut deep down the cheek, the neck tendons standing. THE THREE FACES ARE THE WHOLE INSPECTION NOW. They are the same three faces the scene already showed at 1.03, 1.04 and 1.05, come back to be looked at, which is the why law: plant it before it is needed, then examine it. BUILT, NOT DESCRIBED. The brass rim and handle were cut out of 1-6-COLLAPSE-GLASS-v1 as a transparent sprite, so the glass in all three inspection frames is the approved object rather than a described one. The drawing was placed on the page small and the SAME drawing magnified inside the circle, then the lens laid over it, and that composite was the single reference for the 2K render. The lens enlarges what is already there and nothing was handed to it separately. FILED AS 1-14, 3.9.2026, in the reset that gave scene one its final names. Before the reset it was 1-1-v11-GLASS-v2, and every name mentioned in this note is a pre reset name. HOW IT MOVES. THE PICTURE STANDS STILL AND THE GLASS DOES NOT. A slight wobble, AS IF SOMEBODY IS HOLDING IT IN THEIR HAND. Very subtle, never drawing attention to itself."
+      "note": "INSPECTION 1 OF 3. The glass on 1-1-v11, the face he wore before he saw anything: the eye heavy and half shut under a heavy brow, the mouth open, the lines cut deep down the cheek, the neck tendons standing. THE THREE FACES ARE THE WHOLE INSPECTION NOW. They are the same three faces the scene already showed at 1.03, 1.04 and 1.05, come back to be looked at, which is the why law: plant it before it is needed, then examine it. BUILT, NOT DESCRIBED. The brass rim and handle were cut out of 1-6-COLLAPSE-GLASS-v1 as a transparent sprite, so the glass in all three inspection frames is the approved object rather than a described one. The drawing was placed on the page small and the SAME drawing magnified inside the circle, then the lens laid over it, and that composite was the single reference for the 2K render. The lens enlarges what is already there and nothing was handed to it separately. FILED AS 1-14, 3.9.2026, in the reset that gave scene one its final names. Before the reset it was 1-1-v11-GLASS-v2, and every name mentioned in this note is a pre reset name. HOW IT MOVES. THE PICTURE STANDS STILL AND THE GLASS DOES NOT. A slight wobble, AS IF SOMEBODY IS HOLDING IT IN THEIR HAND. Very subtle, never drawing attention to itself.",
+      "id": "1-14"
     },
     {
-      "file": "BB_C_1/1-15.png",
+      "file": "BB_C_1/SC1-15.png",
       "kind": "keyframe",
       "scene": "1",
       "shot": "1.15",
       "title": "The face that sees",
       "status": "accepted",
       "date": "2026-09-03",
-      "note": "INSPECTION 2 OF 3. The glass on 1-1-v15, the moment it changes: the head up, the eye wide and fixed on something ahead, the brow drawn together, the mouth open. THIS ONE TOOK FOUR RUNS and the version number says so. The failures were the ones magnifying-glass.md already names: the head turned out of profile, a second man on the paper outside the rim, the glass vanishing from the frame completely, and two men side by side inside the lens. See nanobanana.md, 3.9.2026. BUILT, NOT DESCRIBED. The brass rim and handle were cut out of 1-6-COLLAPSE-GLASS-v1 as a transparent sprite, so the glass in all three inspection frames is the approved object rather than a described one. The drawing was placed on the page small and the SAME drawing magnified inside the circle, then the lens laid over it, and that composite was the single reference for the 2K render. The lens enlarges what is already there and nothing was handed to it separately. FILED AS 1-15, 3.9.2026, in the reset that gave scene one its final names. Before the reset it was 1-1-v15-GLASS-v4, and every name mentioned in this note is a pre reset name. HOW IT MOVES. THE PICTURE STANDS STILL AND THE GLASS DOES NOT. A slight wobble, as if somebody is holding it in their hand."
+      "note": "INSPECTION 2 OF 3. The glass on 1-1-v15, the moment it changes: the head up, the eye wide and fixed on something ahead, the brow drawn together, the mouth open. THIS ONE TOOK FOUR RUNS and the version number says so. The failures were the ones magnifying-glass.md already names: the head turned out of profile, a second man on the paper outside the rim, the glass vanishing from the frame completely, and two men side by side inside the lens. See nanobanana.md, 3.9.2026. BUILT, NOT DESCRIBED. The brass rim and handle were cut out of 1-6-COLLAPSE-GLASS-v1 as a transparent sprite, so the glass in all three inspection frames is the approved object rather than a described one. The drawing was placed on the page small and the SAME drawing magnified inside the circle, then the lens laid over it, and that composite was the single reference for the 2K render. The lens enlarges what is already there and nothing was handed to it separately. FILED AS 1-15, 3.9.2026, in the reset that gave scene one its final names. Before the reset it was 1-1-v15-GLASS-v4, and every name mentioned in this note is a pre reset name. HOW IT MOVES. THE PICTURE STANDS STILL AND THE GLASS DOES NOT. A slight wobble, as if somebody is holding it in their hand.",
+      "id": "1-15"
     },
     {
-      "file": "BB_C_1/1-16.png",
+      "file": "BB_C_1/SC1-16.png",
       "kind": "keyframe",
       "scene": "1",
       "shot": "1.16",
       "title": "The face changed",
       "status": "accepted",
       "date": "2026-09-03",
-      "note": "INSPECTION 3 OF 3. The glass on 1-1-v18: the eye clear and easy, a faint smile at the corner of the mouth, the deep lines of the first face softened out, the jaw loose. The end of the face sequence, and the calf and the ignition follow it. BUILT, NOT DESCRIBED. The brass rim and handle were cut out of 1-6-COLLAPSE-GLASS-v1 as a transparent sprite, so the glass in all three inspection frames is the approved object rather than a described one. The drawing was placed on the page small and the SAME drawing magnified inside the circle, then the lens laid over it, and that composite was the single reference for the 2K render. The lens enlarges what is already there and nothing was handed to it separately. FILED AS 1-16, 3.9.2026, in the reset that gave scene one its final names. Before the reset it was 1-1-v18-GLASS-v2, and every name mentioned in this note is a pre reset name. HOW IT MOVES. THE PICTURE STANDS STILL AND THE GLASS DOES NOT. A slight wobble, as if somebody is holding it in their hand."
+      "note": "INSPECTION 3 OF 3. The glass on 1-1-v18: the eye clear and easy, a faint smile at the corner of the mouth, the deep lines of the first face softened out, the jaw loose. The end of the face sequence, and the calf and the ignition follow it. BUILT, NOT DESCRIBED. The brass rim and handle were cut out of 1-6-COLLAPSE-GLASS-v1 as a transparent sprite, so the glass in all three inspection frames is the approved object rather than a described one. The drawing was placed on the page small and the SAME drawing magnified inside the circle, then the lens laid over it, and that composite was the single reference for the 2K render. The lens enlarges what is already there and nothing was handed to it separately. FILED AS 1-16, 3.9.2026, in the reset that gave scene one its final names. Before the reset it was 1-1-v18-GLASS-v2, and every name mentioned in this note is a pre reset name. HOW IT MOVES. THE PICTURE STANDS STILL AND THE GLASS DOES NOT. A slight wobble, as if somebody is holding it in their hand.",
+      "id": "1-16"
     },
     {
-      "file": "clips/key-catch-loop.mp4",
+      "file": "clips/SC9-2.mp4",
       "kind": "keyframe",
       "title": "He catches it, take one",
       "status": "accepted",
@@ -3236,10 +3287,11 @@
       "full_label": "PRORES WITH ALPHA &nbsp;3840 &times; 2160",
       "proxy_note": "The loop on this page is a 480 wide proxy so the storyboard stays light. It is not the deliverable and must never be composited.",
       "scene": "15",
-      "shot": "15.21"
+      "shot": "15.21",
+      "id": "key-catch-loop"
     },
     {
-      "file": "clips/key-catch-2-loop.mp4",
+      "file": "clips/SC9-3.mp4",
       "kind": "keyframe",
       "title": "He catches it, take two",
       "status": "accepted",
@@ -3258,10 +3310,11 @@
       "full_label": "PRORES &nbsp;03 KEY CATCH_2.mov &nbsp;3840 &times; 2160 &nbsp;1.1 GB",
       "proxy_note": "The loop on this page is a 480 wide proxy so the storyboard stays light. It is not the deliverable and must never be composited.",
       "scene": "15",
-      "shot": "15.22"
+      "shot": "15.22",
+      "id": "key-catch-2-loop"
     },
     {
-      "file": "clips/in-front-of-door-loop.mp4",
+      "file": "clips/SC5-7.mp4",
       "kind": "keyframe",
       "title": "In front of the door",
       "status": "accepted",
@@ -3280,7 +3333,8 @@
       "full_label": "PRORES WITH ALPHA &nbsp;3840 &times; 2160",
       "proxy_note": "The loop on this page is a 480 wide proxy so the storyboard stays light. It is not the deliverable and must never be composited.",
       "scene": "7",
-      "shot": "7.7"
+      "shot": "7.7",
+      "id": "in-front-of-door-loop"
     },
     {
       "file": "BB_C_7/7-1-20260904.png",
@@ -3453,17 +3507,18 @@
       "note": "THE ONLY EFFORT IN THE WHOLE JOURNEY. The lift cannot go past the chest, so the neck is climbed: seven cervical vertebrae in grown stone, anatomically correct, with nothing built on them. No steps, no rail, no machinery. The gaps between the transverse processes are the only handholds. Above, the skull closes over and the door is set into the dome, small and lit. He has been carried the whole way and the last stretch he has to do himself, immediately below the door of the man who decides what he is allowed to do. ARCHIVED 4.9.2026: the spine was inside the glass tube, and the lift stopped at the chest."
     },
     {
-      "file": "BB_C_7/7-4.png",
+      "file": "BB_C_7/SC5-4.png",
       "kind": "keyframe",
       "scene": "7",
       "shot": "7.4",
       "title": "The door, closed",
       "status": "accepted",
       "date": "2026-09-04",
-      "note": "THE DOOR, CLOSED. The clover key pressed into the clay above the same sliding panels as every other door in the house, so nothing announces it except what is missing: this is the only door in the building with no status panel beside it, because it is the thing that reads the house rather than a thing the house reads. Centred, and the stone settles differently left and right because it is grown and not built."
+      "note": "THE DOOR, CLOSED. The clover key pressed into the clay above the same sliding panels as every other door in the house, so nothing announces it except what is missing: this is the only door in the building with no status panel beside it, because it is the thing that reads the house rather than a thing the house reads. Centred, and the stone settles differently left and right because it is grown and not built.",
+      "id": "7-4"
     },
     {
-      "file": "BB_C_7/7-5.png",
+      "file": "BB_C_7/SC5-5.png",
       "kind": "keyframe",
       "scene": "7",
       "shot": "7.5",
@@ -3477,47 +3532,52 @@
           "label": "Background plate, no live action",
           "note": "The same frame with nobody in it. This is what the ProRes is laid over."
         }
-      ]
+      ],
+      "id": "7-5"
     },
     {
-      "file": "BB_C_7/7-6.png",
+      "file": "BB_C_7/SC5-6.png",
       "kind": "keyframe",
       "scene": "7",
       "shot": "7.6",
       "title": "And it closes behind him",
       "status": "accepted",
       "date": "2026-09-04",
-      "note": "AND IT CLOSES BEHIND HIM. This is 7-4 AGAIN, the identical picture returning, because the door shuts on exactly the frame it opened from and a repeat says that better than a variation would. A separate file because every asset keeps a unique name, the same way 1-0-C-v2 and 1-6-COLLAPSE-v1 are one drawing at two points in scene one. After this we are inside, and Viveka's room does not change."
+      "note": "AND IT CLOSES BEHIND HIM. This is 7-4 AGAIN, the identical picture returning, because the door shuts on exactly the frame it opened from and a repeat says that better than a variation would. A separate file because every asset keeps a unique name, the same way 1-0-C-v2 and 1-6-COLLAPSE-v1 are one drawing at two points in scene one. After this we are inside, and Viveka's room does not change.",
+      "id": "7-6"
     },
     {
-      "file": "BB_C_7/7-1.png",
+      "file": "BB_C_7/SC5-1.png",
       "kind": "keyframe",
       "scene": "7",
       "shot": "7.1",
       "title": "He lands in the hip",
       "status": "accepted",
       "date": "2026-09-04",
-      "note": "HE ARRIVES THROUGH THE HIP, WHICH IS WHERE A PERSON IS BORN. The hall is the pelvis seen from the front and it reads as two things at once: the iliac blades open on either side like a pair of butterfly wings, with the fanned structure of a wing running through them where the bone grain would be, and the pelvic arch closes underneath. It is architecture that happens to be a pelvis and a butterfly and insists on neither. The round glass lift stands dead on the axis, in the opening a body actually comes through, doors parted and lit. He does not look for it. It is waiting, the same way the front door was open, because he is expected. THE GLASS TUBE IS THE LIFT SHAFT AND IT IS EMPTY. 4.9.2026, Baba: the spine had been drawn INSIDE the tube, which left nowhere to ride. It runs BEHIND it now, seen through the glass, with the transverse processes sticking out past the tube on both sides so the tube reads as the nearer object. The shaft was also made NARROWER than the vertebrae, because a tube as wide as the bone reads as containing it however it is shaded."
+      "note": "HE ARRIVES THROUGH THE HIP, WHICH IS WHERE A PERSON IS BORN. The hall is the pelvis seen from the front and it reads as two things at once: the iliac blades open on either side like a pair of butterfly wings, with the fanned structure of a wing running through them where the bone grain would be, and the pelvic arch closes underneath. It is architecture that happens to be a pelvis and a butterfly and insists on neither. The round glass lift stands dead on the axis, in the opening a body actually comes through, doors parted and lit. He does not look for it. It is waiting, the same way the front door was open, because he is expected. THE GLASS TUBE IS THE LIFT SHAFT AND IT IS EMPTY. 4.9.2026, Baba: the spine had been drawn INSIDE the tube, which left nowhere to ride. It runs BEHIND it now, seen through the glass, with the transverse processes sticking out past the tube on both sides so the tube reads as the nearer object. The shaft was also made NARROWER than the vertebrae, because a tube as wide as the bone reads as containing it however it is shaded.",
+      "id": "7-1"
     },
     {
-      "file": "BB_C_7/7-2.png",
+      "file": "BB_C_7/SC5-2.png",
       "kind": "keyframe",
       "scene": "7",
       "shot": "7.2",
       "title": "The lift rises, and the body is revealed",
       "status": "accepted",
       "date": "2026-09-04",
-      "note": "AND NOW THE REVEAL, THE OPPOSITE WAY ROUND FROM THE ARRIVAL AT THE HOUSE. He steps in, the lift starts, and the camera pulls out until the whole body is in frame and we see how far up he has to go. ONE LIFT AND ONLY ONE, running from the pelvis to the underside of the skull, so nothing has to be climbed. THE CHEST COVERS THE SHAFT, because the spine runs at the BACK of a body: you see the lift go in at the belly and come out again at the neck, and no shaft is drawn across the chest at all. The body hides its own machinery. The glass tube is the shaft and it is empty apart from the car; the spine stands behind it, narrower than the vertebrae so the tube reads as the nearer object. He is not searching, he is being carried, which is the same grammar as the vortex."
+      "note": "AND NOW THE REVEAL, THE OPPOSITE WAY ROUND FROM THE ARRIVAL AT THE HOUSE. He steps in, the lift starts, and the camera pulls out until the whole body is in frame and we see how far up he has to go. ONE LIFT AND ONLY ONE, running from the pelvis to the underside of the skull, so nothing has to be climbed. THE CHEST COVERS THE SHAFT, because the spine runs at the BACK of a body: you see the lift go in at the belly and come out again at the neck, and no shaft is drawn across the chest at all. The body hides its own machinery. The glass tube is the shaft and it is empty apart from the car; the spine stands behind it, narrower than the vertebrae so the tube reads as the nearer object. He is not searching, he is being carried, which is the same grammar as the vortex.",
+      "id": "7-2"
     },
     {
-      "file": "BB_C_7/7-3.png",
+      "file": "BB_C_7/SC5-3.png",
       "kind": "keyframe",
       "scene": "7",
       "shot": "7.3",
       "title": "The lift reaches the head",
       "status": "accepted",
       "date": "2026-09-04",
-      "note": "THE LIFT REACHES THE HEAD. Simplified 4.9.2026, Baba: he is not climbing the last stretch, he is carried the whole way. The shaft runs on past the chest, in front of the cervical spine, and ends at the underside of the skull at the door. Seven vertebrae stand behind the glass and there are no steps and no handholds anywhere. THE GLASS TUBE IS THE LIFT SHAFT AND IT IS EMPTY. 4.9.2026, Baba: the spine had been drawn INSIDE the tube, which left nowhere to ride. It runs BEHIND it now, seen through the glass, with the transverse processes sticking out past the tube on both sides so the tube reads as the nearer object. The shaft was also made NARROWER than the vertebrae, because a tube as wide as the bone reads as containing it however it is shaded."
+      "note": "THE LIFT REACHES THE HEAD. Simplified 4.9.2026, Baba: he is not climbing the last stretch, he is carried the whole way. The shaft runs on past the chest, in front of the cervical spine, and ends at the underside of the skull at the door. Seven vertebrae stand behind the glass and there are no steps and no handholds anywhere. THE GLASS TUBE IS THE LIFT SHAFT AND IT IS EMPTY. 4.9.2026, Baba: the spine had been drawn INSIDE the tube, which left nowhere to ride. It runs BEHIND it now, seen through the glass, with the transverse processes sticking out past the tube on both sides so the tube reads as the nearer object. The shaft was also made NARROWER than the vertebrae, because a tube as wide as the bone reads as containing it however it is shaded.",
+      "id": "7-3"
     },
     {
       "file": "BB_C_7/7-1-20260904c.png",
@@ -3550,7 +3610,7 @@
       "note": "An earlier version of 7-2, kept under the date it was made."
     },
     {
-      "file": "BB_C_19/19-1.png",
+      "file": "BB_C_19/SC6-1.png",
       "kind": "keyframe",
       "scene": "19",
       "shot": "19.5",
@@ -3591,17 +3651,19 @@
           "speaker": "VIVEKA",
           "line": "The arm is always yours. The permission is mine. And the permission is the key."
         }
-      ]
+      ],
+      "id": "19-1"
     },
     {
-      "file": "BB_C_19/19-2.png",
+      "file": "BB_C_19/SC6-2.png",
       "kind": "keyframe",
       "scene": "19",
       "shot": "19.6",
       "title": "The console, and the hologram",
       "status": "accepted",
       "date": "2026-09-04",
-      "note": "CLOSE ON THE CONSOLE, and this is the frame the room was built from. His hands rest on two of the three trackballs, the cloak falls across the edge of the picture with its stars and ringed planets, and the hologram of the body stands in the air above the panel: skeleton, muscle and organs hanging slightly apart from one another, thin readouts floating free at different depths. Everything is made of light and nothing is framed. THE PANEL IS BIG AND ALMOST EMPTY, which says he is in command far better than a wall of switches ever did."
+      "note": "CLOSE ON THE CONSOLE, and this is the frame the room was built from. His hands rest on two of the three trackballs, the cloak falls across the edge of the picture with its stars and ringed planets, and the hologram of the body stands in the air above the panel: skeleton, muscle and organs hanging slightly apart from one another, thin readouts floating free at different depths. Everything is made of light and nothing is framed. THE PANEL IS BIG AND ALMOST EMPTY, which says he is in command far better than a wall of switches ever did.",
+      "id": "19-2"
     },
     {
       "file": "BB_C_19/19-CHARACTER.png",
@@ -3626,7 +3688,7 @@
       "storyboard": "hide"
     },
     {
-      "file": "BB_C_19/19-3.png",
+      "file": "BB_C_19/SC6-3.png",
       "kind": "keyframe",
       "scene": "19",
       "shot": "19.7",
@@ -3650,10 +3712,11 @@
           "label": "Empty display, no writing",
           "note": "The identical frame with the three lines removed and nothing put in their place. Animate the lines onto this one at a time; nothing else moves by a hair."
         }
-      ]
+      ],
+      "id": "19-3"
     },
     {
-      "file": "BB_C_19/19-4.png",
+      "file": "BB_C_19/SC6-4.png",
       "kind": "keyframe",
       "scene": "19",
       "shot": "19.8",
@@ -3721,7 +3784,8 @@
           "label": "Empty display, no writing",
           "note": "The identical frame with the three lines removed and nothing put in their place. Animate the lines onto this one at a time; nothing else moves by a hair."
         }
-      ]
+      ],
+      "id": "19-4"
     },
     {
       "file": "BB_C_19/19-3-20260904.png",
@@ -3766,44 +3830,48 @@
       "note": "THE TUMBLE SHEET. Nine studies read as one continuous fall, rotating on TWO axes at once, spinning on its own length while turning end over end. Give this to the model when a falling frame is needed, so it has a real turn to interpolate rather than a pose to copy. Crop ONE study out before using it as a reference: handing over the whole sheet makes the model reproduce the grid, ghost keys and all."
     },
     {
-      "file": "BB_C_15/KEY-RELEASE.png",
+      "file": "BB_C_15/SC8-5.png",
       "kind": "keyframe",
       "scene": "9R",
       "shot": "9R.21",
       "title": "He lets it go",
       "status": "accepted",
       "date": "2026-09-04",
-      "note": "HE DOES NOT HAND IT OVER, HE DROPS IT. The hand comes in from the left, the fingers just opening, the key already tipping out of true so it reads as falling rather than hanging. YOU KNOW WHOSE HAND IT IS WITHOUT A FACE: a real amount of the star cloak is in frame, and the old version showed a piece of tracksuit. NOTHING TRAILS FROM THE HAND. An earlier version had a loose cord and it pulled the eye somewhere that meant nothing; nothing in this film is corded or strung. Behind everything is empty white, because the wall of memories is built up separately."
+      "note": "HE DOES NOT HAND IT OVER, HE DROPS IT. The hand comes in from the left, the fingers just opening, the key already tipping out of true so it reads as falling rather than hanging. YOU KNOW WHOSE HAND IT IS WITHOUT A FACE: a real amount of the star cloak is in frame, and the old version showed a piece of tracksuit. NOTHING TRAILS FROM THE HAND. An earlier version had a loose cord and it pulled the eye somewhere that meant nothing; nothing in this film is corded or strung. Behind everything is empty white, because the wall of memories is built up separately.",
+      "id": "KEY-RELEASE"
     },
     {
-      "file": "BB_C_15/KEY-FALL-1.png",
+      "file": "BB_C_15/SC8-6.png",
       "kind": "keyframe",
       "scene": "9R",
       "shot": "9R.22",
       "title": "Falling, bow high",
       "status": "accepted",
       "date": "2026-09-04",
-      "note": "FALLING, PHASE ONE. Tipped away from us with the bow high and the bit swinging up, foreshortened so the bow is an oval, turning clockwise. ON PURE WHITE and nothing else, because the wall of memories is built up separately in the compositor and this frame is only the key. GOLD: the world is graphite and this is the only gold in the film.\n\nTHE WALL IT FALLS IN FRONT OF, DEEPEST FIRST. The film runs backwards behind the key, so the stack is the film in reverse. Each layer is one of the film’s own frames, faded in on cream, all at the same tone so they read as one surface, and the whole wall moves upward while the key stays sharp:\n\n  19-5   the key is permission      ok\n  19-4   the answer                 ok\n  19-3   the old theory             ok\n  19-1   Viveka's room              ok\n  7-6    the door closes            ok\n  7-3    the lift reaches the head  ok\n  7-2    the body revealed          ok\n  7-1    the hip                    ok\n  1-24   the empty page             ok\n  1-16   the face, changed          ok\n  1-14   the face, spent            ok\n  1-11   Manan walks in             ok\n  1-7    the finish                 ok\n  1-3    he goes down               NOT FOUND under this name\n  1-1    the avenue                 NOT FOUND under this name\n\nStitch them in After Effects one atop another. The last two are under different names since the scene one reset and need mapping before the stack is built."
+      "note": "FALLING, PHASE ONE. Tipped away from us with the bow high and the bit swinging up, foreshortened so the bow is an oval, turning clockwise. ON PURE WHITE and nothing else, because the wall of memories is built up separately in the compositor and this frame is only the key. GOLD: the world is graphite and this is the only gold in the film.\n\nTHE WALL IT FALLS IN FRONT OF, DEEPEST FIRST. The film runs backwards behind the key, so the stack is the film in reverse. Each layer is one of the film’s own frames, faded in on cream, all at the same tone so they read as one surface, and the whole wall moves upward while the key stays sharp:\n\n  19-5   the key is permission      ok\n  19-4   the answer                 ok\n  19-3   the old theory             ok\n  19-1   Viveka's room              ok\n  7-6    the door closes            ok\n  7-3    the lift reaches the head  ok\n  7-2    the body revealed          ok\n  7-1    the hip                    ok\n  1-24   the empty page             ok\n  1-16   the face, changed          ok\n  1-14   the face, spent            ok\n  1-11   Manan walks in             ok\n  1-7    the finish                 ok\n  1-3    he goes down               NOT FOUND under this name\n  1-1    the avenue                 NOT FOUND under this name\n\nStitch them in After Effects one atop another. The last two are under different names since the scene one reset and need mapping before the stack is built.",
+      "id": "KEY-FALL-1"
     },
     {
-      "file": "BB_C_15/KEY-FALL-2.png",
+      "file": "BB_C_15/SC8-7.png",
       "kind": "keyframe",
       "scene": "9R",
       "shot": "9R.23",
       "title": "Falling, edge on",
       "status": "accepted",
       "date": "2026-09-04",
-      "note": "FALLING, PHASE TWO. Rolled right over onto its side and caught almost EDGE ON, nearly a line at a steep diagonal with the clover only just readable. This is the phase that sells the tumble, because a key that never goes edge on is a key on a turntable."
+      "note": "FALLING, PHASE TWO. Rolled right over onto its side and caught almost EDGE ON, nearly a line at a steep diagonal with the clover only just readable. This is the phase that sells the tumble, because a key that never goes edge on is a key on a turntable.",
+      "id": "KEY-FALL-2"
     },
     {
-      "file": "BB_C_15/KEY-FALL-3.png",
+      "file": "BB_C_15/SC8-8.png",
       "kind": "keyframe",
       "scene": "9R",
       "shot": "9R.24",
       "title": "Falling, bit first",
       "status": "accepted",
       "date": "2026-09-04",
-      "note": "FALLING, PHASE THREE. Tumbling towards us BIT FIRST, the toothed bit large and near, the bow small and far behind, steeply foreshortened down its own length. NOT ONE OF THE THREE IS UPRIGHT AND FLAT TO THE CAMERA, which is what went wrong in the first attempt: square to the lens it reads as hung, not dropped."
+      "note": "FALLING, PHASE THREE. Tumbling towards us BIT FIRST, the toothed bit large and near, the bow small and far behind, steeply foreshortened down its own length. NOT ONE OF THE THREE IS UPRIGHT AND FLAT TO THE CAMERA, which is what went wrong in the first attempt: square to the lens it reads as hung, not dropped.",
+      "id": "KEY-FALL-3"
     },
     {
       "file": "BB_C_19/19-CHARACTER-KEY.png",
@@ -3817,7 +3885,7 @@
       "storyboard": "hide"
     },
     {
-      "file": "BB_C_19/19-5.png",
+      "file": "BB_C_19/SC6-5.png",
       "kind": "keyframe",
       "scene": "19",
       "shot": "19.9",
@@ -3845,7 +3913,8 @@
           "speaker": "VIVEKA",
           "line": "You will not always have me to ask."
         }
-      ]
+      ],
+      "id": "19-5"
     },
     {
       "file": "BB_C_19/19-1-nokey-20260904.png",
@@ -3881,77 +3950,84 @@
       "note": "The version without the key round his neck, before the scan of 4.9.2026."
     },
     {
-      "file": "BB_C_9R/FILMSTRIP.png",
+      "file": "BB_C_9R/SC8-9.png",
       "kind": "keyframe",
       "scene": "9R",
       "shot": "9R.26",
       "title": "The film strip, whole",
       "status": "accepted",
       "date": "2026-09-05",
-      "note": "THE WALL IS A FILM STRIP. Not a montage and not a wall of pictures: an actual strip of film taken off the reel and held up to the light, sprocket holes down both edges, rounded frames between them. We were INSIDE the film a minute ago; now we are looking at it from outside, and the audience is told without a word that the whole thing was a film. Lila.\n\nREAD TOP TO BOTTOM IT IS THE FILM IN REVERSE, because the key falls back out through everything that happened: 19-5 / 19-4 / 19-3 / 19-1 / 7-6 / 7-3 / 7-2 / 7-1 / 1-24 / 1-16 / 1-14 / 1-11 / 1-7 / 1-3 / 1-1.\n\nTHE CAMERA FALLS WITH THE KEY. The key holds its place in frame and stays sharp; the STRIP moves upward past it and smears. That difference is the entire reason the fall reads as fast.\n\nBUILT, NOT DRAWN. Every frame on it is a real frame of the film at full resolution, lifted and washed as though lit from behind, so the strip is exact and can be rebuilt in seconds when a frame is approved or retired. A generated strip would be a picture OF a film strip with invented frames on it, which is the one thing it must not be. The script is make_strip.py.\n\nTHE WHOLE STRIP, 1400 by 9754. This is the artwork itself: bring it in as one tall layer and move it."
+      "note": "THE WALL IS A FILM STRIP. Not a montage and not a wall of pictures: an actual strip of film taken off the reel and held up to the light, sprocket holes down both edges, rounded frames between them. We were INSIDE the film a minute ago; now we are looking at it from outside, and the audience is told without a word that the whole thing was a film. Lila.\n\nREAD TOP TO BOTTOM IT IS THE FILM IN REVERSE, because the key falls back out through everything that happened: 19-5 / 19-4 / 19-3 / 19-1 / 7-6 / 7-3 / 7-2 / 7-1 / 1-24 / 1-16 / 1-14 / 1-11 / 1-7 / 1-3 / 1-1.\n\nTHE CAMERA FALLS WITH THE KEY. The key holds its place in frame and stays sharp; the STRIP moves upward past it and smears. That difference is the entire reason the fall reads as fast.\n\nBUILT, NOT DRAWN. Every frame on it is a real frame of the film at full resolution, lifted and washed as though lit from behind, so the strip is exact and can be rebuilt in seconds when a frame is approved or retired. A generated strip would be a picture OF a film strip with invented frames on it, which is the one thing it must not be. The script is make_strip.py.\n\nTHE WHOLE STRIP, 1400 by 9754. This is the artwork itself: bring it in as one tall layer and move it.",
+      "id": "FILMSTRIP"
     },
     {
-      "file": "BB_C_9R/FILMSTRIP-PLATE.png",
+      "file": "BB_C_9R/SC8-10.png",
       "kind": "keyframe",
       "scene": "9R",
       "shot": "9R.27",
       "title": "The film strip, one screen of it",
       "status": "accepted",
       "date": "2026-09-05",
-      "note": "ONE SCREEN OF THE STRIP at 2731 by 1536, so you can see at storyboard size what the key falls in front of. The real element is FILMSTRIP.png, which is the whole thing."
+      "note": "ONE SCREEN OF THE STRIP at 2731 by 1536, so you can see at storyboard size what the key falls in front of. The real element is FILMSTRIP.png, which is the whole thing.",
+      "id": "FILMSTRIP-PLATE"
     },
     {
-      "file": "BB_C_9R/9R-0-WHITE.png",
+      "file": "BB_C_9R/SC8-1.png",
       "kind": "keyframe",
       "scene": "9R",
       "shot": "9R.01",
       "title": "Out to white, again",
       "status": "accepted",
       "date": "2026-09-05",
-      "note": "THE SECOND FALL BEGINS. White, the way the first one did, so the two journeys bracket each other. He has the key now.\n\nMADE BY FLIPPING THE ASCENT, WHICH IS THE TRUTH RATHER THAN A SHORTCUT. Turn the rising frame over and everything that was physically right stays right, reversed: his head, which pointed up the shaft, now points down it, and his clothes and hair, which streamed DOWNWARD past him because the air was going the other way, now stream UPWARD, which is what a head first descent looks like. MIRRORED AS WELL AS FLIPPED, because a pure vertical flip leaves the spiral turning the same way on screen, and coming back down it should unwind what the climb wound up. Same boy, same cloud, same paper, same hand, nothing generated, so it reads as the same journey run backwards rather than a second drawing of a similar thing."
+      "note": "THE SECOND FALL BEGINS. White, the way the first one did, so the two journeys bracket each other. He has the key now.\n\nMADE BY FLIPPING THE ASCENT, WHICH IS THE TRUTH RATHER THAN A SHORTCUT. Turn the rising frame over and everything that was physically right stays right, reversed: his head, which pointed up the shaft, now points down it, and his clothes and hair, which streamed DOWNWARD past him because the air was going the other way, now stream UPWARD, which is what a head first descent looks like. MIRRORED AS WELL AS FLIPPED, because a pure vertical flip leaves the spiral turning the same way on screen, and coming back down it should unwind what the climb wound up. Same boy, same cloud, same paper, same hand, nothing generated, so it reads as the same journey run backwards rather than a second drawing of a similar thing.",
+      "id": "9R-0-WHITE"
     },
     {
-      "file": "BB_C_9R/9R-1-VORTEX-DOWN.png",
+      "file": "BB_C_9R/SC8-2.png",
       "kind": "keyframe",
       "scene": "9R",
       "shot": "9R.02",
       "title": "The vortex, down",
       "status": "accepted",
       "date": "2026-09-05",
-      "note": "THE VORTEX AGAIN, TURNING THE OTHER WAY. He is going back out through what brought him in. This is a separate beat from the key falling: THERE ARE TWO FALLS IN THIS FILM, his and then the key’s, and this is the first of them.\n\nMADE BY FLIPPING THE ASCENT, WHICH IS THE TRUTH RATHER THAN A SHORTCUT. Turn the rising frame over and everything that was physically right stays right, reversed: his head, which pointed up the shaft, now points down it, and his clothes and hair, which streamed DOWNWARD past him because the air was going the other way, now stream UPWARD, which is what a head first descent looks like. MIRRORED AS WELL AS FLIPPED, because a pure vertical flip leaves the spiral turning the same way on screen, and coming back down it should unwind what the climb wound up. Same boy, same cloud, same paper, same hand, nothing generated, so it reads as the same journey run backwards rather than a second drawing of a similar thing."
+      "note": "THE VORTEX AGAIN, TURNING THE OTHER WAY. He is going back out through what brought him in. This is a separate beat from the key falling: THERE ARE TWO FALLS IN THIS FILM, his and then the key’s, and this is the first of them.\n\nMADE BY FLIPPING THE ASCENT, WHICH IS THE TRUTH RATHER THAN A SHORTCUT. Turn the rising frame over and everything that was physically right stays right, reversed: his head, which pointed up the shaft, now points down it, and his clothes and hair, which streamed DOWNWARD past him because the air was going the other way, now stream UPWARD, which is what a head first descent looks like. MIRRORED AS WELL AS FLIPPED, because a pure vertical flip leaves the spiral turning the same way on screen, and coming back down it should unwind what the climb wound up. Same boy, same cloud, same paper, same hand, nothing generated, so it reads as the same journey run backwards rather than a second drawing of a similar thing.",
+      "id": "9R-1-VORTEX-DOWN"
     },
     {
-      "file": "BB_C_9R/9R-2-FALLING.png",
+      "file": "BB_C_9R/SC8-3.png",
       "kind": "keyframe",
       "scene": "9R",
       "shot": "9R.03",
       "title": "He falls",
       "status": "accepted",
       "date": "2026-09-05",
-      "note": "HEAD FIRST, and the trail REVERSES: everything streams upward past him, because he is falling now and not being carried. That single detail is what tells the audience which way he is going without a word.\n\nMADE BY FLIPPING THE ASCENT, WHICH IS THE TRUTH RATHER THAN A SHORTCUT. Turn the rising frame over and everything that was physically right stays right, reversed: his head, which pointed up the shaft, now points down it, and his clothes and hair, which streamed DOWNWARD past him because the air was going the other way, now stream UPWARD, which is what a head first descent looks like. MIRRORED AS WELL AS FLIPPED, because a pure vertical flip leaves the spiral turning the same way on screen, and coming back down it should unwind what the climb wound up. Same boy, same cloud, same paper, same hand, nothing generated, so it reads as the same journey run backwards rather than a second drawing of a similar thing."
+      "note": "HEAD FIRST, and the trail REVERSES: everything streams upward past him, because he is falling now and not being carried. That single detail is what tells the audience which way he is going without a word.\n\nMADE BY FLIPPING THE ASCENT, WHICH IS THE TRUTH RATHER THAN A SHORTCUT. Turn the rising frame over and everything that was physically right stays right, reversed: his head, which pointed up the shaft, now points down it, and his clothes and hair, which streamed DOWNWARD past him because the air was going the other way, now stream UPWARD, which is what a head first descent looks like. MIRRORED AS WELL AS FLIPPED, because a pure vertical flip leaves the spiral turning the same way on screen, and coming back down it should unwind what the climb wound up. Same boy, same cloud, same paper, same hand, nothing generated, so it reads as the same journey run backwards rather than a second drawing of a similar thing.",
+      "id": "9R-2-FALLING"
     },
     {
-      "file": "BB_C_9R/9R-3-WHITE.png",
+      "file": "BB_C_9R/SC8-4.png",
       "kind": "keyframe",
       "scene": "9R",
       "shot": "9R.04",
       "title": "Out to white",
       "status": "accepted",
       "date": "2026-09-05",
-      "note": "And out again. The bracket closes.\n\nMADE BY FLIPPING THE ASCENT, WHICH IS THE TRUTH RATHER THAN A SHORTCUT. Turn the rising frame over and everything that was physically right stays right, reversed: his head, which pointed up the shaft, now points down it, and his clothes and hair, which streamed DOWNWARD past him because the air was going the other way, now stream UPWARD, which is what a head first descent looks like. MIRRORED AS WELL AS FLIPPED, because a pure vertical flip leaves the spiral turning the same way on screen, and coming back down it should unwind what the climb wound up. Same boy, same cloud, same paper, same hand, nothing generated, so it reads as the same journey run backwards rather than a second drawing of a similar thing."
+      "note": "And out again. The bracket closes.\n\nMADE BY FLIPPING THE ASCENT, WHICH IS THE TRUTH RATHER THAN A SHORTCUT. Turn the rising frame over and everything that was physically right stays right, reversed: his head, which pointed up the shaft, now points down it, and his clothes and hair, which streamed DOWNWARD past him because the air was going the other way, now stream UPWARD, which is what a head first descent looks like. MIRRORED AS WELL AS FLIPPED, because a pure vertical flip leaves the spiral turning the same way on screen, and coming back down it should unwind what the climb wound up. Same boy, same cloud, same paper, same hand, nothing generated, so it reads as the same journey run backwards rather than a second drawing of a similar thing.",
+      "id": "9R-3-WHITE"
     },
     {
-      "file": "BB_C_14/14-0-TITLE.png",
+      "file": "BB_C_14/SC10-1.png",
       "kind": "keyframe",
       "scene": "14",
       "shot": "14.0",
       "title": "The title card",
       "status": "accepted",
       "date": "2026-09-06",
-      "note": "THE TITLE OF THE FILM, ON BARE PAPER. NO CLOUDS: the film has not reached the sky when the title is on screen, so it is nothing but paper and the two lines. The clouds arrive later, with the credits, and that is the difference between the first card and the last ones. THE BRAIN BRAKE large, The Central Governor Theory a third the height beneath it, in the film’s own hand. Graded to the film’s paper, 255/243/224."
+      "note": "THE TITLE OF THE FILM, ON BARE PAPER. NO CLOUDS: the film has not reached the sky when the title is on screen, so it is nothing but paper and the two lines. The clouds arrive later, with the credits, and that is the difference between the first card and the last ones. THE BRAIN BRAKE large, The Central Governor Theory a third the height beneath it, in the film’s own hand. Graded to the film’s paper, 255/243/224.",
+      "id": "14-0-TITLE"
     },
     {
-      "file": "clips/2-1-BICYCLE-ext.mp4",
+      "file": "clips/SC2-1.mp4",
       "kind": "keyframe",
       "scene": "2",
       "shot": "2.1",
@@ -3960,13 +4036,14 @@
       "date": "2026-09-06",
       "video": true,
       "sec": 32.55,
-      "full": "https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIGINALS/main/BB_C_2/2-1-BICYCLE-ext.mp4",
+      "full": "https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIGINALS/main/BB_C_2/SC2-1.mp4",
       "full_label": "THE&nbsp;EDIT &nbsp;1920 &times; 1080 &nbsp;26&nbsp;MB",
       "proxy_note": "The loop on the storyboard is a 480 wide silent proxy so the page stays light. The edit itself is the download above, with its sound.",
-      "note": "THE FINISHED EDIT OF THIS SEGMENT. Thirty two and a half seconds, cut, and treated as done rather than as material. Everything else in this phase is a still or a plate; this is what those stills become.\n\nON THE STORYBOARD IT LOOPS SILENTLY AND SMALL, because a page of thumbnails should read at a glance and a soundtrack starting by itself is an ambush. The sound is here, on its own card, where somebody has chosen to listen.\n\nThe music for it is written and measured separately: a 3/4 and a 6/8 version, both ending on one deep stroke at the cut to black."
+      "note": "THE FINISHED EDIT OF THIS SEGMENT. Thirty two and a half seconds, cut, and treated as done rather than as material. Everything else in this phase is a still or a plate; this is what those stills become.\n\nON THE STORYBOARD IT LOOPS SILENTLY AND SMALL, because a page of thumbnails should read at a glance and a soundtrack starting by itself is an ambush. The sound is here, on its own card, where somebody has chosen to listen.\n\nThe music for it is written and measured separately: a 3/4 and a 6/8 version, both ending on one deep stroke at the cut to black.",
+      "id": "2-1-BICYCLE-ext"
     },
     {
-      "file": "clips/3-1-BICYCLE-int-loop.mp4",
+      "file": "clips/SC3-1.mp4",
       "kind": "keyframe",
       "scene": "3",
       "shot": "3.1",
@@ -3977,10 +4054,11 @@
       "sec": 25.39,
       "full": "https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIGINALS/main/BB_C_3/3-1-BICYCLE-int.mp4",
       "full_label": "THE&nbsp;EDIT &nbsp;1920 &times; 1080 &nbsp;16&nbsp;MB",
-      "note": "THE FINISHED EDIT OF THE INTERIOR. Twenty five seconds, cut, and treated as done. This is the whole of what used to be two phases: he tests it on the trainer and races himself, now one scene carried by one edit.\n\nNO DIALOGUE HERE. The scene runs on music."
+      "note": "THE FINISHED EDIT OF THE INTERIOR. Twenty five seconds, cut, and treated as done. This is the whole of what used to be two phases: he tests it on the trainer and races himself, now one scene carried by one edit.\n\nNO DIALOGUE HERE. The scene runs on music.",
+      "id": "3-1-BICYCLE-int-loop"
     },
     {
-      "file": "clips/ANIMATICS-loop.mp4",
+      "file": "clips/SC0-2.mp4",
       "kind": "keyframe",
       "scene": "0",
       "shot": "0.0",
@@ -3991,11 +4069,12 @@
       "sec": 134.14,
       "full": "https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIGINALS/main/DOCS/ANIMATICS_MOCK-UP_08-09.mp4",
       "full_label": "THE&nbsp;ANIMATIC &nbsp;2:14 &nbsp;32&nbsp;MB",
-      "note": "THE WHOLE FILM AS IT STANDS, two minutes fourteen. Shot order, durations, where each thing sits. THIS IS THE TEMPLATE THE SCENES ARE BUILT AGAINST: if a cut on the storyboard and a cut here disagree, this one is right, because it is the only place the film has been watched end to end."
+      "note": "THE WHOLE FILM AS IT STANDS, two minutes fourteen. Shot order, durations, where each thing sits. THIS IS THE TEMPLATE THE SCENES ARE BUILT AGAINST: if a cut on the storyboard and a cut here disagree, this one is right, because it is the only place the film has been watched end to end.",
+      "id": "ANIMATICS-loop"
     }
   ],
   "event": "Breakthrough Junior Challenge 2026",
-  "site_version": 294,
+  "site_version": 295,
   "footage": [
     {
       "name": "Key catch",

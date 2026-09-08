@@ -2522,3 +2522,624 @@
 - **local path missing** — card/10-0-A-v2.html -> ../https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/reference/voice/SYNTESISED_MANAN_OLD_THEORY.wav
 - **live version** — catalog says v294, live serves v293. The push has not published yet, or it failed.
 - **original** — 9R-1-VORTEX-DOWN-v1.png  200 4973671
+
+## 2026-09-08 09:28 — v294 — cached run
+
+468 pages, 496 remote targets, 348 originals.
+
+- live version v294 matches catalog.json
+- published weight 91.9 MB of the 1024 MB Pages ceiling, 9%
+- 348 originals in originals.json, 1658.3 MB
+- 140 rows still in drive_links.json, kept as a fallback
+
+**FAILED, 143:**
+
+- **local path missing** — BB_C_9R/shot-9R-31.html -> ../mid/KEY-FALL-1.jpg
+- **local path missing** — BB_C_9R/shot-9R-41.html -> ../mid/FILMSTRIP-PLATE.jpg
+- **local path missing** — BB_C_9R/shot-9R-33.html -> ../mid/KEY-FALL-3.jpg
+- **local path missing** — BB_C_9R/shot-9R-25.html -> ../mid/KEY-RELEASE.jpg
+- **local path missing** — BB_C_9R/shot-9R-32.html -> ../mid/KEY-FALL-2.jpg
+- **local path missing** — BB_C_9R/shot-9R-4.html -> ../mid/FILMSTRIP.jpg
+- **local path missing** — BB_C_12/shot-12-0.html -> ../BB_C_12/SC7-1.png
+- **local path missing** — card/11-0-A-v1.html -> ../https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/reference/voice/SYNTESISED_BRAIN_NEW_THEORY.wav
+- **local path missing** — card/11-0-A-v1.html -> ../https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/reference/voice/SYNTESISED_BRAIN_NEW_THEORY.wav
+- **local path missing** — card/12-0-A-v1.html -> ../https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/reference/voice/THE_LIMIT_IS_A_SETTING_NOT_A_WALL.wav
+- **local path missing** — card/12-0-A-v1.html -> ../https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/reference/voice/THE_LIMIT_IS_A_SETTING_NOT_A_WALL.wav
+- **local path missing** — card/10-0-A-v2.html -> ../https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/reference/voice/SYNTESISED_MANAN_OLD_THEORY.wav
+- **local path missing** — card/10-0-A-v2.html -> ../https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/reference/voice/SYNTESISED_MANAN_OLD_THEORY.wav
+- **local path missing** — card/16-1-MOCKUP-v1.html -> ../clips/in-front-of-door-loop.mp4
+- **local path missing** — card/SC7-1.html -> ../BB_C_12/SC7-1.png
+- **local path missing** — card/KEY_CATCH_1_00_00_04_19.html -> ../clips/key-catch-loop.mp4
+- **local path missing** — card/KEY_CATCH_1_00_00_04_19.html -> ../clips/key-catch-2-loop.mp4
+- **local path missing** — card/SC3-2.html -> ../BB_C_5/ref/SC3-2.jpg
+- **local path missing** — BB_C_15/shot-15-92.html -> ../mid/KEY-RELEASE.jpg
+- **local path missing** — BB_C_15/shot-15-95.html -> ../mid/KEY-FALL-3.jpg
+- **local path missing** — BB_C_15/shot-15-93.html -> ../mid/KEY-FALL-1.jpg
+- **local path missing** — BB_C_15/shot-15-94.html -> ../mid/KEY-FALL-2.jpg
+- **local path missing** — BB_C_5/shot-5-0.html -> ../BB_C_5/ref/SC3-2.jpg
+- **remote link** — https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIG  404 14  from BB_C_9R/shot-9R-24.html
+- **remote link** — https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIG  404 14  from BB_C_9R/shot-9R-02.html
+- **remote link** — https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIG  404 14  from BB_C_9R/shot-9R-04.html
+- **remote link** — https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIG  404 14  from BB_C_9R/shot-9R-27.html
+- **remote link** — https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIG  404 14  from BB_C_9R/shot-9R-23.html
+- **remote link** — https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIG  404 14  from BB_C_9R/shot-9R-22.html
+- **remote link** — https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIG  404 14  from BB_C_9R/shot-9R-03.html
+- **remote link** — https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIG  404 14  from BB_C_9R/shot-9R-26.html
+- **remote link** — https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIG  404 14  from BB_C_9R/shot-9R-01.html
+- **remote link** — https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIG  404 14  from BB_C_9R/shot-9R-21.html
+- **remote link** — https://drive.google.com/drive/folders/SC9-2.mp4  400 1695  from card/SC9-2.html
+- **remote link** — https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIG  404 14  from BB_C_1/shot-1-22.html
+- **remote link** — https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIG  404 14  from BB_C_14/shot-14-0.html
+- **remote link** — https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIG  404 14  from BB_C_9/shot-9-0.html
+- **remote link** — https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIG  404 14  from BB_C_7/shot-7-3.html
+- **remote link** — https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIG  404 14  from BB_C_7/shot-7-4.html
+- **remote link** — https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIG  404 14  from BB_C_1/shot-1-14.html
+- **remote link** — https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIG  404 14  from BB_C_9/shot-9-1.html
+- **remote link** — https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIG  404 14  from BB_C_1/shot-1-4.html
+- **remote link** — https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIG  404 14  from BB_C_1/shot-1-20.html
+- **remote link** — https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIG  404 14  from BB_C_1/shot-1-21.html
+- **remote link** — https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIG  404 14  from BB_C_1/shot-1-23.html
+- **remote link** — https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIG  404 14  from BB_C_1/shot-1-5.html
+- **remote link** — https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIG  404 14  from BB_C_1/shot-1-24.html
+- **remote link** — https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIG  404 14  from card/SC3-1.html
+- **remote link** — https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIG  404 14  from BB_C_9/shot-9-2.html
+- **remote link** — https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIG  404 14  from BB_C_9/shot-9-1.html
+- **remote link** — https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIG  404 14  from BB_C_1/shot-1-17.html
+- **remote link** — https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIG  404 14  from BB_C_1/shot-1-6.html
+- **remote link** — https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIG  404 14  from BB_C_7/shot-7-5.html
+- **remote link** — https://drive.google.com/file/d/1HkTXJx_yDQ2k3grS7m7rI3gzeV7Ixztr/SC9-  404 3042  from card/SC9-3.html
+- **remote link** — https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIG  404 14  from BB_C_7/shot-7-6.html
+- **remote link** — https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIG  404 14  from BB_C_7/shot-7-2.html
+- **remote link** — https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIG  404 14  from BB_C_1/shot-1-19.html
+- **remote link** — https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIG  404 14  from BB_C_1/shot-1-10.html
+- **remote link** — https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIG  404 14  from BB_C_19/shot-19-5.html
+- **remote link** — https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIG  404 14  from BB_C_19/shot-19-6.html
+- **remote link** — https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIG  404 14  from BB_C_1/shot-1-15.html
+- **remote link** — https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIG  404 14  from BB_C_0/shot-0-0.html
+- **remote link** — https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIG  404 14  from BB_C_9/shot-9-3.html
+- **remote link** — https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIG  404 14  from BB_C_15/shot-15-7.html
+- **remote link** — https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIG  404 14  from BB_C_1/shot-1-18.html
+- **remote link** — https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIG  404 14  from BB_C_1/shot-1-7.html
+- **remote link** — https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIG  404 14  from BB_C_2/shot-2-1.html
+- **remote link** — https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIG  404 14  from BB_C_14/shot-14-8.html
+- **remote link** — https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIG  404 14  from BB_C_19/shot-19-9.html
+- **remote link** — https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIG  404 14  from BB_C_19/shot-19-7.html
+- **remote link** — https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIG  404 14  from BB_C_1/shot-1-16.html
+- **remote link** — https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIG  404 14  from card/SC0-2.html
+- **remote link** — https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIG  404 14  from BB_C_1/shot-1-3.html
+- **remote link** — https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIG  404 14  from BB_C_19/shot-19-8.html
+- **remote link** — https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIG  404 14  from BB_C_1/shot-1-2.html
+- **remote link** — https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIG  404 14  from BB_C_1/shot-1-1.html
+- **remote link** — https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIG  404 14  from BB_C_1/shot-1-9.html
+- **remote link** — https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIG  404 14  from BB_C_14/shot-14-1.html
+- **remote link** — https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIG  404 14  from BB_C_1/shot-1-11.html
+- **remote link** — https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIG  404 14  from BB_C_7/shot-7-1.html
+- **remote link** — https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIG  404 14  from BB_C_1/shot-1-8.html
+- **remote link** — https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIG  404 14  from BB_C_1/shot-1-12.html
+- **remote link** — https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIG  404 14  from BB_C_1/shot-1-13.html
+- **remote link** — https://drive.google.com/drive/folders/SC5-7.mp4  400 1695  from card/SC5-7.html
+- **remote link** — https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIG  404 14  from BB_C_5/shot-5-0.html
+- **original** — 9R-1-VORTEX-DOWN-v1.png  200 4973671
+- **original** — SC0-1.png  404 14
+- **original** — SC1-1.png  404 14
+- **original** — SC1-10.png  404 14
+- **original** — SC1-11.png  404 14
+- **original** — SC1-12.png  404 14
+- **original** — SC1-13.png  404 14
+- **original** — SC1-14.png  404 14
+- **original** — SC1-15.png  404 14
+- **original** — SC1-16.png  404 14
+- **original** — SC1-17.png  404 14
+- **original** — SC1-18.png  404 14
+- **original** — SC1-19.png  404 14
+- **original** — SC1-2.png  404 14
+- **original** — SC1-20.png  404 14
+- **original** — SC1-21.png  404 14
+- **original** — SC1-22.png  404 14
+- **original** — SC1-23.png  404 14
+- **original** — SC1-24.png  404 14
+- **original** — SC1-3.png  404 14
+- **original** — SC1-4.png  404 14
+- **original** — SC1-5.png  404 14
+- **original** — SC1-6.png  404 14
+- **original** — SC1-7.png  404 14
+- **original** — SC1-8.png  404 14
+- **original** — SC1-9.png  404 14
+- **original** — SC10-1.png  404 14
+- **original** — SC10-2.png  404 14
+- **original** — SC10-3.png  404 14
+- **original** — SC2-1.mp4  404 14
+- **original** — SC3-3.png  404 14
+- **original** — SC4-1.png  404 14
+- **original** — SC4-2.png  404 14
+- **original** — SC4-3.png  404 14
+- **original** — SC4-4.png  404 14
+- **original** — SC4-5.png  404 14
+- **original** — SC5-1.png  404 14
+- **original** — SC5-2.png  404 14
+- **original** — SC5-3.png  404 14
+- **original** — SC5-4.png  404 14
+- **original** — SC5-5.png  404 14
+- **original** — SC5-6.png  404 14
+- **original** — SC6-1.png  404 14
+- **original** — SC6-2.png  404 14
+- **original** — SC6-3.png  404 14
+- **original** — SC6-4.png  404 14
+- **original** — SC6-5.png  404 14
+- **original** — SC8-1.png  404 14
+- **original** — SC8-10.png  404 14
+- **original** — SC8-2.png  404 14
+- **original** — SC8-3.png  404 14
+- **original** — SC8-4.png  404 14
+- **original** — SC8-5.png  404 14
+- **original** — SC8-6.png  404 14
+- **original** — SC8-7.png  404 14
+- **original** — SC8-8.png  404 14
+- **original** — SC8-9.png  404 14
+- **original** — SC9-1.png  404 14
+
+## 2026-09-08 09:28 — v294 — cached run
+
+468 pages, 496 remote targets, 348 originals.
+
+- live version v294 matches catalog.json
+- published weight 92.0 MB of the 1024 MB Pages ceiling, 9%
+- 348 originals in originals.json, 1658.3 MB
+- 140 rows still in drive_links.json, kept as a fallback
+
+**FAILED, 143:**
+
+- **local path missing** — BB_C_9R/shot-9R-31.html -> ../mid/KEY-FALL-1.jpg
+- **local path missing** — BB_C_9R/shot-9R-41.html -> ../mid/FILMSTRIP-PLATE.jpg
+- **local path missing** — BB_C_9R/shot-9R-33.html -> ../mid/KEY-FALL-3.jpg
+- **local path missing** — BB_C_9R/shot-9R-25.html -> ../mid/KEY-RELEASE.jpg
+- **local path missing** — BB_C_9R/shot-9R-32.html -> ../mid/KEY-FALL-2.jpg
+- **local path missing** — BB_C_9R/shot-9R-4.html -> ../mid/FILMSTRIP.jpg
+- **local path missing** — BB_C_12/shot-12-0.html -> ../BB_C_12/SC7-1.png
+- **local path missing** — card/11-0-A-v1.html -> ../https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/reference/voice/SYNTESISED_BRAIN_NEW_THEORY.wav
+- **local path missing** — card/11-0-A-v1.html -> ../https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/reference/voice/SYNTESISED_BRAIN_NEW_THEORY.wav
+- **local path missing** — card/12-0-A-v1.html -> ../https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/reference/voice/THE_LIMIT_IS_A_SETTING_NOT_A_WALL.wav
+- **local path missing** — card/12-0-A-v1.html -> ../https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/reference/voice/THE_LIMIT_IS_A_SETTING_NOT_A_WALL.wav
+- **local path missing** — card/10-0-A-v2.html -> ../https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/reference/voice/SYNTESISED_MANAN_OLD_THEORY.wav
+- **local path missing** — card/10-0-A-v2.html -> ../https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/reference/voice/SYNTESISED_MANAN_OLD_THEORY.wav
+- **local path missing** — card/16-1-MOCKUP-v1.html -> ../clips/in-front-of-door-loop.mp4
+- **local path missing** — card/SC7-1.html -> ../BB_C_12/SC7-1.png
+- **local path missing** — card/KEY_CATCH_1_00_00_04_19.html -> ../clips/key-catch-loop.mp4
+- **local path missing** — card/KEY_CATCH_1_00_00_04_19.html -> ../clips/key-catch-2-loop.mp4
+- **local path missing** — card/SC3-2.html -> ../BB_C_5/ref/SC3-2.jpg
+- **local path missing** — BB_C_15/shot-15-92.html -> ../mid/KEY-RELEASE.jpg
+- **local path missing** — BB_C_15/shot-15-95.html -> ../mid/KEY-FALL-3.jpg
+- **local path missing** — BB_C_15/shot-15-93.html -> ../mid/KEY-FALL-1.jpg
+- **local path missing** — BB_C_15/shot-15-94.html -> ../mid/KEY-FALL-2.jpg
+- **local path missing** — BB_C_5/shot-5-0.html -> ../BB_C_5/ref/SC3-2.jpg
+- **remote link** — https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIG  404 14  from BB_C_9R/shot-9R-24.html
+- **remote link** — https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIG  404 14  from BB_C_9R/shot-9R-02.html
+- **remote link** — https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIG  404 14  from BB_C_9R/shot-9R-04.html
+- **remote link** — https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIG  404 14  from BB_C_9R/shot-9R-27.html
+- **remote link** — https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIG  404 14  from BB_C_9R/shot-9R-23.html
+- **remote link** — https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIG  404 14  from BB_C_9R/shot-9R-22.html
+- **remote link** — https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIG  404 14  from BB_C_9R/shot-9R-03.html
+- **remote link** — https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIG  404 14  from BB_C_9R/shot-9R-26.html
+- **remote link** — https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIG  404 14  from BB_C_9R/shot-9R-01.html
+- **remote link** — https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIG  404 14  from BB_C_9R/shot-9R-21.html
+- **remote link** — https://drive.google.com/drive/folders/SC9-2.mp4  400 1695  from card/SC9-2.html
+- **remote link** — https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIG  404 14  from BB_C_1/shot-1-22.html
+- **remote link** — https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIG  404 14  from BB_C_14/shot-14-0.html
+- **remote link** — https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIG  404 14  from BB_C_9/shot-9-0.html
+- **remote link** — https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIG  404 14  from BB_C_7/shot-7-3.html
+- **remote link** — https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIG  404 14  from BB_C_7/shot-7-4.html
+- **remote link** — https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIG  404 14  from BB_C_1/shot-1-14.html
+- **remote link** — https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIG  404 14  from BB_C_9/shot-9-1.html
+- **remote link** — https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIG  404 14  from BB_C_1/shot-1-4.html
+- **remote link** — https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIG  404 14  from BB_C_1/shot-1-20.html
+- **remote link** — https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIG  404 14  from BB_C_1/shot-1-21.html
+- **remote link** — https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIG  404 14  from BB_C_1/shot-1-23.html
+- **remote link** — https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIG  404 14  from BB_C_1/shot-1-5.html
+- **remote link** — https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIG  404 14  from BB_C_1/shot-1-24.html
+- **remote link** — https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIG  404 14  from card/SC3-1.html
+- **remote link** — https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIG  404 14  from BB_C_9/shot-9-2.html
+- **remote link** — https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIG  404 14  from BB_C_9/shot-9-1.html
+- **remote link** — https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIG  404 14  from BB_C_1/shot-1-17.html
+- **remote link** — https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIG  404 14  from BB_C_1/shot-1-6.html
+- **remote link** — https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIG  404 14  from BB_C_7/shot-7-5.html
+- **remote link** — https://drive.google.com/file/d/1HkTXJx_yDQ2k3grS7m7rI3gzeV7Ixztr/SC9-  404 3042  from card/SC9-3.html
+- **remote link** — https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIG  404 14  from BB_C_7/shot-7-6.html
+- **remote link** — https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIG  404 14  from BB_C_7/shot-7-2.html
+- **remote link** — https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIG  404 14  from BB_C_1/shot-1-19.html
+- **remote link** — https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIG  404 14  from BB_C_1/shot-1-10.html
+- **remote link** — https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIG  404 14  from BB_C_19/shot-19-5.html
+- **remote link** — https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIG  404 14  from BB_C_19/shot-19-6.html
+- **remote link** — https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIG  404 14  from BB_C_1/shot-1-15.html
+- **remote link** — https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIG  404 14  from BB_C_0/shot-0-0.html
+- **remote link** — https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIG  404 14  from BB_C_9/shot-9-3.html
+- **remote link** — https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIG  404 14  from BB_C_15/shot-15-7.html
+- **remote link** — https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIG  404 14  from BB_C_1/shot-1-18.html
+- **remote link** — https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIG  404 14  from BB_C_1/shot-1-7.html
+- **remote link** — https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIG  404 14  from BB_C_2/shot-2-1.html
+- **remote link** — https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIG  404 14  from BB_C_14/shot-14-8.html
+- **remote link** — https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIG  404 14  from BB_C_19/shot-19-9.html
+- **remote link** — https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIG  404 14  from BB_C_19/shot-19-7.html
+- **remote link** — https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIG  404 14  from BB_C_1/shot-1-16.html
+- **remote link** — https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIG  404 14  from card/SC0-2.html
+- **remote link** — https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIG  404 14  from BB_C_1/shot-1-3.html
+- **remote link** — https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIG  404 14  from BB_C_19/shot-19-8.html
+- **remote link** — https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIG  404 14  from BB_C_1/shot-1-2.html
+- **remote link** — https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIG  404 14  from BB_C_1/shot-1-1.html
+- **remote link** — https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIG  404 14  from BB_C_1/shot-1-9.html
+- **remote link** — https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIG  404 14  from BB_C_14/shot-14-1.html
+- **remote link** — https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIG  404 14  from BB_C_1/shot-1-11.html
+- **remote link** — https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIG  404 14  from BB_C_7/shot-7-1.html
+- **remote link** — https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIG  404 14  from BB_C_1/shot-1-8.html
+- **remote link** — https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIG  404 14  from BB_C_1/shot-1-12.html
+- **remote link** — https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIG  404 14  from BB_C_1/shot-1-13.html
+- **remote link** — https://drive.google.com/drive/folders/SC5-7.mp4  400 1695  from card/SC5-7.html
+- **remote link** — https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIG  404 14  from BB_C_5/shot-5-0.html
+- **original** — 9R-1-VORTEX-DOWN-v1.png  200 4973671
+- **original** — SC0-1.png  404 14
+- **original** — SC1-1.png  404 14
+- **original** — SC1-10.png  404 14
+- **original** — SC1-11.png  404 14
+- **original** — SC1-12.png  404 14
+- **original** — SC1-13.png  404 14
+- **original** — SC1-14.png  404 14
+- **original** — SC1-15.png  404 14
+- **original** — SC1-16.png  404 14
+- **original** — SC1-17.png  404 14
+- **original** — SC1-18.png  404 14
+- **original** — SC1-19.png  404 14
+- **original** — SC1-2.png  404 14
+- **original** — SC1-20.png  404 14
+- **original** — SC1-21.png  404 14
+- **original** — SC1-22.png  404 14
+- **original** — SC1-23.png  404 14
+- **original** — SC1-24.png  404 14
+- **original** — SC1-3.png  404 14
+- **original** — SC1-4.png  404 14
+- **original** — SC1-5.png  404 14
+- **original** — SC1-6.png  404 14
+- **original** — SC1-7.png  404 14
+- **original** — SC1-8.png  404 14
+- **original** — SC1-9.png  404 14
+- **original** — SC10-1.png  404 14
+- **original** — SC10-2.png  404 14
+- **original** — SC10-3.png  404 14
+- **original** — SC2-1.mp4  404 14
+- **original** — SC3-3.png  404 14
+- **original** — SC4-1.png  404 14
+- **original** — SC4-2.png  404 14
+- **original** — SC4-3.png  404 14
+- **original** — SC4-4.png  404 14
+- **original** — SC4-5.png  404 14
+- **original** — SC5-1.png  404 14
+- **original** — SC5-2.png  404 14
+- **original** — SC5-3.png  404 14
+- **original** — SC5-4.png  404 14
+- **original** — SC5-5.png  404 14
+- **original** — SC5-6.png  404 14
+- **original** — SC6-1.png  404 14
+- **original** — SC6-2.png  404 14
+- **original** — SC6-3.png  404 14
+- **original** — SC6-4.png  404 14
+- **original** — SC6-5.png  404 14
+- **original** — SC8-1.png  404 14
+- **original** — SC8-10.png  404 14
+- **original** — SC8-2.png  404 14
+- **original** — SC8-3.png  404 14
+- **original** — SC8-4.png  404 14
+- **original** — SC8-5.png  404 14
+- **original** — SC8-6.png  404 14
+- **original** — SC8-7.png  404 14
+- **original** — SC8-8.png  404 14
+- **original** — SC8-9.png  404 14
+- **original** — SC9-1.png  404 14
+
+## 2026-09-08 09:31 — v295 — cached run
+
+468 pages, 494 remote targets, 348 originals.
+
+- published weight 92.0 MB of the 1024 MB Pages ceiling, 9%
+- 348 originals in originals.json, 1658.3 MB
+- 140 rows still in drive_links.json, kept as a fallback
+
+**FAILED, 27:**
+
+- **local path missing** — BB_C_9R/shot-9R-31.html -> ../mid/KEY-FALL-1.jpg
+- **local path missing** — BB_C_9R/shot-9R-41.html -> ../mid/FILMSTRIP-PLATE.jpg
+- **local path missing** — BB_C_9R/shot-9R-33.html -> ../mid/KEY-FALL-3.jpg
+- **local path missing** — BB_C_9R/shot-9R-25.html -> ../mid/KEY-RELEASE.jpg
+- **local path missing** — BB_C_9R/shot-9R-32.html -> ../mid/KEY-FALL-2.jpg
+- **local path missing** — BB_C_9R/shot-9R-4.html -> ../mid/FILMSTRIP.jpg
+- **local path missing** — BB_C_12/shot-12-0.html -> ../BB_C_12/SC7-1.png
+- **local path missing** — card/11-0-A-v1.html -> ../https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/reference/voice/SYNTESISED_BRAIN_NEW_THEORY.wav
+- **local path missing** — card/11-0-A-v1.html -> ../https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/reference/voice/SYNTESISED_BRAIN_NEW_THEORY.wav
+- **local path missing** — card/12-0-A-v1.html -> ../https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/reference/voice/THE_LIMIT_IS_A_SETTING_NOT_A_WALL.wav
+- **local path missing** — card/12-0-A-v1.html -> ../https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/reference/voice/THE_LIMIT_IS_A_SETTING_NOT_A_WALL.wav
+- **local path missing** — card/10-0-A-v2.html -> ../https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/reference/voice/SYNTESISED_MANAN_OLD_THEORY.wav
+- **local path missing** — card/10-0-A-v2.html -> ../https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/reference/voice/SYNTESISED_MANAN_OLD_THEORY.wav
+- **local path missing** — card/16-1-MOCKUP-v1.html -> ../clips/in-front-of-door-loop.mp4
+- **local path missing** — card/SC7-1.html -> ../BB_C_12/SC7-1.png
+- **local path missing** — card/KEY_CATCH_1_00_00_04_19.html -> ../clips/key-catch-loop.mp4
+- **local path missing** — card/KEY_CATCH_1_00_00_04_19.html -> ../clips/key-catch-2-loop.mp4
+- **local path missing** — card/SC3-2.html -> ../BB_C_5/ref/SC3-2.jpg
+- **local path missing** — BB_C_15/shot-15-92.html -> ../mid/KEY-RELEASE.jpg
+- **local path missing** — BB_C_15/shot-15-95.html -> ../mid/KEY-FALL-3.jpg
+- **local path missing** — BB_C_15/shot-15-93.html -> ../mid/KEY-FALL-1.jpg
+- **local path missing** — BB_C_15/shot-15-94.html -> ../mid/KEY-FALL-2.jpg
+- **local path missing** — BB_C_5/shot-5-0.html -> ../BB_C_5/ref/SC3-2.jpg
+- **remote link** — https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIG  404 14  from card/SC3-1.html
+- **remote link** — https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIG  404 14  from card/SC0-2.html
+- **live version** — catalog says v295, live serves v294. The push has not published yet, or it failed.
+- **original** — 9R-1-VORTEX-DOWN-v1.png  200 4973671
+
+## 2026-09-08 09:31 — v295 — cached run
+
+468 pages, 494 remote targets, 348 originals.
+
+- published weight 92.0 MB of the 1024 MB Pages ceiling, 9%
+- 348 originals in originals.json, 1658.3 MB
+- 140 rows still in drive_links.json, kept as a fallback
+
+**FAILED, 27:**
+
+- **local path missing** — BB_C_9R/shot-9R-31.html -> ../mid/KEY-FALL-1.jpg
+- **local path missing** — BB_C_9R/shot-9R-41.html -> ../mid/FILMSTRIP-PLATE.jpg
+- **local path missing** — BB_C_9R/shot-9R-33.html -> ../mid/KEY-FALL-3.jpg
+- **local path missing** — BB_C_9R/shot-9R-25.html -> ../mid/KEY-RELEASE.jpg
+- **local path missing** — BB_C_9R/shot-9R-32.html -> ../mid/KEY-FALL-2.jpg
+- **local path missing** — BB_C_9R/shot-9R-4.html -> ../mid/FILMSTRIP.jpg
+- **local path missing** — BB_C_12/shot-12-0.html -> ../BB_C_12/SC7-1.png
+- **local path missing** — card/11-0-A-v1.html -> ../https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/reference/voice/SYNTESISED_BRAIN_NEW_THEORY.wav
+- **local path missing** — card/11-0-A-v1.html -> ../https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/reference/voice/SYNTESISED_BRAIN_NEW_THEORY.wav
+- **local path missing** — card/12-0-A-v1.html -> ../https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/reference/voice/THE_LIMIT_IS_A_SETTING_NOT_A_WALL.wav
+- **local path missing** — card/12-0-A-v1.html -> ../https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/reference/voice/THE_LIMIT_IS_A_SETTING_NOT_A_WALL.wav
+- **local path missing** — card/10-0-A-v2.html -> ../https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/reference/voice/SYNTESISED_MANAN_OLD_THEORY.wav
+- **local path missing** — card/10-0-A-v2.html -> ../https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/reference/voice/SYNTESISED_MANAN_OLD_THEORY.wav
+- **local path missing** — card/16-1-MOCKUP-v1.html -> ../clips/in-front-of-door-loop.mp4
+- **local path missing** — card/SC7-1.html -> ../BB_C_12/SC7-1.png
+- **local path missing** — card/KEY_CATCH_1_00_00_04_19.html -> ../clips/key-catch-loop.mp4
+- **local path missing** — card/KEY_CATCH_1_00_00_04_19.html -> ../clips/key-catch-2-loop.mp4
+- **local path missing** — card/SC3-2.html -> ../BB_C_5/ref/SC3-2.jpg
+- **local path missing** — BB_C_15/shot-15-92.html -> ../mid/KEY-RELEASE.jpg
+- **local path missing** — BB_C_15/shot-15-95.html -> ../mid/KEY-FALL-3.jpg
+- **local path missing** — BB_C_15/shot-15-93.html -> ../mid/KEY-FALL-1.jpg
+- **local path missing** — BB_C_15/shot-15-94.html -> ../mid/KEY-FALL-2.jpg
+- **local path missing** — BB_C_5/shot-5-0.html -> ../BB_C_5/ref/SC3-2.jpg
+- **remote link** — https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIG  404 14  from card/SC3-1.html
+- **remote link** — https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIG  404 14  from card/SC0-2.html
+- **live version** — catalog says v295, live serves v294. The push has not published yet, or it failed.
+- **original** — 9R-1-VORTEX-DOWN-v1.png  200 4973671
+
+## 2026-09-08 09:31 — v295 — cached run
+
+468 pages, 494 remote targets, 348 originals.
+
+- published weight 92.0 MB of the 1024 MB Pages ceiling, 9%
+- 348 originals in originals.json, 1658.3 MB
+- 140 rows still in drive_links.json, kept as a fallback
+
+**FAILED, 27:**
+
+- **local path missing** — BB_C_9R/shot-9R-31.html -> ../mid/KEY-FALL-1.jpg
+- **local path missing** — BB_C_9R/shot-9R-41.html -> ../mid/FILMSTRIP-PLATE.jpg
+- **local path missing** — BB_C_9R/shot-9R-33.html -> ../mid/KEY-FALL-3.jpg
+- **local path missing** — BB_C_9R/shot-9R-25.html -> ../mid/KEY-RELEASE.jpg
+- **local path missing** — BB_C_9R/shot-9R-32.html -> ../mid/KEY-FALL-2.jpg
+- **local path missing** — BB_C_9R/shot-9R-4.html -> ../mid/FILMSTRIP.jpg
+- **local path missing** — BB_C_12/shot-12-0.html -> ../BB_C_12/SC7-1.png
+- **local path missing** — card/11-0-A-v1.html -> ../https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/reference/voice/SYNTESISED_BRAIN_NEW_THEORY.wav
+- **local path missing** — card/11-0-A-v1.html -> ../https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/reference/voice/SYNTESISED_BRAIN_NEW_THEORY.wav
+- **local path missing** — card/12-0-A-v1.html -> ../https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/reference/voice/THE_LIMIT_IS_A_SETTING_NOT_A_WALL.wav
+- **local path missing** — card/12-0-A-v1.html -> ../https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/reference/voice/THE_LIMIT_IS_A_SETTING_NOT_A_WALL.wav
+- **local path missing** — card/10-0-A-v2.html -> ../https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/reference/voice/SYNTESISED_MANAN_OLD_THEORY.wav
+- **local path missing** — card/10-0-A-v2.html -> ../https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/reference/voice/SYNTESISED_MANAN_OLD_THEORY.wav
+- **local path missing** — card/16-1-MOCKUP-v1.html -> ../clips/in-front-of-door-loop.mp4
+- **local path missing** — card/SC7-1.html -> ../BB_C_12/SC7-1.png
+- **local path missing** — card/KEY_CATCH_1_00_00_04_19.html -> ../clips/key-catch-loop.mp4
+- **local path missing** — card/KEY_CATCH_1_00_00_04_19.html -> ../clips/key-catch-2-loop.mp4
+- **local path missing** — card/SC3-2.html -> ../BB_C_5/ref/SC3-2.jpg
+- **local path missing** — BB_C_15/shot-15-92.html -> ../mid/KEY-RELEASE.jpg
+- **local path missing** — BB_C_15/shot-15-95.html -> ../mid/KEY-FALL-3.jpg
+- **local path missing** — BB_C_15/shot-15-93.html -> ../mid/KEY-FALL-1.jpg
+- **local path missing** — BB_C_15/shot-15-94.html -> ../mid/KEY-FALL-2.jpg
+- **local path missing** — BB_C_5/shot-5-0.html -> ../BB_C_5/ref/SC3-2.jpg
+- **remote link** — https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIG  404 14  from card/SC3-1.html
+- **remote link** — https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIG  404 14  from card/SC0-2.html
+- **live version** — catalog says v295, live serves v294. The push has not published yet, or it failed.
+- **original** — 9R-1-VORTEX-DOWN-v1.png  200 4973671
+
+## 2026-09-08 09:32 — v295 — cached run
+
+458 pages, 488 remote targets, 348 originals.
+
+- published weight 91.6 MB of the 1024 MB Pages ceiling, 9%
+- 348 originals in originals.json, 1658.3 MB
+- 140 rows still in drive_links.json, kept as a fallback
+
+**FAILED, 17:**
+
+- **local path missing** — BB_C_12/shot-12-0.html -> ../BB_C_12/SC7-1.png
+- **local path missing** — card/11-0-A-v1.html -> ../https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/reference/voice/SYNTESISED_BRAIN_NEW_THEORY.wav
+- **local path missing** — card/11-0-A-v1.html -> ../https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/reference/voice/SYNTESISED_BRAIN_NEW_THEORY.wav
+- **local path missing** — card/12-0-A-v1.html -> ../https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/reference/voice/THE_LIMIT_IS_A_SETTING_NOT_A_WALL.wav
+- **local path missing** — card/12-0-A-v1.html -> ../https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/reference/voice/THE_LIMIT_IS_A_SETTING_NOT_A_WALL.wav
+- **local path missing** — card/10-0-A-v2.html -> ../https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/reference/voice/SYNTESISED_MANAN_OLD_THEORY.wav
+- **local path missing** — card/10-0-A-v2.html -> ../https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/reference/voice/SYNTESISED_MANAN_OLD_THEORY.wav
+- **local path missing** — card/16-1-MOCKUP-v1.html -> ../clips/in-front-of-door-loop.mp4
+- **local path missing** — card/SC7-1.html -> ../BB_C_12/SC7-1.png
+- **local path missing** — card/KEY_CATCH_1_00_00_04_19.html -> ../clips/key-catch-loop.mp4
+- **local path missing** — card/KEY_CATCH_1_00_00_04_19.html -> ../clips/key-catch-2-loop.mp4
+- **local path missing** — card/SC3-2.html -> ../BB_C_5/ref/SC3-2.jpg
+- **local path missing** — BB_C_5/shot-5-0.html -> ../BB_C_5/ref/SC3-2.jpg
+- **remote link** — https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIG  404 14  from card/SC3-1.html
+- **remote link** — https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIG  404 14  from card/SC0-2.html
+- **live version** — catalog says v295, live serves v294. The push has not published yet, or it failed.
+- **original** — 9R-1-VORTEX-DOWN-v1.png  200 4973671
+
+## 2026-09-08 09:32 — v295 — cached run
+
+458 pages, 488 remote targets, 348 originals.
+
+- published weight 91.6 MB of the 1024 MB Pages ceiling, 9%
+- 348 originals in originals.json, 1658.3 MB
+- 140 rows still in drive_links.json, kept as a fallback
+
+**FAILED, 17:**
+
+- **local path missing** — BB_C_12/shot-12-0.html -> ../BB_C_12/SC7-1.png
+- **local path missing** — card/11-0-A-v1.html -> ../https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/reference/voice/SYNTESISED_BRAIN_NEW_THEORY.wav
+- **local path missing** — card/11-0-A-v1.html -> ../https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/reference/voice/SYNTESISED_BRAIN_NEW_THEORY.wav
+- **local path missing** — card/12-0-A-v1.html -> ../https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/reference/voice/THE_LIMIT_IS_A_SETTING_NOT_A_WALL.wav
+- **local path missing** — card/12-0-A-v1.html -> ../https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/reference/voice/THE_LIMIT_IS_A_SETTING_NOT_A_WALL.wav
+- **local path missing** — card/10-0-A-v2.html -> ../https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/reference/voice/SYNTESISED_MANAN_OLD_THEORY.wav
+- **local path missing** — card/10-0-A-v2.html -> ../https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/reference/voice/SYNTESISED_MANAN_OLD_THEORY.wav
+- **local path missing** — card/16-1-MOCKUP-v1.html -> ../clips/in-front-of-door-loop.mp4
+- **local path missing** — card/SC7-1.html -> ../BB_C_12/SC7-1.png
+- **local path missing** — card/KEY_CATCH_1_00_00_04_19.html -> ../clips/key-catch-loop.mp4
+- **local path missing** — card/KEY_CATCH_1_00_00_04_19.html -> ../clips/key-catch-2-loop.mp4
+- **local path missing** — card/SC3-2.html -> ../BB_C_5/ref/SC3-2.jpg
+- **local path missing** — BB_C_5/shot-5-0.html -> ../BB_C_5/ref/SC3-2.jpg
+- **remote link** — https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIG  404 14  from card/SC3-1.html
+- **remote link** — https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIG  404 14  from card/SC0-2.html
+- **live version** — catalog says v295, live serves v294. The push has not published yet, or it failed.
+- **original** — 9R-1-VORTEX-DOWN-v1.png  200 4973671
+
+## 2026-09-08 09:32 — v295 — cached run
+
+458 pages, 488 remote targets, 348 originals.
+
+- published weight 91.6 MB of the 1024 MB Pages ceiling, 9%
+- 348 originals in originals.json, 1658.3 MB
+- 140 rows still in drive_links.json, kept as a fallback
+
+**FAILED, 17:**
+
+- **local path missing** — BB_C_12/shot-12-0.html -> ../BB_C_12/SC7-1.png
+- **local path missing** — card/11-0-A-v1.html -> ../https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/reference/voice/SYNTESISED_BRAIN_NEW_THEORY.wav
+- **local path missing** — card/11-0-A-v1.html -> ../https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/reference/voice/SYNTESISED_BRAIN_NEW_THEORY.wav
+- **local path missing** — card/12-0-A-v1.html -> ../https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/reference/voice/THE_LIMIT_IS_A_SETTING_NOT_A_WALL.wav
+- **local path missing** — card/12-0-A-v1.html -> ../https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/reference/voice/THE_LIMIT_IS_A_SETTING_NOT_A_WALL.wav
+- **local path missing** — card/10-0-A-v2.html -> ../https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/reference/voice/SYNTESISED_MANAN_OLD_THEORY.wav
+- **local path missing** — card/10-0-A-v2.html -> ../https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/reference/voice/SYNTESISED_MANAN_OLD_THEORY.wav
+- **local path missing** — card/16-1-MOCKUP-v1.html -> ../clips/in-front-of-door-loop.mp4
+- **local path missing** — card/SC7-1.html -> ../BB_C_12/SC7-1.png
+- **local path missing** — card/KEY_CATCH_1_00_00_04_19.html -> ../clips/key-catch-loop.mp4
+- **local path missing** — card/KEY_CATCH_1_00_00_04_19.html -> ../clips/key-catch-2-loop.mp4
+- **local path missing** — card/SC3-2.html -> ../BB_C_5/ref/SC3-2.jpg
+- **local path missing** — BB_C_5/shot-5-0.html -> ../BB_C_5/ref/SC3-2.jpg
+- **remote link** — https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIG  404 14  from card/SC3-1.html
+- **remote link** — https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIG  404 14  from card/SC0-2.html
+- **live version** — catalog says v295, live serves v294. The push has not published yet, or it failed.
+- **original** — 9R-1-VORTEX-DOWN-v1.png  200 4973671
+
+## 2026-09-08 09:32 — v295 — cached run
+
+458 pages, 488 remote targets, 348 originals.
+
+- published weight 91.6 MB of the 1024 MB Pages ceiling, 9%
+- 348 originals in originals.json, 1658.3 MB
+- 140 rows still in drive_links.json, kept as a fallback
+
+**FAILED, 15:**
+
+- **local path missing** — card/11-0-A-v1.html -> ../https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/reference/voice/SYNTESISED_BRAIN_NEW_THEORY.wav
+- **local path missing** — card/11-0-A-v1.html -> ../https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/reference/voice/SYNTESISED_BRAIN_NEW_THEORY.wav
+- **local path missing** — card/12-0-A-v1.html -> ../https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/reference/voice/THE_LIMIT_IS_A_SETTING_NOT_A_WALL.wav
+- **local path missing** — card/12-0-A-v1.html -> ../https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/reference/voice/THE_LIMIT_IS_A_SETTING_NOT_A_WALL.wav
+- **local path missing** — card/10-0-A-v2.html -> ../https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/reference/voice/SYNTESISED_MANAN_OLD_THEORY.wav
+- **local path missing** — card/10-0-A-v2.html -> ../https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/reference/voice/SYNTESISED_MANAN_OLD_THEORY.wav
+- **local path missing** — card/16-1-MOCKUP-v1.html -> ../clips/in-front-of-door-loop.mp4
+- **local path missing** — card/KEY_CATCH_1_00_00_04_19.html -> ../clips/key-catch-loop.mp4
+- **local path missing** — card/KEY_CATCH_1_00_00_04_19.html -> ../clips/key-catch-2-loop.mp4
+- **local path missing** — card/SC3-2.html -> ../BB_C_5/ref/SC3-2.jpg
+- **local path missing** — BB_C_5/shot-5-0.html -> ../BB_C_5/ref/SC3-2.jpg
+- **remote link** — https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIG  404 14  from card/SC3-1.html
+- **remote link** — https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIG  404 14  from card/SC0-2.html
+- **live version** — catalog says v295, live serves v294. The push has not published yet, or it failed.
+- **original** — 9R-1-VORTEX-DOWN-v1.png  200 4973671
+
+## 2026-09-08 09:32 — v295 — cached run
+
+458 pages, 488 remote targets, 348 originals.
+
+- published weight 91.6 MB of the 1024 MB Pages ceiling, 9%
+- 348 originals in originals.json, 1658.3 MB
+- 140 rows still in drive_links.json, kept as a fallback
+
+**FAILED, 15:**
+
+- **local path missing** — card/11-0-A-v1.html -> ../https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/reference/voice/SYNTESISED_BRAIN_NEW_THEORY.wav
+- **local path missing** — card/11-0-A-v1.html -> ../https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/reference/voice/SYNTESISED_BRAIN_NEW_THEORY.wav
+- **local path missing** — card/12-0-A-v1.html -> ../https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/reference/voice/THE_LIMIT_IS_A_SETTING_NOT_A_WALL.wav
+- **local path missing** — card/12-0-A-v1.html -> ../https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/reference/voice/THE_LIMIT_IS_A_SETTING_NOT_A_WALL.wav
+- **local path missing** — card/10-0-A-v2.html -> ../https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/reference/voice/SYNTESISED_MANAN_OLD_THEORY.wav
+- **local path missing** — card/10-0-A-v2.html -> ../https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/reference/voice/SYNTESISED_MANAN_OLD_THEORY.wav
+- **local path missing** — card/16-1-MOCKUP-v1.html -> ../clips/in-front-of-door-loop.mp4
+- **local path missing** — card/KEY_CATCH_1_00_00_04_19.html -> ../clips/key-catch-loop.mp4
+- **local path missing** — card/KEY_CATCH_1_00_00_04_19.html -> ../clips/key-catch-2-loop.mp4
+- **local path missing** — card/SC3-2.html -> ../BB_C_5/ref/SC3-2.jpg
+- **local path missing** — BB_C_5/shot-5-0.html -> ../BB_C_5/ref/SC3-2.jpg
+- **remote link** — https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIG  404 14  from card/SC3-1.html
+- **remote link** — https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIG  404 14  from card/SC0-2.html
+- **live version** — catalog says v295, live serves v294. The push has not published yet, or it failed.
+- **original** — 9R-1-VORTEX-DOWN-v1.png  200 4973671
+
+## 2026-09-08 09:32 — v295 — cached run
+
+458 pages, 488 remote targets, 348 originals.
+
+- published weight 91.7 MB of the 1024 MB Pages ceiling, 9%
+- 348 originals in originals.json, 1658.3 MB
+- 140 rows still in drive_links.json, kept as a fallback
+
+**FAILED, 10:**
+
+- **local path missing** — card/11-0-A-v1.html -> ../https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/reference/voice/SYNTESISED_BRAIN_NEW_THEORY.wav
+- **local path missing** — card/11-0-A-v1.html -> ../https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/reference/voice/SYNTESISED_BRAIN_NEW_THEORY.wav
+- **local path missing** — card/12-0-A-v1.html -> ../https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/reference/voice/THE_LIMIT_IS_A_SETTING_NOT_A_WALL.wav
+- **local path missing** — card/12-0-A-v1.html -> ../https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/reference/voice/THE_LIMIT_IS_A_SETTING_NOT_A_WALL.wav
+- **local path missing** — card/10-0-A-v2.html -> ../https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/reference/voice/SYNTESISED_MANAN_OLD_THEORY.wav
+- **local path missing** — card/10-0-A-v2.html -> ../https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/reference/voice/SYNTESISED_MANAN_OLD_THEORY.wav
+- **remote link** — https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIG  404 14  from card/SC3-1.html
+- **remote link** — https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIG  404 14  from card/SC0-2.html
+- **live version** — catalog says v295, live serves v294. The push has not published yet, or it failed.
+- **original** — 9R-1-VORTEX-DOWN-v1.png  200 4973671
+
+## 2026-09-08 09:32 — v295 — cached run
+
+458 pages, 488 remote targets, 348 originals.
+
+- published weight 91.7 MB of the 1024 MB Pages ceiling, 9%
+- 348 originals in originals.json, 1658.3 MB
+- 140 rows still in drive_links.json, kept as a fallback
+
+**FAILED, 10:**
+
+- **local path missing** — card/11-0-A-v1.html -> ../https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/reference/voice/SYNTESISED_BRAIN_NEW_THEORY.wav
+- **local path missing** — card/11-0-A-v1.html -> ../https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/reference/voice/SYNTESISED_BRAIN_NEW_THEORY.wav
+- **local path missing** — card/12-0-A-v1.html -> ../https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/reference/voice/THE_LIMIT_IS_A_SETTING_NOT_A_WALL.wav
+- **local path missing** — card/12-0-A-v1.html -> ../https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/reference/voice/THE_LIMIT_IS_A_SETTING_NOT_A_WALL.wav
+- **local path missing** — card/10-0-A-v2.html -> ../https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/reference/voice/SYNTESISED_MANAN_OLD_THEORY.wav
+- **local path missing** — card/10-0-A-v2.html -> ../https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/reference/voice/SYNTESISED_MANAN_OLD_THEORY.wav
+- **remote link** — https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIG  404 14  from card/SC3-1.html
+- **remote link** — https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIG  404 14  from card/SC0-2.html
+- **live version** — catalog says v295, live serves v294. The push has not published yet, or it failed.
+- **original** — 9R-1-VORTEX-DOWN-v1.png  200 4973671
+
+## 2026-09-08 09:33 — v295 — cached run
+
+458 pages, 488 remote targets, 348 originals.
+
+- published weight 91.7 MB of the 1024 MB Pages ceiling, 9%
+- 348 originals in originals.json, 1658.3 MB
+- 140 rows still in drive_links.json, kept as a fallback
+
+**FAILED, 8:**
+
+- **local path missing** — card/11-0-A-v1.html -> ../https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/reference/voice/SYNTESISED_BRAIN_NEW_THEORY.wav
+- **local path missing** — card/11-0-A-v1.html -> ../https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/reference/voice/SYNTESISED_BRAIN_NEW_THEORY.wav
+- **local path missing** — card/12-0-A-v1.html -> ../https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/reference/voice/THE_LIMIT_IS_A_SETTING_NOT_A_WALL.wav
+- **local path missing** — card/12-0-A-v1.html -> ../https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/reference/voice/THE_LIMIT_IS_A_SETTING_NOT_A_WALL.wav
+- **local path missing** — card/10-0-A-v2.html -> ../https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/reference/voice/SYNTESISED_MANAN_OLD_THEORY.wav
+- **local path missing** — card/10-0-A-v2.html -> ../https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/reference/voice/SYNTESISED_MANAN_OLD_THEORY.wav
+- **live version** — catalog says v295, live serves v294. The push has not published yet, or it failed.
+- **original** — 9R-1-VORTEX-DOWN-v1.png  200 0
