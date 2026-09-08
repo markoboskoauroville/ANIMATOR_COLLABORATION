@@ -1631,41 +1631,19 @@
       "kind": "flow",
       "n": "3",
       "file": "flow/03-bike-in.jpg",
-      "title": "He tests it on the bicycle",
+      "title": "He tests it on himself",
       "status": "placeholder",
       "scenes": [
-        "3"
+        "3",
+        "4",
+        "5"
       ],
-      "note": "Curiosity becomes an experiment. He takes the bicycle out on the street and pushes at the limit himself, because a question you can ride is better than a question you can only read.",
+      "note": "He takes the question out on the road and then indoors onto the trainer, racing his own earlier ride on the laptop in front of him. There is no opponent and nobody watching: the only thing he is trying to beat is what his own body did an hour ago, which is the argument of the film before anyone states it. He pushes until he has nothing left, then stops and breathes.\n\nTHE WHOLE SCENE IS CARRIED BY THE EDIT AND THE MUSIC. NO DIALOGUE.",
       "flow_pos": 0
     },
     {
       "kind": "flow",
       "n": "4",
-      "file": "flow/04-the-wall.jpg",
-      "title": "He races himself",
-      "status": "placeholder",
-      "scenes": [
-        "4"
-      ],
-      "note": "Indoors, on the trainer, with his own earlier ride playing back on the laptop in front of him. He is racing HIMSELF. There is no opponent, no clock, nobody watching: the only thing he is trying to beat is what his own body did an hour ago, which is exactly the argument the film is about to make. He pushes until he collapses.",
-      "flow_pos": 0
-    },
-    {
-      "kind": "flow",
-      "n": "5",
-      "file": "flow/05-eyes-closed.jpg",
-      "title": "He closes his eyes",
-      "status": "placeholder",
-      "scenes": [
-        "5"
-      ],
-      "note": "He stops, breathes, relaxes. Out to white.",
-      "flow_pos": 0
-    },
-    {
-      "kind": "flow",
-      "n": "6",
       "file": "flow/06-the-house.jpg",
       "title": "The vortex, up",
       "status": "placeholder",
@@ -1677,7 +1655,7 @@
     },
     {
       "kind": "flow",
-      "n": "7",
+      "n": "5",
       "file": "flow/07-the-front-door.jpg",
       "title": "The house of the body, and the key door",
       "status": "placeholder",
@@ -1689,7 +1667,7 @@
     },
     {
       "kind": "flow",
-      "n": "8",
+      "n": "6",
       "file": "flow/09-brain-room.jpg",
       "title": "He meets Viveka, and the two theories",
       "status": "placeholder",
@@ -1701,7 +1679,7 @@
     },
     {
       "kind": "flow",
-      "n": "9",
+      "n": "7",
       "file": "flow/11-new-theory.jpg",
       "title": "The conclusion, and goodbye",
       "status": "placeholder",
@@ -1713,7 +1691,7 @@
     },
     {
       "kind": "flow",
-      "n": "10",
+      "n": "8",
       "file": "flow/12-conclusion.jpg",
       "title": "He falls, and then the key falls",
       "status": "placeholder",
@@ -1918,7 +1896,7 @@
       "kind": "keyframe",
       "shot": "3.5",
       "file": "BB_C_3/live/SHOT_PANA6223_00_00_14_00_G.jpg",
-      "status": "proposal",
+      "status": "superseded",
       "date": "2026-08-31",
       "slug": "EXT. — ON THE TRAINER, WIDE",
       "what": "Him on the trainer at home with the laptop in the room.",
@@ -1927,13 +1905,14 @@
       "dna": {
         "phase": "Phase 4 of 15, TESTING WHERE THE LIMIT IS.",
         "journey": "TESTS, before the threshold. He is learning the rules of his own body."
-      }
+      },
+      "note": "ANSWERED 8.9.2026 by the finished edits. These were stills standing in for footage; the road and the trainer are both cut now and the cuts are the scene."
     },
     {
       "kind": "keyframe",
       "shot": "3.6",
       "file": "BB_C_3/live/SHOT_PANA6227_00_00_06_00_G.jpg",
-      "status": "proposal",
+      "status": "superseded",
       "date": "2026-08-31",
       "slug": "EXT. — RACING",
       "what": "Closer, working, eyes on the screen.",
@@ -1942,13 +1921,14 @@
       "dna": {
         "phase": "Phase 4 of 15, TESTING WHERE THE LIMIT IS.",
         "journey": "TESTS, before the threshold. He is learning the rules of his own body."
-      }
+      },
+      "note": "ANSWERED 8.9.2026 by the finished edits. These were stills standing in for footage; the road and the trainer are both cut now and the cuts are the scene."
     },
     {
       "kind": "keyframe",
       "shot": "3.7",
       "file": "BB_C_3/live/SHOT_PANA6229_00_00_06_00_G.jpg",
-      "status": "proposal",
+      "status": "superseded",
       "date": "2026-08-31",
       "slug": "EXT. — PUSHING",
       "what": "Leaning into it, further in.",
@@ -1957,7 +1937,8 @@
       "dna": {
         "phase": "Phase 4 of 15, TESTING WHERE THE LIMIT IS.",
         "journey": "TESTS, before the threshold. He is learning the rules of his own body."
-      }
+      },
+      "note": "ANSWERED 8.9.2026 by the finished edits. These were stills standing in for footage; the road and the trainer are both cut now and the cuts are the scene."
     },
     {
       "kind": "keyframe",
@@ -1979,7 +1960,7 @@
       "kind": "keyframe",
       "shot": "2.3",
       "file": "BB_C_2/ref/V7_5_1_bike.jpg",
-      "status": "placeholder",
+      "status": "superseded",
       "date": "2026-08-31",
       "slug": "EXT. ROAD — CLOSER",
       "what": "Working, but not yet in trouble.",
@@ -1988,13 +1969,14 @@
       "dna": {
         "phase": "Phase 3 of 15, THE BICYCLE.",
         "journey": "REFUSAL, of a kind. He does not turn back, he argues. He tests the limit rather than obeying it."
-      }
+      },
+      "note": "ANSWERED 8.9.2026 by the finished edits. These were stills standing in for footage; the road and the trainer are both cut now and the cuts are the scene."
     },
     {
       "kind": "keyframe",
       "shot": "2.2",
       "file": "BB_C_2/ref/5_5_LIVE.jpg",
-      "status": "placeholder",
+      "status": "superseded",
       "date": "2026-08-31",
       "slug": "EXT. ROAD — FROM THE SHOOT",
       "what": "A frame from the day.",
@@ -2003,13 +1985,14 @@
       "dna": {
         "phase": "Phase 3 of 15, THE BICYCLE.",
         "journey": "REFUSAL, of a kind. He does not turn back, he argues. He tests the limit rather than obeying it."
-      }
+      },
+      "note": "ANSWERED 8.9.2026 by the finished edits. These were stills standing in for footage; the road and the trainer are both cut now and the cuts are the scene."
     },
     {
       "kind": "keyframe",
       "shot": "3.8",
       "file": "BB_C_3/ref/V7_5_6_racing.jpg",
-      "status": "placeholder",
+      "status": "superseded",
       "date": "2026-08-31",
       "slug": "INT. ROOM — RACING HIMSELF",
       "what": "On the trainer with his own ride playing back.",
@@ -2018,13 +2001,14 @@
       "dna": {
         "phase": "Phase 4 of 15, TESTING WHERE THE LIMIT IS.",
         "journey": "TESTS, before the threshold. He is learning the rules of his own body."
-      }
+      },
+      "note": "ANSWERED 8.9.2026 by the finished edits. These were stills standing in for footage; the road and the trainer are both cut now and the cuts are the scene."
     },
     {
       "kind": "keyframe",
       "shot": "3.9",
       "file": "BB_C_3/ref/V7_5_4_idea_lands.jpg",
-      "status": "placeholder",
+      "status": "superseded",
       "date": "2026-08-31",
       "slug": "INT. ROOM — THE IDEA LANDS",
       "what": "The moment he decides to try it.",
@@ -2033,13 +2017,14 @@
       "dna": {
         "phase": "Phase 4 of 15, TESTING WHERE THE LIMIT IS.",
         "journey": "TESTS, before the threshold. He is learning the rules of his own body."
-      }
+      },
+      "note": "ANSWERED 8.9.2026 by the finished edits. These were stills standing in for footage; the road and the trainer are both cut now and the cuts are the scene."
     },
     {
       "kind": "keyframe",
       "shot": "4.0",
       "file": "BB_C_4/ref/V7_5_7_the_wall.jpg",
-      "status": "placeholder",
+      "status": "superseded",
       "date": "2026-08-31",
       "slug": "INT. ROOM — HE IS DONE",
       "what": "Nothing left. He stops.",
@@ -2049,29 +2034,7 @@
         "phase": "Phase 5 of 15, TIRED, AND THE WALL.",
         "journey": "THE CALL becoming undeniable. The wall is the thing he will later find was never a wall."
       },
-      "dialogue": [
-        {
-          "speaker": "MANAN (V.O.)",
-          "line": "That's me. An hour ago."
-        },
-        {
-          "speaker": "MANAN (V.O.)",
-          "line": "He doesn't know I'm coming."
-        },
-        {
-          "speaker": "MANAN (V.O.)",
-          "line": "I've watched the other one forty times. A man with nothing left. And then more."
-        },
-        {
-          "speaker": "MANAN (V.O.)",
-          "line": "Nothing left, and then MORE."
-        },
-        {
-          "speaker": "MANAN (V.O.)",
-          "line": "So it is in there somewhere. And if it is in him, it is in me."
-        }
-      ],
-      "note": "VOICEOVER, INSIDE HIS HEAD. His mouth does not move and nobody else hears it. Said while he is still fresh and still winning, which is why it can be light. HE NEVER SAYS WHAT HE IS TESTING: \"if it is in him, it is in me\" is the whole reason he is on the bicycle, and the audience assembles the rest. Saying the experiment out loud would make him a narrator; saying what he WANTS keeps him a boy.",
+      "note": "VOICEOVER, INSIDE HIS HEAD. His mouth does not move and nobody else hears it. Said while he is still fresh and still winning, which is why it can be light. HE NEVER SAYS WHAT HE IS TESTING: \"if it is in him, it is in me\" is the whole reason he is on the bicycle, and the audience assembles the rest. Saying the experiment out loud would make him a narrator; saying what he WANTS keeps him a boy. ANSWERED 8.9.2026 by the finished edits. These were stills standing in for footage; the road and the trainer are both cut now and the cuts are the scene.",
       "scene": "4"
     },
     {
@@ -2466,7 +2429,7 @@
       "shot": "4.2",
       "representative": true,
       "file": "BB_C_4/4-0-HERO-v1.png",
-      "status": "proposal",
+      "status": "superseded",
       "date": "2026-09-01",
       "slug": "INT. ROOM — HE IS DONE",
       "what": "Slumped forward over the handlebars of the exercise bike, head down on his forearm, not pedalling. Damp hair, sweat on the neck, the whole body gone heavy.",
@@ -2476,17 +2439,7 @@
         "phase": "Phase 5 of 15, TIRED, AND THE WALL.",
         "journey": "THE CALL becoming undeniable. The wall is the thing he will later find was never a wall."
       },
-      "dialogue": [
-        {
-          "speaker": "MANAN (V.O.)",
-          "line": "Come on."
-        },
-        {
-          "speaker": "MANAN (V.O.)",
-          "line": "Come on."
-        }
-      ],
-      "note": "THE TWO \"COME ON\"S ARE THE WHOLE EFFORT, and they are different. The first is encouragement. The second is arguing with somebody. Put them far apart and let the picture do the work between them. Then silence.",
+      "note": "THE TWO \"COME ON\"S ARE THE WHOLE EFFORT, and they are different. The first is encouragement. The second is arguing with somebody. Put them far apart and let the picture do the work between them. Then silence. ANSWERED 8.9.2026 by the finished edits. These were stills standing in for footage; the road and the trainer are both cut now and the cuts are the scene.",
       "scene": "4"
     },
     {
@@ -2752,7 +2705,7 @@
     },
     {
       "kind": "flow",
-      "n": "11",
+      "n": "9",
       "file": "flow/13.jpg",
       "status": "placeholder",
       "note": "",
@@ -2763,7 +2716,7 @@
     },
     {
       "kind": "flow",
-      "n": "12",
+      "n": "10",
       "file": "flow/14.jpg",
       "status": "placeholder",
       "note": "",
@@ -4011,10 +3964,38 @@
       "full_label": "THE&nbsp;EDIT &nbsp;1920 &times; 1080 &nbsp;26&nbsp;MB",
       "proxy_note": "The loop on the storyboard is a 480 wide silent proxy so the page stays light. The edit itself is the download above, with its sound.",
       "note": "THE FINISHED EDIT OF THIS SEGMENT. Thirty two and a half seconds, cut, and treated as done rather than as material. Everything else in this phase is a still or a plate; this is what those stills become.\n\nON THE STORYBOARD IT LOOPS SILENTLY AND SMALL, because a page of thumbnails should read at a glance and a soundtrack starting by itself is an ambush. The sound is here, on its own card, where somebody has chosen to listen.\n\nThe music for it is written and measured separately: a 3/4 and a 6/8 version, both ending on one deep stroke at the cut to black."
+    },
+    {
+      "file": "clips/3-1-BICYCLE-int-loop.mp4",
+      "kind": "keyframe",
+      "scene": "3",
+      "shot": "3.1",
+      "title": "The trainer, the finished edit",
+      "status": "accepted",
+      "date": "2026-09-08",
+      "video": true,
+      "sec": 25.39,
+      "full": "https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIGINALS/main/BB_C_3/3-1-BICYCLE-int.mp4",
+      "full_label": "THE&nbsp;EDIT &nbsp;1920 &times; 1080 &nbsp;16&nbsp;MB",
+      "note": "THE FINISHED EDIT OF THE INTERIOR. Twenty five seconds, cut, and treated as done. This is the whole of what used to be two phases: he tests it on the trainer and races himself, now one scene carried by one edit.\n\nNO DIALOGUE HERE. The scene runs on music."
+    },
+    {
+      "file": "clips/ANIMATICS-loop.mp4",
+      "kind": "keyframe",
+      "scene": "0",
+      "shot": "0.0",
+      "title": "The animatic, the whole film so far",
+      "status": "accepted",
+      "date": "2026-09-08",
+      "video": true,
+      "sec": 134.14,
+      "full": "https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIGINALS/main/DOCS/ANIMATICS_MOCK-UP_08-09.mp4",
+      "full_label": "THE&nbsp;ANIMATIC &nbsp;2:14 &nbsp;32&nbsp;MB",
+      "note": "THE WHOLE FILM AS IT STANDS, two minutes fourteen. Shot order, durations, where each thing sits. THIS IS THE TEMPLATE THE SCENES ARE BUILT AGAINST: if a cut on the storyboard and a cut here disagree, this one is right, because it is the only place the film has been watched end to end."
     }
   ],
   "event": "Breakthrough Junior Challenge 2026",
-  "site_version": 293,
+  "site_version": 294,
   "footage": [
     {
       "name": "Key catch",

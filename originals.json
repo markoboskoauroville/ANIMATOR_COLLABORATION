@@ -2062,5 +2062,29 @@
     "sha256": "2599532e3d68da6e33a7dd1735b980da810a1c7383890999d78534c4dbd6d5d7",
     "path": "BB_C_2/2-1-BICYCLE-ext.png",
     "url": "https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIGINALS/main/BB_C_2/2-1-BICYCLE-ext.png"
+  },
+  "3-1-BICYCLE-int.mp4": {
+    "bytes": 17317344,
+    "sha256": "db94fbaa7228d27f89a7e50faf8d21319b82bb4db763fc3de69577164d3545e4",
+    "path": "BB_C_3/3-1-BICYCLE-int.mp4",
+    "url": "https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIGINALS/main/BB_C_3/3-1-BICYCLE-int.mp4"
+  },
+  "3-1-BICYCLE-int.png": {
+    "bytes": 2939113,
+    "sha256": "39735b9cbc2f30d9e0677cb91ca1750b8aefc35f7f20db6bddbb9ab1b3069d3b",
+    "path": "BB_C_3/3-1-BICYCLE-int.png",
+    "url": "https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIGINALS/main/BB_C_3/3-1-BICYCLE-int.png"
+  },
+  "ANIMATICS_MOCK-UP_08-09.mp4": {
+    "bytes": 33813378,
+    "sha256": "291a63b9d634a7f9517a979e2e1d8d6469f213080b352a06f7846e6c0e4d5b55",
+    "path": "DOCS/ANIMATICS_MOCK-UP_08-09.mp4",
+    "url": "https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIGINALS/main/DOCS/ANIMATICS_MOCK-UP_08-09.mp4"
+  },
+  "ANIMATICS.png": {
+    "bytes": 3510922,
+    "sha256": "e5da677bb31e68600b97df1d6484916766b936d5a9074071fb7f78225acf5242",
+    "path": "DOCS/ANIMATICS.png",
+    "url": "https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIGINALS/main/DOCS/ANIMATICS.png"
   }
 }

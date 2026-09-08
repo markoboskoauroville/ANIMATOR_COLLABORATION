@@ -2466,7 +2466,7 @@ for e in _fl:
     # moment the running order changed and he heard the freeze frame described
     # under the bicycle. A clip pinned to a FRAME cannot drift: it names the
     # picture it starts at, and if the picture moves the button moves with it.
-    rt.append('<div class=rtph><span class=n>%s</span><h3>%s</h3>'
+    rt.append('<div class=rtph><span class=n>SC%s</span><h3>%s</h3>'
               '<span class=st>%s</span></div>' % (n, e.get('title', ''), st))
     # A SECTION CAN EXPLAIN ITSELF. 3.9.2026: the flow entries carried notes and
     # nothing printed them, so two beats Baba had written down were invisible on
@@ -3276,7 +3276,7 @@ def sound_page():
         k = kw.get(n)
         if not k and n not in ph:
             continue
-        o.append('<div class=rtph><span class=n>%s</span><h3>%s</h3>'
+        o.append('<div class=rtph><span class=n>SC%s</span><h3>%s</h3>'
                  '<span class=st>%s</span></div>'
                  % (n, html.escape(e.get('title', '')),
                     'mix ready' if (ph.get(n) or (demo.get('phase') == n)) else 'no mix yet'))
@@ -3364,7 +3364,7 @@ def dialogue_page():
     for sc in sorted(scenes, key=lambda x: (len(x), x)):
         title = SCENES.get(sc, '')
         n = sum(len(e['dialogue']) for e in scenes[sc])
-        o.append('<div class=rtph><span class=n>%s</span><h3>%s</h3>'
+        o.append('<div class=rtph><span class=n>SC%s</span><h3>%s</h3>'
                  '<span class=st>%d lines</span></div>'
                  % (html.escape(sc), html.escape(title), n))
         for e in scenes[sc]:
