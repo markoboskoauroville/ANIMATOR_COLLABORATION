@@ -3572,7 +3572,7 @@
         {
           "file": "SC5-1-PLATE.png",
           "label": "The empty car, no Manan",
-          "note": "The same frame with the car empty. Composite your own figure, or move this one, without asking for the drawing again."
+          "note": "The drawing on its own, and THE CAR IS ONE OPEN SPACE: a flat floor, a thin frame up each side, a plain rounded top, and nothing between them. No door, no leaves, no seam, no panels, so there is nothing to key around."
         },
         {
           "file": "MANAN-LIFT-TRANSPARENT.png",
@@ -4122,7 +4122,7 @@
     }
   ],
   "event": "Breakthrough Junior Challenge 2026",
-  "site_version": 300,
+  "site_version": 301,
   "footage": [
     {
       "name": "Key catch",
