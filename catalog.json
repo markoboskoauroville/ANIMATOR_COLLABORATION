@@ -3511,10 +3511,10 @@
       "kind": "keyframe",
       "scene": "7",
       "shot": "7.4",
-      "title": "The door, closed",
+      "title": "The door, open",
       "status": "accepted",
       "date": "2026-09-04",
-      "note": "THE DOOR, CLOSED. The clover key pressed into the clay above the same sliding panels as every other door in the house, so nothing announces it except what is missing: this is the only door in the building with no status panel beside it, because it is the thing that reads the house rather than a thing the house reads. Centred, and the stone settles differently left and right because it is grown and not built.",
+      "note": "THE DOOR IS FULLY OPEN, both leaves flat back, and it opened by itself. Light comes OUT of the room and lies on the stone of the frame, because it is brighter inside than in the corridor. Warm and soft, not a flare.\n\nTHROUGH THE OPENING IS THE ROOM WE SEE FOR THE REST OF THE FILM, and it must be that room and no other: the same curved console, the same row of round dials, the same chair, the same grown stone. Viveka sits with his back three quarters to us in the star cloak, working, not turned towards the door.\n\nTWO DISPLAYS, AND THE SMALL ONE IS THE POINT. The large one carries a standing human body, which is what he is watching. A small one below and beside it carries a boy standing in a lit doorway, seen from behind and above as a camera would see him. It is quiet and easy to miss. HE ALREADY KNOWS MANAN IS THERE. That is why the door opens by itself, and why the first thing he says is that he was expecting him.",
       "id": "7-4"
     },
     {
@@ -4074,7 +4074,7 @@
     }
   ],
   "event": "Breakthrough Junior Challenge 2026",
-  "site_version": 295,
+  "site_version": 296,
   "footage": [
     {
       "name": "Key catch",
