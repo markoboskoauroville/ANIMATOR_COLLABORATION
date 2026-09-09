@@ -784,6 +784,8 @@ if(seen()){window.addEventListener('DOMContentLoaded',o);}
 # bar() reads it at call time it was emitting the entire links dict into the
 # GDRIVE href instead of this URL.
 DRIVE_FOLDER = 'https://drive.google.com/drive/folders/1INASz6hT4OUQo4UrpT62rMJaF24Amnuu'
+# the zipped frames, folder by phase, live in their own place
+ASSETS_FOLDER = 'https://drive.google.com/drive/folders/1FsDEYnt6MFQu2IsDeeN_uUqbc4uxqv1o?usp=drive_link'
 
 
 TRAY = """
@@ -2505,11 +2507,10 @@ rt = [_mast, '<h1>THE BRAIN BRAKE ANIMATIC</h1>', _flight,
       # more. Both are still reachable from the archive; they are just not the
       # first thing anybody meets on the film page.
       '<div class=allassets>'
-      '<a class=dl href="' + DRIVE_FOLDER + '" target=_blank rel=noopener>'
-      'DOWNLOAD&nbsp;ALL&nbsp;ASSETS&nbsp;&nbsp;377&nbsp;MB</a>'
-      '<span>Every live frame at full resolution, in one zip, in folders by phase, each with an '
-      '_ABOUT.txt saying what the phase is and what is in it. Ninety nine frames. Retired frames '
-      'are NOT in it, so nothing in there is the wrong version.</span></div>',
+      '<a class=dl href="' + ASSETS_FOLDER + '" target=_blank rel=noopener>'
+      'DOWNLOAD&nbsp;ALL&nbsp;ASSETS</a>'
+      '<span>Every frame in the film at full resolution, in folders by scene, in the order they '
+      'play. Retired frames are not in there, so nothing you open is the wrong version.</span></div>',
       '<div class=rtsheet>']
 for e in _fl:
     n = str(e.get('n', ''))
