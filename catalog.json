@@ -4146,7 +4146,7 @@
     }
   ],
   "event": "Breakthrough Junior Challenge 2026",
-  "site_version": 311,
+  "site_version": 312,
   "footage": [
     {
       "name": "Key catch",
@@ -7600,5 +7600,6 @@
       "says": "The brain reads your pulse, your breath, your temperature, your water, your sugar. The whole time. And it decides when you stop.",
       "url": "https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIGINALS/main/BB_C_19/board/SC6-BOARD-13-VIVEKA.png"
     }
-  ]
+  ],
+  "animatic_youtube": "yBAHpLLzNdI"
 }

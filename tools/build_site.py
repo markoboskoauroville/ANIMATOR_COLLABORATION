@@ -2508,6 +2508,18 @@ rt = [_mast, '<h1>THE BRAIN BRAKE ANIMATIC</h1>', _flight,
       # through is not being made, and the book is not part of the work any
       # more. Both are still reachable from the archive; they are just not the
       # first thing anybody meets on the film page.
+      (('<div class=animatic>'
+        '<div class=ah><b>THE ANIMATIC</b><span>The whole film as it stands. '
+        'This is the cut everything is built against: if a cut on the storyboard '
+        'and a cut here disagree, this one is right.</span></div>'
+        '<div class=vidwrap><iframe src="https://www.youtube-nocookie.com/embed/%s'
+        '?rel=0&modestbranding=1&playsinline=1" title="The animatic" '
+        'frameborder=0 loading=lazy '
+        'allow="accelerometer; encrypted-media; picture-in-picture" '
+        'allowfullscreen></iframe></div>'
+        '<a class=dl href="https://youtu.be/%s" target=_blank rel=noopener>'
+        'OPEN&nbsp;ON&nbsp;YOUTUBE&nbsp;&nearr;</a></div>')
+       % (CAT['animatic_youtube'], CAT['animatic_youtube'])) if CAT.get('animatic_youtube') else '',
       '<div class=allassets>'
       '<a class=dl href="' + ASSETS_FOLDER + '" target=_blank rel=noopener>'
       'DOWNLOAD&nbsp;ALL&nbsp;ASSETS</a>'
