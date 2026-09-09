@@ -3699,8 +3699,34 @@
       "title": "The console, and the hologram",
       "status": "accepted",
       "date": "2026-09-04",
-      "note": "CLOSE ON THE CONSOLE, and this is the frame the room was built from. His hands rest on two of the three trackballs, the cloak falls across the edge of the picture with its stars and ringed planets, and the hologram of the body stands in the air above the panel: skeleton, muscle and organs hanging slightly apart from one another, thin readouts floating free at different depths. Everything is made of light and nothing is framed. THE PANEL IS BIG AND ALMOST EMPTY, which says he is in command far better than a wall of switches ever did.",
-      "id": "19-2"
+      "note": "CLOSE ON THE CONSOLE, and this is the frame the room was built from. His hands rest on two of the three trackballs, the cloak falls across the edge of the picture with its stars and ringed planets, and the hologram of the body stands in the air above the panel: skeleton, muscle and organs hanging slightly apart from one another, thin readouts floating free at different depths. Everything is made of light and nothing is framed. THE PANEL IS BIG AND ALMOST EMPTY, which says he is in command far better than a wall of switches ever did. THE BRIDGE BETWEEN THE ARM AND THE BOARD. Without it he goes from having his arm moved for him straight into reciting a physiologist and a date, and the lecture arrives from nowhere. So VIVEKA ASKS, and the recitation becomes an answer rather than a performance.\n\nAnd the last line is the whole method of the scene: I want to hear you say it out loud, that is usually enough. Viveka never tells him he is wrong. He gets the boy to lay his own theory out until the boy can see the hole in it.",
+      "id": "19-2",
+      "dialogue": [
+        {
+          "speaker": "MANAN",
+          "line": "But that is not how it works."
+        },
+        {
+          "speaker": "VIVEKA",
+          "line": "No?"
+        },
+        {
+          "speaker": "MANAN",
+          "line": "No. I read about it. It is the muscle. The muscle runs out, and you stop. That is the whole of it."
+        },
+        {
+          "speaker": "VIVEKA",
+          "line": "Then tell me. All of it, from the beginning."
+        },
+        {
+          "speaker": "MANAN",
+          "line": "You want me to explain it to you."
+        },
+        {
+          "speaker": "VIVEKA",
+          "line": "I want to hear you say it out loud. That is usually enough."
+        }
+      ]
     },
     {
       "file": "BB_C_19/19-CHARACTER.png",
@@ -4149,7 +4175,7 @@
     }
   ],
   "event": "Breakthrough Junior Challenge 2026",
-  "site_version": 324,
+  "site_version": 325,
   "footage": [
     {
       "name": "Key catch",
