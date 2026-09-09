@@ -2657,10 +2657,14 @@ for e in _fl:
             # stays for the shots that have one; this adds the rest under the
             # thumbnail as TEXT, which is what Kristijan needs. The audio lives
             # on its own page.
+            _prev = None
             for _d in (f.get('dialogue') or []):
-                ln += ('<div class=ln><span class=sp>%s</span>'
-                       '<span class=tx>“%s”</span></div>'
-                       % (html.escape(_d.get('speaker', '')), html.escape(_d.get('line', ''))))
+                _w = _d.get('speaker', '')
+                ln += ('<div class=ln>%s<span class=tx>“%s”</span></div>'
+                       % (('<span class=sp>%s</span>' % html.escape(_w))
+                          if _w != _prev else '',
+                          html.escape(_d.get('line', ''))))
+                _prev = _w
             _gc = GUIDE.get(b)
             if _gc:
                 rt.append('<button class=gcue type=button data-src="%s" '
