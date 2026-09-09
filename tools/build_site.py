@@ -2969,6 +2969,24 @@ for _i, e in enumerate(_cards):
     # with alpha, actor on green. Each one is shown under the frame with its own
     # full size download, and the note says how it was made, since a matte you
     # cannot trust is worse than no matte.
+    _seq = CAT.get('board_sequence') if e.get('id') == 'SC6-BOARD' else None
+    if _seq:
+        cd.append('<h2>The board, state by state</h2>'
+                  '<p class=lede>Seven states and the empty plate, all identical except the words '
+                  'and the light. <b>Crop between them and the board writes itself.</b> The light '
+                  'is on the LEG when Manan speaks and on the HEAD when Viveka answers.</p>'
+                  '<div class=laygrid>')
+        for _s in _seq:
+            cd.append('<div class=laycell>'
+                      '<a class=dl href="%s" download>DOWNLOAD&nbsp;%02d&nbsp;&nbsp;%s</a>'
+                      '<img src="../mid/%s.jpg" alt="" loading=lazy>'
+                      '<div class=lt><b>%s &nbsp;&middot;&nbsp; %s</b>'
+                      '<span>%s</span></div></div>'
+                      % (_s['url'], _s['n'], html.escape(_s['light'].upper()),
+                         _s['file'].rsplit('.', 1)[0], html.escape(_s['who']),
+                         html.escape(_s['shows']), html.escape(_s['says'])))
+        cd.append('</div>')
+
     # THE LAYERS, SIDE BY SIDE, EACH WITH ITS DOWNLOAD ABOVE IT.
     _lay = list(e.get('plates') or [])
     if _lay:

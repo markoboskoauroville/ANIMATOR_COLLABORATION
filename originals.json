@@ -2122,5 +2122,53 @@
     "sha256": "86fdc612cf4b2e4600c8db030bbe5ab8d11a843dbc3f11d401782d729af50ab6",
     "path": "BB_C_7/plates/MANAN-DOOR-TRANSPARENT.png",
     "url": "https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIGINALS/main/BB_C_7/plates/MANAN-DOOR-TRANSPARENT.png"
+  },
+  "SC6-BOARD-00-EMPTY.png": {
+    "bytes": 6312505,
+    "sha256": "a157a8d2192ca6c9bd78958fd61d8537ebff05fef4769afe0d05d28eba1370f2",
+    "path": "BB_C_19/board/SC6-BOARD-00-EMPTY.png",
+    "url": "https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIGINALS/main/BB_C_19/board/SC6-BOARD-00-EMPTY.png"
+  },
+  "SC6-BOARD-01-MANAN.png": {
+    "bytes": 6332035,
+    "sha256": "9d80c890ba290ecd1d5ee05ac5716b59a52b47032311a355da68577889fc7d66",
+    "path": "BB_C_19/board/SC6-BOARD-01-MANAN.png",
+    "url": "https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIGINALS/main/BB_C_19/board/SC6-BOARD-01-MANAN.png"
+  },
+  "SC6-BOARD-02-VIVEKA.png": {
+    "bytes": 6330236,
+    "sha256": "ec193a5c3b11bcf5ecfb5b21d9d224dd4c1994e7956475881f0f88f4f6a0c3c8",
+    "path": "BB_C_19/board/SC6-BOARD-02-VIVEKA.png",
+    "url": "https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIGINALS/main/BB_C_19/board/SC6-BOARD-02-VIVEKA.png"
+  },
+  "SC6-BOARD-03-MANAN.png": {
+    "bytes": 6333787,
+    "sha256": "6b66d395282b91772bc52ea19b98e1c8d32a21d0e2b987545096592a4b7c13c1",
+    "path": "BB_C_19/board/SC6-BOARD-03-MANAN.png",
+    "url": "https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIGINALS/main/BB_C_19/board/SC6-BOARD-03-MANAN.png"
+  },
+  "SC6-BOARD-04-VIVEKA.png": {
+    "bytes": 6330018,
+    "sha256": "22d7e468d4ad7e16c4dc87c3600e7d02474168b55b67c09c1f4d344cc434e4c5",
+    "path": "BB_C_19/board/SC6-BOARD-04-VIVEKA.png",
+    "url": "https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIGINALS/main/BB_C_19/board/SC6-BOARD-04-VIVEKA.png"
+  },
+  "SC6-BOARD-05-MANAN.png": {
+    "bytes": 6332936,
+    "sha256": "ab2e279fc9d9746888f5269a018123475f7c3f5bbe262510e32b482253bf5f88",
+    "path": "BB_C_19/board/SC6-BOARD-05-MANAN.png",
+    "url": "https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIGINALS/main/BB_C_19/board/SC6-BOARD-05-MANAN.png"
+  },
+  "SC6-BOARD-06-VIVEKA.png": {
+    "bytes": 6333382,
+    "sha256": "64a67e551be226de98ce06e7fd74d7e43e61d707e163f964724e35c18c2bf2f8",
+    "path": "BB_C_19/board/SC6-BOARD-06-VIVEKA.png",
+    "url": "https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIGINALS/main/BB_C_19/board/SC6-BOARD-06-VIVEKA.png"
+  },
+  "SC6-BOARD-07-VIVEKA.png": {
+    "bytes": 6334913,
+    "sha256": "b1aae5ed8716bde26ca5a501e25776040e67567ac686b59da97ec55dbe5e00ce",
+    "path": "BB_C_19/board/SC6-BOARD-07-VIVEKA.png",
+    "url": "https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIGINALS/main/BB_C_19/board/SC6-BOARD-07-VIVEKA.png"
   }
 }
