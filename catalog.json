@@ -3097,8 +3097,18 @@
       "title": "The finish, close",
       "status": "accepted",
       "date": "2026-09-03",
-      "note": "THE FINISH LINE, CLOSE, AND IT DID NOT EXIST BEFORE. Every other finish frame is the same wide avenue with the banner far away, and the only close view of it was inside the magnifying glass, which belongs to Manan and to a later part of the scene. Made by Baba's staged method: the banner cropped out of 1-5-FINISH-v1 and redrawn sharp at full size in the same hand. FINISH is the only lettering in the frame. This is what he sees when he looks up, before he runs. FILED AS 1-7, 3.9.2026, in the reset that gave scene one its final names. Before the reset it was 1-2b-CLOSE-v1, and every name mentioned in this note is a pre reset name. HOW IT MOVES. A SMOOTH ZOOM, as though a real camera were doing it, twenty five frames a second. This is an announcement too: it tells the audience the next shot is going to be full, normal movement.",
-      "id": "1-7"
+      "note": "THE FINISH LINE, CLOSE, AND IT DID NOT EXIST BEFORE. Every other finish frame is the same wide avenue with the banner far away, and the only close view of it was inside the magnifying glass, which belongs to Manan and to a later part of the scene. Made by Baba's staged method: the banner cropped out of 1-5-FINISH-v1 and redrawn sharp at full size in the same hand. FINISH is the only lettering in the frame. This is what he sees when he looks up, before he runs. FILED AS 1-7, 3.9.2026, in the reset that gave scene one its final names. Before the reset it was 1-2b-CLOSE-v1, and every name mentioned in this note is a pre reset name. HOW IT MOVES. A SMOOTH ZOOM, as though a real camera were doing it, twenty five frames a second. This is an announcement too: it tells the audience the next shot is going to be full, normal movement. HE SPEAKS HERE. Watching a man with nothing left run FASTER is the moment the whole film starts, and he says so: hold on, you have nothing left, so where did that come from. Everything after this is him answering his own question.",
+      "id": "1-7",
+      "dialogue": [
+        {
+          "speaker": "MANAN (V.O.)",
+          "line": "Hold on. You have nothing left."
+        },
+        {
+          "speaker": "MANAN (V.O.)",
+          "line": "So where did that come from?"
+        }
+      ]
     },
     {
       "file": "BB_C_1/SC1-22.png",
@@ -4040,6 +4050,10 @@
         {
           "speaker": "MANAN (V.O.)",
           "line": "So I want to know who set it."
+        },
+        {
+          "speaker": "MANAN (V.O.)",
+          "line": "And I'm going to find out."
         }
       ]
     },
@@ -4132,7 +4146,7 @@
     }
   ],
   "event": "Breakthrough Junior Challenge 2026",
-  "site_version": 310,
+  "site_version": 311,
   "footage": [
     {
       "name": "Key catch",
