@@ -3649,3 +3649,34 @@
 - **local path missing** — card/10-0-A-v2.html -> ../https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/reference/voice/SYNTESISED_MANAN_OLD_THEORY.wav
 - **live version** — catalog says v319, live serves v318. The push has not published yet, or it failed.
 - **original** — 9R-1-VORTEX-DOWN-v1.png  200 0
+
+## 2026-09-09 06:26 — v320 — cached run
+
+459 pages, 511 remote targets, 369 originals.
+
+- published weight 96.1 MB of the 1024 MB Pages ceiling, 9%
+- 369 originals in originals.json, 1787.0 MB
+- 140 rows still in drive_links.json, kept as a fallback
+
+**FAILED, 20:**
+
+- **local path missing** — card/11-0-A-v1.html -> ../https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/reference/voice/SYNTESISED_BRAIN_NEW_THEORY.wav
+- **local path missing** — card/11-0-A-v1.html -> ../https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/reference/voice/SYNTESISED_BRAIN_NEW_THEORY.wav
+- **local path missing** — card/12-0-A-v1.html -> ../https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/reference/voice/THE_LIMIT_IS_A_SETTING_NOT_A_WALL.wav
+- **local path missing** — card/12-0-A-v1.html -> ../https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/reference/voice/THE_LIMIT_IS_A_SETTING_NOT_A_WALL.wav
+- **local path missing** — card/10-0-A-v2.html -> ../https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/reference/voice/SYNTESISED_MANAN_OLD_THEORY.wav
+- **local path missing** — card/10-0-A-v2.html -> ../https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/reference/voice/SYNTESISED_MANAN_OLD_THEORY.wav
+- **live version** — catalog says v320, live serves v319. The push has not published yet, or it failed.
+- **original** — 9R-1-VORTEX-DOWN-v1.png  200 0
+- **original** — SC6-BOARD-01-MANAN.png  200 6339591
+- **original** — SC6-BOARD-02-VIVEKA.png  200 6339143
+- **original** — SC6-BOARD-03-MANAN.png  200 6335003
+- **original** — SC6-BOARD-04-VIVEKA.png  200 6341891
+- **original** — SC6-BOARD-05-MANAN.png  200 6331196
+- **original** — SC6-BOARD-06-VIVEKA.png  200 6342111
+- **original** — SC6-BOARD-07-MANAN.png  200 6339709
+- **original** — SC6-BOARD-08-VIVEKA.png  200 6338982
+- **original** — SC6-BOARD-10-VIVEKA.png  200 6328567
+- **original** — SC6-BOARD-11-VIVEKA.png  200 6338274
+- **original** — SC6-BOARD-12-VIVEKA.png  200 6345894
+- **original** — SC6-BOARD-13-VIVEKA.png  200 6336030
