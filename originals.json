@@ -2124,44 +2124,44 @@
     "url": "https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIGINALS/main/BB_C_7/plates/MANAN-DOOR-TRANSPARENT.png"
   },
   "SC6-BOARD-00-EMPTY.png": {
-    "bytes": 6371701,
-    "sha256": "a4a06925f65295e9725c813a0be79d3d2c9174fc780e3c0f87832639df77695a",
+    "bytes": 6048723,
+    "sha256": "4baab270ee37a0a8d5a76dc6ebddf9e0de6ab2619597c859e3c2dc585235dc41",
     "path": "BB_C_19/board/SC6-BOARD-00-EMPTY.png",
     "url": "https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIGINALS/main/BB_C_19/board/SC6-BOARD-00-EMPTY.png"
   },
   "SC6-BOARD-01-MANAN.png": {
-    "bytes": 6389838,
-    "sha256": "9fc02475672974a5ebcbe8fddc0ea26f671609ef2972e49c5fd4f68263a7914c",
+    "bytes": 6071980,
+    "sha256": "46173e606344635f5160331f853233de47cfbb62fa0e0ac80907c43af23fe687",
     "path": "BB_C_19/board/SC6-BOARD-01-MANAN.png",
     "url": "https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIGINALS/main/BB_C_19/board/SC6-BOARD-01-MANAN.png"
   },
   "SC6-BOARD-02-VIVEKA.png": {
-    "bytes": 6388328,
-    "sha256": "25e39844e3059f43e0cc2e3425bbc8b25c9053c1828399454ff932937678171f",
+    "bytes": 6071004,
+    "sha256": "ba179a0f1e9ad6e65a33c4cb6b06dcbcddea1a965fa96b276dc27118f341ca9b",
     "path": "BB_C_19/board/SC6-BOARD-02-VIVEKA.png",
     "url": "https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIGINALS/main/BB_C_19/board/SC6-BOARD-02-VIVEKA.png"
   },
   "SC6-BOARD-03-MANAN.png": {
-    "bytes": 6386191,
-    "sha256": "65f933585c8d8c6667514ed8eb1770bbe87d8569083bc3df188b7674965321eb",
+    "bytes": 6068294,
+    "sha256": "3c33d43561b801392ae39e3819407f985fdac431ce2b57568eb97c0ff89a3ef4",
     "path": "BB_C_19/board/SC6-BOARD-03-MANAN.png",
     "url": "https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIGINALS/main/BB_C_19/board/SC6-BOARD-03-MANAN.png"
   },
   "SC6-BOARD-04-VIVEKA.png": {
-    "bytes": 6390073,
-    "sha256": "7f09fad46828a0dfb7eed0c8516a340c345e6f8094a927528ecb4c5c5f3c4d81",
+    "bytes": 6072719,
+    "sha256": "2111de764d91020b9ef2148fec7764d96562048678dbb627063fa4dad47b6f35",
     "path": "BB_C_19/board/SC6-BOARD-04-VIVEKA.png",
     "url": "https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIGINALS/main/BB_C_19/board/SC6-BOARD-04-VIVEKA.png"
   },
   "SC6-BOARD-05-MANAN.png": {
-    "bytes": 6382409,
-    "sha256": "75018bc9ad9248cf469f32ff4fef4438f85dc8a605efc8513184d9335c224203",
+    "bytes": 6063724,
+    "sha256": "d0468e189d827a08bdea7d80f1f497077f6ab5760fb96cfd10a61eb327a069b3",
     "path": "BB_C_19/board/SC6-BOARD-05-MANAN.png",
     "url": "https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIGINALS/main/BB_C_19/board/SC6-BOARD-05-MANAN.png"
   },
   "SC6-BOARD-06-VIVEKA.png": {
-    "bytes": 6390527,
-    "sha256": "8e00527e8a7119172c216666a68339ebea0b179321d034d2e591a8071bde8ffa",
+    "bytes": 6073017,
+    "sha256": "b46e51e14d7413112c33021b4bbadd9efd80b3a54aee83eb3330ec5b576a0599",
     "path": "BB_C_19/board/SC6-BOARD-06-VIVEKA.png",
     "url": "https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIGINALS/main/BB_C_19/board/SC6-BOARD-06-VIVEKA.png"
   },
@@ -2172,44 +2172,44 @@
     "url": "https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIGINALS/main/BB_C_19/board/SC6-BOARD-07-VIVEKA.png"
   },
   "SC6-BOARD-07-MANAN.png": {
-    "bytes": 6390189,
-    "sha256": "88b345792929c7815e4d01c77e3e17c588629956a189b867bae9ebf814623e19",
+    "bytes": 6072063,
+    "sha256": "13f6abc325bdae3b58eaa77a772fd902afb74bccd1106fba8d9330179f0b771e",
     "path": "BB_C_19/board/SC6-BOARD-07-MANAN.png",
     "url": "https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIGINALS/main/BB_C_19/board/SC6-BOARD-07-MANAN.png"
   },
   "SC6-BOARD-08-VIVEKA.png": {
-    "bytes": 6388529,
-    "sha256": "4793018899f9d4cdf5929fda4fafd06a187011e36e8a1bdcd45bf36fd626a7f8",
+    "bytes": 6070342,
+    "sha256": "202ca8bc7a8427827d595396671a59e1ae28f161c8f6e79ace410bdea2641675",
     "path": "BB_C_19/board/SC6-BOARD-08-VIVEKA.png",
     "url": "https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIGINALS/main/BB_C_19/board/SC6-BOARD-08-VIVEKA.png"
   },
   "SC6-BOARD-09-MANAN.png": {
-    "bytes": 6377125,
-    "sha256": "fcc51f5fd5576ea69ae1c63299df7a8e5aaa9e3fb08156bb56935dd6dd6710a1",
+    "bytes": 6058320,
+    "sha256": "854f881688616bc6a333b78a714877c7404615977c68b7dcedb2f8186037bf92",
     "path": "BB_C_19/board/SC6-BOARD-09-MANAN.png",
     "url": "https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIGINALS/main/BB_C_19/board/SC6-BOARD-09-MANAN.png"
   },
   "SC6-BOARD-10-VIVEKA.png": {
-    "bytes": 6380216,
-    "sha256": "13d38d1314c8353973d88d402bba5e159566a45322e5b4991676e2f0794e8ba6",
+    "bytes": 6061022,
+    "sha256": "4e9bebb95e0d2cd059df6868b545405eeeb2ce836a6ceff6e3eae9d9ab3e143e",
     "path": "BB_C_19/board/SC6-BOARD-10-VIVEKA.png",
     "url": "https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIGINALS/main/BB_C_19/board/SC6-BOARD-10-VIVEKA.png"
   },
   "SC6-BOARD-11-VIVEKA.png": {
-    "bytes": 6386834,
-    "sha256": "c9ffebc2cf18b94b8d569cbd130c0dc2945a1278b9d5c32a17e0c4089fd05f4a",
+    "bytes": 6068925,
+    "sha256": "f0c9fa5498f0377ce98e625089454c93560b13b5d000860cc5b64ce75d49c934",
     "path": "BB_C_19/board/SC6-BOARD-11-VIVEKA.png",
     "url": "https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIGINALS/main/BB_C_19/board/SC6-BOARD-11-VIVEKA.png"
   },
   "SC6-BOARD-12-VIVEKA.png": {
-    "bytes": 6393980,
-    "sha256": "316d8858d9f79cd46d08ba8486949a999195acb6fa0692170dd39f9cb1d189ca",
+    "bytes": 6076280,
+    "sha256": "781f0aa0515e7e1de6a362ae7be42a2c089971dee1e484c8a2b5b35b875422fd",
     "path": "BB_C_19/board/SC6-BOARD-12-VIVEKA.png",
     "url": "https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIGINALS/main/BB_C_19/board/SC6-BOARD-12-VIVEKA.png"
   },
   "SC6-BOARD-13-VIVEKA.png": {
-    "bytes": 6385867,
-    "sha256": "334f4f6b6c2a738d15f6359556c76dffd49966cb566edc0a95467699e2eba4eb",
+    "bytes": 6066220,
+    "sha256": "4846d57f001917670b34541432fc589ce24e9e765bef8e6c996bdba1d458905b",
     "path": "BB_C_19/board/SC6-BOARD-13-VIVEKA.png",
     "url": "https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIGINALS/main/BB_C_19/board/SC6-BOARD-13-VIVEKA.png"
   }
