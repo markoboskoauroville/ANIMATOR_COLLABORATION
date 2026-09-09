@@ -3012,9 +3012,10 @@ for _i, e in enumerate(_cards):
                   '<a class=dl href="%s">DOWNLOAD&nbsp;THE&nbsp;WHOLE&nbsp;BOARD'
                   '&nbsp;&nbsp;81&nbsp;MB</a></div>'
                   '<p class=note style="color:var(--dim)">All fourteen frames in playing order, the '
-                  'empty plate, and DIALOGUE_FOR_TTS.txt: the thirteen spoken lines and nothing '
-                  'else, no speaker names and no numbers, because anything else in that file gets '
-                  'read aloud.</p>' % _bz)
+                  'empty plate, and the lines in three text files: DIALOGUE_FOR_TTS.txt with all '
+                  'thirteen in order, and MANAN_LINES.md and VIVEKA_LINES.md with one actor each. '
+                  'They carry the spoken words and nothing else, no state numbers and no timings, '
+                  'because a text to speech engine reads whatever is in the file.</p>' % _bz)
         cd.append('<h2>The board, state by state</h2>'
                   '<p class=lede>Seven states and the empty plate, all identical except the words '
                   'and the light. <b>Crop between them and the board writes itself.</b> The light '
