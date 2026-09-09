@@ -3554,3 +3554,22 @@
 - **local path missing** — card/10-0-A-v2.html -> ../https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/reference/voice/SYNTESISED_MANAN_OLD_THEORY.wav
 - **live version** — catalog says v314, live serves v313. The push has not published yet, or it failed.
 - **original** — 9R-1-VORTEX-DOWN-v1.png  200 0
+
+## 2026-09-09 06:05 — v315 — cached run
+
+459 pages, 511 remote targets, 369 originals.
+
+- published weight 96.2 MB of the 1024 MB Pages ceiling, 9%
+- 369 originals in originals.json, 1786.4 MB
+- 140 rows still in drive_links.json, kept as a fallback
+
+**FAILED, 8:**
+
+- **local path missing** — card/11-0-A-v1.html -> ../https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/reference/voice/SYNTESISED_BRAIN_NEW_THEORY.wav
+- **local path missing** — card/11-0-A-v1.html -> ../https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/reference/voice/SYNTESISED_BRAIN_NEW_THEORY.wav
+- **local path missing** — card/12-0-A-v1.html -> ../https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/reference/voice/THE_LIMIT_IS_A_SETTING_NOT_A_WALL.wav
+- **local path missing** — card/12-0-A-v1.html -> ../https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/reference/voice/THE_LIMIT_IS_A_SETTING_NOT_A_WALL.wav
+- **local path missing** — card/10-0-A-v2.html -> ../https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/reference/voice/SYNTESISED_MANAN_OLD_THEORY.wav
+- **local path missing** — card/10-0-A-v2.html -> ../https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/reference/voice/SYNTESISED_MANAN_OLD_THEORY.wav
+- **live version** — catalog says v315, live serves v314. The push has not published yet, or it failed.
+- **original** — 9R-1-VORTEX-DOWN-v1.png  200 0
