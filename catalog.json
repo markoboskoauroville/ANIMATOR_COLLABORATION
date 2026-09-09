@@ -4067,35 +4067,59 @@
       "status": "accepted",
       "date": "2026-09-08",
       "id": "SC6-BOARD",
-      "note": "ONE DISPLAY, NOT TWO. Manan puts a line on it, Viveka overwrites it, and they go back and forth until the right theory is standing there alone. Seven states and an empty plate, all identical except the words and the light, so THE ANIMATION IS A CROP between frames and needs nobody else.\n\nTHE HIGHLIGHT MOVES, THE FIGURE DOES NOT. When Manan speaks the LEG lights: his theory is about the muscle. When Viveka answers the HEAD lights. The argument is legible before a word is read.\n\nTHE DISPLAY ONLY EVER CARRIES THE CONCLUSION, a few words, the way somebody highlights one line of a lecture rather than writing the lecture down. Everything else is spoken.\n\nTHE WORDS HAVE DEPTH: each line is drawn three times, the copies behind blurred further and fainter, so the sentence sits IN the panel rather than on it.\n\nBOTH HANDS STAY ON THE TRACKBALLS THROUGHOUT. Nothing is raised, and THE KEY IS NEVER SHOWN in this stretch.",
+      "note": "ONE DISPLAY, THIRTEEN STATES. Manan puts a claim on it, Viveka overwrites it, back and forth, until the right theory is standing there alone. All thirteen are identical except the words and the light, so THE ANIMATION IS A CROP between frames.\n\nEVERY CLAIM CARRIES ITS NAME AND ITS YEAR, in small type under the line, the way a lecture slide does. A jury of scientists reads a claim without attribution as an opinion. THE BOARD IS FORMAL AND THE BOY IS NOT: he gives the name and the year, then says what it means in his own words.\n\nTHE TURN IS AT STATE NINE AND IT IS THE BEST THING IN THE SCENE. Hill proposed the muscle model in 1923 and then, in 1924, proposed a central governor protecting the heart. He had reasoning and no evidence, so it was dismissed, and the field spent seventy years on the muscle. Noakes revived it in 1997; Noakes, St Clair Gibson and Lambert published it as a full theory in five linked papers in 2004. IT IS NOT A BOY CORRECTING A DEAD SCIENTIST. It is a boy discovering the man was right and had been forgotten.\n\nTHE HIGHLIGHT MOVES, THE FIGURE DOES NOT: the LEG when Manan speaks, the HEAD when Viveka answers, and the head from state nine onward because from there they are agreeing.\n\nBoth hands stay on the trackballs and the key is never shown in this stretch.",
       "dialogue": [
         {
           "speaker": "MANAN",
-          "line": "Nineteen twenty three. Hill puts runners on a treadmill and measures everything they do. His answer is simple. Fatigue is in the muscle."
+          "line": "In 1923 a physiologist called A. V. Hill put runners on a treadmill and measured everything they did. He decided fatigue happens in the muscle."
         },
         {
           "speaker": "VIVEKA",
-          "line": "It is not. It is in the brain, and it always was."
+          "line": "It does not. In 1997 Tim Noakes said it happens in the brain."
         },
         {
           "speaker": "MANAN",
-          "line": "You run. The muscle uses up its oxygen. The fuel is spent."
+          "line": "Hill said the muscle runs out of oxygen. That is why you stop."
         },
         {
           "speaker": "VIVEKA",
-          "line": "Look at the gauge. There is fuel in you now. There was fuel in you when you stopped."
+          "line": "Then measure yourself the moment you stop. The oxygen is still there. So is the fuel."
         },
         {
           "speaker": "MANAN",
-          "line": "And when the tank reads empty, the body stops."
+          "line": "So the muscle fails."
         },
         {
           "speaker": "VIVEKA",
-          "line": "The tank was never empty. The wall you hit is a number, and something in you chose it."
+          "line": "The muscle is TOLD to stop. It is still able. It is being held back."
+        },
+        {
+          "speaker": "MANAN",
+          "line": "But Hill said the body breaks down. A catastrophe."
         },
         {
           "speaker": "VIVEKA",
-          "line": "Pulse, breath, temperature, water, sugar. It reads all of it, the whole time, and it stops you long before anything tears. THE BRAIN DECIDES."
+          "line": "Nothing breaks. You are being protected, and you feel that protection as tiredness."
+        },
+        {
+          "speaker": "MANAN",
+          "line": "And Hill himself? Did he never think of this?"
+        },
+        {
+          "speaker": "VIVEKA",
+          "line": "He did. One year later, in 1924, he wrote that something central must be governing the heart, protecting it."
+        },
+        {
+          "speaker": "VIVEKA",
+          "line": "But he had only reasoning, no evidence. So it was dismissed, and for seventy years everybody studied the muscle."
+        },
+        {
+          "speaker": "VIVEKA",
+          "line": "Then Noakes, St Clair Gibson and Lambert published it properly, five linked papers, in 2004."
+        },
+        {
+          "speaker": "VIVEKA",
+          "line": "The brain reads your pulse, your breath, your temperature, your water, your sugar. The whole time. And it decides when you stop."
         }
       ],
       "plates": [
@@ -4108,7 +4132,7 @@
     }
   ],
   "event": "Breakthrough Junior Challenge 2026",
-  "site_version": 309,
+  "site_version": 310,
   "footage": [
     {
       "name": "Key catch",
@@ -7437,8 +7461,9 @@
       "file": "SC6-BOARD-01-MANAN.png",
       "who": "MANAN",
       "shows": "FATIGUE IS IN THE MUSCLE",
+      "credit": "A. V. HILL, 1923",
       "light": "leg",
-      "says": "Nineteen twenty three. Hill puts runners on a treadmill and measures everything they do. His answer is simple. Fatigue is in the muscle.",
+      "says": "In 1923 a physiologist called A. V. Hill put runners on a treadmill and measured everything they did. He decided fatigue happens in the muscle.",
       "url": "https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIGINALS/main/BB_C_19/board/SC6-BOARD-01-MANAN.png"
     },
     {
@@ -7446,54 +7471,120 @@
       "file": "SC6-BOARD-02-VIVEKA.png",
       "who": "VIVEKA",
       "shows": "FATIGUE IS IN THE BRAIN",
+      "credit": "TIM NOAKES, 1997",
       "light": "head",
-      "says": "It is not. It is in the brain, and it always was.",
+      "says": "It does not. In 1997 Tim Noakes said it happens in the brain.",
       "url": "https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIGINALS/main/BB_C_19/board/SC6-BOARD-02-VIVEKA.png"
     },
     {
       "n": 3,
       "file": "SC6-BOARD-03-MANAN.png",
       "who": "MANAN",
-      "shows": "THE FUEL IS SPENT",
+      "shows": "THE OXYGEN RUNS OUT",
+      "credit": "A. V. HILL, 1923",
       "light": "leg",
-      "says": "You run. The muscle uses up its oxygen. The fuel is spent.",
+      "says": "Hill said the muscle runs out of oxygen. That is why you stop.",
       "url": "https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIGINALS/main/BB_C_19/board/SC6-BOARD-03-MANAN.png"
     },
     {
       "n": 4,
       "file": "SC6-BOARD-04-VIVEKA.png",
       "who": "VIVEKA",
-      "shows": "THE FUEL IS STILL THERE",
+      "shows": "THE OXYGEN IS STILL THERE",
+      "credit": "TIM NOAKES, 1997",
       "light": "head",
-      "says": "Look at the gauge. There is fuel in you now. There was fuel in you when you stopped.",
+      "says": "Then measure yourself the moment you stop. The oxygen is still there. So is the fuel.",
       "url": "https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIGINALS/main/BB_C_19/board/SC6-BOARD-04-VIVEKA.png"
     },
     {
       "n": 5,
       "file": "SC6-BOARD-05-MANAN.png",
       "who": "MANAN",
-      "shows": "THE TANK READS EMPTY",
+      "shows": "THE MUSCLE FAILS",
+      "credit": "A. V. HILL, 1923",
       "light": "leg",
-      "says": "And when the tank reads empty, the body stops.",
+      "says": "So the muscle fails.",
       "url": "https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIGINALS/main/BB_C_19/board/SC6-BOARD-05-MANAN.png"
     },
     {
       "n": 6,
       "file": "SC6-BOARD-06-VIVEKA.png",
       "who": "VIVEKA",
-      "shows": "THE WALL IS A NUMBER",
+      "shows": "THE MUSCLE IS TOLD TO STOP",
+      "credit": "TIM NOAKES, 1997",
       "light": "head",
-      "says": "The tank was never empty. The wall you hit is a number, and something in you chose it.",
+      "says": "The muscle is TOLD to stop. It is still able. It is being held back.",
       "url": "https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIGINALS/main/BB_C_19/board/SC6-BOARD-06-VIVEKA.png"
     },
     {
       "n": 7,
-      "file": "SC6-BOARD-07-VIVEKA.png",
+      "file": "SC6-BOARD-07-MANAN.png",
+      "who": "MANAN",
+      "shows": "THE BODY BREAKS DOWN",
+      "credit": "A. V. HILL, 1923",
+      "light": "leg",
+      "says": "But Hill said the body breaks down. A catastrophe.",
+      "url": "https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIGINALS/main/BB_C_19/board/SC6-BOARD-07-MANAN.png"
+    },
+    {
+      "n": 8,
+      "file": "SC6-BOARD-08-VIVEKA.png",
+      "who": "VIVEKA",
+      "shows": "THE BODY IS PROTECTED",
+      "credit": "TIM NOAKES, 1997",
+      "light": "head",
+      "says": "Nothing breaks. You are being protected, and you feel that protection as tiredness.",
+      "url": "https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIGINALS/main/BB_C_19/board/SC6-BOARD-08-VIVEKA.png"
+    },
+    {
+      "n": 9,
+      "file": "SC6-BOARD-09-MANAN.png",
+      "who": "MANAN",
+      "shows": "AND HILL HIMSELF",
+      "credit": "",
+      "light": "head",
+      "says": "And Hill himself? Did he never think of this?",
+      "url": "https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIGINALS/main/BB_C_19/board/SC6-BOARD-09-MANAN.png"
+    },
+    {
+      "n": 10,
+      "file": "SC6-BOARD-10-VIVEKA.png",
+      "who": "VIVEKA",
+      "shows": "HILL SAW IT FIRST",
+      "credit": "A. V. HILL, 1924",
+      "light": "head",
+      "says": "He did. One year later, in 1924, he wrote that something central must be governing the heart, protecting it.",
+      "url": "https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIGINALS/main/BB_C_19/board/SC6-BOARD-10-VIVEKA.png"
+    },
+    {
+      "n": 11,
+      "file": "SC6-BOARD-11-VIVEKA.png",
+      "who": "VIVEKA",
+      "shows": "BUT HE HAD NO EVIDENCE",
+      "credit": "A. V. HILL, 1924",
+      "light": "head",
+      "says": "But he had only reasoning, no evidence. So it was dismissed, and for seventy years everybody studied the muscle.",
+      "url": "https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIGINALS/main/BB_C_19/board/SC6-BOARD-11-VIVEKA.png"
+    },
+    {
+      "n": 12,
+      "file": "SC6-BOARD-12-VIVEKA.png",
+      "who": "VIVEKA",
+      "shows": "PROVED IN FIVE PAPERS",
+      "credit": "NOAKES, ST CLAIR GIBSON AND LAMBERT, 2004",
+      "light": "head",
+      "says": "Then Noakes, St Clair Gibson and Lambert published it properly, five linked papers, in 2004.",
+      "url": "https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIGINALS/main/BB_C_19/board/SC6-BOARD-12-VIVEKA.png"
+    },
+    {
+      "n": 13,
+      "file": "SC6-BOARD-13-VIVEKA.png",
       "who": "VIVEKA",
       "shows": "THE BRAIN DECIDES",
+      "credit": "THE CENTRAL GOVERNOR",
       "light": "head",
-      "says": "Pulse, breath, temperature, water, sugar. It reads all of it, the whole time, and it stops you long before anything tears. THE BRAIN DECIDES.",
-      "url": "https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIGINALS/main/BB_C_19/board/SC6-BOARD-07-VIVEKA.png"
+      "says": "The brain reads your pulse, your breath, your temperature, your water, your sugar. The whole time. And it decides when you stop.",
+      "url": "https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIGINALS/main/BB_C_19/board/SC6-BOARD-13-VIVEKA.png"
     }
   ]
 }

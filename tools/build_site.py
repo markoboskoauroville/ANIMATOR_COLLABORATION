@@ -491,6 +491,7 @@ h2{font-size:19px;margin:38px 0 14px;padding-bottom:7px;border-bottom:1px solid 
 .laycell img{width:100%;display:block;border:1px solid var(--rule)}
 .laycell .lt b{display:block;font:700 10px ui-monospace,monospace;letter-spacing:.1em;
  color:var(--brass);margin-bottom:4px}
+.laycell .lt span.cred{display:block;font:700 9px ui-monospace,monospace;letter-spacing:.1em;color:var(--dim);margin-bottom:5px}
 .laycell .lt span{font-size:12px;line-height:1.45;color:var(--dim)}
 @media(max-width:620px){.laygrid{grid-template-columns:1fr}}
 .cardhead .layhint{font:700 9px ui-monospace,monospace;letter-spacing:.14em;color:var(--dim)}
@@ -2985,10 +2986,13 @@ for _i, e in enumerate(_cards):
                       '<a class=dl href="%s" download>DOWNLOAD&nbsp;%02d&nbsp;&nbsp;%s</a>'
                       '<img src="../mid/%s.jpg" alt="" loading=lazy>'
                       '<div class=lt><b>%s &nbsp;&middot;&nbsp; %s</b>'
-                      '<span>%s</span></div></div>'
+                      '%s<span>%s</span></div></div>'
                       % (_s['url'], _s['n'], html.escape(_s['light'].upper()),
                          _s['file'].rsplit('.', 1)[0], html.escape(_s['who']),
-                         html.escape(_s['shows']), html.escape(_s['says'])))
+                         html.escape(_s['shows']),
+                         ('<span class=cred>%s</span>' % html.escape(_s['credit']))
+                         if _s.get('credit') else '',
+                         html.escape(_s['says'])))
         cd.append('</div>')
 
     # THE LAYERS, SIDE BY SIDE, EACH WITH ITS DOWNLOAD ABOVE IT.
