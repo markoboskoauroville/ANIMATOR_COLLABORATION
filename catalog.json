@@ -3906,7 +3906,7 @@
       "title": "The key is permission",
       "status": "accepted",
       "date": "2026-09-04",
-      "note": "THE FOURTH LINE ARRIVES ALONE, and it is the only line the display says that nobody speaks first: THE KEY IS PERMISSION. It comes after \"then it can be a different number\", brighter than the three above it because it has only just landed. AND HE LIFTS THE REAL ONE OFF HIS NECK on that beat. This is the frame where the figurative key and the gold one become the same object, which is the whole reason the word has been circling the scene. The key is GOLD and is the only colour in the picture.",
+      "note": "THE FOURTH LINE ARRIVES ALONE, and it is the only line the display says that nobody speaks first: THE KEY IS PERMISSION. It comes after \"then it can be a different number\", brighter than the three above it because it has only just landed. AND HE LIFTS THE REAL ONE OFF HIS NECK on that beat. This is the frame where the figurative key and the gold one become the same object, which is the whole reason the word has been circling the scene. The key is GOLD and is the only colour in the picture. THE BOY HAS THE LAST WORD AND VIVEKA DOES NOT ANSWER. Viveka says that is the key, and Manan takes it from there and says the whole thing back himself: he was never empty, something stopped him early to keep him safe, and it will do it again tomorrow. IT IS NOT A WALL. IT IS A SETTING.\n\nThe scene ends on him. Nobody confirms it and nobody adds to it, because the point of the entire room is that the boy can now do this without being told. An answer from Viveka here would take the discovery back off him.",
       "plates": [
         {
           "file": "19-5-PLATE.png",
@@ -3921,11 +3921,7 @@
         },
         {
           "speaker": "MANAN",
-          "line": "The permission."
-        },
-        {
-          "speaker": "VIVEKA",
-          "line": "You will not always have me to ask."
+          "line": "The permission. So I was never empty. Something in me stopped me early, to keep me safe, and it will do it again tomorrow and the day after. It is not a wall. It is a setting."
         }
       ],
       "id": "19-5"
@@ -4190,7 +4186,7 @@
     }
   ],
   "event": "Breakthrough Junior Challenge 2026",
-  "site_version": 326,
+  "site_version": 327,
   "footage": [
     {
       "name": "Key catch",
