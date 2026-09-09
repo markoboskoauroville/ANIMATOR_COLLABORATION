@@ -1653,15 +1653,16 @@
       "kind": "flow",
       "n": "3",
       "file": "flow/03-bike-in.jpg",
-      "title": "He tests it on himself",
+      "title": "Riding the bicycle, interior",
       "status": "placeholder",
       "scenes": [
         "3",
         "4",
         "5"
       ],
-      "note": "He takes the question out on the road and then indoors onto the trainer, racing his own earlier ride on the laptop in front of him. There is no opponent and nobody watching: the only thing he is trying to beat is what his own body did an hour ago, which is the argument of the film before anyone states it. He pushes until he has nothing left, then stops and breathes.\n\nTHE WHOLE SCENE IS CARRIED BY THE EDIT AND THE MUSIC. NO DIALOGUE.",
-      "flow_pos": 0
+      "note": "",
+      "flow_pos": 0,
+      "finished": true
     },
     {
       "kind": "flow",
@@ -2100,7 +2101,7 @@
       "kind": "keyframe",
       "shot": "5.0",
       "file": "BB_C_5/ref/SC3-2.jpg",
-      "status": "placeholder",
+      "status": "superseded",
       "date": "2026-08-31",
       "slug": "INT. ROOM — EYES CLOSED",
       "what": "He stops pushing and closes his eyes.",
@@ -2110,29 +2111,7 @@
         "phase": "Phase 6 of 15, HE CLOSES HIS EYES.",
         "journey": "APPROACH TO THE THRESHOLD. The last frame of the ordinary world."
       },
-      "dialogue": [
-        {
-          "speaker": "MANAN (V.O.)",
-          "line": "My legs are fine. Nothing hurts. Nothing is torn."
-        },
-        {
-          "speaker": "MANAN (V.O.)",
-          "line": "I'm just done."
-        },
-        {
-          "speaker": "MANAN (V.O.)",
-          "line": "And I didn't decide that."
-        },
-        {
-          "speaker": "MANAN (V.O.)",
-          "line": "Something in me said no, and it wasn't my legs."
-        },
-        {
-          "speaker": "MANAN (V.O.)",
-          "line": "So I want to know who set it."
-        }
-      ],
-      "note": "FLAT, NOT DRAMATIC. He is out of breath and he has just noticed something: PUZZLED BEATS DEVASTATED. No self-pity anywhere. He is not upset that he failed, he is annoyed that something overruled him and would not say why, and that difference is what makes the second half of the film possible.\n\nTHE TURN IS ONE WORD, \"DECIDED\". Everything before it is legs and lungs. \"And I didn’t decide that\" is where the film changes subject from the body to whoever is running it, and it lands as a complaint rather than a theory.\n\nAND THE LAST LINE IS A QUESTION, NOT A CONCLUSION. \"So I want to know who set it\" is the door the vortex opens three shots later. He is not looking for a place, he is looking for a person, and he finds one.",
+      "note": "FLAT, NOT DRAMATIC. He is out of breath and he has just noticed something: PUZZLED BEATS DEVASTATED. No self-pity anywhere. He is not upset that he failed, he is annoyed that something overruled him and would not say why, and that difference is what makes the second half of the film possible.\n\nTHE TURN IS ONE WORD, \"DECIDED\". Everything before it is legs and lungs. \"And I didn’t decide that\" is where the film changes subject from the body to whoever is running it, and it lands as a complaint rather than a theory.\n\nAND THE LAST LINE IS A QUESTION, NOT A CONCLUSION. \"So I want to know who set it\" is the door the vortex opens three shots later. He is not looking for a place, he is looking for a person, and he finds one. ANSWERED 9.9.2026 by the finished edit. The scene is the cut; these were stills standing beside it.",
       "scene": "5",
       "id": "V7_5_8_eyes_closed"
     },
@@ -2476,7 +2455,7 @@
       "shot": "5.0",
       "representative": true,
       "file": "BB_C_5/SC3-3.png",
-      "status": "proposal",
+      "status": "superseded",
       "date": "2026-09-01",
       "slug": "INT. ROOM — HE CLOSES HIS EYES",
       "what": "Sat up on the bike, hands loose on his thighs, shoulders dropped, eyes closed, the face completely still. Still wet from the effort.",
@@ -2487,7 +2466,8 @@
         "journey": "APPROACH TO THE THRESHOLD. The last frame of the ordinary world."
       },
       "scene": "5",
-      "id": "5-0-HERO-v1"
+      "id": "5-0-HERO-v1",
+      "note": "ANSWERED 9.9.2026 by the finished edit. The scene is the cut; these were stills standing beside it."
     },
     {
       "file": "BB_C_7/7-2-20260903.png",
@@ -4039,7 +4019,29 @@
       "full": "https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIGINALS/main/BB_C_3/3-1-BICYCLE-int.mp4",
       "full_label": "THE&nbsp;EDIT &nbsp;1920 &times; 1080 &nbsp;16&nbsp;MB",
       "note": "THE FINISHED EDIT OF THE INTERIOR. Twenty five seconds, cut, and treated as done. This is the whole of what used to be two phases: he tests it on the trainer and races himself, now one scene carried by one edit.\n\nNO DIALOGUE HERE. The scene runs on music.",
-      "id": "3-1-BICYCLE-int-loop"
+      "id": "3-1-BICYCLE-int-loop",
+      "dialogue": [
+        {
+          "speaker": "MANAN (V.O.)",
+          "line": "My legs are fine. Nothing hurts. Nothing is torn."
+        },
+        {
+          "speaker": "MANAN (V.O.)",
+          "line": "I'm just done."
+        },
+        {
+          "speaker": "MANAN (V.O.)",
+          "line": "And I didn't decide that."
+        },
+        {
+          "speaker": "MANAN (V.O.)",
+          "line": "Something in me said no, and it wasn't my legs."
+        },
+        {
+          "speaker": "MANAN (V.O.)",
+          "line": "So I want to know who set it."
+        }
+      ]
     },
     {
       "file": "clips/SC0-2.mp4",
@@ -4106,7 +4108,7 @@
     }
   ],
   "event": "Breakthrough Junior Challenge 2026",
-  "site_version": 308,
+  "site_version": 309,
   "footage": [
     {
       "name": "Key catch",

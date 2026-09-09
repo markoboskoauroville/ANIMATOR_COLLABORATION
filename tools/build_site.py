@@ -518,6 +518,7 @@ h2{font-size:19px;margin:38px 0 14px;padding-bottom:7px;border-bottom:1px solid 
  font:700 12px ui-monospace,monospace;display:flex;align-items:center;justify-content:center;flex:0 0 26px}
 .rtph h3{margin:0;font:700 13px ui-monospace,monospace;letter-spacing:.1em;
  text-transform:uppercase;color:var(--body)}
+.rtph .fin{font:700 8px ui-monospace,monospace;letter-spacing:.14em;color:#17150f;background:var(--brass);border-radius:3px;padding:3px 7px;margin-left:10px}
 .rtph .st{margin-left:auto;font:600 9.5px ui-monospace,monospace;letter-spacing:.1em;color:var(--dim)}
 
 /* THE GUIDE. Baba, 3.9.2026: a play button beside every phase title, the same
@@ -2546,7 +2547,9 @@ for e in _fl:
     # under the bicycle. A clip pinned to a FRAME cannot drift: it names the
     # picture it starts at, and if the picture moves the button moves with it.
     rt.append('<div class=rtph><span class=n>SC%s</span><h3>%s</h3>'
-              '<span class=st>%s</span></div>' % (n, e.get('title', ''), st))
+              '%s<span class=st>%s</span></div>'
+              % (n, e.get('title', ''),
+                 '<span class=fin>FINISHED</span>' if e.get('finished') else '', st))
     # A SECTION CAN EXPLAIN ITSELF. 3.9.2026: the flow entries carried notes and
     # nothing printed them, so two beats Baba had written down were invisible on
     # the page: the frame freezing while Manan walks into it with a magnifying
