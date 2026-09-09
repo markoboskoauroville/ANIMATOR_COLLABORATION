@@ -1685,7 +1685,7 @@
       "scenes": [
         "7"
       ],
-      "note": "The light fades and he is at a door that is already giving off light, and he is pulled through it rather than walking in. Only then does the building assemble around us: halls of organ doors with shapes pressed into the clay and no written names, and nothing behind any of them for him. Then the key, small at the end of a hall, and then the key door filling the frame. ONE UNBROKEN MOVE, seen through his own eyes, with no cut anywhere in it.",
+      "note": "He is carried up through the body, from the pelvis to the chest to the neck, and he does nothing: the lift takes him. The vertebrae stand behind glass, there to be SEEN and not used. At the top, set into the underside of the skull, the key door stands open with the clover cut above it and light coming out. He steps into the opening and looks in. ONE UNBROKEN MOVE, seen through his own eyes, with no cut anywhere in it.",
       "flow_pos": 0
     },
     {
@@ -3531,9 +3531,9 @@
       "scene": "7",
       "shot": "7.5",
       "title": "It opens by itself, and he is in front of it",
-      "status": "accepted",
+      "status": "superseded",
       "date": "2026-09-04",
-      "note": "IT OPENS BY ITSELF AND HE DOES NOT TOUCH IT, and he is standing in it. The panels slide apart and what is behind is pure white with no detail in it, so bright that it BLOOMS: the light spills past the opening, washes over the inner edges of the panels and eats the hard edges of the arch away. He is a dark shape against it. THIS IS A COMPOSED SHOT: the boy is keyed in from the live action, so the empty door is kept beside it as the plate. He is composited from the 480 wide proxy here, which is enough to show the intent; the real composite is made in post from the ProRes.",
+      "note": "IT OPENS BY ITSELF AND HE DOES NOT TOUCH IT, and he is standing in it. The panels slide apart and what is behind is pure white with no detail in it, so bright that it BLOOMS: the light spills past the opening, washes over the inner edges of the panels and eats the hard edges of the arch away. He is a dark shape against it. THIS IS A COMPOSED SHOT: the boy is keyed in from the live action, so the empty door is kept beside it as the plate. He is composited from the 480 wide proxy here, which is enough to show the intent; the real composite is made in post from the ProRes. CUT 9.9.2026. He stands in the open door and the next frame is the room. The door opening again and closing behind him repeats a beat the film has already played.",
       "plates": [
         {
           "file": "7-5-PLATE.png",
@@ -3549,9 +3549,9 @@
       "scene": "7",
       "shot": "7.6",
       "title": "And it closes behind him",
-      "status": "accepted",
+      "status": "superseded",
       "date": "2026-09-04",
-      "note": "AND IT CLOSES BEHIND HIM. This is 7-4 AGAIN, the identical picture returning, because the door shuts on exactly the frame it opened from and a repeat says that better than a variation would. A separate file because every asset keeps a unique name, the same way 1-0-C-v2 and 1-6-COLLAPSE-v1 are one drawing at two points in scene one. After this we are inside, and Viveka's room does not change.",
+      "note": "AND IT CLOSES BEHIND HIM. This is 7-4 AGAIN, the identical picture returning, because the door shuts on exactly the frame it opened from and a repeat says that better than a variation would. A separate file because every asset keeps a unique name, the same way 1-0-C-v2 and 1-6-COLLAPSE-v1 are one drawing at two points in scene one. After this we are inside, and Viveka's room does not change. CUT 9.9.2026. He stands in the open door and the next frame is the room. The door opening again and closing behind him repeats a beat the film has already played.",
       "id": "7-6"
     },
     {
@@ -4164,7 +4164,7 @@
     }
   ],
   "event": "Breakthrough Junior Challenge 2026",
-  "site_version": 315,
+  "site_version": 316,
   "footage": [
     {
       "name": "Key catch",
