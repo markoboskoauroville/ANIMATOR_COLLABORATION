@@ -2776,7 +2776,7 @@
       "title": "The vortex, up",
       "status": "accepted",
       "date": "2026-09-02",
-      "note": "REJECTED FOR ITS ASPECT RATIO ONLY. Square, 2048 x 2048, where the film is 16:9. The drawing itself was right and this frame became the reference v3 was built from, so only the framing changed. Kept because a rejected take is not rubbish. APPROVED BY BABA IN CHAT 3.9.2026. It had been superseded by v3, which was generated separately while he was approving this one. v3 is kept as a proposal; this is the frame he chose.",
+      "note": "REJECTED FOR ITS ASPECT RATIO ONLY. Square, 2048 x 2048, where the film is 16:9. The drawing itself was right and this frame became the reference v3 was built from, so only the framing changed. Kept because a rejected take is not rubbish. APPROVED BY BABA IN CHAT 3.9.2026. It had been superseded by v3, which was generated separately while he was approving this one. v3 is kept as a proposal; this is the frame he chose. THE LAST LINE OF THE VOICEOVER LANDS HERE, checked against the cut: he is already in the vortex, flying, when he says AND I AM GOING TO FIND OUT. Everything before it is spoken over the trainer; this one alone is spoken over the journey, which is what turns a complaint into a decision.",
       "refs": [
         "https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIGINALS/main/BB_C_9/9-1-GANESHA-v1.png"
       ],
@@ -2795,7 +2795,13 @@
         "shot": "the same drone, and above it ONE bansuri flute alone. solo, breathy, unaccompanied, long phrases with audible breath between them, rising and circling rather than going anywhere. no other instrument enters. no percussion at all. the flute is the only thing moving.",
         "why": "Air, because this is cloud, and the breath instruments are what air sounds like. The bansuri plays alone because he is alone in it and because a solo has no ground under it, which is the feeling of the floor going out. The drone continues from the scene bed so the music does not restart when the picture changes; only the instrumentation does. Percussion stays out until he arrives in the house, so that the first heartbeat in the film is the heart hall."
       },
-      "id": "9-1-VORTEX-UP-v1"
+      "id": "9-1-VORTEX-UP-v1",
+      "dialogue": [
+        {
+          "speaker": "MANAN (V.O.)",
+          "line": "And I'm going to find out."
+        }
+      ]
     },
     {
       "file": "BB_C_9R/9R-1-VORTEX-DOWN-v1.png",
@@ -2963,8 +2969,18 @@
       "title": "He goes down",
       "status": "accepted",
       "date": "2026-09-03",
-      "note": "The collapse. Caught mid fall, leaning back, one arm hanging, both legs sliding out from under him, head tipped up and mouth open. He is empty, and everybody watching knows what empty looks like. This is the frame the whole film has to earn, because what happens thirty seconds later contradicts it. FILED AS 1-11, 3.9.2026, in the reset that gave scene one its final names. Before the reset it was 1-6-COLLAPSE-v1, and every name mentioned in this note is a pre reset name. HOW IT MOVES. FROM 1-11 TO 1-17 EVERYTHING IS FROZEN, except two things: the LIVE ACTION of Manan, composited in, and the CLOSE-UP OF THE MAGNIFYING GLASS. The wobble on the glass must be VERY SUBTLE and must never draw attention to itself. It has to behave as if somebody is holding it in their hand, not as if a computer were pushing it around. If you notice the movement, it is too big.",
-      "id": "1-11"
+      "note": "The collapse. Caught mid fall, leaning back, one arm hanging, both legs sliding out from under him, head tipped up and mouth open. He is empty, and everybody watching knows what empty looks like. This is the frame the whole film has to earn, because what happens thirty seconds later contradicts it. FILED AS 1-11, 3.9.2026, in the reset that gave scene one its final names. Before the reset it was 1-6-COLLAPSE-v1, and every name mentioned in this note is a pre reset name. HOW IT MOVES. FROM 1-11 TO 1-17 EVERYTHING IS FROZEN, except two things: the LIVE ACTION of Manan, composited in, and the CLOSE-UP OF THE MAGNIFYING GLASS. The wobble on the glass must be VERY SUBTLE and must never draw attention to itself. It has to behave as if somebody is holding it in their hand, not as if a computer were pushing it around. If you notice the movement, it is too big. HE SPEAKS OVER THIS, checked against the cut: the oxygen and the empty tank are said while the runner is going down, not afterwards.",
+      "id": "1-11",
+      "dialogue": [
+        {
+          "speaker": "MANAN",
+          "line": "You run, the muscle burns through its oxygen. The fuel runs out."
+        },
+        {
+          "speaker": "MANAN",
+          "line": "And when the tank reads empty, the body stops."
+        }
+      ]
     },
     {
       "file": "BB_C_1/1-6-COLLAPSE-GLASS-v1.png",
@@ -3017,23 +3033,6 @@
       "status": "accepted",
       "date": "2026-09-03",
       "note": "INSPECTION FIVE, AND THE LAST ONE IN THE FILM. Glass on the camera lens as always, but CENTRED ON THE CALF rather than beside it, which is what finally made the leg align: with the lens on the leg, magnifying about the lens centre and magnifying about the leg’s own axis become the same thing, so the leg runs unbroken from the shorts, through the circle, out into the ankle and the shoe. Three times up: one calf fills the lens, each fibre a separate line, the two bellies of the muscle broad and modelled, and the light burning where they meet. It stops reading as a leg with muscles in it and starts reading as the machinery itself. Nothing new is invented inside the lens, per modules/magnifying-glass.md. FILED AS 1-17, 3.9.2026, in the reset that gave scene one its final names. Before the reset it was 1-7-RECOVERY-GLASS-v8, and every name mentioned in this note is a pre reset name. HE SPEAKS HERE, AND IT IS ALREADY SHOT. These are Manan’s own recorded lines, M1 to M5, live footage in his own voice. They were only listed against 19-3, where he says the same theory to Viveka, so the dialogue page showed him silent through the whole first scene. HOW IT MOVES. THIS IS WHERE THE STILL PICTURE COMES ALIVE. The glass still wobbles, and inside the leg movement announces itself and then opens into full animation. It only works because everything really was standing still until now. Full animation from here to the end of the scene.",
-      "dialogue": [
-        {
-          "speaker": "MANAN",
-          "line": "You run, the muscle burns through its oxygen.",
-          "shot": true
-        },
-        {
-          "speaker": "MANAN",
-          "line": "The fuel runs out.",
-          "shot": true
-        },
-        {
-          "speaker": "MANAN",
-          "line": "And when the tank reads empty, the body stops.",
-          "shot": true
-        }
-      ],
       "id": "1-17"
     },
     {
@@ -3098,17 +3097,7 @@
       "status": "accepted",
       "date": "2026-09-03",
       "note": "THE FINISH LINE, CLOSE, AND IT DID NOT EXIST BEFORE. Every other finish frame is the same wide avenue with the banner far away, and the only close view of it was inside the magnifying glass, which belongs to Manan and to a later part of the scene. Made by Baba's staged method: the banner cropped out of 1-5-FINISH-v1 and redrawn sharp at full size in the same hand. FINISH is the only lettering in the frame. This is what he sees when he looks up, before he runs. FILED AS 1-7, 3.9.2026, in the reset that gave scene one its final names. Before the reset it was 1-2b-CLOSE-v1, and every name mentioned in this note is a pre reset name. HOW IT MOVES. A SMOOTH ZOOM, as though a real camera were doing it, twenty five frames a second. This is an announcement too: it tells the audience the next shot is going to be full, normal movement. HE SPEAKS HERE. Watching a man with nothing left run FASTER is the moment the whole film starts, and he says so: hold on, you have nothing left, so where did that come from. Everything after this is him answering his own question.",
-      "id": "1-7",
-      "dialogue": [
-        {
-          "speaker": "MANAN (V.O.)",
-          "line": "Hold on. You have nothing left."
-        },
-        {
-          "speaker": "MANAN (V.O.)",
-          "line": "So where did that come from?"
-        }
-      ]
+      "id": "1-7"
     },
     {
       "file": "BB_C_1/SC1-22.png",
@@ -3192,7 +3181,7 @@
       "title": "He turns to us",
       "status": "accepted",
       "date": "2026-09-03",
-      "note": "HE TURNS TO US. Pushed in, and the drawing behind him is the SAME picture nearer: the head and shoulders of 1-6-COLLAPSE-v1, head tipped back, face up, mouth open. He is inspecting one image at two distances, which is what makes 1.10 and 1.11 one action rather than two shots. The drawing is pale and much fainter than he is, so the drawn world recedes exactly as the real one takes over. SUPERSEDES 1-6-v1, which carried an unrelated profile head of the old man. Same method as 1-5-v3: composite first, then render from that composite as the single reference. FILED AS 1-13, 3.9.2026, in the reset that gave scene one its final names. Before the reset it was 1-6-v3, and every name mentioned in this note is a pre reset name. HOW IT MOVES. GOOD AS IT IS.",
+      "note": "HE TURNS TO US. Pushed in, and the drawing behind him is the SAME picture nearer: the head and shoulders of 1-6-COLLAPSE-v1, head tipped back, face up, mouth open. He is inspecting one image at two distances, which is what makes 1.10 and 1.11 one action rather than two shots. The drawing is pale and much fainter than he is, so the drawn world recedes exactly as the real one takes over. SUPERSEDES 1-6-v1, which carried an unrelated profile head of the old man. Same method as 1-5-v3: composite first, then render from that composite as the single reference. FILED AS 1-13, 3.9.2026, in the reset that gave scene one its final names. Before the reset it was 1-6-v3, and every name mentioned in this note is a pre reset name. HOW IT MOVES. GOOD AS IT IS. AND THE QUESTION IS ASKED HERE, with the glass up: hold on, you have nothing left, so where did that come from. This is the moment the film starts.",
       "plates": [
         {
           "file": "1-13-CLEAN-v1.png",
@@ -3200,7 +3189,17 @@
           "label": "Clean plate, no live action"
         }
       ],
-      "id": "1-13"
+      "id": "1-13",
+      "dialogue": [
+        {
+          "speaker": "MANAN",
+          "line": "Hold on. You have nothing left."
+        },
+        {
+          "speaker": "MANAN",
+          "line": "So where did that come from?"
+        }
+      ]
     },
     {
       "file": "BB_C_1/SC1-9.png",
@@ -4058,10 +4057,6 @@
         {
           "speaker": "MANAN (V.O.)",
           "line": "So I want to know who set it."
-        },
-        {
-          "speaker": "MANAN (V.O.)",
-          "line": "And I'm going to find out."
         }
       ]
     },
@@ -4154,7 +4149,7 @@
     }
   ],
   "event": "Breakthrough Junior Challenge 2026",
-  "site_version": 317,
+  "site_version": 318,
   "footage": [
     {
       "name": "Key catch",
