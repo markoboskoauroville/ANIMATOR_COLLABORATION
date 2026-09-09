@@ -1938,20 +1938,20 @@
     "url": "https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIGINALS/main/BB_C_9/SC4-5.png"
   },
   "SC5-1.png": {
-    "bytes": 8337195,
-    "sha256": "b7731e0f6fa0c58290b953825e987da38930e84c4a76a60f4ef87ecbd3f46a7d",
+    "bytes": 8916493,
+    "sha256": "58aaaef06692418e49bf3ad768b215f393cc65224bc34707ef2605d1ccaa1de1",
     "path": "BB_C_7/SC5-1.png",
     "url": "https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIGINALS/main/BB_C_7/SC5-1.png"
   },
   "SC5-2.png": {
-    "bytes": 6011480,
-    "sha256": "d9b02bac43420539fcb37020336ed85d94dc64ab160dd4600791f7616472e11d",
+    "bytes": 6274920,
+    "sha256": "80d8f51fff867844ef32f21bf81d2735fe0e944d14ee6d2adc5c306a5947c631",
     "path": "BB_C_7/SC5-2.png",
     "url": "https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIGINALS/main/BB_C_7/SC5-2.png"
   },
   "SC5-3.png": {
-    "bytes": 7095726,
-    "sha256": "170eab343d3f37c807310f636bafd21312ba436dc1bd60f30c46859efc524f94",
+    "bytes": 6972335,
+    "sha256": "c436889cf693196c46fc0b7e08002b40d4ac126b43329ead7b5155504293a42a",
     "path": "BB_C_7/SC5-3.png",
     "url": "https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIGINALS/main/BB_C_7/SC5-3.png"
   },
@@ -2212,5 +2212,107 @@
     "sha256": "4846d57f001917670b34541432fc589ce24e9e765bef8e6c996bdba1d458905b",
     "path": "BB_C_19/board/SC6-BOARD-13-VIVEKA.png",
     "url": "https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIGINALS/main/BB_C_19/board/SC6-BOARD-13-VIVEKA.png"
+  },
+  "SC5-1_1-background.png": {
+    "bytes": 8896315,
+    "sha256": "ca5e3f3ec4b600e1858606ac35297842ec7883bcbb7394ca6b6130ad2db4fcd5",
+    "path": "BB_C_7/layers/SC5-1_1-background.png",
+    "url": "https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIGINALS/main/BB_C_7/layers/SC5-1_1-background.png"
+  },
+  "SC5-1_2-lift.png": {
+    "bytes": 205339,
+    "sha256": "372d208fddacb2d3f0e73571b1aae64560a62e89a5d44cadbca897a5790688a5",
+    "path": "BB_C_7/layers/SC5-1_2-lift.png",
+    "url": "https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIGINALS/main/BB_C_7/layers/SC5-1_2-lift.png"
+  },
+  "SC5-1_3-manan.png": {
+    "bytes": 50247,
+    "sha256": "0aa96c0bede88bcfe98cdb6e69fb38f45fbb6638b9add60e5632c47f1a180e95",
+    "path": "BB_C_7/layers/SC5-1_3-manan.png",
+    "url": "https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIGINALS/main/BB_C_7/layers/SC5-1_3-manan.png"
+  },
+  "SC5-1_composite.png": {
+    "bytes": 8916493,
+    "sha256": "58aaaef06692418e49bf3ad768b215f393cc65224bc34707ef2605d1ccaa1de1",
+    "path": "BB_C_7/layers/SC5-1_composite.png",
+    "url": "https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIGINALS/main/BB_C_7/layers/SC5-1_composite.png"
+  },
+  "SC5-2_1-background.png": {
+    "bytes": 6264159,
+    "sha256": "e9dac47a88492303ec76d0b2e4a4218a7faf9825e067b3ed43bd9514783f68e2",
+    "path": "BB_C_7/layers/SC5-2_1-background.png",
+    "url": "https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIGINALS/main/BB_C_7/layers/SC5-2_1-background.png"
+  },
+  "SC5-2_2-lift.png": {
+    "bytes": 90489,
+    "sha256": "2423a4d4c8d60fc3a4475d8e7ec9cd979240773ba431ed095483e2cbd574a8c5",
+    "path": "BB_C_7/layers/SC5-2_2-lift.png",
+    "url": "https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIGINALS/main/BB_C_7/layers/SC5-2_2-lift.png"
+  },
+  "SC5-2_3-manan.png": {
+    "bytes": 24386,
+    "sha256": "7532ba0b157ec511ff2e207cd80d749c645f5c5fc0b30059dc11f03981fb6bb7",
+    "path": "BB_C_7/layers/SC5-2_3-manan.png",
+    "url": "https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIGINALS/main/BB_C_7/layers/SC5-2_3-manan.png"
+  },
+  "SC5-2_composite.png": {
+    "bytes": 6274920,
+    "sha256": "80d8f51fff867844ef32f21bf81d2735fe0e944d14ee6d2adc5c306a5947c631",
+    "path": "BB_C_7/layers/SC5-2_composite.png",
+    "url": "https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIGINALS/main/BB_C_7/layers/SC5-2_composite.png"
+  },
+  "SC5-3_1-background.png": {
+    "bytes": 6968445,
+    "sha256": "422ca7755acca5ec5165fb8478ad9a6cc69ed2f260a43c370ab9a18760dd9828",
+    "path": "BB_C_7/layers/SC5-3_1-background.png",
+    "url": "https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIGINALS/main/BB_C_7/layers/SC5-3_1-background.png"
+  },
+  "SC5-3_2-lift.png": {
+    "bytes": 151437,
+    "sha256": "963482bd0afcdf2df6081076f620585920d2d51116e670bed98453d1434a9e22",
+    "path": "BB_C_7/layers/SC5-3_2-lift.png",
+    "url": "https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIGINALS/main/BB_C_7/layers/SC5-3_2-lift.png"
+  },
+  "SC5-3_3-manan.png": {
+    "bytes": 38523,
+    "sha256": "c72910ce73b242e19f41534bde20d45c717e69da9d7c3911cec96e43c22d70c7",
+    "path": "BB_C_7/layers/SC5-3_3-manan.png",
+    "url": "https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIGINALS/main/BB_C_7/layers/SC5-3_3-manan.png"
+  },
+  "SC5-3_composite.png": {
+    "bytes": 6972335,
+    "sha256": "c436889cf693196c46fc0b7e08002b40d4ac126b43329ead7b5155504293a42a",
+    "path": "BB_C_7/layers/SC5-3_composite.png",
+    "url": "https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIGINALS/main/BB_C_7/layers/SC5-3_composite.png"
+  },
+  "SC5-4_1-background.png": {
+    "bytes": 7254907,
+    "sha256": "8cf472fa789349dc95fdd368c84242a1bda25f4f6503d95b520f6127952ec800",
+    "path": "BB_C_7/layers/SC5-4_1-background.png",
+    "url": "https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIGINALS/main/BB_C_7/layers/SC5-4_1-background.png"
+  },
+  "SC5-4_3-manan.png": {
+    "bytes": 3749578,
+    "sha256": "86fdc612cf4b2e4600c8db030bbe5ab8d11a843dbc3f11d401782d729af50ab6",
+    "path": "BB_C_7/layers/SC5-4_3-manan.png",
+    "url": "https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIGINALS/main/BB_C_7/layers/SC5-4_3-manan.png"
+  },
+  "SC5-4_composite.png": {
+    "bytes": 7135252,
+    "sha256": "f813ee134b6d3df9dcaf5f6c23153aa609c138327e75851c055cecce2874e994",
+    "path": "BB_C_7/layers/SC5-4_composite.png",
+    "url": "https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIGINALS/main/BB_C_7/layers/SC5-4_composite.png"
+  },
+  "SHEET-body.png": {
+    "bytes": 6283277,
+    "sha256": "185ab284f514b3d396f89313b430dc89e1d2d43e566c8f3a47d0922918084a63",
+    "path": "BB_C_7/layers/SHEET-body.png",
+    "url": "https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIGINALS/main/BB_C_7/layers/SHEET-body.png"
+  },
+  "SHEET-lift.png": {
+    "bytes": 6721346,
+    "sha256": "e37e178366d4f1744a594d19a04591c791a47ad03793ce05d38c18d038ad1b38",
+    "path": "BB_C_7/layers/SHEET-lift.png",
+    "url": "https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIGINALS/main/BB_C_7/layers/SHEET-lift.png"
   }
 }
