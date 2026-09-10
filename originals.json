@@ -2380,5 +2380,83 @@
     "sha256": "c790b536a794fa3406b027ed4a816a1a0a47ef460d11a5e677bd998038321cde",
     "path": "BB_C_19/board/SC6-BOARD-15-HOLOKEY_4-hologram-key.png",
     "url": "https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIGINALS/main/BB_C_19/board/SC6-BOARD-15-HOLOKEY_4-hologram-key.png"
+  },
+  "MANAN-REF-01-THREE-QUARTER-CLOSE-EYES-OPEN-MAGNIFIER.jpg": {
+    "bytes": 893540,
+    "sha256": "3f2904e84eca4af2bada1e8e4889f6652ff614c0e37e4d0a8cae1153875f0529",
+    "path": "assets/MANAN_REFS/MANAN-REF-01-THREE-QUARTER-CLOSE-EYES-OPEN-MAGNIFIER.jpg",
+    "url": "https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE/main/assets/MANAN_REFS/MANAN-REF-01-THREE-QUARTER-CLOSE-EYES-OPEN-MAGNIFIER.jpg"
+  },
+  "MANAN-REF-02-BACK-THREE-QUARTER-CLOSE-LOOKING-RIGHT.jpg": {
+    "bytes": 894559,
+    "sha256": "6cf1cd26ad7c50c5e8ba6d5057a67c4576b51e59dcf34ac48506266efc943554",
+    "path": "assets/MANAN_REFS/MANAN-REF-02-BACK-THREE-QUARTER-CLOSE-LOOKING-RIGHT.jpg",
+    "url": "https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE/main/assets/MANAN_REFS/MANAN-REF-02-BACK-THREE-QUARTER-CLOSE-LOOKING-RIGHT.jpg"
+  },
+  "MANAN-REF-03-PROFILE-CLOSE-LOOKING-DOWN-HAND-REACHING.jpg": {
+    "bytes": 848198,
+    "sha256": "18d0dea12546d53c89793e4ed2664e91127b199dc75c9cb3390cb3311e686db0",
+    "path": "assets/MANAN_REFS/MANAN-REF-03-PROFILE-CLOSE-LOOKING-DOWN-HAND-REACHING.jpg",
+    "url": "https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE/main/assets/MANAN_REFS/MANAN-REF-03-PROFILE-CLOSE-LOOKING-DOWN-HAND-REACHING.jpg"
+  },
+  "MANAN-REF-04-FRONT-MEDIUM-EYES-OPEN-HOLDING-KEY.jpg": {
+    "bytes": 916005,
+    "sha256": "c4bcbb3b15df1128ba54a052c760d2064fd34fb8271b148412078ffd619702f0",
+    "path": "assets/MANAN_REFS/MANAN-REF-04-FRONT-MEDIUM-EYES-OPEN-HOLDING-KEY.jpg",
+    "url": "https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE/main/assets/MANAN_REFS/MANAN-REF-04-FRONT-MEDIUM-EYES-OPEN-HOLDING-KEY.jpg"
+  },
+  "MANAN-REF-05-FRONT-WAIST-TALKING-KEY-HAND-ON-STAND.jpg": {
+    "bytes": 901083,
+    "sha256": "6344c15ac2c71819dc437b87f3a4524cf40ee2d014d81a6b916b640e2eec92a5",
+    "path": "assets/MANAN_REFS/MANAN-REF-05-FRONT-WAIST-TALKING-KEY-HAND-ON-STAND.jpg",
+    "url": "https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE/main/assets/MANAN_REFS/MANAN-REF-05-FRONT-WAIST-TALKING-KEY-HAND-ON-STAND.jpg"
+  },
+  "MANAN-REF-06-BACK-FULL-BODY-SHOES.jpg": {
+    "bytes": 900492,
+    "sha256": "86d704ebe4fe22753084f27c47e93fbe8b9a1c4c0a02410371da6278f4f82134",
+    "path": "assets/MANAN_REFS/MANAN-REF-06-BACK-FULL-BODY-SHOES.jpg",
+    "url": "https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE/main/assets/MANAN_REFS/MANAN-REF-06-BACK-FULL-BODY-SHOES.jpg"
+  },
+  "MANAN-REF-07-FRONT-FULL-BODY-BAREFOOT-EYES-CLOSED.jpg": {
+    "bytes": 895915,
+    "sha256": "5c0b732051357679884e7d0370fe5b88c4d899d0ec87425f89d0f2819dbda4d6",
+    "path": "assets/MANAN_REFS/MANAN-REF-07-FRONT-FULL-BODY-BAREFOOT-EYES-CLOSED.jpg",
+    "url": "https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE/main/assets/MANAN_REFS/MANAN-REF-07-FRONT-FULL-BODY-BAREFOOT-EYES-CLOSED.jpg"
+  },
+  "MANAN-REF-08-FRONT-FULL-BODY-BAREFOOT-EYES-OPEN.jpg": {
+    "bytes": 892336,
+    "sha256": "5b8f4be7620b6c63ba07cb0858259b1cba187e6a017f6ab734d2eebffa65f969",
+    "path": "assets/MANAN_REFS/MANAN-REF-08-FRONT-FULL-BODY-BAREFOOT-EYES-OPEN.jpg",
+    "url": "https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE/main/assets/MANAN_REFS/MANAN-REF-08-FRONT-FULL-BODY-BAREFOOT-EYES-OPEN.jpg"
+  },
+  "MANAN-REF-09-PROFILE-FULL-BODY-SHOES-FACING-RIGHT.jpg": {
+    "bytes": 898216,
+    "sha256": "a22e61422c581231b8b8ca52cd85d243181236a6d9149a87eec9d8b506c664e9",
+    "path": "assets/MANAN_REFS/MANAN-REF-09-PROFILE-FULL-BODY-SHOES-FACING-RIGHT.jpg",
+    "url": "https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE/main/assets/MANAN_REFS/MANAN-REF-09-PROFILE-FULL-BODY-SHOES-FACING-RIGHT.jpg"
+  },
+  "MANAN-REF-10-PROFILE-KNEES-UP-FACING-LEFT-WATCH.jpg": {
+    "bytes": 915670,
+    "sha256": "6d432d892c91655f01f193fc65ece7c494c682fedfd20cd747ab81590936f118",
+    "path": "assets/MANAN_REFS/MANAN-REF-10-PROFILE-KNEES-UP-FACING-LEFT-WATCH.jpg",
+    "url": "https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE/main/assets/MANAN_REFS/MANAN-REF-10-PROFILE-KNEES-UP-FACING-LEFT-WATCH.jpg"
+  },
+  "MANAN-REF-FACE-THREE-QUARTER-EYES-OPEN.jpg": {
+    "bytes": 40152,
+    "sha256": "4cc8bf1bdf249eba8c123906ff7f3e51086eac521db545c727b627479efc0c15",
+    "path": "assets/MANAN_REFS/MANAN-REF-FACE-THREE-QUARTER-EYES-OPEN.jpg",
+    "url": "https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE/main/assets/MANAN_REFS/MANAN-REF-FACE-THREE-QUARTER-EYES-OPEN.jpg"
+  },
+  "MANAN-REF-FACE-FRONT-EYES-OPEN.jpg": {
+    "bytes": 37332,
+    "sha256": "2df88932a534ebbd3e30686dcdc768400f0a6803019d99e67f1b8d2c79753efc",
+    "path": "assets/MANAN_REFS/MANAN-REF-FACE-FRONT-EYES-OPEN.jpg",
+    "url": "https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE/main/assets/MANAN_REFS/MANAN-REF-FACE-FRONT-EYES-OPEN.jpg"
+  },
+  "MANAN-REF-FACE-PROFILE-LEFT-LOOKING-DOWN.jpg": {
+    "bytes": 37623,
+    "sha256": "3f559c487cc7681a2598f2e534ce461a56a0277b34fad521a0dbbe37a2cf6720",
+    "path": "assets/MANAN_REFS/MANAN-REF-FACE-PROFILE-LEFT-LOOKING-DOWN.jpg",
+    "url": "https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE/main/assets/MANAN_REFS/MANAN-REF-FACE-PROFILE-LEFT-LOOKING-DOWN.jpg"
   }
 }

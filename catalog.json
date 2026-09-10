@@ -4282,10 +4282,153 @@
           "note": ""
         }
       ]
+    },
+    {
+      "file": "MANAN_REFS/MANAN-REF-01-THREE-QUARTER-CLOSE-EYES-OPEN-MAGNIFIER.jpg",
+      "kind": "keyframe",
+      "title": "Manan, three quarter, turned to his left, looking at camera",
+      "status": "accepted",
+      "date": "2026-09-10",
+      "shot": "0.801",
+      "storyboard": "hide",
+      "id": "MANAN-REF-01",
+      "note": "MANAN, REFERENCE FROM THE FOOTAGE, source MEETING WITH VIVEK, KEYING at 00_01_38_01. View: three quarter, turned to his left, looking at camera. Framing: chest up. Eyes: open. Feet: not seen. Props: gold magnifying glass in his left hand. Background: clean grey. BEST FOR: the best face with open eyes, three quarter; the magnifying glass scenes. Raw URL for the Use Image URL button: https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE/main/assets/MANAN_REFS/MANAN-REF-01-THREE-QUARTER-CLOSE-EYES-OPEN-MAGNIFIER.jpg"
+    },
+    {
+      "file": "MANAN_REFS/MANAN-REF-02-BACK-THREE-QUARTER-CLOSE-LOOKING-RIGHT.jpg",
+      "kind": "keyframe",
+      "title": "Manan, from behind, head turned to his left, ear and cheek visible",
+      "status": "accepted",
+      "date": "2026-09-10",
+      "shot": "0.802",
+      "storyboard": "hide",
+      "id": "MANAN-REF-02",
+      "note": "MANAN, REFERENCE FROM THE FOOTAGE, source MEETING WITH VIVEK, KEYING at 00_02_01_10. View: from behind, head turned to his left, ear and cheek visible. Framing: shoulders up. Eyes: not seen. Feet: not seen. Props: none. Background: clean grey. BEST FOR: over the shoulder shots, the back of his head and the hood. Raw URL for the Use Image URL button: https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE/main/assets/MANAN_REFS/MANAN-REF-02-BACK-THREE-QUARTER-CLOSE-LOOKING-RIGHT.jpg"
+    },
+    {
+      "file": "MANAN_REFS/MANAN-REF-03-PROFILE-CLOSE-LOOKING-DOWN-HAND-REACHING.jpg",
+      "kind": "keyframe",
+      "title": "Manan, profile facing left, looking down, right hand reaching out",
+      "status": "accepted",
+      "date": "2026-09-10",
+      "shot": "0.803",
+      "storyboard": "hide",
+      "id": "MANAN-REF-03",
+      "note": "MANAN, REFERENCE FROM THE FOOTAGE, source MEETING WITH VIVEK, KEYING at 00_02_45_14. View: profile facing left, looking down, right hand reaching out. Framing: head and arm, right edge of frame. Eyes: half closed, looking down. Feet: not seen. Props: none. Background: clean grey. BEST FOR: profile face, a reaching or catching hand. Raw URL for the Use Image URL button: https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE/main/assets/MANAN_REFS/MANAN-REF-03-PROFILE-CLOSE-LOOKING-DOWN-HAND-REACHING.jpg"
+    },
+    {
+      "file": "MANAN_REFS/MANAN-REF-04-FRONT-MEDIUM-EYES-OPEN-HOLDING-KEY.jpg",
+      "kind": "keyframe",
+      "title": "Manan, front, facing camera",
+      "status": "accepted",
+      "date": "2026-09-10",
+      "shot": "0.804",
+      "storyboard": "hide",
+      "id": "MANAN-REF-04",
+      "note": "MANAN, REFERENCE FROM THE FOOTAGE, source MEETING WITH VIVEK, KEYING at 00_03_38_05. View: front, facing camera. Framing: waist up. Eyes: open. Feet: not seen. Props: the brass clover key held upright in his right hand. Background: grey, lights at both edges. BEST FOR: the best front face with open eyes; the key in his hand. Raw URL for the Use Image URL button: https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE/main/assets/MANAN_REFS/MANAN-REF-04-FRONT-MEDIUM-EYES-OPEN-HOLDING-KEY.jpg"
+    },
+    {
+      "file": "MANAN_REFS/MANAN-REF-05-FRONT-WAIST-TALKING-KEY-HAND-ON-STAND.jpg",
+      "kind": "keyframe",
+      "title": "Manan, front, speaking, left hand resting on a stand, key in right hand",
+      "status": "accepted",
+      "date": "2026-09-10",
+      "shot": "0.805",
+      "storyboard": "hide",
+      "id": "MANAN-REF-05",
+      "note": "MANAN, REFERENCE FROM THE FOOTAGE, source MEETING WITH VIVEK, KEYING at 00_04_03_20. View: front, speaking, left hand resting on a stand, key in right hand. Framing: thighs up. Eyes: open. Feet: not seen. Props: key in right hand, watch on left wrist. Background: studio lights visible. BEST FOR: front body with arms apart, holding the key low. Raw URL for the Use Image URL button: https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE/main/assets/MANAN_REFS/MANAN-REF-05-FRONT-WAIST-TALKING-KEY-HAND-ON-STAND.jpg"
+    },
+    {
+      "file": "MANAN_REFS/MANAN-REF-06-BACK-FULL-BODY-SHOES.jpg",
+      "kind": "keyframe",
+      "title": "Manan, from behind, standing straight",
+      "status": "accepted",
+      "date": "2026-09-10",
+      "shot": "0.806",
+      "storyboard": "hide",
+      "id": "MANAN-REF-06",
+      "note": "MANAN, REFERENCE FROM THE FOOTAGE, source MEETING WITH VIVEK, KEYING at 00_04_18_09. View: from behind, standing straight. Framing: full body. Eyes: not seen. Feet: black trainers. Props: none. Background: whole studio visible. BEST FOR: full body from behind, walking away, entering. Raw URL for the Use Image URL button: https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE/main/assets/MANAN_REFS/MANAN-REF-06-BACK-FULL-BODY-SHOES.jpg"
+    },
+    {
+      "file": "MANAN_REFS/MANAN-REF-07-FRONT-FULL-BODY-BAREFOOT-EYES-CLOSED.jpg",
+      "kind": "keyframe",
+      "title": "Manan, front, standing straight, arms relaxed",
+      "status": "accepted",
+      "date": "2026-09-10",
+      "shot": "0.807",
+      "storyboard": "hide",
+      "id": "MANAN-REF-07",
+      "note": "MANAN, REFERENCE FROM THE FOOTAGE, source MEETING WITH VIVEK, KEYING at 00_04_48_19. View: front, standing straight, arms relaxed. Framing: full body. Eyes: closed. Feet: barefoot. Props: watch on left wrist. Background: whole studio visible. BEST FOR: the trance: the lift, the vortex, rising, anything with eyes closed. Raw URL for the Use Image URL button: https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE/main/assets/MANAN_REFS/MANAN-REF-07-FRONT-FULL-BODY-BAREFOOT-EYES-CLOSED.jpg"
+    },
+    {
+      "file": "MANAN_REFS/MANAN-REF-08-FRONT-FULL-BODY-BAREFOOT-EYES-OPEN.jpg",
+      "kind": "keyframe",
+      "title": "Manan, front, standing straight, arms relaxed",
+      "status": "accepted",
+      "date": "2026-09-10",
+      "shot": "0.808",
+      "storyboard": "hide",
+      "id": "MANAN-REF-08",
+      "note": "MANAN, REFERENCE FROM THE FOOTAGE, source MEETING WITH VIVEK, KEYING at 00_04_55_20. View: front, standing straight, arms relaxed. Framing: full body. Eyes: open. Feet: barefoot. Props: watch on left wrist. Background: whole studio visible. BEST FOR: full body front with open eyes. Raw URL for the Use Image URL button: https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE/main/assets/MANAN_REFS/MANAN-REF-08-FRONT-FULL-BODY-BAREFOOT-EYES-OPEN.jpg"
+    },
+    {
+      "file": "MANAN_REFS/MANAN-REF-09-PROFILE-FULL-BODY-SHOES-FACING-RIGHT.jpg",
+      "kind": "keyframe",
+      "title": "Manan, profile facing right, looking down toward a stand",
+      "status": "accepted",
+      "date": "2026-09-10",
+      "shot": "0.809",
+      "storyboard": "hide",
+      "id": "MANAN-REF-09",
+      "note": "MANAN, REFERENCE FROM THE FOOTAGE, source MEETING WITH VIVEK, KEYING at 00_05_16_07. View: profile facing right, looking down toward a stand. Framing: full body. Eyes: looking down. Feet: black trainers. Props: watch on left wrist. Background: whole studio visible. BEST FOR: full body profile facing right, the meeting staging. Raw URL for the Use Image URL button: https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE/main/assets/MANAN_REFS/MANAN-REF-09-PROFILE-FULL-BODY-SHOES-FACING-RIGHT.jpg"
+    },
+    {
+      "file": "MANAN_REFS/MANAN-REF-10-PROFILE-KNEES-UP-FACING-LEFT-WATCH.jpg",
+      "kind": "keyframe",
+      "title": "Manan, profile facing left, looking down, arms at his sides",
+      "status": "accepted",
+      "date": "2026-09-10",
+      "shot": "0.810",
+      "storyboard": "hide",
+      "id": "MANAN-REF-10",
+      "note": "MANAN, REFERENCE FROM THE FOOTAGE, source MEETING WITH VIVEK, KEYING at 00_05_37_22. View: profile facing left, looking down, arms at his sides. Framing: knees up. Eyes: looking down. Feet: not seen. Props: gold watch with a green dial on his left wrist. Background: grey, lights at both edges. BEST FOR: profile facing left at medium size; the watch. Raw URL for the Use Image URL button: https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE/main/assets/MANAN_REFS/MANAN-REF-10-PROFILE-KNEES-UP-FACING-LEFT-WATCH.jpg"
+    },
+    {
+      "file": "MANAN_REFS/MANAN-REF-FACE-THREE-QUARTER-EYES-OPEN.jpg",
+      "kind": "keyframe",
+      "title": "Manan, three quarter face, eyes open",
+      "status": "accepted",
+      "date": "2026-09-10",
+      "shot": "0.811",
+      "storyboard": "hide",
+      "id": "MANAN-REF-11",
+      "note": "MANAN, REFERENCE FROM THE FOOTAGE, source MEETING WITH VIVEK, KEYING at 00_01_38_01. View: three quarter face, eyes open. Framing: face crop, native pixels. Eyes: open. Feet: not seen. Props: none. Background: clean grey. BEST FOR: identity: attach a face with every body reference. Raw URL for the Use Image URL button: https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE/main/assets/MANAN_REFS/MANAN-REF-FACE-THREE-QUARTER-EYES-OPEN.jpg"
+    },
+    {
+      "file": "MANAN_REFS/MANAN-REF-FACE-FRONT-EYES-OPEN.jpg",
+      "kind": "keyframe",
+      "title": "Manan, front face, eyes open",
+      "status": "accepted",
+      "date": "2026-09-10",
+      "shot": "0.812",
+      "storyboard": "hide",
+      "id": "MANAN-REF-12",
+      "note": "MANAN, REFERENCE FROM THE FOOTAGE, source MEETING WITH VIVEK, KEYING at 00_03_38_05. View: front face, eyes open. Framing: face crop, native pixels. Eyes: open. Feet: not seen. Props: none. Background: clean grey. BEST FOR: identity: attach a face with every body reference. Raw URL for the Use Image URL button: https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE/main/assets/MANAN_REFS/MANAN-REF-FACE-FRONT-EYES-OPEN.jpg"
+    },
+    {
+      "file": "MANAN_REFS/MANAN-REF-FACE-PROFILE-LEFT-LOOKING-DOWN.jpg",
+      "kind": "keyframe",
+      "title": "Manan, profile face facing left, looking down",
+      "status": "accepted",
+      "date": "2026-09-10",
+      "shot": "0.813",
+      "storyboard": "hide",
+      "id": "MANAN-REF-13",
+      "note": "MANAN, REFERENCE FROM THE FOOTAGE, source MEETING WITH VIVEK, KEYING at 00_02_45_14. View: profile face facing left, looking down. Framing: face crop, native pixels. Eyes: looking down. Feet: not seen. Props: none. Background: clean grey. BEST FOR: identity: attach a face with every body reference. Raw URL for the Use Image URL button: https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE/main/assets/MANAN_REFS/MANAN-REF-FACE-PROFILE-LEFT-LOOKING-DOWN.jpg"
     }
   ],
   "event": "Breakthrough Junior Challenge 2026",
-  "site_version": 332,
+  "site_version": 333,
   "footage": [
     {
       "name": "Key catch",
@@ -7563,6 +7706,24 @@
     }
   },
   "sheets": [
+    {
+      "group": "MANAN, REFERENCES FROM THE FOOTAGE",
+      "files": [
+        "MANAN-REF-01-THREE-QUARTER-CLOSE-EYES-OPEN-MAGNIFIER.jpg",
+        "MANAN-REF-02-BACK-THREE-QUARTER-CLOSE-LOOKING-RIGHT.jpg",
+        "MANAN-REF-03-PROFILE-CLOSE-LOOKING-DOWN-HAND-REACHING.jpg",
+        "MANAN-REF-04-FRONT-MEDIUM-EYES-OPEN-HOLDING-KEY.jpg",
+        "MANAN-REF-05-FRONT-WAIST-TALKING-KEY-HAND-ON-STAND.jpg",
+        "MANAN-REF-06-BACK-FULL-BODY-SHOES.jpg",
+        "MANAN-REF-07-FRONT-FULL-BODY-BAREFOOT-EYES-CLOSED.jpg",
+        "MANAN-REF-08-FRONT-FULL-BODY-BAREFOOT-EYES-OPEN.jpg",
+        "MANAN-REF-09-PROFILE-FULL-BODY-SHOES-FACING-RIGHT.jpg",
+        "MANAN-REF-10-PROFILE-KNEES-UP-FACING-LEFT-WATCH.jpg",
+        "MANAN-REF-FACE-THREE-QUARTER-EYES-OPEN.jpg",
+        "MANAN-REF-FACE-FRONT-EYES-OPEN.jpg",
+        "MANAN-REF-FACE-PROFILE-LEFT-LOOKING-DOWN.jpg"
+      ]
+    },
     {
       "group": "CHARACTERS",
       "files": [
