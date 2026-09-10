@@ -2332,5 +2332,11 @@
     "sha256": "c152906f0a0559026d42af4066f649a0ede82843d9c92b163a62cb6a8244f679",
     "path": "BB_C_19/SC6-ARM-3.png",
     "url": "https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIGINALS/main/BB_C_19/SC6-ARM-3.png"
+  },
+  "SC6-OTS-1.png": {
+    "bytes": 7817663,
+    "sha256": "79698e8cf3c7f8ee2cb61dfdcf661f26686652cf9664e3bcdcb18fdbf2fa100d",
+    "path": "BB_C_19/SC6-OTS-1.png",
+    "url": "https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIGINALS/main/BB_C_19/SC6-OTS-1.png"
   }
 }

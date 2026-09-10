@@ -4216,10 +4216,21 @@
       "date": "2026-09-10",
       "id": "19-ARM-3",
       "note": "THREE FRAMES, ONE PICTURE. All three are identical to the pixel except the four readings on the hologram. Play them 1, 2, 3 and round again under the dialogue so the display is alive while they talk.\n\nFrame 3 of 3. The heartbeat and the breath move on again, the thermometer a little lower, the needle a few degrees lower.\n\nViveka stands and faces Manan in front of his console, and their bodies mirror each other across the picture: Manan on the left, Viveka on the right, the hologram of the body between them. Manan is keyed in on the left from the footage at 00:00:09:14. His sightline runs down into Viveka's eyes and Viveka looks straight back up along it. The console is drawn at the size fixed against Viveka on the scale sheet, its top at his waist. The door Manan came through stands open behind him. Viveka asks him to raise his arm and the arm will not rise, while the body behind them goes on working: that is the proof that Viveka runs it."
+    },
+    {
+      "file": "BB_C_19/SC6-OTS-1.png",
+      "kind": "keyframe",
+      "scene": "19",
+      "shot": "19.5d",
+      "title": "Over his shoulder",
+      "status": "accepted",
+      "date": "2026-09-10",
+      "id": "19-OTS-1",
+      "note": "OVER MANAN'S SHOULDER. The same moment as the three frames before it, seen from behind him. Manan is keyed in from the footage at 00:00:17:03: his back and shoulder fill the left of the picture and his head turns toward Viveka. Viveka stands facing him, turned three quarters to us, shorter than him, and looks up into his eyes. The console stands at Viveka's waist at the size fixed on the scale sheet, turned so its front edge runs away toward the right behind him, and the hologram of the body's four functions stands on it between them, its edge at Viveka's shoulder. The key is gold at his chest.\n\nCut to this from the arm sequence and back while they talk. The room, the console and the hologram are the ones in those frames, seen from here."
     }
   ],
   "event": "Breakthrough Junior Challenge 2026",
-  "site_version": 328,
+  "site_version": 329,
   "footage": [
     {
       "name": "Key catch",
