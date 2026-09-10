@@ -1911,6 +1911,15 @@ for n in sorted(SCENES, key=_phkey):
          % (n, SCENES[n])]
     b.append(rule_strip(n))
 
+    # EVERYTHING FOR THE SCENE IN ONE DOWNLOAD, at the very top. Baba, 10.9.2026:
+    # a link on the scene's main page to the zip of every image made for it.
+    # Driven by catalog scene_downloads so a new zip is a catalogue edit, not code.
+    for _dl in (CAT.get('scene_downloads') or {}).get(str(n), []):
+        b.append('<div class=kitrow><a class=dl href="%s">DOWNLOAD&nbsp;%s&nbsp;&nbsp;%s</a></div>'
+                 '<p class=note style="color:var(--dim)">%s</p>'
+                 % (html.escape(_dl['url'], quote=True), html.escape(_dl['label']).replace(' ', '&nbsp;'),
+                    html.escape(_dl.get('size', '')).replace(' ', '&nbsp;'), html.escape(_dl.get('note', ''))))
+
     # THE FIRST THING ON THE PAGE. The scene as one strip, in order. Everything
     # else on this page is reference for it, so it comes after.
     sh_ids = shots_of(n)

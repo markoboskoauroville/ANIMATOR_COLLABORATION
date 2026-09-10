@@ -4230,7 +4230,7 @@
     }
   ],
   "event": "Breakthrough Junior Challenge 2026",
-  "site_version": 329,
+  "site_version": 330,
   "footage": [
     {
       "name": "Key catch",
@@ -7685,5 +7685,15 @@
       "url": "https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIGINALS/main/BB_C_19/board/SC6-BOARD-13-VIVEKA.png"
     }
   ],
-  "animatic_youtube": "yBAHpLLzNdI"
+  "animatic_youtube": "yBAHpLLzNdI",
+  "scene_downloads": {
+    "7": [
+      {
+        "label": "EVERY IMAGE OF THE HOUSE OF THE BODY, ZIP",
+        "size": "894 MB",
+        "url": "https://github.com/markoboskoauroville/ANIMATOR_COLLABORATION/releases/download/house-of-the-body-images-20260910/BRAIN_BRAKE_HOUSE_OF_THE_BODY_ALL_IMAGES.zip",
+        "note": "Every image made for the house of the body, 161 files, from the first idea of the inside of the body to the lift layers of 10 September, in folders by stage, with INDEX.csv and README.md inside."
+      }
+    ]
+  }
 }
