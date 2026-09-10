@@ -2338,5 +2338,47 @@
     "sha256": "79698e8cf3c7f8ee2cb61dfdcf661f26686652cf9664e3bcdcb18fdbf2fa100d",
     "path": "BB_C_19/SC6-OTS-1.png",
     "url": "https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIGINALS/main/BB_C_19/SC6-OTS-1.png"
+  },
+  "SC6-KEY-FULL.png": {
+    "bytes": 4885775,
+    "sha256": "56bdf1c0b5a6a2456b97fcd158c5da1c72f2f49b60751af492dc022912994cb9",
+    "path": "BB_C_19/SC6-KEY-FULL.png",
+    "url": "https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIGINALS/main/BB_C_19/SC6-KEY-FULL.png"
+  },
+  "SC6-BOARD-14-KEY.png": {
+    "bytes": 6959471,
+    "sha256": "fe535a0e1f1ab349e7e1231374a3208bb4f6c99818e4651e9c15f0635a8ee79f",
+    "path": "BB_C_19/board/SC6-BOARD-14-KEY.png",
+    "url": "https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIGINALS/main/BB_C_19/board/SC6-BOARD-14-KEY.png"
+  },
+  "SC6-BOARD-15-HOLOKEY.png": {
+    "bytes": 7045365,
+    "sha256": "9539ba798b2e74c6e15f0a12a409b87b1284f786bc5cda84fb205c2bcbd8d4eb",
+    "path": "BB_C_19/board/SC6-BOARD-15-HOLOKEY.png",
+    "url": "https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIGINALS/main/BB_C_19/board/SC6-BOARD-15-HOLOKEY.png"
+  },
+  "SC6-BOARD-15-HOLOKEY_1-plate.png": {
+    "bytes": 7057068,
+    "sha256": "2fc1bc7343eff97092d2146d6f012379f0b7e271dea9af9254ed05863b7ea96c",
+    "path": "BB_C_19/board/SC6-BOARD-15-HOLOKEY_1-plate.png",
+    "url": "https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIGINALS/main/BB_C_19/board/SC6-BOARD-15-HOLOKEY_1-plate.png"
+  },
+  "SC6-BOARD-15-HOLOKEY_2-screen-key.png": {
+    "bytes": 51457,
+    "sha256": "1c76dde554c9a074ce9cbf49ae15254ee1a81b3bcd15923bec7335ef4f1f2322",
+    "path": "BB_C_19/board/SC6-BOARD-15-HOLOKEY_2-screen-key.png",
+    "url": "https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIGINALS/main/BB_C_19/board/SC6-BOARD-15-HOLOKEY_2-screen-key.png"
+  },
+  "SC6-BOARD-15-HOLOKEY_3-beam.png": {
+    "bytes": 82009,
+    "sha256": "24a455362cd98efadac2fb488a048b35a1f93335459532d768d670be13740811",
+    "path": "BB_C_19/board/SC6-BOARD-15-HOLOKEY_3-beam.png",
+    "url": "https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIGINALS/main/BB_C_19/board/SC6-BOARD-15-HOLOKEY_3-beam.png"
+  },
+  "SC6-BOARD-15-HOLOKEY_4-hologram-key.png": {
+    "bytes": 1023825,
+    "sha256": "c790b536a794fa3406b027ed4a816a1a0a47ef460d11a5e677bd998038321cde",
+    "path": "BB_C_19/board/SC6-BOARD-15-HOLOKEY_4-hologram-key.png",
+    "url": "https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIGINALS/main/BB_C_19/board/SC6-BOARD-15-HOLOKEY_4-hologram-key.png"
   }
 }

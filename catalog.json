@@ -4227,10 +4227,65 @@
       "date": "2026-09-10",
       "id": "19-OTS-1",
       "note": "OVER MANAN'S SHOULDER. The same moment as the three frames before it, seen from behind him. Manan is keyed in from the footage at 00:00:17:03: his back and shoulder fill the left of the picture and his head turns toward Viveka. Viveka stands facing him, turned three quarters to us, shorter than him, and looks up into his eyes. The console stands at Viveka's waist at the size fixed on the scale sheet, turned so its front edge runs away toward the right behind him, and the hologram of the body's four functions stands on it between them, its edge at Viveka's shoulder. The key is gold at his chest.\n\nCut to this from the arm sequence and back while they talk. The room, the console and the hologram are the ones in those frames, seen from here."
+    },
+    {
+      "file": "BB_C_19/SC6-KEY-FULL.png",
+      "kind": "keyframe",
+      "scene": "19",
+      "shot": "19.6a",
+      "title": "This is the key",
+      "status": "accepted",
+      "date": "2026-09-10",
+      "id": "19-KEY-FULL",
+      "note": "THE KEY, AND NOTHING ELSE. The cut on Viveka's line \"This. This is the key.\" The gold key fills the screen on the film's paper, the only colour in the film, with nothing in the frame to share it. It is the same painted key that falls in SC8, so the object the audience meets here is the object they watch fall. Hold it about two seconds, with no words over it."
+    },
+    {
+      "file": "BB_C_19/board/SC6-BOARD-14-KEY.png",
+      "kind": "keyframe",
+      "scene": "19",
+      "shot": "19.6b",
+      "title": "The key on the console",
+      "status": "accepted",
+      "date": "2026-09-10",
+      "id": "19-BOARD-14",
+      "note": "THE KEY ARRIVES ON THE CONSOLE. Board 13 exactly, THE BRAIN DECIDES still on the display, and the key drawn small in light, in no colour, on the console's small screen beside his right hand. The drawing is the side study from the key sheet. This is the beat between the full screen key and the display turning into it."
+    },
+    {
+      "file": "BB_C_19/board/SC6-BOARD-15-HOLOKEY.png",
+      "kind": "keyframe",
+      "scene": "19",
+      "shot": "19.6c",
+      "title": "The display becomes the key",
+      "status": "accepted",
+      "date": "2026-09-10",
+      "id": "19-BOARD-15",
+      "note": "THE DISPLAY BECOMES THE KEY. The glass pane is gone and the gold key floats above the board as a hologram of light, translucent, glowing, with fine hologram lines through it, while the line drawing of the key still glows on the small screen and a faint beam rises between them. Viveka's line about the setting plays over it.\n\nLAYERS FOR AFTER EFFECTS, all 2731 by 1536 and aligned. 1 plate: the board with the pane taken out and the small screen's glass darkened. 2 screen key: the light line key, blend mode Screen. 3 beam: blend mode Screen. 4 hologram key: gold with alpha, blend mode Normal. Suggested move: from board 14, dissolve the pane away as the beam fades up and the hologram key rises out of it and settles.",
+      "plates": [
+        {
+          "file": "SC6-BOARD-15-HOLOKEY_1-plate.png",
+          "label": "The plate, no pane",
+          "note": ""
+        },
+        {
+          "file": "SC6-BOARD-15-HOLOKEY_2-screen-key.png",
+          "label": "The small screen key, alpha, Screen",
+          "note": ""
+        },
+        {
+          "file": "SC6-BOARD-15-HOLOKEY_3-beam.png",
+          "label": "The beam, alpha, Screen",
+          "note": ""
+        },
+        {
+          "file": "SC6-BOARD-15-HOLOKEY_4-hologram-key.png",
+          "label": "The hologram key, alpha, Normal",
+          "note": ""
+        }
+      ]
     }
   ],
   "event": "Breakthrough Junior Challenge 2026",
-  "site_version": 331,
+  "site_version": 332,
   "footage": [
     {
       "name": "Key catch",
