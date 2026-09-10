@@ -2458,5 +2458,17 @@
     "sha256": "3f559c487cc7681a2598f2e534ce461a56a0277b34fad521a0dbbe37a2cf6720",
     "path": "assets/MANAN_REFS/MANAN-REF-FACE-PROFILE-LEFT-LOOKING-DOWN.jpg",
     "url": "https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE/main/assets/MANAN_REFS/MANAN-REF-FACE-PROFILE-LEFT-LOOKING-DOWN.jpg"
+  },
+  "VIVEKA_SIDE_ALONE_ON_PAPER.png": {
+    "bytes": 4440153,
+    "sha256": "bf3eaed084c091ffa92081ae26fbc247c2df64b2ad6ef96789df60718ae39dfd",
+    "path": "assets/VIDEO_REFS/VIVEKA_SIDE_ALONE_ON_PAPER.png",
+    "url": "https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE/main/assets/VIDEO_REFS/VIVEKA_SIDE_ALONE_ON_PAPER.png"
+  },
+  "VIVEKA_SIDE_BACKGROUND_CLEAN.png": {
+    "bytes": 7552237,
+    "sha256": "7f20251ce43eda5c5566f1e3aff9f76a9a605366d5c422f462b77dae824685ea",
+    "path": "assets/VIDEO_REFS/VIVEKA_SIDE_BACKGROUND_CLEAN.png",
+    "url": "https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE/main/assets/VIDEO_REFS/VIVEKA_SIDE_BACKGROUND_CLEAN.png"
   }
 }
