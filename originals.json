@@ -2459,16 +2459,28 @@
     "path": "assets/MANAN_REFS/MANAN-REF-FACE-PROFILE-LEFT-LOOKING-DOWN.jpg",
     "url": "https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE/main/assets/MANAN_REFS/MANAN-REF-FACE-PROFILE-LEFT-LOOKING-DOWN.jpg"
   },
-  "VIVEKA_SIDE_ALONE_ON_PAPER.png": {
-    "bytes": 4440153,
-    "sha256": "bf3eaed084c091ffa92081ae26fbc247c2df64b2ad6ef96789df60718ae39dfd",
-    "path": "assets/VIDEO_REFS/VIVEKA_SIDE_ALONE_ON_PAPER.png",
-    "url": "https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE/main/assets/VIDEO_REFS/VIVEKA_SIDE_ALONE_ON_PAPER.png"
+  "VIVEKA_SIDE_ALONE.png": {
+    "bytes": 2301263,
+    "sha256": "99f0feb06ba9b57c0475a527ecb16087030fb5b793df27f710dcb13a60880e9e",
+    "path": "assets/VIDEO_REFS/VIVEKA_SIDE_ALONE.png",
+    "url": "https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE/main/assets/VIDEO_REFS/VIVEKA_SIDE_ALONE.png"
   },
-  "VIVEKA_SIDE_BACKGROUND_CLEAN.png": {
-    "bytes": 7552237,
-    "sha256": "7f20251ce43eda5c5566f1e3aff9f76a9a605366d5c422f462b77dae824685ea",
-    "path": "assets/VIDEO_REFS/VIVEKA_SIDE_BACKGROUND_CLEAN.png",
-    "url": "https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE/main/assets/VIDEO_REFS/VIVEKA_SIDE_BACKGROUND_CLEAN.png"
+  "VIVEKA_SIDE_BACKGROUND.png": {
+    "bytes": 7007547,
+    "sha256": "37354fc0a4827440de1eb5510d7e915677c44762c520723ba9edaae7d59c6441",
+    "path": "assets/VIDEO_REFS/VIVEKA_SIDE_BACKGROUND.png",
+    "url": "https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE/main/assets/VIDEO_REFS/VIVEKA_SIDE_BACKGROUND.png"
+  },
+  "VIVEKA_OTS_ALONE.png": {
+    "bytes": 1975107,
+    "sha256": "37f31cdf1fdaa1814036c4ab1c0819bd5a86204a918cd01f10385f3ea7c6edac",
+    "path": "assets/VIDEO_REFS/VIVEKA_OTS_ALONE.png",
+    "url": "https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE/main/assets/VIDEO_REFS/VIVEKA_OTS_ALONE.png"
+  },
+  "VIVEKA_OTS_BACKGROUND.png": {
+    "bytes": 6056556,
+    "sha256": "60fd1b375c2f4d63ebd45f4fae70f0370f398c3f9e2ebe66cae4fe72b088360c",
+    "path": "assets/VIDEO_REFS/VIVEKA_OTS_BACKGROUND.png",
+    "url": "https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE/main/assets/VIDEO_REFS/VIVEKA_OTS_BACKGROUND.png"
   }
 }

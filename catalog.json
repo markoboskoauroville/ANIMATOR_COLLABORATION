@@ -4427,19 +4427,19 @@
       "note": "MANAN, REFERENCE FROM THE FOOTAGE, source MEETING WITH VIVEK, KEYING at 00_02_45_14. View: profile face facing left, looking down. Framing: face crop, native pixels. Eyes: looking down. Feet: not seen. Props: none. Background: clean grey. BEST FOR: identity: attach a face with every body reference. Raw URL for the Use Image URL button: https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE/main/assets/MANAN_REFS/MANAN-REF-FACE-PROFILE-LEFT-LOOKING-DOWN.jpg"
     },
     {
-      "file": "BB_C_19/VIVEKA_SIDE_ALONE_ON_PAPER.png",
+      "file": "BB_C_19/VIVEKA_SIDE_ALONE.png",
       "kind": "keyframe",
       "scene": "19",
       "shot": "19.5e",
-      "title": "Viveka side angle, alone on the paper",
+      "title": "Viveka side angle, alone",
       "status": "reference",
       "date": "2026-09-10",
       "storyboard": "hide",
-      "id": "19-VIVEKA_SIDE_ALONE_ON_PAPER",
-      "note": "VIVEKA ALONE, SIDE ANGLE. Viveka in profile facing left, standing still, the gold key at his chest, on the film's plain cream paper and nothing else. The start and end frame for the video of him breathing and blinking while he listens, and the source for his layer over the room. Raw URL for the Use Image URL button: https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE/main/assets/VIDEO_REFS/VIVEKA_SIDE_ALONE_ON_PAPER.png"
+      "id": "19-VIVEKA_SIDE_ALONE",
+      "note": "VIVEKA ALONE, SIDE ANGLE. Viveka in profile facing left, standing still, the gold key at his chest, with a transparent background, so the layer goes straight over the side angle room. The start and end frame for the video of him breathing and blinking while he listens. Raw URL for the Use Image URL button: https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE/main/assets/VIDEO_REFS/VIVEKA_SIDE_ALONE.png"
     },
     {
-      "file": "BB_C_19/VIVEKA_SIDE_BACKGROUND_CLEAN.png",
+      "file": "BB_C_19/VIVEKA_SIDE_BACKGROUND.png",
       "kind": "keyframe",
       "scene": "19",
       "shot": "19.5f",
@@ -4447,12 +4447,36 @@
       "status": "reference",
       "date": "2026-09-10",
       "storyboard": "hide",
-      "id": "19-VIVEKA_SIDE_BACKGROUND_CLEAN",
-      "note": "THE ROOM, SIDE ANGLE, EMPTY. The clay wall, the open door on the left and the console with its hologram of the four instruments, with nobody in it: the background Viveka's layer goes over. Raw URL: https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE/main/assets/VIDEO_REFS/VIVEKA_SIDE_BACKGROUND_CLEAN.png"
+      "id": "19-VIVEKA_SIDE_BACKGROUND",
+      "note": "THE ROOM, SIDE ANGLE, EMPTY. The clay wall, the carved door on the left, and the console with its hologram of the four instruments, nobody in it. The background for Viveka's side angle layer. Raw URL for the Use Image URL button: https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE/main/assets/VIDEO_REFS/VIVEKA_SIDE_BACKGROUND.png"
+    },
+    {
+      "file": "BB_C_19/VIVEKA_OTS_ALONE.png",
+      "kind": "keyframe",
+      "scene": "19",
+      "shot": "19.5g",
+      "title": "Viveka over the shoulder, alone",
+      "status": "reference",
+      "date": "2026-09-10",
+      "storyboard": "hide",
+      "id": "19-VIVEKA_OTS_ALONE",
+      "note": "VIVEKA ALONE, OVER THE SHOULDER. Viveka turned three quarters toward the left, looking up with a calm smile, the gold key at his chest, with a transparent background, so the layer goes straight over the over the shoulder room. The start and end frame for the video of him breathing and blinking. Raw URL for the Use Image URL button: https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE/main/assets/VIDEO_REFS/VIVEKA_OTS_ALONE.png"
+    },
+    {
+      "file": "BB_C_19/VIVEKA_OTS_BACKGROUND.png",
+      "kind": "keyframe",
+      "scene": "19",
+      "shot": "19.5h",
+      "title": "Viveka over the shoulder, the room without him",
+      "status": "reference",
+      "date": "2026-09-10",
+      "storyboard": "hide",
+      "id": "19-VIVEKA_OTS_BACKGROUND",
+      "note": "THE ROOM, OVER THE SHOULDER, EMPTY. The arching clay walls, and the console seen at an angle with its hologram, nobody in it. The background for Viveka's over the shoulder layer, with Manan keyed in from the footage in front. Raw URL for the Use Image URL button: https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE/main/assets/VIDEO_REFS/VIVEKA_OTS_BACKGROUND.png"
     }
   ],
   "event": "Breakthrough Junior Challenge 2026",
-  "site_version": 334,
+  "site_version": 335,
   "footage": [
     {
       "name": "Key catch",
