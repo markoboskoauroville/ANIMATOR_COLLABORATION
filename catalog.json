@@ -4230,7 +4230,7 @@
     }
   ],
   "event": "Breakthrough Junior Challenge 2026",
-  "site_version": 330,
+  "site_version": 331,
   "footage": [
     {
       "name": "Key catch",
@@ -7689,10 +7689,16 @@
   "scene_downloads": {
     "7": [
       {
-        "label": "EVERY IMAGE OF THE HOUSE OF THE BODY, ZIP",
+        "label": "EVERY IMAGE OF THE HOUSE OF THE BODY, ZIP, GITHUB",
         "size": "894 MB",
         "url": "https://github.com/markoboskoauroville/ANIMATOR_COLLABORATION/releases/download/house-of-the-body-images-20260910/BRAIN_BRAKE_HOUSE_OF_THE_BODY_ALL_IMAGES.zip",
         "note": "Every image made for the house of the body, 161 files, from the first idea of the inside of the body to the lift layers of 10 September, in folders by stage, with INDEX.csv and README.md inside."
+      },
+      {
+        "label": "THE SAME ZIP, GOOGLE DRIVE",
+        "size": "894 MB",
+        "url": "https://drive.usercontent.google.com/download?id=1Fre93fS5quIgT6Ab_9m2czD-orMYTjwT&export=download&confirm=t",
+        "note": "The same file in Marko's Google Drive folder CLAUDE_DROPS, for anyone who prefers Drive."
       }
     ]
   }

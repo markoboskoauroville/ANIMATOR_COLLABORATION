@@ -3999,3 +3999,61 @@
 - **original** — OBJECT_SHEET_WALL-v2.png  200 0
 - **original** — SC6-BOARD-07-VIVEKA.png  404 14
 - **original** — image-to-image-6a91cd7926c8e31eeb4c66ad-1.png  200 0
+
+## 2026-09-10 13:15 — v331 — cached run
+
+467 pages, 523 remote targets, 390 originals.
+
+- published weight 97.7 MB of the 1024 MB Pages ceiling, 10%
+- 390 originals in originals.json, 1882.3 MB
+- 140 rows still in drive_links.json, kept as a fallback
+
+**FAILED, 47:**
+
+- **local path missing** — card/11-0-A-v1.html -> ../https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/reference/voice/SYNTESISED_BRAIN_NEW_THEORY.wav
+- **local path missing** — card/11-0-A-v1.html -> ../https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/reference/voice/SYNTESISED_BRAIN_NEW_THEORY.wav
+- **local path missing** — card/12-0-A-v1.html -> ../https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/reference/voice/THE_LIMIT_IS_A_SETTING_NOT_A_WALL.wav
+- **local path missing** — card/12-0-A-v1.html -> ../https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/reference/voice/THE_LIMIT_IS_A_SETTING_NOT_A_WALL.wav
+- **local path missing** — card/10-0-A-v2.html -> ../https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/reference/voice/SYNTESISED_MANAN_OLD_THEORY.wav
+- **local path missing** — card/10-0-A-v2.html -> ../https://raw.githubusercontent.com/markoboskoauroville/BRAINBREAK_AUDIO/main/reference/voice/SYNTESISED_MANAN_OLD_THEORY.wav
+- **remote link** — https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIG  404 14  from card/9R-1-VORTEX-DOWN-v1.html
+- **remote link** — https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIG  404 14  from card/7-2-20260903.html
+- **remote link** — https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIG  404 14  from card/7-8-20260903.html
+- **live version** — catalog says v331, live serves v330. The push has not published yet, or it failed.
+- **original** — 19-A1-ENTER-v1.png  200 0
+- **original** — 19-A2-EXPECTING-v1.png  200 0
+- **original** — 19-A3-ARM-v2.png  200 0
+- **original** — 3-0-A-v1.png  200 0
+- **original** — 3-0-A-v2.png  200 0
+- **original** — 3-1-A-v1.png  200 0
+- **original** — 6-0-A-v1.png  200 0
+- **original** — 6-0-A-v2.png  200 0
+- **original** — 6-0-A-v3.png  200 0
+- **original** — 6-1-A-v1.png  200 0
+- **original** — 6-2-A-v1.png  200 0
+- **original** — 6-3-A-v1.png  200 0
+- **original** — 6-4-A-v1.png  200 0
+- **original** — 8-2-A-v2.png  200 0
+- **original** — 9-0-GANESHA-v1.png  200 0
+- **original** — 9-1-GANESHA-v1.png  200 0
+- **original** — 9-1-VORTEX-v2.png  200 0
+- **original** — 9-2-MANAN-1-v2.png  200 0
+- **original** — 9-2-MANAN-2-v2.png  200 0
+- **original** — 9-2-MANAN-3-v1.png  200 0
+- **original** — 9R-1-VORTEX-DOWN-v1.png  200 0
+- **original** — 9R-2-FALLING-v1.png  200 0
+- **original** — CHARACTER_SHEET_COACH_BRAIN-v1.png  200 0
+- **original** — CHARACTER_SHEET_COACH_BRAIN-v2.png  200 0
+- **original** — CHARACTER_SHEET_COACH_BRAIN-v3.png  200 0
+- **original** — CHARACTER_SHEET_COACH_BRAIN-v4.png  200 0
+- **original** — CHARACTER_SHEET_RUNNER_FACE-v1.png  200 0
+- **original** — FONT_SHEET-v1.png  200 0
+- **original** — OBJECT_SHEET_CHAIR-v1.png  200 3145728
+- **original** — OBJECT_SHEET_DESK-v1.png  200 0
+- **original** — OBJECT_SHEET_DESK-v3.png  200 0
+- **original** — OBJECT_SHEET_KEY-v1.png  200 0
+- **original** — OBJECT_SHEET_KEY-v2.png  200 0
+- **original** — OBJECT_SHEET_WALL-v1.png  200 0
+- **original** — OBJECT_SHEET_WALL-v2.png  200 0
+- **original** — SC6-BOARD-07-VIVEKA.png  404 14
+- **original** — image-to-image-6a91cd7926c8e31eeb4c66ad-1.png  200 0
