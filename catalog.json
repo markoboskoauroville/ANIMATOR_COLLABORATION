@@ -4183,10 +4183,43 @@
           "note": "The plate with no words and no highlight. Every other frame is this one with text and light composited on, so they cut without a flicker."
         }
       ]
+    },
+    {
+      "file": "BB_C_19/SC6-ARM-1.png",
+      "kind": "keyframe",
+      "scene": "19",
+      "shot": "19.5a",
+      "title": "Raise your arm, 1 of 3",
+      "status": "accepted",
+      "date": "2026-09-10",
+      "id": "19-ARM-1",
+      "note": "THREE FRAMES, ONE PICTURE. All three are identical to the pixel except the four readings on the hologram. Play them 1, 2, 3 and round again under the dialogue so the display is alive while they talk.\n\nFrame 1 of 3. The heartbeat and the breath at their starting place, the thermometer halfway, the needle high.\n\nViveka stands and faces Manan in front of his console, and their bodies mirror each other across the picture: Manan on the left, Viveka on the right, the hologram of the body between them. Manan is keyed in on the left from the footage at 00:00:09:14. His sightline runs down into Viveka's eyes and Viveka looks straight back up along it. The console is drawn at the size fixed against Viveka on the scale sheet, its top at his waist. The door Manan came through stands open behind him. Viveka asks him to raise his arm and the arm will not rise, while the body behind them goes on working: that is the proof that Viveka runs it."
+    },
+    {
+      "file": "BB_C_19/SC6-ARM-2.png",
+      "kind": "keyframe",
+      "scene": "19",
+      "shot": "19.5b",
+      "title": "Raise your arm, 2 of 3",
+      "status": "accepted",
+      "date": "2026-09-10",
+      "id": "19-ARM-2",
+      "note": "THREE FRAMES, ONE PICTURE. All three are identical to the pixel except the four readings on the hologram. Play them 1, 2, 3 and round again under the dialogue so the display is alive while they talk.\n\nFrame 2 of 3. The heartbeat and the breath move on along their traces, the thermometer a little higher, the needle a few degrees higher.\n\nViveka stands and faces Manan in front of his console, and their bodies mirror each other across the picture: Manan on the left, Viveka on the right, the hologram of the body between them. Manan is keyed in on the left from the footage at 00:00:09:14. His sightline runs down into Viveka's eyes and Viveka looks straight back up along it. The console is drawn at the size fixed against Viveka on the scale sheet, its top at his waist. The door Manan came through stands open behind him. Viveka asks him to raise his arm and the arm will not rise, while the body behind them goes on working: that is the proof that Viveka runs it."
+    },
+    {
+      "file": "BB_C_19/SC6-ARM-3.png",
+      "kind": "keyframe",
+      "scene": "19",
+      "shot": "19.5c",
+      "title": "Raise your arm, 3 of 3",
+      "status": "accepted",
+      "date": "2026-09-10",
+      "id": "19-ARM-3",
+      "note": "THREE FRAMES, ONE PICTURE. All three are identical to the pixel except the four readings on the hologram. Play them 1, 2, 3 and round again under the dialogue so the display is alive while they talk.\n\nFrame 3 of 3. The heartbeat and the breath move on again, the thermometer a little lower, the needle a few degrees lower.\n\nViveka stands and faces Manan in front of his console, and their bodies mirror each other across the picture: Manan on the left, Viveka on the right, the hologram of the body between them. Manan is keyed in on the left from the footage at 00:00:09:14. His sightline runs down into Viveka's eyes and Viveka looks straight back up along it. The console is drawn at the size fixed against Viveka on the scale sheet, its top at his waist. The door Manan came through stands open behind him. Viveka asks him to raise his arm and the arm will not rise, while the body behind them goes on working: that is the proof that Viveka runs it."
     }
   ],
   "event": "Breakthrough Junior Challenge 2026",
-  "site_version": 327,
+  "site_version": 328,
   "footage": [
     {
       "name": "Key catch",

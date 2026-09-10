@@ -2314,5 +2314,23 @@
     "sha256": "e37e178366d4f1744a594d19a04591c791a47ad03793ce05d38c18d038ad1b38",
     "path": "BB_C_7/layers/SHEET-lift.png",
     "url": "https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIGINALS/main/BB_C_7/layers/SHEET-lift.png"
+  },
+  "SC6-ARM-1.png": {
+    "bytes": 5686756,
+    "sha256": "c1075e3e272c6b9c673c612af285916d8b42d58b1ee42f9c393886fedf4c0013",
+    "path": "BB_C_19/SC6-ARM-1.png",
+    "url": "https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIGINALS/main/BB_C_19/SC6-ARM-1.png"
+  },
+  "SC6-ARM-2.png": {
+    "bytes": 7069587,
+    "sha256": "15edb9e2c8af0642d90540e33839d438531de90d6a900d1da30e673b60900713",
+    "path": "BB_C_19/SC6-ARM-2.png",
+    "url": "https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIGINALS/main/BB_C_19/SC6-ARM-2.png"
+  },
+  "SC6-ARM-3.png": {
+    "bytes": 7069467,
+    "sha256": "c152906f0a0559026d42af4066f649a0ede82843d9c92b163a62cb6a8244f679",
+    "path": "BB_C_19/SC6-ARM-3.png",
+    "url": "https://raw.githubusercontent.com/markoboskoauroville/BRAIN_BRAKE_ORIGINALS/main/BB_C_19/SC6-ARM-3.png"
   }
 }
