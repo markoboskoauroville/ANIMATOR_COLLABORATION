@@ -1,3 +1,5 @@
+### [Download the latest build](https://github.com/markoboskoauroville/ANIMATOR_COLLABORATION/releases/latest)
+
 # ANIMATOR COLLABORATION
 
 **The working repository between Marko and Kristijan. Brain Brake, final phase of production.**
