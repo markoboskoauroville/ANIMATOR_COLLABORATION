@@ -12,6 +12,9 @@ No zips anywhere: Kristijan downloads what he needs, one file at a time.
 """
 import json, os, re, glob, html, urllib.parse
 
+# The finished film, on Vimeo since 30.9.2026. It replaces the animatic on YouTube.
+FINAL_FILM_VIMEO = '1228926762'
+
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 CAT = json.load(open(os.path.join(ROOT, 'catalog.json')))
 SCENES = CAT['scenes']
@@ -1441,6 +1444,10 @@ def bar(here, r):
          # 4.9.2026: the sheets are what an animator opens BEFORE drawing
          # anything, and they were scattered across scene folders with
          # storyboard=hide, reachable only by knowing they existed.
+         # 30.9.2026, Marko: "bring back the tab ... Radio Drama, because everything
+         # comes from Radio Drama." Second in the bar, after the film it made.
+         '<a href="%sradiodrama.html"%s>RADIO DRAMA</a>'
+         % (r, ' class=on' if here == 'drama' else ''),
          '<a href="%ssheets.html"%s>SHEETS</a>'
          % (r, ' class=on' if here == 'sheets' else ''),
          '<a href="%ssound.html"%s>SOUND</a>'
@@ -2535,18 +2542,20 @@ rt = [_mast, '<h1>THE BRAIN BRAKE ANIMATIC</h1>', _flight,
       # through is not being made, and the book is not part of the work any
       # more. Both are still reachable from the archive; they are just not the
       # first thing anybody meets on the film page.
-      (('<div class=animatic>'
-        '<div class=ah><b>THE ANIMATIC</b><span>The whole film as it stands. '
-        'This is the cut everything is built against: if a cut on the storyboard '
-        'and a cut here disagree, this one is right.</span></div>'
-        '<div class=vidwrap><iframe src="https://www.youtube-nocookie.com/embed/%s'
-        '?rel=0&modestbranding=1&playsinline=1" title="The animatic" '
-        'frameborder=0 loading=lazy '
-        'allow="accelerometer; encrypted-media; picture-in-picture" '
-        'allowfullscreen></iframe></div>'
-        '<a class=dl href="https://youtu.be/%s" target=_blank rel=noopener>'
-        'OPEN&nbsp;ON&nbsp;YOUTUBE&nbsp;&nearr;</a></div>')
-       % (CAT['animatic_youtube'], CAT['animatic_youtube'])) if CAT.get('animatic_youtube') else '',
+      # 30.9.2026, Marko: "This is the final film ... replacing all the YouTube link
+      # with final film, which was not final at that time." The animatic on YouTube
+      # (yBAHpLLzNdI) is retired; the finished film is on Vimeo.
+      ('<div class=animatic>'
+       '<div class=ah><b>THE FILM</b><span>The Brain Brake, finished. '
+       'Five minutes and thirty two seconds.</span></div>'
+       '<div class=vidwrap><iframe src="https://player.vimeo.com/video/%s'
+       '?title=0&byline=0&portrait=0&dnt=1" title="The Brain Brake" '
+       'frameborder=0 loading=lazy '
+       'allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media" '
+       'referrerpolicy="strict-origin-when-cross-origin" '
+       'allowfullscreen></iframe></div>'
+       '<a class=dl href="https://vimeo.com/%s" target=_blank rel=noopener>'
+       'OPEN&nbsp;ON&nbsp;VIMEO&nbsp;&nearr;</a></div>') % (FINAL_FILM_VIMEO, FINAL_FILM_VIMEO),
       '<div class=allassets>'
       '<a class=dl href="' + ASSETS_FOLDER + '" target=_blank rel=noopener>'
       'DOWNLOAD&nbsp;ALL&nbsp;ASSETS</a>'
