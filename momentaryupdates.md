@@ -14,3 +14,5 @@
 "https://vimeo.com/1228926762 This is the final film. Please make embed it in the website, replacing all the YouTube link with final film, which was not final at that time. This is the final."
 
 "yes, and enforce this rule in the manifest that everything before coming public in the github, double-checking if there are some keys which will going to be lost if repo become public"
+
+"Chrome is open and you can test the page now on this computer. Please on the radio drama, I need that actual radio drama to be played from that site. There should also be a play button as on the film. The main page for how the film moves, listen 1:21 seconds. So the same principles apply to the radio drama"
