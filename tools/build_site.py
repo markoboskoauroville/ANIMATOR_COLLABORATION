@@ -2104,13 +2104,18 @@ for e in docs:
 # acted, so the words arrive next to the picture instead of on a page of their
 # own. This page is the music now, which is the one thing on it that was never
 # out of date.
-_rd = ['<h1>The music, written for the film</h1>',
-       '<p class=lede>The theme and the end credits, composed before the animation existed. '
-       '<b>The film told out loud now lives on the film page</b>, in front of the frames it '
-       'describes, so the words and the pictures arrive together.</p>',
+# 30.9.2026, Marko: "I need that actual radio drama to be played from that site ...
+# the same principles apply to the radio drama" as the film page's LISTEN cue.
+# The drama itself is built in tools/radio_drama.py; the music stays under it.
+import sys as _sys
+_sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from radio_drama import drama_page
+_rd = ['<!--rd-->' + drama_page(CAT) + '<!--/rd-->',
+       '<h2>The music, written for the film</h2>',
+       '<p class=lede>The theme and the end credits, composed before the animation existed.</p>',
        dialogue_wav_block(), music_block(), DECK_JS]
 open(os.path.join(ROOT, 'radiodrama.html'), 'w').write(
-    page('The music', ''.join(_rd), here='drama', depth=0))
+    page('The radio drama', ''.join(_rd), here='drama', depth=0))
 
 # ---------------------------------------------------------------- dialogue page
 # The audio has its OWN page. Baba, 3.9.2026: Kristijan does not need to listen
@@ -2139,8 +2144,8 @@ if True:
                'The book the film was made from, 3106 words in fourteen chapters. Off the film '
                'page 6.9.2026: it is not part of the work any more, but it is where the rooms and '
                'the reasons were written down first'),
-              ('radiodrama.html', 'The music, written for the film',
-               'The theme and the end credits, composed before the animation'),
+              ('radiodrama.html', 'The radio drama',
+               'The whole film told out loud, scene by scene, in English and Croatian, and the music'),
               ('dialogue.html', 'Dialogue and takes',
                'Every line read aloud, and Manan\u2019s own takes, with the zips'),
               ('footage.html', 'Footage', 'Every live shot, its plate and its ProRes'),
